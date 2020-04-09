@@ -6,13 +6,14 @@ layout: front
 title: Taiwins
 ---
 
-Taiwins is a morden, modular and extensible wayland compositor, supports both
-tiling and floating layout. It has a builtin shell and GUI system called
-**twclient**, writing a minimum wayland client using **twclient** takes only 20
-lines of code.
+Taiwins is a modern and modular [wayland](https://wayland.freedesktop.org/)
+compositor, and it is extensible through lua script. It has a builtin shell and
+GUI system called [**twclient**](https://github.com/taiwins/twclient). Writing a
+minimum wayland client using **twclient** would take only 20 lines of code.
 
 Taiwins is the tiling as well as a floating window manager, you can allocate
-your desktop *logicially* or based on your needs, dragging your windows *freely*.
+windows on your desktop *logicially* or based on your needs, drag your windows
+*freely*.
 
 ## features
 - fast and small codebase.
@@ -23,4 +24,4 @@ your desktop *logicially* or based on your needs, dragging your windows *freely*
 - xwayland support.
 - multi key-presses bindings like emacs.
 - dbus support.
-
+- and more.
