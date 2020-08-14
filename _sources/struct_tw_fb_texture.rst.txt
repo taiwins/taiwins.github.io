@@ -1,0 +1,24 @@
+.. index:: pair: struct; tw_fb_texture
+.. _doxid-df/d3a/structtw__fb__texture:
+
+struct tw_fb_texture
+====================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	
+	struct tw_fb_texture
+	{
+		// fields
+	
+		struct :ref:`tw_gl_texture<doxid-dd/dc6/structtw__gl__texture>` :target:`tex<doxid-df/d3a/structtw__fb__texture_1a1c21c38ba923650b225578dfa0259b50>`;
+		GLenum :target:`attachment<doxid-df/d3a/structtw__fb__texture_1a2dcf58463b40bb8e4084ab49ad9b8d32>`;
+		uint32_t :target:`idx<doxid-df/d3a/structtw__fb__texture_1ad7d88f9224e9e3ae817e08b3c5a38afb>`;
+	};

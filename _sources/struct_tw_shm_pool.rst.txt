@@ -1,0 +1,27 @@
+.. index:: pair: struct; tw_shm_pool
+.. _doxid-d9/dab/structtw__shm__pool:
+
+struct tw_shm_pool
+==================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <shmpool.h>
+	
+	struct tw_shm_pool
+	{
+		// fields
+	
+		struct :ref:`anonymous_buff_t<doxid-d1/d16/structanonymous__buff__t>`* :target:`file<doxid-d9/dab/structtw__shm__pool_1ac2ee3caac8a12c800f330d9335b1ec5a>`;
+		struct wl_shm* :target:`shm<doxid-d9/dab/structtw__shm__pool_1aaffc467026568dd497e800eee4e04d49>`;
+		struct wl_shm_pool* :target:`pool<doxid-d9/dab/structtw__shm__pool_1a7fb13d1cb30fc9fbb6b4380dc696cd74>`;
+		struct wl_list :target:`wl_buffers<doxid-d9/dab/structtw__shm__pool_1a1abda412f004fffa97793b299356294c>`;
+		enum wl_shm_format :target:`format<doxid-d9/dab/structtw__shm__pool_1a3334855bee1371b8b92954b995ba9779>`;
+	};

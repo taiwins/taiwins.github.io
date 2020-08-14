@@ -1,0 +1,69 @@
+.. index:: pair: struct; tw_config_table
+.. _doxid-d8/dac/structtw__config__table:
+
+struct tw_config_table
+======================
+
+.. toctree::
+	:hidden:
+
+Overview
+~~~~~~~~
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <config_internal.h>
+	
+	struct tw_config_table
+	{
+		// fields
+	
+		bool :target:`dirty<doxid-d8/dac/structtw__config__table_1a85b89af93c3096684347f7299b6f2db2>`;
+		uint32_t :target:`enable_globals<doxid-d8/dac/structtw__config__table_1a10213b02278f3e3e8e1e343ffe13b13f>`;
+		struct :ref:`tw_config_output<doxid-d8/d4a/structtw__config__output>` :target:`outputs<doxid-d8/dac/structtw__config__table_1a2a8926f27729936c527a400367133e3f>`[8];
+		pending_layout_t :target:`layout<doxid-d8/dac/structtw__config__table_1a7dc4039853b365cc65d52538fcf1a5a3>`;
+		struct tw_config_table::@15 :target:`workspaces<doxid-d8/dac/structtw__config__table_1a6eec0968b7f315ac6153d8a1d05b6fd9>`[MAX_WORKSPACES];
+		pending_uintval_t :target:`desktop_igap<doxid-d8/dac/structtw__config__table_1a104c5534664be17130506d4c9abd9ce4>`;
+		pending_uintval_t :target:`desktop_ogap<doxid-d8/dac/structtw__config__table_1ad2a69dcbf8f08602c74349ac608cab65>`;
+		pending_panel_pos_t :target:`panel_pos<doxid-d8/dac/structtw__config__table_1ae978036a196e21c1b47b4fdfe8af7018>`;
+		pending_intval_t :target:`sleep_timer<doxid-d8/dac/structtw__config__table_1aca6ff5f807239064fb04506340a5a938>`;
+		pending_intval_t :target:`lock_timer<doxid-d8/dac/structtw__config__table_1a5a59d4b348b236fb48c97e0cb054872b>`;
+		pending_theme_t :target:`theme<doxid-d8/dac/structtw__config__table_1a423ac42e0ffe3003112277c8bf6a9c57>`;
+		struct xkb_rule_names* :target:`xkb_rules<doxid-d8/dac/structtw__config__table_1a1c87b41c274287160ffd25b8639ef05d>`;
+		pending_intval_t :ref:`kb_repeat<doxid-d8/dac/structtw__config__table_1ae3d367c1fd9fd34b083bec76fd261ba2>`;
+		pending_intval_t :ref:`kb_delay<doxid-d8/dac/structtw__config__table_1a6e55532df9299c657b8989b9e5ab1c82>`;
+	};
+.. _details-d8/dac/structtw__config__table:
+
+Detailed Documentation
+~~~~~~~~~~~~~~~~~~~~~~
+
+
+
+Fields
+------
+
+.. index:: pair: variable; kb_repeat
+.. _doxid-d8/dac/structtw__config__table_1ae3d367c1fd9fd34b083bec76fd261ba2:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	pending_intval_t kb_repeat
+
+invalid: -1
+
+.. index:: pair: variable; kb_delay
+.. _doxid-d8/dac/structtw__config__table_1a6e55532df9299c657b8989b9e5ab1c82:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	pending_intval_t kb_delay
+
+invalid: -1
+

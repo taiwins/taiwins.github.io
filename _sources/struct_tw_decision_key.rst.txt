@@ -1,0 +1,25 @@
+.. index:: pair: struct; tw_decision_key
+.. _doxid-db/de1/structtw__decision__key:
+
+struct tw_decision_key
+======================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <shared_config.h>
+	
+	struct tw_decision_key
+	{
+		// fields
+	
+		char :target:`app_name<doxid-db/de1/structtw__decision__key_1a47586ebbcc249ddb936cceb285774083>`[128];
+		bool :target:`floating<doxid-db/de1/structtw__decision__key_1a41a5eecda08675b960565a619d560265>`;
+		int :target:`scale<doxid-db/de1/structtw__decision__key_1a998a556db188506334a3c80ce66b54d7>`;
+	};

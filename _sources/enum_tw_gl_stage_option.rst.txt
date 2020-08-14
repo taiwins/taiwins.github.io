@@ -1,0 +1,19 @@
+.. index:: pair: enum; tw_gl_stage_option
+.. _doxid-dc/dea/glhelper_8h_1a9fe38494121a9425c1f7aac23fc136ba:
+
+enum tw_gl_stage_option
+=======================
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <glhelper.h>
+
+	enum tw_gl_stage_option
+	{
+	    :target:`TW_GL_STAGE_HAS_STENCIL<doxid-dc/dea/glhelper_8h_1a9fe38494121a9425c1f7aac23fc136baa59f9930dc697d97c3855b6969a6b05a1>` =(1<<0),
+	    :target:`TW_GL_STAGE_HAS_DEPTH<doxid-dc/dea/glhelper_8h_1a9fe38494121a9425c1f7aac23fc136baaa9cefd697a4e4027bf7a88265744d0db>`   =(1<<1),
+	};
+

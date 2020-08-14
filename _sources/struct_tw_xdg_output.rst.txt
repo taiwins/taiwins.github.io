@@ -1,0 +1,39 @@
+.. index:: pair: struct; tw_xdg_output
+.. _doxid-dd/d10/structtw__xdg__output:
+
+struct tw_xdg_output
+====================
+
+.. toctree::
+	:hidden:
+
+Overview
+~~~~~~~~
+
+taiwins output information :ref:`More...<details-dd/d10/structtw__xdg__output>`
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <xdg.h>
+	
+	struct tw_xdg_output
+	{
+		// fields
+	
+		struct :ref:`tw_backend_output<doxid-d4/d63/structtw__backend__output>`* :target:`output<doxid-dd/d10/structtw__xdg__output_1aa049f1b9c17c115de02c553649daf568>`;
+		pixman_rectangle32_t :target:`desktop_area<doxid-dd/d10/structtw__xdg__output_1acd3becfe00b3d15915663c6196e1c413>`;
+		int32_t :target:`idx<doxid-dd/d10/structtw__xdg__output_1ad31390ff153949e7759664d0bec45c5d>`;
+		uint32_t :target:`inner_gap<doxid-dd/d10/structtw__xdg__output_1a5043ca3515af2f3573df62bcb4596c7a>`;
+		uint32_t :target:`outer_gap<doxid-dd/d10/structtw__xdg__output_1a4c9f799be26467227f2d0a80cda1767a>`;
+	};
+.. _details-dd/d10/structtw__xdg__output:
+
+Detailed Documentation
+~~~~~~~~~~~~~~~~~~~~~~
+
+taiwins output information
+
+here we define some template structures. It is passed as pure data, and they are not persistent. So don't store them as pointers.
+

@@ -1,0 +1,40 @@
+.. index:: pair: struct; tw_globals
+.. _doxid-dc/dde/structtw__globals:
+
+struct tw_globals
+=================
+
+.. toctree::
+	:hidden:
+
+	struct_tw_globals_wl_inputs.rst
+
+global context for one application (can be shared with multiple surface)
+
+It contains almost everything and app_surface should have a reference of this.
+
+This struct is indeed rather big (currently 488 bytes), we would want to fit in L1 Cache
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <client.h>
+	
+	struct tw_globals
+	{
+		// structs
+	
+		struct :ref:`wl_inputs<doxid-da/d43/structtw__globals_1_1wl__inputs>`;
+
+		// fields
+	
+		struct wl_compositor* :target:`compositor<doxid-dc/dde/structtw__globals_1a668ebec61a7edd38a28fbd1dc25b1e32>`;
+		struct wl_display* :target:`display<doxid-dc/dde/structtw__globals_1a640722ae3c8de0d1fdeb9fa7164030af>`;
+		struct wl_shm* :target:`shm<doxid-dc/dde/structtw__globals_1a441dde5ed8454affbe79c8f72272ade7>`;
+		struct wl_data_device_manager* :target:`wl_data_device_manager<doxid-dc/dde/structtw__globals_1a483308b86edb93da6503e0039e34b89a>`;
+		enum wl_shm_format :target:`buffer_format<doxid-dc/dde/structtw__globals_1a2bed6ddc7a9f31fb2bb956d852d9bc32>`;
+		struct :ref:`tw_globals::wl_inputs<doxid-da/d43/structtw__globals_1_1wl__inputs>` :target:`inputs<doxid-dc/dde/structtw__globals_1a8058ee199e2322c6610912fad8274eb7>`;
+		const struct tw_theme* :target:`theme<doxid-dc/dde/structtw__globals_1a3dcdea475d19570eab63c6f1dacd7f2d>`;
+		struct :ref:`tw_event_queue<doxid-d3/d59/structtw__event__queue>` :target:`event_queue<doxid-dc/dde/structtw__globals_1aacca1704affb19f2ac4b0eb294d5aa4c>`;
+	};

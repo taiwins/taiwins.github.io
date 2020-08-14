@@ -1,0 +1,28 @@
+.. index:: pair: struct; dhash_table
+.. _doxid-d0/d89/structdhash__table:
+
+struct dhash_table
+==================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <hash.h>
+	
+	struct dhash_table
+	{
+		// fields
+	
+		:ref:`vector_t<doxid-d3/d8b/structvector__t>` :target:`keys<doxid-d0/d89/structdhash__table_1a4f142efeabfb9919a03a76fc590cbf1f>`;
+		:ref:`vector_t<doxid-d3/d8b/structvector__t>` :target:`data<doxid-d0/d89/structdhash__table_1a24bc0a3efe5aba0af0dea8cde5952450>`;
+		size_t :target:`allocated<doxid-d0/d89/structdhash__table_1ac6c365a0fd5a64d9d05239c1be3aa64b>`;
+		:ref:`hash_func_t<doxid-d8/d54/twclient_2subprojects_2ctypes_2include_2ctypes_2hash_8h_1a1d89c9c2878f7c606014a909d4f4318b>` :target:`hash0<doxid-d0/d89/structdhash__table_1a8202eecb369c4381dea5c542c5198c27>`;
+		:ref:`hash_func_t<doxid-d8/d54/twclient_2subprojects_2ctypes_2include_2ctypes_2hash_8h_1a1d89c9c2878f7c606014a909d4f4318b>` :target:`hash1<doxid-d0/d89/structdhash__table_1a2af02847e599b3bdeaeb14114e05bdc7>`;
+		:ref:`hash_cmp_func_t<doxid-d8/d54/twclient_2subprojects_2ctypes_2include_2ctypes_2hash_8h_1a7cd98cbed0a4b982eefb3a18ab036a09>` :target:`cmp<doxid-d0/d89/structdhash__table_1ac650d5426442377a4e615d7dcf185493>`;
+	};

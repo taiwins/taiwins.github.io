@@ -1,0 +1,21 @@
+.. index:: pair: enum; tw_layout_type
+.. _doxid-df/d2b/xdg_8h_1a508c2aaa086bf5bfa0483bc01f47cdc0:
+
+enum tw_layout_type
+===================
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <xdg.h>
+
+	enum tw_layout_type
+	{
+	    :target:`LAYOUT_FLOATING<doxid-df/d2b/xdg_8h_1a508c2aaa086bf5bfa0483bc01f47cdc0a493876fcadfdaaa69ca7d64e18812c94>`,
+	    :target:`LAYOUT_TILING<doxid-df/d2b/xdg_8h_1a508c2aaa086bf5bfa0483bc01f47cdc0a0f03f60dc38b3e4904bdf87de5c9a559>`,
+	    :target:`LAYOUT_MAXIMIZED<doxid-df/d2b/xdg_8h_1a508c2aaa086bf5bfa0483bc01f47cdc0a62118f1b939ee84c4b0ba4b04c8fa50e>`,
+	    :target:`LAYOUT_FULLSCREEN<doxid-df/d2b/xdg_8h_1a508c2aaa086bf5bfa0483bc01f47cdc0ae0eb2df9de33d818ea8b809b71d7e4af>`,
+	};
+

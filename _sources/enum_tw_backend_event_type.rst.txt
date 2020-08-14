@@ -1,0 +1,22 @@
+.. index:: pair: enum; tw_backend_event_type
+.. _doxid-de/d34/backend_8h_1a4b9dd6b0857d669c3ca00c117cedf6ab:
+
+enum tw_backend_event_type
+==========================
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <backend.h>
+
+	enum tw_backend_event_type
+	{
+	    :target:`TW_BACKEND_ADD_OUTPUT<doxid-de/d34/backend_8h_1a4b9dd6b0857d669c3ca00c117cedf6abae56ead43c9621bd585979d7589797e2f>`,
+	    :target:`TW_BACKEND_RM_OUTPUT<doxid-de/d34/backend_8h_1a4b9dd6b0857d669c3ca00c117cedf6abaf16ad9bfda74f170596fd7a666aac59f>`,
+	    :target:`TW_BACKEND_ADD_SEAT<doxid-de/d34/backend_8h_1a4b9dd6b0857d669c3ca00c117cedf6abaac2509e5a9471f3777b00b3ba19d1d36>`,
+	    :target:`TW_BACKEND_RM_SEAT<doxid-de/d34/backend_8h_1a4b9dd6b0857d669c3ca00c117cedf6abaa9a6a6e7edd7146066f7aa9766cd233a>`,
+	    :target:`TW_BACKEND_CH_SEAT<doxid-de/d34/backend_8h_1a4b9dd6b0857d669c3ca00c117cedf6abafbc6440b7f07fdfa2ec0aa95dffa9d76>`,
+	};
+

@@ -1,0 +1,20 @@
+.. index:: pair: enum; nk_wl_font_slant
+.. _doxid-da/df8/nk__backends_8h_1adc2efa3c49750560fb331e4331ae5b19:
+
+enum nk_wl_font_slant
+=====================
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <nk_backends.h>
+
+	enum nk_wl_font_slant
+	{
+	    :target:`NK_WL_SLANT_ROMAN<doxid-da/df8/nk__backends_8h_1adc2efa3c49750560fb331e4331ae5b19a2a8d0104d4acf9b50993a90767eec9a4>`,
+	    :target:`NK_WL_SLANT_ITALIC<doxid-da/df8/nk__backends_8h_1adc2efa3c49750560fb331e4331ae5b19a589f4a660cd6cb6e7f34d901018fe0eb>`,
+	    :target:`NK_WL_SLANT_OBLIQUE<doxid-da/df8/nk__backends_8h_1adc2efa3c49750560fb331e4331ae5b19a0320e265dc21e7cefe3cbba8fcf32bf0>`,
+	};
+

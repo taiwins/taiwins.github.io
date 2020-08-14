@@ -1,0 +1,28 @@
+.. index:: pair: struct; tw_pointer_grab_interface
+.. _doxid-d6/d1f/structtw__pointer__grab__interface:
+
+struct tw_pointer_grab_interface
+================================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <seat.h>
+	
+	struct tw_pointer_grab_interface
+	{
+		// fields
+	
+		void(* :target:`enter<doxid-d6/d1f/structtw__pointer__grab__interface_1a3bfd855f4fe49c7bb26a4a675de5d9fb>`)(struct tw_seat_pointer_grab *grab, struct wl_resource *surface, double sx, double sy);
+		void(* :target:`motion<doxid-d6/d1f/structtw__pointer__grab__interface_1a74485c85e8bc05d95d3a378be4da175d>`)(struct tw_seat_pointer_grab *grab, uint32_t time_msec, double sx, double sy);
+		void(* :target:`button<doxid-d6/d1f/structtw__pointer__grab__interface_1a063b8a7e5522d8d4b69c735f5db22272>`)(struct tw_seat_pointer_grab *grab, uint32_t time_msec, uint32_t button, enum wl_pointer_button_state state);
+		void(* :target:`axis<doxid-d6/d1f/structtw__pointer__grab__interface_1adbf0bda1f8ba7a7b29ed8903d6f0cc5e>`)(struct tw_seat_pointer_grab *grab, uint32_t time_msec, enum wl_pointer_axis orientation, double value, int32_t value_discrete, enum wl_pointer_axis_source source);
+		void(* :target:`frame<doxid-d6/d1f/structtw__pointer__grab__interface_1a34cb7ab9179ab030a995aa58c37e9b99>`)(struct tw_seat_pointer_grab *grab);
+		void(* :target:`cancel<doxid-d6/d1f/structtw__pointer__grab__interface_1accb15610ea2c3eeed63fb6f85e102876>`)(struct tw_seat_pointer_grab *grab);
+	};

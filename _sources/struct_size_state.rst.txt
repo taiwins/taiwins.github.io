@@ -1,0 +1,26 @@
+.. index:: pair: struct; size_state
+.. _doxid-db/dd6/structsize__state:
+
+struct size_state
+=================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	
+	struct size_state
+	{
+		// fields
+	
+		char :target:`currdir<doxid-db/dd6/structsize__state_1aa7670f8b2805ad6629042a24798732f0>`[MAX_DIR_LEN];
+		int :target:`curr_size<doxid-db/dd6/structsize__state_1ae6df8acc77bd88c64af790d97376c487>`;
+		int :target:`curr_max_size<doxid-db/dd6/structsize__state_1a6fe856ca5f2e69becf8c012ea104d2f8>`;
+		int :target:`curr_min_size<doxid-db/dd6/structsize__state_1aaf558915cca7a2f9231ef53827033ff7>`;
+		int :target:`curr_scale<doxid-db/dd6/structsize__state_1ad8c8322f99a0778a97e9c7446747883c>`;
+	};

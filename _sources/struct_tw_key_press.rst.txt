@@ -1,0 +1,24 @@
+.. index:: pair: struct; tw_key_press
+.. _doxid-d3/d8e/structtw__key__press:
+
+struct tw_key_press
+===================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <bindings.h>
+	
+	struct tw_key_press
+	{
+		// fields
+	
+		uint32_t :target:`keycode<doxid-d3/d8e/structtw__key__press_1af80d60c19f280580a90e07342104572c>`;
+		uint32_t :target:`modifier<doxid-d3/d8e/structtw__key__press_1a97ab3ee94fad0c823f8b0384ea80d25c>`;
+	};

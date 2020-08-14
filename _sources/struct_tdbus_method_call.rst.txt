@@ -1,0 +1,30 @@
+.. index:: pair: struct; tdbus_method_call
+.. _doxid-dc/d33/structtdbus__method__call:
+
+struct tdbus_method_call
+========================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <tdbus.h>
+	
+	struct tdbus_method_call
+	{
+		// fields
+	
+		const char* :target:`interface<doxid-dc/d33/structtdbus__method__call_1a17a9dfa4254b2e71e4f2eef94db3348a>`;
+		const char* :target:`method_name<doxid-dc/d33/structtdbus__method__call_1a64388b6e9412f62a9d3165046d07703c>`;
+		const char* :target:`destination<doxid-dc/d33/structtdbus__method__call_1ac31e6b489dc8ba8d8c3eec6236e346c6>`;
+		const char* :target:`object_path<doxid-dc/d33/structtdbus__method__call_1a5bf32e8d68cc53f7f631bea828412d1c>`;
+		const char* :target:`sender<doxid-dc/d33/structtdbus__method__call_1ac56896bde82e5d4703a38c33459d2d27>`;
+		struct :ref:`tdbus_message<doxid-d9/db6/structtdbus__message>`* :target:`message<doxid-dc/d33/structtdbus__method__call_1ac1e60108920be8078889ea8a9c1d4123>`;
+		struct :ref:`tdbus<doxid-db/d60/structtdbus>`* :target:`bus<doxid-dc/d33/structtdbus__method__call_1a4e47a55ab15fe502c8740b4997143248>`;
+		void* :target:`user_data<doxid-dc/d33/structtdbus__method__call_1a41b4fa308dc7b93c81a2c8b27871a19f>`;
+	};

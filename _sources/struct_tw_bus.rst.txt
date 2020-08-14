@@ -1,0 +1,25 @@
+.. index:: pair: struct; tw_bus
+.. _doxid-d4/d66/structtw__bus:
+
+struct tw_bus
+=============
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	
+	struct tw_bus
+	{
+		// fields
+	
+		struct wl_display* :target:`display<doxid-d4/d66/structtw__bus_1a3ab20b39f4659c4a4d77d3bed22c7bb0>`;
+		struct :ref:`tdbus<doxid-db/d60/structtdbus>`* :target:`dbus<doxid-d4/d66/structtw__bus_1acf3f663c49b54de25f5ac9d22c357d05>`;
+		struct wl_event_source* :target:`source<doxid-d4/d66/structtw__bus_1aa3f9951e5d37669f6f8ba11a205bf3b2>`;
+		struct wl_listener :target:`display_distroy_listener<doxid-d4/d66/structtw__bus_1a1c1ec0a6403fb83b7b9e01c8dbe56a58>`;
+	};

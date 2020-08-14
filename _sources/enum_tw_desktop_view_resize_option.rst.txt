@@ -1,0 +1,21 @@
+.. index:: pair: enum; tw_desktop_view_resize_option
+.. _doxid-d5/d2d/desktop_2desktop_8h_1a07950a1a1f02998f2700adc788995731:
+
+enum tw_desktop_view_resize_option
+==================================
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <desktop.h>
+
+	enum tw_desktop_view_resize_option
+	{
+	    :target:`RESIZE_LEFT<doxid-d5/d2d/desktop_2desktop_8h_1a07950a1a1f02998f2700adc788995731a1f7cf10fff8b62be6770b050716c6a55>`,
+	    :target:`RESIZE_RIGHT<doxid-d5/d2d/desktop_2desktop_8h_1a07950a1a1f02998f2700adc788995731a4ee11861004ae7e7bdd3c0b1495e0c37>`,
+	    :target:`RESIZE_UP<doxid-d5/d2d/desktop_2desktop_8h_1a07950a1a1f02998f2700adc788995731a9ae706db16528a0cb87239dd1e947e24>`,
+	    :target:`RESIZE_DOWN<doxid-d5/d2d/desktop_2desktop_8h_1a07950a1a1f02998f2700adc788995731a2c58ee84428abe482ad745ad9ba9bec4>`,
+	};
+

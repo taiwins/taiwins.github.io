@@ -1,0 +1,22 @@
+.. index:: pair: enum; taiwins_modifier_mask
+.. _doxid-d9/d3b/ui_8h_1ada4c770739d34af7f3f2b812a1a52edb:
+
+enum taiwins_modifier_mask
+==========================
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <ui.h>
+
+	enum taiwins_modifier_mask
+	{
+	    :target:`TW_NOMOD<doxid-d9/d3b/ui_8h_1ada4c770739d34af7f3f2b812a1a52edbac5f305f93474119f7807635f9a53c774>` = 0,
+	    :target:`TW_ALT<doxid-d9/d3b/ui_8h_1ada4c770739d34af7f3f2b812a1a52edba9cc36b381ee16783c5ef79d119c4f4f4>`   = 1,
+	    :target:`TW_CTRL<doxid-d9/d3b/ui_8h_1ada4c770739d34af7f3f2b812a1a52edba977f7bc6934113e697b48dce80ccbf5b>`  = 2,
+	    :target:`TW_SUPER<doxid-d9/d3b/ui_8h_1ada4c770739d34af7f3f2b812a1a52edba6f8bddae3c023abfcebeb187585b87ba>` = 4,
+	    :target:`TW_SHIFT<doxid-d9/d3b/ui_8h_1ada4c770739d34af7f3f2b812a1a52edbad798b836929e530cbbddc013bde893c1>` = 8,
+	};
+

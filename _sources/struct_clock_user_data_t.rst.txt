@@ -1,0 +1,24 @@
+.. index:: pair: struct; clock_user_data_t
+.. _doxid-dc/d93/structclock__user__data__t:
+
+struct clock_user_data_t
+========================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	
+	struct clock_user_data_t
+	{
+		// fields
+	
+		struct tm :target:`rtm<doxid-dc/d93/structclock__user__data__t_1a992ea308305b8c4dab51472b3e50046a>`;
+		struct tm :target:`fdotm<doxid-dc/d93/structclock__user__data__t_1a00fa57128e8d4d52f6cbcfb9bb170dec>`;
+		struct tm :target:`fdonm<doxid-dc/d93/structclock__user__data__t_1a6fa8f291b10dc14fca2c0a3fdb4961e5>`;
+	};

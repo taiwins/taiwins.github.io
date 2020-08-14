@@ -1,0 +1,30 @@
+.. index:: pair: struct; tw_config_output
+.. _doxid-d8/d4a/structtw__config__output:
+
+struct tw_config_output
+=======================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <config_internal.h>
+	
+	struct tw_config_output
+	{
+		// fields
+	
+		char :target:`name<doxid-d8/d4a/structtw__config__output_1afdffa5dbb5214c88ade6df7d89fbde31>`[24];
+		pending_intval_t :target:`scale<doxid-d8/d4a/structtw__config__output_1ab6b0a1f362ccccd8124fb8afee738eff>`;
+		pending_intval_t :target:`posx<doxid-d8/d4a/structtw__config__output_1ab4a8e0c1e12afe9e925bff22d82a89fd>`;
+		pending_intval_t :target:`posy<doxid-d8/d4a/structtw__config__output_1a699c0559a03f9e40d5200b9c3ec22c1c>`;
+		pending_uintval_t :target:`width<doxid-d8/d4a/structtw__config__output_1a52e2772d0ebfcb2bd5f642956840abb1>`;
+		pending_uintval_t :target:`height<doxid-d8/d4a/structtw__config__output_1a579e01c236ea76dfa3b1c4fe65e2c39d>`;
+		pending_transform_t :target:`transform<doxid-d8/d4a/structtw__config__output_1a3552ede644788599c11e4d2e51a11680>`;
+		pending_boolean_t :target:`enabled<doxid-d8/d4a/structtw__config__output_1abed95deb69d8167f78033585b3015f83>`;
+	};

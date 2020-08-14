@@ -1,0 +1,25 @@
+.. index:: pair: struct; tw_event
+.. _doxid-db/dc2/structtw__event:
+
+struct tw_event
+===============
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <event_queue.h>
+	
+	struct tw_event
+	{
+		// fields
+	
+		void* :target:`data<doxid-db/dc2/structtw__event_1af78907b02587bc52745953bc59222978>`;
+		union wl_argument :target:`arg<doxid-db/dc2/structtw__event_1a3e684663ccef5d90f39da417f3c6db1a>`;
+		int(* :target:`cb<doxid-db/dc2/structtw__event_1ab190385badc803d4626bf5b6dedf8830>`)(struct tw_event *event, int fd);
+	};

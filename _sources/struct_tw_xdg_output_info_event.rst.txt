@@ -1,0 +1,29 @@
+.. index:: pair: struct; tw_xdg_output_info_event
+.. _doxid-d2/ddf/structtw__xdg__output__info__event:
+
+struct tw_xdg_output_info_event
+===============================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <xdg_output.h>
+	
+	struct tw_xdg_output_info_event
+	{
+		// fields
+	
+		struct wl_resource* :target:`wl_output<doxid-d2/ddf/structtw__xdg__output__info__event_1a2b9c9ce1b61a093968b0e7c5620be8ed>`;
+		const char* :target:`name<doxid-d2/ddf/structtw__xdg__output__info__event_1acf6d40fa602b2d67e48de49e776716f6>`;
+		const char* :target:`desription<doxid-d2/ddf/structtw__xdg__output__info__event_1a99cd6049962bc48029c385bca368aad0>`;
+		int32_t :target:`x<doxid-d2/ddf/structtw__xdg__output__info__event_1a7d7a70add1f221affa3193929a9b3e41>`;
+		int32_t :target:`y<doxid-d2/ddf/structtw__xdg__output__info__event_1aca2ab7c90cd20f1ad9a980547236426a>`;
+		uint32_t :target:`width<doxid-d2/ddf/structtw__xdg__output__info__event_1abbd37b712acac8d3eb4f81d95de490fe>`;
+		uint32_t :target:`height<doxid-d2/ddf/structtw__xdg__output__info__event_1a309a3d2d89d695f3c54d380f51f32b35>`;
+	};

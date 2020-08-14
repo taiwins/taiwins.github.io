@@ -1,0 +1,38 @@
+.. index:: pair: union; tdbus_arg_value
+.. _doxid-d7/d1f/uniontdbus__arg__value:
+
+union tdbus_arg_value
+=====================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <tdbus_message_iter.h>
+	
+	union tdbus_arg_value
+	{
+		// fields
+	
+		unsigned char :target:`c<doxid-d7/d1f/uniontdbus__arg__value_1adef194057186a621b9a3aacf52dbc223>`;
+		bool :target:`b<doxid-d7/d1f/uniontdbus__arg__value_1a0f346136d15f384a1003937ce24de014>`;
+		char* :target:`str<doxid-d7/d1f/uniontdbus__arg__value_1ae0ef777434ffabb487b8c94489d93c33>`;
+		int :target:`fd<doxid-d7/d1f/uniontdbus__arg__value_1afa31e4b307760d576569d2057e9b6547>`;
+		int16_t :target:`i16<doxid-d7/d1f/uniontdbus__arg__value_1a9152604841b2de3580f3652af4554834>`;
+		int32_t :target:`i32<doxid-d7/d1f/uniontdbus__arg__value_1aff1ddff4b9aa86118be4fb52d2fcb8d9>`;
+		int64_t :target:`i64<doxid-d7/d1f/uniontdbus__arg__value_1a29f3b4b150eded008d06d0916ab5e069>`;
+		uint16_t :target:`u16<doxid-d7/d1f/uniontdbus__arg__value_1a7e87e13bba1cea46ddc003e903fb9fae>`;
+		uint32_t :target:`u32<doxid-d7/d1f/uniontdbus__arg__value_1ad6f6832a9ceb6ce298d010d973f010f5>`;
+		uint64_t :target:`u64<doxid-d7/d1f/uniontdbus__arg__value_1aba4336436c3b606898135bc46f38a0f3>`;
+		double :target:`d<doxid-d7/d1f/uniontdbus__arg__value_1a51ed1b530bf9e15fd8fa2d43bda42d0b>`;
+		enum :ref:`tdbus_arg_type<doxid-d7/dd4/tdbus__message__iter_8h_1a42cd0f90ef480758989c4c0c4bf9ed23>` :target:`type<doxid-d7/d1f/uniontdbus__arg__value_1a3fdc364827c202087f9624fdcf1c8029>`;
+		unsigned :target:`n<doxid-d7/d1f/uniontdbus__arg__value_1af6379a2426874bef005c6396e995a78d>`;
+		void* :target:`a<doxid-d7/d1f/uniontdbus__arg__value_1a9e40475e7e1aad6f43615565238f6942>`;
+		struct tdbus_arg_value::@60 :target:`arr<doxid-d7/d1f/uniontdbus__arg__value_1aed8a13b9d876e7a7f372014e9688b9a8>`;
+		struct :ref:`tdbus_message_itr<doxid-d9/d48/structtdbus__message__itr>`* :target:`st<doxid-d7/d1f/uniontdbus__arg__value_1abb93da2411ae50c53fb993879cbed7d6>`;
+	};

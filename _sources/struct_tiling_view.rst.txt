@@ -1,0 +1,29 @@
+.. index:: pair: struct; tiling_view
+.. _doxid-db/d53/structtiling__view:
+
+struct tiling_view
+==================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	
+	struct tiling_view
+	{
+		// fields
+	
+		bool :target:`vertical<doxid-db/d53/structtiling__view_1a85d1bc8b0b2baeb33df0d754ef7da2bc>`;
+		float :target:`portion<doxid-db/d53/structtiling__view_1a5c40c6c17088b09c459a873cbd0c1ef2>`;
+		float :target:`interval<doxid-db/d53/structtiling__view_1a07b03db9809bedf1d2658fd147c91d6a>`[2];
+		struct :ref:`tw_xdg_view<doxid-da/d91/structtw__xdg__view>`* :target:`v<doxid-db/d53/structtiling__view_1a739469b59c79ffefa9afcd8953898067>`;
+		struct :ref:`vtree_node<doxid-d7/d47/structvtree__node>` :target:`node<doxid-db/d53/structtiling__view_1ac88ab284fc001ee1ac374162a8a72f6e>`;
+		int8_t :target:`coding<doxid-db/d53/structtiling__view_1a4c572fd4fe53ba42df24b92261458f10>`[32];
+		int8_t :target:`level<doxid-db/d53/structtiling__view_1aa2865d2737f22faeedbac04ad5a7756d>`;
+		struct :ref:`tiling_output<doxid-d0/d9f/structtiling__output>`* :target:`output<doxid-db/d53/structtiling__view_1a5be2511bea6c293c12ecbb69ce032c9e>`;
+	};

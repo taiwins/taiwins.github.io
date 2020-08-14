@@ -1,0 +1,68 @@
+.. index:: pair: struct; tdbus_array
+.. _doxid-da/d6d/structtdbus__array:
+
+struct tdbus_array
+==================
+
+.. toctree::
+	:hidden:
+
+Overview
+~~~~~~~~
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <tdbus_internal.h>
+	
+	struct tdbus_array
+	{
+		// fields
+	
+		size_t :ref:`size<doxid-da/d6d/structtdbus__array_1a7d7ff8cbaae6127e45dc5e28fd34300b>`;
+		size_t :ref:`alloc<doxid-da/d6d/structtdbus__array_1a26acaa99b1d4dd57a55f3b13a44ead9d>`;
+		void* :ref:`data<doxid-da/d6d/structtdbus__array_1a5ed3bdd83802dd09f9b7644b88e1ba39>`;
+	};
+.. _details-da/d6d/structtdbus__array:
+
+Detailed Documentation
+~~~~~~~~~~~~~~~~~~~~~~
+
+
+
+Fields
+------
+
+.. index:: pair: variable; size
+.. _doxid-da/d6d/structtdbus__array_1a7d7ff8cbaae6127e45dc5e28fd34300b:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	size_t size
+
+Array size
+
+.. index:: pair: variable; alloc
+.. _doxid-da/d6d/structtdbus__array_1a26acaa99b1d4dd57a55f3b13a44ead9d:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	size_t alloc
+
+Allocated space
+
+.. index:: pair: variable; data
+.. _doxid-da/d6d/structtdbus__array_1a5ed3bdd83802dd09f9b7644b88e1ba39:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	void* data
+
+Array data
+

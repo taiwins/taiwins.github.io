@@ -1,0 +1,60 @@
+.. index:: pair: struct; tw_xdg_view
+.. _doxid-da/d91/structtw__xdg__view:
+
+struct tw_xdg_view
+==================
+
+.. toctree::
+	:hidden:
+
+Overview
+~~~~~~~~
+
+xdg_view, represents a mapped desktop surface :ref:`More...<details-da/d91/structtw__xdg__view>`
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <workspace.h>
+	
+	struct tw_xdg_view
+	{
+		// fields
+	
+		struct :ref:`tw_desktop_surface<doxid-d4/d0f/structtw__desktop__surface>`* :target:`dsurf<doxid-da/d91/structtw__xdg__view_1aaa274e50df1ffcb472e90bef1494e1c1>`;
+		struct wl_signal :target:`dsurf_umapped_signal<doxid-da/d91/structtw__xdg__view_1a11937c83510f7c0f86ae3715bbd5977f>`;
+		int32_t :target:`x<doxid-da/d91/structtw__xdg__view_1a60c3397b654280fc9a3c7a868990bce4>`;
+		int32_t :ref:`y<doxid-da/d91/structtw__xdg__view_1a3058a35939a34462eacf39242fcfecf9>`;
+		uint32_t :target:`planed_w<doxid-da/d91/structtw__xdg__view_1a3e836b398f61e55d8dc3ad4badd59e39>`;
+		uint32_t :target:`planed_h<doxid-da/d91/structtw__xdg__view_1a9695eac4f0de2862a8d329b2884e4869>`;
+		pixman_rectangle32_t :target:`old_geometry<doxid-da/d91/structtw__xdg__view_1a0e63d15f5f15e7d02442d57164b7c5a9>`;
+		bool :target:`mapped<doxid-da/d91/structtw__xdg__view_1a8bb0c76e1d83cfd42d1c06a357b59e6e>`;
+		struct wl_list :target:`link<doxid-da/d91/structtw__xdg__view_1a13aefbc2d87f2c60f6454fb27de40af7>`;
+		enum :ref:`tw_layout_type<doxid-df/d2b/xdg_8h_1a508c2aaa086bf5bfa0483bc01f47cdc0>` type :target:`prev_type<doxid-da/d91/structtw__xdg__view_1afc916842e758bce79130bf7672fb7f93>`;
+		struct :ref:`tw_xdg_layout<doxid-d0/d65/structtw__xdg__layout>`* :target:`layout<doxid-da/d91/structtw__xdg__view_1a0eafdc711d499176370b48b450a12353>`;
+		struct :ref:`tw_layer<doxid-d7/d6a/structtw__layer>`* :target:`layer<doxid-da/d91/structtw__xdg__view_1a8d2970da1fa9e39a5694a81a19a18c29>`;
+		struct :ref:`tw_xdg_output<doxid-dd/d10/structtw__xdg__output>`* :target:`output<doxid-da/d91/structtw__xdg__view_1a0d41a882a493d5e734ea9cc0517629d5>`;
+		bool :target:`is_xwayland<doxid-da/d91/structtw__xdg__view_1a3f9a3fbea810dcb830cd2cac88d32556>`;
+		struct tw_xdg_view::@24 :target:`xwayland<doxid-da/d91/structtw__xdg__view_1ab296c0f6797780afc624d304e9de74bd>`;
+	};
+.. _details-da/d91/structtw__xdg__view:
+
+Detailed Documentation
+~~~~~~~~~~~~~~~~~~~~~~
+
+xdg_view, represents a mapped desktop surface
+
+Fields
+------
+
+.. index:: pair: variable; y
+.. _doxid-da/d91/structtw__xdg__view_1a3058a35939a34462eacf39242fcfecf9:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	int32_t y
+
+"Planed size" are set by us, where clients need to resize to, but may not yet
+

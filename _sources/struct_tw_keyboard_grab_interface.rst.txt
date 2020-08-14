@@ -1,0 +1,26 @@
+.. index:: pair: struct; tw_keyboard_grab_interface
+.. _doxid-df/d11/structtw__keyboard__grab__interface:
+
+struct tw_keyboard_grab_interface
+=================================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <seat.h>
+	
+	struct tw_keyboard_grab_interface
+	{
+		// fields
+	
+		void(* :target:`enter<doxid-df/d11/structtw__keyboard__grab__interface_1a9f55e9ea415cb2b503c3da26703c91fd>`)(struct tw_seat_keyboard_grab *grab, struct wl_resource *surface, uint32_t keycodes[], size_t n_keycodes);
+		void(* :target:`key<doxid-df/d11/structtw__keyboard__grab__interface_1a1a070aa4f7843a7a01ef3ab861df7bf9>`)(struct tw_seat_keyboard_grab *grab, uint32_t time_msec, uint32_t key, uint32_t state);
+		void(* :target:`modifiers<doxid-df/d11/structtw__keyboard__grab__interface_1aa60a1fda09652663de929653f690e15a>`)(struct tw_seat_keyboard_grab *grab, uint32_t mods_depressed, uint32_t mods_latched, uint32_t mods_locked, uint32_t group);
+		void(* :target:`cancel<doxid-df/d11/structtw__keyboard__grab__interface_1a7266bb8ca043292371406ba6e893c70c>`)(struct tw_seat_keyboard_grab *grab);
+	};

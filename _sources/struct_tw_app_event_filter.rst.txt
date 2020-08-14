@@ -1,0 +1,25 @@
+.. index:: pair: struct; tw_app_event_filter
+.. _doxid-d6/d8a/structtw__app__event__filter:
+
+struct tw_app_event_filter
+==========================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <ui.h>
+	
+	struct tw_app_event_filter
+	{
+		// fields
+	
+		struct wl_list :target:`link<doxid-d6/d8a/structtw__app__event__filter_1a79987bbf049b6e0336068fb556231008>`;
+		enum :ref:`tw_app_event_type<doxid-dc/dd2/ui__event_8h_1a9a7bde48e964c43e87646c68cc96c93e>` :target:`type<doxid-d6/d8a/structtw__app__event__filter_1a16f4679ce4e75af2cee23119294ee3c3>`;
+		bool(* :target:`intercept<doxid-d6/d8a/structtw__app__event__filter_1a7bd68fe41eb25b4f160eb9806f254db1>`)(struct tw_appsurf *, const struct tw_app_event *e);
+	};

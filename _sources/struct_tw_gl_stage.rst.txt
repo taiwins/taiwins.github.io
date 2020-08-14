@@ -1,0 +1,37 @@
+.. index:: pair: struct; tw_gl_stage
+.. _doxid-d3/d87/structtw__gl__stage:
+
+struct tw_gl_stage
+==================
+
+.. toctree::
+	:hidden:
+
+Overview
+~~~~~~~~
+
+gl stage represents a stage of a frame buffer. it have its own inputs and outputs, specified in the the format. :ref:`More...<details-d3/d87/structtw__gl__stage>`
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <glhelper.h>
+	
+	struct tw_gl_stage
+	{
+		// fields
+	
+		GLuint :target:`framebuffer<doxid-d3/d87/structtw__gl__stage_1a4d1c135b8dfd8d7f040c78b2c5e5251b>`;
+		struct wl_array :target:`buffers<doxid-d3/d87/structtw__gl__stage_1a9d6935b8c4c60e073b33be6d7fb89047>`;
+		uint32_t :target:`option<doxid-d3/d87/structtw__gl__stage_1ab6a8a1b860b2544d64149b6e999857d1>`;
+	};
+.. _details-d3/d87/structtw__gl__stage:
+
+Detailed Documentation
+~~~~~~~~~~~~~~~~~~~~~~
+
+gl stage represents a stage of a frame buffer. it have its own inputs and outputs, specified in the the format.
+
+framebuffer represents a collection of multiple render buffers, on resized
+

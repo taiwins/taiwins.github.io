@@ -1,0 +1,28 @@
+.. index:: pair: struct; tw_gl_texture
+.. _doxid-dd/dc6/structtw__gl__texture:
+
+struct tw_gl_texture
+====================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <glhelper.h>
+	
+	struct tw_gl_texture
+	{
+		// fields
+	
+		GLenum :target:`target<doxid-dd/dc6/structtw__gl__texture_1a7c7c9d92ae97dcfea429424f0125a771>`;
+		GLuint :target:`tex<doxid-dd/dc6/structtw__gl__texture_1a668f0978842730df22b3ebe4e40aa2d2>`;
+		GLuint :target:`glformat<doxid-dd/dc6/structtw__gl__texture_1ae5ab51c1261b4e16a800bdb1db52ba1c>`;
+		uint32_t :target:`samples<doxid-dd/dc6/structtw__gl__texture_1a41cfa098b4e95283502f938d7cda5ad9>`;
+		uint32_t :target:`width<doxid-dd/dc6/structtw__gl__texture_1a78b7becd9e7addc08e485e26d29c7eae>`;
+		uint32_t :target:`height<doxid-dd/dc6/structtw__gl__texture_1a052b85bca7e04aad10fe1ed73406ed8b>`;
+	};

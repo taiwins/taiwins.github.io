@@ -1,0 +1,25 @@
+.. index:: pair: struct; tw_region
+.. _doxid-de/df2/structtw__region:
+
+struct tw_region
+================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <surface.h>
+	
+	struct tw_region
+	{
+		// fields
+	
+		struct wl_resource* :target:`resource<doxid-de/df2/structtw__region_1ab8216193724a737a955794205df89b61>`;
+		struct :ref:`tw_surface_manager<doxid-d1/d12/structtw__surface__manager>`* :target:`manager<doxid-de/df2/structtw__region_1a8b90f148ae20898b72f254b5e42b862f>`;
+		pixman_region32_t :target:`region<doxid-de/df2/structtw__region_1a529d84d76fb74acc80c25eb416cf0712>`;
+	};

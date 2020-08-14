@@ -1,0 +1,27 @@
+.. index:: pair: struct; tw_bbox
+.. _doxid-d1/d39/structtw__bbox:
+
+struct tw_bbox
+==============
+
+.. toctree::
+	:hidden:
+
+a rectangle area that supports scales.
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <ui.h>
+	
+	struct tw_bbox
+	{
+		// fields
+	
+		uint16_t :target:`x<doxid-d1/d39/structtw__bbox_1a7645216eb03d931092e00680dc82ff45>`;
+		uint16_t :target:`y<doxid-d1/d39/structtw__bbox_1aa992c3cd82fdd25f4c3978b0f58842fc>`;
+		uint16_t :target:`w<doxid-d1/d39/structtw__bbox_1a1ade1fde658c65db6ede620c25162589>`;
+		uint16_t :target:`h<doxid-d1/d39/structtw__bbox_1a6dcde381d83dc0f090e53bb8260c9581>`;
+		uint8_t :target:`s<doxid-d1/d39/structtw__bbox_1a59f2ffca5ee99d60971b9ad6ed2687b5>`;
+	};

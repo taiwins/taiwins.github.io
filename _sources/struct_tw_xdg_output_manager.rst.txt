@@ -1,0 +1,26 @@
+.. index:: pair: struct; tw_xdg_output_manager
+.. _doxid-db/d15/structtw__xdg__output__manager:
+
+struct tw_xdg_output_manager
+============================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <xdg_output.h>
+	
+	struct tw_xdg_output_manager
+	{
+		// fields
+	
+		struct wl_display* :target:`display<doxid-db/d15/structtw__xdg__output__manager_1acfa6d39053cf64338571e1aae6501614>`;
+		struct wl_global* :target:`global<doxid-db/d15/structtw__xdg__output__manager_1a6ae643792671205978f748b02f3cc343>`;
+		struct wl_listener :target:`display_destroy_listener<doxid-db/d15/structtw__xdg__output__manager_1a8c3b497784b3445376eca0140b153ef7>`;
+		struct wl_signal :target:`xdg_output_requested<doxid-db/d15/structtw__xdg__output__manager_1a55bfa2f5756841f59762ae562ff12f47>`;
+	};

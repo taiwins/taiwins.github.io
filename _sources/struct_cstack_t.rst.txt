@@ -1,0 +1,23 @@
+.. index:: pair: struct; cstack_t
+.. _doxid-d4/d97/structcstack__t:
+
+struct cstack_t
+===============
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <stack.h>
+	
+	struct cstack_t
+	{
+		// fields
+	
+		:ref:`vector_t<doxid-d3/d8b/structvector__t>` :target:`vec<doxid-d4/d97/structcstack__t_1a5111daddaf14d69659178914a958c76e>`;
+	};

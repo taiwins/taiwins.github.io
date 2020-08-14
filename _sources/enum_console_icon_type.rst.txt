@@ -1,0 +1,22 @@
+.. index:: pair: enum; console_icon_type
+.. _doxid-de/d6d/clients_2desktop__console_2console_8h_1a8d649817dc8e8a9f376f47fb99b865f8:
+
+enum console_icon_type
+======================
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <console.h>
+
+	enum console_icon_type
+	{
+	    :target:`CONSOLE_ICON_APP<doxid-de/d6d/clients_2desktop__console_2console_8h_1a8d649817dc8e8a9f376f47fb99b865f8a732bb32ff210de85ee97c9f17cd4eaf9>`    = 1<<0,
+	    :target:`CONSOLE_ICON_MIME<doxid-de/d6d/clients_2desktop__console_2console_8h_1a8d649817dc8e8a9f376f47fb99b865f8a3dd0f0a26b3db58fae17a7bfd462d641>`   = 1<<1,
+	    :target:`CONSOLE_ICON_PLACE<doxid-de/d6d/clients_2desktop__console_2console_8h_1a8d649817dc8e8a9f376f47fb99b865f8a3add8a85d5f64a096bb23ec54b85ee11>`  = 1<<2,
+	    :target:`CONSOLE_ICON_STATUS<doxid-de/d6d/clients_2desktop__console_2console_8h_1a8d649817dc8e8a9f376f47fb99b865f8a5812a1e7eaccd54deb3d052bdcaa7aa2>` = 1<<3,
+	    :target:`CONSOLE_ICON_DEVICE<doxid-de/d6d/clients_2desktop__console_2console_8h_1a8d649817dc8e8a9f376f47fb99b865f8aaf4350b45397db684cb0c489428ef534>` = 1<<4,
+	};
+

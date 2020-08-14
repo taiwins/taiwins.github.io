@@ -1,0 +1,25 @@
+.. index:: pair: struct; tw_seat_pointer_grab
+.. _doxid-d9/d46/structtw__seat__pointer__grab:
+
+struct tw_seat_pointer_grab
+===========================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <seat.h>
+	
+	struct tw_seat_pointer_grab
+	{
+		// fields
+	
+		const struct :ref:`tw_pointer_grab_interface<doxid-d6/d1f/structtw__pointer__grab__interface>`* :target:`impl<doxid-d9/d46/structtw__seat__pointer__grab_1af53765a8134c76c3b7e4b60db481215a>`;
+		struct :ref:`tw_seat<doxid-dc/d28/structtw__seat>`* :target:`seat<doxid-d9/d46/structtw__seat__pointer__grab_1aa2d7c95d381f8d51472fb3be07e911f7>`;
+		void* :target:`data<doxid-d9/d46/structtw__seat__pointer__grab_1aab1971314f4c03a1a4127838fe6ececd>`;
+	};

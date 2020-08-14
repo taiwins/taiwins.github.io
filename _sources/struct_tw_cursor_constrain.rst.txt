@@ -1,0 +1,38 @@
+.. index:: pair: struct; tw_cursor_constrain
+.. _doxid-d5/d5b/structtw__cursor__constrain:
+
+struct tw_cursor_constrain
+==========================
+
+.. toctree::
+	:hidden:
+
+Overview
+~~~~~~~~
+
+constrain the cursor a bound. :ref:`More...<details-d5/d5b/structtw__cursor__constrain>`
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <cursor.h>
+	
+	struct tw_cursor_constrain
+	{
+		// fields
+	
+		pixman_region32_t :target:`region<doxid-d5/d5b/structtw__cursor__constrain_1ac4eafe6dd4be5fbf92d4b33f376a455a>`;
+		struct wl_list :target:`link<doxid-d5/d5b/structtw__cursor__constrain_1af84237687eb23e2a7da9bed83539ee02>`;
+	};
+.. _details-d5/d5b/structtw__cursor__constrain:
+
+Detailed Documentation
+~~~~~~~~~~~~~~~~~~~~~~
+
+constrain the cursor a bound.
+
+This will help to cursor to stay in a bound, also helps to implement cursor wrapping operations.
+
+For testing, cursor will try a delta, if fails in any constrain, it can apply the location. Oherwise it shall clamp to the edge.
+

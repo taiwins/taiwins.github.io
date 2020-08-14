@@ -1,0 +1,28 @@
+.. index:: pair: struct; tw_pointer
+.. _doxid-d8/db5/structtw__pointer:
+
+struct tw_pointer
+=================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <seat.h>
+	
+	struct tw_pointer
+	{
+		// fields
+	
+		struct :ref:`tw_seat_client<doxid-d4/d94/structtw__seat__client>`* :target:`focused_client<doxid-d8/db5/structtw__pointer_1aef60e60b4f89de3f42ecda5a16144e47>`;
+		struct wl_resource* :target:`focused_surface<doxid-d8/db5/structtw__pointer_1a7a50231c529ef674870eb332d3035080>`;
+		struct wl_listener :target:`focused_destroy<doxid-d8/db5/structtw__pointer_1af2ad08d95fe4038fb8a9f165b184a0ad>`;
+		struct :ref:`tw_seat_pointer_grab<doxid-d9/d46/structtw__seat__pointer__grab>` :target:`default_grab<doxid-d8/db5/structtw__pointer_1add2b5274d0effd2c1fcbb0f6bf1ade20>`;
+		struct :ref:`tw_seat_pointer_grab<doxid-d9/d46/structtw__seat__pointer__grab>`* :target:`grab<doxid-d8/db5/structtw__pointer_1a7c723784fba638d0598f12a9a3d9214f>`;
+		uint32_t :target:`btn_count<doxid-d8/db5/structtw__pointer_1aca2dbfc56e7142506c8f446797a604fb>`;
+	};

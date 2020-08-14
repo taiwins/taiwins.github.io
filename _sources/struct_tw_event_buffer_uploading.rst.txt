@@ -1,0 +1,26 @@
+.. index:: pair: struct; tw_event_buffer_uploading
+.. _doxid-d5/d09/structtw__event__buffer__uploading:
+
+struct tw_event_buffer_uploading
+================================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <surface.h>
+	
+	struct tw_event_buffer_uploading
+	{
+		// fields
+	
+		struct :ref:`tw_surface_buffer<doxid-d5/d87/structtw__surface__buffer>`* :target:`buffer<doxid-d5/d09/structtw__event__buffer__uploading_1a91f0894e8e793fd2a00a20bc5725fc91>`;
+		pixman_region32_t* :target:`damages<doxid-d5/d09/structtw__event__buffer__uploading_1afc233a96bb1e8a515c1cbfcf82a0aae7>`;
+		struct wl_resource* :target:`wl_buffer<doxid-d5/d09/structtw__event__buffer__uploading_1abfc5a0b8b96366f8d75945f745ddbfe8>`;
+		bool :target:`new_upload<doxid-d5/d09/structtw__event__buffer__uploading_1a02e25e41dfadb4dd645f1ab4f34e527e>`;
+	};

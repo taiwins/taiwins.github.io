@@ -1,0 +1,24 @@
+.. index:: pair: struct; tw_event_surface_frame
+.. _doxid-d4/d5f/structtw__event__surface__frame:
+
+struct tw_event_surface_frame
+=============================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <surface.h>
+	
+	struct tw_event_surface_frame
+	{
+		// fields
+	
+		struct :ref:`tw_surface<doxid-dd/dda/structtw__surface>`* :target:`surface<doxid-d4/d5f/structtw__event__surface__frame_1aff1d1163441f1406e0920677d8eda22c>`;
+		uint32_t :target:`frame_time<doxid-d4/d5f/structtw__event__surface__frame_1a59780c700a2482d22dd29d6a1b081546>`;
+	};

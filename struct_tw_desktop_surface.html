@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    
+    <title>struct tw_desktop_surface &#8212; Taiwins</title>
+  
+    <link rel="stylesheet" href="_static/bootstrap-sphinx.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/my-style.css" />
+    <link rel="stylesheet" type="text/css" href="_static/doxyrest-pygments.css" />
+    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/language_data.js"></script>
+    <script src="_static/target-highlight.js"></script>
+    <link rel="shortcut icon" href="_static/favicon.ico"/>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="struct tw_desktop_surface_api" href="struct_tw_desktop_surface_api.html" />
+    <link rel="prev" title="struct tw_desktop_manager" href="struct_tw_desktop_manager.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<script type="text/javascript" src="_static/js/jquery-1.11.0.min.js "></script>
+<script type="text/javascript" src="_static/js/jquery-fix.js "></script>
+<script type="text/javascript" src="_static/bootstrap-3.3.7/js/bootstrap.min.js "></script>
+<script type="text/javascript" src="_static/bootstrap-sphinx.js "></script>
+
+  </head><body>
+  <div class="page-container">
+    
+<!-- taken from bootstrap theme -->
+<div id="navbar" class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">
+        <b>Taiwins</b></a>
+      <span class="navbar-text navbar-version pull-left"><b></b></span>
+    </div>
+
+    <div class="collapse navbar-collapse nav-collapse">
+      <ul class="nav navbar-nav">
+	<li><a href="page_doc.html">Documentation</a></li>
+	<li><a href="https://github.com/taiwins/taiwins">Source Code</a></li>
+	<li><a href="https://github.com/taiwins/taiwins/wiki">Wiki</a></li>
+	<!-- add other pages -->
+      </ul>
+    </div>
+  </div>
+</div>
+
+    <div class="container">
+      
+	<div class="row">
+	  <div class="body col-md-9 content" role="main">
+	    
+  <div class="section" id="struct-tw-desktop-surface">
+<span id="doxid-d4-d0f-structtw-desktop-surface"></span><span id="index-0"></span><h1>struct tw_desktop_surface<a class="headerlink" href="#struct-tw-desktop-surface" title="Permalink to this headline">¶</a></h1>
+<div class="toctree-wrapper compound">
+</div>
+<div class="section" id="overview">
+<h2>Overview<a class="headerlink" href="#overview" title="Permalink to this headline">¶</a></h2>
+<pre class="highlight doxyrest-overview-code-block literal-block"><span></span><span class="cp">#include</span> <span class="cpf">&lt;desktop.h&gt;</span><span class="cp"></span>
+
+<span class="k">struct</span> <span class="n">tw_desktop_surface</span>
+<span class="p">{</span>
+    <span class="c1">// fields</span>
+
+    <span class="k">struct</span> <span class="n">wl_resource</span><span class="o">*</span> <a class="reference internal" href="#doxid-d4-d0f-structtw-desktop-surface-1a9e3151185917df8c23bd9d7ddc2982a3"><span class="std std-ref">resource</span></a><span></span><span class="p">;</span>
+    <span class="k">struct</span> <a class="reference internal" href="struct_tw_surface.html#doxid-dd-dda-structtw-surface"><span class="std std-ref">tw_surface</span></a><span></span><span class="o">*</span> <span class="doxyrest-code-target target" id="doxid-d4-d0f-structtw-desktop-surface-1a28998b509c2778507f457575a59ba923"><span></span><span class="n">tw_surface</span></span><span></span><span class="p">;</span>
+    <span class="k">struct</span> <a class="reference internal" href="struct_tw_desktop_manager.html#doxid-dd-d73-structtw-desktop-manager"><span class="std std-ref">tw_desktop_manager</span></a><span></span><span class="o">*</span> <span class="doxyrest-code-target target" id="doxid-d4-d0f-structtw-desktop-surface-1af5064978b63ba99281b619033b55729e"><span></span><span class="n">desktop</span></span><span></span><span class="p">;</span>
+    <span class="k">enum</span> <a class="reference internal" href="enum_tw_desktop_surface_type.html#doxid-d5-da2-include-2taiwins-2objects-2desktop-8h-1a7eaa5ee6afc99c7b1ad6ce35c0dbff76"><span class="std std-ref">tw_desktop_surface_type</span></a><span></span> <span class="doxyrest-code-target target" id="doxid-d4-d0f-structtw-desktop-surface-1a0a51de1ebf514162eeb873063fd949cd"><span></span><span class="n">type</span></span><span></span><span class="p">;</span>
+    <span class="kt">bool</span> <span class="doxyrest-code-target target" id="doxid-d4-d0f-structtw-desktop-surface-1a942f83c303fe9b99fba071a8ab84ae43"><span></span><span class="n">fullscreened</span></span><span></span><span class="p">;</span>
+    <span class="kt">bool</span> <span class="doxyrest-code-target target" id="doxid-d4-d0f-structtw-desktop-surface-1a8a77477b7eea93d6d28e5afea2492b83"><span></span><span class="n">maximized</span></span><span></span><span class="p">;</span>
+    <span class="kt">bool</span> <span class="doxyrest-code-target target" id="doxid-d4-d0f-structtw-desktop-surface-1ab91568ff2f2bc206d9e9aa68db16ac72"><span></span><span class="n">surface_added</span></span><span></span><span class="p">;</span>
+    <span class="kt">char</span><span class="o">*</span> <span class="doxyrest-code-target target" id="doxid-d4-d0f-structtw-desktop-surface-1a64490976581c3a1301acb900aab824a1"><span></span><span class="n">title</span></span><span></span><span class="p">;</span>
+    <span class="kt">char</span><span class="o">*</span> <span class="doxyrest-code-target target" id="doxid-d4-d0f-structtw-desktop-surface-1aec78b5bd7c5f9a2c116a0befb5aecb14"><span></span><span class="k">class</span></span><span></span><span class="p">;</span>
+    <span class="kt">int</span> <span class="doxyrest-code-target target" id="doxid-d4-d0f-structtw-desktop-surface-1a900c9b1226cc665869bb44c3a125d0cd"><span></span><span class="n">x</span></span><span></span><span class="p">;</span>
+    <span class="kt">int</span> <span class="doxyrest-code-target target" id="doxid-d4-d0f-structtw-desktop-surface-1a392cec44398379abb7428c2feda27c64"><span></span><span class="n">y</span></span><span></span><span class="p">;</span>
+    <span class="kt">unsigned</span> <span class="kt">int</span> <span class="doxyrest-code-target target" id="doxid-d4-d0f-structtw-desktop-surface-1aa5acb0448cdcf4e24266bc94d2b89118"><span></span><span class="n">w</span></span><span></span><span class="p">;</span>
+    <span class="kt">unsigned</span> <span class="kt">int</span> <span class="doxyrest-code-target target" id="doxid-d4-d0f-structtw-desktop-surface-1a60ef4cc2b3e9fe3760ae2340f4df6db6"><span></span><span class="n">h</span></span><span></span><span class="p">;</span>
+    <span class="k">struct</span> <span class="n">tw_desktop_surface</span><span class="o">::</span><span class="err">@</span><span class="mi">36</span> <a class="reference internal" href="#doxid-d4-d0f-structtw-desktop-surface-1a465f687cbd8ebda48324646ab307b0e2"><span class="std std-ref">window_geometry</span></a><span></span><span class="p">;</span>
+    <span class="kt">void</span><span class="p">(</span><span class="o">*</span> <span class="doxyrest-code-target target" id="doxid-d4-d0f-structtw-desktop-surface-1af0c749bfb470731d4fee8f06f1cb5dcd"><span></span><span class="n">configure</span></span><span></span><span class="p">)(</span><span class="k">struct</span> <span class="n">tw_desktop_surface</span> <span class="o">*</span><span class="n">surface</span><span class="p">,</span> <span class="k">enum</span> <span class="n">wl_shell_surface_resize</span> <span class="n">edge</span><span class="p">,</span> <span class="kt">int32_t</span> <span class="n">x</span><span class="p">,</span> <span class="kt">int32_t</span> <span class="n">y</span><span class="p">,</span> <span class="kt">unsigned</span> <span class="n">width</span><span class="p">,</span> <span class="kt">unsigned</span> <span class="n">height</span><span class="p">);</span>
+    <span class="kt">void</span><span class="p">(</span><span class="o">*</span> <span class="doxyrest-code-target target" id="doxid-d4-d0f-structtw-desktop-surface-1a1195b1b663e551f809ad9f81ea00f9be"><span></span><span class="n">close</span></span><span></span><span class="p">)(</span><span class="k">struct</span> <span class="n">tw_desktop_surface</span> <span class="o">*</span><span class="n">surface</span><span class="p">);</span>
+    <span class="kt">void</span><span class="o">*</span> <span class="doxyrest-code-target target" id="doxid-d4-d0f-structtw-desktop-surface-1a260a1be93e1a2eb22839e07489904b84"><span></span><span class="n">user_data</span></span><span></span><span class="p">;</span>
+<span class="p">};</span></pre>
+</div>
+<div class="section" id="detailed-documentation">
+<span id="details-d4-d0f-structtw-desktop-surface"></span><h2>Detailed Documentation<a class="headerlink" href="#detailed-documentation" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="fields">
+<h3>Fields<a class="headerlink" href="#fields" title="Permalink to this headline">¶</a></h3>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-d4-d0f-structtw-desktop-surface-1a9e3151185917df8c23bd9d7ddc2982a3"><span id="index-1"></span><span></span><span class="k">struct</span> <span class="n">wl_resource</span><span class="o">*</span> <span class="n">resource</span></pre>
+<p>shared by implementation</p>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-d4-d0f-structtw-desktop-surface-1a465f687cbd8ebda48324646ab307b0e2"><span id="index-2"></span><span></span><span class="n">unnamed</span><span class="o">-</span><span class="k">struct</span> <span class="n">window_geometry</span></pre>
+<p>the window geometry for this given desktop surface, always available after every commit. The value before the initial commit is 0.</p>
+</div>
+</div>
+</div>
+
+
+	  </div>
+	  
+<div class="col-md-3">
+  <div id="sidebar" class="bs-sidenav">
+<h3>Content</h3>
+<div id="localtoc"><ul>
+<li><a class="reference internal" href="#">struct tw_desktop_surface</a><ul>
+<li><a class="reference internal" href="#overview">Overview</a></li>
+<li><a class="reference internal" href="#detailed-documentation">Detailed Documentation</a><ul>
+<li><a class="reference internal" href="#fields">Fields</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<h3><a data-toggle="collapse" href="#globaltoc">Related Pages</a></h3>
+<div id="globaltoc" class="collapse">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="page_md__home_developer_Projects_taiwins-web-src_taiwins_docs_api.html">Client data structures</a></li>
+<li class="toctree-l1"><a class="reference internal" href="page_md__home_developer_Projects_taiwins-web-src_taiwins_CONTRIBUTING.html">Contributing to Taiwins</a></li>
+<li class="toctree-l1"><a class="reference internal" href="page_md__home_developer_Projects_taiwins-web-src_taiwins_docs_lua.html">Lua bindings</a></li>
+<li class="toctree-l1"><a class="reference internal" href="page_md__home_developer_Projects_taiwins-web-src_taiwins_docs_window_management.html">Taiwins layout engine.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="page_md__home_developer_Projects_taiwins-web-src_taiwins_README.html">Taiwins, a morden wayland window manager</a></li>
+<li class="toctree-l1"><a class="reference internal" href="page_md__home_developer_Projects_taiwins-web-src_taiwins_subprojects_twclient_README.html">wayland client utility library</a></li>
+<li class="toctree-l1"><a class="reference internal" href="page_md__home_developer_Projects_taiwins-web-src_taiwins_docs_wayland.html">wayland objects</a></li>
+</ul>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="global.html">Global Namespace</a></li>
+</ul>
+
+</div>
+<form action="search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+  </div>
+</div>
+
+	</div>
+      
+    </div>
+    <div class="push"></div>
+  </div>
+
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+    </p>
+    <p>
+        &copy; Copyright 2020, Xichen Zhou.<br/>
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 3.0.3.<br/>
+    </p>
+  </div>
+</footer>
+  </body>
+</html>

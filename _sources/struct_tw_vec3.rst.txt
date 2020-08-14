@@ -1,0 +1,25 @@
+.. index:: pair: struct; tw_vec3
+.. _doxid-da/db4/structtw__vec3:
+
+struct tw_vec3
+==============
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <matrix.h>
+	
+	struct tw_vec3
+	{
+		// fields
+	
+		float :target:`x<doxid-da/db4/structtw__vec3_1a87619e495e3c3a805d6f6d194a561ef2>`;
+		float :target:`y<doxid-da/db4/structtw__vec3_1aaa44494c87e6791d0944a03ae7da3a67>`;
+		float :target:`z<doxid-da/db4/structtw__vec3_1a11dd3f362c7934065b99fcaf08d73610>`;
+	};

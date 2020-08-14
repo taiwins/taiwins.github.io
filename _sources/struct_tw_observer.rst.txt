@@ -1,0 +1,36 @@
+.. index:: pair: struct; tw_observer
+.. _doxid-da/d6d/structtw__observer:
+
+struct tw_observer
+==================
+
+.. toctree::
+	:hidden:
+
+Overview
+~~~~~~~~
+
+classic observer pattern, :ref:`More...<details-da/d6d/structtw__observer>`
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <client.h>
+	
+	struct tw_observer
+	{
+		// fields
+	
+		struct wl_list :target:`link<doxid-da/d6d/structtw__observer_1aeaa13f5ef8b3e42c046e5d861981b24e>`;
+		void(* :target:`update<doxid-da/d6d/structtw__observer_1a53356bdd2f59a5b9f1bcf9078fc1e5dc>`)(struct tw_observer *listener, void *data);
+	};
+.. _details-da/d6d/structtw__observer:
+
+Detailed Documentation
+~~~~~~~~~~~~~~~~~~~~~~
+
+classic observer pattern,
+
+much like wl_signal wl_listener, but not available for wayland clients
+

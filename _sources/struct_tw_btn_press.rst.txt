@@ -1,0 +1,24 @@
+.. index:: pair: struct; tw_btn_press
+.. _doxid-dd/d61/structtw__btn__press:
+
+struct tw_btn_press
+===================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <bindings.h>
+	
+	struct tw_btn_press
+	{
+		// fields
+	
+		uint32_t :target:`btn<doxid-dd/d61/structtw__btn__press_1a3bd8871bbc1808e2c0717a93998461ac>`;
+		uint32_t :target:`modifier<doxid-dd/d61/structtw__btn__press_1aaccb35bb7ecd602d6d7fff24472bae2d>`;
+	};

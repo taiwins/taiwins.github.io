@@ -1,0 +1,56 @@
+.. index:: pair: struct; tw_workspace
+.. _doxid-db/d51/structtw__workspace:
+
+struct tw_workspace
+===================
+
+.. toctree::
+	:hidden:
+
+Overview
+~~~~~~~~
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <workspace.h>
+	
+	struct tw_workspace
+	{
+		// fields
+	
+		struct :ref:`tw_layers_manager<doxid-dd/d64/structtw__layers__manager>`* :target:`layers_manager<doxid-db/d51/structtw__workspace_1a9fddfc3ab6f731ba654d374ba1b6e157>`;
+		struct wl_list :target:`layouts<doxid-db/d51/structtw__workspace_1a251ed001e6a52bf93ba153f0dbc65c82>`;
+		uint32_t :target:`idx<doxid-db/d51/structtw__workspace_1a917fb508eb1af5fa3bcc0dd15c24bc95>`;
+		struct :ref:`tw_layer<doxid-d7/d6a/structtw__layer>` :target:`hidden_layer<doxid-db/d51/structtw__workspace_1a013cf91fff8a4e73c88d34d84d002365>`;
+		struct :ref:`tw_layer<doxid-d7/d6a/structtw__layer>` :target:`fullscreen_back_layer<doxid-db/d51/structtw__workspace_1aabd6c7f7c1b69a16d6d9f372b4e2845b>`;
+		struct :ref:`tw_layer<doxid-d7/d6a/structtw__layer>` :target:`back_layer<doxid-db/d51/structtw__workspace_1a3a39ab340958332db26f2f9dcf8d2e6f>`;
+		struct :ref:`tw_layer<doxid-d7/d6a/structtw__layer>` :target:`mid_layer<doxid-db/d51/structtw__workspace_1a8be76d74aa2ce8ad710e76188648dd64>`;
+		struct :ref:`tw_layer<doxid-d7/d6a/structtw__layer>` :target:`front_layer<doxid-db/d51/structtw__workspace_1a433857d026e1fab321549d278b6eb1ea>`;
+		struct :ref:`tw_layer<doxid-d7/d6a/structtw__layer>` :target:`fullscreen_layer<doxid-db/d51/structtw__workspace_1ad2f33b675de84c9923fa39605c6b452c>`;
+		enum :ref:`tw_layout_type<doxid-df/d2b/xdg_8h_1a508c2aaa086bf5bfa0483bc01f47cdc0>` :ref:`current_layout<doxid-db/d51/structtw__workspace_1a252a5a403a07ab9409f2ee78fd9c73c7>`;
+		struct wl_list :target:`recent_views<doxid-db/d51/structtw__workspace_1a364c2cf509adbf847d30694a4c193f41>`;
+	};
+.. _details-db/d51/structtw__workspace:
+
+Detailed Documentation
+~~~~~~~~~~~~~~~~~~~~~~
+
+
+
+Fields
+------
+
+.. index:: pair: variable; current_layout
+.. _doxid-db/d51/structtw__workspace_1a252a5a403a07ab9409f2ee78fd9c73c7:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	enum :ref:`tw_layout_type<doxid-df/d2b/xdg_8h_1a508c2aaa086bf5bfa0483bc01f47cdc0>` current_layout
+
+current workspace can be in state like floating, tiling, fullscreen
+

@@ -1,0 +1,23 @@
+.. index:: pair: struct; app_module_data
+.. _doxid-d8/d16/structapp__module__data:
+
+struct app_module_data
+======================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	
+	struct app_module_data
+	{
+		// fields
+	
+		:ref:`vector_t<doxid-d3/d8b/structvector__t>` :target:`xdg_app_vector<doxid-d8/d16/structapp__module__data_1aad1b9cc5f821d45ec196f7b672da57bc>`;
+		:ref:`vector_t<doxid-d3/d8b/structvector__t>` :target:`icons<doxid-d8/d16/structapp__module__data_1a6ec91c09da205186be5ee5582966928d>`;
+	};

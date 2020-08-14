@@ -1,0 +1,32 @@
+.. index:: pair: struct; tw_dmabuf_attributes
+.. _doxid-d3/d75/structtw__dmabuf__attributes:
+
+struct tw_dmabuf_attributes
+===========================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <dmabuf.h>
+	
+	struct tw_dmabuf_attributes
+	{
+		// fields
+	
+		int32_t :target:`width<doxid-d3/d75/structtw__dmabuf__attributes_1a652ded80e9e80368b214c7455f13c662>`;
+		int32_t :target:`height<doxid-d3/d75/structtw__dmabuf__attributes_1a19ac79742de6ea4d9798d36ace2e677c>`;
+		uint32_t :target:`format<doxid-d3/d75/structtw__dmabuf__attributes_1a46e7fec371fe1d8f65e67da52284e0cd>`;
+		uint32_t :target:`flags<doxid-d3/d75/structtw__dmabuf__attributes_1a80b4a9175f9f7b1dd565dcd2badc47e5>`;
+		int :target:`n_planes<doxid-d3/d75/structtw__dmabuf__attributes_1ad256e8c4c95cac47e41eea57a8f4184f>`;
+		int :target:`fds<doxid-d3/d75/structtw__dmabuf__attributes_1af8092512504119a419f654d4beb6eb59>`[TW_DMA_MAX_PLANES];
+		uint32_t :target:`strides<doxid-d3/d75/structtw__dmabuf__attributes_1a2ce6fd35e62e0a6e237cac4eeccc2976>`[TW_DMA_MAX_PLANES];
+		uint32_t :target:`offsets<doxid-d3/d75/structtw__dmabuf__attributes_1a82d7fc27ab972378900e24894846ff57>`[TW_DMA_MAX_PLANES];
+		uint64_t :target:`modifier<doxid-d3/d75/structtw__dmabuf__attributes_1aa0222e6110e040e1b099955f4775173f>`;
+		bool :target:`modifier_used<doxid-d3/d75/structtw__dmabuf__attributes_1afacece2d837d553506b89568e99388a2>`;
+	};

@@ -1,0 +1,23 @@
+.. index:: pair: enum; tw_appsurf_mime_type
+.. _doxid-d9/d3b/ui_8h_1aef97c3e76f34068651dcd07b07f9cf18:
+
+enum tw_appsurf_mime_type
+=========================
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <ui.h>
+
+	enum tw_appsurf_mime_type
+	{
+	    :target:`TW_MIME_TYPE_TEXT<doxid-d9/d3b/ui_8h_1aef97c3e76f34068651dcd07b07f9cf18a4eb3d77764f2a6f0bf1d282b05cf6535>`        = 0,
+	    :target:`TW_MIME_TYPE_AUDIO<doxid-d9/d3b/ui_8h_1aef97c3e76f34068651dcd07b07f9cf18a1b6259478cb1a74adfcecc144d56e372>`       = 1,
+	    :target:`TW_MIME_TYPE_VIDEO<doxid-d9/d3b/ui_8h_1aef97c3e76f34068651dcd07b07f9cf18a1c0e4e0aa60aecd6da49b45a8b13548f>`       = 2,
+	    :target:`TW_MIME_TYPE_IMAGE<doxid-d9/d3b/ui_8h_1aef97c3e76f34068651dcd07b07f9cf18afcc69d0486ab635e25c31127be430b93>`       = 3,
+	    :target:`TW_MIME_TYPE_APPLICATION<doxid-d9/d3b/ui_8h_1aef97c3e76f34068651dcd07b07f9cf18ad17a1d79e7e76933811af6a813a9f95d>` = 4,
+	    :target:`TW_MIME_TYPE_MAX<doxid-d9/d3b/ui_8h_1aef97c3e76f34068651dcd07b07f9cf18a082e6ee8aa1a20a5f4acbd139c5596ad>`         = 5,
+	};
+

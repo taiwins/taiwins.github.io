@@ -1,0 +1,22 @@
+.. index:: pair: enum; tw_binding_type
+.. _doxid-dc/d49/bindings_8h_1a79a98439e619d2015dc53126f9fbcfba:
+
+enum tw_binding_type
+====================
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <bindings.h>
+
+	enum tw_binding_type
+	{
+	    :target:`TW_BINDING_INVALID<doxid-dc/d49/bindings_8h_1a79a98439e619d2015dc53126f9fbcfbaaef7c38a8164907854b8b3eb635a66115>`,
+	    :target:`TW_BINDING_key<doxid-dc/d49/bindings_8h_1a79a98439e619d2015dc53126f9fbcfbaade725a9b29bba78ca922a0ff2382945c>`,
+	    :target:`TW_BINDING_btn<doxid-dc/d49/bindings_8h_1a79a98439e619d2015dc53126f9fbcfbaa73a5797d34d7a41c32edf31699beb29e>`,
+	    :target:`TW_BINDING_axis<doxid-dc/d49/bindings_8h_1a79a98439e619d2015dc53126f9fbcfbaa0e929b31ddb8fee9884869b3e855f942>`,
+	    :target:`TW_BINDING_tch<doxid-dc/d49/bindings_8h_1a79a98439e619d2015dc53126f9fbcfbaa56670c6400c8b37062473ef1f3c71a1f>`,
+	};
+

@@ -1,0 +1,25 @@
+.. index:: pair: struct; auth_buffer
+.. _doxid-db/d9a/structauth__buffer:
+
+struct auth_buffer
+==================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	
+	struct auth_buffer
+	{
+		// fields
+	
+		struct :ref:`tw_appsurf<doxid-d6/d55/structtw__appsurf>`* :target:`app<doxid-db/d9a/structauth__buffer_1ab43d88595560fd380e06646e09200139>`;
+		char :target:`stars<doxid-db/d9a/structauth__buffer_1aa005d5eb764d99cfb41f14dc43fc5bcd>`[256];
+		char :target:`codes<doxid-db/d9a/structauth__buffer_1a3f5f09c06c0410a43e745b12460685cb>`[256];
+		int :target:`len<doxid-db/d9a/structauth__buffer_1a669421d8cce0ef69f3b131937b57e89e>`;
+	};

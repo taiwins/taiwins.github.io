@@ -1,0 +1,25 @@
+.. index:: pair: struct; tw_plane
+.. _doxid-d8/d69/structtw__plane:
+
+struct tw_plane
+===============
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <plane.h>
+	
+	struct tw_plane
+	{
+		// fields
+	
+		struct wl_list :target:`link<doxid-d8/d69/structtw__plane_1aa95ae9ec7ac89803c0e9e2dd0e7c448f>`;
+		pixman_region32_t :target:`clip<doxid-d8/d69/structtw__plane_1a3dd4058296666d2d5167bb390088c4e6>`;
+		pixman_region32_t :target:`damage<doxid-d8/d69/structtw__plane_1af1cf29c3654e6c693ca19b557eb7e92a>`;
+	};

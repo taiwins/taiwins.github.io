@@ -1,0 +1,33 @@
+.. index:: pair: struct; tw_xwayland
+.. _doxid-d4/d60/structtw__xwayland:
+
+struct tw_xwayland
+==================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	
+	struct tw_xwayland
+	{
+		// fields
+	
+		struct weston_compositor* :target:`compositor<doxid-d4/d60/structtw__xwayland_1ae8907b422fbd8e9413b33e68014a05cb>`;
+		struct wl_listener :target:`compositor_destroy_listener<doxid-d4/d60/structtw__xwayland_1aa4c2a0531a716135b0bd891bca053255>`;
+		struct :ref:`tw_subprocess<doxid-d0/d68/structtw__subprocess>` :target:`process<doxid-d4/d60/structtw__xwayland_1a71dd2505235ac14f948f93e289be2808>`;
+		const struct weston_xwayland_api* :target:`api<doxid-d4/d60/structtw__xwayland_1ab7bfd5d1bc101d02bfabb6cea308b9b3>`;
+		struct weston_xwayland* :target:`xwayland<doxid-d4/d60/structtw__xwayland_1a8999f5b8def94a2ce1a101794c4666cc>`;
+		struct wl_client* :target:`client<doxid-d4/d60/structtw__xwayland_1a2c6d80384573a282d3fc5aec69f6e5b2>`;
+		const char* :target:`display<doxid-d4/d60/structtw__xwayland_1a7dedbc4c1c65650f707e43158ede644f>`;
+		pid_t :target:`pid<doxid-d4/d60/structtw__xwayland_1a902c6fd7364a2a1fcae44b9f411a8131>`;
+		int :target:`wm<doxid-d4/d60/structtw__xwayland_1a1122ef3c9bae70e421a296dc6d3bf2f3>`[2];
+		int :target:`abstract_fd<doxid-d4/d60/structtw__xwayland_1a43adff1c08070aeda1fda8749d383846>`;
+		int :target:`unix_fd<doxid-d4/d60/structtw__xwayland_1a59ae418199eb7df7bfd05a440c12c705>`;
+		struct wl_event_source* :target:`usr1_source<doxid-d4/d60/structtw__xwayland_1a8ac22776161014322b6151d254c8c92f>`;
+	};

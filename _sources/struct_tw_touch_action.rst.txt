@@ -1,0 +1,23 @@
+.. index:: pair: struct; tw_touch_action
+.. _doxid-d1/d8d/structtw__touch__action:
+
+struct tw_touch_action
+======================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <bindings.h>
+	
+	struct tw_touch_action
+	{
+		// fields
+	
+		uint32_t :target:`modifier<doxid-d1/d8d/structtw__touch__action_1a2118b4f865e565b342bb78376521e2f5>`;
+	};

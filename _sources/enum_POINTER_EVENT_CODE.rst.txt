@@ -1,0 +1,21 @@
+.. index:: pair: enum; POINTER_EVENT_CODE
+.. _doxid-de/dcd/pointer_8c_1a125279d319adffe00863f00b09c5970b:
+
+enum POINTER_EVENT_CODE
+=======================
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	
+	enum POINTER_EVENT_CODE
+	{
+	    :target:`POINTER_ENTER<doxid-de/dcd/pointer_8c_1a125279d319adffe00863f00b09c5970ba459236a40e1d939d0da30701e939d71a>`  = 1<<0,
+	    :target:`POINTER_LEAVE<doxid-de/dcd/pointer_8c_1a125279d319adffe00863f00b09c5970ba8544977ad59c5d16045b04c7f49c050b>`  = 1<<1,
+	    :target:`POINTER_MOTION<doxid-de/dcd/pointer_8c_1a125279d319adffe00863f00b09c5970ba24c88e876adc08d993c7704e8844c1d6>` = 1<<2,
+	    :target:`POINTER_BTN<doxid-de/dcd/pointer_8c_1a125279d319adffe00863f00b09c5970ba746fddb45499c77b41295fd259c2d710>`    = 1<<3,
+	    :target:`POINTER_AXIS<doxid-de/dcd/pointer_8c_1a125279d319adffe00863f00b09c5970baa66c0196daaa53008d56533c00adf421>`   = 1<<4,
+	};
+

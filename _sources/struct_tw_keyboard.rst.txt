@@ -1,0 +1,54 @@
+.. index:: pair: struct; tw_keyboard
+.. _doxid-d6/dc5/structtw__keyboard:
+
+struct tw_keyboard
+==================
+
+.. toctree::
+	:hidden:
+
+Overview
+~~~~~~~~
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <seat.h>
+	
+	struct tw_keyboard
+	{
+		// fields
+	
+		struct :ref:`tw_seat_client<doxid-d4/d94/structtw__seat__client>`* :target:`focused_client<doxid-d6/dc5/structtw__keyboard_1a05973e16a29921238af4a0fe23475a25>`;
+		struct wl_resource* :target:`focused_surface<doxid-d6/dc5/structtw__keyboard_1a75fc40e8a2e91f1e1a034879fc8799a8>`;
+		struct wl_listener :target:`focused_destroy<doxid-d6/dc5/structtw__keyboard_1a876f2edcfec371bd8965f0b6110f0f50>`;
+		size_t :target:`keymap_size<doxid-d6/dc5/structtw__keyboard_1af911087452a98e96b03b80e77c83c08e>`;
+		char* :target:`keymap_string<doxid-d6/dc5/structtw__keyboard_1a73b0150bec1a29551e6936f7e85374fd>`;
+		uint32_t :target:`modifiers_state<doxid-d6/dc5/structtw__keyboard_1a7674d4f964e6327f9617ced410317107>`;
+		uint32_t :ref:`led_state<doxid-d6/dc5/structtw__keyboard_1a00e1a0db8318de72c8cea26b13317a58>`;
+		struct :ref:`tw_seat_keyboard_grab<doxid-de/dfc/structtw__seat__keyboard__grab>` :target:`default_grab<doxid-d6/dc5/structtw__keyboard_1aaa807207ff1c2eab6e836072f6b55528>`;
+		struct :ref:`tw_seat_keyboard_grab<doxid-de/dfc/structtw__seat__keyboard__grab>`* :target:`grab<doxid-d6/dc5/structtw__keyboard_1aa9c7fd7619781ba850143cf16766bdd1>`;
+	};
+.. _details-d6/dc5/structtw__keyboard:
+
+Detailed Documentation
+~~~~~~~~~~~~~~~~~~~~~~
+
+
+
+Fields
+------
+
+.. index:: pair: variable; led_state
+.. _doxid-d6/dc5/structtw__keyboard_1a00e1a0db8318de72c8cea26b13317a58:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	uint32_t led_state
+
+led state reflects lock state
+

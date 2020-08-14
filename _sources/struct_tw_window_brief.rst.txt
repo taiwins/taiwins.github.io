@@ -1,0 +1,27 @@
+.. index:: pair: struct; tw_window_brief
+.. _doxid-d3/d02/structtw__window__brief:
+
+struct tw_window_brief
+======================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <shared_config.h>
+	
+	struct tw_window_brief
+	{
+		// fields
+	
+		float :target:`x<doxid-d3/d02/structtw__window__brief_1a6520e19d384640c8a62240ab0c349e8b>`;
+		float :target:`y<doxid-d3/d02/structtw__window__brief_1a97566e9865560a1599ae68eead622d00>`;
+		float :target:`w<doxid-d3/d02/structtw__window__brief_1a6ce29a980844a1ff75e32cf2f3ae2021>`;
+		float :target:`h<doxid-d3/d02/structtw__window__brief_1a9eca5b5099d267812dd4fd476045c654>`;
+		char :target:`name<doxid-d3/d02/structtw__window__brief_1acddc4e4bb3b9ef208900356d3e8b8795>`[32];
+	};

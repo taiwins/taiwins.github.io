@@ -1,0 +1,24 @@
+.. index:: pair: struct; tw_point2d
+.. _doxid-d3/dee/structtw__point2d:
+
+struct tw_point2d
+=================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <ui.h>
+	
+	struct tw_point2d
+	{
+		// fields
+	
+		unsigned int :target:`x<doxid-d3/dee/structtw__point2d_1a79be24d1491337eac84797f1940f1681>`;
+		unsigned int :target:`y<doxid-d3/dee/structtw__point2d_1a462adf627d1a3f51d8f6731f55f04bf7>`;
+	};

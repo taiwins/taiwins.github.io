@@ -1,0 +1,26 @@
+.. index:: pair: struct; tw_subprocess
+.. _doxid-d0/d68/structtw__subprocess:
+
+struct tw_subprocess
+====================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <subprocess.h>
+	
+	struct tw_subprocess
+	{
+		// fields
+	
+		pid_t :target:`pid<doxid-d0/d68/structtw__subprocess_1ab7fc369622dc34dc0cc4e9be0b92d242>`;
+		struct wl_list :target:`link<doxid-d0/d68/structtw__subprocess_1a8f6db15dd777b6e280544dd6f708fa4b>`;
+		void* :target:`user_data<doxid-d0/d68/structtw__subprocess_1a71390ad63d1fb350cd80a0cb35062f4e>`;
+		void(* :target:`chld_handler<doxid-d0/d68/structtw__subprocess_1ad12480eae00eea5307670f0e848beacc>`)(struct tw_subprocess *proc, int status);
+	};

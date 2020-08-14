@@ -1,0 +1,26 @@
+.. index:: pair: struct; tdbus_message
+.. _doxid-d9/db6/structtdbus__message:
+
+struct tdbus_message
+====================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <tdbus_internal.h>
+	
+	struct tdbus_message
+	{
+		// fields
+	
+		struct :ref:`tdbus<doxid-db/d60/structtdbus>`* :target:`bus<doxid-d9/db6/structtdbus__message_1ac180582202d800e2b3cc07c2c3bdf22d>`;
+		DBusMessage* :target:`message<doxid-d9/db6/structtdbus__message_1a3ba30604791cc60a6e8552cff8e5c701>`;
+		:ref:`tdbus_read_reply_f<doxid-d2/d1b/tdbus_8h_1af272c539ae4087d823b75ca0bee50fa7>` :target:`read_reply<doxid-d9/db6/structtdbus__message_1a8d58b2eee89a5585cdd6ec1fc73e6fc2>`;
+		void* :target:`user_data<doxid-d9/db6/structtdbus__message_1accf3ca6914630ca85a09a93f06c065fb>`;
+	};

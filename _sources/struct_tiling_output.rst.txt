@@ -1,0 +1,25 @@
+.. index:: pair: struct; tiling_output
+.. _doxid-d0/d9f/structtiling__output:
+
+struct tiling_output
+====================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	
+	struct tiling_output
+	{
+		// fields
+	
+		struct :ref:`tiling_view<doxid-db/d53/structtiling__view>`* :target:`root<doxid-d0/d9f/structtiling__output_1a36909eb67d5c2ca1ca26ce4d6f44f2f1>`;
+		struct :ref:`tw_xdg_output<doxid-dd/d10/structtw__xdg__output>`* :target:`output<doxid-d0/d9f/structtiling__output_1aff42a3034381255f9975714f63dc3413>`;
+		struct wl_list :target:`link<doxid-d0/d9f/structtiling__output_1ad08fe1c7de538619ddc9bfcf0ec45d5d>`;
+		bool :target:`used<doxid-d0/d9f/structtiling__output_1a360ae7835ad1cf3fa0f011764e333636>`;
+	};

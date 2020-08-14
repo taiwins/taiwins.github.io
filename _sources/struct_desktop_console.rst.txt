@@ -1,0 +1,88 @@
+.. index:: pair: struct; desktop_console
+.. _doxid-df/d36/structdesktop__console:
+
+struct desktop_console
+======================
+
+.. toctree::
+	:hidden:
+
+Overview
+~~~~~~~~
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	
+	struct desktop_console
+	{
+		// fields
+	
+		struct taiwins_console* :target:`interface<doxid-df/d36/structdesktop__console_1a72ab8c9a58b3bac3960d0be2b71916c0>`;
+		struct taiwins_theme* :target:`theme_interface<doxid-df/d36/structdesktop__console_1a0153be18e00d33f5190c0b2633dc9f0d>`;
+		struct taiwins_ui* :target:`proxy<doxid-df/d36/structdesktop__console_1ab5090064844ca577f445d9d39422f0cc>`;
+		struct :ref:`tw_globals<doxid-dc/dde/structtw__globals>` :target:`globals<doxid-df/d36/structdesktop__console_1a17ac9c82e997a61bd5d9b34b126e95c1>`;
+		struct :ref:`tw_appsurf<doxid-d6/d55/structtw__appsurf>` :target:`surface<doxid-df/d36/structdesktop__console_1a2e48ad341da209d9bce0a770fe5db5c1>`;
+		struct :ref:`tw_shm_pool<doxid-d9/dab/structtw__shm__pool>` :target:`pool<doxid-df/d36/structdesktop__console_1a4c49bc966ff5cfabfaf695d2f2356ee1>`;
+		void* :ref:`config_data<doxid-df/d36/structdesktop__console_1a0f3ffccb48fea8d1c867c857df582eb2>`;
+		struct nk_wl_backend* :target:`bkend<doxid-df/d36/structdesktop__console_1a3ecc27f2fc8b5f6299415e1d2473eb60>`;
+		struct :ref:`dhash_table<doxid-d0/d89/structdhash__table>` :target:`icons_table<doxid-df/d36/structdesktop__console_1aafeab0e1f2d5c640efbcc7df5e554d06>`;
+		struct wl_array :target:`icon_keys<doxid-df/d36/structdesktop__console_1ae73facd173d5096458efe47639479af1>`;
+		uint32_t :ref:`requested_icons<doxid-df/d36/structdesktop__console_1accdf42033cb2df51ade2c05dfd16840b>`;
+		struct wl_buffer* :target:`decision_buffer<doxid-df/d36/structdesktop__console_1a2c441978b856d7b23416c85ebe44b08e>`;
+		struct wl_callback* :target:`exec_cb<doxid-df/d36/structdesktop__console_1acc79c8b6237bd480272993d92587d8db>`;
+		uint32_t :target:`exec_id<doxid-df/d36/structdesktop__console_1a26de22ecaa798fec85977316985e4de0>`;
+		char :target:`cmds<doxid-df/d36/structdesktop__console_1a1d95813007339959183ea05ed212bdb1>`[256];
+		char :target:`prev_cmds<doxid-df/d36/structdesktop__console_1a168d0975c4979a23e68056d1bec879c2>`[256];
+		struct nk_text_edit :target:`text_edit<doxid-df/d36/structdesktop__console_1a58b784faf1b5e2cc418405ba58ecd9ff>`;
+		:ref:`vector_t<doxid-d3/d8b/structvector__t>` :ref:`modules<doxid-df/d36/structdesktop__console_1a5a2eaeece55504c957f1449ec759653e>`;
+		:ref:`vector_t<doxid-d3/d8b/structvector__t>` :target:`search_results<doxid-df/d36/structdesktop__console_1a2c1ffd672a028b7bdd1bcfe1aabdadbc>`;
+		struct :ref:`selected_search_entry<doxid-d0/dd6/structselected__search__entry>` :target:`selected<doxid-df/d36/structdesktop__console_1a0a203e61d2b74e3863c7f11e0d623626>`;
+		char* :target:`exec_result<doxid-df/d36/structdesktop__console_1a213332f9ece24f05c2e2550c58402a99>`;
+		struct tw_theme :target:`theme<doxid-df/d36/structdesktop__console_1ab6e1fbe9adb338d78f123959a76ca408>`;
+		struct :ref:`tw_bbox<doxid-d1/d39/structtw__bbox>` :target:`collapsed_bounds<doxid-df/d36/structdesktop__console_1a4f81906f4b77c838fdd68b122fc22a8d>`;
+		struct :ref:`tw_bbox<doxid-d1/d39/structtw__bbox>` :target:`bounds<doxid-df/d36/structdesktop__console_1aebc7823cedb8875f2399173030086b4a>`;
+	};
+.. _details-df/d36/structdesktop__console:
+
+Detailed Documentation
+~~~~~~~~~~~~~~~~~~~~~~
+
+
+
+Fields
+------
+
+.. index:: pair: variable; config_data
+.. _doxid-df/d36/structdesktop__console_1a0f3ffccb48fea8d1c867c857df582eb2:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	void* config_data
+
+shared data
+
+.. index:: pair: variable; requested_icons
+.. _doxid-df/d36/structdesktop__console_1accdf42033cb2df51ade2c05dfd16840b:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	uint32_t requested_icons
+
+exec data
+
+.. index:: pair: variable; modules
+.. _doxid-df/d36/structdesktop__console_1a5a2eaeece55504c957f1449ec759653e:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	:ref:`vector_t<doxid-d3/d8b/structvector__t>` modules
+
+search results from modules, same length as modules
+

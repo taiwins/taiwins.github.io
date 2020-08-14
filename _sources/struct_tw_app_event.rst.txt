@@ -1,0 +1,49 @@
+.. index:: pair: struct; tw_app_event
+.. _doxid-d9/d92/structtw__app__event:
+
+struct tw_app_event
+===================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <ui_event.h>
+	
+	struct tw_app_event
+	{
+		// fields
+	
+		enum :ref:`tw_app_event_type<doxid-dc/dd2/ui__event_8h_1a9a7bde48e964c43e87646c68cc96c93e>` :target:`type<doxid-d9/d92/structtw__app__event_1a1b54157dce3b38828b9520d227430955>`;
+		uint32_t :target:`time<doxid-d9/d92/structtw__app__event_1a370524173c4ff9753a9ecc8857f92063>`;
+		xkb_keycode_t :target:`code<doxid-d9/d92/structtw__app__event_1a52d5f6e8ee9aa34f7e4e940d2ae9e520>`;
+		xkb_keysym_t :target:`sym<doxid-d9/d92/structtw__app__event_1ab54ca8e6acf500cc7777751b953f7ca9>`;
+		uint32_t :target:`mod<doxid-d9/d92/structtw__app__event_1a7d743c3f5413fe5e278e5fba37cdef91>`;
+		bool :target:`state<doxid-d9/d92/structtw__app__event_1afac9510800b5e87e389e57de90b02b26>`;
+		struct tw_app_event::@72::@74 :target:`key<doxid-d9/d92/structtw__app__event_1aebde8760f70c0e2b6189129c31c41d50>`;
+		uint32_t :target:`x<doxid-d9/d92/structtw__app__event_1aee58299c53e2688310f12a9cadadab98>`;
+		uint32_t :target:`y<doxid-d9/d92/structtw__app__event_1a7ff6d2a10506b07d9d01c91bda864769>`;
+		uint32_t :target:`btn<doxid-d9/d92/structtw__app__event_1a74d0482f743cddbef7122e7540ded04d>`;
+		struct tw_app_event::@72::@75 :target:`ptr<doxid-d9/d92/structtw__app__event_1a2e288c66fb062fc84ee41a3338b051ec>`;
+		int :target:`dx<doxid-d9/d92/structtw__app__event_1a651607bf81be21ff123c6f182976fc90>`;
+		int :target:`dy<doxid-d9/d92/structtw__app__event_1a8b8ec5888b8535d2a848aa6d9ae95df3>`;
+		struct tw_app_event::@72::@76 :target:`axis<doxid-d9/d92/structtw__app__event_1afa31abd874d61b74fef8f64e0c1d8920>`;
+		struct tw_app_event::@72::@77 :target:`touch<doxid-d9/d92/structtw__app__event_1a2196d6e81438e05eb6aa2610a54bf2b0>`;
+		uint32_t :target:`edge<doxid-d9/d92/structtw__app__event_1a5c035d8006392d928350fb3e3f22f617>`;
+		uint32_t :target:`nw<doxid-d9/d92/structtw__app__event_1a0b20221ffda60b4a3e877aab733a52a5>`;
+		uint32_t :target:`nh<doxid-d9/d92/structtw__app__event_1a2810677af2783efe87c3fb408e562173>`;
+		uint32_t :target:`ns<doxid-d9/d92/structtw__app__event_1a522acdc251c8a6ee7d6fe94eab9d71f5>`;
+		uint32_t :target:`serial<doxid-d9/d92/structtw__app__event_1aa42ab1c00796625d38de4ba8efed6348>`;
+		struct tw_app_event::@72::@78 :target:`resize<doxid-d9/d92/structtw__app__event_1a7612f0c5778391b6523d384bf780cde8>`;
+		void* :target:`data<doxid-d9/d92/structtw__app__event_1a8c6886aa280ef1652af6ec31c9d873fd>`;
+		size_t :target:`size<doxid-d9/d92/structtw__app__event_1a1319c68d00a79594f89a1ef677c8ee07>`;
+		struct tw_app_event::@72::@79 :target:`clipboard<doxid-d9/d92/structtw__app__event_1a25fcbe66784cb619ae3e95fd2b8e8d98>`;
+		const char* :target:`mime_type<doxid-d9/d92/structtw__app__event_1a6e3d330e3bb453608eeac9a901f412a4>`;
+		int :target:`write_fd<doxid-d9/d92/structtw__app__event_1a6cc691fd3b8732f28a90ae9a04f4f830>`;
+		struct tw_app_event::@72::@80 :target:`clipboard_source<doxid-d9/d92/structtw__app__event_1a8bd84e6309e52e1698b8cacd86627fdf>`;
+	};

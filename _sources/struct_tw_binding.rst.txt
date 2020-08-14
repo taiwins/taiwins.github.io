@@ -1,0 +1,34 @@
+.. index:: pair: struct; tw_binding
+.. _doxid-d8/d9d/structtw__binding:
+
+struct tw_binding
+=================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <bindings.h>
+	
+	struct tw_binding
+	{
+		// fields
+	
+		char :target:`name<doxid-d8/d9d/structtw__binding_1aeba9dd9e4c53c412099af2b8aa06194f>`[32];
+		enum :ref:`tw_binding_type<doxid-dc/d49/bindings_8h_1a79a98439e619d2015dc53126f9fbcfba>` :target:`type<doxid-d8/d9d/structtw__binding_1abf25a63cefff6421be329110919a20b5>`;
+		struct :ref:`tw_key_press<doxid-d3/d8e/structtw__key__press>` :target:`keypress<doxid-d8/d9d/structtw__binding_1a0592827fdcedc23c0affa36fee641d1d>`[MAX_KEY_SEQ_LEN];
+		struct :ref:`tw_btn_press<doxid-dd/d61/structtw__btn__press>` :target:`btnpress<doxid-d8/d9d/structtw__binding_1adaaa6ea02172b20d615f71ec471d4a47>`;
+		struct :ref:`tw_axis_motion<doxid-d2/d42/structtw__axis__motion>` :target:`axisaction<doxid-d8/d9d/structtw__binding_1a18b04745468058e128636d2d473328c1>`;
+		struct :ref:`tw_touch_action<doxid-d1/d8d/structtw__touch__action>` :target:`touch<doxid-d8/d9d/structtw__binding_1abf87e5bd5301283a40b64ea09cdc0106>`;
+		:ref:`tw_btn_binding<doxid-dc/d49/bindings_8h_1a0076a71a216d278e9783f3a540a4d333>` :target:`btn_func<doxid-d8/d9d/structtw__binding_1a77c2898ff469ababc90ebc92ca08b3a5>`;
+		:ref:`tw_axis_binding<doxid-dc/d49/bindings_8h_1a1933c4c34dbf19cf0a23b676d6f83149>` :target:`axis_func<doxid-d8/d9d/structtw__binding_1a6835997593564f15bdd28ed79d24047c>`;
+		:ref:`tw_touch_binding<doxid-dc/d49/bindings_8h_1a93c294d565a824bddc80d9e07d4d00e0>` :target:`touch_func<doxid-d8/d9d/structtw__binding_1ac92e26227d1c48f99943b7ef34e66377>`;
+		:ref:`tw_key_binding<doxid-dc/d49/bindings_8h_1a9920b02c7771f3b654a9c33e71cac40a>` :target:`key_func<doxid-d8/d9d/structtw__binding_1a35b0bf882a8161fa32d629016e6e4edf>`;
+		void* :target:`user_data<doxid-d8/d9d/structtw__binding_1ac2730f3446cbc2582fde6d973be9429b>`;
+		uint32_t :target:`option<doxid-d8/d9d/structtw__binding_1abbfd60d054d487385f631e8afcd4aaec>`;
+	};

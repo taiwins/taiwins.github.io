@@ -1,0 +1,38 @@
+.. index:: pair: enum; tw_builtin_binding_t
+.. _doxid-df/db2/config__internal_8h_1a9654bd11882d76df7e7c111fe5506388:
+
+enum tw_builtin_binding_t
+=========================
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <config_internal.h>
+
+	enum tw_builtin_binding_t
+	{
+	    :target:`TW_QUIT_BINDING<doxid-df/db2/config__internal_8h_1a9654bd11882d76df7e7c111fe5506388abdb95fa82bcda023778d69c1db743def>`             = 0,
+	    :target:`TW_RELOAD_CONFIG_BINDING<doxid-df/db2/config__internal_8h_1a9654bd11882d76df7e7c111fe5506388a1811fe456b46bbaf23f6b0b663ec6bdc>`,
+	    :target:`TW_OPEN_CONSOLE_BINDING<doxid-df/db2/config__internal_8h_1a9654bd11882d76df7e7c111fe5506388a0507ef4984450a1bdcb1d41a03d735bd>`,
+	    :target:`TW_ZOOM_AXIS_BINDING<doxid-df/db2/config__internal_8h_1a9654bd11882d76df7e7c111fe5506388add5a04c92d6bad13182908d529800f0b>`,
+	    :target:`TW_ALPHA_AXIS_BINDING<doxid-df/db2/config__internal_8h_1a9654bd11882d76df7e7c111fe5506388af7841ae24f54fa283912158640838927>`,
+	    :target:`TW_MOVE_PRESS_BINDING<doxid-df/db2/config__internal_8h_1a9654bd11882d76df7e7c111fe5506388ae6cb16304fd2a3e4e271e5e66768c946>`,
+	    :target:`TW_FOCUS_PRESS_BINDING<doxid-df/db2/config__internal_8h_1a9654bd11882d76df7e7c111fe5506388a7cdde8d3d389dcebe31fd3138aeaf596>`,
+	    :target:`TW_RESIZE_ON_LEFT_BINDING<doxid-df/db2/config__internal_8h_1a9654bd11882d76df7e7c111fe5506388a48530f24cb17ae68e4e8fd75bea22793>`,
+	    :target:`TW_RESIZE_ON_RIGHT_BINDING<doxid-df/db2/config__internal_8h_1a9654bd11882d76df7e7c111fe5506388af4c576b8722b56ece2715bb96409c403>`,
+	    :target:`TW_RESIZE_ON_UP_BINDING<doxid-df/db2/config__internal_8h_1a9654bd11882d76df7e7c111fe5506388a2112353c897bee5c2e8da40196a6de16>`,
+	    :target:`TW_RESIZE_ON_DOWN_BINDING<doxid-df/db2/config__internal_8h_1a9654bd11882d76df7e7c111fe5506388a8155853347816ea3e79b4775cd152a9f>`,
+	    :target:`TW_SWITCH_WS_LEFT_BINDING<doxid-df/db2/config__internal_8h_1a9654bd11882d76df7e7c111fe5506388acd8680ce68ecea9f7502113fb85d3091>`,
+	    :target:`TW_SWITCH_WS_RIGHT_BINDING<doxid-df/db2/config__internal_8h_1a9654bd11882d76df7e7c111fe5506388ac4dd9affa3c748acafcf13775ff5a90f>`,
+	    :target:`TW_SWITCH_WS_RECENT_BINDING<doxid-df/db2/config__internal_8h_1a9654bd11882d76df7e7c111fe5506388a2d9a7a2eacab39eae2105daa2893bf96>`,
+	    :target:`TW_TOGGLE_FLOATING_BINDING<doxid-df/db2/config__internal_8h_1a9654bd11882d76df7e7c111fe5506388ae89653cdf649b25aaa69c8f23b341f3d>`,
+	    :target:`TW_TOGGLE_VERTICAL_BINDING<doxid-df/db2/config__internal_8h_1a9654bd11882d76df7e7c111fe5506388ab1967fa982c50f87151875c641043732>`,
+	    :target:`TW_VSPLIT_WS_BINDING<doxid-df/db2/config__internal_8h_1a9654bd11882d76df7e7c111fe5506388ac75855d4e29d008d63d994a4c8c1f270>`,
+	    :target:`TW_HSPLIT_WS_BINDING<doxid-df/db2/config__internal_8h_1a9654bd11882d76df7e7c111fe5506388ad736f86ffef3c784ee7f4a440a770ad8>`,
+	    :target:`TW_MERGE_BINDING<doxid-df/db2/config__internal_8h_1a9654bd11882d76df7e7c111fe5506388a6d0950e91360bfa09765cf988cb8660c>`,
+	    :target:`TW_NEXT_VIEW_BINDING<doxid-df/db2/config__internal_8h_1a9654bd11882d76df7e7c111fe5506388abff60d9eb6ce205675059b9ef6f15791>`,
+	    :target:`TW_BUILTIN_BINDING_SIZE<doxid-df/db2/config__internal_8h_1a9654bd11882d76df7e7c111fe5506388ae860abe76a04a07882e2392616474563>`,
+	};
+

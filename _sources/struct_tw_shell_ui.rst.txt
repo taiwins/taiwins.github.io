@@ -1,0 +1,37 @@
+.. index:: pair: struct; tw_shell_ui
+.. _doxid-d4/dcb/structtw__shell__ui:
+
+struct tw_shell_ui
+==================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <shell_internal.h>
+	
+	struct tw_shell_ui
+	{
+		// fields
+	
+		struct :ref:`tw_shell<doxid-de/dcd/structtw__shell>`* :target:`shell<doxid-d4/dcb/structtw__shell__ui_1adf05fb458274332c8050e10a8c14996d>`;
+		struct :ref:`tw_shell_output<doxid-da/d68/structtw__shell__output>`* :target:`output<doxid-d4/dcb/structtw__shell__ui_1a8bc8273f16de72ed08b7913b11e2b211>`;
+		struct wl_resource* :target:`resource<doxid-d4/dcb/structtw__shell__ui_1ac9b86e1ba0520a72eb7a862989e499df>`;
+		struct :ref:`tw_surface<doxid-dd/dda/structtw__surface>`* :target:`binded<doxid-d4/dcb/structtw__shell__ui_1a8b4a487868b6a5677cfaa4f755cb8017>`;
+		uint32_t :target:`x<doxid-d4/dcb/structtw__shell__ui_1a6c6a2f49bf62b4f365fcb9d248256e10>`;
+		uint32_t :target:`y<doxid-d4/dcb/structtw__shell__ui_1ac389afd408f39e6bf97f8f9487f000b3>`;
+		struct :ref:`tw_layer<doxid-d7/d6a/structtw__layer>`* :target:`layer<doxid-d4/dcb/structtw__shell__ui_1add0f88af62840016f0a3ae38c129b5d8>`;
+		enum taiwins_ui_type :target:`type<doxid-d4/dcb/structtw__shell__ui_1ae405874bcf1980b7942e3ac1c400f6dc>`;
+		struct wl_listener :target:`surface_destroy<doxid-d4/dcb/structtw__shell__ui_1a2679dbd76166ea9b6388723c54773027>`;
+		uint32_t :target:`w<doxid-d4/dcb/structtw__shell__ui_1ab5525d9ec92002663e9480c6cd5518d4>`;
+		uint32_t :target:`h<doxid-d4/dcb/structtw__shell__ui_1a0df7c37723e6af5bf10bd497ae6ecde0>`;
+		uint32_t :target:`anchor<doxid-d4/dcb/structtw__shell__ui_1acfea2dffcc277ac3eea4f3d001fee763>`;
+		uint32_t :target:`occlusion_zone<doxid-d4/dcb/structtw__shell__ui_1ae18d25beca01ff546762fdd94398e6a5>`;
+		pixman_box32_t :target:`margin<doxid-d4/dcb/structtw__shell__ui_1abf864e9e144b40c9fc309ab7193b092b>`;
+		struct tw_shell_ui::@59 :target:`pending<doxid-d4/dcb/structtw__shell__ui_1a8f842ad218d482e8442673017309feab>`;
+	};

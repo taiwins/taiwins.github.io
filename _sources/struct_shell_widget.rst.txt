@@ -1,0 +1,52 @@
+.. index:: pair: struct; shell_widget
+.. _doxid-db/d95/structshell__widget:
+
+struct shell_widget
+===================
+
+.. toctree::
+	:hidden:
+
+Overview
+~~~~~~~~
+
+shell widget structure :ref:`More...<details-db/d95/structshell__widget>`
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <widget.h>
+	
+	struct shell_widget
+	{
+		// fields
+	
+		struct taiwins_ui* :target:`proxy<doxid-db/d95/structshell__widget_1a1a6c41a2e80e902de2b13ff9a03cd7a8>`;
+		struct :ref:`tw_event_queue<doxid-d3/d59/structtw__event__queue>`* :target:`queue<doxid-db/d95/structshell__widget_1adf6c384cdeedbea13210c5499fbea404>`;
+		struct :ref:`tw_appsurf<doxid-d6/d55/structtw__appsurf>` :target:`ancre<doxid-db/d95/structshell__widget_1a8faf2f40e9d989a9293e0e4a07c01404>`;
+		struct :ref:`tw_appsurf<doxid-d6/d55/structtw__appsurf>` :target:`widget<doxid-db/d95/structshell__widget_1afae4d7f24b6b40c0790339e2f7cfbee0>`;
+		struct wl_list :target:`link<doxid-db/d95/structshell__widget_1a63fe77db8805a94ab3d87fda5a078962>`;
+		:ref:`shell_widget_draw_label_t<doxid-df/d65/widget_8h_1a5bfe4ae6ad9a0e3693b1d5e413ef3efd>` :target:`ancre_cb<doxid-db/d95/structshell__widget_1a75fcc9947446a0a7bd8ac17dc19cfb17>`;
+		:ref:`shell_widget_setup_cb_t<doxid-df/d65/widget_8h_1a3df5efdc63cb690d5aadc962bc1b457b>` :target:`setup_cb<doxid-db/d95/structshell__widget_1a484580c12f933e175bf47c4209246d47>`;
+		:ref:`nk_wl_drawcall_t<doxid-da/df8/nk__backends_8h_1a8fda8a649a22bebf710696494240ea87>` :target:`draw_cb<doxid-db/d95/structshell__widget_1a8f7660124df510da03c237390be05dd3>`;
+		struct itimerspec :target:`interval<doxid-db/d95/structshell__widget_1a3541786d408f992489fd936e9fb15fb2>`;
+		char* :target:`file_path<doxid-db/d95/structshell__widget_1a80caba08f4eea6e59aa2a85c5812a2f5>`;
+		:ref:`shell_widget_path_find_t<doxid-df/d65/widget_8h_1a2fc575c24188634dbb3cbb86005ee11f>` :target:`path_find<doxid-db/d95/structshell__widget_1a414a23a666ef7cc162b52f89109f72ab>`;
+		char* :target:`subsystem<doxid-db/d95/structshell__widget_1a8fb3d2f76832b6a71d7ef27f2e14b61b>`;
+		char* :target:`devname<doxid-db/d95/structshell__widget_1a0115ab73489398a2e9dc5afd35f185f5>`;
+		int :target:`fd<doxid-db/d95/structshell__widget_1a35b17f569e36c5c8250ee2f40edfd11d>`;
+		void* :target:`user_data<doxid-db/d95/structshell__widget_1aa3946ad0da8b66bbfaea5e365b2c759b>`;
+		struct udev_device* :target:`dev<doxid-db/d95/structshell__widget_1ae00b19a28014e59a82aa8fb3b4f9842d>`;
+		uint32_t :target:`w<doxid-db/d95/structshell__widget_1a296b1e163662e02277097240f97947c2>`;
+		uint32_t :target:`h<doxid-db/d95/structshell__widget_1a6e42bee6359dd0a4d72a7cb020db536f>`;
+	};
+.. _details-db/d95/structshell__widget:
+
+Detailed Documentation
+~~~~~~~~~~~~~~~~~~~~~~
+
+shell widget structure
+
+the icons is drawn into unicodes. The beautiful thing about :ref:`shell_widget <doxid-db/d95/structshell__widget>` is that it is pure data.
+

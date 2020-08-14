@@ -1,0 +1,23 @@
+.. index:: pair: enum; icon_section_type
+.. _doxid-d6/dc4/icon__search_8c_1a795fe36b3aeeadfa037d4d9fa79f1683:
+
+enum icon_section_type
+======================
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	
+	enum icon_section_type
+	{
+	    :target:`SEC_ICON_THEME<doxid-d6/dc4/icon__search_8c_1a795fe36b3aeeadfa037d4d9fa79f1683a04fc117ff8757e1464d9b785cd0039b1>`,
+	    :target:`SEC_ICON_APP<doxid-d6/dc4/icon__search_8c_1a795fe36b3aeeadfa037d4d9fa79f1683a04a7cd03cf8b719623fdadc300ffc908>`,
+	    :target:`SEC_ICON_MIMETYPES<doxid-d6/dc4/icon__search_8c_1a795fe36b3aeeadfa037d4d9fa79f1683a1206ba1df3705de1695067b34d6fd5b2>`,
+	    :target:`SEC_ICON_PLACES<doxid-d6/dc4/icon__search_8c_1a795fe36b3aeeadfa037d4d9fa79f1683a07232c26c3b0f98e96e425a4e5fcc41d>`,
+	    :target:`SEC_ICON_STATUS<doxid-d6/dc4/icon__search_8c_1a795fe36b3aeeadfa037d4d9fa79f1683af0ce947fac398cbf3b99247076d28440>`,
+	    :target:`SEC_ICON_DEVICES<doxid-d6/dc4/icon__search_8c_1a795fe36b3aeeadfa037d4d9fa79f1683a37d172c72529756daacf32aed5ac5616>`,
+	    :target:`SEC_ICON_UNKNOWN<doxid-d6/dc4/icon__search_8c_1a795fe36b3aeeadfa037d4d9fa79f1683a2c743bc21899f3f671b7b2876d78fcd5>`,
+	};
+

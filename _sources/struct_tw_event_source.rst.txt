@@ -1,0 +1,29 @@
+.. index:: pair: struct; tw_event_source
+.. _doxid-d0/d46/structtw__event__source:
+
+struct tw_event_source
+======================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	
+	struct tw_event_source
+	{
+		// fields
+	
+		struct wl_list :target:`link<doxid-d0/d46/structtw__event__source_1a0ab307cb672276751b63db1f58880dd9>`;
+		struct epoll_event :target:`poll_event<doxid-d0/d46/structtw__event__source_1ab9181f0fd79bc24901b892db3e86849d>`;
+		struct :ref:`tw_event<doxid-db/dc2/structtw__event>` :target:`event<doxid-d0/d46/structtw__event__source_1aa2304a3c7190ef1e37596545d9e530c1>`;
+		void(* :target:`pre_hook<doxid-d0/d46/structtw__event__source_1ac793ee45998db3c5a91a57e8173d2513>`)(struct tw_event_source *);
+		void(* :target:`close<doxid-d0/d46/structtw__event__source_1ad6a09686f1f903538c39567f12142df3>`)(struct tw_event_source *);
+		int :target:`fd<doxid-d0/d46/structtw__event__source_1ab49309315f81a681b16f6844b234c5a8>`;
+		int :target:`wd<doxid-d0/d46/structtw__event__source_1a28aeecb50f193d4f329188215b7920d9>`;
+		struct udev_monitor* :target:`mon<doxid-d0/d46/structtw__event__source_1a8fef4f3c93bdc4ea1c6211799ac4353e>`;
+	};

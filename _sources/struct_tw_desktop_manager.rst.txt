@@ -1,0 +1,28 @@
+.. index:: pair: struct; tw_desktop_manager
+.. _doxid-dd/d73/structtw__desktop__manager:
+
+struct tw_desktop_manager
+=========================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <desktop.h>
+	
+	struct tw_desktop_manager
+	{
+		// fields
+	
+		struct wl_display* :target:`display<doxid-dd/d73/structtw__desktop__manager_1accc5580a49e64c5ba275d94de641801c>`;
+		struct wl_global* :target:`wl_shell_global<doxid-dd/d73/structtw__desktop__manager_1ac167a74231b98926f8a104e7b72caa67>`;
+		struct wl_global* :target:`xdg_shell_global<doxid-dd/d73/structtw__desktop__manager_1a60f9dc5f2407af3114f10e9fbff910e5>`;
+		struct :ref:`tw_desktop_surface_api<doxid-d9/d08/structtw__desktop__surface__api>` :target:`api<doxid-dd/d73/structtw__desktop__manager_1a819189272ef5eada8df19f2bb8dbb1a4>`;
+		struct wl_listener :target:`destroy_listener<doxid-dd/d73/structtw__desktop__manager_1abb726f41cc695657363a88e823303375>`;
+		void* :target:`user_data<doxid-dd/d73/structtw__desktop__manager_1adcbc018ffb4c0d31b8ab57cde1490f2b>`;
+	};

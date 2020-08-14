@@ -1,0 +1,42 @@
+.. index:: pair: struct; tw_popup_grab
+.. _doxid-d2/d5f/structtw__popup__grab:
+
+struct tw_popup_grab
+====================
+
+.. toctree::
+	:hidden:
+
+Overview
+~~~~~~~~
+
+common interface used for popup windows :ref:`More...<details-d2/d5f/structtw__popup__grab>`
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <popup_grab.h>
+	
+	struct tw_popup_grab
+	{
+		// fields
+	
+		struct :ref:`tw_seat_pointer_grab<doxid-d9/d46/structtw__seat__pointer__grab>` :target:`pointer_grab<doxid-d2/d5f/structtw__popup__grab_1aa20e57fda76ba6562841b3a74c0bb3d8>`;
+		struct :ref:`tw_seat_touch_grab<doxid-da/d71/structtw__seat__touch__grab>` :target:`touch_grab<doxid-d2/d5f/structtw__popup__grab_1a114b9488c8f400f70ae429e7d167db76>`;
+		struct wl_resource* :target:`focus<doxid-d2/d5f/structtw__popup__grab_1ac6c7266b011e50332cc27b3bce2d14cf>`;
+		struct wl_resource* :target:`interface<doxid-d2/d5f/structtw__popup__grab_1aaede439b9ff606bcf59374963d447a21>`;
+		struct :ref:`tw_seat<doxid-dc/d28/structtw__seat>`* :target:`seat<doxid-d2/d5f/structtw__popup__grab_1a24c6446a17fe74f81ec9c74e48a9f0a9>`;
+		struct wl_listener :target:`resource_destroy<doxid-d2/d5f/structtw__popup__grab_1a0e85d517f0a90af0eaa1542800a29a58>`;
+		struct tw_popup_grab* :target:`parent_grab<doxid-d2/d5f/structtw__popup__grab_1a8cf8b462d011e5abc1fa98497f88dc61>`;
+		struct wl_signal :target:`close<doxid-d2/d5f/structtw__popup__grab_1ab40f60e446069b583f3a6c39041abacd>`;
+	};
+.. _details-d2/d5f/structtw__popup__grab:
+
+Detailed Documentation
+~~~~~~~~~~~~~~~~~~~~~~
+
+common interface used for popup windows
+
+popup is a subsurface with a specific grab, popup grab is used in wl_shell, xdg_shell, wlr_layer_shell and possibly taiwins_shell as well.
+

@@ -1,0 +1,27 @@
+.. index:: pair: struct; tw_event_queue
+.. _doxid-d3/d59/structtw__event__queue:
+
+struct tw_event_queue
+=====================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <event_queue.h>
+	
+	struct tw_event_queue
+	{
+		// fields
+	
+		struct wl_display* :target:`wl_display<doxid-d3/d59/structtw__event__queue_1a96020ab11a46f20b800352af0ce2a4d5>`;
+		int :target:`pollfd<doxid-d3/d59/structtw__event__queue_1ae90bed60a000292d4e62e75d1abbef7a>`;
+		struct wl_list :target:`head<doxid-d3/d59/structtw__event__queue_1a86dd5dc702ec430689507280c78750f3>`;
+		struct wl_list :target:`idle_tasks<doxid-d3/d59/structtw__event__queue_1ac7c1ccb22ad51eb87611cfdde2340846>`;
+		bool :target:`quit<doxid-d3/d59/structtw__event__queue_1a4c3210cd4d55c4687cb0b00edcbdb173>`;
+	};

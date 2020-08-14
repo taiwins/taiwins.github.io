@@ -1,0 +1,19 @@
+.. index:: pair: enum; xdg_app_section_type
+.. _doxid-d2/dd9/desktop__entry_8c_1ab451766082388f33c19b080d27d379ef:
+
+enum xdg_app_section_type
+=========================
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	
+	enum xdg_app_section_type
+	{
+	    :target:`XDG_APP_SEC_ENTRY<doxid-d2/dd9/desktop__entry_8c_1ab451766082388f33c19b080d27d379efa01c3ca9ed53ed1a6febcce615a62f588>`,
+	    :target:`XDG_APP_SEC_ACTION<doxid-d2/dd9/desktop__entry_8c_1ab451766082388f33c19b080d27d379efa8fb2dc6eeabb270a1e2d0b6c2ecae8f0>`,
+	    :target:`XDG_APP_SEC_UNKNOWN<doxid-d2/dd9/desktop__entry_8c_1ab451766082388f33c19b080d27d379efad6758a4cfa11c0e0d309828cf99f73b0>`,
+	};
+

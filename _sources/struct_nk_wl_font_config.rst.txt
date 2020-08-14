@@ -1,0 +1,30 @@
+.. index:: pair: struct; nk_wl_font_config
+.. _doxid-db/de2/structnk__wl__font__config:
+
+struct nk_wl_font_config
+========================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <nk_backends.h>
+	
+	struct nk_wl_font_config
+	{
+		// fields
+	
+		const char* :target:`name<doxid-db/de2/structnk__wl__font__config_1afc29595643e89e607b05d1442d633cbd>`;
+		enum :ref:`nk_wl_font_slant<doxid-da/df8/nk__backends_8h_1adc2efa3c49750560fb331e4331ae5b19>` :target:`slant<doxid-db/de2/structnk__wl__font__config_1a0cf2c88a8eb1d566d97134c1f7eefc8a>`;
+		int :target:`pix_size<doxid-db/de2/structnk__wl__font__config_1ae701d74b16a64a1ab92726f142f0cbf6>`;
+		int :target:`scale<doxid-db/de2/structnk__wl__font__config_1a046b6bfa964cb7fbd7a9d7a36c5e3278>`;
+		int :target:`nranges<doxid-db/de2/structnk__wl__font__config_1a48f500fc0fe901bdf5c155f1a20d5c81>`;
+		const nk_rune** :target:`ranges<doxid-db/de2/structnk__wl__font__config_1a4d376f9548bf6fb426301b1d1e4f1340>`;
+		bool :target:`bold<doxid-db/de2/structnk__wl__font__config_1aa7bfeffa2ba327ae2d4f69e6cfd126cb>`;
+		bool :target:`TTFonly<doxid-db/de2/structnk__wl__font__config_1a2d496c98ca7c42465ecb70b4d99c0d1e>`;
+	};

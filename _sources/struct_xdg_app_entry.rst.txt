@@ -1,0 +1,27 @@
+.. index:: pair: struct; xdg_app_entry
+.. _doxid-d9/de2/structxdg__app__entry:
+
+struct xdg_app_entry
+====================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <desktop_entry.h>
+	
+	struct xdg_app_entry
+	{
+		// fields
+	
+		char :target:`name<doxid-d9/de2/structxdg__app__entry_1a34bb2a87bcbb9d80f5a88cd3e936ca12>`[128];
+		char :target:`exec<doxid-d9/de2/structxdg__app__entry_1aa9cb62c4cb85d09bde4a62675626759c>`[128];
+		char :target:`icon<doxid-d9/de2/structxdg__app__entry_1a5d6b9646449454fe54893f52fd0af4ef>`[128];
+		char :target:`path<doxid-d9/de2/structxdg__app__entry_1ab8685546ec604fa7eaa55970dc788630>`[128];
+		bool :target:`terminal_app<doxid-d9/de2/structxdg__app__entry_1aae0333afd6f5b6a021546b09f5a6ef76>`;
+	};

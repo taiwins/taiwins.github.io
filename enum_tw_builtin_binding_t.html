@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    
+    <title>enum tw_builtin_binding_t &#8212; Taiwins</title>
+  
+    <link rel="stylesheet" href="_static/bootstrap-sphinx.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/my-style.css" />
+    <link rel="stylesheet" type="text/css" href="_static/doxyrest-pygments.css" />
+    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/language_data.js"></script>
+    <script src="_static/target-highlight.js"></script>
+    <link rel="shortcut icon" href="_static/favicon.ico"/>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="enum tw_config_enable_global" href="enum_tw_config_enable_global.html" />
+    <link rel="prev" title="enum tw_binding_type" href="enum_tw_binding_type.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<script type="text/javascript" src="_static/js/jquery-1.11.0.min.js "></script>
+<script type="text/javascript" src="_static/js/jquery-fix.js "></script>
+<script type="text/javascript" src="_static/bootstrap-3.3.7/js/bootstrap.min.js "></script>
+<script type="text/javascript" src="_static/bootstrap-sphinx.js "></script>
+
+  </head><body>
+  <div class="page-container">
+    
+<!-- taken from bootstrap theme -->
+<div id="navbar" class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">
+        <b>Taiwins</b></a>
+      <span class="navbar-text navbar-version pull-left"><b></b></span>
+    </div>
+
+    <div class="collapse navbar-collapse nav-collapse">
+      <ul class="nav navbar-nav">
+	<li><a href="page_doc.html">Documentation</a></li>
+	<li><a href="https://github.com/taiwins/taiwins">Source Code</a></li>
+	<li><a href="https://github.com/taiwins/taiwins/wiki">Wiki</a></li>
+	<!-- add other pages -->
+      </ul>
+    </div>
+  </div>
+</div>
+
+    <div class="container">
+      
+	<div class="row">
+	  <div class="body col-md-9 content" role="main">
+	    
+  <div class="section" id="enum-tw-builtin-binding-t">
+<span id="doxid-df-db2-config-internal-8h-1a9654bd11882d76df7e7c111fe5506388"></span><span id="index-0"></span><h1>enum tw_builtin_binding_t<a class="headerlink" href="#enum-tw-builtin-binding-t" title="Permalink to this headline">¶</a></h1>
+<pre class="highlight doxyrest-overview-code-block literal-block"><span></span><span class="cp">#include</span> <span class="cpf">&lt;config_internal.h&gt;</span><span class="cp"></span>
+
+<span class="k">enum</span> <span class="n">tw_builtin_binding_t</span>
+<span class="p">{</span>
+    <span class="doxyrest-code-target target" id="doxid-df-db2-config-internal-8h-1a9654bd11882d76df7e7c111fe5506388abdb95fa82bcda023778d69c1db743def"><span></span><span class="n">TW_QUIT_BINDING</span></span><span></span>             <span class="o">=</span> <span class="mi">0</span><span class="p">,</span>
+    <span class="doxyrest-code-target target" id="doxid-df-db2-config-internal-8h-1a9654bd11882d76df7e7c111fe5506388a1811fe456b46bbaf23f6b0b663ec6bdc"><span></span><span class="n">TW_RELOAD_CONFIG_BINDING</span></span><span></span><span class="p">,</span>
+    <span class="doxyrest-code-target target" id="doxid-df-db2-config-internal-8h-1a9654bd11882d76df7e7c111fe5506388a0507ef4984450a1bdcb1d41a03d735bd"><span></span><span class="n">TW_OPEN_CONSOLE_BINDING</span></span><span></span><span class="p">,</span>
+    <span class="doxyrest-code-target target" id="doxid-df-db2-config-internal-8h-1a9654bd11882d76df7e7c111fe5506388add5a04c92d6bad13182908d529800f0b"><span></span><span class="n">TW_ZOOM_AXIS_BINDING</span></span><span></span><span class="p">,</span>
+    <span class="doxyrest-code-target target" id="doxid-df-db2-config-internal-8h-1a9654bd11882d76df7e7c111fe5506388af7841ae24f54fa283912158640838927"><span></span><span class="n">TW_ALPHA_AXIS_BINDING</span></span><span></span><span class="p">,</span>
+    <span class="doxyrest-code-target target" id="doxid-df-db2-config-internal-8h-1a9654bd11882d76df7e7c111fe5506388ae6cb16304fd2a3e4e271e5e66768c946"><span></span><span class="n">TW_MOVE_PRESS_BINDING</span></span><span></span><span class="p">,</span>
+    <span class="doxyrest-code-target target" id="doxid-df-db2-config-internal-8h-1a9654bd11882d76df7e7c111fe5506388a7cdde8d3d389dcebe31fd3138aeaf596"><span></span><span class="n">TW_FOCUS_PRESS_BINDING</span></span><span></span><span class="p">,</span>
+    <span class="doxyrest-code-target target" id="doxid-df-db2-config-internal-8h-1a9654bd11882d76df7e7c111fe5506388a48530f24cb17ae68e4e8fd75bea22793"><span></span><span class="n">TW_RESIZE_ON_LEFT_BINDING</span></span><span></span><span class="p">,</span>
+    <span class="doxyrest-code-target target" id="doxid-df-db2-config-internal-8h-1a9654bd11882d76df7e7c111fe5506388af4c576b8722b56ece2715bb96409c403"><span></span><span class="n">TW_RESIZE_ON_RIGHT_BINDING</span></span><span></span><span class="p">,</span>
+    <span class="doxyrest-code-target target" id="doxid-df-db2-config-internal-8h-1a9654bd11882d76df7e7c111fe5506388a2112353c897bee5c2e8da40196a6de16"><span></span><span class="n">TW_RESIZE_ON_UP_BINDING</span></span><span></span><span class="p">,</span>
+    <span class="doxyrest-code-target target" id="doxid-df-db2-config-internal-8h-1a9654bd11882d76df7e7c111fe5506388a8155853347816ea3e79b4775cd152a9f"><span></span><span class="n">TW_RESIZE_ON_DOWN_BINDING</span></span><span></span><span class="p">,</span>
+    <span class="doxyrest-code-target target" id="doxid-df-db2-config-internal-8h-1a9654bd11882d76df7e7c111fe5506388acd8680ce68ecea9f7502113fb85d3091"><span></span><span class="n">TW_SWITCH_WS_LEFT_BINDING</span></span><span></span><span class="p">,</span>
+    <span class="doxyrest-code-target target" id="doxid-df-db2-config-internal-8h-1a9654bd11882d76df7e7c111fe5506388ac4dd9affa3c748acafcf13775ff5a90f"><span></span><span class="n">TW_SWITCH_WS_RIGHT_BINDING</span></span><span></span><span class="p">,</span>
+    <span class="doxyrest-code-target target" id="doxid-df-db2-config-internal-8h-1a9654bd11882d76df7e7c111fe5506388a2d9a7a2eacab39eae2105daa2893bf96"><span></span><span class="n">TW_SWITCH_WS_RECENT_BINDING</span></span><span></span><span class="p">,</span>
+    <span class="doxyrest-code-target target" id="doxid-df-db2-config-internal-8h-1a9654bd11882d76df7e7c111fe5506388ae89653cdf649b25aaa69c8f23b341f3d"><span></span><span class="n">TW_TOGGLE_FLOATING_BINDING</span></span><span></span><span class="p">,</span>
+    <span class="doxyrest-code-target target" id="doxid-df-db2-config-internal-8h-1a9654bd11882d76df7e7c111fe5506388ab1967fa982c50f87151875c641043732"><span></span><span class="n">TW_TOGGLE_VERTICAL_BINDING</span></span><span></span><span class="p">,</span>
+    <span class="doxyrest-code-target target" id="doxid-df-db2-config-internal-8h-1a9654bd11882d76df7e7c111fe5506388ac75855d4e29d008d63d994a4c8c1f270"><span></span><span class="n">TW_VSPLIT_WS_BINDING</span></span><span></span><span class="p">,</span>
+    <span class="doxyrest-code-target target" id="doxid-df-db2-config-internal-8h-1a9654bd11882d76df7e7c111fe5506388ad736f86ffef3c784ee7f4a440a770ad8"><span></span><span class="n">TW_HSPLIT_WS_BINDING</span></span><span></span><span class="p">,</span>
+    <span class="doxyrest-code-target target" id="doxid-df-db2-config-internal-8h-1a9654bd11882d76df7e7c111fe5506388a6d0950e91360bfa09765cf988cb8660c"><span></span><span class="n">TW_MERGE_BINDING</span></span><span></span><span class="p">,</span>
+    <span class="doxyrest-code-target target" id="doxid-df-db2-config-internal-8h-1a9654bd11882d76df7e7c111fe5506388abff60d9eb6ce205675059b9ef6f15791"><span></span><span class="n">TW_NEXT_VIEW_BINDING</span></span><span></span><span class="p">,</span>
+    <span class="doxyrest-code-target target" id="doxid-df-db2-config-internal-8h-1a9654bd11882d76df7e7c111fe5506388ae860abe76a04a07882e2392616474563"><span></span><span class="n">TW_BUILTIN_BINDING_SIZE</span></span><span></span><span class="p">,</span>
+<span class="p">};</span></pre>
+</div>
+
+
+	  </div>
+	  
+<div class="col-md-3">
+  <div id="sidebar" class="bs-sidenav"><h3><a data-toggle="collapse" href="#globaltoc">Related Pages</a></h3>
+<div id="globaltoc" class="collapse">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="page_md__home_developer_Projects_taiwins-web-src_taiwins_docs_api.html">Client data structures</a></li>
+<li class="toctree-l1"><a class="reference internal" href="page_md__home_developer_Projects_taiwins-web-src_taiwins_CONTRIBUTING.html">Contributing to Taiwins</a></li>
+<li class="toctree-l1"><a class="reference internal" href="page_md__home_developer_Projects_taiwins-web-src_taiwins_docs_lua.html">Lua bindings</a></li>
+<li class="toctree-l1"><a class="reference internal" href="page_md__home_developer_Projects_taiwins-web-src_taiwins_docs_window_management.html">Taiwins layout engine.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="page_md__home_developer_Projects_taiwins-web-src_taiwins_README.html">Taiwins, a morden wayland window manager</a></li>
+<li class="toctree-l1"><a class="reference internal" href="page_md__home_developer_Projects_taiwins-web-src_taiwins_subprojects_twclient_README.html">wayland client utility library</a></li>
+<li class="toctree-l1"><a class="reference internal" href="page_md__home_developer_Projects_taiwins-web-src_taiwins_docs_wayland.html">wayland objects</a></li>
+</ul>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="global.html">Global Namespace</a></li>
+</ul>
+
+</div>
+<form action="search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+  </div>
+</div>
+
+	</div>
+      
+    </div>
+    <div class="push"></div>
+  </div>
+
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+    </p>
+    <p>
+        &copy; Copyright 2020, Xichen Zhou.<br/>
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 3.0.3.<br/>
+    </p>
+  </div>
+</footer>
+  </body>
+</html>

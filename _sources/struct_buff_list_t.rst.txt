@@ -1,0 +1,25 @@
+.. index:: pair: struct; buff_list_t
+.. _doxid-dd/de5/structbuff__list__t:
+
+struct buff_list_t
+==================
+
+.. toctree::
+	:hidden:
+
+this buffer allocation strategy is basically assumming you won't free the buffer unless you free all of them
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <buffer.h>
+	
+	struct buff_list_t
+	{
+		// fields
+	
+		:ref:`list_t<doxid-d7/d6c/structlist__t>` :target:`node<doxid-dd/de5/structbuff__list__t_1a7f27a0db69d118b96b38b94828b62b54>`;
+		size_t :target:`size<doxid-dd/de5/structbuff__list__t_1adc40462759c308aceb9977c30fb5eac1>`;
+		off_t :target:`offset<doxid-dd/de5/structbuff__list__t_1a0276e9319dd66bb6d4443fb2a8c3e022>`;
+	};

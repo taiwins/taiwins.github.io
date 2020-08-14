@@ -1,0 +1,21 @@
+.. index:: pair: enum; TW_KEYBOARD_MODIFIER
+.. _doxid-d7/d0c/seat_8h_1a37ff993ae4efc087fa82b4fd75ca3ca6:
+
+enum TW_KEYBOARD_MODIFIER
+=========================
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <seat.h>
+
+	enum TW_KEYBOARD_MODIFIER
+	{
+	    :target:`TW_MODIFIER_CTRL<doxid-d7/d0c/seat_8h_1a37ff993ae4efc087fa82b4fd75ca3ca6a5b32a424956dd3084187e47e1cf65619>`  =(1<<0),
+	    :target:`TW_MODIFIER_ALT<doxid-d7/d0c/seat_8h_1a37ff993ae4efc087fa82b4fd75ca3ca6acffbc5ee5890f808cd7422c864c681b6>`   =(1<<1),
+	    :target:`TW_MODIFIER_SUPER<doxid-d7/d0c/seat_8h_1a37ff993ae4efc087fa82b4fd75ca3ca6a564787c7bfc7bf47b56cb784099184f9>` =(1<<2),
+	    :target:`TW_MODIFIER_SHIFT<doxid-d7/d0c/seat_8h_1a37ff993ae4efc087fa82b4fd75ca3ca6a388d8d66f3363d6a163eb7603a8ff3f8>` =(1<<3),
+	};
+

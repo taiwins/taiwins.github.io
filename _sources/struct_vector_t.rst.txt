@@ -1,0 +1,27 @@
+.. index:: pair: struct; vector_t
+.. _doxid-d3/d8b/structvector__t:
+
+struct vector_t
+===============
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <vector.h>
+	
+	struct vector_t
+	{
+		// fields
+	
+		void* :target:`elems<doxid-d3/d8b/structvector__t_1a088df256882fa5017dea519f28b86d06>`;
+		size_t :target:`elemsize<doxid-d3/d8b/structvector__t_1ad8118a43bc7f2b51dea8dbd140699b70>`;
+		int :target:`len<doxid-d3/d8b/structvector__t_1aa3591ddb5a8d507633da364c8c310806>`;
+		int :target:`alloc_len<doxid-d3/d8b/structvector__t_1a07ccd15e7b2f9aa83ec1257d21727842>`;
+		void(* :target:`free<doxid-d3/d8b/structvector__t_1a918d8b0c446438220f57e1a3816197b6>`)(void *);
+	};

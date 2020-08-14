@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    
+    <title>enum tw_layer_pos &#8212; Taiwins</title>
+  
+    <link rel="stylesheet" href="_static/bootstrap-sphinx.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/my-style.css" />
+    <link rel="stylesheet" type="text/css" href="_static/doxyrest-pygments.css" />
+    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/language_data.js"></script>
+    <script src="_static/target-highlight.js"></script>
+    <link rel="shortcut icon" href="_static/favicon.ico"/>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="enum tw_layout_type" href="enum_tw_layout_type.html" />
+    <link rel="prev" title="enum tw_input_device_cap" href="enum_tw_input_device_cap.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<script type="text/javascript" src="_static/js/jquery-1.11.0.min.js "></script>
+<script type="text/javascript" src="_static/js/jquery-fix.js "></script>
+<script type="text/javascript" src="_static/bootstrap-3.3.7/js/bootstrap.min.js "></script>
+<script type="text/javascript" src="_static/bootstrap-sphinx.js "></script>
+
+  </head><body>
+  <div class="page-container">
+    
+<!-- taken from bootstrap theme -->
+<div id="navbar" class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">
+        <b>Taiwins</b></a>
+      <span class="navbar-text navbar-version pull-left"><b></b></span>
+    </div>
+
+    <div class="collapse navbar-collapse nav-collapse">
+      <ul class="nav navbar-nav">
+	<li><a href="page_doc.html">Documentation</a></li>
+	<li><a href="https://github.com/taiwins/taiwins">Source Code</a></li>
+	<li><a href="https://github.com/taiwins/taiwins/wiki">Wiki</a></li>
+	<!-- add other pages -->
+      </ul>
+    </div>
+  </div>
+</div>
+
+    <div class="container">
+      
+	<div class="row">
+	  <div class="body col-md-9 content" role="main">
+	    
+  <div class="section" id="enum-tw-layer-pos">
+<span id="doxid-dd-dcd-layers-8h-1a948b594c17cdfff1f882c5dadaaa07fb"></span><span id="index-0"></span><h1>enum tw_layer_pos<a class="headerlink" href="#enum-tw-layer-pos" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="overview">
+<h2>Overview<a class="headerlink" href="#overview" title="Permalink to this headline">¶</a></h2>
+<p>taiwins layer is tailered for desktop arrangement. <a class="reference internal" href="#details-dd-dcd-layers-8h-1a948b594c17cdfff1f882c5dadaaa07fb"><span class="std std-ref">More…</span></a></p>
+<pre class="highlight doxyrest-overview-code-block literal-block"><span></span><span class="cp">#include</span> <span class="cpf">&lt;layers.h&gt;</span><span class="cp"></span>
+
+<span class="k">enum</span> <span class="n">tw_layer_pos</span>
+<span class="p">{</span>
+    <span class="doxyrest-code-target target" id="doxid-dd-dcd-layers-8h-1a948b594c17cdfff1f882c5dadaaa07fba209af795f30c403198cd4c581727872f"><span></span><span class="n">TW_LAYER_POS_HIDDEN</span></span><span></span>           <span class="o">=</span> <span class="mh">0x00000000</span><span class="p">,</span>
+    <span class="doxyrest-code-target target" id="doxid-dd-dcd-layers-8h-1a948b594c17cdfff1f882c5dadaaa07fba1ed8def7519b467c43c4e59a2984cb74"><span></span><span class="n">TW_LAYER_POS_BACKGROUND</span></span><span></span>       <span class="o">=</span> <span class="mh">0x00000001</span><span class="p">,</span>
+    <span class="doxyrest-code-target target" id="doxid-dd-dcd-layers-8h-1a948b594c17cdfff1f882c5dadaaa07fba200afaeb03a225db80cd5c8ab209e0aa"><span></span><span class="n">TW_LAYER_POS_DESKTOP_BELOW_UI</span></span><span></span> <span class="o">=</span> <span class="mh">0x30000000</span><span class="p">,</span>
+    <span class="doxyrest-code-target target" id="doxid-dd-dcd-layers-8h-1a948b594c17cdfff1f882c5dadaaa07fbabc9d26f8239e6c5d34e89c7dbd88eab1"><span></span><span class="n">TW_LAYER_POS_FULLSCREEN_BACK</span></span><span></span>  <span class="o">=</span> <span class="mh">0x4fffffff</span><span class="p">,</span>
+    <span class="doxyrest-code-target target" id="doxid-dd-dcd-layers-8h-1a948b594c17cdfff1f882c5dadaaa07fba5398231616ed02fe697ac260dcd3ed8e"><span></span><span class="n">TW_LAYER_POS_DESKTOP_BACK</span></span><span></span>     <span class="o">=</span> <span class="mh">0x50000000</span><span class="p">,</span>
+    <span class="doxyrest-code-target target" id="doxid-dd-dcd-layers-8h-1a948b594c17cdfff1f882c5dadaaa07fba41aed7224de59c92df6756e2760b0b61"><span></span><span class="n">TW_LAYER_POS_DESKTOP_MID</span></span><span></span>      <span class="o">=</span> <span class="mh">0x50000001</span><span class="p">,</span>
+    <span class="doxyrest-code-target target" id="doxid-dd-dcd-layers-8h-1a948b594c17cdfff1f882c5dadaaa07fbaa6d5d40fb50392e528709b9dd079130c"><span></span><span class="n">TW_LAYER_POS_DESKTOP_FRONT</span></span><span></span>    <span class="o">=</span> <span class="mh">0x50000002</span><span class="p">,</span>
+    <span class="doxyrest-code-target target" id="doxid-dd-dcd-layers-8h-1a948b594c17cdfff1f882c5dadaaa07fbac7f692ac7c5249d9b1d9a0d2855d6020"><span></span><span class="n">TW_LAYER_POS_DESKTOP_UI</span></span><span></span>       <span class="o">=</span> <span class="mh">0x80000000</span><span class="p">,</span>
+    <span class="doxyrest-code-target target" id="doxid-dd-dcd-layers-8h-1a948b594c17cdfff1f882c5dadaaa07fba9aa221e5bf89320db4d35bf348251444"><span></span><span class="n">TW_LAYER_POS_FULLSCREEN_FRONT</span></span><span></span> <span class="o">=</span> <span class="mh">0x90000000</span><span class="p">,</span>
+    <span class="doxyrest-code-target target" id="doxid-dd-dcd-layers-8h-1a948b594c17cdfff1f882c5dadaaa07fba81e71fd30977ec2e4bbacea25b2efc55"><span></span><span class="n">TW_LAYER_POS_LOCKER</span></span><span></span>           <span class="o">=</span> <span class="mh">0xA0000000</span><span class="p">,</span>
+    <span class="doxyrest-code-target target" id="doxid-dd-dcd-layers-8h-1a948b594c17cdfff1f882c5dadaaa07fba0c7a696032d2e2359817250850255d69"><span></span><span class="n">TW_LAYER_POS_CURSOR</span></span><span></span>           <span class="o">=</span> <span class="mh">0xffffffff</span><span class="p">,</span>
+<span class="p">};</span></pre>
+</div>
+<div class="section" id="detailed-documentation">
+<span id="details-dd-dcd-layers-8h-1a948b594c17cdfff1f882c5dadaaa07fb"></span><h2>Detailed Documentation<a class="headerlink" href="#detailed-documentation" title="Permalink to this headline">¶</a></h2>
+<p>taiwins layer is tailered for desktop arrangement.</p>
+<p>the layer system is good for organize the the stacking order. Which view goes to where, views have a “recent order” order as well and that is indeed different than stacking order, have another recent_link for views would be a good idea.</p>
+</div>
+</div>
+
+
+	  </div>
+	  
+<div class="col-md-3">
+  <div id="sidebar" class="bs-sidenav">
+<h3>Content</h3>
+<div id="localtoc"><ul>
+<li><a class="reference internal" href="#">enum tw_layer_pos</a><ul>
+<li><a class="reference internal" href="#overview">Overview</a></li>
+<li><a class="reference internal" href="#detailed-documentation">Detailed Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<h3><a data-toggle="collapse" href="#globaltoc">Related Pages</a></h3>
+<div id="globaltoc" class="collapse">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="page_md__home_developer_Projects_taiwins-web-src_taiwins_docs_api.html">Client data structures</a></li>
+<li class="toctree-l1"><a class="reference internal" href="page_md__home_developer_Projects_taiwins-web-src_taiwins_CONTRIBUTING.html">Contributing to Taiwins</a></li>
+<li class="toctree-l1"><a class="reference internal" href="page_md__home_developer_Projects_taiwins-web-src_taiwins_docs_lua.html">Lua bindings</a></li>
+<li class="toctree-l1"><a class="reference internal" href="page_md__home_developer_Projects_taiwins-web-src_taiwins_docs_window_management.html">Taiwins layout engine.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="page_md__home_developer_Projects_taiwins-web-src_taiwins_README.html">Taiwins, a morden wayland window manager</a></li>
+<li class="toctree-l1"><a class="reference internal" href="page_md__home_developer_Projects_taiwins-web-src_taiwins_subprojects_twclient_README.html">wayland client utility library</a></li>
+<li class="toctree-l1"><a class="reference internal" href="page_md__home_developer_Projects_taiwins-web-src_taiwins_docs_wayland.html">wayland objects</a></li>
+</ul>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="global.html">Global Namespace</a></li>
+</ul>
+
+</div>
+<form action="search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+  </div>
+</div>
+
+	</div>
+      
+    </div>
+    <div class="push"></div>
+  </div>
+
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+    </p>
+    <p>
+        &copy; Copyright 2020, Xichen Zhou.<br/>
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 3.0.3.<br/>
+    </p>
+  </div>
+</footer>
+  </body>
+</html>

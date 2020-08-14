@@ -1,0 +1,28 @@
+.. index:: pair: struct; tw_data_offer
+.. _doxid-dd/dd4/structtw__data__offer:
+
+struct tw_data_offer
+====================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <data_device.h>
+	
+	struct tw_data_offer
+	{
+		// fields
+	
+		struct :ref:`tw_data_source<doxid-dc/d55/structtw__data__source>`* :target:`source<doxid-dd/dd4/structtw__data__offer_1a5bdbaaa765bafc0aaef4a845d79c4faa>`;
+		struct wl_resource* :target:`resource<doxid-dd/dd4/structtw__data__offer_1ae6da62c8cf97bac71280e6c8284a4572>`;
+		struct wl_resource* :target:`current_surface<doxid-dd/dd4/structtw__data__offer_1af6ce83061e13f7c0cc983aaf14f9382c>`;
+		struct wl_listener :target:`source_destroy_listener<doxid-dd/dd4/structtw__data__offer_1afe0a740bb6df999d733433450c7b056b>`;
+		struct wl_list :target:`link<doxid-dd/dd4/structtw__data__offer_1af497078f797c12e9bda1565b35b53ab2>`;
+		bool :target:`finished<doxid-dd/dd4/structtw__data__offer_1a5f17b4e2e529b71762b7e5f46e3cb948>`;
+	};

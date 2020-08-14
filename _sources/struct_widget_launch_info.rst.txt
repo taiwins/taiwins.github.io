@@ -1,0 +1,50 @@
+.. index:: pair: struct; widget_launch_info
+.. _doxid-d9/da7/structwidget__launch__info:
+
+struct widget_launch_info
+=========================
+
+.. toctree::
+	:hidden:
+
+Overview
+~~~~~~~~
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <shell.h>
+	
+	struct widget_launch_info
+	{
+		// fields
+	
+		uint32_t :target:`x<doxid-d9/da7/structwidget__launch__info_1a525c755ac1d5e617e10187dae1b5c9d9>`;
+		uint32_t :target:`y<doxid-d9/da7/structwidget__launch__info_1af6c3d23e88265b1f63b13d5fb9cad228>`;
+		struct :ref:`shell_widget<doxid-db/d95/structshell__widget>`* :target:`widget<doxid-d9/da7/structwidget__launch__info_1a505006060bc325cbdb279ec9fcbaf609>`;
+		struct :ref:`shell_widget<doxid-db/d95/structshell__widget>`* :target:`current<doxid-d9/da7/structwidget__launch__info_1ac7bfbbbe95b04a83c1c3f3e98d494dff>`;
+		struct :ref:`shell_output<doxid-d2/d16/structshell__output>`* :ref:`output<doxid-d9/da7/structwidget__launch__info_1a273c5324c6a78671e5b94d3fc3c527c3>`;
+	};
+.. _details-d9/da7/structwidget__launch__info:
+
+Detailed Documentation
+~~~~~~~~~~~~~~~~~~~~~~
+
+
+
+Fields
+------
+
+.. index:: pair: variable; output
+.. _doxid-d9/da7/structwidget__launch__info_1a273c5324c6a78671e5b94d3fc3c527c3:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	struct :ref:`shell_output<doxid-d2/d16/structshell__output>`* output
+
+which output to launch
+

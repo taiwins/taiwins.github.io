@@ -1,0 +1,38 @@
+.. index:: pair: struct; tw_output
+.. _doxid-db/d81/structtw__output:
+
+struct tw_output
+================
+
+.. toctree::
+	:hidden:
+
+Overview
+~~~~~~~~
+
+taiwins output information :ref:`More...<details-db/d81/structtw__output>`
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <desktop.h>
+	
+	struct tw_output
+	{
+		// fields
+	
+		struct weston_output* :target:`output<doxid-db/d81/structtw__output_1a8ba13400248cf6bb7a34c96da321d65f>`;
+		struct weston_geometry :target:`desktop_area<doxid-db/d81/structtw__output_1a2b5ec714a65d1fa88230b6a889be528c>`;
+		uint32_t :target:`inner_gap<doxid-db/d81/structtw__output_1a34e7a693abbd382ea19617b21ed8a09f>`;
+		uint32_t :target:`outer_gap<doxid-db/d81/structtw__output_1a3a4d2420114e65d6b937d9d51344ce34>`;
+	};
+.. _details-db/d81/structtw__output:
+
+Detailed Documentation
+~~~~~~~~~~~~~~~~~~~~~~
+
+taiwins output information
+
+here we define some template structures. It is passed as pure data, and they are not persistent. So don't store them as pointers.
+

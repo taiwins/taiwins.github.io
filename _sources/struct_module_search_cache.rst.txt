@@ -1,0 +1,35 @@
+.. index:: pair: struct; module_search_cache
+.. _doxid-d6/d8f/structmodule__search__cache:
+
+struct module_search_cache
+==========================
+
+.. toctree::
+	:hidden:
+
+Overview
+~~~~~~~~
+
+general scenario :ref:`More...<details-d6/d8f/structmodule__search__cache>`
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	
+	struct module_search_cache
+	{
+		// fields
+	
+		char* :target:`last_command<doxid-d6/d8f/structmodule__search__cache_1afb9a030927e669b915892bbbfbf04e7b>`;
+		:ref:`vector_t<doxid-d3/d8b/structvector__t>` :target:`last_results<doxid-d6/d8f/structmodule__search__cache_1a90ba89753a242bd9c466ca00042c971d>`;
+	};
+.. _details-d6/d8f/structmodule__search__cache:
+
+Detailed Documentation
+~~~~~~~~~~~~~~~~~~~~~~
+
+general scenario
+
+console main thread is issuing search commands to module threads. When it does so, it should first clean out the search results if any (there could be cases where console thread is issuing the command while module is doing the search as well. Such that By the time it finished, new commands is coming in, so at the module side, checking )
+

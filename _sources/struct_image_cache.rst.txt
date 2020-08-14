@@ -1,0 +1,70 @@
+.. index:: pair: struct; image_cache
+.. _doxid-d2/d73/structimage__cache:
+
+struct image_cache
+==================
+
+.. toctree::
+	:hidden:
+
+Overview
+~~~~~~~~
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <image_cache.h>
+	
+	struct image_cache
+	{
+		// fields
+	
+		struct :ref:`tw_bbox<doxid-d1/d39/structtw__bbox>` :target:`dimension<doxid-d2/d73/structimage__cache_1a6af141ac432f365e6ac5f4f0d1918a51>`;
+		struct wl_array :ref:`image_boxes<doxid-d2/d73/structimage__cache_1a324d96d0521375a98b81189777302bbf>`;
+		unsigned char* :ref:`atlas<doxid-d2/d73/structimage__cache_1a2ed46929fa098b15889bc7c93c02d94e>`;
+		struct wl_array :ref:`handles<doxid-d2/d73/structimage__cache_1aed10259c6402819eb9cf686594b08c99>`;
+		struct wl_array :target:`strings<doxid-d2/d73/structimage__cache_1a42d411a3806fae186b6bc946646f47c1>`;
+	};
+.. _details-d2/d73/structimage__cache:
+
+Detailed Documentation
+~~~~~~~~~~~~~~~~~~~~~~
+
+
+
+Fields
+------
+
+.. index:: pair: variable; image_boxes
+.. _doxid-d2/d73/structimage__cache_1a324d96d0521375a98b81189777302bbf:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	struct wl_array image_boxes
+
+an array of tw_box
+
+.. index:: pair: variable; atlas
+.. _doxid-d2/d73/structimage__cache_1a2ed46929fa098b15889bc7c93c02d94e:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	unsigned char* atlas
+
+rgb pixels
+
+.. index:: pair: variable; handles
+.. _doxid-d2/d73/structimage__cache_1aed10259c6402819eb9cf686594b08c99:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	struct wl_array handles
+
+storage for query image by name
+

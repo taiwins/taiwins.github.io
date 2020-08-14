@@ -1,0 +1,27 @@
+.. index:: pair: struct; tw_touch
+.. _doxid-d1/d77/structtw__touch:
+
+struct tw_touch
+===============
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <seat.h>
+	
+	struct tw_touch
+	{
+		// fields
+	
+		struct :ref:`tw_seat_client<doxid-d4/d94/structtw__seat__client>`* :target:`focused_client<doxid-d1/d77/structtw__touch_1acd43db3872dc0de22713d0bbaee72d2f>`;
+		struct wl_resource* :target:`focused_surface<doxid-d1/d77/structtw__touch_1a17eed6a67da1f5426de12fa4d4b6e31f>`;
+		struct wl_listener :target:`focused_destroy<doxid-d1/d77/structtw__touch_1ac4a252cd0de383428b5d8266bfcfd972>`;
+		struct :ref:`tw_seat_touch_grab<doxid-da/d71/structtw__seat__touch__grab>` :target:`default_grab<doxid-d1/d77/structtw__touch_1a37528c439156df275e511a6a14913371>`;
+		struct :ref:`tw_seat_touch_grab<doxid-da/d71/structtw__seat__touch__grab>`* :target:`grab<doxid-d1/d77/structtw__touch_1a16c77504fe67a56765c50a3f1df224d3>`;
+	};

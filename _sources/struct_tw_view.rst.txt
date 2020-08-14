@@ -1,0 +1,66 @@
+.. index:: pair: struct; tw_view
+.. _doxid-d1/d3c/structtw__view:
+
+struct tw_view
+==============
+
+.. toctree::
+	:hidden:
+
+Overview
+~~~~~~~~
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <surface.h>
+	
+	struct tw_view
+	{
+		// fields
+	
+		struct :ref:`tw_surface<doxid-dd/dda/structtw__surface>`* :target:`surface<doxid-d1/d3c/structtw__view_1a483094a0f1dccaee2ed60a7266df489c>`;
+		uint32_t :target:`commit_state<doxid-d1/d3c/structtw__view_1a1764758e054fc912d26e01323ce2939e>`;
+		int32_t :target:`dx<doxid-d1/d3c/structtw__view_1aa471a97627adca4def786a2c3b817574>`;
+		int32_t :ref:`dy<doxid-d1/d3c/structtw__view_1a43458fd218337572101eeadd7dfba59b>`;
+		int32_t :target:`buffer_scale<doxid-d1/d3c/structtw__view_1a6546bb9bf6703e5c03cd2ff74b6b4384>`;
+		enum wl_output_transform :target:`transform<doxid-d1/d3c/structtw__view_1aaea6f38bc69f666b7d98f030e7193ebf>`;
+		int32_t :target:`x<doxid-d1/d3c/structtw__view_1a214bd183434b6b881c87032f6dba82ec>`;
+		int32_t :target:`y<doxid-d1/d3c/structtw__view_1ac2ab5511f75fc0fd40cc28e1e29ba370>`;
+		int32_t :target:`w<doxid-d1/d3c/structtw__view_1a58d346fb6f390807529b01c5468b9023>`;
+		int32_t :target:`h<doxid-d1/d3c/structtw__view_1abcb012ebbddf1d419d2bf63bfdac25e7>`;
+		struct tw_view::@40 :target:`crop<doxid-d1/d3c/structtw__view_1a7246bdcb625d0a1d655b570dc885b034>`;
+		uint32_t :target:`w<doxid-d1/d3c/structtw__view_1ab6fd1ff8c702c60c1c41f9ecc73a0d29>`;
+		uint32_t :target:`h<doxid-d1/d3c/structtw__view_1a27eecf072054b57f3272fc810dc342a6>`;
+		struct tw_view::@41 :target:`surface_scale<doxid-d1/d3c/structtw__view_1aee2a279c37f6488da6ca76d0452fd2a4>`;
+		struct :ref:`tw_mat3<doxid-d4/da4/structtw__mat3>` :target:`surface_to_buffer<doxid-d1/d3c/structtw__view_1a1ced211a1a5ccef04edd5b4b81f8fb6d>`;
+		struct :ref:`tw_plane<doxid-d8/d69/structtw__plane>`* :target:`plane<doxid-d1/d3c/structtw__view_1afbdfc1eced7812477c65ad6b2ac9a228>`;
+		struct wl_resource* :target:`buffer_resource<doxid-d1/d3c/structtw__view_1a2a4d085d70dcddd730f0ce26d958fd43>`;
+		pixman_region32_t :target:`surface_damage<doxid-d1/d3c/structtw__view_1a713c4d1d0f278ce489ef6d230b1e9af4>`;
+		pixman_region32_t :target:`buffer_damage<doxid-d1/d3c/structtw__view_1a0037aedfddd72d4b4ee3dfdb06a2a48e>`;
+		pixman_region32_t :target:`opaque_region<doxid-d1/d3c/structtw__view_1aeb6390b627862607ffb1d5e6fe8af167>`;
+		pixman_region32_t :target:`input_region<doxid-d1/d3c/structtw__view_1aba0aebca2925381e11feb6252aeafa10>`;
+	};
+.. _details-d1/d3c/structtw__view:
+
+Detailed Documentation
+~~~~~~~~~~~~~~~~~~~~~~
+
+
+
+Fields
+------
+
+.. index:: pair: variable; dy
+.. _doxid-d1/d3c/structtw__view_1a43458fd218337572101eeadd7dfba59b:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	int32_t dy
+
+wl_surface_attach, pending
+

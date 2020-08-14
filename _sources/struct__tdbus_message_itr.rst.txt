@@ -1,0 +1,23 @@
+.. index:: pair: struct; _tdbus_message_itr
+.. _doxid-d1/d89/struct__tdbus__message__itr:
+
+struct _tdbus_message_itr
+=========================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	
+	struct _tdbus_message_itr
+	{
+		// fields
+	
+		struct :ref:`tdbus_message_itr<doxid-d9/d48/structtdbus__message__itr>` :target:`it<doxid-d1/d89/struct__tdbus__message__itr_1acf972c35edd15e940cab1c5e56ba4f01>`;
+		struct :ref:`tdbus_array<doxid-da/d6d/structtdbus__array>` :target:`arr<doxid-d1/d89/struct__tdbus__message__itr_1a9efe8586d98f22d40f5ccb85e5de34bf>`;
+	};

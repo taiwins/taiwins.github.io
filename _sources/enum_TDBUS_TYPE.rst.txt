@@ -1,0 +1,19 @@
+.. index:: pair: enum; TDBUS_TYPE
+.. _doxid-d2/d1b/tdbus_8h_1aaf58c5bf09a9561ce5ad70bc9410e958:
+
+enum TDBUS_TYPE
+===============
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <tdbus.h>
+
+	enum TDBUS_TYPE
+	{
+	    :target:`SYSTEM_BUS<doxid-d2/d1b/tdbus_8h_1aaf58c5bf09a9561ce5ad70bc9410e958aa48adba98864febfe0f558b54eaf3eb0>`,
+	    :target:`SESSION_BUS<doxid-d2/d1b/tdbus_8h_1aaf58c5bf09a9561ce5ad70bc9410e958a6b89f2ec22408a67baa46838a8438b7f>`,
+	};
+

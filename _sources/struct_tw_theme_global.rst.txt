@@ -1,0 +1,28 @@
+.. index:: pair: struct; tw_theme_global
+.. _doxid-dd/d48/structtw__theme__global:
+
+struct tw_theme_global
+======================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	
+	struct tw_theme_global
+	{
+		// fields
+	
+		struct wl_display* :target:`display<doxid-dd/d48/structtw__theme__global_1a9b51e9ec712d089dd652b802d49b1b1a>`;
+		struct wl_listener :target:`compositor_destroy_listener<doxid-dd/d48/structtw__theme__global_1acef0305906c070bb3f296a5f545baa8e>`;
+		struct wl_global* :target:`global<doxid-dd/d48/structtw__theme__global_1af056753c586d8d6e9bcd68d18c004981>`;
+		struct :ref:`tw_config<doxid-df/d35/structtw__config>`* :target:`config<doxid-dd/d48/structtw__theme__global_1a5a4fe5f98a105ed114c21031c277f939>`;
+		struct wl_list :target:`clients<doxid-dd/d48/structtw__theme__global_1adef8ac6f94e91a23eea8cb71b1182b2a>`;
+		int :target:`fd<doxid-dd/d48/structtw__theme__global_1ada687767f99768b0c8e429158fe88db1>`;
+		size_t :target:`theme_size<doxid-dd/d48/structtw__theme__global_1aa32b6ba1bb6b1e68d80aeeb7d49f0d98>`;
+	};

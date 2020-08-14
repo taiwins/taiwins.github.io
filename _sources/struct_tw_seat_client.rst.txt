@@ -1,0 +1,29 @@
+.. index:: pair: struct; tw_seat_client
+.. _doxid-d4/d94/structtw__seat__client:
+
+struct tw_seat_client
+=====================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <seat.h>
+	
+	struct tw_seat_client
+	{
+		// fields
+	
+		struct :ref:`tw_seat<doxid-dc/d28/structtw__seat>`* :target:`seat<doxid-d4/d94/structtw__seat__client_1a28ab8d7880b8c15a77a3ec320e307f47>`;
+		struct wl_client* :target:`client<doxid-d4/d94/structtw__seat__client_1a29bdc24d9d710a39c7fe53cbfed593e9>`;
+		struct wl_list :target:`link<doxid-d4/d94/structtw__seat__client_1a3f10488130141cfea1fbad7ff288e2e4>`;
+		struct wl_list :target:`resources<doxid-d4/d94/structtw__seat__client_1abb782a8b2044a551532c475626df018e>`;
+		struct wl_list :target:`keyboards<doxid-d4/d94/structtw__seat__client_1ac6052a52d0253a83e6fc5ebb831f79b2>`;
+		struct wl_list :target:`pointers<doxid-d4/d94/structtw__seat__client_1a121d9af4973bf5cec53b3869c1be9a75>`;
+		struct wl_list :target:`touches<doxid-d4/d94/structtw__seat__client_1a135a57444340f833b8969cd45794b6ce>`;
+	};

@@ -1,0 +1,36 @@
+.. index:: pair: struct; tw_console
+.. _doxid-dd/dc3/structtw__console:
+
+struct tw_console
+=================
+
+.. toctree::
+	:hidden:
+
+this struct handles the request and sends the event from :ref:`tw_console <doxid-dd/dc3/structtw__console>`.
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	
+	struct tw_console
+	{
+		// fields
+	
+		char :target:`path<doxid-dd/dc3/structtw__console_1aca52b4903ee440c108fd4d76ab34fbb6>`[256];
+		struct wl_client* :target:`client<doxid-dd/dc3/structtw__console_1a8706de01d76497469e15e2dfc40ea41f>`;
+		struct wl_resource* :target:`resource<doxid-dd/dc3/structtw__console_1adac0daaa116b85906653e2192ccec47f>`;
+		pid_t :target:`pid<doxid-dd/dc3/structtw__console_1ab234cabb6b01eacdb55a6975a6d0f073>`;
+		uid_t :target:`uid<doxid-dd/dc3/structtw__console_1a6ed78f00bfa7687f976f93a995f8dfed>`;
+		gid_t :target:`gid<doxid-dd/dc3/structtw__console_1a008ae22571f85f975036f6efe19c3775>`;
+		struct :ref:`tw_shell<doxid-de/dcd/structtw__shell>`* :target:`shell<doxid-dd/dc3/structtw__console_1ae344305889849199a14bfcc2022f9a95>`;
+		struct wl_display* :target:`display<doxid-dd/dc3/structtw__console_1a9c213c9e984147d7a25e572afc998bd2>`;
+		struct :ref:`tw_backend<doxid-df/d59/structtw__backend>`* :target:`backend<doxid-dd/dc3/structtw__console_1acd120035203b7f9245f5b9075432f446>`;
+		struct wl_shm_buffer* :target:`decision_buffer<doxid-dd/dc3/structtw__console_1a017492bc6fd101cb450c70ba716e49b5>`;
+		struct :ref:`tw_surface<doxid-dd/dda/structtw__surface>`* :target:`surface<doxid-dd/dc3/structtw__console_1aaa3e5838e95286c4955686b747dfb3b1>`;
+		struct wl_listener :target:`display_destroy_listener<doxid-dd/dc3/structtw__console_1a5ca15d90328fb1e56465e37c49fe4489>`;
+		struct wl_listener :target:`close_console_listener<doxid-dd/dc3/structtw__console_1aee45c5fa45e8617ffa66e0458af9e395>`;
+		struct wl_global* :target:`global<doxid-dd/dc3/structtw__console_1afbd9348109bba0bcb0dedc629406c529>`;
+		struct :ref:`tw_subprocess<doxid-d0/d68/structtw__subprocess>` :target:`process<doxid-dd/dc3/structtw__console_1a905454776357d72ce63d297db2961e6c>`;
+	};

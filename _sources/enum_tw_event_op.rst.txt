@@ -1,0 +1,19 @@
+.. index:: pair: enum; tw_event_op
+.. _doxid-d2/d4f/event__queue_8h_1a2e6d003d6b48552b58f2528793250ce6:
+
+enum tw_event_op
+================
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <event_queue.h>
+
+	enum tw_event_op
+	{
+	    :target:`TW_EVENT_NOOP<doxid-d2/d4f/event__queue_8h_1a2e6d003d6b48552b58f2528793250ce6a5a77d9172d84bdfead31bfd51a29e36b>`,
+	    :target:`TW_EVENT_DEL<doxid-d2/d4f/event__queue_8h_1a2e6d003d6b48552b58f2528793250ce6a4b59a0dc26f2130c917fa9b575bd5207>`,
+	};
+

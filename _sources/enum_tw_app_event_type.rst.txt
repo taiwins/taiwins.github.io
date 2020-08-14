@@ -1,0 +1,56 @@
+.. index:: pair: enum; tw_app_event_type
+.. _doxid-dc/dd2/ui__event_8h_1a9a7bde48e964c43e87646c68cc96c93e:
+
+enum tw_app_event_type
+======================
+
+Overview
+~~~~~~~~
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <ui_event.h>
+
+	enum tw_app_event_type
+	{
+	    :ref:`TW_FOCUS<doxid-dc/dd2/ui__event_8h_1a9a7bde48e964c43e87646c68cc96c93ea111d8c4c877ff56102e89d3d5db68545>`,
+	    :target:`TW_UNFOCUS<doxid-dc/dd2/ui__event_8h_1a9a7bde48e964c43e87646c68cc96c93ea88736610a4d8eef86e9f42b70124ca24>`,
+	    :target:`TW_FRAME_START<doxid-dc/dd2/ui__event_8h_1a9a7bde48e964c43e87646c68cc96c93ea6e51e90f6dc9f9418aeaea34533dc2be>`,
+	    :target:`TW_TIMER<doxid-dc/dd2/ui__event_8h_1a9a7bde48e964c43e87646c68cc96c93eafae7d97784d7b95726af1d7793798a12>`,
+	    :target:`TW_POINTER_MOTION<doxid-dc/dd2/ui__event_8h_1a9a7bde48e964c43e87646c68cc96c93eadece9a3002962aa79de7e2696c0e90a2>`,
+	    :target:`TW_POINTER_BTN<doxid-dc/dd2/ui__event_8h_1a9a7bde48e964c43e87646c68cc96c93eaab4e5b1ef7fad873326a66687d4634a3>`,
+	    :target:`TW_POINTER_AXIS<doxid-dc/dd2/ui__event_8h_1a9a7bde48e964c43e87646c68cc96c93ea75f1ea4cbd9523360676d0b6b6d75777>`,
+	    :target:`TW_KEY_BTN<doxid-dc/dd2/ui__event_8h_1a9a7bde48e964c43e87646c68cc96c93ea28a6c32538666143b081f3b198f75c3c>`,
+	    :target:`TW_TOUCH_MOTION<doxid-dc/dd2/ui__event_8h_1a9a7bde48e964c43e87646c68cc96c93ea8fc480621d1d0c4c9b1995ca4f689663>`,
+	    :target:`TW_RESIZE<doxid-dc/dd2/ui__event_8h_1a9a7bde48e964c43e87646c68cc96c93ea65f65c3da0c2a8048cfd7e4113200eff>`,
+	    :target:`TW_FULLSCREEN<doxid-dc/dd2/ui__event_8h_1a9a7bde48e964c43e87646c68cc96c93ea7a2d3e7db1e721cec89a1d02d135b795>`,
+	    :target:`TW_MINIMIZE<doxid-dc/dd2/ui__event_8h_1a9a7bde48e964c43e87646c68cc96c93ea550651923d390d7e2e9c280b466e8448>`,
+	    :target:`TW_COPY<doxid-dc/dd2/ui__event_8h_1a9a7bde48e964c43e87646c68cc96c93eaad6f638576f17dee897af0f14a733a11>`,
+	    :target:`TW_PASTE<doxid-dc/dd2/ui__event_8h_1a9a7bde48e964c43e87646c68cc96c93ea18fe6c7a5fcef53eb3b8c893ab08e549>`,
+	};
+
+.. _details-dc/dd2/ui__event_8h_1a9a7bde48e964c43e87646c68cc96c93e:
+
+Detailed Documentation
+~~~~~~~~~~~~~~~~~~~~~~
+
+
+
+Enum Values
+-----------
+
+.. index:: pair: enumvalue; TW_FOCUS
+.. _doxid-dc/dd2/ui__event_8h_1a9a7bde48e964c43e87646c68cc96c93ea111d8c4c877ff56102e89d3d5db68545:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	TW_FOCUS
+
+app_surface would receive of such event and frame call, most of those events are interested by application only. We do not make event system sophisticated like QEvent ,thus we do take many assumptions for the app so we can preprocess many events as possible, for example, keymap is handled by xkbcommon in the client library, so user are forced to use it.
+
+pointer and touch has a frame concept, so we need to aggregate them and send them there
+

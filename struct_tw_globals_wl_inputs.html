@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    
+    <title>struct tw_globals::wl_inputs &#8212; Taiwins</title>
+  
+    <link rel="stylesheet" href="_static/bootstrap-sphinx.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/my-style.css" />
+    <link rel="stylesheet" type="text/css" href="_static/doxyrest-pygments.css" />
+    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/language_data.js"></script>
+    <script src="_static/target-highlight.js"></script>
+    <link rel="shortcut icon" href="_static/favicon.ico"/>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="struct tw_key_press" href="struct_tw_key_press.html" />
+    <link rel="prev" title="struct tw_globals" href="struct_tw_globals.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<script type="text/javascript" src="_static/js/jquery-1.11.0.min.js "></script>
+<script type="text/javascript" src="_static/js/jquery-fix.js "></script>
+<script type="text/javascript" src="_static/bootstrap-3.3.7/js/bootstrap.min.js "></script>
+<script type="text/javascript" src="_static/bootstrap-sphinx.js "></script>
+
+  </head><body>
+  <div class="page-container">
+    
+<!-- taken from bootstrap theme -->
+<div id="navbar" class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">
+        <b>Taiwins</b></a>
+      <span class="navbar-text navbar-version pull-left"><b></b></span>
+    </div>
+
+    <div class="collapse navbar-collapse nav-collapse">
+      <ul class="nav navbar-nav">
+	<li><a href="page_doc.html">Documentation</a></li>
+	<li><a href="https://github.com/taiwins/taiwins">Source Code</a></li>
+	<li><a href="https://github.com/taiwins/taiwins/wiki">Wiki</a></li>
+	<!-- add other pages -->
+      </ul>
+    </div>
+  </div>
+</div>
+
+    <div class="container">
+      
+	<div class="row">
+	  <div class="body col-md-9 content" role="main">
+	    
+  <div class="section" id="struct-tw-globals-wl-inputs">
+<span id="doxid-da-d43-structtw-globals-1-1wl-inputs"></span><span id="index-0"></span><h1>struct tw_globals::wl_inputs<a class="headerlink" href="#struct-tw-globals-wl-inputs" title="Permalink to this headline">¶</a></h1>
+<div class="toctree-wrapper compound">
+</div>
+<pre class="highlight doxyrest-overview-code-block literal-block"><span></span><span class="cp">#include</span> <span class="cpf">&lt;client.h&gt;</span><span class="cp"></span>
+
+<span class="k">struct</span> <span class="n">wl_inputs</span>
+<span class="p">{</span>
+    <span class="c1">// fields</span>
+
+    <span class="k">struct</span> <span class="n">wl_seat</span><span class="o">*</span> <span class="doxyrest-code-target target" id="doxid-da-d43-structtw-globals-1-1wl-inputs-1a75b24b5dd9762e25ce484c8eec36bd5e"><span></span><span class="n">wl_seat</span></span><span></span><span class="p">;</span>
+    <span class="k">struct</span> <span class="n">wl_keyboard</span><span class="o">*</span> <span class="doxyrest-code-target target" id="doxid-da-d43-structtw-globals-1-1wl-inputs-1aad3455f04644e2df297cedd941656a75"><span></span><span class="n">wl_keyboard</span></span><span></span><span class="p">;</span>
+    <span class="k">struct</span> <span class="n">wl_pointer</span><span class="o">*</span> <span class="doxyrest-code-target target" id="doxid-da-d43-structtw-globals-1-1wl-inputs-1a1f993929e191d4e4db0a94f6a397da07"><span></span><span class="n">wl_pointer</span></span><span></span><span class="p">;</span>
+    <span class="k">struct</span> <span class="n">wl_touch</span><span class="o">*</span> <span class="doxyrest-code-target target" id="doxid-da-d43-structtw-globals-1-1wl-inputs-1a604646bfe23d7b24a86e806fabdba416"><span></span><span class="n">wl_touch</span></span><span></span><span class="p">;</span>
+    <span class="k">struct</span> <span class="n">wl_data_device</span><span class="o">*</span> <span class="doxyrest-code-target target" id="doxid-da-d43-structtw-globals-1-1wl-inputs-1acd9a4b49048a54846da0bb5f95bd4970"><span></span><span class="n">wl_data_device</span></span><span></span><span class="p">;</span>
+    <span class="k">struct</span> <span class="n">wl_data_offer</span><span class="o">*</span> <span class="doxyrest-code-target target" id="doxid-da-d43-structtw-globals-1-1wl-inputs-1ac617bc23ce52aaf05186af4ea8c4e173"><span></span><span class="n">wl_data_offer</span></span><span></span><span class="p">;</span>
+    <span class="k">struct</span> <span class="n">itimerspec</span> <span class="doxyrest-code-target target" id="doxid-da-d43-structtw-globals-1-1wl-inputs-1a73a2ceebd1b775c908a0285426fe190f"><span></span><span class="n">repeat_info</span></span><span></span><span class="p">;</span>
+    <span class="kt">char</span> <span class="doxyrest-code-target target" id="doxid-da-d43-structtw-globals-1-1wl-inputs-1ac1b61eba49d09f3044d2e02cfd1b5119"><span></span><span class="n">name</span></span><span></span><span class="p">[</span><span class="mi">64</span><span class="p">];</span>
+    <span class="kt">uint32_t</span> <span class="doxyrest-code-target target" id="doxid-da-d43-structtw-globals-1-1wl-inputs-1ae7cf8df53134125fc428923596250e68"><span></span><span class="n">millisec</span></span><span></span><span class="p">;</span>
+    <span class="kt">uint32_t</span> <span class="doxyrest-code-target target" id="doxid-da-d43-structtw-globals-1-1wl-inputs-1ad37914b9e8f3aee3c2933aa74da1a6ff"><span></span><span class="n">serial</span></span><span></span><span class="p">;</span>
+    <span class="kt">uint32_t</span> <span class="doxyrest-code-target target" id="doxid-da-d43-structtw-globals-1-1wl-inputs-1a28f18d988acf9c069ea03fe98510356e"><span></span><span class="n">mime_offered</span></span><span></span><span class="p">;</span>
+    <span class="k">struct</span> <span class="n">xkb_context</span><span class="o">*</span> <span class="doxyrest-code-target target" id="doxid-da-d43-structtw-globals-1-1wl-inputs-1a8e77b462339f7857f83109730341db81"><span></span><span class="n">kcontext</span></span><span></span><span class="p">;</span>
+    <span class="k">struct</span> <span class="n">xkb_keymap</span><span class="o">*</span> <span class="doxyrest-code-target target" id="doxid-da-d43-structtw-globals-1-1wl-inputs-1a9d8277376b7140ea44aceeebe88d3435"><span></span><span class="n">keymap</span></span><span></span><span class="p">;</span>
+    <span class="k">struct</span> <span class="n">xkb_state</span><span class="o">*</span> <span class="doxyrest-code-target target" id="doxid-da-d43-structtw-globals-1-1wl-inputs-1a42e5934efec0c322fdf7a760be86da55"><span></span><span class="n">kstate</span></span><span></span><span class="p">;</span>
+    <span class="k">struct</span> <span class="n">wl_surface</span><span class="o">*</span> <span class="doxyrest-code-target target" id="doxid-da-d43-structtw-globals-1-1wl-inputs-1ad6e8ee5a318b03d4f43a690bc88c89e5"><span></span><span class="n">keyboard_focused</span></span><span></span><span class="p">;</span>
+    <span class="kt">uint32_t</span> <span class="doxyrest-code-target target" id="doxid-da-d43-structtw-globals-1-1wl-inputs-1ad6814531347f56cd1f81032101f09c3e"><span></span><span class="n">modifiers</span></span><span></span><span class="p">;</span>
+    <span class="kt">bool</span> <span class="doxyrest-code-target target" id="doxid-da-d43-structtw-globals-1-1wl-inputs-1a9373c0329fabb61d405804536a33ab59"><span></span><span class="n">key_pressed</span></span><span></span><span class="p">;</span>
+    <span class="n">xkb_keycode_t</span> <span class="doxyrest-code-target target" id="doxid-da-d43-structtw-globals-1-1wl-inputs-1ab6ab62bf6e501cb40a338a99986f5f13"><span></span><span class="n">keycode</span></span><span></span><span class="p">;</span>
+    <span class="n">xkb_keysym_t</span> <span class="doxyrest-code-target target" id="doxid-da-d43-structtw-globals-1-1wl-inputs-1a579af98c5883531f32dd9ad590a9db8f"><span></span><span class="n">keysym</span></span><span></span><span class="p">;</span>
+    <span class="kt">size_t</span> <span class="doxyrest-code-target target" id="doxid-da-d43-structtw-globals-1-1wl-inputs-1a8715c85a16e0052b91970f52bf5be2cc"><span></span><span class="n">cursor_size</span></span><span></span><span class="p">;</span>
+    <span class="kt">char</span> <span class="doxyrest-code-target target" id="doxid-da-d43-structtw-globals-1-1wl-inputs-1aa6d254924df30ccd51f1eb07fd0de4fa"><span></span><span class="n">cursor_theme_name</span></span><span></span><span class="p">[</span><span class="mi">64</span><span class="p">];</span>
+    <span class="k">struct</span> <span class="n">wl_cursor</span><span class="o">*</span> <span class="doxyrest-code-target target" id="doxid-da-d43-structtw-globals-1-1wl-inputs-1a1a842826a32281cc2ff62946a99360b9"><span></span><span class="n">cursor</span></span><span></span><span class="p">;</span>
+    <span class="k">struct</span> <span class="n">wl_cursor_theme</span><span class="o">*</span> <span class="doxyrest-code-target target" id="doxid-da-d43-structtw-globals-1-1wl-inputs-1a700c1cf6400c6a7b2dc99987513b6d43"><span></span><span class="n">cursor_theme</span></span><span></span><span class="p">;</span>
+    <span class="k">struct</span> <span class="n">wl_surface</span><span class="o">*</span> <span class="doxyrest-code-target target" id="doxid-da-d43-structtw-globals-1-1wl-inputs-1adbbc955e5d798512746421eaa2b2a9c1"><span></span><span class="n">cursor_surface</span></span><span></span><span class="p">;</span>
+    <span class="k">struct</span> <span class="n">wl_buffer</span><span class="o">*</span> <span class="doxyrest-code-target target" id="doxid-da-d43-structtw-globals-1-1wl-inputs-1a9afd89a7d105155e537c922d5e8a8f69"><span></span><span class="n">cursor_buffer</span></span><span></span><span class="p">;</span>
+    <span class="k">struct</span> <span class="n">wl_callback_listener</span> <span class="doxyrest-code-target target" id="doxid-da-d43-structtw-globals-1-1wl-inputs-1ad3d6f60e5818013024cbd0d5cb6164ae"><span></span><span class="n">cursor_done_listener</span></span><span></span><span class="p">;</span>
+    <span class="k">struct</span> <span class="n">wl_surface</span><span class="o">*</span> <span class="doxyrest-code-target target" id="doxid-da-d43-structtw-globals-1-1wl-inputs-1a2cb4f7f47c48a5efe2912bf4c2564ccc"><span></span><span class="n">pointer_focused</span></span><span></span><span class="p">;</span>
+    <span class="kt">bool</span> <span class="doxyrest-code-target target" id="doxid-da-d43-structtw-globals-1-1wl-inputs-1a6c2b68668fe4e20876ee51230f377d30"><span></span><span class="n">cursor_set</span></span><span></span><span class="p">;</span>
+    <span class="kt">uint32_t</span> <span class="doxyrest-code-target target" id="doxid-da-d43-structtw-globals-1-1wl-inputs-1a8927fbff35c0ee69798d6379ca1b74e5"><span></span><span class="n">btn</span></span><span></span><span class="p">;</span>
+    <span class="kt">bool</span> <span class="doxyrest-code-target target" id="doxid-da-d43-structtw-globals-1-1wl-inputs-1a64e5553050dcc64237b466a9c81eca61"><span></span><span class="n">btn_pressed</span></span><span></span><span class="p">;</span>
+    <span class="kt">uint32_t</span> <span class="doxyrest-code-target target" id="doxid-da-d43-structtw-globals-1-1wl-inputs-1ae07e85cbbac1c434389630a10d41460a"><span></span><span class="n">enter_serial</span></span><span></span><span class="p">;</span>
+    <span class="kt">uint32_t</span> <span class="doxyrest-code-target target" id="doxid-da-d43-structtw-globals-1-1wl-inputs-1a252672a510f38b4ee956e10476a90b13"><span></span><span class="n">pointer_events</span></span><span></span><span class="p">;</span>
+    <span class="kt">int16_t</span> <span class="doxyrest-code-target target" id="doxid-da-d43-structtw-globals-1-1wl-inputs-1a94878b2d1b026776c4dbdfa66be3c991"><span></span><span class="n">sx</span></span><span></span><span class="p">;</span>
+    <span class="kt">int16_t</span> <span class="doxyrest-code-target target" id="doxid-da-d43-structtw-globals-1-1wl-inputs-1a99ce2767aef8b7579bbd68b85b0030fb"><span></span><span class="n">sy</span></span><span></span><span class="p">;</span>
+    <span class="kt">int16_t</span> <span class="doxyrest-code-target target" id="doxid-da-d43-structtw-globals-1-1wl-inputs-1aebad5c2d356d2de91c2fde26f28c06bd"><span></span><span class="n">dx</span></span><span></span><span class="p">;</span>
+    <span class="kt">int16_t</span> <span class="doxyrest-code-target target" id="doxid-da-d43-structtw-globals-1-1wl-inputs-1ac7a7242de1ee70ba192874fe8684a8d0"><span></span><span class="n">dy</span></span><span></span><span class="p">;</span>
+    <span class="kt">uint32_t</span> <span class="doxyrest-code-target target" id="doxid-da-d43-structtw-globals-1-1wl-inputs-1a4cfa7f28cb9e7d2d198a5752d96aaf01"><span></span><span class="n">dx_axis</span></span><span></span><span class="p">;</span>
+    <span class="kt">uint32_t</span> <span class="doxyrest-code-target target" id="doxid-da-d43-structtw-globals-1-1wl-inputs-1ac21c35fe121c0db5901f6a671e10246a"><span></span><span class="n">dy_axis</span></span><span></span><span class="p">;</span>
+<span class="p">};</span></pre>
+</div>
+
+
+	  </div>
+	  
+<div class="col-md-3">
+  <div id="sidebar" class="bs-sidenav"><h3><a data-toggle="collapse" href="#globaltoc">Related Pages</a></h3>
+<div id="globaltoc" class="collapse">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="page_md__home_developer_Projects_taiwins-web-src_taiwins_docs_api.html">Client data structures</a></li>
+<li class="toctree-l1"><a class="reference internal" href="page_md__home_developer_Projects_taiwins-web-src_taiwins_CONTRIBUTING.html">Contributing to Taiwins</a></li>
+<li class="toctree-l1"><a class="reference internal" href="page_md__home_developer_Projects_taiwins-web-src_taiwins_docs_lua.html">Lua bindings</a></li>
+<li class="toctree-l1"><a class="reference internal" href="page_md__home_developer_Projects_taiwins-web-src_taiwins_docs_window_management.html">Taiwins layout engine.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="page_md__home_developer_Projects_taiwins-web-src_taiwins_README.html">Taiwins, a morden wayland window manager</a></li>
+<li class="toctree-l1"><a class="reference internal" href="page_md__home_developer_Projects_taiwins-web-src_taiwins_subprojects_twclient_README.html">wayland client utility library</a></li>
+<li class="toctree-l1"><a class="reference internal" href="page_md__home_developer_Projects_taiwins-web-src_taiwins_docs_wayland.html">wayland objects</a></li>
+</ul>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="global.html">Global Namespace</a></li>
+</ul>
+
+</div>
+<form action="search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+  </div>
+</div>
+
+	</div>
+      
+    </div>
+    <div class="push"></div>
+  </div>
+
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+    </p>
+    <p>
+        &copy; Copyright 2020, Xichen Zhou.<br/>
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 3.0.3.<br/>
+    </p>
+  </div>
+</footer>
+  </body>
+</html>

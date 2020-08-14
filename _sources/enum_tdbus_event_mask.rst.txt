@@ -1,0 +1,20 @@
+.. index:: pair: enum; tdbus_event_mask
+.. _doxid-d2/d1b/tdbus_8h_1a4eca08aec6c1ddaf1d2e7e9e10953244:
+
+enum tdbus_event_mask
+=====================
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <tdbus.h>
+
+	enum tdbus_event_mask
+	{
+	    :target:`TDBUS_READABLE<doxid-d2/d1b/tdbus_8h_1a4eca08aec6c1ddaf1d2e7e9e10953244abede8fa4a0994d8cb4f934e51a202cb1>` = 1<<0,
+	    :target:`TDBUS_WRITABLE<doxid-d2/d1b/tdbus_8h_1a4eca08aec6c1ddaf1d2e7e9e10953244a6de6ded0aea3bca0e10d4dd3415eb1d2>` = 1<<1,
+	    :target:`TDBUS_ENABLED<doxid-d2/d1b/tdbus_8h_1a4eca08aec6c1ddaf1d2e7e9e10953244a0248c1667a1db4f8dbbb6a7d651d7409>`  = 1<<2,
+	};
+

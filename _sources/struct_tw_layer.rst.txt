@@ -1,0 +1,25 @@
+.. index:: pair: struct; tw_layer
+.. _doxid-d7/d6a/structtw__layer:
+
+struct tw_layer
+===============
+
+.. toctree::
+	:hidden:
+
+similar to weston_layer
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <layers.h>
+	
+	struct tw_layer
+	{
+		// fields
+	
+		struct wl_list :target:`link<doxid-d7/d6a/structtw__layer_1a21fac04e210998fb249ef432a130e233>`;
+		enum :ref:`tw_layer_pos<doxid-dd/dcd/layers_8h_1a948b594c17cdfff1f882c5dadaaa07fb>` :target:`position<doxid-d7/d6a/structtw__layer_1a94d29c4a57274cf22b80702261c4f1cf>`;
+		struct wl_list :target:`views<doxid-d7/d6a/structtw__layer_1a5fd82465dfcea3ab0388fdd10eb7db02>`;
+	};

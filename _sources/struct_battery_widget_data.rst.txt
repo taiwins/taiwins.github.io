@@ -1,0 +1,24 @@
+.. index:: pair: struct; battery_widget_data
+.. _doxid-d7/d9f/structbattery__widget__data:
+
+struct battery_widget_data
+==========================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	
+	struct battery_widget_data
+	{
+		// fields
+	
+		char :target:`energy_now<doxid-d7/d9f/structbattery__widget__data_1a1035ece98fa08a6ce55285a9fafcd151>`[400];
+		char :target:`energy_full<doxid-d7/d9f/structbattery__widget__data_1a6288abdb5e4cb63ca7f6606f0957c01b>`[400];
+		char :target:`charging<doxid-d7/d9f/structbattery__widget__data_1af823bd2eaf61cdd65cf9df3c0ef87cd8>`[400];
+	};

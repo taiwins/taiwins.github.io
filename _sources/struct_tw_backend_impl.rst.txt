@@ -1,0 +1,30 @@
+.. index:: pair: struct; tw_backend_impl
+.. _doxid-d0/da7/structtw__backend__impl:
+
+struct tw_backend_impl
+======================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <backend_internal.h>
+	
+	struct tw_backend_impl
+	{
+		// fields
+	
+		struct :ref:`tw_backend<doxid-df/d59/structtw__backend>`* :target:`backend<doxid-d0/da7/structtw__backend__impl_1a810c78cddd22f9d090a3c35cd5df89e3>`;
+		struct wl_listener :target:`head_add<doxid-d0/da7/structtw__backend__impl_1a9beff25f37538a127d04dd637afa1ba5>`;
+		struct wl_listener :target:`input_add<doxid-d0/da7/structtw__backend__impl_1a44d59edf92f730a3bcc226e928e2d116>`;
+		struct wl_listener :target:`compositor_create_surface<doxid-d0/da7/structtw__backend__impl_1a172f968b04cd106759f63eaf3cc07bf8>`;
+		struct wl_listener :target:`compositor_create_subsurface<doxid-d0/da7/structtw__backend__impl_1a857421c2ddc5517359a6f504eb5d5724>`;
+		struct wl_listener :target:`compositor_create_region<doxid-d0/da7/structtw__backend__impl_1a0ca40dc2b2fbf3494d63f3e8b02725cc>`;
+		struct wl_listener :target:`surface_dirty_output<doxid-d0/da7/structtw__backend__impl_1afda756c8e3cd968712132151c29c6719>`;
+		struct wl_listener :target:`surface_destroy<doxid-d0/da7/structtw__backend__impl_1aa779a21823ae12e5437e4b9f8bd0a2d9>`;
+	};

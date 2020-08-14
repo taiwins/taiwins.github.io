@@ -1,0 +1,24 @@
+.. index:: pair: struct; tw_viewporter
+.. _doxid-de/da5/structtw__viewporter:
+
+struct tw_viewporter
+====================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <viewporter.h>
+	
+	struct tw_viewporter
+	{
+		// fields
+	
+		struct wl_global* :target:`globals<doxid-de/da5/structtw__viewporter_1a2aff88abcb400db9e71bdab6638d0862>`;
+		struct wl_listener :target:`display_destroy_listener<doxid-de/da5/structtw__viewporter_1aad4d9a1e5895abb4225d11379b4516be>`;
+	};

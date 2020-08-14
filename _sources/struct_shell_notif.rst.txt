@@ -1,0 +1,24 @@
+.. index:: pair: struct; shell_notif
+.. _doxid-d0/dc2/structshell__notif:
+
+struct shell_notif
+==================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <shell.h>
+	
+	struct shell_notif
+	{
+		// fields
+	
+		char* :target:`msg<doxid-d0/dc2/structshell__notif_1af90211d16893c3a94ce34bfb4c9cfb90>`;
+		struct wl_list :target:`link<doxid-d0/dc2/structshell__notif_1aa5342015d165d7fe90902bfb048d3a90>`;
+	};

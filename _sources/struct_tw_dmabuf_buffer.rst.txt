@@ -1,0 +1,38 @@
+.. index:: pair: struct; tw_dmabuf_buffer
+.. _doxid-d2/d9f/structtw__dmabuf__buffer:
+
+struct tw_dmabuf_buffer
+=======================
+
+.. toctree::
+	:hidden:
+
+Overview
+~~~~~~~~
+
+a dma param/buffer object :ref:`More...<details-d2/d9f/structtw__dmabuf__buffer>`
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <dmabuf.h>
+	
+	struct tw_dmabuf_buffer
+	{
+		// fields
+	
+		struct wl_resource* :target:`param_resource<doxid-d2/d9f/structtw__dmabuf__buffer_1a86fdb517c335ce20fa8bbf63b43bc252>`;
+		struct wl_resource* :target:`dma_resource<doxid-d2/d9f/structtw__dmabuf__buffer_1a3da824a4d990edf0aed8c5f3f41882c5>`;
+		struct wl_resource* :target:`buffer_resource<doxid-d2/d9f/structtw__dmabuf__buffer_1a25374806557ce6722ebf84411db3e858>`;
+		struct :ref:`tw_dmabuf_attributes<doxid-d3/d75/structtw__dmabuf__attributes>` :target:`attributes<doxid-d2/d9f/structtw__dmabuf__buffer_1a69ac5723ac6194ab9d00cbc009c89dad>`;
+	};
+.. _details-d2/d9f/structtw__dmabuf__buffer:
+
+Detailed Documentation
+~~~~~~~~~~~~~~~~~~~~~~
+
+a dma param/buffer object
+
+param resource is created at dmabuf.create_params. Mutiple planes can be added to this paramter before dmabuf_param.create or dmabuf_param.create_immed is called. After that param_resource is gone and this :ref:`tw_dmabuf_buffer <doxid-d2/d9f/structtw__dmabuf__buffer>` represents a wl_buffer.
+

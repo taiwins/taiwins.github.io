@@ -1,0 +1,25 @@
+.. index:: pair: struct; data_source
+.. _doxid-dd/df2/structdata__source:
+
+struct data_source
+==================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	
+	struct data_source
+	{
+		// fields
+	
+		struct wl_data_source* :target:`source<doxid-dd/df2/structdata__source_1aa3c880573fdc4789e745ec3d2251497e>`;
+		struct wl_surface* :target:`surface<doxid-dd/df2/structdata__source_1a9455792a408e6bcfa587c9040a252f2b>`;
+		struct wl_globals* :target:`globals<doxid-dd/df2/structdata__source_1ad368074d547e8bf69f18255c89acc4af>`;
+		uint32_t :target:`action_received<doxid-dd/df2/structdata__source_1a04872b4072f7260f8d2b8318b9f69de1>`;
+	};

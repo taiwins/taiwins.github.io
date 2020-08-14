@@ -1,0 +1,46 @@
+.. index:: pair: struct; tw_mat4
+.. _doxid-d3/d2a/structtw__mat4:
+
+struct tw_mat4
+==============
+
+.. toctree::
+	:hidden:
+
+Overview
+~~~~~~~~
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <matrix.h>
+	
+	struct tw_mat4
+	{
+		// fields
+	
+		float :ref:`d<doxid-d3/d2a/structtw__mat4_1a7badf75b40ed003678280882f17b1e4c>`[16];
+	};
+.. _details-d3/d2a/structtw__mat4:
+
+Detailed Documentation
+~~~~~~~~~~~~~~~~~~~~~~
+
+
+
+Fields
+------
+
+.. index:: pair: variable; d
+.. _doxid-d3/d2a/structtw__mat4_1a7badf75b40ed003678280882f17b1e4c:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	float d[16]
+
+column major
+

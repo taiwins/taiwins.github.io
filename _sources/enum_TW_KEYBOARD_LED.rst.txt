@@ -1,0 +1,20 @@
+.. index:: pair: enum; TW_KEYBOARD_LED
+.. _doxid-d7/d0c/seat_8h_1abe75281fb92dbb8d7556ee65e0d538c9:
+
+enum TW_KEYBOARD_LED
+====================
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <seat.h>
+
+	enum TW_KEYBOARD_LED
+	{
+	    :target:`TW_LED_NUM_LOCK<doxid-d7/d0c/seat_8h_1abe75281fb92dbb8d7556ee65e0d538c9a741b8173234851a2f46eae35ced05716>`    =(1<<0),
+	    :target:`TW_LED_CAPS_LOCK<doxid-d7/d0c/seat_8h_1abe75281fb92dbb8d7556ee65e0d538c9a708b5884d477b6e4e5740bec7d66594b>`   =(1<<1),
+	    :target:`TW_LED_SCROLL_LOCK<doxid-d7/d0c/seat_8h_1abe75281fb92dbb8d7556ee65e0d538c9a2697d031815d9cb6e2e2c5b9a0b15532>` =(1<<2),
+	};
+

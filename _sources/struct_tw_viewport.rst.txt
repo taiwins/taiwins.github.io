@@ -1,0 +1,25 @@
+.. index:: pair: struct; tw_viewport
+.. _doxid-d9/db1/structtw__viewport:
+
+struct tw_viewport
+==================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <viewporter.h>
+	
+	struct tw_viewport
+	{
+		// fields
+	
+		struct wl_resource* :target:`resource<doxid-d9/db1/structtw__viewport_1a12a7bcfefd44c0bcb4e2cb502a3bd4d6>`;
+		struct :ref:`tw_surface<doxid-dd/dda/structtw__surface>`* :target:`surface<doxid-d9/db1/structtw__viewport_1a1e8b0daf739439876db876da8252f5f2>`;
+		struct wl_listener :target:`surface_destroy_listener<doxid-d9/db1/structtw__viewport_1a547b339bf91c9856a9c399abd24fe07f>`;
+	};

@@ -1,0 +1,74 @@
+.. index:: pair: struct; tw_appsurf
+.. _doxid-d6/d55/structtw__appsurf:
+
+struct tw_appsurf
+=================
+
+.. toctree::
+	:hidden:
+
+Overview
+~~~~~~~~
+
+Abstract wl_surface container. :ref:`More...<details-d6/d55/structtw__appsurf>`
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <ui.h>
+	
+	struct tw_appsurf
+	{
+		// fields
+	
+		enum :ref:`tw_appsurf_type<doxid-d9/d3b/ui_8h_1a92a7b379b1c174a13c9645bbac4f5dd2>` :target:`type<doxid-d6/d55/structtw__appsurf_1ab350e8fa0a630e34c0d9f84aca38b0ed>`;
+		uint32_t :target:`flags<doxid-d6/d55/structtw__appsurf_1a4c5a819bbfef459d32cefdbf4408ceb0>`;
+		struct :ref:`tw_bbox<doxid-d1/d39/structtw__bbox>` :target:`allocation<doxid-d6/d55/structtw__appsurf_1ac1532dd62740c16af0c56d844881f19a>`;
+		struct :ref:`tw_bbox<doxid-d1/d39/structtw__bbox>` :target:`pending_allocation<doxid-d6/d55/structtw__appsurf_1a1d1987ba0694b3479faf6782fc75e040>`;
+		:ref:`app_mime<doxid-d9/d3b/ui_8h_1a5263d5dbcdf72ed97572a39efe7fdfe6>` :target:`known_mimes<doxid-d6/d55/structtw__appsurf_1aaaed7904231df32eba8a1dcbfa07363a>`;
+		struct :ref:`tw_globals<doxid-dc/dde/structtw__globals>`* :target:`tw_globals<doxid-d6/d55/structtw__appsurf_1ad8815ad6eaedbb0c82a7c30e67eac6ce>`;
+		struct wl_output* :target:`wl_output<doxid-d6/d55/structtw__appsurf_1aa75e69e254aba68dbc37edf322af46eb>`;
+		struct wl_surface* :target:`wl_surface<doxid-d6/d55/structtw__appsurf_1aa1856c565091f1c5a38ed8a928273dbd>`;
+		bool :target:`need_animation<doxid-d6/d55/structtw__appsurf_1ae650b5f6840ed67add2d26192525b88d>`;
+		uint32_t :target:`last_serial<doxid-d6/d55/structtw__appsurf_1a0e2acbdc2e371b77c7576a6869473787>`;
+		struct :ref:`tw_shm_pool<doxid-d9/dab/structtw__shm__pool>`* :target:`pool<doxid-d6/d55/structtw__appsurf_1a1d4dc32a82b619fbf186d060ddcad5b8>`;
+		struct wl_buffer* :target:`wl_buffer<doxid-d6/d55/structtw__appsurf_1a7d5a05f4cc94c33d866db580c7f462a2>`[2];
+		bool :target:`dirty<doxid-d6/d55/structtw__appsurf_1a5a20ab189a7cf32c73fd600a50f6754f>`[2];
+		bool :target:`committed<doxid-d6/d55/structtw__appsurf_1a642fb7a9d973cc491ce1ba25bc646022>`[2];
+		EGLContext :target:`eglcontext<doxid-d6/d55/structtw__appsurf_1ad1f3a3d4676aecc56747fdf9b67a35f9>`;
+		EGLDisplay :target:`egldisplay<doxid-d6/d55/structtw__appsurf_1a2d4bf2da79c6c894a562d99bc06366d0>`;
+		struct wl_egl_window* :target:`eglwin<doxid-d6/d55/structtw__appsurf_1a3cdb8a31a90cc3539b8ff67a2f0576cf>`;
+		EGLSurface :target:`eglsurface<doxid-d6/d55/structtw__appsurf_1a89d3bbabcc0f542caac37056b7d8239c>`;
+		struct tw_appsurf* :ref:`parent<doxid-d6/d55/structtw__appsurf_1a487f3916653d5d10c70b303c5659816d>`;
+		struct wl_list :target:`filter_head<doxid-d6/d55/structtw__appsurf_1a833e04052325fc44d51e8097bbac3d0b>`;
+		:ref:`frame_t<doxid-d9/d3b/ui_8h_1a9002990b8eb41ac6d7134f53e3d7ebb8>` :target:`do_frame<doxid-d6/d55/structtw__appsurf_1a40eed9fee42d007d88a4f9568389c1c5>`;
+		void(* :target:`destroy<doxid-d6/d55/structtw__appsurf_1a3bb227b97ff9fe1115bd00b85cbd48fa>`)(struct tw_appsurf *);
+		void* :target:`user_data<doxid-d6/d55/structtw__appsurf_1ad3134d6ffe7975a82df96a7892e13687>`;
+	};
+.. _details-d6/d55/structtw__appsurf:
+
+Detailed Documentation
+~~~~~~~~~~~~~~~~~~~~~~
+
+Abstract wl_surface container.
+
+/brief Abstract wl_surface container
+
+The design goal of the surface is to use :ref:`tw_appsurf <doxid-d6/d55/structtw__appsurf>` as general wl_surface handler to take care the tedious work and also provides necessary flexibilities. When one backend implements :ref:`tw_appsurf <doxid-d6/d55/structtw__appsurf>`, usually user has very little to do.
+
+By default :ref:`tw_appsurf <doxid-d6/d55/structtw__appsurf>` runs in passive mode which it only runs on events, default action is the frame callback (if you do not have any grab) and backends usually take care of the frame callback. Users can intercept those events by providing custom grabs(in rare cases).
+
+Fields
+------
+
+.. index:: pair: variable; parent
+.. _doxid-d6/d55/structtw__appsurf_1a487f3916653d5d10c70b303c5659816d:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	struct tw_appsurf* parent
+
+the parent pointer, means you will have to call the parent->frame function to do the work
+

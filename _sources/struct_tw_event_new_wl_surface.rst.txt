@@ -1,0 +1,26 @@
+.. index:: pair: struct; tw_event_new_wl_surface
+.. _doxid-dd/df6/structtw__event__new__wl__surface:
+
+struct tw_event_new_wl_surface
+==============================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <compositor.h>
+	
+	struct tw_event_new_wl_surface
+	{
+		// fields
+	
+		struct wl_resource* :target:`compositor_res<doxid-dd/df6/structtw__event__new__wl__surface_1a5eedc5ea64f3ea2f1ba79d35adce7132>`;
+		struct wl_client* :target:`client<doxid-dd/df6/structtw__event__new__wl__surface_1a0fd37b619fa7a1500c5da3d4c006a35a>`;
+		uint32_t :target:`version<doxid-dd/df6/structtw__event__new__wl__surface_1a4c6fbb9937b2febd463d5b8d02471825>`;
+		uint32_t :target:`id<doxid-dd/df6/structtw__event__new__wl__surface_1aec3294fb2f0208c295f9c1c5415ae3d9>`;
+	};

@@ -1,0 +1,29 @@
+.. index:: pair: struct; tdbus_signal
+.. _doxid-d7/d0b/structtdbus__signal:
+
+struct tdbus_signal
+===================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <tdbus.h>
+	
+	struct tdbus_signal
+	{
+		// fields
+	
+		const char* :target:`sender<doxid-d7/d0b/structtdbus__signal_1a09d795d3f85c014e0c006b1a0b8d54db>`;
+		const char* :target:`interface<doxid-d7/d0b/structtdbus__signal_1ac62efc2ad830eaa742bc0a979007777c>`;
+		const char* :target:`signature<doxid-d7/d0b/structtdbus__signal_1a01d11ae6abe3b5e9200530f84eb6bba0>`;
+		const char* :target:`signal_name<doxid-d7/d0b/structtdbus__signal_1a61123a67edaa77a26c690a79641e4b33>`;
+		struct :ref:`tdbus_message<doxid-d9/db6/structtdbus__message>`* :target:`message<doxid-d7/d0b/structtdbus__signal_1a2626e7e2911cbc0442cfaa853ebf7139>`;
+		struct :ref:`tdbus<doxid-db/d60/structtdbus>`* :target:`bus<doxid-d7/d0b/structtdbus__signal_1ac9024ab45f4fb10d92b2d26571768ea5>`;
+		void* :target:`user_data<doxid-d7/d0b/structtdbus__signal_1a1266358065349a6f8a46da6ce8e9217e>`;
+	};

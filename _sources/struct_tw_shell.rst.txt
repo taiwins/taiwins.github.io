@@ -1,0 +1,75 @@
+.. index:: pair: struct; tw_shell
+.. _doxid-de/dcd/structtw__shell:
+
+struct tw_shell
+===============
+
+.. toctree::
+	:hidden:
+
+Overview
+~~~~~~~~
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <shell_internal.h>
+	
+	struct tw_shell
+	{
+		// fields
+	
+		uid_t :target:`uid<doxid-de/dcd/structtw__shell_1a422eedd994b50b00516cc728aaf211a1>`;
+		gid_t :target:`gid<doxid-de/dcd/structtw__shell_1a5ae9c432384bc8a3da3b94b0576df18c>`;
+		pid_t :target:`pid<doxid-de/dcd/structtw__shell_1a462b1e2f26937c50ce92fc4617ee73d8>`;
+		char :target:`path<doxid-de/dcd/structtw__shell_1a1e21fde6930279114c71d8d158952016>`[256];
+		struct wl_client* :target:`shell_client<doxid-de/dcd/structtw__shell_1ab64c83e8c46ca6217b15eae295a78cc4>`;
+		struct wl_resource* :target:`shell_resource<doxid-de/dcd/structtw__shell_1ae5f4736f0e1ff2407eec6d9a522b3494>`;
+		struct wl_global* :target:`shell_global<doxid-de/dcd/structtw__shell_1a28d2e4b86170c16743bf5f7ffb3aaefa>`;
+		struct wl_global* :target:`layer_shell<doxid-de/dcd/structtw__shell_1aada152c6c36f5b1fc324d517a401cddc>`;
+		struct wl_display* :target:`display<doxid-de/dcd/structtw__shell_1a29df9e8c43b82bec4a3744820c7c52c8>`;
+		struct :ref:`tw_backend<doxid-df/d59/structtw__backend>`* :target:`backend<doxid-de/dcd/structtw__shell_1ab033082bd5c34d0d5e055a73fbd35d5e>`;
+		struct :ref:`tw_layer<doxid-d7/d6a/structtw__layer>` :target:`background_layer<doxid-de/dcd/structtw__shell_1ab9663f90d050c45cdd19df3894b83626>`;
+		struct :ref:`tw_layer<doxid-d7/d6a/structtw__layer>` :target:`bottom_ui_layer<doxid-de/dcd/structtw__shell_1a57354bb1909647f76e8bfa08f0cc05da>`;
+		struct :ref:`tw_layer<doxid-d7/d6a/structtw__layer>` :target:`ui_layer<doxid-de/dcd/structtw__shell_1a164b13f6b4b45d24498e2013a9e4e351>`;
+		struct :ref:`tw_layer<doxid-d7/d6a/structtw__layer>` :target:`locker_layer<doxid-de/dcd/structtw__shell_1a26804876cd7179ff5d67e269f7441a18>`;
+		struct :ref:`tw_surface<doxid-dd/dda/structtw__surface>`* :target:`the_widget_surface<doxid-de/dcd/structtw__shell_1a5eb5154af708ec53beb1370ede007746>`;
+		enum taiwins_shell_panel_pos :target:`panel_pos<doxid-de/dcd/structtw__shell_1af5c79d67808b17690a70453b3be82987>`;
+		struct wl_signal :target:`output_area_signal<doxid-de/dcd/structtw__shell_1a0932265ef78e28b462390078f45acc1c>`;
+		struct wl_signal :target:`widget_create_signal<doxid-de/dcd/structtw__shell_1aefb29563b63b4c68c0eeb759f4f12648>`;
+		struct wl_signal :target:`widget_close_signal<doxid-de/dcd/structtw__shell_1a9df94c184c96f4b8770c71180f24814f>`;
+		struct wl_listener :target:`display_destroy_listener<doxid-de/dcd/structtw__shell_1aced41a0931b981bf808656d55a2e05d9>`;
+		struct wl_listener :target:`output_create_listener<doxid-de/dcd/structtw__shell_1a526f5600bf971986c6c4d9d681c3f85b>`;
+		struct wl_listener :target:`output_destroy_listener<doxid-de/dcd/structtw__shell_1ac858a2e9d8671c69ba35b2b361885314>`;
+		struct wl_listener :target:`output_resize_listener<doxid-de/dcd/structtw__shell_1ac7efbb9a50c9020719aa97251be17c8f>`;
+		struct wl_listener :target:`idle_listener<doxid-de/dcd/structtw__shell_1aff17211100a7be88b9b5b70f826ae2d6>`;
+		struct :ref:`tw_subprocess<doxid-d0/d68/structtw__subprocess>` :target:`process<doxid-de/dcd/structtw__shell_1ac01997ff87f5e33ce2045f40584278e6>`;
+		struct :ref:`tw_shell_ui<doxid-d4/dcb/structtw__shell__ui>` :target:`widget<doxid-de/dcd/structtw__shell_1adc308a86b9af9467ce8d920c67013775>`;
+		struct :ref:`tw_shell_ui<doxid-d4/dcb/structtw__shell__ui>` :target:`locker<doxid-de/dcd/structtw__shell_1ac5381e4da791f359946f33484ddb1aaf>`;
+		bool :target:`ready<doxid-de/dcd/structtw__shell_1acea1821ca2c58b97cf3b0f22f01cf9be>`;
+		struct wl_list :ref:`heads<doxid-de/dcd/structtw__shell_1a96f49f05863b609f74196fd99e6e8ecd>`;
+		struct :ref:`tw_shell_output<doxid-da/d68/structtw__shell__output>` :target:`tw_outputs<doxid-de/dcd/structtw__shell_1a58b440ee105ab0de8a5dc564b1148830>`[16];
+	};
+.. _details-de/dcd/structtw__shell:
+
+Detailed Documentation
+~~~~~~~~~~~~~~~~~~~~~~
+
+
+
+Fields
+------
+
+.. index:: pair: variable; heads
+.. _doxid-de/dcd/structtw__shell_1a96f49f05863b609f74196fd99e6e8ecd:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	struct wl_list heads
+
+:ref:`tw_shell_output <doxid-da/d68/structtw__shell__output>` :link
+

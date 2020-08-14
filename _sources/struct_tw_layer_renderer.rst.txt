@@ -1,0 +1,25 @@
+.. index:: pair: struct; tw_layer_renderer
+.. _doxid-d7/dc6/structtw__layer__renderer:
+
+struct tw_layer_renderer
+========================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	
+	struct tw_layer_renderer
+	{
+		// fields
+	
+		struct :ref:`tw_renderer<doxid-d7/db6/structtw__renderer>` :target:`base<doxid-d7/dc6/structtw__layer__renderer_1a14185575a54ccab362f7f9942519d0c7>`;
+		struct :ref:`tw_quad_tex_shader<doxid-d2/dac/structtw__quad__tex__shader>` :target:`quad_shader<doxid-d7/dc6/structtw__layer__renderer_1a0bcecd360d6f0c6614dc4eb6cb1fd12a>`;
+		struct :ref:`tw_quad_tex_shader<doxid-d2/dac/structtw__quad__tex__shader>` :target:`ext_quad_shader<doxid-d7/dc6/structtw__layer__renderer_1a6a759d2606f17f0a886e450960b1a7b7>`;
+		struct wl_listener :target:`destroy_listener<doxid-d7/dc6/structtw__layer__renderer_1aef9e82262eb92c92f083dabe7490354e>`;
+	};

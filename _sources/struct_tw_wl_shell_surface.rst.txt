@@ -1,0 +1,24 @@
+.. index:: pair: struct; tw_wl_shell_surface
+.. _doxid-da/dbe/structtw__wl__shell__surface:
+
+struct tw_wl_shell_surface
+==========================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	
+	struct tw_wl_shell_surface
+	{
+		// fields
+	
+		struct :ref:`tw_desktop_surface<doxid-d4/d0f/structtw__desktop__surface>` :target:`base<doxid-da/dbe/structtw__wl__shell__surface_1a17225a90150eea30b830fbc2a1c1f51e>`;
+		struct wl_listener :target:`popup_close<doxid-da/dbe/structtw__wl__shell__surface_1a9f07acf2e75d68ef55e0d435ebca704e>`;
+		struct wl_listener :target:`surface_destroy<doxid-da/dbe/structtw__wl__shell__surface_1a42c99c72c92ddffc6991cbd29fd9f205>`;
+	};

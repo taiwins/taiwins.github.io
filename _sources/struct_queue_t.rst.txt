@@ -1,0 +1,24 @@
+.. index:: pair: struct; queue_t
+.. _doxid-da/de4/structqueue__t:
+
+struct queue_t
+==============
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <queue.h>
+	
+	struct queue_t
+	{
+		// fields
+	
+		:ref:`vector_t<doxid-d3/d8b/structvector__t>` :target:`vec<doxid-da/de4/structqueue__t_1ae5f01161151535d4a6bc2c0d6be4fe52>`;
+		off_t :target:`head<doxid-da/de4/structqueue__t_1a780d125ac713803857ed8548cd4a3a0b>`;
+	};

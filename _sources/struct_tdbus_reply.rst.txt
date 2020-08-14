@@ -1,0 +1,30 @@
+.. index:: pair: struct; tdbus_reply
+.. _doxid-d7/d64/structtdbus__reply:
+
+struct tdbus_reply
+==================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <tdbus.h>
+	
+	struct tdbus_reply
+	{
+		// fields
+	
+		const char* :target:`sender<doxid-d7/d64/structtdbus__reply_1aa3ea39c9ab06cdd62fc87bc614d53a59>`;
+		const char* :target:`interface<doxid-d7/d64/structtdbus__reply_1a630966d8b032232f1eb9ee73bfa4debc>`;
+		const char* :target:`method_name<doxid-d7/d64/structtdbus__reply_1afd948f78043edf6cedc636afc2ec4506>`;
+		const char* :target:`signature<doxid-d7/d64/structtdbus__reply_1ab8cf219b087891fb6819a1b93a1dfc58>`;
+		const char* :target:`error_name<doxid-d7/d64/structtdbus__reply_1a9a6882ad7516b631a752e01adccd13c8>`;
+		struct :ref:`tdbus_message<doxid-d9/db6/structtdbus__message>`* :target:`message<doxid-d7/d64/structtdbus__reply_1ac7389df6de9d57bbeb12e584af47c438>`;
+		struct :ref:`tdbus<doxid-db/d60/structtdbus>`* :target:`bus<doxid-d7/d64/structtdbus__reply_1a0a8ba8174e773ed482fdd2ebb6c028dd>`;
+		void* :target:`user_data<doxid-d7/d64/structtdbus__reply_1af60ec0e887a6e65d32d4cd6dd5bcc755>`;
+	};

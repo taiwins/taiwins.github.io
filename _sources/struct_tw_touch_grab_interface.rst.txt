@@ -1,0 +1,28 @@
+.. index:: pair: struct; tw_touch_grab_interface
+.. _doxid-d6/dae/structtw__touch__grab__interface:
+
+struct tw_touch_grab_interface
+==============================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <seat.h>
+	
+	struct tw_touch_grab_interface
+	{
+		// fields
+	
+		void(* :target:`down<doxid-d6/dae/structtw__touch__grab__interface_1ae828b4c78ec1e956ecc229677ba5a0f3>`)(struct tw_seat_touch_grab *grab, uint32_t time_msec, uint32_t touch_id, double sx, double sy);
+		void(* :target:`up<doxid-d6/dae/structtw__touch__grab__interface_1a9a09328d8217764cfec6aa709fc78704>`)(struct tw_seat_touch_grab *grab, uint32_t time_msec, uint32_t touch_id);
+		void(* :target:`motion<doxid-d6/dae/structtw__touch__grab__interface_1a10a811062865208f4af70dfbda8988c1>`)(struct tw_seat_touch_grab *grab, uint32_t time_msec, uint32_t touch_id, double sx, double sy);
+		void(* :target:`enter<doxid-d6/dae/structtw__touch__grab__interface_1a7cdb1262a67a8d8a8e7b5c0e3c29d7e2>`)(struct tw_seat_touch_grab *grab, struct wl_resource *surface, double sx, double sy);
+		void(* :target:`touch_cancel<doxid-d6/dae/structtw__touch__grab__interface_1a65bc15243f52363591b1a8d45186c56c>`)(struct tw_seat_touch_grab *grab);
+		void(* :target:`cancel<doxid-d6/dae/structtw__touch__grab__interface_1ab37d4d2b154cbb3132bde6e19a6801df>`)(struct tw_seat_touch_grab *grab);
+	};

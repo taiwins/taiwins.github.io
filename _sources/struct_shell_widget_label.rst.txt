@@ -1,0 +1,27 @@
+.. index:: pair: struct; shell_widget_label
+.. _doxid-d5/df4/structshell__widget__label:
+
+struct shell_widget_label
+=========================
+
+.. toctree::
+	:hidden:
+
+/brief icon data format
+
+So we have decided to convert icons all into unicode, so all the anchors gets draw as glyphs.
+
+For this to work, we need a system to register svgs and upload it. Then map it to its unicode
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <widget.h>
+	
+	struct shell_widget_label
+	{
+		// fields
+	
+		char :target:`label<doxid-d5/df4/structshell__widget__label_1a86e12d02ec5f5e965a3b7bceb2a9c6e1>`[32];
+	};

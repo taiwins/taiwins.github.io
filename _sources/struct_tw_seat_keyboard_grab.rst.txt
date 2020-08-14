@@ -1,0 +1,25 @@
+.. index:: pair: struct; tw_seat_keyboard_grab
+.. _doxid-de/dfc/structtw__seat__keyboard__grab:
+
+struct tw_seat_keyboard_grab
+============================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <seat.h>
+	
+	struct tw_seat_keyboard_grab
+	{
+		// fields
+	
+		const struct :ref:`tw_keyboard_grab_interface<doxid-df/d11/structtw__keyboard__grab__interface>`* :target:`impl<doxid-de/dfc/structtw__seat__keyboard__grab_1a412c2f0388af17e5b34a830c92cbecb8>`;
+		struct :ref:`tw_seat<doxid-dc/d28/structtw__seat>`* :target:`seat<doxid-de/dfc/structtw__seat__keyboard__grab_1a91af39a59ecc8697b96f970bbd19cc3b>`;
+		void* :target:`data<doxid-de/dfc/structtw__seat__keyboard__grab_1a815a5c142769492e780bf8b2e3fb6df6>`;
+	};

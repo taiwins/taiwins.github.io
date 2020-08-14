@@ -1,0 +1,25 @@
+.. index:: pair: struct; tw_config_transform_t
+.. _doxid-d2/def/structtw__config__transform__t:
+
+struct tw_config_transform_t
+============================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <config_internal.h>
+	
+	struct tw_config_transform_t
+	{
+		// fields
+	
+		int :target:`rotate<doxid-d2/def/structtw__config__transform__t_1aa5c363ec62ba130020e41e3852861000>`;
+		bool :target:`flip<doxid-d2/def/structtw__config__transform__t_1af5a413d8a9da4b2e26987ee04540ac16>`;
+		enum wl_output_transform :target:`t<doxid-d2/def/structtw__config__transform__t_1a1944719f8da2f991bf4f11fe84e961e8>`;
+	};

@@ -1,0 +1,130 @@
+.. index:: pair: struct; tw_surface
+.. _doxid-dd/dda/structtw__surface:
+
+struct tw_surface
+=================
+
+.. toctree::
+	:hidden:
+
+Overview
+~~~~~~~~
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <surface.h>
+	
+	struct tw_surface
+	{
+		// fields
+	
+		struct wl_resource* :target:`resource<doxid-dd/dda/structtw__surface_1a7b6ed1dcec20171baf2988434d5f1e02>`;
+		struct :ref:`tw_surface_manager<doxid-d1/d12/structtw__surface__manager>`* :target:`manager<doxid-dd/dda/structtw__surface_1ab15ec45da8bd2a4afada06b168828d18>`;
+		struct :ref:`tw_surface_buffer<doxid-d5/d87/structtw__surface__buffer>` :ref:`buffer<doxid-dd/dda/structtw__surface_1a1d0d5f6eea1fea89ee97aa6399b9de0e>`;
+		struct :ref:`tw_view<doxid-d1/d3c/structtw__view>`* :target:`pending<doxid-dd/dda/structtw__surface_1ab04438862d33ba80409f2ea927b4abd4>`;
+		struct :ref:`tw_view<doxid-d1/d3c/structtw__view>`* :target:`current<doxid-dd/dda/structtw__surface_1a9e394b9989f5f65527ac29023ebc76b4>`;
+		struct :ref:`tw_view<doxid-d1/d3c/structtw__view>`* :target:`previous<doxid-dd/dda/structtw__surface_1ae02b41b0c1518c87d199009374a5c3b3>`;
+		struct :ref:`tw_view<doxid-d1/d3c/structtw__view>` :target:`surface_states<doxid-dd/dda/structtw__surface_1af042c5dacf2498272b9c9fa192fa31ad>`[3];
+		pixman_region32_t :ref:`clip<doxid-dd/dda/structtw__surface_1a242c6141becdead037a124a589bdcd1c>`;
+		int32_t :ref:`output<doxid-dd/dda/structtw__surface_1acfa48d8978cbd5516154f80888cf56e8>`;
+		uint32_t :ref:`output_mask<doxid-dd/dda/structtw__surface_1a94a8df280384561535488064b7d56e13>`;
+		struct wl_list :ref:`links<doxid-dd/dda/structtw__surface_1ace9551569b8f25fb9d63a654f2e3be5d>`[MAX_VIEW_LINKS];
+		struct wl_list :target:`frame_callbacks<doxid-dd/dda/structtw__surface_1a3e7f468caf35eaa74e80434efc3c4074>`;
+		struct wl_list :target:`subsurfaces<doxid-dd/dda/structtw__surface_1af5bb15a670e2e85954b26fecb88481b8>`;
+		struct wl_list :target:`subsurfaces_pending<doxid-dd/dda/structtw__surface_1ad2a31446f7c651459119d935f144619e>`;
+		uint32_t :target:`state<doxid-dd/dda/structtw__surface_1a56867076e1f06a2f3d6eae5dd5ee6ffd>`;
+		int :target:`sx<doxid-dd/dda/structtw__surface_1a90412b824e7642de5e9df6242d8f280a>`;
+		int :target:`sy<doxid-dd/dda/structtw__surface_1a5fa2987f5a1b73aa8559df5f3088f5af>`;
+		bool :target:`is_mapped<doxid-dd/dda/structtw__surface_1a1e589b91f62fc73f64ad33e16754eba8>`;
+		int32_t :target:`x<doxid-dd/dda/structtw__surface_1afa281944c219f1f106399002aee0e82d>`;
+		int32_t :target:`y<doxid-dd/dda/structtw__surface_1ae32ce532b6ce6482dcef1ed4ee613925>`;
+		pixman_rectangle32_t :target:`xywh<doxid-dd/dda/structtw__surface_1ad0c05b959a226fe4add664fb0c09852f>`;
+		pixman_rectangle32_t :target:`prev_xywh<doxid-dd/dda/structtw__surface_1ad05a22ff05409daa10293fe28765d839>`;
+		struct :ref:`tw_mat3<doxid-d4/da4/structtw__mat3>` :target:`transform<doxid-dd/dda/structtw__surface_1a471ee658ab84783873aa274619459f3a>`;
+		struct :ref:`tw_mat3<doxid-d4/da4/structtw__mat3>` :target:`inverse_transform<doxid-dd/dda/structtw__surface_1ab1a6891cfd421aee98a3608c4ec83ca7>`;
+		bool :target:`dirty<doxid-dd/dda/structtw__surface_1ad35167d18b783650d30cdfc9cf98be25>`;
+		struct tw_surface::@42 :ref:`geometry<doxid-dd/dda/structtw__surface_1af9420a763a4c324afcc8ed669e819051>`;
+		const char* :target:`name<doxid-dd/dda/structtw__surface_1a01043fab20ca1d87d01b625e13e2380c>`;
+		void* :target:`commit_private<doxid-dd/dda/structtw__surface_1aa10dab8dd3a3da3b3f08d60f7b6882d3>`;
+		:ref:`tw_surface_commit_cb_t<doxid-d2/d69/surface_8h_1af48899ca9a04fc8830e5a0e2e5fba631>` :target:`commit<doxid-dd/dda/structtw__surface_1a95a70f8064b497c54cf69aa974d0845e>`;
+		struct tw_surface::@43 :target:`role<doxid-dd/dda/structtw__surface_1ac67292be2aed560b2d75b47574adcc4e>`;
+		struct wl_signal :target:`frame<doxid-dd/dda/structtw__surface_1a91b502ec26badcdbaef5462ac189d6a0>`;
+		struct wl_signal :target:`commit<doxid-dd/dda/structtw__surface_1a6f6a3f0f6d415a38f088dbbce362a220>`;
+		struct wl_signal :target:`destroy<doxid-dd/dda/structtw__surface_1abe125f8544f1d42f43c19e59474f8341>`;
+		struct tw_surface::@44 :target:`events<doxid-dd/dda/structtw__surface_1a89dc0c5744fc81fce85115e1a8911a47>`;
+		void* :target:`user_data<doxid-dd/dda/structtw__surface_1a6cd1c2ca184ca7b79c4f12bd48b20bad>`;
+	};
+.. _details-dd/dda/structtw__surface:
+
+Detailed Documentation
+~~~~~~~~~~~~~~~~~~~~~~
+
+
+
+Fields
+------
+
+.. index:: pair: variable; buffer
+.. _doxid-dd/dda/structtw__surface_1a1d0d5f6eea1fea89ee97aa6399b9de0e:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	struct :ref:`tw_surface_buffer<doxid-d5/d87/structtw__surface__buffer>` buffer
+
+the :ref:`tw_surface::buffer <doxid-dd/dda/structtw__surface_1a1d0d5f6eea1fea89ee97aa6399b9de0e>` is used to present; should stay available from imported to destroy of the surface
+
+.. index:: pair: variable; clip
+.. _doxid-dd/dda/structtw__surface_1a242c6141becdead037a124a589bdcd1c:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	pixman_region32_t clip
+
+the part is not occluded by any other surface
+
+.. index:: pair: variable; output
+.. _doxid-dd/dda/structtw__surface_1acfa48d8978cbd5516154f80888cf56e8:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	int32_t output
+
+the primary output for this surface
+
+.. index:: pair: variable; output_mask
+.. _doxid-dd/dda/structtw__surface_1a94a8df280384561535488064b7d56e13:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	uint32_t output_mask
+
+the output it touches
+
+.. index:: pair: variable; links
+.. _doxid-dd/dda/structtw__surface_1ace9551569b8f25fb9d63a654f2e3be5d:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	struct wl_list links[MAX_VIEW_LINKS]
+
+many types may need to use one of the links, eg: backend_ouput, layer, compositor, input. Plane.
+
+.. index:: pair: variable; geometry
+.. _doxid-dd/dda/structtw__surface_1af9420a763a4c324afcc8ed669e819051:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	unnamed-struct geometry
+
+transform of the view
+

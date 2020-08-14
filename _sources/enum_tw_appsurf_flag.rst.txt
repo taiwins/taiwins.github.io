@@ -1,0 +1,20 @@
+.. index:: pair: enum; tw_appsurf_flag
+.. _doxid-d9/d3b/ui_8h_1ac48cd1a65d263e2ebc0e4cc6f3355702:
+
+enum tw_appsurf_flag
+====================
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <ui.h>
+
+	enum tw_appsurf_flag
+	{
+	    :target:`TW_APPSURF_NORESIZABLE<doxid-d9/d3b/ui_8h_1ac48cd1a65d263e2ebc0e4cc6f3355702a98833663f2b17e111ae1ba235ef85e21>` = 1<<0,
+	    :target:`TW_APPSURF_COMPOSITE<doxid-d9/d3b/ui_8h_1ac48cd1a65d263e2ebc0e4cc6f3355702a1ab967997aa220442d3df6ef90070f7d>`   = 1<<1,
+	    :target:`TW_APPSURF_NOINPUT<doxid-d9/d3b/ui_8h_1ac48cd1a65d263e2ebc0e4cc6f3355702a2feb3a0749639baec89795173d234175>`     = 1<<2,
+	};
+

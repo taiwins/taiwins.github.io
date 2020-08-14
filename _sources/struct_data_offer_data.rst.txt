@@ -1,0 +1,30 @@
+.. index:: pair: struct; data_offer_data
+.. _doxid-de/d28/structdata__offer__data:
+
+struct data_offer_data
+======================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	
+	struct data_offer_data
+	{
+		// fields
+	
+		struct :ref:`tw_globals<doxid-dc/dde/structtw__globals>`* :target:`globals<doxid-de/d28/structdata__offer__data_1a391922691a4fd7b3e7922fa4dcf504a3>`;
+		struct wl_data_offer* :target:`wl_data_offer<doxid-de/d28/structdata__offer__data_1a84c450e9fbda4c4441751e65149e046b>`;
+		struct wl_surface* :target:`surface<doxid-de/d28/structdata__offer__data_1a39c08dc1165ee8c764bd9b1004ebad76>`;
+		struct wl_array :target:`mime_offered<doxid-de/d28/structdata__offer__data_1ad2d5392111fcdc0d8e91b0267fcda840>`;
+		bool :target:`dnd<doxid-de/d28/structdata__offer__data_1adad445c6fdba98b0afe1a6164a59aea3>`;
+		const char* :target:`mime_accepted<doxid-de/d28/structdata__offer__data_1a51e6bdcf42bada66ac6224a530769f46>`;
+		uint32_t :target:`action_received<doxid-de/d28/structdata__offer__data_1aaa83a38a490a2e2c90232affe4849ff5>`;
+		uint32_t :target:`serial<doxid-de/d28/structdata__offer__data_1adc4232c9c106b6861777fce537413d32>`;
+		int :target:`fd<doxid-de/d28/structdata__offer__data_1acba5ca4f87317aba8d254d3a37914927>`;
+	};

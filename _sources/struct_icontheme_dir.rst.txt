@@ -1,0 +1,40 @@
+.. index:: pair: struct; icontheme_dir
+.. _doxid-d8/d3a/structicontheme__dir:
+
+struct icontheme_dir
+====================
+
+.. toctree::
+	:hidden:
+
+Overview
+~~~~~~~~
+
+:ref:`icontheme_dir <doxid-d8/d3a/structicontheme__dir>` :ref:`More...<details-d8/d3a/structicontheme__dir>`
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <image_cache.h>
+	
+	struct icontheme_dir
+	{
+		// fields
+	
+		struct wl_array :target:`apps<doxid-d8/d3a/structicontheme__dir_1a3c0b672540b6d7ae48631ff07b67145f>`;
+		struct wl_array :target:`mimes<doxid-d8/d3a/structicontheme__dir_1ae19e7e3aa9b13496f95c9d36c77cc765>`;
+		struct wl_array :target:`places<doxid-d8/d3a/structicontheme__dir_1a487f12b5629ae42972b6db067e2ae4f1>`;
+		struct wl_array :target:`status<doxid-d8/d3a/structicontheme__dir_1a3f9d14c8677fe6bd21b4ec8c8f020ec1>`;
+		struct wl_array :target:`devices<doxid-d8/d3a/structicontheme__dir_1a8ada4266e761f4271f7258f17bf01a6f>`;
+		char :target:`theme_dir<doxid-d8/d3a/structicontheme__dir_1a75312087cb950de69e73020a82e60763>`[256];
+	};
+.. _details-d8/d3a/structicontheme__dir:
+
+Detailed Documentation
+~~~~~~~~~~~~~~~~~~~~~~
+
+:ref:`icontheme_dir <doxid-d8/d3a/structicontheme__dir>`
+
+generate icon file paths for you
+

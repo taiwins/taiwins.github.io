@@ -1,0 +1,27 @@
+.. index:: pair: struct; tw_event_get_wl_subsurface
+.. _doxid-dd/d30/structtw__event__get__wl__subsurface:
+
+struct tw_event_get_wl_subsurface
+=================================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <compositor.h>
+	
+	struct tw_event_get_wl_subsurface
+	{
+		// fields
+	
+		struct wl_resource* :target:`surface<doxid-dd/d30/structtw__event__get__wl__subsurface_1afefe6ab6768dddf68eba407c96564589>`;
+		struct wl_resource* :target:`parent_surface<doxid-dd/d30/structtw__event__get__wl__subsurface_1a5fde73bef5ae0668f3a4746d5628bea8>`;
+		struct wl_client* :target:`client<doxid-dd/d30/structtw__event__get__wl__subsurface_1abfec82ed68b9e40592c181d1297165a9>`;
+		uint32_t :target:`version<doxid-dd/d30/structtw__event__get__wl__subsurface_1ab126a3029f16750f1737c3745effa4d3>`;
+		uint32_t :target:`id<doxid-dd/d30/structtw__event__get__wl__subsurface_1aa791e47eb3398739f3411a85f29cca8c>`;
+	};

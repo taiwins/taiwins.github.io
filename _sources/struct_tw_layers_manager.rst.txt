@@ -1,0 +1,27 @@
+.. index:: pair: struct; tw_layers_manager
+.. _doxid-dd/d64/structtw__layers__manager:
+
+struct tw_layers_manager
+========================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <layers.h>
+	
+	struct tw_layers_manager
+	{
+		// fields
+	
+		struct wl_display* :target:`display<doxid-dd/d64/structtw__layers__manager_1aea60bd374d6fcf4697da71e29e11fede>`;
+		struct wl_list :target:`layers<doxid-dd/d64/structtw__layers__manager_1a519821ab064edf206e4744236d13daef>`;
+		struct wl_list :target:`views<doxid-dd/d64/structtw__layers__manager_1afd007faa5e73a5a479d1e9ffaa75ad59>`;
+		struct wl_listener :target:`destroy_listener<doxid-dd/d64/structtw__layers__manager_1ae0457b3ab435ad485ee5549c7ebf6288>`;
+		struct :ref:`tw_layer<doxid-d7/d6a/structtw__layer>` :target:`cursor_layer<doxid-dd/d64/structtw__layers__manager_1a379abf1ab27735760da45336348a7e2a>`;
+	};

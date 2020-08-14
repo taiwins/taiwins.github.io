@@ -1,0 +1,25 @@
+.. index:: pair: struct; tw_profiler_scope
+.. _doxid-dc/d25/structtw__profiler__scope:
+
+struct tw_profiler_scope
+========================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	
+	struct tw_profiler_scope
+	{
+		// fields
+	
+		const char* :target:`name<doxid-dc/d25/structtw__profiler__scope_1a1fc2f3fd316169e9cdae589cd37d57a0>`;
+		long long :target:`start_time<doxid-dc/d25/structtw__profiler__scope_1a71d33bc1358225806276a8c296d7516a>`;
+		long long :target:`end_time<doxid-dc/d25/structtw__profiler__scope_1a2d50d604f4b721e01d06190b312750e1>`;
+		unsigned int :target:`tid<doxid-dc/d25/structtw__profiler__scope_1ab74dd12a66b6c26c2ade3dac09b373d4>`;
+	};

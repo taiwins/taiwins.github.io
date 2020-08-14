@@ -1,0 +1,69 @@
+.. index:: pair: struct; desktop_shell
+.. _doxid-db/deb/structdesktop__shell:
+
+struct desktop_shell
+====================
+
+.. toctree::
+	:hidden:
+
+Overview
+~~~~~~~~
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <shell.h>
+	
+	struct desktop_shell
+	{
+		// fields
+	
+		struct :ref:`tw_globals<doxid-dc/dde/structtw__globals>` :target:`globals<doxid-db/deb/structdesktop__shell_1a258dfbd4382e3899ea91906ba9d40abb>`;
+		struct taiwins_shell* :target:`interface<doxid-db/deb/structdesktop__shell_1ab06adc4da65a6d818aace48ee8d603f0>`;
+		struct taiwins_theme* :target:`theme_interface<doxid-db/deb/structdesktop__shell_1a3b8b0cbb1138cae3e582336f53b21bf4>`;
+		enum taiwins_shell_panel_pos :target:`panel_pos<doxid-db/deb/structdesktop__shell_1abc72e8bbb90d0f9338ec25ad8f0928ca>`;
+		struct :ref:`tdbus<doxid-db/d60/structtdbus>`* :target:`system_bus<doxid-db/deb/structdesktop__shell_1a0b601cea7aa620a374bbd99e3145e6e0>`;
+		struct :ref:`tdbus<doxid-db/d60/structtdbus>`* :target:`session_bus<doxid-db/deb/structdesktop__shell_1a18dfeec06ec90552c97122fde415d1bb>`;
+		struct :ref:`shell_config<doxid-d0/d95/structshell__config>` :ref:`config<doxid-db/deb/structdesktop__shell_1a01af4064faaa1c205e510c89f2664a79>`;
+		struct nk_wl_backend* :target:`panel_backend<doxid-db/deb/structdesktop__shell_1afa1af775ad6b8222870e44caacacb30d>`;
+		struct nk_user_font* :target:`icon_font<doxid-db/deb/structdesktop__shell_1aa4d5707a949ad7ceff9392731b54d204>`;
+		char :target:`wallpaper_path<doxid-db/deb/structdesktop__shell_1afce5085ad3640e89fa00fa3f961ef2cb>`[128];
+		size_t :target:`panel_height<doxid-db/deb/structdesktop__shell_1a2cff9ee739c08828f3c594c58e3da6aa>`;
+		struct nk_wl_backend* :target:`widget_backend<doxid-db/deb/structdesktop__shell_1a76d562f161a169be2a0f6ef9db7ec9f6>`;
+		struct wl_list :target:`shell_widgets<doxid-db/deb/structdesktop__shell_1a33881a008a296ca6bad50374867c6551>`;
+		struct :ref:`widget_launch_info<doxid-d9/da7/structwidget__launch__info>` :target:`widget_launch<doxid-db/deb/structdesktop__shell_1a37fce1c357988b8af62e53b513af08ca>`;
+		struct taiwins_ui* :target:`transient_ui<doxid-db/deb/structdesktop__shell_1a319f1956efa47a035e2273ba0611e497>`;
+		struct :ref:`tw_appsurf<doxid-d6/d55/structtw__appsurf>` :target:`transient<doxid-db/deb/structdesktop__shell_1a40d50073e8d0837e372c0cc1a7f85c93>`;
+		struct wl_list :target:`msgs<doxid-db/deb/structdesktop__shell_1a3573f32559233275bd38e708c879b26c>`;
+		struct :ref:`tw_signal<doxid-d7/d53/structtw__signal>` :target:`msg_recv_signal<doxid-db/deb/structdesktop__shell_1aebea48d0c925bac6ba4436dc2d87850a>`;
+		struct :ref:`tw_signal<doxid-d7/d53/structtw__signal>` :target:`msg_del_signal<doxid-db/deb/structdesktop__shell_1a035d4bc10ab3f2cdb00fb6e47b11e8bf>`;
+		struct desktop_shell::@12 :target:`notifs<doxid-db/deb/structdesktop__shell_1aaa19dd51057535ac730280730a596131>`;
+		:ref:`vector_t<doxid-d3/d8b/structvector__t>` :target:`menu<doxid-db/deb/structdesktop__shell_1a9decc4c0fc9d889d7527c5c0250ccd3d>`;
+		struct :ref:`shell_output<doxid-d2/d16/structshell__output>`* :target:`main_output<doxid-db/deb/structdesktop__shell_1ab2a1684cb514466555ba5bd2835d3e07>`;
+		struct :ref:`shell_output<doxid-d2/d16/structshell__output>` :target:`shell_outputs<doxid-db/deb/structdesktop__shell_1a1ddd2720e549a3ddb3385c6972e4d03b>`[16];
+		struct tw_theme :target:`theme<doxid-db/deb/structdesktop__shell_1a0205852cff4b3f3d980be6b0cd6c764f>`;
+	};
+.. _details-db/deb/structdesktop__shell:
+
+Detailed Documentation
+~~~~~~~~~~~~~~~~~~~~~~
+
+
+
+Fields
+------
+
+.. index:: pair: variable; config
+.. _doxid-db/deb/structdesktop__shell_1a01af4064faaa1c205e510c89f2664a79:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	struct :ref:`shell_config<doxid-d0/d95/structshell__config>` config
+
+panel bg configurations
+

@@ -1,0 +1,35 @@
+.. index:: pair: struct; tw_signal
+.. _doxid-d7/d53/structtw__signal:
+
+struct tw_signal
+================
+
+.. toctree::
+	:hidden:
+
+Overview
+~~~~~~~~
+
+classic observer pattern, :ref:`More...<details-d7/d53/structtw__signal>`
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <client.h>
+	
+	struct tw_signal
+	{
+		// fields
+	
+		struct wl_list :target:`head<doxid-d7/d53/structtw__signal_1ac74fee4faa22aed30dbfb63ffa98a2b3>`;
+	};
+.. _details-d7/d53/structtw__signal:
+
+Detailed Documentation
+~~~~~~~~~~~~~~~~~~~~~~
+
+classic observer pattern,
+
+much like wl_signal wl_listener, but not available for wayland clients
+

@@ -1,0 +1,23 @@
+.. index:: pair: struct; selected_search_entry
+.. _doxid-d0/dd6/structselected__search__entry:
+
+struct selected_search_entry
+============================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	
+	struct selected_search_entry
+	{
+		// fields
+	
+		:ref:`console_search_entry_t<doxid-d8/d11/structconsole__search__entry__t>` :target:`entry<doxid-d0/dd6/structselected__search__entry_1ab71d1baa6812ffc3172f9e55376e2f50>`;
+		struct :ref:`console_module<doxid-d6/d76/structconsole__module>`* :target:`module<doxid-d0/dd6/structselected__search__entry_1a1ba779d0dbaff8cb51934fed7b478b2a>`;
+	};

@@ -1,0 +1,23 @@
+.. index:: pair: struct; icon_dir
+.. _doxid-dc/d1f/structicon__dir:
+
+struct icon_dir
+===============
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	
+	struct icon_dir
+	{
+		// fields
+	
+		char :target:`dir<doxid-dc/d1f/structicon__dir_1a3d005cdb9b8718227a5e00a51f03f63b>`[MAX_DIR_LEN];
+		uint32_t :target:`size<doxid-dc/d1f/structicon__dir_1a49bdd4df8eef794cc97b1ef43dae6d47>`;
+	};

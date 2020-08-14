@@ -1,0 +1,48 @@
+.. index:: pair: struct; console_search_entry_t
+.. _doxid-d8/d11/structconsole__search__entry__t:
+
+struct console_search_entry_t
+=============================
+
+.. toctree::
+	:hidden:
+
+Overview
+~~~~~~~~
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <console.h>
+	
+	struct console_search_entry_t
+	{
+		// fields
+	
+		struct nk_image :target:`img<doxid-d8/d11/structconsole__search__entry__t_1ab30557266380ed5aa1d2bed3ce36a2b7>`;
+		char :ref:`sstr<doxid-d8/d11/structconsole__search__entry__t_1a22e4be319efeb8c6a38b43b29d04795f>`[32];
+		char* :target:`pstr<doxid-d8/d11/structconsole__search__entry__t_1a74e7027f4e186ee5c6206368aecefd9d>`;
+	};
+.. _details-d8/d11/structconsole__search__entry__t:
+
+Detailed Documentation
+~~~~~~~~~~~~~~~~~~~~~~
+
+
+
+Fields
+------
+
+.. index:: pair: variable; sstr
+.. _doxid-d8/d11/structconsole__search__entry__t_1a22e4be319efeb8c6a38b43b29d04795f:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	char sstr[32]
+
+small string optimization
+

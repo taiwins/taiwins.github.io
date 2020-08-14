@@ -1,0 +1,22 @@
+.. index:: pair: enum; icon_type
+.. _doxid-d9/db4/update__icon__cache_8c_1ad7e49b72d370007f9211cdf94feeb324:
+
+enum icon_type
+==============
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	
+	enum icon_type
+	{
+	    :target:`ICON_APPS<doxid-d9/db4/update__icon__cache_8c_1ad7e49b72d370007f9211cdf94feeb324a89e312299215dc1b221b36829be79ce5>`      = 1,
+	    :target:`ICON_MIMETYPES<doxid-d9/db4/update__icon__cache_8c_1ad7e49b72d370007f9211cdf94feeb324a225470836a3e670a09847725b7425f08>` = 2,
+	    :target:`ICON_PLACES<doxid-d9/db4/update__icon__cache_8c_1ad7e49b72d370007f9211cdf94feeb324a0837a1e84c8ce8173fa0f469dd6537bc>`    = 4,
+	    :target:`ICON_STATUS<doxid-d9/db4/update__icon__cache_8c_1ad7e49b72d370007f9211cdf94feeb324a06cfadc19b0503def9df0a46733afb0e>`    = 8,
+	    :target:`ICON_DEVICES<doxid-d9/db4/update__icon__cache_8c_1ad7e49b72d370007f9211cdf94feeb324aeaadce843c4adde157c900469d1cc71e>`   = 16,
+	    :target:`ICON_UNKNOWN<doxid-d9/db4/update__icon__cache_8c_1ad7e49b72d370007f9211cdf94feeb324ac19b42ea96710dbe34f0bd547311b865>`   = 100000,
+	};
+

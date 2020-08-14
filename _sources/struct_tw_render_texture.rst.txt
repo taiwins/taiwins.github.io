@@ -1,0 +1,56 @@
+.. index:: pair: struct; tw_render_texture
+.. _doxid-d3/d9d/structtw__render__texture:
+
+struct tw_render_texture
+========================
+
+.. toctree::
+	:hidden:
+
+Overview
+~~~~~~~~
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <renderer.h>
+	
+	struct tw_render_texture
+	{
+		// fields
+	
+		uint32_t :target:`width<doxid-d3/d9d/structtw__render__texture_1abb89a8bb78047f18b8597e37add3fa94>`;
+		uint32_t :target:`height<doxid-d3/d9d/structtw__render__texture_1ad14288a8dba978b31449385eebc934a3>`;
+		EGLint :target:`fmt<doxid-d3/d9d/structtw__render__texture_1a51991d98658185c6f8a7a99ad46ec0ac>`;
+		GLenum :ref:`target<doxid-d3/d9d/structtw__render__texture_1a4f1f6757ba73c7c6c4521d89d5e7c5bd>`;
+		bool :target:`has_alpha<doxid-d3/d9d/structtw__render__texture_1aa4f4016218d3f67fcb82f543d30ead81>`;
+		bool :target:`inverted_y<doxid-d3/d9d/structtw__render__texture_1af2b84d8aae8bf379133b933df8bc45cf>`;
+		enum wl_shm_format :target:`wl_format<doxid-d3/d9d/structtw__render__texture_1a90324b7630624ebf82c5773597c41beb>`;
+		GLuint :target:`gltex<doxid-d3/d9d/structtw__render__texture_1a7c71e7ee0292ec789c8567b535ebb6ae>`;
+		EGLImageKHR :target:`image<doxid-d3/d9d/structtw__render__texture_1afb7cd4f6884abd65ce7c70198f7961f4>`;
+		struct :ref:`tw_renderer<doxid-d7/db6/structtw__renderer>`* :target:`rdr<doxid-d3/d9d/structtw__render__texture_1a575a094c0639f3ade420ec21255190e0>`;
+		void(* :target:`destroy<doxid-d3/d9d/structtw__render__texture_1a5bd28e1ea4b3d3c15380484e4588cf20>`)(struct tw_render_texture *);
+	};
+.. _details-d3/d9d/structtw__render__texture:
+
+Detailed Documentation
+~~~~~~~~~~~~~~~~~~~~~~
+
+
+
+Fields
+------
+
+.. index:: pair: variable; target
+.. _doxid-d3/d9d/structtw__render__texture_1a4f1f6757ba73c7c6c4521d89d5e7c5bd:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	GLenum target
+
+GL_TEXTURE_2D or GL_TEXTURE_EXTERNAL_OES
+

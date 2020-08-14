@@ -1,0 +1,22 @@
+.. index:: pair: struct; tiling_user_data
+.. _doxid-dc/d96/structtiling__user__data:
+
+struct tiling_user_data
+=======================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	
+	struct tiling_user_data
+	{
+		// fields
+	
+		struct :ref:`tiling_output<doxid-d0/d9f/structtiling__output>` :target:`outputs<doxid-dc/d96/structtiling__user__data_1a5606600c0bc6a3701be847cf4dec9031>`[32];
+	};

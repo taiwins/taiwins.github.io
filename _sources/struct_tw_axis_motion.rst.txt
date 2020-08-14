@@ -1,0 +1,24 @@
+.. index:: pair: struct; tw_axis_motion
+.. _doxid-d2/d42/structtw__axis__motion:
+
+struct tw_axis_motion
+=====================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <bindings.h>
+	
+	struct tw_axis_motion
+	{
+		// fields
+	
+		enum wl_pointer_axis :target:`axis_event<doxid-d2/d42/structtw__axis__motion_1a51bf874a60bcec922a8cb590e9dbf529>`;
+		uint32_t :target:`modifier<doxid-d2/d42/structtw__axis__motion_1a2a64edb1b4f0ebbf5fd3188b5ee0155c>`;
+	};

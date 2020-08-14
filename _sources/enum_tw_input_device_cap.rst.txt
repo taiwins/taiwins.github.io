@@ -1,0 +1,24 @@
+.. index:: pair: enum; tw_input_device_cap
+.. _doxid-de/d34/backend_8h_1a049e499ec9177c5a577263cd34158214:
+
+enum tw_input_device_cap
+========================
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <backend.h>
+
+	enum tw_input_device_cap
+	{
+	    :target:`TW_INPUT_CAP_KEYBOARD<doxid-de/d34/backend_8h_1a049e499ec9177c5a577263cd34158214a9d2b57668f9cc47da86fe2ff89349820>`    = 1<<0,
+	    :target:`TW_INPUT_CAP_POINTER<doxid-de/d34/backend_8h_1a049e499ec9177c5a577263cd34158214a65a1086b39c1fd7e7eaf8a816a29d4b0>`     = 1<<1,
+	    :target:`TW_INPUT_CAP_TOUCH<doxid-de/d34/backend_8h_1a049e499ec9177c5a577263cd34158214a3f32973468e9d7fb4b9db81fb90180d7>`       = 1<<2,
+	    :target:`TW_INPUT_CAP_TABLET_TOOL<doxid-de/d34/backend_8h_1a049e499ec9177c5a577263cd34158214adcb37f2f3ae22e4218e0f40fb35f2001>` = 1<<3,
+	    :target:`TW_INPUT_CAP_TABLET_PAD<doxid-de/d34/backend_8h_1a049e499ec9177c5a577263cd34158214a5f6330215b065375cb17ce785d21d06d>`  = 1<<4,
+	    :target:`TW_INPUT_CAP_SWITCH<doxid-de/d34/backend_8h_1a049e499ec9177c5a577263cd34158214a22e594655c28a9100c388d9cba28ac32>`      = 1<<5,
+	    :target:`TW_INPUT_CAP_ALL<doxid-de/d34/backend_8h_1a049e499ec9177c5a577263cd34158214a0267f663b687bc774d301dfa1b4f7aae>`         = 0x1f,
+	};
+

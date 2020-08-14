@@ -1,0 +1,24 @@
+.. index:: pair: struct; widget_colors
+.. _doxid-d5/dfd/structwidget__colors:
+
+struct widget_colors
+====================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	
+	struct widget_colors
+	{
+		// fields
+	
+		tw_rgba_t :target:`normal<doxid-d5/dfd/structwidget__colors_1a5a6cb1e2c1ff3121d7473a09da528743>`;
+		tw_rgba_t :target:`hover<doxid-d5/dfd/structwidget__colors_1ae0d0ee294f04b5fc6165822f0672285b>`;
+		tw_rgba_t :target:`active<doxid-d5/dfd/structwidget__colors_1a6d2ab3e62368f4c95426aa14fad45e81>`;
+	};

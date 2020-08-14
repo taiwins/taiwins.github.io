@@ -1,0 +1,27 @@
+.. index:: pair: struct; shell_widget_runtime
+.. _doxid-d1/de0/structshell__widget__runtime:
+
+struct shell_widget_runtime
+===========================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	
+	struct shell_widget_runtime
+	{
+		// fields
+	
+		struct :ref:`shell_widget<doxid-db/d95/structshell__widget>` :target:`widget<doxid-d1/de0/structshell__widget__runtime_1ae704ea4834a19577e0f0f72738705033>`;
+		lua_State* :target:`L<doxid-d1/de0/structshell__widget__runtime_1a8ca8400521546cd6a59dd1aab727ebb4>`;
+		struct nk_love_context* :target:`runtime<doxid-d1/de0/structshell__widget__runtime_1abfdfa4523e51272dc97407a6ae8410b3>`;
+		int :target:`index<doxid-d1/de0/structshell__widget__runtime_1a9bde569168c12eea179032d606cc81dd>`;
+		char :target:`widgetcb<doxid-d1/de0/structshell__widget__runtime_1a0d17c1cb14953a22bc54dc025f0c3093>`[32];
+		char :target:`anchorcb<doxid-d1/de0/structshell__widget__runtime_1a98b27557392fc25efc94f51ded6ed5a0>`[32];
+	};

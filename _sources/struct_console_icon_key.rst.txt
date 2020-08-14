@@ -1,0 +1,25 @@
+.. index:: pair: struct; console_icon_key
+.. _doxid-d5/d6b/structconsole__icon__key:
+
+struct console_icon_key
+=======================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	
+	struct console_icon_key
+	{
+		// fields
+	
+		struct wl_array* :target:`arr<doxid-d5/d6b/structconsole__icon__key_1ac9bf99f8b8c04730fa9811c46c4196ef>`;
+		off_t :target:`offset<doxid-d5/d6b/structconsole__icon__key_1aeb7eb9b15dafaaa4bfaafe3493538cc8>`;
+		const char* :target:`str<doxid-d5/d6b/structconsole__icon__key_1a0e351cd7550c68bb2e31e3d063613040>`;
+		union console_icon_key::@0 :target:`data<doxid-d5/d6b/structconsole__icon__key_1a9c50afed5f8c143e68cad874995b8ef7>`;
+	};

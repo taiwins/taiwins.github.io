@@ -1,0 +1,34 @@
+.. index:: pair: struct; tw_desktop_surface_api
+.. _doxid-d9/d08/structtw__desktop__surface__api:
+
+struct tw_desktop_surface_api
+=============================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <desktop.h>
+	
+	struct tw_desktop_surface_api
+	{
+		// fields
+	
+		void(* :target:`ping_timeout<doxid-d9/d08/structtw__desktop__surface__api_1a5510d6768a50c440d0acf7da10b57e44>`)(struct tw_desktop_surface *client, void *user_data);
+		void(* :target:`pong<doxid-d9/d08/structtw__desktop__surface__api_1a0bf9209f705d78edb537133a341fca16>`)(struct tw_desktop_surface *client, void *user_data);
+		void(* :target:`surface_added<doxid-d9/d08/structtw__desktop__surface__api_1abbdee0ff57e6b75043f530354eb4a4d7>`)(struct tw_desktop_surface *surface, void *user_data);
+		void(* :target:`surface_removed<doxid-d9/d08/structtw__desktop__surface__api_1aabcfd2d2dc2ca3df3aaa16d7a61771fc>`)(struct tw_desktop_surface *surface, void *user_data);
+		void(* :target:`committed<doxid-d9/d08/structtw__desktop__surface__api_1aa8e0432cd33db994088d781166200e3f>`)(struct tw_desktop_surface *surface, void *user_data);
+		void(* :target:`show_window_menu<doxid-d9/d08/structtw__desktop__surface__api_1ad9e645e668801f5e7d16a22c4c363b35>`)(struct tw_desktop_surface *surface, struct wl_resource *seat, int32_t x, int32_t y, void *user_data);
+		void(* :target:`set_parent<doxid-d9/d08/structtw__desktop__surface__api_1a2a32c3319262fa7db10a6b4b8c37f028>`)(struct tw_desktop_surface *surface, struct tw_desktop_surface *parent, void *user_data);
+		void(* :target:`move<doxid-d9/d08/structtw__desktop__surface__api_1a2703017c21a7de468ca9293627184ce8>`)(struct tw_desktop_surface *surface, struct wl_resource *seat, uint32_t serial, void *user_data);
+		void(* :target:`resize<doxid-d9/d08/structtw__desktop__surface__api_1a39a40a0f884583efa92479b514df38d9>`)(struct tw_desktop_surface *surface, struct wl_resource *seat, uint32_t serial, enum wl_shell_surface_resize edges, void *user_data);
+		void(* :target:`fullscreen_requested<doxid-d9/d08/structtw__desktop__surface__api_1a68e76a0ee597fd57a246b1de46d3059f>`)(struct tw_desktop_surface *surface, struct wl_resource *output, bool fullscreen, void *user_data);
+		void(* :target:`maximized_requested<doxid-d9/d08/structtw__desktop__surface__api_1a453b308fab0e8696f2eeb9098ec78c2b>`)(struct tw_desktop_surface *surface, bool maximized, void *user_data);
+		void(* :target:`minimized_requested<doxid-d9/d08/structtw__desktop__surface__api_1a6742178724417a70bbd0f18945761126>`)(struct tw_desktop_surface *surface, void *user_data);
+	};

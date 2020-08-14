@@ -1,0 +1,23 @@
+.. index:: pair: struct; event_map
+.. _doxid-da/d2f/structevent__map:
+
+struct event_map
+================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	
+	struct event_map
+	{
+		// fields
+	
+		const char* :target:`name<doxid-da/d2f/structevent__map_1ae4dccf98d1e699f4189deed68e588d3c>`;
+		uint32_t :target:`event_code<doxid-da/d2f/structevent__map_1a69888dd1c018e8bd5d6d3f2ebcab9dcf>`;
+	};

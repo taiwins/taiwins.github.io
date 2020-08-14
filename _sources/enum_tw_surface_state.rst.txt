@@ -1,0 +1,24 @@
+.. index:: pair: enum; tw_surface_state
+.. _doxid-d2/d69/surface_8h_1a7fa8d10070e058c1ed66bfa6e5bc4d1d:
+
+enum tw_surface_state
+=====================
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <surface.h>
+
+	enum tw_surface_state
+	{
+	    :target:`TW_SURFACE_ATTACHED<doxid-d2/d69/surface_8h_1a7fa8d10070e058c1ed66bfa6e5bc4d1da4bb7c88dcfd0b9ae19ceb9d16c3991f7>`         =(1<<0),
+	    :target:`TW_SURFACE_DAMAGED<doxid-d2/d69/surface_8h_1a7fa8d10070e058c1ed66bfa6e5bc4d1dab10dbb212f717f0ad4de1e936ab89d33>`          =(1<<1),
+	    :target:`TW_SURFACE_BUFFER_TRANSFORM<doxid-d2/d69/surface_8h_1a7fa8d10070e058c1ed66bfa6e5bc4d1daa45ae28d37d1b968c3ee1b8ca81ed29d>` =(1<<2),
+	    :target:`TW_SURFACE_BUFFER_DAMAGED<doxid-d2/d69/surface_8h_1a7fa8d10070e058c1ed66bfa6e5bc4d1dacbb4195080ff36f09fe0d69e8ff00923>`   =(1<<3),
+	    :target:`TW_SURFACE_BUFFER_SCALED<doxid-d2/d69/surface_8h_1a7fa8d10070e058c1ed66bfa6e5bc4d1da3b1f156e7550680c8ceb04d5994beda3>`    =(1<<4),
+	    :target:`TW_SURFACE_OPAQUE_REGION<doxid-d2/d69/surface_8h_1a7fa8d10070e058c1ed66bfa6e5bc4d1da7cf15b6ecdff411af63051057bc27bbe>`    =(1<<5),
+	    :target:`TW_SURFACE_INPUT_REGION<doxid-d2/d69/surface_8h_1a7fa8d10070e058c1ed66bfa6e5bc4d1da7419ba4c454e3520642a4ee2e829db4d>`     =(1<<6),
+	};
+

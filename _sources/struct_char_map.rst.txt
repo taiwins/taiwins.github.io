@@ -1,0 +1,23 @@
+.. index:: pair: struct; char_map
+.. _doxid-dd/d92/structchar__map:
+
+struct char_map
+===============
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	
+	struct char_map
+	{
+		// fields
+	
+		unsigned char :target:`ascii<doxid-dd/d92/structchar__map_1a608fbbe7ee44ea292db7b71789e2a67f>`;
+		int32_t :target:`code<doxid-dd/d92/structchar__map_1a3cf9413faea6ba0bdb6a4baada94fb5e>`;
+	};

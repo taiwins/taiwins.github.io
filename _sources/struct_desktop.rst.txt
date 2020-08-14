@@ -1,0 +1,73 @@
+.. index:: pair: struct; desktop
+.. _doxid-d6/d49/structdesktop:
+
+struct desktop
+==============
+
+.. toctree::
+	:hidden:
+
+Overview
+~~~~~~~~
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	
+	struct desktop
+	{
+		// fields
+	
+		struct weston_compositor* :target:`compositor<doxid-d6/d49/structdesktop_1ab0e0b746e249bb923f7c7111e6b99705>`;
+		struct shell* :target:`shell<doxid-d6/d49/structdesktop_1a785f9dc643fcf1506ccba71bf8ccfca6>`;
+		struct workspace* :target:`actived_workspace<doxid-d6/d49/structdesktop_1a0af971f3ad8a7b43f8d3a07bc52762ce>`[2];
+		struct workspace :target:`workspaces<doxid-d6/d49/structdesktop_1aba8481836ac9336d7a81aab0ceb17cd1>`[9];
+		struct weston_desktop* :target:`api<doxid-d6/d49/structdesktop_1af27706eda55bc4b9fe8b45395ff9218f>`;
+		const struct weston_xwayland_surface_api* :target:`xwayland_api<doxid-d6/d49/structdesktop_1a5f9566329c6abf35ed02c52e78d4d0e8>`;
+		struct wl_listener :target:`widget_closed_listener<doxid-d6/d49/structdesktop_1aa8439246b9df5e97f139144d3c924a61>`;
+		struct wl_listener :target:`desktop_area_listener<doxid-d6/d49/structdesktop_1af353a7e4b8c60dfe8f12867575b86074>`;
+		struct wl_listener :target:`compositor_destroy_listener<doxid-d6/d49/structdesktop_1ae530a760c52192304ae0a03f98421293>`;
+		struct wl_listener :target:`output_create_listener<doxid-d6/d49/structdesktop_1a36e86529bdb8c717d7b3af8b1aaeffab>`;
+		struct wl_listener :target:`output_resize_listener<doxid-d6/d49/structdesktop_1ad0c756bf366352b53e16cea651b199b7>`;
+		struct wl_listener :target:`output_destroy_listener<doxid-d6/d49/structdesktop_1adb2bbe7e8fa3ebe065588c7d247eb210>`;
+		struct wl_listener :ref:`surface_transform_listener<doxid-d6/d49/structdesktop_1aface96aed180d1d3cdcf9016ef0f2992>`;
+		struct :ref:`grab_interface<doxid-d1/d76/structgrab__interface>` :target:`moving_grab<doxid-d6/d49/structdesktop_1a68c9cddbf8341cd6461059126ea2fd4b>`;
+		struct :ref:`grab_interface<doxid-d1/d76/structgrab__interface>` :target:`resizing_grab<doxid-d6/d49/structdesktop_1af82f2bb0a91bf1c294d0ec4f3649281c>`;
+		struct :ref:`grab_interface<doxid-d1/d76/structgrab__interface>` :target:`alpha_grab<doxid-d6/d49/structdesktop_1ae66e0dfe458f9ba28788b43e1f123881>`;
+		struct :ref:`grab_interface<doxid-d1/d76/structgrab__interface>` :ref:`task_switch_grab<doxid-d6/d49/structdesktop_1a785cfc20ca4eb4f5833f810bc260eb79>`;
+		int32_t :target:`inner_gap<doxid-d6/d49/structdesktop_1ae61248dd8febc804f6e95dedaf03f1cb>`;
+		int32_t :target:`outer_gap<doxid-d6/d49/structdesktop_1acc4771852c49dda5eb0a7476b60397f6>`;
+	};
+.. _details-d6/d49/structdesktop:
+
+Detailed Documentation
+~~~~~~~~~~~~~~~~~~~~~~
+
+
+
+Fields
+------
+
+.. index:: pair: variable; surface_transform_listener
+.. _doxid-d6/d49/structdesktop_1aface96aed180d1d3cdcf9016ef0f2992:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	struct wl_listener surface_transform_listener
+
+grabs
+
+.. index:: pair: variable; task_switch_grab
+.. _doxid-d6/d49/structdesktop_1a785cfc20ca4eb4f5833f810bc260eb79:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	struct :ref:`grab_interface<doxid-d1/d76/structgrab__interface>` task_switch_grab
+
+params
+

@@ -1,0 +1,26 @@
+.. index:: pair: struct; tw_event_new_cursor
+.. _doxid-d4/dc8/structtw__event__new__cursor:
+
+struct tw_event_new_cursor
+==========================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <seat.h>
+	
+	struct tw_event_new_cursor
+	{
+		// fields
+	
+		struct wl_resource* :target:`surface<doxid-d4/dc8/structtw__event__new__cursor_1ae9619f0ba6fce9446892e3911a589e27>`;
+		struct wl_resource* :target:`pointer<doxid-d4/dc8/structtw__event__new__cursor_1a071c359e0b5ea45c200c47acf02a9400>`;
+		uint32_t :target:`hotspot_x<doxid-d4/dc8/structtw__event__new__cursor_1abee0ae1d20573a2e38bbc8362fe43816>`;
+		uint32_t :target:`hotspot_y<doxid-d4/dc8/structtw__event__new__cursor_1ad17fc62553c8aa9c9a830d63f850030e>`;
+	};

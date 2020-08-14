@@ -1,0 +1,231 @@
+/* overriding bootstrap css */
+
+//
+// Colors
+//
+$royal-purple: #641C64 !default;
+$royal-golden: #D1A250 !default;
+$white:    #fff !default;
+$gray-100: #f8f9fa !default;
+$gray-200: #e9ecef !default;
+$gray-300: #dee2e6 !default;
+$gray-400: #ced4da !default;
+$gray-500: #aea79f !default;
+$gray-600: #868e96 !default;
+$gray-700: #495057 !default;
+$gray-800: #333 !default;
+$gray-900: #212529 !default;
+$yellow:  #efb73e !default;
+$red:     #df382c !default;
+
+$primary:	$royal-purple !default;
+$secondary:	$royal-golden !default;
+$warning:	$yellow !default;
+$text-dark:	$gray-900 !default;
+$text-light:	$gray-100 !default;
+$text-input:	$gray-700 !default;
+
+$round-border: 2em;
+$footer-height: 100px;
+$bottom-space: 50px;
+
+/******************************************************************************
+ * general settings
+ *****************************************************************************/
+
+a, a:hover, a:active {
+    color: lighten( $primary, 10% )
+}
+
+a:visited {
+    color: darken( $primary, 10% )
+}
+
+html,
+body {
+    font-size: 16px;
+    margin: 0;
+    height: 100%;
+}
+
+.page-container {
+    min-height: 100%;
+    margin-bottom: -$footer-height;
+    padding-bottom: $bottom-space;
+}
+
+.push {
+    height: $footer-height;
+}
+
+footer {
+    height: $footer-height;
+    background-color: $gray-100;
+}
+
+.form-control {
+    border-radius: $round-border;
+    color: $text-input;
+}
+.form-control:focus {
+    border-color: $secondary;
+}
+
+/******************************************************************************
+ * sidenav
+ *****************************************************************************/
+
+.bs-sidenav {
+    background-color: transparent;
+}
+
+
+.bs-sidenav > h3,
+.bs-sidenav > h3 > a {
+    padding: 5px 10px;
+    color: $gray-600;
+}
+
+.bs-sidenav .nav > li > a {
+    display: block;
+    color: $gray-600;
+    padding: 5px 20px;
+}
+
+.bs-sidenav .nav > li > a:hover,
+.bs-sidenav .nav > li > a:focus {
+    color: $text-light;
+    text-decoration: none;
+    background-color: $secondary;
+    border-right: 1px solid $gray-100;
+}
+
+
+/******************************************************************************
+ * navigation bars
+ *****************************************************************************/
+
+.navbar-default {
+    background-image: none;
+    background-color: $primary;
+    border-color: #999;
+    -webkit-box-shadow: 0 8px 6px -6px #999;
+    -moz-box-shadow: 0 8px 6px -6px #999;
+    box-shadow: 0 8px 6px -6px #999;
+}
+
+.navbar-default .navbar-brand {
+    color: $text-light;
+}
+
+.navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
+    color: $white;
+}
+
+.navbar-default .navbar-text {
+  color: $text-light;
+}
+
+/*****************************************
+ * navbar items
+ ****************************************/
+
+.navbar-default .navbar-nav > li > a {
+    color: $text-light;
+}
+
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+    background-color: $secondary;
+    color: $text-light;
+}
+
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a:hover,
+.navbar-default .navbar-nav > .open > a:focus {
+    background-color: $secondary;
+    color: $text-light;
+    background-image: none;
+}
+
+/*****************************************
+ * drop-down menu
+ ****************************************/
+
+.navbar-default .navbar-nav > li > .dropdown-menu {
+  background-color: $white;
+}
+
+.navbar-default .navbar-nav > li > .dropdown-menu > li > a {
+  color: $text-dark;
+}
+
+.navbar-default .navbar-nav > li > .dropdown-menu > li > a:hover,
+.navbar-default .navbar-nav > li > .dropdown-menu > li > a:focus,
+.navbar-default .navbar-nav > .open > .dropdown-menu > li > a:hover,
+.navbar-default .navbar-nav > .open > .dropdown-menu > li > a:focus {
+    color: $white;
+    background-color: $secondary ;
+    background-image: none;
+}
+
+.navbar-default .navbar-nav > li > .dropdown-menu > li > .divider {
+  background-color: $primary;
+}
+
+/*****************************************
+ * toggle button
+ ****************************************/
+
+.navbar-default .navbar-toggle {
+    border-color: $secondary;
+}
+
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+    background-color: $secondary;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #D1A250;
+}
+
+.navbar-default .navbar-toggle:hover .icon-bar,
+.navbar-default .navbar-toggle:focus .icon-bar {
+    background-color: $white;
+}
+
+/*****************************************
+ * collapse
+ ****************************************/
+.navbar-default. navbar-collapse,
+.navbar-default .navbar-form {
+    border-color: $text-light;
+}
+
+.navbar-default .navbar-link {
+  color: $text-light;
+}
+
+.navbar-default .navbar-link:hover {
+  color: $text-light;
+}
+
+
+/******************************************************************************
+ * mobile
+ *****************************************************************************/
+
+@media (max-width: 767px) {
+    .navbar-default .navbar-nav > li > a,
+    .navbar-default .navbar-nav > .open > .dropdown-menu > li > a {
+	color: $text-dark;
+    }
+
+     .navbar-default .navbar-collapse {
+	background-color: $white;
+    }
+}

@@ -1,0 +1,29 @@
+.. index:: pair: enum; tw_xdg_layout_command
+.. _doxid-db/d51/layout_8h_1a8208ba3b469dec7b3b42c8ea7a5ac92f:
+
+enum tw_xdg_layout_command
+==========================
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <layout.h>
+
+	enum tw_xdg_layout_command
+	{
+	    :target:`DPSR_focus<doxid-db/d51/layout_8h_1a8208ba3b469dec7b3b42c8ea7a5ac92fa1e604e49a4a92f23f66b2db1d5a26460>`,
+	    :target:`DPSR_add<doxid-db/d51/layout_8h_1a8208ba3b469dec7b3b42c8ea7a5ac92fae91f3908c88d046b5ffe764650447611>`,
+	    :target:`DPSR_del<doxid-db/d51/layout_8h_1a8208ba3b469dec7b3b42c8ea7a5ac92fa231379a7bc321ce7c45b8030afdd5f02>`,
+	    :target:`DPSR_deplace<doxid-db/d51/layout_8h_1a8208ba3b469dec7b3b42c8ea7a5ac92fadf7d7ffafc94669e1327bdc49ba29b9a>`,
+	    :target:`DPSR_toggle<doxid-db/d51/layout_8h_1a8208ba3b469dec7b3b42c8ea7a5ac92fa8ff943709516f0dbd5adb6ae9d076951>`,
+	    :target:`DPSR_resize<doxid-db/d51/layout_8h_1a8208ba3b469dec7b3b42c8ea7a5ac92fa48e6c4ba344b3db44b245106ae99bdf5>`,
+	    :target:`DPSR_vsplit<doxid-db/d51/layout_8h_1a8208ba3b469dec7b3b42c8ea7a5ac92fac8ca8a5c00b669cc24033fd19589667b>`,
+	    :target:`DPSR_hsplit<doxid-db/d51/layout_8h_1a8208ba3b469dec7b3b42c8ea7a5ac92fa8a3cf57439290363071d8b84b307fc6c>`,
+	    :target:`DPSR_merge<doxid-db/d51/layout_8h_1a8208ba3b469dec7b3b42c8ea7a5ac92faf24419a641b5d31034d6e666a8af8f24>`,
+	    :target:`DPSR_output_add<doxid-db/d51/layout_8h_1a8208ba3b469dec7b3b42c8ea7a5ac92fa107d67c553ba34ff8f41284f285a7212>`,
+	    :target:`DPSR_output_rm<doxid-db/d51/layout_8h_1a8208ba3b469dec7b3b42c8ea7a5ac92fa70230fb76c4433d2b2a2b9070440a740>`,
+	    :target:`DPSR_output_resize<doxid-db/d51/layout_8h_1a8208ba3b469dec7b3b42c8ea7a5ac92fafca8e9d126c87a712047e4d50585188e>`,
+	};
+

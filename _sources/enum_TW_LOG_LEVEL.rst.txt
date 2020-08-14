@@ -1,0 +1,21 @@
+.. index:: pair: enum; TW_LOG_LEVEL
+.. _doxid-d1/d8c/logger_8h_1a0cab464d0466d79b0755fd3a7243ecd0:
+
+enum TW_LOG_LEVEL
+=================
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <logger.h>
+
+	enum TW_LOG_LEVEL
+	{
+	    :target:`TW_LOG_INFO<doxid-d1/d8c/logger_8h_1a0cab464d0466d79b0755fd3a7243ecd0ac57db1344e18df7316230d71afb18ec6>` = 0,
+	    :target:`TW_LOG_DBUG<doxid-d1/d8c/logger_8h_1a0cab464d0466d79b0755fd3a7243ecd0a77a9ceb4df3d8203838f49d59287818e>` = 1,
+	    :target:`TW_LOG_WARN<doxid-d1/d8c/logger_8h_1a0cab464d0466d79b0755fd3a7243ecd0aaad30a5fd4688b0419df827ec759835e>` = 2,
+	    :target:`TW_LOG_ERRO<doxid-d1/d8c/logger_8h_1a0cab464d0466d79b0755fd3a7243ecd0a19138a61000d2971767529f6164b1fd3>` = 3,
+	};
+

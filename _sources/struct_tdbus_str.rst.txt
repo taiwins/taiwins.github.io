@@ -1,0 +1,24 @@
+.. index:: pair: struct; tdbus_str
+.. _doxid-d7/d5d/structtdbus__str:
+
+struct tdbus_str
+================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	
+	struct tdbus_str
+	{
+		// fields
+	
+		size_t :target:`wn<doxid-d7/d5d/structtdbus__str_1a672844fc408855f2245fd568c900eca8>`;
+		size_t :target:`wa<doxid-d7/d5d/structtdbus__str_1a5f0f8d16c7c0b6f811f29aeb81c9644b>`;
+		char* :target:`written<doxid-d7/d5d/structtdbus__str_1afe0e43eb57764be1961804068ccda8ad>`;
+	};

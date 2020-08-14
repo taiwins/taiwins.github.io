@@ -1,0 +1,32 @@
+.. index:: pair: struct; shell_output
+.. _doxid-d2/d16/structshell__output:
+
+struct shell_output
+===================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <shell.h>
+	
+	struct shell_output
+	{
+		// fields
+	
+		struct :ref:`desktop_shell<doxid-db/deb/structdesktop__shell>`* :target:`shell<doxid-d2/d16/structshell__output_1aecb594820335ca1bfee3d9d521096f69>`;
+		struct taiwins_output* :target:`output<doxid-d2/d16/structshell__output_1aea2ae4cdef3f11d09f5af4facfd07095>`;
+		struct :ref:`tw_bbox<doxid-d1/d39/structtw__bbox>` :target:`bbox<doxid-d2/d16/structshell__output_1a1c595f216df82f87c087d42edda7e88e>`;
+		int :target:`index<doxid-d2/d16/structshell__output_1a1a7f220b2f3e81e02bacaf30e6245969>`;
+		struct taiwins_ui* :target:`bg_ui<doxid-d2/d16/structshell__output_1a0567563d1827e8b96e7b93d36a0a3dd5>`;
+		struct taiwins_ui* :target:`pn_ui<doxid-d2/d16/structshell__output_1af71d863b1afbb1491494b5420fefeb23>`;
+		struct :ref:`tw_appsurf<doxid-d6/d55/structtw__appsurf>` :target:`background<doxid-d2/d16/structshell__output_1a7280b4891794c9af9aebc8064ca0e3cb>`;
+		struct :ref:`tw_appsurf<doxid-d6/d55/structtw__appsurf>` :target:`panel<doxid-d2/d16/structshell__output_1af4a250985bb1aadfcd9b6dd09fbde230>`;
+		struct :ref:`tw_app_event_filter<doxid-d6/d8a/structtw__app__event__filter>` :target:`background_events<doxid-d2/d16/structshell__output_1aa7602d9b54c9673d1d145cb4fdd0c1c4>`;
+		double :target:`widgets_span<doxid-d2/d16/structshell__output_1ac70f7fe0d332dc6c0e0a3880bd08091b>`;
+	};

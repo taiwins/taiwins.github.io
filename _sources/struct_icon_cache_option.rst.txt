@@ -1,0 +1,27 @@
+.. index:: pair: struct; icon_cache_option
+.. _doxid-d3/d92/structicon__cache__option:
+
+struct icon_cache_option
+========================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	
+	struct icon_cache_option
+	{
+		// fields
+	
+		bool :target:`update_all<doxid-d3/d92/structicon__cache__option_1ae69686b4599439df224d88c9a4f74746>`;
+		bool :target:`force_update<doxid-d3/d92/structicon__cache__option_1a71a2dd6a7976aa7408b371ef051d9e52>`;
+		const char* :target:`update_theme<doxid-d3/d92/structicon__cache__option_1ab51e4cb230760df9b530787535f1f96b>`;
+		int :target:`high_res<doxid-d3/d92/structicon__cache__option_1a881f4fbc28a2ba947f0d09a13ef5ec70>`;
+		int :target:`low_res<doxid-d3/d92/structicon__cache__option_1a857b378339f99305bfcfe8367ea18f4c>`;
+		uint32_t :target:`update_list<doxid-d3/d92/structicon__cache__option_1ad213a2c576d871da27b65a8da99d971e>`;
+	};

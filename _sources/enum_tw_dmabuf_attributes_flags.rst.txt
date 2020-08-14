@@ -1,0 +1,20 @@
+.. index:: pair: enum; tw_dmabuf_attributes_flags
+.. _doxid-df/d29/dmabuf_8h_1ae834c099997864df516272905e8f6e2f:
+
+enum tw_dmabuf_attributes_flags
+===============================
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <dmabuf.h>
+
+	enum tw_dmabuf_attributes_flags
+	{
+	    :target:`TW_DMABUF_ATTRIBUTES_FLAGS_Y_INVERT<doxid-df/d29/dmabuf_8h_1ae834c099997864df516272905e8f6e2fa00a6cbcc2523df4d059a07fa9dbadb57>`     = 1,
+	    :target:`TW_DMABUF_ATTRIBUTES_FLAGS_INTERLACED<doxid-df/d29/dmabuf_8h_1ae834c099997864df516272905e8f6e2fa506f7659981ed971914b5b513bfaa7ff>`   = 2,
+	    :target:`TW_DMABUF_ATTRIBUTES_FLAGS_BOTTOM_FIRST<doxid-df/d29/dmabuf_8h_1ae834c099997864df516272905e8f6e2fac9ee5bf4f3eda2b70a8e219782c14553>` = 4,
+	};
+

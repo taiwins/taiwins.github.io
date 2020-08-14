@@ -1,0 +1,24 @@
+.. index:: pair: struct; icon_cache_config
+.. _doxid-d8/dd0/structicon__cache__config:
+
+struct icon_cache_config
+========================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	
+	struct icon_cache_config
+	{
+		// fields
+	
+		char :target:`path<doxid-d8/dd0/structicon__cache__config_1afd1d585a27f4001dc7ce870e4dcbeed4>`[256];
+		int :target:`high_res<doxid-d8/dd0/structicon__cache__config_1a98c615ba2dbebfe568b1c7048edfeda6>`;
+		int :target:`low_res<doxid-d8/dd0/structicon__cache__config_1a35e83f4f2b13b0c330303540772d4b48>`;
+	};

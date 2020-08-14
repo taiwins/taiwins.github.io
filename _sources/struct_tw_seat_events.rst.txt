@@ -1,0 +1,36 @@
+.. index:: pair: struct; tw_seat_events
+.. _doxid-da/dc8/structtw__seat__events:
+
+struct tw_seat_events
+=====================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <input.h>
+	
+	struct tw_seat_events
+	{
+		// fields
+	
+		struct :ref:`tw_seat<doxid-dc/d28/structtw__seat>`* :target:`seat<doxid-da/dc8/structtw__seat__events_1a55d88d5a549466b7718e7af4fbab22e3>`;
+		struct :ref:`tw_bindings<doxid-d2/dab/structtw__bindings>`* :target:`bindings<doxid-da/dc8/structtw__seat__events_1aadd45114b274b5dacac1626dba313de6>`;
+		struct wlr_keyboard* :target:`keyboard_dev<doxid-da/dc8/structtw__seat__events_1a02c499b653b94cfbd8477f8c86fb825c>`;
+		struct wlr_pointer* :target:`pointer_dev<doxid-da/dc8/structtw__seat__events_1a7d0bcb53813952e14680a66277fbe55b>`;
+		struct wlr_touch* :target:`touch_dev<doxid-da/dc8/structtw__seat__events_1a42710532052d208b713a9fe3506485ad>`;
+		struct wl_listener :target:`seat_change<doxid-da/dc8/structtw__seat__events_1af75c0e0f6063a6ef5af62403f81ce1d9>`;
+		struct wl_listener :target:`key_input<doxid-da/dc8/structtw__seat__events_1a2987ce2f08ba5bc05cb33fa16e796f5e>`;
+		struct wl_listener :target:`mod_input<doxid-da/dc8/structtw__seat__events_1a78cbd5105cd218c6d038edff647a0ddf>`;
+		struct wl_listener :target:`btn_input<doxid-da/dc8/structtw__seat__events_1aa1d04b4d9da8e3045c9da4b523f0b97c>`;
+		struct wl_listener :target:`axis_input<doxid-da/dc8/structtw__seat__events_1a2db7dd74159015889c0f6e3e165debc8>`;
+		struct wl_listener :target:`tch_input<doxid-da/dc8/structtw__seat__events_1abd92c3c0d41b268af168258457102be8>`;
+		struct :ref:`tw_seat_keyboard_grab<doxid-de/dfc/structtw__seat__keyboard__grab>` :target:`binding_key_grab<doxid-da/dc8/structtw__seat__events_1ad056bb858b526b511b52c91df9fde803>`;
+		struct :ref:`tw_seat_pointer_grab<doxid-d9/d46/structtw__seat__pointer__grab>` :target:`binding_pointer_grab<doxid-da/dc8/structtw__seat__events_1a9ea21fde0a4f257d0885df5d8f2f27fc>`;
+		struct :ref:`tw_seat_touch_grab<doxid-da/d71/structtw__seat__touch__grab>` :target:`binding_touch_grab<doxid-da/dc8/structtw__seat__events_1a8bca7773ae2da3734694e0fe56ccee08>`;
+	};

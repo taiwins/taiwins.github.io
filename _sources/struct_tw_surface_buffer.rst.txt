@@ -1,0 +1,45 @@
+.. index:: pair: struct; tw_surface_buffer
+.. _doxid-d5/d87/structtw__surface__buffer:
+
+struct tw_surface_buffer
+========================
+
+.. toctree::
+	:hidden:
+
+Overview
+~~~~~~~~
+
+:ref:`tw_surface_buffer <doxid-d5/d87/structtw__surface__buffer>` represents a buffer texture for the surface. :ref:`More...<details-d5/d87/structtw__surface__buffer>`
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <surface.h>
+	
+	struct tw_surface_buffer
+	{
+		// fields
+	
+		struct wl_resource* :target:`resource<doxid-d5/d87/structtw__surface__buffer_1ae43db6f7d82a74a5fc36c061f1879b65>`;
+		int :target:`width<doxid-d5/d87/structtw__surface__buffer_1a0d115b14e68ee1000bdf5d257227f2f9>`;
+		int :target:`height<doxid-d5/d87/structtw__surface__buffer_1a1be60b8ceb3c7bf42c5a041a8793651c>`;
+		int :target:`stride<doxid-d5/d87/structtw__surface__buffer_1ac3b8c5c6dd13f38fed85c2934b4b6cf2>`;
+		enum wl_shm_format :target:`format<doxid-d5/d87/structtw__surface__buffer_1a44b27d0f7f32f3bd31078d2c34c473ed>`;
+		uint32_t :target:`id<doxid-d5/d87/structtw__surface__buffer_1a42619e75d373e9f063077d9165d2d029>`;
+		void* :target:`ptr<doxid-d5/d87/structtw__surface__buffer_1aeb6e54499c218af6194fb3c6ac10d8a5>`;
+		union tw_surface_buffer::@39 :target:`handle<doxid-d5/d87/structtw__surface__buffer_1ae1fd6b8f3a6b8bd8e7839e0277569957>`;
+		struct wl_listener :target:`surface_destroy_listener<doxid-d5/d87/structtw__surface__buffer_1a91a8da0364d0244a7a79a0f8f85fdab2>`;
+	};
+.. _details-d5/d87/structtw__surface__buffer:
+
+Detailed Documentation
+~~~~~~~~~~~~~~~~~~~~~~
+
+:ref:`tw_surface_buffer <doxid-d5/d87/structtw__surface__buffer>` represents a buffer texture for the surface.
+
+On server side, a surface shall only need one buffer(texture) to present on the output. Buffer uploading happens at commit, server also releases the previous committed buffer if not released.
+
+The texture is staying with the surface until
+

@@ -1,0 +1,60 @@
+.. index:: pair: struct; tw_globals::wl_inputs
+.. _doxid-da/d43/structtw__globals_1_1wl__inputs:
+
+struct tw_globals::wl_inputs
+============================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <client.h>
+	
+	struct wl_inputs
+	{
+		// fields
+	
+		struct wl_seat* :target:`wl_seat<doxid-da/d43/structtw__globals_1_1wl__inputs_1a75b24b5dd9762e25ce484c8eec36bd5e>`;
+		struct wl_keyboard* :target:`wl_keyboard<doxid-da/d43/structtw__globals_1_1wl__inputs_1aad3455f04644e2df297cedd941656a75>`;
+		struct wl_pointer* :target:`wl_pointer<doxid-da/d43/structtw__globals_1_1wl__inputs_1a1f993929e191d4e4db0a94f6a397da07>`;
+		struct wl_touch* :target:`wl_touch<doxid-da/d43/structtw__globals_1_1wl__inputs_1a604646bfe23d7b24a86e806fabdba416>`;
+		struct wl_data_device* :target:`wl_data_device<doxid-da/d43/structtw__globals_1_1wl__inputs_1acd9a4b49048a54846da0bb5f95bd4970>`;
+		struct wl_data_offer* :target:`wl_data_offer<doxid-da/d43/structtw__globals_1_1wl__inputs_1ac617bc23ce52aaf05186af4ea8c4e173>`;
+		struct itimerspec :target:`repeat_info<doxid-da/d43/structtw__globals_1_1wl__inputs_1a73a2ceebd1b775c908a0285426fe190f>`;
+		char :target:`name<doxid-da/d43/structtw__globals_1_1wl__inputs_1ac1b61eba49d09f3044d2e02cfd1b5119>`[64];
+		uint32_t :target:`millisec<doxid-da/d43/structtw__globals_1_1wl__inputs_1ae7cf8df53134125fc428923596250e68>`;
+		uint32_t :target:`serial<doxid-da/d43/structtw__globals_1_1wl__inputs_1ad37914b9e8f3aee3c2933aa74da1a6ff>`;
+		uint32_t :target:`mime_offered<doxid-da/d43/structtw__globals_1_1wl__inputs_1a28f18d988acf9c069ea03fe98510356e>`;
+		struct xkb_context* :target:`kcontext<doxid-da/d43/structtw__globals_1_1wl__inputs_1a8e77b462339f7857f83109730341db81>`;
+		struct xkb_keymap* :target:`keymap<doxid-da/d43/structtw__globals_1_1wl__inputs_1a9d8277376b7140ea44aceeebe88d3435>`;
+		struct xkb_state* :target:`kstate<doxid-da/d43/structtw__globals_1_1wl__inputs_1a42e5934efec0c322fdf7a760be86da55>`;
+		struct wl_surface* :target:`keyboard_focused<doxid-da/d43/structtw__globals_1_1wl__inputs_1ad6e8ee5a318b03d4f43a690bc88c89e5>`;
+		uint32_t :target:`modifiers<doxid-da/d43/structtw__globals_1_1wl__inputs_1ad6814531347f56cd1f81032101f09c3e>`;
+		bool :target:`key_pressed<doxid-da/d43/structtw__globals_1_1wl__inputs_1a9373c0329fabb61d405804536a33ab59>`;
+		xkb_keycode_t :target:`keycode<doxid-da/d43/structtw__globals_1_1wl__inputs_1ab6ab62bf6e501cb40a338a99986f5f13>`;
+		xkb_keysym_t :target:`keysym<doxid-da/d43/structtw__globals_1_1wl__inputs_1a579af98c5883531f32dd9ad590a9db8f>`;
+		size_t :target:`cursor_size<doxid-da/d43/structtw__globals_1_1wl__inputs_1a8715c85a16e0052b91970f52bf5be2cc>`;
+		char :target:`cursor_theme_name<doxid-da/d43/structtw__globals_1_1wl__inputs_1aa6d254924df30ccd51f1eb07fd0de4fa>`[64];
+		struct wl_cursor* :target:`cursor<doxid-da/d43/structtw__globals_1_1wl__inputs_1a1a842826a32281cc2ff62946a99360b9>`;
+		struct wl_cursor_theme* :target:`cursor_theme<doxid-da/d43/structtw__globals_1_1wl__inputs_1a700c1cf6400c6a7b2dc99987513b6d43>`;
+		struct wl_surface* :target:`cursor_surface<doxid-da/d43/structtw__globals_1_1wl__inputs_1adbbc955e5d798512746421eaa2b2a9c1>`;
+		struct wl_buffer* :target:`cursor_buffer<doxid-da/d43/structtw__globals_1_1wl__inputs_1a9afd89a7d105155e537c922d5e8a8f69>`;
+		struct wl_callback_listener :target:`cursor_done_listener<doxid-da/d43/structtw__globals_1_1wl__inputs_1ad3d6f60e5818013024cbd0d5cb6164ae>`;
+		struct wl_surface* :target:`pointer_focused<doxid-da/d43/structtw__globals_1_1wl__inputs_1a2cb4f7f47c48a5efe2912bf4c2564ccc>`;
+		bool :target:`cursor_set<doxid-da/d43/structtw__globals_1_1wl__inputs_1a6c2b68668fe4e20876ee51230f377d30>`;
+		uint32_t :target:`btn<doxid-da/d43/structtw__globals_1_1wl__inputs_1a8927fbff35c0ee69798d6379ca1b74e5>`;
+		bool :target:`btn_pressed<doxid-da/d43/structtw__globals_1_1wl__inputs_1a64e5553050dcc64237b466a9c81eca61>`;
+		uint32_t :target:`enter_serial<doxid-da/d43/structtw__globals_1_1wl__inputs_1ae07e85cbbac1c434389630a10d41460a>`;
+		uint32_t :target:`pointer_events<doxid-da/d43/structtw__globals_1_1wl__inputs_1a252672a510f38b4ee956e10476a90b13>`;
+		int16_t :target:`sx<doxid-da/d43/structtw__globals_1_1wl__inputs_1a94878b2d1b026776c4dbdfa66be3c991>`;
+		int16_t :target:`sy<doxid-da/d43/structtw__globals_1_1wl__inputs_1a99ce2767aef8b7579bbd68b85b0030fb>`;
+		int16_t :target:`dx<doxid-da/d43/structtw__globals_1_1wl__inputs_1aebad5c2d356d2de91c2fde26f28c06bd>`;
+		int16_t :target:`dy<doxid-da/d43/structtw__globals_1_1wl__inputs_1ac7a7242de1ee70ba192874fe8684a8d0>`;
+		uint32_t :target:`dx_axis<doxid-da/d43/structtw__globals_1_1wl__inputs_1a4cfa7f28cb9e7d2d198a5752d96aaf01>`;
+		uint32_t :target:`dy_axis<doxid-da/d43/structtw__globals_1_1wl__inputs_1ac21c35fe121c0db5901f6a671e10246a>`;
+	};

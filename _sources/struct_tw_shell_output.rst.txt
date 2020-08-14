@@ -1,0 +1,54 @@
+.. index:: pair: struct; tw_shell_output
+.. _doxid-da/d68/structtw__shell__output:
+
+struct tw_shell_output
+======================
+
+.. toctree::
+	:hidden:
+
+Overview
+~~~~~~~~
+
+represents :ref:`tw_output <doxid-db/d81/structtw__output>` :ref:`More...<details-da/d68/structtw__shell__output>`
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <shell_internal.h>
+	
+	struct tw_shell_output
+	{
+		// fields
+	
+		struct :ref:`tw_backend_output<doxid-d4/d63/structtw__backend__output>`* :target:`output<doxid-da/d68/structtw__shell__output_1a0d27b5ecff125305ef1dd4d0302a1598>`;
+		struct :ref:`tw_shell<doxid-de/dcd/structtw__shell>`* :target:`shell<doxid-da/d68/structtw__shell__output_1a30d40e1317f00148f55fb206d65f7675>`;
+		struct wl_list :ref:`link<doxid-da/d68/structtw__shell__output_1aad038012c7eeda259b373d93ff22f929>`;
+		uint32_t :target:`id<doxid-da/d68/structtw__shell__output_1a67d5f225752b874093452aac83ffc7e9>`;
+		int32_t :target:`panel_height<doxid-da/d68/structtw__shell__output_1a96e5675f7a28b403383bce6efe9760f1>`;
+		struct :ref:`tw_shell_ui<doxid-d4/dcb/structtw__shell__ui>` :target:`background<doxid-da/d68/structtw__shell__output_1ac82f31515b8be2ec48f463456635872d>`;
+		struct :ref:`tw_shell_ui<doxid-d4/dcb/structtw__shell__ui>` :target:`panel<doxid-da/d68/structtw__shell__output_1a01bdfed9dec7f7da80e648fdf0341aa6>`;
+	};
+.. _details-da/d68/structtw__shell__output:
+
+Detailed Documentation
+~~~~~~~~~~~~~~~~~~~~~~
+
+represents :ref:`tw_output <doxid-db/d81/structtw__output>`
+
+the resource only creates for taiwins_shell object
+
+Fields
+------
+
+.. index:: pair: variable; link
+.. _doxid-da/d68/structtw__shell__output_1aad038012c7eeda259b373d93ff22f929:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	struct wl_list link
+
+:ref:`tw_shell <doxid-de/dcd/structtw__shell>` :heads
+

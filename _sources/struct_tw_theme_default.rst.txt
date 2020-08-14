@@ -1,0 +1,27 @@
+.. index:: pair: struct; tw_theme_default
+.. _doxid-d1/d83/structtw__theme__default:
+
+struct tw_theme_default
+=======================
+
+.. toctree::
+	:hidden:
+
+this is a difficult choice, we would want to apply defaults when missing values in lua script
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	
+	struct tw_theme_default
+	{
+		// fields
+	
+		tw_rgba_t :target:`border_color<doxid-d1/d83/structtw__theme__default_1a666db83df14052de96a98a729cf23eae>`;
+		float :target:`border<doxid-d1/d83/structtw__theme__default_1a2f98e592c7be5c256f246a03593f5543>`;
+		float :target:`rounding<doxid-d1/d83/structtw__theme__default_1a5cfed25ead5f0c619c7bc3d9efbefc9f>`;
+		tw_vec2_t :target:`spacing<doxid-d1/d83/structtw__theme__default_1ad53718c4bd92558523106e54a8638ac1>`;
+		tw_vec2_t :target:`padding<doxid-d1/d83/structtw__theme__default_1a8d44e67ca6efaa9e5cd25a133b28c8ff>`;
+		tw_rgba_t :target:`text_color<doxid-d1/d83/structtw__theme__default_1af0192f05951a1169791b7427264270b7>`;
+	};

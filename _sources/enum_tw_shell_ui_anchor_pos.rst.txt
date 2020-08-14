@@ -1,0 +1,21 @@
+.. index:: pair: enum; tw_shell_ui_anchor_pos
+.. _doxid-d2/dff/shell__internal_8h_1aa291b30e5bd8f9a8b93fa71c87bdf37b:
+
+enum tw_shell_ui_anchor_pos
+===========================
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <shell_internal.h>
+
+	enum tw_shell_ui_anchor_pos
+	{
+	    :target:`TW_SHELL_UI_ANCHOR_TOP<doxid-d2/dff/shell__internal_8h_1aa291b30e5bd8f9a8b93fa71c87bdf37baa8d9e249ac01a58fec507a8e43465ee6>`    = 1,
+	    :target:`TW_SHELL_UI_ANCHOR_BOTTOM<doxid-d2/dff/shell__internal_8h_1aa291b30e5bd8f9a8b93fa71c87bdf37bac6605f8485ad5e19a44597d8cf941974>` = 2,
+	    :target:`TW_SHELL_UI_ANCHOR_LEFT<doxid-d2/dff/shell__internal_8h_1aa291b30e5bd8f9a8b93fa71c87bdf37ba77b482aea3a79650c8bbbe029e25bd9c>`   = 4,
+	    :target:`TW_SHELL_UI_ANCHOR_RIGHT<doxid-d2/dff/shell__internal_8h_1aa291b30e5bd8f9a8b93fa71c87bdf37ba7db644acd323d5da37f737242abf67c9>`  = 8,
+	};
+

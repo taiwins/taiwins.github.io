@@ -1,0 +1,26 @@
+.. index:: pair: struct; tw_egl_env
+.. _doxid-dd/d3f/structtw__egl__env:
+
+struct tw_egl_env
+=================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <egl.h>
+	
+	struct tw_egl_env
+	{
+		// fields
+	
+		EGLDisplay :target:`egl_display<doxid-dd/d3f/structtw__egl__env_1af23f0a5e433351ece55ede697f93e2d0>`;
+		EGLContext :target:`egl_context<doxid-dd/d3f/structtw__egl__env_1a30026b8759aa9687414bdc3dd0cf3ef5>`;
+		struct wl_display* :target:`wl_display<doxid-dd/d3f/structtw__egl__env_1a3552674a1f8566c7b74ac985af7e4a13>`;
+		EGLConfig :target:`config<doxid-dd/d3f/structtw__egl__env_1a7fc4a417f820991c503adb7ab250ab23>`;
+	};

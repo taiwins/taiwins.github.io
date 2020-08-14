@@ -1,0 +1,25 @@
+.. index:: pair: struct; gles_debug_procs
+.. _doxid-da/dc5/structgles__debug__procs:
+
+struct gles_debug_procs
+=======================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	
+	struct gles_debug_procs
+	{
+		// fields
+	
+		PFNGLDEBUGMESSAGECALLBACKKHRPROC :target:`glDebugMessageCallbackKHR<doxid-da/dc5/structgles__debug__procs_1a1e075de27f4876ad1f7a6fe17bad249a>`;
+		PFNGLDEBUGMESSAGECONTROLKHRPROC :target:`glDebugMessageControlKHR<doxid-da/dc5/structgles__debug__procs_1aab4358252eb8e78a7110861977e94bd2>`;
+		PFNGLPOPDEBUGGROUPKHRPROC :target:`glPopDebugGroupKHR<doxid-da/dc5/structgles__debug__procs_1a7b450aa3b135241391d1acbac619d29b>`;
+		PFNGLPUSHDEBUGGROUPKHRPROC :target:`glPushDebugGroupKHR<doxid-da/dc5/structgles__debug__procs_1a277b4f6860b979da60d6d6ba655220c4>`;
+	};

@@ -1,0 +1,40 @@
+.. index:: pair: enum; tw_layer_pos
+.. _doxid-dd/dcd/layers_8h_1a948b594c17cdfff1f882c5dadaaa07fb:
+
+enum tw_layer_pos
+=================
+
+Overview
+~~~~~~~~
+
+taiwins layer is tailered for desktop arrangement. :ref:`More...<details-dd/dcd/layers_8h_1a948b594c17cdfff1f882c5dadaaa07fb>`
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <layers.h>
+
+	enum tw_layer_pos
+	{
+	    :target:`TW_LAYER_POS_HIDDEN<doxid-dd/dcd/layers_8h_1a948b594c17cdfff1f882c5dadaaa07fba209af795f30c403198cd4c581727872f>`           = 0x00000000,
+	    :target:`TW_LAYER_POS_BACKGROUND<doxid-dd/dcd/layers_8h_1a948b594c17cdfff1f882c5dadaaa07fba1ed8def7519b467c43c4e59a2984cb74>`       = 0x00000001,
+	    :target:`TW_LAYER_POS_DESKTOP_BELOW_UI<doxid-dd/dcd/layers_8h_1a948b594c17cdfff1f882c5dadaaa07fba200afaeb03a225db80cd5c8ab209e0aa>` = 0x30000000,
+	    :target:`TW_LAYER_POS_FULLSCREEN_BACK<doxid-dd/dcd/layers_8h_1a948b594c17cdfff1f882c5dadaaa07fbabc9d26f8239e6c5d34e89c7dbd88eab1>`  = 0x4fffffff,
+	    :target:`TW_LAYER_POS_DESKTOP_BACK<doxid-dd/dcd/layers_8h_1a948b594c17cdfff1f882c5dadaaa07fba5398231616ed02fe697ac260dcd3ed8e>`     = 0x50000000,
+	    :target:`TW_LAYER_POS_DESKTOP_MID<doxid-dd/dcd/layers_8h_1a948b594c17cdfff1f882c5dadaaa07fba41aed7224de59c92df6756e2760b0b61>`      = 0x50000001,
+	    :target:`TW_LAYER_POS_DESKTOP_FRONT<doxid-dd/dcd/layers_8h_1a948b594c17cdfff1f882c5dadaaa07fbaa6d5d40fb50392e528709b9dd079130c>`    = 0x50000002,
+	    :target:`TW_LAYER_POS_DESKTOP_UI<doxid-dd/dcd/layers_8h_1a948b594c17cdfff1f882c5dadaaa07fbac7f692ac7c5249d9b1d9a0d2855d6020>`       = 0x80000000,
+	    :target:`TW_LAYER_POS_FULLSCREEN_FRONT<doxid-dd/dcd/layers_8h_1a948b594c17cdfff1f882c5dadaaa07fba9aa221e5bf89320db4d35bf348251444>` = 0x90000000,
+	    :target:`TW_LAYER_POS_LOCKER<doxid-dd/dcd/layers_8h_1a948b594c17cdfff1f882c5dadaaa07fba81e71fd30977ec2e4bbacea25b2efc55>`           = 0xA0000000,
+	    :target:`TW_LAYER_POS_CURSOR<doxid-dd/dcd/layers_8h_1a948b594c17cdfff1f882c5dadaaa07fba0c7a696032d2e2359817250850255d69>`           = 0xffffffff,
+	};
+
+.. _details-dd/dcd/layers_8h_1a948b594c17cdfff1f882c5dadaaa07fb:
+
+Detailed Documentation
+~~~~~~~~~~~~~~~~~~~~~~
+
+taiwins layer is tailered for desktop arrangement.
+
+the layer system is good for organize the the stacking order. Which view goes to where, views have a "recent order" order as well and that is indeed different than stacking order, have another recent_link for views would be a good idea.
+

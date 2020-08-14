@@ -1,0 +1,22 @@
+.. index:: pair: enum; tw_appsurf_type
+.. _doxid-d9/d3b/ui_8h_1a92a7b379b1c174a13c9645bbac4f5dd2:
+
+enum tw_appsurf_type
+====================
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <ui.h>
+
+	enum tw_appsurf_type
+	{
+	    :target:`TW_APPSURF_BACKGROUND<doxid-d9/d3b/ui_8h_1a92a7b379b1c174a13c9645bbac4f5dd2aec845c0451270b016f0cebae6982a18e>`,
+	    :target:`TW_APPSURF_PANEL<doxid-d9/d3b/ui_8h_1a92a7b379b1c174a13c9645bbac4f5dd2a358f9e851b48868843de64900cf8e5f2>`,
+	    :target:`TW_APPSURF_WIDGET<doxid-d9/d3b/ui_8h_1a92a7b379b1c174a13c9645bbac4f5dd2a09b8470a5bfcdd7a9404e504bbf85974>`,
+	    :target:`TW_APPSURF_LOCKER<doxid-d9/d3b/ui_8h_1a92a7b379b1c174a13c9645bbac4f5dd2ab793bdd725833c05471f19103013be1a>`,
+	    :target:`TW_APPSURF_APP<doxid-d9/d3b/ui_8h_1a92a7b379b1c174a13c9645bbac4f5dd2a739f2f8296549922fbe5b46d2be5e477>`,
+	};
+

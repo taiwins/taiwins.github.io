@@ -1,0 +1,26 @@
+.. index:: pair: struct; shell_config
+.. _doxid-d0/d95/structshell__config:
+
+struct shell_config
+===================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <shell.h>
+	
+	struct shell_config
+	{
+		// fields
+	
+		void*(* :target:`run_config<doxid-d0/d95/structshell__config_1a6a8153e61b482ad49d716b55dc3fac55>`)(struct shell_config *, const char *);
+		void(* :target:`fini_config<doxid-d0/d95/structshell__config_1a39f63614e1be3e424ee9a4f521d8b53a>`)(struct shell_config *);
+		char*(* :target:`request_wallpaper<doxid-d0/d95/structshell__config_1a78838f468b9adcc5cef50dd97d34aa1e>`)(struct shell_config *);
+		void* :target:`config_data<doxid-d0/d95/structshell__config_1a7ef7126a9471ecfabe77280f0d06c457>`;
+	};

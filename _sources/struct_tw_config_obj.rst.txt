@@ -1,0 +1,24 @@
+.. index:: pair: struct; tw_config_obj
+.. _doxid-d7/dd9/structtw__config__obj:
+
+struct tw_config_obj
+====================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <config_internal.h>
+	
+	struct tw_config_obj
+	{
+		// fields
+	
+		char :target:`name<doxid-d7/dd9/structtw__config__obj_1a5876ae202d84ab592e9c1447066bfe35>`[32];
+		void* :target:`data<doxid-d7/dd9/structtw__config__obj_1a8b2546ab5bc292ad6b66f0ad7527fc17>`;
+	};

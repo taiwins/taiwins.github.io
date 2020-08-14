@@ -1,0 +1,23 @@
+.. index:: pair: struct; tw_app_event_container
+.. _doxid-d3/ddd/structtw__app__event__container:
+
+struct tw_app_event_container
+=============================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	
+	struct tw_app_event_container
+	{
+		// fields
+	
+		struct :ref:`tw_appsurf<doxid-d6/d55/structtw__appsurf>`* :target:`surf<doxid-d3/ddd/structtw__app__event__container_1aa78dbdc763b036ab185ff163cd532583>`;
+		struct :ref:`tw_app_event<doxid-d9/d92/structtw__app__event>` :target:`event<doxid-d3/ddd/structtw__app__event__container_1ac436f6b296685620025ba70078569879>`;
+	};

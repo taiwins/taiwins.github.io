@@ -1,0 +1,25 @@
+.. index:: pair: struct; tw_bindings
+.. _doxid-d2/dab/structtw__bindings:
+
+struct tw_bindings
+==================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	
+	struct tw_bindings
+	{
+		// fields
+	
+		struct wl_display* :target:`display<doxid-d2/dab/structtw__bindings_1abfdd1379bddd1443cca6aa43f6947c39>`;
+		struct :ref:`tw_binding_node<doxid-d0/d62/structtw__binding__node>` :target:`root_node<doxid-d2/dab/structtw__bindings_1a9fadc6f9ee16644f6e1794f0e4cfda43>`;
+		struct wl_listener :target:`destroy_listener<doxid-d2/dab/structtw__bindings_1a9bc00c6848743fca30c022329ebd033a>`;
+		:ref:`vector_t<doxid-d3/d8b/structvector__t>` :target:`apply_list<doxid-d2/dab/structtw__bindings_1a46c97b8ad4500cfefcfb1bc3a1ce3dd2>`;
+	};

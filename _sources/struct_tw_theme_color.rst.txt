@@ -1,0 +1,39 @@
+.. index:: pair: struct; tw_theme_color
+.. _doxid-db/db2/structtw__theme__color:
+
+struct tw_theme_color
+=====================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	
+	struct tw_theme_color
+	{
+		// fields
+	
+		uint32_t :target:`row_size<doxid-db/db2/structtw__theme__color_1a9b0d1ad82570958afba7e06374c1efb2>`;
+		tw_rgba_t :target:`window_color<doxid-db/db2/structtw__theme__color_1ab865c59443e9a2034054490441511390>`;
+		tw_rgba_t :target:`header_color<doxid-db/db2/structtw__theme__color_1a57816e8f8f7a3859c5d084e0b5a42034>`;
+		tw_rgba_t :target:`border_color<doxid-db/db2/structtw__theme__color_1ad0206b9b16191c72f27910f365cbe787>`;
+		tw_rgba_t :target:`text_color<doxid-db/db2/structtw__theme__color_1af28678bddbfdff5fc02e6f3b7a522f2b>`;
+		tw_rgba_t :target:`edit_color<doxid-db/db2/structtw__theme__color_1ad7fc09c1c1f17b2d5db1e2185e9fecce>`;
+		tw_rgba_t :target:`slider_color<doxid-db/db2/structtw__theme__color_1a5b5598c54b6b1289771bb222de6e0f94>`;
+		tw_rgba_t :target:`combo_color<doxid-db/db2/structtw__theme__color_1aadd5e242fdd5ef0cd62bb6b7a2d69d35>`;
+		tw_rgba_t :target:`scroll_color<doxid-db/db2/structtw__theme__color_1ac22aaa04f40848e027a61b5e9ba2b5e9>`;
+		tw_rgba_t :target:`property_color<doxid-db/db2/structtw__theme__color_1a0773caabd67f5e1ab2d1c8c221788aba>`;
+		struct :ref:`widget_colors<doxid-d5/dfd/structwidget__colors>` :target:`button<doxid-db/db2/structtw__theme__color_1a5c0edad8084c10e7c7bd6e33a7040911>`;
+		struct :ref:`widget_colors<doxid-d5/dfd/structwidget__colors>` :target:`toggle<doxid-db/db2/structtw__theme__color_1ad645eeb961dd41b910cbb694f6575326>`;
+		struct :ref:`widget_colors<doxid-d5/dfd/structwidget__colors>` :target:`select<doxid-db/db2/structtw__theme__color_1a532818bef2127cbe0abacb5d4468625c>`;
+		struct :ref:`widget_colors<doxid-d5/dfd/structwidget__colors>` :target:`chart<doxid-db/db2/structtw__theme__color_1aaf60970a074e30ceca6fad3eb7993e61>`;
+		struct :ref:`widget_colors<doxid-d5/dfd/structwidget__colors>` :target:`slider_cursor<doxid-db/db2/structtw__theme__color_1a02ff1cbddc40ea784d2f76dc77eaaeef>`;
+		struct :ref:`widget_colors<doxid-d5/dfd/structwidget__colors>` :target:`scroll_cursor<doxid-db/db2/structtw__theme__color_1a2871ddeb5ac9b26c17f8a84229b43bd3>`;
+		tw_rgba_t :target:`toggle_cursor<doxid-db/db2/structtw__theme__color_1a5eb2e9cc1166e984910b80d704735fa0>`;
+		char :target:`font<doxid-db/db2/structtw__theme__color_1a6aa72cd0facf97fb84c600f16808a407>`[64];
+	};

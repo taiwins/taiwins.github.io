@@ -1,0 +1,26 @@
+.. index:: pair: struct; tdbus_method_record
+.. _doxid-d2/d17/structtdbus__method__record:
+
+struct tdbus_method_record
+==========================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	
+	struct tdbus_method_record
+	{
+		// fields
+	
+		char :target:`method<doxid-d2/d17/structtdbus__method__record_1a55103fc55bad56e7212f411ef18909de>`[16];
+		char :target:`output_signature<doxid-d2/d17/structtdbus__method__record_1aa617f0ab2e670c96dcdea6d8e6f2d432>`[16];
+		char :target:`interface<doxid-d2/d17/structtdbus__method__record_1adaa7848122fefd97de05e7cc1293c64e>`[32];
+		char :target:`signature<doxid-d2/d17/structtdbus__method__record_1aa6d04902ea6b842984fcb63f39e65e43>`[32];
+		:ref:`tdbus_read_call_f<doxid-d2/d1b/tdbus_8h_1a7eba3becdd813f29c24bd3246db1f688>` :target:`reader<doxid-d2/d17/structtdbus__method__record_1ab7fb7dfcf302fc87acad8f58c990a15b>`;
+	};

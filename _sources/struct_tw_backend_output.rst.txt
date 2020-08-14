@@ -1,0 +1,81 @@
+.. index:: pair: struct; tw_backend_output
+.. _doxid-d4/d63/structtw__backend__output:
+
+struct tw_backend_output
+========================
+
+.. toctree::
+	:hidden:
+
+Overview
+~~~~~~~~
+
+backend output :ref:`More...<details-d4/d63/structtw__backend__output>`
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <backend.h>
+	
+	struct tw_backend_output
+	{
+		// fields
+	
+		struct :ref:`tw_backend<doxid-df/d59/structtw__backend>`* :target:`backend<doxid-d4/d63/structtw__backend__output_1a2eef53da5cd0dd706c57368786f13b1e>`;
+		struct wlr_output* :target:`wlr_output<doxid-d4/d63/structtw__backend__output_1a5d27681c2e8028f846df6f6125883c3d>`;
+		int32_t :target:`id<doxid-d4/d63/structtw__backend__output_1ad7c1b1e921a87d49a0f553c52b91d961>`;
+		int32_t :target:`cloning<doxid-d4/d63/structtw__backend__output_1ab032306f374daa226106b6f1a3e14195>`;
+		struct wl_list :target:`link<doxid-d4/d63/structtw__backend__output_1aeff90247b2ab53f6e21fce57efc4a7b8>`;
+		struct wl_list :target:`views<doxid-d4/d63/structtw__backend__output_1a7376027d42d08511bb5d9a9d4f3a44fe>`;
+		char :ref:`name<doxid-d4/d63/structtw__backend__output_1a28ded283d923da77a541deea2a7a21e2>`[24];
+		bool :target:`dirty<doxid-d4/d63/structtw__backend__output_1a5bd1c06d0df2cbbbddec3a23dd147aea>`;
+		bool :target:`activate<doxid-d4/d63/structtw__backend__output_1a62118e1facf59b93d3ac777142ba6b92>`;
+		bool :target:`preferred_mode<doxid-d4/d63/structtw__backend__output_1a2a6bc9cb914d0ee59ffde0583eacab8b>`;
+		int32_t :target:`x<doxid-d4/d63/structtw__backend__output_1a60b97ad2c71d28d5836f525002569663>`;
+		int32_t :target:`y<doxid-d4/d63/structtw__backend__output_1a5247385160de88d0b84aa57d3e76c397>`;
+		int32_t :target:`w<doxid-d4/d63/structtw__backend__output_1a6469a070bbf1aacd2a6a109347ee8f54>`;
+		int32_t :target:`h<doxid-d4/d63/structtw__backend__output_1a42ae5236e398bcbe2ec7c090eac24c10>`;
+		int32_t :target:`refresh<doxid-d4/d63/structtw__backend__output_1a964977238d9e4861d7a7d03a095f2532>`;
+		float :target:`scale<doxid-d4/d63/structtw__backend__output_1ac866bfa55e1225dcd0cd99a4e487af5c>`;
+		enum wl_output_transform :target:`transform<doxid-d4/d63/structtw__backend__output_1a2632a143a440d971af2d5067db8bd396>`;
+		struct :ref:`tw_cursor_constrain<doxid-d5/d5b/structtw__cursor__constrain>` :target:`constrain<doxid-d4/d63/structtw__backend__output_1ae8492d0399eeff5712265de015d5ef56>`;
+		float :target:`gamma_value<doxid-d4/d63/structtw__backend__output_1a0fe96adbad36c33c50a7bd245d722ece>`;
+		struct :ref:`tw_mat3<doxid-d4/da4/structtw__mat3>` :target:`view_2d<doxid-d4/d63/structtw__backend__output_1a83745dba6276f9d4270cb17b27cf4a4a>`;
+		enum tw_backend_output::@27::@28 :ref:`repaint_state<doxid-d4/d63/structtw__backend__output_1a8f816bb2843f5e7eff1fa0d5b79f88ec>`;
+		struct tw_backend_output::@27 :target:`state<doxid-d4/d63/structtw__backend__output_1acb3b273ae31085b01e2b9ae3f1deb15e>`;
+		struct wl_listener :target:`frame_listener<doxid-d4/d63/structtw__backend__output_1a73d0b60d012517ce9031eb46d290d552>`;
+		struct wl_listener :target:`destroy_listener<doxid-d4/d63/structtw__backend__output_1a3ab6b90f6d15f32c4122c04b81674169>`;
+	};
+.. _details-d4/d63/structtw__backend__output:
+
+Detailed Documentation
+~~~~~~~~~~~~~~~~~~~~~~
+
+backend output
+
+backend has the logic of output, for now, we take advantage of wlr_output, which implements wl_output.
+
+Fields
+------
+
+.. index:: pair: variable; name
+.. _doxid-d4/d63/structtw__backend__output_1a28ded283d923da77a541deea2a7a21e2:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	char name[24]
+
+tw_surface->output_link
+
+.. index:: pair: variable; repaint_state
+.. _doxid-d4/d63/structtw__backend__output_1a8f816bb2843f5e7eff1fa0d5b79f88ec:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	unnamed-enum repaint_state
+
+the repaint status, the output repaint is driven by timer, in the future we may be able to drive it by idle event
+
