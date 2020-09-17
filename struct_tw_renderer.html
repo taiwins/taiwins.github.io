@@ -3,6 +3,7 @@
 <html>
   <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     
     <title>struct tw_renderer &#8212; Taiwins</title>
   
@@ -83,13 +84,14 @@
     <span class="kt">uint32_t</span> <span class="doxyrest-code-target target" id="doxid-d7-db6-structtw-renderer-1a79c059466563558a20cffacc6d151694"><span></span><span class="n">viewport_w</span></span><span></span><span class="p">;</span>
     <span class="kt">uint32_t</span> <span class="doxyrest-code-target target" id="doxid-d7-db6-structtw-renderer-1a13aa9822f7b4c761e72c8be11226ecad"><span></span><span class="n">viewport_h</span></span><span></span><span class="p">;</span>
     <span class="kt">bool</span> <span class="doxyrest-code-target target" id="doxid-d7-db6-structtw-renderer-1a6504286aac6fd31ed4d460ec939da976"><span></span><span class="n">enable_debug</span></span><span></span><span class="p">;</span>
-    <span class="k">struct</span> <span class="n">tw_renderer</span><span class="o">::</span><span class="err">@</span><span class="mi">55</span> <span class="doxyrest-code-target target" id="doxid-d7-db6-structtw-renderer-1afae4d227907403d61070dd1156c80bcf"><span></span><span class="n">options</span></span><span></span><span class="p">;</span>
+    <span class="k">struct</span> <span class="n">tw_renderer</span><span class="o">::</span><span class="err">@</span><span class="mi">0</span> <span class="doxyrest-code-target target" id="doxid-d7-db6-structtw-renderer-1a07ea7d44c662b18e3605d4449cb33e7d"><span></span><span class="n">options</span></span><span></span><span class="p">;</span>
     <span class="k">struct</span> <span class="n">wl_signal</span> <span class="doxyrest-code-target target" id="doxid-d7-db6-structtw-renderer-1aace9f1d539289abb336845f48b849c49"><span></span><span class="n">pre_output_render</span></span><span></span><span class="p">;</span>
     <span class="k">struct</span> <span class="n">wl_signal</span> <span class="doxyrest-code-target target" id="doxid-d7-db6-structtw-renderer-1adb604eec5193d3ef37aec3f823fba573"><span></span><span class="n">post_ouptut_render</span></span><span></span><span class="p">;</span>
     <span class="k">struct</span> <span class="n">wl_signal</span> <span class="doxyrest-code-target target" id="doxid-d7-db6-structtw-renderer-1a415a53d5472280f882fdbe458301ed3d"><span></span><span class="n">pre_view_render</span></span><span></span><span class="p">;</span>
     <span class="k">struct</span> <span class="n">wl_signal</span> <span class="doxyrest-code-target target" id="doxid-d7-db6-structtw-renderer-1a6f4fd1de8e4b632e1e8a9c18d5af111b"><span></span><span class="n">post_view_render</span></span><span></span><span class="p">;</span>
-    <span class="k">struct</span> <span class="n">tw_renderer</span><span class="o">::</span><span class="err">@</span><span class="mi">56</span> <span class="doxyrest-code-target target" id="doxid-d7-db6-structtw-renderer-1a759d3aa37fd4539f79a4a06c1d3969e1"><span></span><span class="n">events</span></span><span></span><span class="p">;</span>
-    <span class="kt">void</span><span class="p">(</span><span class="o">*</span> <span class="doxyrest-code-target target" id="doxid-d7-db6-structtw-renderer-1a05a96256c9669688a8ebb05eb87dadc0"><span></span><span class="n">repaint_output</span></span><span></span><span class="p">)(</span><span class="k">struct</span> <span class="n">tw_renderer</span> <span class="o">*</span><span class="n">renderer</span><span class="p">,</span> <span class="k">struct</span> <span class="n">tw_backend_output</span> <span class="o">*</span><span class="n">output</span><span class="p">);</span>
+    <span class="k">struct</span> <span class="n">tw_renderer</span><span class="o">::</span><span class="err">@</span><span class="mi">1</span> <span class="doxyrest-code-target target" id="doxid-d7-db6-structtw-renderer-1a08bfcd8b499f20ba3154991bdc375097"><span></span><span class="n">events</span></span><span></span><span class="p">;</span>
+    <span class="kt">void</span><span class="p">(</span><span class="o">*</span> <span class="doxyrest-code-target target" id="doxid-d7-db6-structtw-renderer-1a9fb16ae926a8fa4770e90a2a66de0fd7"><span></span><span class="n">repaint_output</span></span><span></span><span class="p">)(</span><span class="k">struct</span> <span class="n">tw_renderer</span> <span class="o">*</span><span class="n">renderer</span><span class="p">,</span> <span class="k">struct</span> <span class="n">tw_backend_output</span> <span class="o">*</span><span class="n">output</span><span class="p">,</span> <span class="kt">int</span> <span class="n">buffer_age</span><span class="p">);</span>
+    <span class="kt">void</span><span class="p">(</span><span class="o">*</span> <span class="doxyrest-code-target target" id="doxid-d7-db6-structtw-renderer-1adac9ed1cbab11297ab70374693038a26"><span></span><span class="n">notify_surface_destroy</span></span><span></span><span class="p">)(</span><span class="k">struct</span> <span class="n">tw_renderer</span> <span class="o">*</span><span class="n">renderer</span><span class="p">,</span> <span class="k">struct</span> <span class="n">tw_surface</span> <span class="o">*</span><span class="n">surface</span><span class="p">);</span>
     <span class="n">PFNGLEGLIMAGETARGETTEXTURE2DOESPROC</span> <a class="reference internal" href="#doxid-d7-db6-structtw-renderer-1ac1824222d2fbf1546b39b48764b46635"><span class="std std-ref">glEGLImageTargetTexture2DOES</span></a><span></span><span class="p">;</span>
 <span class="p">};</span></pre>
 </div>
@@ -123,13 +125,13 @@
 <h3><a data-toggle="collapse" href="#globaltoc">Related Pages</a></h3>
 <div id="globaltoc" class="collapse">
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="page_md__home_developer_Projects_taiwins-web-src_taiwins_docs_api.html">Client data structures</a></li>
-<li class="toctree-l1"><a class="reference internal" href="page_md__home_developer_Projects_taiwins-web-src_taiwins_CONTRIBUTING.html">Contributing to Taiwins</a></li>
-<li class="toctree-l1"><a class="reference internal" href="page_md__home_developer_Projects_taiwins-web-src_taiwins_docs_lua.html">Lua bindings</a></li>
-<li class="toctree-l1"><a class="reference internal" href="page_md__home_developer_Projects_taiwins-web-src_taiwins_docs_window_management.html">Taiwins layout engine.</a></li>
-<li class="toctree-l1"><a class="reference internal" href="page_md__home_developer_Projects_taiwins-web-src_taiwins_README.html">Taiwins, a morden wayland window manager</a></li>
-<li class="toctree-l1"><a class="reference internal" href="page_md__home_developer_Projects_taiwins-web-src_taiwins_subprojects_twclient_README.html">wayland client utility library</a></li>
-<li class="toctree-l1"><a class="reference internal" href="page_md__home_developer_Projects_taiwins-web-src_taiwins_docs_wayland.html">wayland objects</a></li>
+<li class="toctree-l1"><a class="reference internal" href="page_md__home_developer_Projects_web-taiwins_taiwins_CONTRIBUTING.html">Contributing to Taiwins</a></li>
+<li class="toctree-l1"><a class="reference internal" href="page_md__home_developer_Projects_web-taiwins_taiwins_docs_lua.html">Lua bindings</a></li>
+<li class="toctree-l1"><a class="reference internal" href="page_md__home_developer_Projects_web-taiwins_taiwins_docs_window_management.html">Taiwins layout engine.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="page_md__home_developer_Projects_web-taiwins_taiwins_README.html">Taiwins, a morden wayland window manager</a></li>
+<li class="toctree-l1"><a class="reference internal" href="page_md__home_developer_Projects_web-taiwins_taiwins_docs_api.html">Twclient quick reference</a></li>
+<li class="toctree-l1"><a class="reference internal" href="page_md__home_developer_Projects_web-taiwins_taiwins_docs_twobjects.html">Twobjects quick reference</a></li>
+<li class="toctree-l1"><a class="reference internal" href="page_md__home_developer_Projects_web-taiwins_taiwins_docs_wayland.html">wayland</a></li>
 </ul>
 <ul class="current">
 <li class="toctree-l1 current"><a class="reference internal" href="global.html">Global Namespace</a></li>
@@ -160,7 +162,7 @@
     </p>
     <p>
         &copy; Copyright 2020, Xichen Zhou.<br/>
-      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 3.0.3.<br/>
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 3.2.1.<br/>
     </p>
   </div>
 </footer>

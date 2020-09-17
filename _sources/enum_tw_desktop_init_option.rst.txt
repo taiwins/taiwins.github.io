@@ -1,5 +1,5 @@
 .. index:: pair: enum; tw_desktop_init_option
-.. _doxid-d5/da2/include_2taiwins_2objects_2desktop_8h_1a0be488db98414ac838f14a7625d24279:
+.. _doxid-d4/d45/desktop_8h_1a0be488db98414ac838f14a7625d24279:
 
 enum tw_desktop_init_option
 ===========================
@@ -13,7 +13,7 @@ enum tw_desktop_init_option
 
 	enum tw_desktop_init_option
 	{
-	    :target:`TW_DESKTOP_INIT_INCLUDE_WL_SHELL<doxid-d5/da2/include_2taiwins_2objects_2desktop_8h_1a0be488db98414ac838f14a7625d24279acf911378b3f1f932c041099ce96166b9>`         = 1<<0,
-	    :target:`TW_DESKTOP_INIT_INCLUDE_XDG_SHELL_STABEL<doxid-d5/da2/include_2taiwins_2objects_2desktop_8h_1a0be488db98414ac838f14a7625d24279af60e6f54233164787e2b662605352f0d>` = 1<<1,
+	    :target:`TW_DESKTOP_INIT_INCLUDE_WL_SHELL<doxid-d4/d45/desktop_8h_1a0be488db98414ac838f14a7625d24279acf911378b3f1f932c041099ce96166b9>`         = 1<<0,
+	    :target:`TW_DESKTOP_INIT_INCLUDE_XDG_SHELL_STABEL<doxid-d4/d45/desktop_8h_1a0be488db98414ac838f14a7625d24279af60e6f54233164787e2b662605352f0d>` = 1<<1,
 	};
 

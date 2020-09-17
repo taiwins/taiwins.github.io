@@ -3,6 +3,7 @@
 <html>
   <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     
     <title>struct tw_xdg_surface &#8212; Taiwins</title>
   
@@ -74,22 +75,24 @@
 
     <span class="k">struct</span> <a class="reference internal" href="struct_tw_desktop_surface.html#doxid-d4-d0f-structtw-desktop-surface"><span class="std std-ref">tw_desktop_surface</span></a><span></span> <span class="doxyrest-code-target target" id="doxid-d9-db5-structtw-xdg-surface-1ab1787f6926e82fe7ecb2cc0a6777365c"><span></span><span class="n">base</span></span><span></span><span class="p">;</span>
     <span class="k">struct</span> <span class="n">wl_listener</span> <span class="doxyrest-code-target target" id="doxid-d9-db5-structtw-xdg-surface-1a044afacc4c4951e552c28b6f888dad1e"><span></span><span class="n">surface_destroy</span></span><span></span><span class="p">;</span>
+    <span class="k">struct</span> <span class="n">wl_resource</span><span class="o">*</span> <span class="doxyrest-code-target target" id="doxid-d9-db5-structtw-xdg-surface-1a043bb2b8834e1e962671cc5e55ee33d8"><span></span><span class="n">wm_base</span></span><span></span><span class="p">;</span>
     <span class="kt">bool</span> <span class="doxyrest-code-target target" id="doxid-d9-db5-structtw-xdg-surface-1af16acc193efa11bd5483852307d75433"><span></span><span class="n">configured</span></span><span></span><span class="p">;</span>
     <span class="kt">bool</span> <span class="doxyrest-code-target target" id="doxid-d9-db5-structtw-xdg-surface-1adf543cabb1695ee642bc0180a9c27cf2"><span></span><span class="n">has_next_window_geometry</span></span><span></span><span class="p">;</span>
     <span class="n">pixman_box32_t</span> <span class="doxyrest-code-target target" id="doxid-d9-db5-structtw-xdg-surface-1aa3e160397a26a38dc68f918ba2cdb2fe"><span></span><span class="n">next_window_geometry</span></span><span></span><span class="p">;</span>
     <span class="kt">uint32_t</span> <span class="doxyrest-code-target target" id="doxid-d9-db5-structtw-xdg-surface-1a700e5182e8b905197fb2fca9fb200da8"><span></span><span class="n">w</span></span><span></span><span class="p">;</span>
     <span class="kt">uint32_t</span> <span class="doxyrest-code-target target" id="doxid-d9-db5-structtw-xdg-surface-1a06b4900492b4bb4e2688212d1a57a529"><span></span><span class="n">h</span></span><span></span><span class="p">;</span>
-    <span class="k">struct</span> <span class="n">tw_xdg_surface</span><span class="o">::</span><span class="err">@</span><span class="mi">46</span><span class="o">::</span><span class="err">@</span><span class="mi">48</span><span class="o">::</span><span class="err">@</span><span class="mi">50</span><span class="o">::</span><span class="err">@</span><span class="mi">51</span> <span class="doxyrest-code-target target" id="doxid-d9-db5-structtw-xdg-surface-1ad109bbbee48716832d27ff99c2cec149"><span></span><span class="n">min_size</span></span><span></span><span class="p">;</span>
-    <span class="k">struct</span> <span class="n">tw_xdg_surface</span><span class="o">::</span><span class="err">@</span><span class="mi">46</span><span class="o">::</span><span class="err">@</span><span class="mi">48</span><span class="o">::</span><span class="err">@</span><span class="mi">50</span><span class="o">::</span><span class="err">@</span><span class="mi">51</span> <span class="doxyrest-code-target target" id="doxid-d9-db5-structtw-xdg-surface-1a87cea91864202c6151701fdc9c11b74b"><span></span><span class="n">max_size</span></span><span></span><span class="p">;</span>
-    <span class="k">struct</span> <span class="n">tw_xdg_surface</span><span class="o">::</span><span class="err">@</span><span class="mi">46</span><span class="o">::</span><span class="err">@</span><span class="mi">48</span><span class="o">::</span><span class="err">@</span><span class="mi">50</span> <span class="doxyrest-code-target target" id="doxid-d9-db5-structtw-xdg-surface-1aa2858e8cb9ba36e3f381a627f9eaf751"><span></span><span class="n">pending</span></span><span></span><span class="p">;</span>
-    <span class="k">struct</span> <span class="n">tw_xdg_surface</span><span class="o">::</span><span class="err">@</span><span class="mi">46</span><span class="o">::</span><span class="err">@</span><span class="mi">48</span><span class="o">::</span><span class="err">@</span><span class="mi">50</span> <span class="doxyrest-code-target target" id="doxid-d9-db5-structtw-xdg-surface-1a8a4ef7f67f1aa02c625c5b28fe33d125"><span></span><span class="n">current</span></span><span></span><span class="p">;</span>
+    <span class="k">struct</span> <span class="n">tw_xdg_surface</span><span class="o">::</span><span class="err">@</span><span class="mi">0</span><span class="o">::</span><span class="err">@</span><span class="mi">2</span><span class="o">::</span><span class="err">@</span><span class="mi">4</span><span class="o">::</span><span class="err">@</span><span class="mi">5</span> <span class="doxyrest-code-target target" id="doxid-d9-db5-structtw-xdg-surface-1a6107055bbec9d21fe926dff592c37d25"><span></span><span class="n">min_size</span></span><span></span><span class="p">;</span>
+    <span class="k">struct</span> <span class="n">tw_xdg_surface</span><span class="o">::</span><span class="err">@</span><span class="mi">0</span><span class="o">::</span><span class="err">@</span><span class="mi">2</span><span class="o">::</span><span class="err">@</span><span class="mi">4</span><span class="o">::</span><span class="err">@</span><span class="mi">5</span> <span class="doxyrest-code-target target" id="doxid-d9-db5-structtw-xdg-surface-1a8d4578395bb3483276e40f1719b549ff"><span></span><span class="n">max_size</span></span><span></span><span class="p">;</span>
+    <span class="k">struct</span> <span class="n">tw_xdg_surface</span><span class="o">::</span><span class="err">@</span><span class="mi">0</span><span class="o">::</span><span class="err">@</span><span class="mi">2</span><span class="o">::</span><span class="err">@</span><span class="mi">4</span> <span class="doxyrest-code-target target" id="doxid-d9-db5-structtw-xdg-surface-1a516d822c41d5579bfda745c0cd72ba76"><span></span><span class="n">pending</span></span><span></span><span class="p">;</span>
+    <span class="k">struct</span> <span class="n">tw_xdg_surface</span><span class="o">::</span><span class="err">@</span><span class="mi">0</span><span class="o">::</span><span class="err">@</span><span class="mi">2</span><span class="o">::</span><span class="err">@</span><span class="mi">4</span> <span class="doxyrest-code-target target" id="doxid-d9-db5-structtw-xdg-surface-1a81a57dc244766f89f8062297d9e5730c"><span></span><span class="n">current</span></span><span></span><span class="p">;</span>
     <span class="k">struct</span> <span class="n">wl_resource</span><span class="o">*</span> <span class="doxyrest-code-target target" id="doxid-d9-db5-structtw-xdg-surface-1a7ab70db69d85e45c6b7f1b3707cd9aee"><span></span><span class="n">fullscreen_output</span></span><span></span><span class="p">;</span>
     <span class="k">struct</span> <span class="n">wl_resource</span><span class="o">*</span> <span class="doxyrest-code-target target" id="doxid-d9-db5-structtw-xdg-surface-1a7dea2490e9955780a601c9a041d98ab0"><span></span><span class="n">resource</span></span><span></span><span class="p">;</span>
-    <span class="k">struct</span> <span class="n">tw_xdg_surface</span><span class="o">::</span><span class="err">@</span><span class="mi">46</span><span class="o">::</span><span class="err">@</span><span class="mi">48</span> <span class="doxyrest-code-target target" id="doxid-d9-db5-structtw-xdg-surface-1a360b19189e60ee0e6a8413df9fd3560e"><span></span><span class="n">toplevel</span></span><span></span><span class="p">;</span>
+    <span class="k">struct</span> <span class="n">tw_xdg_surface</span><span class="o">::</span><span class="err">@</span><span class="mi">0</span><span class="o">::</span><span class="err">@</span><span class="mi">2</span> <span class="doxyrest-code-target target" id="doxid-d9-db5-structtw-xdg-surface-1a2b7b53d938c7ab881c2374f65b8bf2bc"><span></span><span class="n">toplevel</span></span><span></span><span class="p">;</span>
+    <span class="k">struct</span> <a class="reference internal" href="struct_tw_popup_grab.html#doxid-d2-d5f-structtw-popup-grab"><span class="std std-ref">tw_popup_grab</span></a><span></span> <span class="doxyrest-code-target target" id="doxid-d9-db5-structtw-xdg-surface-1a085b2b5aa3ce080b3daa18573232f888"><span></span><span class="n">grab</span></span><span></span><span class="p">;</span>
     <span class="k">struct</span> <a class="reference internal" href="struct_tw_subsurface.html#doxid-de-d75-structtw-subsurface"><span class="std std-ref">tw_subsurface</span></a><span></span> <span class="doxyrest-code-target target" id="doxid-d9-db5-structtw-xdg-surface-1ab3fb4ecb650a1fa571adfd91c01e219c"><span></span><span class="n">subsurface</span></span><span></span><span class="p">;</span>
     <span class="k">struct</span> <span class="n">tw_xdg_surface</span><span class="o">*</span> <span class="doxyrest-code-target target" id="doxid-d9-db5-structtw-xdg-surface-1ae30aa5cc669f90b03772b95643d1d937"><span></span><span class="n">parent</span></span><span></span><span class="p">;</span>
     <span class="k">struct</span> <span class="n">wl_listener</span> <span class="doxyrest-code-target target" id="doxid-d9-db5-structtw-xdg-surface-1a498e1dc21dc7590765acd7199518db9e"><span></span><span class="n">close_popup_listener</span></span><span></span><span class="p">;</span>
-    <span class="k">struct</span> <span class="n">tw_xdg_surface</span><span class="o">::</span><span class="err">@</span><span class="mi">46</span><span class="o">::</span><span class="err">@</span><span class="mi">49</span> <span class="doxyrest-code-target target" id="doxid-d9-db5-structtw-xdg-surface-1a5f8d68289778e9ebbdfdb247fae03aa2"><span></span><span class="n">popup</span></span><span></span><span class="p">;</span>
+    <span class="k">struct</span> <span class="n">tw_xdg_surface</span><span class="o">::</span><span class="err">@</span><span class="mi">0</span><span class="o">::</span><span class="err">@</span><span class="mi">3</span> <span class="doxyrest-code-target target" id="doxid-d9-db5-structtw-xdg-surface-1a6642b48788f7c2ba4b7ee8f22d9c14f7"><span></span><span class="n">popup</span></span><span></span><span class="p">;</span>
 <span class="p">};</span></pre>
 </div>
 
@@ -100,13 +103,13 @@
   <div id="sidebar" class="bs-sidenav"><h3><a data-toggle="collapse" href="#globaltoc">Related Pages</a></h3>
 <div id="globaltoc" class="collapse">
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="page_md__home_developer_Projects_taiwins-web-src_taiwins_docs_api.html">Client data structures</a></li>
-<li class="toctree-l1"><a class="reference internal" href="page_md__home_developer_Projects_taiwins-web-src_taiwins_CONTRIBUTING.html">Contributing to Taiwins</a></li>
-<li class="toctree-l1"><a class="reference internal" href="page_md__home_developer_Projects_taiwins-web-src_taiwins_docs_lua.html">Lua bindings</a></li>
-<li class="toctree-l1"><a class="reference internal" href="page_md__home_developer_Projects_taiwins-web-src_taiwins_docs_window_management.html">Taiwins layout engine.</a></li>
-<li class="toctree-l1"><a class="reference internal" href="page_md__home_developer_Projects_taiwins-web-src_taiwins_README.html">Taiwins, a morden wayland window manager</a></li>
-<li class="toctree-l1"><a class="reference internal" href="page_md__home_developer_Projects_taiwins-web-src_taiwins_subprojects_twclient_README.html">wayland client utility library</a></li>
-<li class="toctree-l1"><a class="reference internal" href="page_md__home_developer_Projects_taiwins-web-src_taiwins_docs_wayland.html">wayland objects</a></li>
+<li class="toctree-l1"><a class="reference internal" href="page_md__home_developer_Projects_web-taiwins_taiwins_CONTRIBUTING.html">Contributing to Taiwins</a></li>
+<li class="toctree-l1"><a class="reference internal" href="page_md__home_developer_Projects_web-taiwins_taiwins_docs_lua.html">Lua bindings</a></li>
+<li class="toctree-l1"><a class="reference internal" href="page_md__home_developer_Projects_web-taiwins_taiwins_docs_window_management.html">Taiwins layout engine.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="page_md__home_developer_Projects_web-taiwins_taiwins_README.html">Taiwins, a morden wayland window manager</a></li>
+<li class="toctree-l1"><a class="reference internal" href="page_md__home_developer_Projects_web-taiwins_taiwins_docs_api.html">Twclient quick reference</a></li>
+<li class="toctree-l1"><a class="reference internal" href="page_md__home_developer_Projects_web-taiwins_taiwins_docs_twobjects.html">Twobjects quick reference</a></li>
+<li class="toctree-l1"><a class="reference internal" href="page_md__home_developer_Projects_web-taiwins_taiwins_docs_wayland.html">wayland</a></li>
 </ul>
 <ul class="current">
 <li class="toctree-l1 current"><a class="reference internal" href="global.html">Global Namespace</a></li>
@@ -137,7 +140,7 @@
     </p>
     <p>
         &copy; Copyright 2020, Xichen Zhou.<br/>
-      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 3.0.3.<br/>
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 3.2.1.<br/>
     </p>
   </div>
 </footer>

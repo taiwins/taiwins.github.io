@@ -14,6 +14,7 @@ enum tw_builtin_binding_t
 	enum tw_builtin_binding_t
 	{
 	    :target:`TW_QUIT_BINDING<doxid-df/db2/config__internal_8h_1a9654bd11882d76df7e7c111fe5506388abdb95fa82bcda023778d69c1db743def>`             = 0,
+	    :target:`TW_CLOSE_APP_BINDING<doxid-df/db2/config__internal_8h_1a9654bd11882d76df7e7c111fe5506388a02cd8cff6397cf5a0820675c665b4261>`,
 	    :target:`TW_RELOAD_CONFIG_BINDING<doxid-df/db2/config__internal_8h_1a9654bd11882d76df7e7c111fe5506388a1811fe456b46bbaf23f6b0b663ec6bdc>`,
 	    :target:`TW_OPEN_CONSOLE_BINDING<doxid-df/db2/config__internal_8h_1a9654bd11882d76df7e7c111fe5506388a0507ef4984450a1bdcb1d41a03d735bd>`,
 	    :target:`TW_ZOOM_AXIS_BINDING<doxid-df/db2/config__internal_8h_1a9654bd11882d76df7e7c111fe5506388add5a04c92d6bad13182908d529800f0b>`,

@@ -20,7 +20,6 @@ struct tw_data_device_manager
 		// fields
 	
 		struct wl_global* :target:`global<doxid-d4/d0f/structtw__data__device__manager_1a425ec48917554eb42374784caf7805c4>`;
-		struct wl_list :target:`clients<doxid-d4/d0f/structtw__data__device__manager_1a175d011b6f9115d8e8da7e58d82a77d3>`;
 		struct wl_list :target:`devices<doxid-d4/d0f/structtw__data__device__manager_1af585334c6a27d45a5d2721eaeffc8e9a>`;
 		struct wl_listener :target:`display_destroy_listener<doxid-d4/d0f/structtw__data__device__manager_1a2ecc5d44b8c2ac9e180ea60965e2070a>`;
 	};

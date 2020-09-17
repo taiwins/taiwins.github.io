@@ -28,15 +28,17 @@ xdg_view, represents a mapped desktop surface :ref:`More...<details-da/d91/struc
 		int32_t :ref:`y<doxid-da/d91/structtw__xdg__view_1a3058a35939a34462eacf39242fcfecf9>`;
 		uint32_t :target:`planed_w<doxid-da/d91/structtw__xdg__view_1a3e836b398f61e55d8dc3ad4badd59e39>`;
 		uint32_t :target:`planed_h<doxid-da/d91/structtw__xdg__view_1a9695eac4f0de2862a8d329b2884e4869>`;
+		uint32_t :target:`state<doxid-da/d91/structtw__xdg__view_1a32b9b244a6d0751e1ab2d1fe29f43836>`;
 		pixman_rectangle32_t :target:`old_geometry<doxid-da/d91/structtw__xdg__view_1a0e63d15f5f15e7d02442d57164b7c5a9>`;
-		bool :target:`mapped<doxid-da/d91/structtw__xdg__view_1a8bb0c76e1d83cfd42d1c06a357b59e6e>`;
+		bool :ref:`mapped<doxid-da/d91/structtw__xdg__view_1a8bb0c76e1d83cfd42d1c06a357b59e6e>`;
+		bool :target:`added<doxid-da/d91/structtw__xdg__view_1a70e186cd7e9516a6bcabfc15023718f3>`;
 		struct wl_list :target:`link<doxid-da/d91/structtw__xdg__view_1a13aefbc2d87f2c60f6454fb27de40af7>`;
-		enum :ref:`tw_layout_type<doxid-df/d2b/xdg_8h_1a508c2aaa086bf5bfa0483bc01f47cdc0>` type :target:`prev_type<doxid-da/d91/structtw__xdg__view_1afc916842e758bce79130bf7672fb7f93>`;
+		enum :ref:`tw_layout_type<doxid-df/d2b/xdg_8h_1a508c2aaa086bf5bfa0483bc01f47cdc0>` :ref:`type<doxid-d3/d61/meson__options_8txt_1a4829b49f8190081b3d6ed3f188a15a07>` :target:`prev_type<doxid-da/d91/structtw__xdg__view_1afc916842e758bce79130bf7672fb7f93>`;
 		struct :ref:`tw_xdg_layout<doxid-d0/d65/structtw__xdg__layout>`* :target:`layout<doxid-da/d91/structtw__xdg__view_1a0eafdc711d499176370b48b450a12353>`;
 		struct :ref:`tw_layer<doxid-d7/d6a/structtw__layer>`* :target:`layer<doxid-da/d91/structtw__xdg__view_1a8d2970da1fa9e39a5694a81a19a18c29>`;
 		struct :ref:`tw_xdg_output<doxid-dd/d10/structtw__xdg__output>`* :target:`output<doxid-da/d91/structtw__xdg__view_1a0d41a882a493d5e734ea9cc0517629d5>`;
 		bool :target:`is_xwayland<doxid-da/d91/structtw__xdg__view_1a3f9a3fbea810dcb830cd2cac88d32556>`;
-		struct tw_xdg_view::@24 :target:`xwayland<doxid-da/d91/structtw__xdg__view_1ab296c0f6797780afc624d304e9de74bd>`;
+		struct tw_xdg_view::@0 :target:`xwayland<doxid-da/d91/structtw__xdg__view_1a5f8b82a783817fbbdd8316180867b5a4>`;
 	};
 .. _details-da/d91/structtw__xdg__view:
 
@@ -57,4 +59,14 @@ Fields
 	int32_t y
 
 "Planed size" are set by us, where clients need to resize to, but may not yet
+
+.. index:: pair: variable; mapped
+.. _doxid-da/d91/structtw__xdg__view_1a8bb0c76e1d83cfd42d1c06a357b59e6e:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	bool mapped
+
+added is set on view added to workspace, mapped is set on the first commit
 

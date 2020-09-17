@@ -33,6 +33,6 @@ union tdbus_arg_value
 		enum :ref:`tdbus_arg_type<doxid-d7/dd4/tdbus__message__iter_8h_1a42cd0f90ef480758989c4c0c4bf9ed23>` :target:`type<doxid-d7/d1f/uniontdbus__arg__value_1a3fdc364827c202087f9624fdcf1c8029>`;
 		unsigned :target:`n<doxid-d7/d1f/uniontdbus__arg__value_1af6379a2426874bef005c6396e995a78d>`;
 		void* :target:`a<doxid-d7/d1f/uniontdbus__arg__value_1a9e40475e7e1aad6f43615565238f6942>`;
-		struct tdbus_arg_value::@60 :target:`arr<doxid-d7/d1f/uniontdbus__arg__value_1aed8a13b9d876e7a7f372014e9688b9a8>`;
+		struct tdbus_arg_value::@0 :target:`arr<doxid-d7/d1f/uniontdbus__arg__value_1af952954d32c687f1f93bd76cd72db5dd>`;
 		struct :ref:`tdbus_message_itr<doxid-d9/d48/structtdbus__message__itr>`* :target:`st<doxid-d7/d1f/uniontdbus__arg__value_1abb93da2411ae50c53fb993879cbed7d6>`;
 	};

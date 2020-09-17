@@ -28,5 +28,5 @@ centralized surface hub, taking care of common signals.
 		struct wl_signal :target:`surface_dirty_signal<doxid-d1/d12/structtw__surface__manager_1a6724e49016a512ab36444261b8557f6c>`;
 		bool(* :target:`buffer_import<doxid-d1/d12/structtw__surface__manager_1adc7cd4bb71f4afa339ed526c3a1ca97a>`)(struct tw_event_buffer_uploading *event, void *);
 		void* :target:`callback<doxid-d1/d12/structtw__surface__manager_1a125bdbbae1a3758a7b2632b669ba93a8>`;
-		struct tw_surface_manager::@45 :target:`buffer_import<doxid-d1/d12/structtw__surface__manager_1aad8974a1a677ba368c5d9f57fa1da8a1>`;
+		struct tw_surface_manager::@6 :target:`buffer_import<doxid-d1/d12/structtw__surface__manager_1a70d54296158e969c6ce6d02a47f93a4c>`;
 	};

@@ -21,12 +21,12 @@ struct tw_xdg_positioner
 		struct wl_resource* :target:`resource<doxid-d6/d56/structtw__xdg__positioner_1a55b24364c1e59472f073f95901e04a9e>`;
 		int :target:`width<doxid-d6/d56/structtw__xdg__positioner_1a541bbb076ce368baae928a793477f508>`;
 		int :target:`height<doxid-d6/d56/structtw__xdg__positioner_1a878ec0496b9d94d4de15ac2c476e5bc2>`;
-		struct tw_xdg_positioner::@52 :target:`size<doxid-d6/d56/structtw__xdg__positioner_1a70bdaa80bd6bf2b67b3ccd104ccb97b5>`;
+		struct tw_xdg_positioner::@6 :target:`size<doxid-d6/d56/structtw__xdg__positioner_1a21b975d4253704132fb585df2ae93103>`;
 		int :target:`x<doxid-d6/d56/structtw__xdg__positioner_1a06f54efb4b642daadc1d5ef9b7616538>`;
 		int :target:`y<doxid-d6/d56/structtw__xdg__positioner_1aaba1c648e8c8325af94a6a13a685ba31>`;
-		struct tw_xdg_positioner::@53 :target:`offset<doxid-d6/d56/structtw__xdg__positioner_1a7761a85064afff85632180efae4ad160>`;
+		struct tw_xdg_positioner::@7 :target:`offset<doxid-d6/d56/structtw__xdg__positioner_1a0881336d13577aad254d7e086447e2b7>`;
 		enum xdg_positioner_anchor :target:`anchor<doxid-d6/d56/structtw__xdg__positioner_1a65f83efa97d900da82ce8ebbff80e248>`;
-		struct tw_xdg_positioner::@54 :target:`anchor<doxid-d6/d56/structtw__xdg__positioner_1ac2a42b12c6a3d92f49738b35ed585f01>`;
+		struct tw_xdg_positioner::@8 :target:`anchor<doxid-d6/d56/structtw__xdg__positioner_1a96629f9ab13f63c166bf329bb71227a2>`;
 		enum xdg_positioner_gravity :target:`gravity<doxid-d6/d56/structtw__xdg__positioner_1af24b57d6e88066662e3281e3d830cd59>`;
 		uint32_t :target:`contraint<doxid-d6/d56/structtw__xdg__positioner_1ab00afb379163ea714210a6b326f09381>`;
 	};

@@ -19,5 +19,8 @@ struct tw_options
 		// fields
 	
 		const char* :target:`test_case<doxid-d2/d18/structtw__options_1ab283c08d9dc1865f6c67bf03c1d50318>`;
-		struct :ref:`tw_subprocess<doxid-d0/d68/structtw__subprocess>` :target:`test_client<doxid-d2/d18/structtw__options_1a2acf7d2c54254ea2fad5ebfcb63793ed>`;
+		const char* :target:`shell_path<doxid-d2/d18/structtw__options_1ae2936819c477753c9ff97b2d638120db>`;
+		const char* :target:`console_path<doxid-d2/d18/structtw__options_1ac4ebdcd9ea783448cfc58103921cc955>`;
+		const char* :target:`log_path<doxid-d2/d18/structtw__options_1a3d3bf4c293b7ab8aca76ac1db644145b>`;
+		const char* :target:`profiling_path<doxid-d2/d18/structtw__options_1a4d8edd6c084bf0586cdc571037961a14>`;
 	};

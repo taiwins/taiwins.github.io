@@ -1,0 +1,31 @@
+.. index:: pair: struct; tw_presentation_feedback
+.. _doxid-dc/d98/structtw__presentation__feedback:
+
+struct tw_presentation_feedback
+===============================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <presentation_feedback.h>
+	
+	struct tw_presentation_feedback
+	{
+		// fields
+	
+		struct :ref:`tw_presentation<doxid-d0/d4c/structtw__presentation>`* :target:`presentation<doxid-dc/d98/structtw__presentation__feedback_1a089b8cf9045e1b1da3114a8f314f11fe>`;
+		struct :ref:`tw_surface<doxid-dd/dda/structtw__surface>`* :target:`surface<doxid-dc/d98/structtw__presentation__feedback_1a870361e9a4c4dcdb9f75efe8973c8c95>`;
+		bool :target:`committed<doxid-dc/d98/structtw__presentation__feedback_1adc7a8623e09384d0838554ea8fef0149>`;
+		bool :target:`presented<doxid-dc/d98/structtw__presentation__feedback_1a4282266034cd55b1c710eac6efcf2fb8>`;
+		struct wl_list :target:`link<doxid-dc/d98/structtw__presentation__feedback_1a2755e181e2b6abfc0aa62df4749cfdd6>`;
+		struct wl_list :target:`resources<doxid-dc/d98/structtw__presentation__feedback_1a373cb283d4412d7c04414deaeeeff7dc>`;
+		struct wl_listener :target:`surface_destroy<doxid-dc/d98/structtw__presentation__feedback_1aa108b80aba13cbbf5a61d293318e2199>`;
+		struct wl_listener :target:`surface_commit<doxid-dc/d98/structtw__presentation__feedback_1a4de08832f4fb0961920fee371c31332f>`;
+		struct wl_listener :target:`present_sync<doxid-dc/d98/structtw__presentation__feedback_1aa5f27021092b25a5e8f47123a36f6b58>`;
+	};

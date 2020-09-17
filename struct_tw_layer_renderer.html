@@ -3,6 +3,7 @@
 <html>
   <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     
     <title>struct tw_layer_renderer &#8212; Taiwins</title>
   
@@ -73,7 +74,9 @@
     <span class="c1">// fields</span>
 
     <span class="k">struct</span> <a class="reference internal" href="struct_tw_renderer.html#doxid-d7-db6-structtw-renderer"><span class="std std-ref">tw_renderer</span></a><span></span> <span class="doxyrest-code-target target" id="doxid-d7-dc6-structtw-layer-renderer-1a14185575a54ccab362f7f9942519d0c7"><span></span><span class="n">base</span></span><span></span><span class="p">;</span>
+    <span class="k">struct</span> <a class="reference internal" href="struct_tw_plane.html#doxid-d8-d69-structtw-plane"><span class="std std-ref">tw_plane</span></a><span></span> <span class="doxyrest-code-target target" id="doxid-d7-dc6-structtw-layer-renderer-1af873daa9d63e8b7a8691f2c5d5a78567"><span></span><span class="n">main_plane</span></span><span></span><span class="p">;</span>
     <span class="k">struct</span> <a class="reference internal" href="struct_tw_quad_tex_shader.html#doxid-d2-dac-structtw-quad-tex-shader"><span class="std std-ref">tw_quad_tex_shader</span></a><span></span> <span class="doxyrest-code-target target" id="doxid-d7-dc6-structtw-layer-renderer-1a0bcecd360d6f0c6614dc4eb6cb1fd12a"><span></span><span class="n">quad_shader</span></span><span></span><span class="p">;</span>
+    <span class="k">struct</span> <a class="reference internal" href="struct_tw_quad_color_shader.html#doxid-d1-d63-structtw-quad-color-shader"><span class="std std-ref">tw_quad_color_shader</span></a><span></span> <span class="doxyrest-code-target target" id="doxid-d7-dc6-structtw-layer-renderer-1a974782d456e72c853c8e2d258763cadf"><span></span><span class="n">color_quad_shader</span></span><span></span><span class="p">;</span>
     <span class="k">struct</span> <a class="reference internal" href="struct_tw_quad_tex_shader.html#doxid-d2-dac-structtw-quad-tex-shader"><span class="std std-ref">tw_quad_tex_shader</span></a><span></span> <span class="doxyrest-code-target target" id="doxid-d7-dc6-structtw-layer-renderer-1a6a759d2606f17f0a886e450960b1a7b7"><span></span><span class="n">ext_quad_shader</span></span><span></span><span class="p">;</span>
     <span class="k">struct</span> <span class="n">wl_listener</span> <span class="doxyrest-code-target target" id="doxid-d7-dc6-structtw-layer-renderer-1aef9e82262eb92c92f083dabe7490354e"><span></span><span class="n">destroy_listener</span></span><span></span><span class="p">;</span>
 <span class="p">};</span></pre>
@@ -86,13 +89,13 @@
   <div id="sidebar" class="bs-sidenav"><h3><a data-toggle="collapse" href="#globaltoc">Related Pages</a></h3>
 <div id="globaltoc" class="collapse">
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="page_md__home_developer_Projects_taiwins-web-src_taiwins_docs_api.html">Client data structures</a></li>
-<li class="toctree-l1"><a class="reference internal" href="page_md__home_developer_Projects_taiwins-web-src_taiwins_CONTRIBUTING.html">Contributing to Taiwins</a></li>
-<li class="toctree-l1"><a class="reference internal" href="page_md__home_developer_Projects_taiwins-web-src_taiwins_docs_lua.html">Lua bindings</a></li>
-<li class="toctree-l1"><a class="reference internal" href="page_md__home_developer_Projects_taiwins-web-src_taiwins_docs_window_management.html">Taiwins layout engine.</a></li>
-<li class="toctree-l1"><a class="reference internal" href="page_md__home_developer_Projects_taiwins-web-src_taiwins_README.html">Taiwins, a morden wayland window manager</a></li>
-<li class="toctree-l1"><a class="reference internal" href="page_md__home_developer_Projects_taiwins-web-src_taiwins_subprojects_twclient_README.html">wayland client utility library</a></li>
-<li class="toctree-l1"><a class="reference internal" href="page_md__home_developer_Projects_taiwins-web-src_taiwins_docs_wayland.html">wayland objects</a></li>
+<li class="toctree-l1"><a class="reference internal" href="page_md__home_developer_Projects_web-taiwins_taiwins_CONTRIBUTING.html">Contributing to Taiwins</a></li>
+<li class="toctree-l1"><a class="reference internal" href="page_md__home_developer_Projects_web-taiwins_taiwins_docs_lua.html">Lua bindings</a></li>
+<li class="toctree-l1"><a class="reference internal" href="page_md__home_developer_Projects_web-taiwins_taiwins_docs_window_management.html">Taiwins layout engine.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="page_md__home_developer_Projects_web-taiwins_taiwins_README.html">Taiwins, a morden wayland window manager</a></li>
+<li class="toctree-l1"><a class="reference internal" href="page_md__home_developer_Projects_web-taiwins_taiwins_docs_api.html">Twclient quick reference</a></li>
+<li class="toctree-l1"><a class="reference internal" href="page_md__home_developer_Projects_web-taiwins_taiwins_docs_twobjects.html">Twobjects quick reference</a></li>
+<li class="toctree-l1"><a class="reference internal" href="page_md__home_developer_Projects_web-taiwins_taiwins_docs_wayland.html">wayland</a></li>
 </ul>
 <ul class="current">
 <li class="toctree-l1 current"><a class="reference internal" href="global.html">Global Namespace</a></li>
@@ -123,7 +126,7 @@
     </p>
     <p>
         &copy; Copyright 2020, Xichen Zhou.<br/>
-      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 3.0.3.<br/>
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 3.2.1.<br/>
     </p>
   </div>
 </footer>

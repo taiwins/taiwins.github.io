@@ -10,27 +10,26 @@ struct tw_data_source
 Overview
 ~~~~~~~~
 
-
+:ref:`tw_data_source <doxid-dc/d55/structtw__data__source>` represents a wl_data_source for the client :ref:`More...<details-dc/d55/structtw__data__source>`
 
 
 .. ref-code-block:: cpp
 	:class: doxyrest-overview-code-block
 
-	#include <data_device.h>
+	#include <data_internal.h>
 	
 	struct tw_data_source
 	{
 		// fields
 	
 		struct wl_resource* :target:`resource<doxid-dc/d55/structtw__data__source_1a286fd3e5d1f73c1fc5010c06d51cb95d>`;
-		struct wl_resource* :target:`drag_origin_surface<doxid-dc/d55/structtw__data__source_1a5b0e7e3be6628a5e34b4303273f4bf88>`;
-		struct :ref:`tw_data_offer<doxid-dd/dd4/structtw__data__offer>`* :target:`current_offer<doxid-dc/d55/structtw__data__source_1ac91677b74ca433b5cb98be0c0a22adba>`;
-		struct :ref:`tw_data_device<doxid-de/dbd/structtw__data__device>`* :ref:`device<doxid-dc/d55/structtw__data__source_1ac63f7bb3edfcb91f3e9dc5314735787f>`;
-		struct wl_array :target:`mimes<doxid-dc/d55/structtw__data__source_1a43c294f263f79d6890bf050bfe345fbc>`;
+		struct wl_array :ref:`mimes<doxid-dc/d55/structtw__data__source_1a43c294f263f79d6890bf050bfe345fbc>`;
 		uint32_t :target:`actions<doxid-dc/d55/structtw__data__source_1a089273f30d77b9a267380aa92d966ca1>`;
 		uint32_t :target:`selected_dnd_action<doxid-dc/d55/structtw__data__source_1a3dbb17e6c216bc4c3ebcf518f4287302>`;
 		bool :target:`selection_source<doxid-dc/d55/structtw__data__source_1ad369622a55c1d64e0e01fd87ff96abee>`;
-		bool :target:`accepted<doxid-dc/d55/structtw__data__source_1aaf0867764fb5065810e4fc423165da65>`;
+		bool :ref:`accepted<doxid-dc/d55/structtw__data__source_1aaf0867764fb5065810e4fc423165da65>`;
+		struct :ref:`tw_data_offer<doxid-dd/dd4/structtw__data__offer>` :target:`offer<doxid-dc/d55/structtw__data__source_1a225c4a3097c572005ee69090e932a6c7>`;
+		struct wl_listener :target:`device_destroy_listener<doxid-dc/d55/structtw__data__source_1af4f5380f2d9b59b5e6ac8ea36d654234>`;
 		struct wl_signal :target:`destroy_signal<doxid-dc/d55/structtw__data__source_1a357065d6b21496ab27da3368207b585f>`;
 	};
 .. _details-dc/d55/structtw__data__source:
@@ -38,18 +37,30 @@ Overview
 Detailed Documentation
 ~~~~~~~~~~~~~~~~~~~~~~
 
+:ref:`tw_data_source <doxid-dc/d55/structtw__data__source>` represents a wl_data_source for the client
 
+the source tracks current offer
 
 Fields
 ------
 
-.. index:: pair: variable; device
-.. _doxid-dc/d55/structtw__data__source_1ac63f7bb3edfcb91f3e9dc5314735787f:
+.. index:: pair: variable; mimes
+.. _doxid-dc/d55/structtw__data__source_1a43c294f263f79d6890bf050bfe345fbc:
 
 .. ref-code-block:: cpp
 	:class: doxyrest-title-code-block
 
-	struct :ref:`tw_data_device<doxid-de/dbd/structtw__data__device>`* device
+	struct wl_array mimes
 
 set at set_selection or start_drag
+
+.. index:: pair: variable; accepted
+.. _doxid-dc/d55/structtw__data__source_1aaf0867764fb5065810e4fc423165da65:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	bool accepted
+
+data offer is embedded in the source available at source creation
 

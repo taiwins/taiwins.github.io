@@ -3,6 +3,7 @@
 <html>
   <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     
     <title>struct tw_backend_output &#8212; Taiwins</title>
   
@@ -94,11 +95,15 @@
     <span class="kt">int32_t</span> <span class="doxyrest-code-target target" id="doxid-d4-d63-structtw-backend-output-1a964977238d9e4861d7a7d03a095f2532"><span></span><span class="n">refresh</span></span><span></span><span class="p">;</span>
     <span class="kt">float</span> <span class="doxyrest-code-target target" id="doxid-d4-d63-structtw-backend-output-1ac866bfa55e1225dcd0cd99a4e487af5c"><span></span><span class="n">scale</span></span><span></span><span class="p">;</span>
     <span class="k">enum</span> <span class="n">wl_output_transform</span> <span class="doxyrest-code-target target" id="doxid-d4-d63-structtw-backend-output-1a2632a143a440d971af2d5067db8bd396"><span></span><span class="n">transform</span></span><span></span><span class="p">;</span>
-    <span class="k">struct</span> <a class="reference internal" href="struct_tw_cursor_constrain.html#doxid-d5-d5b-structtw-cursor-constrain"><span class="std std-ref">tw_cursor_constrain</span></a><span></span> <span class="doxyrest-code-target target" id="doxid-d4-d63-structtw-backend-output-1ae8492d0399eeff5712265de015d5ef56"><span></span><span class="n">constrain</span></span><span></span><span class="p">;</span>
+    <span class="k">struct</span> <a class="reference internal" href="struct_tw_cursor_constrain.html#doxid-d5-d5b-structtw-cursor-constrain"><span class="std std-ref">tw_cursor_constrain</span></a><span></span> <a class="reference internal" href="#doxid-d4-d63-structtw-backend-output-1ae8492d0399eeff5712265de015d5ef56"><span class="std std-ref">constrain</span></a><span></span><span class="p">;</span>
+    <span class="n">pixman_region32_t</span> <span class="doxyrest-code-target target" id="doxid-d4-d63-structtw-backend-output-1ae8acef49d2ec2adbad901a6283b63eed"><span></span><span class="n">damages</span></span><span></span><span class="p">[</span><span class="mi">3</span><span class="p">];</span>
+    <span class="n">pixman_region32_t</span><span class="o">*</span> <span class="doxyrest-code-target target" id="doxid-d4-d63-structtw-backend-output-1a533e0478b8101335ac5f0d25b7579c54"><span></span><span class="n">pending_damage</span></span><span></span><span class="p">;</span>
+    <span class="n">pixman_region32_t</span><span class="o">*</span> <span class="doxyrest-code-target target" id="doxid-d4-d63-structtw-backend-output-1a279d3f59992184c249a5ce5ec8d243a8"><span></span><span class="n">curr_damage</span></span><span></span><span class="p">;</span>
+    <span class="n">pixman_region32_t</span><span class="o">*</span> <span class="doxyrest-code-target target" id="doxid-d4-d63-structtw-backend-output-1a9eb0a16e752fa1f7debdad98f9de606d"><span></span><span class="n">prev_damage</span></span><span></span><span class="p">;</span>
     <span class="kt">float</span> <span class="doxyrest-code-target target" id="doxid-d4-d63-structtw-backend-output-1a0fe96adbad36c33c50a7bd245d722ece"><span></span><span class="n">gamma_value</span></span><span></span><span class="p">;</span>
     <span class="k">struct</span> <a class="reference internal" href="struct_tw_mat3.html#doxid-d4-da4-structtw-mat3"><span class="std std-ref">tw_mat3</span></a><span></span> <span class="doxyrest-code-target target" id="doxid-d4-d63-structtw-backend-output-1a83745dba6276f9d4270cb17b27cf4a4a"><span></span><span class="n">view_2d</span></span><span></span><span class="p">;</span>
-    <span class="k">enum</span> <span class="n">tw_backend_output</span><span class="o">::</span><span class="err">@</span><span class="mi">27</span><span class="o">::</span><span class="err">@</span><span class="mi">28</span> <a class="reference internal" href="#doxid-d4-d63-structtw-backend-output-1a8f816bb2843f5e7eff1fa0d5b79f88ec"><span class="std std-ref">repaint_state</span></a><span></span><span class="p">;</span>
-    <span class="k">struct</span> <span class="n">tw_backend_output</span><span class="o">::</span><span class="err">@</span><span class="mi">27</span> <span class="doxyrest-code-target target" id="doxid-d4-d63-structtw-backend-output-1acb3b273ae31085b01e2b9ae3f1deb15e"><span></span><span class="n">state</span></span><span></span><span class="p">;</span>
+    <span class="k">enum</span> <span class="n">tw_backend_output</span><span class="o">::</span><span class="err">@</span><span class="mi">0</span><span class="o">::</span><span class="err">@</span><span class="mi">1</span> <a class="reference internal" href="#doxid-d4-d63-structtw-backend-output-1ac72cf63b609edbc554decfec48ac57f7"><span class="std std-ref">repaint_state</span></a><span></span><span class="p">;</span>
+    <span class="k">struct</span> <span class="n">tw_backend_output</span><span class="o">::</span><span class="err">@</span><span class="mi">0</span> <span class="doxyrest-code-target target" id="doxid-d4-d63-structtw-backend-output-1abae76762d803805e0ef011294025edf7"><span></span><span class="n">state</span></span><span></span><span class="p">;</span>
     <span class="k">struct</span> <span class="n">wl_listener</span> <span class="doxyrest-code-target target" id="doxid-d4-d63-structtw-backend-output-1a73d0b60d012517ce9031eb46d290d552"><span></span><span class="n">frame_listener</span></span><span></span><span class="p">;</span>
     <span class="k">struct</span> <span class="n">wl_listener</span> <span class="doxyrest-code-target target" id="doxid-d4-d63-structtw-backend-output-1a3ab6b90f6d15f32c4122c04b81674169"><span></span><span class="n">destroy_listener</span></span><span></span><span class="p">;</span>
 <span class="p">};</span></pre>
@@ -111,7 +116,9 @@
 <h3>Fields<a class="headerlink" href="#fields" title="Permalink to this headline">¶</a></h3>
 <pre class="highlight doxyrest-title-code-block literal-block" id="doxid-d4-d63-structtw-backend-output-1a28ded283d923da77a541deea2a7a21e2"><span id="index-1"></span><span></span><span class="kt">char</span> <span class="n">name</span><span class="p">[</span><span class="mi">24</span><span class="p">]</span></pre>
 <p>tw_surface-&gt;output_link</p>
-<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-d4-d63-structtw-backend-output-1a8f816bb2843f5e7eff1fa0d5b79f88ec"><span id="index-2"></span><span></span><span class="n">unnamed</span><span class="o">-</span><span class="k">enum</span> <span class="n">repaint_state</span></pre>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-d4-d63-structtw-backend-output-1ae8492d0399eeff5712265de015d5ef56"><span id="index-2"></span><span></span><span class="k">struct</span> <a class="reference internal" href="struct_tw_cursor_constrain.html#doxid-d5-d5b-structtw-cursor-constrain"><span class="std std-ref">tw_cursor_constrain</span></a><span></span> <span class="n">constrain</span></pre>
+<p>we have 3 frame_damages for triple buffering</p>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-d4-d63-structtw-backend-output-1ac72cf63b609edbc554decfec48ac57f7"><span id="index-3"></span><span></span><span class="n">unnamed</span><span class="o">-</span><span class="k">enum</span> <span class="n">repaint_state</span></pre>
 <p>the repaint status, the output repaint is driven by timer, in the future we may be able to drive it by idle event</p>
 </div>
 </div>
@@ -137,13 +144,13 @@
 <h3><a data-toggle="collapse" href="#globaltoc">Related Pages</a></h3>
 <div id="globaltoc" class="collapse">
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="page_md__home_developer_Projects_taiwins-web-src_taiwins_docs_api.html">Client data structures</a></li>
-<li class="toctree-l1"><a class="reference internal" href="page_md__home_developer_Projects_taiwins-web-src_taiwins_CONTRIBUTING.html">Contributing to Taiwins</a></li>
-<li class="toctree-l1"><a class="reference internal" href="page_md__home_developer_Projects_taiwins-web-src_taiwins_docs_lua.html">Lua bindings</a></li>
-<li class="toctree-l1"><a class="reference internal" href="page_md__home_developer_Projects_taiwins-web-src_taiwins_docs_window_management.html">Taiwins layout engine.</a></li>
-<li class="toctree-l1"><a class="reference internal" href="page_md__home_developer_Projects_taiwins-web-src_taiwins_README.html">Taiwins, a morden wayland window manager</a></li>
-<li class="toctree-l1"><a class="reference internal" href="page_md__home_developer_Projects_taiwins-web-src_taiwins_subprojects_twclient_README.html">wayland client utility library</a></li>
-<li class="toctree-l1"><a class="reference internal" href="page_md__home_developer_Projects_taiwins-web-src_taiwins_docs_wayland.html">wayland objects</a></li>
+<li class="toctree-l1"><a class="reference internal" href="page_md__home_developer_Projects_web-taiwins_taiwins_CONTRIBUTING.html">Contributing to Taiwins</a></li>
+<li class="toctree-l1"><a class="reference internal" href="page_md__home_developer_Projects_web-taiwins_taiwins_docs_lua.html">Lua bindings</a></li>
+<li class="toctree-l1"><a class="reference internal" href="page_md__home_developer_Projects_web-taiwins_taiwins_docs_window_management.html">Taiwins layout engine.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="page_md__home_developer_Projects_web-taiwins_taiwins_README.html">Taiwins, a morden wayland window manager</a></li>
+<li class="toctree-l1"><a class="reference internal" href="page_md__home_developer_Projects_web-taiwins_taiwins_docs_api.html">Twclient quick reference</a></li>
+<li class="toctree-l1"><a class="reference internal" href="page_md__home_developer_Projects_web-taiwins_taiwins_docs_twobjects.html">Twobjects quick reference</a></li>
+<li class="toctree-l1"><a class="reference internal" href="page_md__home_developer_Projects_web-taiwins_taiwins_docs_wayland.html">wayland</a></li>
 </ul>
 <ul class="current">
 <li class="toctree-l1 current"><a class="reference internal" href="global.html">Global Namespace</a></li>
@@ -174,7 +181,7 @@
     </p>
     <p>
         &copy; Copyright 2020, Xichen Zhou.<br/>
-      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 3.0.3.<br/>
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 3.2.1.<br/>
     </p>
   </div>
 </footer>

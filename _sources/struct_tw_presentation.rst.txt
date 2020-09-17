@@ -1,0 +1,27 @@
+.. index:: pair: struct; tw_presentation
+.. _doxid-d0/d4c/structtw__presentation:
+
+struct tw_presentation
+======================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <presentation_feedback.h>
+	
+	struct tw_presentation
+	{
+		// fields
+	
+		struct wl_display* :target:`display<doxid-d0/d4c/structtw__presentation_1a59b303ad25be76d55706d4bc36966245>`;
+		struct wl_global* :target:`global<doxid-d0/d4c/structtw__presentation_1a3c2619495b64a338b631127dfa874c66>`;
+		struct wl_listener :target:`display_destroy<doxid-d0/d4c/structtw__presentation_1a7a613792b4ffcf2e20a9265065458471>`;
+		uint32_t :target:`clock_id<doxid-d0/d4c/structtw__presentation_1a39f294a7c2ef09dde0a5fdf675aa5e09>`;
+		struct wl_list :target:`feedbacks<doxid-d0/d4c/structtw__presentation_1ad997a841ea717b9a22db681f523befaa>`;
+	};

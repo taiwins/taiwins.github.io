@@ -1,0 +1,22 @@
+.. index:: pair: enum; tw_xdg_view_state
+.. _doxid-db/d51/layout_8h_1afcab3496fbec84539c6e347ba9362236:
+
+enum tw_xdg_view_state
+======================
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <layout.h>
+
+	enum tw_xdg_view_state
+	{
+	    :target:`TW_XDG_VIEW_TILED_LEFT<doxid-db/d51/layout_8h_1afcab3496fbec84539c6e347ba9362236a577d954cb5748ff778e55b3bbb2f8096>`   = 1<<0,
+	    :target:`TW_XDG_VIEW_TILED_RIGHT<doxid-db/d51/layout_8h_1afcab3496fbec84539c6e347ba9362236a805d7a663e6e23aac2014218c395eef9>`  = 1<<1,
+	    :target:`TW_XDG_VIEW_TILED_TOP<doxid-db/d51/layout_8h_1afcab3496fbec84539c6e347ba9362236a5c087b95a9c139f6bdea8d2ec3812f3f>`    = 1<<2,
+	    :target:`TW_XDG_VIEW_TILED_BOTTOM<doxid-db/d51/layout_8h_1afcab3496fbec84539c6e347ba9362236a81774700c737c1c1ff585a8f096d9fb5>` = 1<<3,
+	    :target:`TW_XDG_VIEW_FOCUSED<doxid-db/d51/layout_8h_1afcab3496fbec84539c6e347ba9362236a25db6bd53de8562c959366d434a59da3>`      = 1<<4,
+	};
+

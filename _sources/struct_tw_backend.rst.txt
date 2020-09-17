@@ -49,6 +49,8 @@ Overview
 		struct :ref:`tw_compositor<doxid-d6/da7/structtw__compositor>` :target:`compositor_manager<doxid-df/d59/structtw__backend_1ae3e52ec8b4a139790e16d49f3cab5c97>`;
 		struct :ref:`tw_data_device_manager<doxid-d4/d0f/structtw__data__device__manager>` :target:`data_device_manager<doxid-df/d59/structtw__backend_1ac5bb7c7eeb2c5eca2dc88671b7a3a74b>`;
 		struct :ref:`tw_linux_dmabuf<doxid-d7/dc2/structtw__linux__dmabuf>` :target:`dma_engine<doxid-df/d59/structtw__backend_1a3b2281cf6dec58e7c7b7ab4565398cfc>`;
+		struct :ref:`tw_presentation<doxid-d0/d4c/structtw__presentation>` :target:`presentation<doxid-df/d59/structtw__backend_1a9dcf7c55beeb2826de7311318d9d8957>`;
+		struct :ref:`tw_viewporter<doxid-de/da5/structtw__viewporter>` :target:`viewporter<doxid-df/d59/structtw__backend_1af15ffe13cdd3816bdb88e3e0d9d26d2b>`;
 	};
 .. _details-df/d59/structtw__backend:
 

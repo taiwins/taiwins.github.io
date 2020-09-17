@@ -3,23 +3,23 @@
 .. toctree::
 	:hidden:
 
-	page_md__home_developer_Projects_taiwins-web-src_taiwins_docs_api.rst
-	page_md__home_developer_Projects_taiwins-web-src_taiwins_CONTRIBUTING.rst
-	page_md__home_developer_Projects_taiwins-web-src_taiwins_docs_lua.rst
-	page_md__home_developer_Projects_taiwins-web-src_taiwins_docs_window_management.rst
-	page_md__home_developer_Projects_taiwins-web-src_taiwins_README.rst
-	page_md__home_developer_Projects_taiwins-web-src_taiwins_subprojects_twclient_README.rst
-	page_md__home_developer_Projects_taiwins-web-src_taiwins_docs_wayland.rst
+	page_md__home_developer_Projects_web-taiwins_taiwins_CONTRIBUTING.rst
+	page_md__home_developer_Projects_web-taiwins_taiwins_docs_lua.rst
+	page_md__home_developer_Projects_web-taiwins_taiwins_docs_window_management.rst
+	page_md__home_developer_Projects_web-taiwins_taiwins_README.rst
+	page_md__home_developer_Projects_web-taiwins_taiwins_docs_api.rst
+	page_md__home_developer_Projects_web-taiwins_taiwins_docs_twobjects.rst
+	page_md__home_developer_Projects_web-taiwins_taiwins_docs_wayland.rst
 
 .. rubric:: Related Pages:
 
-|	:doc:`page_md__home_developer_Projects_taiwins-web-src_taiwins_docs_api`
-|	:doc:`page_md__home_developer_Projects_taiwins-web-src_taiwins_CONTRIBUTING`
-|	:doc:`page_md__home_developer_Projects_taiwins-web-src_taiwins_docs_lua`
-|	:doc:`page_md__home_developer_Projects_taiwins-web-src_taiwins_docs_window_management`
-|	:doc:`page_md__home_developer_Projects_taiwins-web-src_taiwins_README`
-|	:doc:`page_md__home_developer_Projects_taiwins-web-src_taiwins_subprojects_twclient_README`
-|	:doc:`page_md__home_developer_Projects_taiwins-web-src_taiwins_docs_wayland`
+|	:doc:`page_md__home_developer_Projects_web-taiwins_taiwins_CONTRIBUTING`
+|	:doc:`page_md__home_developer_Projects_web-taiwins_taiwins_docs_lua`
+|	:doc:`page_md__home_developer_Projects_web-taiwins_taiwins_docs_window_management`
+|	:doc:`page_md__home_developer_Projects_web-taiwins_taiwins_README`
+|	:doc:`page_md__home_developer_Projects_web-taiwins_taiwins_docs_api`
+|	:doc:`page_md__home_developer_Projects_web-taiwins_taiwins_docs_twobjects`
+|	:doc:`page_md__home_developer_Projects_web-taiwins_taiwins_docs_wayland`
 
 
 .. rubric:: Reference and Index:

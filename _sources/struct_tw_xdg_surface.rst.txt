@@ -20,20 +20,22 @@ struct tw_xdg_surface
 	
 		struct :ref:`tw_desktop_surface<doxid-d4/d0f/structtw__desktop__surface>` :target:`base<doxid-d9/db5/structtw__xdg__surface_1ab1787f6926e82fe7ecb2cc0a6777365c>`;
 		struct wl_listener :target:`surface_destroy<doxid-d9/db5/structtw__xdg__surface_1a044afacc4c4951e552c28b6f888dad1e>`;
+		struct wl_resource* :target:`wm_base<doxid-d9/db5/structtw__xdg__surface_1a043bb2b8834e1e962671cc5e55ee33d8>`;
 		bool :target:`configured<doxid-d9/db5/structtw__xdg__surface_1af16acc193efa11bd5483852307d75433>`;
 		bool :target:`has_next_window_geometry<doxid-d9/db5/structtw__xdg__surface_1adf543cabb1695ee642bc0180a9c27cf2>`;
 		pixman_box32_t :target:`next_window_geometry<doxid-d9/db5/structtw__xdg__surface_1aa3e160397a26a38dc68f918ba2cdb2fe>`;
 		uint32_t :target:`w<doxid-d9/db5/structtw__xdg__surface_1a700e5182e8b905197fb2fca9fb200da8>`;
 		uint32_t :target:`h<doxid-d9/db5/structtw__xdg__surface_1a06b4900492b4bb4e2688212d1a57a529>`;
-		struct tw_xdg_surface::@46::@48::@50::@51 :target:`min_size<doxid-d9/db5/structtw__xdg__surface_1ad109bbbee48716832d27ff99c2cec149>`;
-		struct tw_xdg_surface::@46::@48::@50::@51 :target:`max_size<doxid-d9/db5/structtw__xdg__surface_1a87cea91864202c6151701fdc9c11b74b>`;
-		struct tw_xdg_surface::@46::@48::@50 :target:`pending<doxid-d9/db5/structtw__xdg__surface_1aa2858e8cb9ba36e3f381a627f9eaf751>`;
-		struct tw_xdg_surface::@46::@48::@50 :target:`current<doxid-d9/db5/structtw__xdg__surface_1a8a4ef7f67f1aa02c625c5b28fe33d125>`;
+		struct tw_xdg_surface::@0::@2::@4::@5 :target:`min_size<doxid-d9/db5/structtw__xdg__surface_1a6107055bbec9d21fe926dff592c37d25>`;
+		struct tw_xdg_surface::@0::@2::@4::@5 :target:`max_size<doxid-d9/db5/structtw__xdg__surface_1a8d4578395bb3483276e40f1719b549ff>`;
+		struct tw_xdg_surface::@0::@2::@4 :target:`pending<doxid-d9/db5/structtw__xdg__surface_1a516d822c41d5579bfda745c0cd72ba76>`;
+		struct tw_xdg_surface::@0::@2::@4 :target:`current<doxid-d9/db5/structtw__xdg__surface_1a81a57dc244766f89f8062297d9e5730c>`;
 		struct wl_resource* :target:`fullscreen_output<doxid-d9/db5/structtw__xdg__surface_1a7ab70db69d85e45c6b7f1b3707cd9aee>`;
 		struct wl_resource* :target:`resource<doxid-d9/db5/structtw__xdg__surface_1a7dea2490e9955780a601c9a041d98ab0>`;
-		struct tw_xdg_surface::@46::@48 :target:`toplevel<doxid-d9/db5/structtw__xdg__surface_1a360b19189e60ee0e6a8413df9fd3560e>`;
+		struct tw_xdg_surface::@0::@2 :target:`toplevel<doxid-d9/db5/structtw__xdg__surface_1a2b7b53d938c7ab881c2374f65b8bf2bc>`;
+		struct :ref:`tw_popup_grab<doxid-d2/d5f/structtw__popup__grab>` :target:`grab<doxid-d9/db5/structtw__xdg__surface_1a085b2b5aa3ce080b3daa18573232f888>`;
 		struct :ref:`tw_subsurface<doxid-de/d75/structtw__subsurface>` :target:`subsurface<doxid-d9/db5/structtw__xdg__surface_1ab3fb4ecb650a1fa571adfd91c01e219c>`;
 		struct tw_xdg_surface* :target:`parent<doxid-d9/db5/structtw__xdg__surface_1ae30aa5cc669f90b03772b95643d1d937>`;
 		struct wl_listener :target:`close_popup_listener<doxid-d9/db5/structtw__xdg__surface_1a498e1dc21dc7590765acd7199518db9e>`;
-		struct tw_xdg_surface::@46::@49 :target:`popup<doxid-d9/db5/structtw__xdg__surface_1a5f8d68289778e9ebbdfdb247fae03aa2>`;
+		struct tw_xdg_surface::@0::@3 :target:`popup<doxid-d9/db5/structtw__xdg__surface_1a6642b48788f7c2ba4b7ee8f22d9c14f7>`;
 	};

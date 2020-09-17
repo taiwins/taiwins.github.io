@@ -3,6 +3,7 @@
 <html>
   <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     
     <title>struct tw_surface &#8212; Taiwins</title>
   
@@ -90,26 +91,22 @@
     <span class="k">struct</span> <span class="n">wl_list</span> <span class="doxyrest-code-target target" id="doxid-dd-dda-structtw-surface-1a3e7f468caf35eaa74e80434efc3c4074"><span></span><span class="n">frame_callbacks</span></span><span></span><span class="p">;</span>
     <span class="k">struct</span> <span class="n">wl_list</span> <span class="doxyrest-code-target target" id="doxid-dd-dda-structtw-surface-1af5bb15a670e2e85954b26fecb88481b8"><span></span><span class="n">subsurfaces</span></span><span></span><span class="p">;</span>
     <span class="k">struct</span> <span class="n">wl_list</span> <span class="doxyrest-code-target target" id="doxid-dd-dda-structtw-surface-1ad2a31446f7c651459119d935f144619e"><span></span><span class="n">subsurfaces_pending</span></span><span></span><span class="p">;</span>
-    <span class="kt">uint32_t</span> <span class="doxyrest-code-target target" id="doxid-dd-dda-structtw-surface-1a56867076e1f06a2f3d6eae5dd5ee6ffd"><span></span><span class="n">state</span></span><span></span><span class="p">;</span>
-    <span class="kt">int</span> <span class="doxyrest-code-target target" id="doxid-dd-dda-structtw-surface-1a90412b824e7642de5e9df6242d8f280a"><span></span><span class="n">sx</span></span><span></span><span class="p">;</span>
-    <span class="kt">int</span> <span class="doxyrest-code-target target" id="doxid-dd-dda-structtw-surface-1a5fa2987f5a1b73aa8559df5f3088f5af"><span></span><span class="n">sy</span></span><span></span><span class="p">;</span>
     <span class="kt">bool</span> <span class="doxyrest-code-target target" id="doxid-dd-dda-structtw-surface-1a1e589b91f62fc73f64ad33e16754eba8"><span></span><span class="n">is_mapped</span></span><span></span><span class="p">;</span>
-    <span class="kt">int32_t</span> <span class="doxyrest-code-target target" id="doxid-dd-dda-structtw-surface-1afa281944c219f1f106399002aee0e82d"><span></span><span class="n">x</span></span><span></span><span class="p">;</span>
-    <span class="kt">int32_t</span> <span class="doxyrest-code-target target" id="doxid-dd-dda-structtw-surface-1ae32ce532b6ce6482dcef1ed4ee613925"><span></span><span class="n">y</span></span><span></span><span class="p">;</span>
+    <span class="kt">float</span> <span class="doxyrest-code-target target" id="doxid-dd-dda-structtw-surface-1a84dfe6ca1f2ec78050318d78ebf52109"><span></span><span class="n">x</span></span><span></span><span class="p">;</span>
+    <span class="kt">float</span> <span class="doxyrest-code-target target" id="doxid-dd-dda-structtw-surface-1aa16a82a29a49c2e7d43fd36683bcdf4e"><span></span><span class="n">y</span></span><span></span><span class="p">;</span>
     <span class="n">pixman_rectangle32_t</span> <span class="doxyrest-code-target target" id="doxid-dd-dda-structtw-surface-1ad0c05b959a226fe4add664fb0c09852f"><span></span><span class="n">xywh</span></span><span></span><span class="p">;</span>
-    <span class="n">pixman_rectangle32_t</span> <span class="doxyrest-code-target target" id="doxid-dd-dda-structtw-surface-1ad05a22ff05409daa10293fe28765d839"><span></span><span class="n">prev_xywh</span></span><span></span><span class="p">;</span>
-    <span class="k">struct</span> <a class="reference internal" href="struct_tw_mat3.html#doxid-d4-da4-structtw-mat3"><span class="std std-ref">tw_mat3</span></a><span></span> <span class="doxyrest-code-target target" id="doxid-dd-dda-structtw-surface-1a471ee658ab84783873aa274619459f3a"><span></span><span class="n">transform</span></span><span></span><span class="p">;</span>
+    <span class="n">pixman_region32_t</span> <span class="doxyrest-code-target target" id="doxid-dd-dda-structtw-surface-1a7618715bf9d977133f171990a7d9e4e3"><span></span><span class="n">dirty</span></span><span></span><span class="p">;</span>
+    <span class="k">struct</span> <a class="reference internal" href="struct_tw_mat3.html#doxid-d4-da4-structtw-mat3"><span class="std std-ref">tw_mat3</span></a><span></span> <a class="reference internal" href="#doxid-dd-dda-structtw-surface-1a471ee658ab84783873aa274619459f3a"><span class="std std-ref">transform</span></a><span></span><span class="p">;</span>
     <span class="k">struct</span> <a class="reference internal" href="struct_tw_mat3.html#doxid-d4-da4-structtw-mat3"><span class="std std-ref">tw_mat3</span></a><span></span> <span class="doxyrest-code-target target" id="doxid-dd-dda-structtw-surface-1ab1a6891cfd421aee98a3608c4ec83ca7"><span></span><span class="n">inverse_transform</span></span><span></span><span class="p">;</span>
-    <span class="kt">bool</span> <span class="doxyrest-code-target target" id="doxid-dd-dda-structtw-surface-1ad35167d18b783650d30cdfc9cf98be25"><span></span><span class="n">dirty</span></span><span></span><span class="p">;</span>
-    <span class="k">struct</span> <span class="n">tw_surface</span><span class="o">::</span><span class="err">@</span><span class="mi">42</span> <a class="reference internal" href="#doxid-dd-dda-structtw-surface-1af9420a763a4c324afcc8ed669e819051"><span class="std std-ref">geometry</span></a><span></span><span class="p">;</span>
+    <span class="k">struct</span> <span class="n">tw_surface</span><span class="o">::</span><span class="err">@</span><span class="mi">3</span> <a class="reference internal" href="#doxid-dd-dda-structtw-surface-1a73f25298c3b527774ca635b120ed6f77"><span class="std std-ref">geometry</span></a><span></span><span class="p">;</span>
     <span class="k">const</span> <span class="kt">char</span><span class="o">*</span> <span class="doxyrest-code-target target" id="doxid-dd-dda-structtw-surface-1a01043fab20ca1d87d01b625e13e2380c"><span></span><span class="n">name</span></span><span></span><span class="p">;</span>
     <span class="kt">void</span><span class="o">*</span> <span class="doxyrest-code-target target" id="doxid-dd-dda-structtw-surface-1aa10dab8dd3a3da3b3f08d60f7b6882d3"><span></span><span class="n">commit_private</span></span><span></span><span class="p">;</span>
     <a class="reference internal" href="global.html#doxid-d2-d69-surface-8h-1af48899ca9a04fc8830e5a0e2e5fba631"><span class="std std-ref">tw_surface_commit_cb_t</span></a><span></span> <span class="doxyrest-code-target target" id="doxid-dd-dda-structtw-surface-1a95a70f8064b497c54cf69aa974d0845e"><span></span><span class="n">commit</span></span><span></span><span class="p">;</span>
-    <span class="k">struct</span> <span class="n">tw_surface</span><span class="o">::</span><span class="err">@</span><span class="mi">43</span> <span class="doxyrest-code-target target" id="doxid-dd-dda-structtw-surface-1ac67292be2aed560b2d75b47574adcc4e"><span></span><span class="n">role</span></span><span></span><span class="p">;</span>
+    <span class="k">struct</span> <span class="n">tw_surface</span><span class="o">::</span><span class="err">@</span><span class="mi">4</span> <span class="doxyrest-code-target target" id="doxid-dd-dda-structtw-surface-1a31502d038055f4fe0e112c6317e80f4a"><span></span><span class="n">role</span></span><span></span><span class="p">;</span>
     <span class="k">struct</span> <span class="n">wl_signal</span> <span class="doxyrest-code-target target" id="doxid-dd-dda-structtw-surface-1a91b502ec26badcdbaef5462ac189d6a0"><span></span><span class="n">frame</span></span><span></span><span class="p">;</span>
     <span class="k">struct</span> <span class="n">wl_signal</span> <span class="doxyrest-code-target target" id="doxid-dd-dda-structtw-surface-1a6f6a3f0f6d415a38f088dbbce362a220"><span></span><span class="n">commit</span></span><span></span><span class="p">;</span>
     <span class="k">struct</span> <span class="n">wl_signal</span> <span class="doxyrest-code-target target" id="doxid-dd-dda-structtw-surface-1abe125f8544f1d42f43c19e59474f8341"><span></span><span class="n">destroy</span></span><span></span><span class="p">;</span>
-    <span class="k">struct</span> <span class="n">tw_surface</span><span class="o">::</span><span class="err">@</span><span class="mi">44</span> <span class="doxyrest-code-target target" id="doxid-dd-dda-structtw-surface-1a89dc0c5744fc81fce85115e1a8911a47"><span></span><span class="n">events</span></span><span></span><span class="p">;</span>
+    <span class="k">struct</span> <span class="n">tw_surface</span><span class="o">::</span><span class="err">@</span><span class="mi">5</span> <span class="doxyrest-code-target target" id="doxid-dd-dda-structtw-surface-1a250f9ff340a84a6bc58d2171ea312e58"><span></span><span class="n">events</span></span><span></span><span class="p">;</span>
     <span class="kt">void</span><span class="o">*</span> <span class="doxyrest-code-target target" id="doxid-dd-dda-structtw-surface-1a6cd1c2ca184ca7b79c4f12bd48b20bad"><span></span><span class="n">user_data</span></span><span></span><span class="p">;</span>
 <span class="p">};</span></pre>
 </div>
@@ -127,7 +124,9 @@
 <p>the output it touches</p>
 <pre class="highlight doxyrest-title-code-block literal-block" id="doxid-dd-dda-structtw-surface-1ace9551569b8f25fb9d63a654f2e3be5d"><span id="index-5"></span><span></span><span class="k">struct</span> <span class="n">wl_list</span> <span class="n">links</span><span class="p">[</span><span class="n">MAX_VIEW_LINKS</span><span class="p">]</span></pre>
 <p>many types may need to use one of the links, eg: backend_ouput, layer, compositor, input. Plane.</p>
-<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-dd-dda-structtw-surface-1af9420a763a4c324afcc8ed669e819051"><span id="index-6"></span><span></span><span class="n">unnamed</span><span class="o">-</span><span class="k">struct</span> <span class="n">geometry</span></pre>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-dd-dda-structtw-surface-1a471ee658ab84783873aa274619459f3a"><span id="index-6"></span><span></span><span class="k">struct</span> <a class="reference internal" href="struct_tw_mat3.html#doxid-d4-da4-structtw-mat3"><span class="std std-ref">tw_mat3</span></a><span></span> <span class="n">transform</span></pre>
+<p>map from (-1,-1,1,1) to global coordinates in a Y-down coordinate system</p>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-dd-dda-structtw-surface-1a73f25298c3b527774ca635b120ed6f77"><span id="index-7"></span><span></span><span class="n">unnamed</span><span class="o">-</span><span class="k">struct</span> <span class="n">geometry</span></pre>
 <p>transform of the view</p>
 </div>
 </div>
@@ -153,13 +152,13 @@
 <h3><a data-toggle="collapse" href="#globaltoc">Related Pages</a></h3>
 <div id="globaltoc" class="collapse">
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="page_md__home_developer_Projects_taiwins-web-src_taiwins_docs_api.html">Client data structures</a></li>
-<li class="toctree-l1"><a class="reference internal" href="page_md__home_developer_Projects_taiwins-web-src_taiwins_CONTRIBUTING.html">Contributing to Taiwins</a></li>
-<li class="toctree-l1"><a class="reference internal" href="page_md__home_developer_Projects_taiwins-web-src_taiwins_docs_lua.html">Lua bindings</a></li>
-<li class="toctree-l1"><a class="reference internal" href="page_md__home_developer_Projects_taiwins-web-src_taiwins_docs_window_management.html">Taiwins layout engine.</a></li>
-<li class="toctree-l1"><a class="reference internal" href="page_md__home_developer_Projects_taiwins-web-src_taiwins_README.html">Taiwins, a morden wayland window manager</a></li>
-<li class="toctree-l1"><a class="reference internal" href="page_md__home_developer_Projects_taiwins-web-src_taiwins_subprojects_twclient_README.html">wayland client utility library</a></li>
-<li class="toctree-l1"><a class="reference internal" href="page_md__home_developer_Projects_taiwins-web-src_taiwins_docs_wayland.html">wayland objects</a></li>
+<li class="toctree-l1"><a class="reference internal" href="page_md__home_developer_Projects_web-taiwins_taiwins_CONTRIBUTING.html">Contributing to Taiwins</a></li>
+<li class="toctree-l1"><a class="reference internal" href="page_md__home_developer_Projects_web-taiwins_taiwins_docs_lua.html">Lua bindings</a></li>
+<li class="toctree-l1"><a class="reference internal" href="page_md__home_developer_Projects_web-taiwins_taiwins_docs_window_management.html">Taiwins layout engine.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="page_md__home_developer_Projects_web-taiwins_taiwins_README.html">Taiwins, a morden wayland window manager</a></li>
+<li class="toctree-l1"><a class="reference internal" href="page_md__home_developer_Projects_web-taiwins_taiwins_docs_api.html">Twclient quick reference</a></li>
+<li class="toctree-l1"><a class="reference internal" href="page_md__home_developer_Projects_web-taiwins_taiwins_docs_twobjects.html">Twobjects quick reference</a></li>
+<li class="toctree-l1"><a class="reference internal" href="page_md__home_developer_Projects_web-taiwins_taiwins_docs_wayland.html">wayland</a></li>
 </ul>
 <ul class="current">
 <li class="toctree-l1 current"><a class="reference internal" href="global.html">Global Namespace</a></li>
@@ -190,7 +189,7 @@
     </p>
     <p>
         &copy; Copyright 2020, Xichen Zhou.<br/>
-      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 3.0.3.<br/>
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 3.2.1.<br/>
     </p>
   </div>
 </footer>

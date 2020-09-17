@@ -29,13 +29,14 @@ Overview
 		uint32_t :target:`viewport_w<doxid-d7/db6/structtw__renderer_1a79c059466563558a20cffacc6d151694>`;
 		uint32_t :target:`viewport_h<doxid-d7/db6/structtw__renderer_1a13aa9822f7b4c761e72c8be11226ecad>`;
 		bool :target:`enable_debug<doxid-d7/db6/structtw__renderer_1a6504286aac6fd31ed4d460ec939da976>`;
-		struct tw_renderer::@55 :target:`options<doxid-d7/db6/structtw__renderer_1afae4d227907403d61070dd1156c80bcf>`;
+		struct tw_renderer::@0 :target:`options<doxid-d7/db6/structtw__renderer_1a07ea7d44c662b18e3605d4449cb33e7d>`;
 		struct wl_signal :target:`pre_output_render<doxid-d7/db6/structtw__renderer_1aace9f1d539289abb336845f48b849c49>`;
 		struct wl_signal :target:`post_ouptut_render<doxid-d7/db6/structtw__renderer_1adb604eec5193d3ef37aec3f823fba573>`;
 		struct wl_signal :target:`pre_view_render<doxid-d7/db6/structtw__renderer_1a415a53d5472280f882fdbe458301ed3d>`;
 		struct wl_signal :target:`post_view_render<doxid-d7/db6/structtw__renderer_1a6f4fd1de8e4b632e1e8a9c18d5af111b>`;
-		struct tw_renderer::@56 :target:`events<doxid-d7/db6/structtw__renderer_1a759d3aa37fd4539f79a4a06c1d3969e1>`;
-		void(* :target:`repaint_output<doxid-d7/db6/structtw__renderer_1a05a96256c9669688a8ebb05eb87dadc0>`)(struct tw_renderer *renderer, struct tw_backend_output *output);
+		struct tw_renderer::@1 :target:`events<doxid-d7/db6/structtw__renderer_1a08bfcd8b499f20ba3154991bdc375097>`;
+		void(* :target:`repaint_output<doxid-d7/db6/structtw__renderer_1a9fb16ae926a8fa4770e90a2a66de0fd7>`)(struct tw_renderer *renderer, struct tw_backend_output *output, int buffer_age);
+		void(* :target:`notify_surface_destroy<doxid-d7/db6/structtw__renderer_1adac9ed1cbab11297ab70374693038a26>`)(struct tw_renderer *renderer, struct tw_surface *surface);
 		PFNGLEGLIMAGETARGETTEXTURE2DOESPROC :ref:`glEGLImageTargetTexture2DOES<doxid-d7/db6/structtw__renderer_1ac1824222d2fbf1546b39b48764b46635>`;
 	};
 .. _details-d7/db6/structtw__renderer:

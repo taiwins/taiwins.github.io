@@ -14,7 +14,6 @@ features
 * builtin shell.
 * wayland client system.
 * configurable theme.
-* xwayland support.
 * multi key-presses bindings like emacs.
 * dbus support.
 * and more.

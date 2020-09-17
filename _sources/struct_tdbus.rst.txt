@@ -32,6 +32,6 @@ struct tdbus
 		char :target:`objpath<doxid-db/d60/structtdbus_1a48c975419574bf5401ceef42d1520c2d>`[32];
 		size_t :target:`start<doxid-db/d60/structtdbus_1a31ff007de6e41c9733d8e4b977f13838>`;
 		size_t :target:`n_methods<doxid-db/d60/structtdbus_1a17726d20b6365d558c0395ee5c8e58d1>`;
-		struct tdbus::@61 :target:`registered_objs<doxid-db/d60/structtdbus_1aca07600cb789f484f5872b29d64a300c>`[8];
+		struct tdbus::@0 :target:`registered_objs<doxid-db/d60/structtdbus_1a5b728841335ba7ec083ee031c9fa363f>`[8];
 		struct :ref:`tdbus_array<doxid-da/d6d/structtdbus__array>` :target:`added_methods<doxid-db/d60/structtdbus_1ae3347cfe10d7db2f42a2d5bfcef0a10d>`;
 	};

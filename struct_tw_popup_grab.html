@@ -3,6 +3,7 @@
 <html>
   <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     
     <title>struct tw_popup_grab &#8212; Taiwins</title>
   
@@ -19,7 +20,7 @@
     <link rel="shortcut icon" href="_static/favicon.ico"/>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="struct tw_profiler" href="struct_tw_profiler.html" />
+    <link rel="next" title="struct tw_presentation" href="struct_tw_presentation.html" />
     <link rel="prev" title="struct tw_pointer_grab_interface" href="struct_tw_pointer_grab_interface.html" />
 <meta charset='utf-8'>
 <meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
@@ -83,6 +84,7 @@
     <span class="k">struct</span> <span class="n">wl_resource</span><span class="o">*</span> <span class="doxyrest-code-target target" id="doxid-d2-d5f-structtw-popup-grab-1aaede439b9ff606bcf59374963d447a21"><span></span><span class="n">interface</span></span><span></span><span class="p">;</span>
     <span class="k">struct</span> <a class="reference internal" href="struct_tw_seat.html#doxid-dc-d28-structtw-seat"><span class="std std-ref">tw_seat</span></a><span></span><span class="o">*</span> <span class="doxyrest-code-target target" id="doxid-d2-d5f-structtw-popup-grab-1a24c6446a17fe74f81ec9c74e48a9f0a9"><span></span><span class="n">seat</span></span><span></span><span class="p">;</span>
     <span class="k">struct</span> <span class="n">wl_listener</span> <span class="doxyrest-code-target target" id="doxid-d2-d5f-structtw-popup-grab-1a0e85d517f0a90af0eaa1542800a29a58"><span></span><span class="n">resource_destroy</span></span><span></span><span class="p">;</span>
+    <span class="k">struct</span> <span class="n">wl_listener</span> <span class="doxyrest-code-target target" id="doxid-d2-d5f-structtw-popup-grab-1ae584009f3f80cf2c59dc781e98c2e5c5"><span></span><span class="n">parent_destroy</span></span><span></span><span class="p">;</span>
     <span class="k">struct</span> <span class="n">tw_popup_grab</span><span class="o">*</span> <span class="doxyrest-code-target target" id="doxid-d2-d5f-structtw-popup-grab-1a8cf8b462d011e5abc1fa98497f88dc61"><span></span><span class="n">parent_grab</span></span><span></span><span class="p">;</span>
     <span class="k">struct</span> <span class="n">wl_signal</span> <span class="doxyrest-code-target target" id="doxid-d2-d5f-structtw-popup-grab-1ab40f60e446069b583f3a6c39041abacd"><span></span><span class="n">close</span></span><span></span><span class="p">;</span>
 <span class="p">};</span></pre>
@@ -111,13 +113,13 @@
 <h3><a data-toggle="collapse" href="#globaltoc">Related Pages</a></h3>
 <div id="globaltoc" class="collapse">
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="page_md__home_developer_Projects_taiwins-web-src_taiwins_docs_api.html">Client data structures</a></li>
-<li class="toctree-l1"><a class="reference internal" href="page_md__home_developer_Projects_taiwins-web-src_taiwins_CONTRIBUTING.html">Contributing to Taiwins</a></li>
-<li class="toctree-l1"><a class="reference internal" href="page_md__home_developer_Projects_taiwins-web-src_taiwins_docs_lua.html">Lua bindings</a></li>
-<li class="toctree-l1"><a class="reference internal" href="page_md__home_developer_Projects_taiwins-web-src_taiwins_docs_window_management.html">Taiwins layout engine.</a></li>
-<li class="toctree-l1"><a class="reference internal" href="page_md__home_developer_Projects_taiwins-web-src_taiwins_README.html">Taiwins, a morden wayland window manager</a></li>
-<li class="toctree-l1"><a class="reference internal" href="page_md__home_developer_Projects_taiwins-web-src_taiwins_subprojects_twclient_README.html">wayland client utility library</a></li>
-<li class="toctree-l1"><a class="reference internal" href="page_md__home_developer_Projects_taiwins-web-src_taiwins_docs_wayland.html">wayland objects</a></li>
+<li class="toctree-l1"><a class="reference internal" href="page_md__home_developer_Projects_web-taiwins_taiwins_CONTRIBUTING.html">Contributing to Taiwins</a></li>
+<li class="toctree-l1"><a class="reference internal" href="page_md__home_developer_Projects_web-taiwins_taiwins_docs_lua.html">Lua bindings</a></li>
+<li class="toctree-l1"><a class="reference internal" href="page_md__home_developer_Projects_web-taiwins_taiwins_docs_window_management.html">Taiwins layout engine.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="page_md__home_developer_Projects_web-taiwins_taiwins_README.html">Taiwins, a morden wayland window manager</a></li>
+<li class="toctree-l1"><a class="reference internal" href="page_md__home_developer_Projects_web-taiwins_taiwins_docs_api.html">Twclient quick reference</a></li>
+<li class="toctree-l1"><a class="reference internal" href="page_md__home_developer_Projects_web-taiwins_taiwins_docs_twobjects.html">Twobjects quick reference</a></li>
+<li class="toctree-l1"><a class="reference internal" href="page_md__home_developer_Projects_web-taiwins_taiwins_docs_wayland.html">wayland</a></li>
 </ul>
 <ul class="current">
 <li class="toctree-l1 current"><a class="reference internal" href="global.html">Global Namespace</a></li>
@@ -148,7 +150,7 @@
     </p>
     <p>
         &copy; Copyright 2020, Xichen Zhou.<br/>
-      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 3.0.3.<br/>
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 3.2.1.<br/>
     </p>
   </div>
 </footer>

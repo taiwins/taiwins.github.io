@@ -3,6 +3,7 @@
 <html>
   <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     
     <title>struct tw_data_device &#8212; Taiwins</title>
   
@@ -68,34 +69,64 @@
 <span id="doxid-de-dbd-structtw-data-device"></span><span id="index-0"></span><h1>struct tw_data_device<a class="headerlink" href="#struct-tw-data-device" title="Permalink to this headline">¶</a></h1>
 <div class="toctree-wrapper compound">
 </div>
-<pre class="highlight doxyrest-overview-code-block literal-block"><span></span><span class="cp">#include</span> <span class="cpf">&lt;data_device.h&gt;</span><span class="cp"></span>
+<div class="section" id="overview">
+<h2>Overview<a class="headerlink" href="#overview" title="Permalink to this headline">¶</a></h2>
+<p><a class="reference internal" href="#doxid-de-dbd-structtw-data-device"><span class="std std-ref">tw_data_device</span></a> represents a seat <a class="reference internal" href="#details-de-dbd-structtw-data-device"><span class="std std-ref">More…</span></a></p>
+<pre class="highlight doxyrest-overview-code-block literal-block"><span></span><span class="cp">#include</span> <span class="cpf">&lt;data_internal.h&gt;</span><span class="cp"></span>
 
 <span class="k">struct</span> <span class="n">tw_data_device</span>
 <span class="p">{</span>
     <span class="c1">// fields</span>
 
+    <span class="k">struct</span> <span class="n">wl_list</span> <span class="doxyrest-code-target target" id="doxid-de-dbd-structtw-data-device-1a702424085b2303215b79b123a4b20f18"><span></span><span class="n">link</span></span><span></span><span class="p">;</span>
     <span class="k">struct</span> <a class="reference internal" href="struct_tw_seat.html#doxid-dc-d28-structtw-seat"><span class="std std-ref">tw_seat</span></a><span></span><span class="o">*</span> <span class="doxyrest-code-target target" id="doxid-de-dbd-structtw-data-device-1a64eb50eb17510f5941129ac6b259024d"><span></span><span class="n">seat</span></span><span></span><span class="p">;</span>
-    <span class="k">struct</span> <span class="n">wl_resource</span><span class="o">*</span> <span class="doxyrest-code-target target" id="doxid-de-dbd-structtw-data-device-1a780940379e4735ae05de72878dbe1cf0"><span></span><span class="n">resource</span></span><span></span><span class="p">;</span>
-    <span class="k">struct</span> <a class="reference internal" href="struct_tw_data_source.html#doxid-dc-d55-structtw-data-source"><span class="std std-ref">tw_data_source</span></a><span></span><span class="o">*</span> <span class="doxyrest-code-target target" id="doxid-de-dbd-structtw-data-device-1ac8d3b68d01b6934ce503b686072ded16"><span></span><span class="n">source_set</span></span><span></span><span class="p">;</span>
-    <span class="k">struct</span> <a class="reference internal" href="struct_tw_data_offer.html#doxid-dd-dd4-structtw-data-offer"><span class="std std-ref">tw_data_offer</span></a><span></span><span class="o">*</span> <span class="doxyrest-code-target target" id="doxid-de-dbd-structtw-data-device-1a985f579a718b1820a00c02a74759b209"><span></span><span class="n">offer_set</span></span><span></span><span class="p">;</span>
+    <span class="k">struct</span> <span class="n">wl_list</span> <span class="doxyrest-code-target target" id="doxid-de-dbd-structtw-data-device-1ab89b597297a75db90d5588dcedc5c839"><span></span><span class="n">clients</span></span><span></span><span class="p">;</span>
+    <span class="k">struct</span> <a class="reference internal" href="struct_tw_data_source.html#doxid-dc-d55-structtw-data-source"><span class="std std-ref">tw_data_source</span></a><span></span><span class="o">*</span> <a class="reference internal" href="#doxid-de-dbd-structtw-data-device-1ac8d3b68d01b6934ce503b686072ded16"><span class="std std-ref">source_set</span></a><span></span><span class="p">;</span>
+    <span class="k">struct</span> <a class="reference internal" href="struct_tw_data_drag.html#doxid-d2-da0-structtw-data-drag"><span class="std std-ref">tw_data_drag</span></a><span></span> <span class="doxyrest-code-target target" id="doxid-de-dbd-structtw-data-device-1a718100cccb6338416220ad29a1c249ed"><span></span><span class="n">drag</span></span><span></span><span class="p">;</span>
+    <span class="k">struct</span> <span class="n">wl_listener</span> <span class="doxyrest-code-target target" id="doxid-de-dbd-structtw-data-device-1aad305cd4f8dd3c94fc7699d5dbd88f9d"><span></span><span class="n">source_destroy</span></span><span></span><span class="p">;</span>
     <span class="k">struct</span> <span class="n">wl_listener</span> <span class="doxyrest-code-target target" id="doxid-de-dbd-structtw-data-device-1a11568f7645da61e7a131aa5a71d9dc08"><span></span><span class="n">create_data_offer</span></span><span></span><span class="p">;</span>
+    <span class="k">struct</span> <span class="n">wl_listener</span> <span class="doxyrest-code-target target" id="doxid-de-dbd-structtw-data-device-1a978bac46128990f272b891015c391b0c"><span></span><span class="n">seat_destroy</span></span><span></span><span class="p">;</span>
 <span class="p">};</span></pre>
+</div>
+<div class="section" id="detailed-documentation">
+<span id="details-de-dbd-structtw-data-device"></span><h2>Detailed Documentation<a class="headerlink" href="#detailed-documentation" title="Permalink to this headline">¶</a></h2>
+<p><a class="reference internal" href="#doxid-de-dbd-structtw-data-device"><span class="std std-ref">tw_data_device</span></a> represents a seat</p>
+<p>the data_device tracks current data source, will be notified if source is gone.</p>
+<div class="section" id="fields">
+<h3>Fields<a class="headerlink" href="#fields" title="Permalink to this headline">¶</a></h3>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-de-dbd-structtw-data-device-1ac8d3b68d01b6934ce503b686072ded16"><span id="index-1"></span><span></span><span class="k">struct</span> <a class="reference internal" href="struct_tw_data_source.html#doxid-dc-d55-structtw-data-source"><span class="std std-ref">tw_data_source</span></a><span></span><span class="o">*</span> <span class="n">source_set</span></pre>
+<p>the drag for this device, since a seat has one drag at a time</p>
+</div>
+</div>
 </div>
 
 
 	  </div>
 	  
 <div class="col-md-3">
-  <div id="sidebar" class="bs-sidenav"><h3><a data-toggle="collapse" href="#globaltoc">Related Pages</a></h3>
+  <div id="sidebar" class="bs-sidenav">
+<h3>Content</h3>
+<div id="localtoc"><ul>
+<li><a class="reference internal" href="#">struct tw_data_device</a><ul>
+<li><a class="reference internal" href="#overview">Overview</a></li>
+<li><a class="reference internal" href="#detailed-documentation">Detailed Documentation</a><ul>
+<li><a class="reference internal" href="#fields">Fields</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<h3><a data-toggle="collapse" href="#globaltoc">Related Pages</a></h3>
 <div id="globaltoc" class="collapse">
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="page_md__home_developer_Projects_taiwins-web-src_taiwins_docs_api.html">Client data structures</a></li>
-<li class="toctree-l1"><a class="reference internal" href="page_md__home_developer_Projects_taiwins-web-src_taiwins_CONTRIBUTING.html">Contributing to Taiwins</a></li>
-<li class="toctree-l1"><a class="reference internal" href="page_md__home_developer_Projects_taiwins-web-src_taiwins_docs_lua.html">Lua bindings</a></li>
-<li class="toctree-l1"><a class="reference internal" href="page_md__home_developer_Projects_taiwins-web-src_taiwins_docs_window_management.html">Taiwins layout engine.</a></li>
-<li class="toctree-l1"><a class="reference internal" href="page_md__home_developer_Projects_taiwins-web-src_taiwins_README.html">Taiwins, a morden wayland window manager</a></li>
-<li class="toctree-l1"><a class="reference internal" href="page_md__home_developer_Projects_taiwins-web-src_taiwins_subprojects_twclient_README.html">wayland client utility library</a></li>
-<li class="toctree-l1"><a class="reference internal" href="page_md__home_developer_Projects_taiwins-web-src_taiwins_docs_wayland.html">wayland objects</a></li>
+<li class="toctree-l1"><a class="reference internal" href="page_md__home_developer_Projects_web-taiwins_taiwins_CONTRIBUTING.html">Contributing to Taiwins</a></li>
+<li class="toctree-l1"><a class="reference internal" href="page_md__home_developer_Projects_web-taiwins_taiwins_docs_lua.html">Lua bindings</a></li>
+<li class="toctree-l1"><a class="reference internal" href="page_md__home_developer_Projects_web-taiwins_taiwins_docs_window_management.html">Taiwins layout engine.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="page_md__home_developer_Projects_web-taiwins_taiwins_README.html">Taiwins, a morden wayland window manager</a></li>
+<li class="toctree-l1"><a class="reference internal" href="page_md__home_developer_Projects_web-taiwins_taiwins_docs_api.html">Twclient quick reference</a></li>
+<li class="toctree-l1"><a class="reference internal" href="page_md__home_developer_Projects_web-taiwins_taiwins_docs_twobjects.html">Twobjects quick reference</a></li>
+<li class="toctree-l1"><a class="reference internal" href="page_md__home_developer_Projects_web-taiwins_taiwins_docs_wayland.html">wayland</a></li>
 </ul>
 <ul class="current">
 <li class="toctree-l1 current"><a class="reference internal" href="global.html">Global Namespace</a></li>
@@ -126,7 +157,7 @@
     </p>
     <p>
         &copy; Copyright 2020, Xichen Zhou.<br/>
-      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 3.0.3.<br/>
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 3.2.1.<br/>
     </p>
   </div>
 </footer>

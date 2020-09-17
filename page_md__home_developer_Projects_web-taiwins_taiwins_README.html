@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <title>Taiwins, a morden wayland window manager &#8212; Taiwins</title>
+  
+    <link rel="stylesheet" href="_static/bootstrap-sphinx.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/my-style.css" />
+    <link rel="stylesheet" type="text/css" href="_static/doxyrest-pygments.css" />
+    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/language_data.js"></script>
+    <script src="_static/target-highlight.js"></script>
+    <link rel="shortcut icon" href="_static/favicon.ico"/>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Twclient quick reference" href="page_md__home_developer_Projects_web-taiwins_taiwins_docs_api.html" />
+    <link rel="prev" title="Taiwins layout engine." href="page_md__home_developer_Projects_web-taiwins_taiwins_docs_window_management.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<script type="text/javascript" src="_static/js/jquery-1.11.0.min.js "></script>
+<script type="text/javascript" src="_static/js/jquery-fix.js "></script>
+<script type="text/javascript" src="_static/bootstrap-3.3.7/js/bootstrap.min.js "></script>
+<script type="text/javascript" src="_static/bootstrap-sphinx.js "></script>
+
+  </head><body>
+  <div class="page-container">
+    
+<!-- taken from bootstrap theme -->
+<div id="navbar" class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">
+        <b>Taiwins</b></a>
+      <span class="navbar-text navbar-version pull-left"><b></b></span>
+    </div>
+
+    <div class="collapse navbar-collapse nav-collapse">
+      <ul class="nav navbar-nav">
+	<li><a href="page_doc.html">Documentation</a></li>
+	<li><a href="https://github.com/taiwins/taiwins">Source Code</a></li>
+	<li><a href="https://github.com/taiwins/taiwins/wiki">Wiki</a></li>
+	<!-- add other pages -->
+      </ul>
+    </div>
+  </div>
+</div>
+
+    <div class="container">
+      
+	<div class="row">
+	  <div class="body col-md-9 content" role="main">
+	    
+  <div class="section" id="taiwins-a-morden-wayland-window-manager">
+<span id="doxid-d4-d5e-md-home-developer-projects-web-taiwins-taiwins-r-e-a-d-m-e"></span><span id="index-0"></span><h1>Taiwins, a morden wayland window manager<a class="headerlink" href="#taiwins-a-morden-wayland-window-manager" title="Permalink to this headline">¶</a></h1>
+<p>Taiwins is a dynamic wayland window manager, supports both tiling and floating layout. It is designed to be mordern and modular. It is extensible through lua script and it has built-in <strong>shell</strong> and <strong>widgets</strong> implementation through <a class="reference external" href="https://github.com/vurtun/nuklear">nuklear GUI</a>. It also supports popular tiling window manager features like gapping.</p>
+<p>Taiwins is usable and currently under heavy developement. If you would like to contribute to the project, You can refer to <a class="reference internal" href="page_md__home_developer_Projects_web-taiwins_taiwins_CONTRIBUTING.html#doxid-d3-d94-md-home-developer-projects-web-taiwins-taiwins-c-o-n-t-r-i-b-u-t-i-n-g"><span class="std std-ref">contributing</span></a> for getting started.</p>
+<div class="section" id="how-to-build">
+<span id="doxid-d4-d5e-md-home-developer-projects-web-taiwins-taiwins-r-e-a-d-m-e-1autotoc-md60"></span><h2>How to build<a class="headerlink" href="#how-to-build" title="Permalink to this headline">¶</a></h2>
+<p>you will need following dependencies</p>
+<ul class="simple">
+<li><p>Pixman</p></li>
+<li><p>libweston(if you have an nvidia graphics card you may need weston-eglstream)</p></li>
+<li><p>xkbcommon</p></li>
+<li><p>libinput</p></li>
+<li><p>wayland</p></li>
+<li><p>wayland protocols</p></li>
+<li><p>cairo</p></li>
+<li><p>lua</p></li>
+<li><p>librsvg</p></li>
+<li><p>opengl or opengles</p></li>
+<li><p>meson</p></li>
+<li><p>ninja</p></li>
+<li><p>pam</p></li>
+<li><p>fontconfig</p></li>
+<li><p>freetype2</p></li>
+</ul>
+</div>
+<div class="section" id="build-steps">
+<span id="doxid-d4-d5e-md-home-developer-projects-web-taiwins-taiwins-r-e-a-d-m-e-1autotoc-md61"></span><h2>build steps:<a class="headerlink" href="#build-steps" title="Permalink to this headline">¶</a></h2>
+<p>with source code, you can easily compile and try out:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>git clone https://github.com/taiwins/taiwins --recursive taiwins &amp;&amp; cd taiwins
+
+meson wrap promote subprojects/twclient/subprojects/ctypes
+
+meson build &amp;&amp; ninja -C build
+</pre></div>
+</div>
+<p>For those who use Archlinux, there is an <a class="reference external" href="https://aur.archlinux.org/packages/taiwins-git">aur</a> package you can simply install.</p>
+</div>
+<div class="section" id="how-to-run">
+<span id="doxid-d4-d5e-md-home-developer-projects-web-taiwins-taiwins-r-e-a-d-m-e-1autotoc-md62"></span><h2>How to run<a class="headerlink" href="#how-to-run" title="Permalink to this headline">¶</a></h2>
+<p>Taiwins starts with default shell and default console they are found. You can also specifiy the shell application and console application through command line options.</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>cd build
+./bin/taiwins -s ./bin/taiwins-shell -c ./bin/taiwins-console
+</pre></div>
+</div>
+<p>Or if you install systemwisely, you can simply use</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>taiwins
+</pre></div>
+</div>
+<p>If you prefer not to have the shell, try <code class="docutils literal notranslate"><span class="pre">taiwins</span> <span class="pre">-n</span></code> which will make taiwins run without shell, user can start a shell later.</p>
+<p>The default configuration is <code class="docutils literal notranslate"><span class="pre">$XDG_CONFIG_PATH/taiwins/config.lua</span></code>, see the <a class="reference external" href="docs/config.lua">sample config</a> for example.</p>
+<div class="section" id="key-bindings">
+<span id="doxid-d4-d5e-md-home-developer-projects-web-taiwins-taiwins-r-e-a-d-m-e-1autotoc-md63"></span><h3>key-bindings<a class="headerlink" href="#key-bindings" title="Permalink to this headline">¶</a></h3>
+<p>Though it is configurable, by default available bindings are</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">F12</span></code> : quit taiwins</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Super+Shift+c</span></code> close current application</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Ctrl+LEFT/RIGHT</span></code> switch to previous/next workspace</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Alt+Super+b</span></code> switch to last workspace</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Alt+LEFT</span></code> resize window to the left (only in tiling mode)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Alt+RIGHT</span></code> resize window to the right (only in tiling mode)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Super+Space</span></code> toggle vertical/horizental layout (only in tiling mode)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Alt+Shift+Space</span></code> toggle window floating/tiling</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Alt+Shift+j</span></code> cycle through applications</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Super+v</span></code> creating vertical sub-layout (only in tiling mode)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Super+h</span></code> creating horizontal sub-layout (only in tiling mode)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Super+m</span></code> merge current application to parent layout</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Super+p</span></code> calling <strong>shell-console</strong> to launch application</p></li>
+</ul>
+</div>
+<div class="section" id="documentation">
+<span id="doxid-d4-d5e-md-home-developer-projects-web-taiwins-taiwins-r-e-a-d-m-e-1autotoc-md64"></span><h3>Documentation<a class="headerlink" href="#documentation" title="Permalink to this headline">¶</a></h3>
+<p>Currently documentation is generated through doxygen. enable <code class="docutils literal notranslate"><span class="pre">build_doc</span></code> option to enable building documentation. We also host a online themed <a class="reference external" href="https://taiwins.org/page_doc.html">documentation</a> which you can access.</p>
+</div>
+</div>
+</div>
+
+
+	  </div>
+	  
+<div class="col-md-3">
+  <div id="sidebar" class="bs-sidenav">
+<h3>Content</h3>
+<div id="localtoc"><ul>
+<li><a class="reference internal" href="#">Taiwins, a morden wayland window manager</a><ul>
+<li><a class="reference internal" href="#how-to-build">How to build</a></li>
+<li><a class="reference internal" href="#build-steps">build steps:</a></li>
+<li><a class="reference internal" href="#how-to-run">How to run</a><ul>
+<li><a class="reference internal" href="#key-bindings">key-bindings</a></li>
+<li><a class="reference internal" href="#documentation">Documentation</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<h3><a data-toggle="collapse" href="#globaltoc">Related Pages</a></h3>
+<div id="globaltoc" class="collapse">
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="page_md__home_developer_Projects_web-taiwins_taiwins_CONTRIBUTING.html">Contributing to Taiwins</a></li>
+<li class="toctree-l1"><a class="reference internal" href="page_md__home_developer_Projects_web-taiwins_taiwins_docs_lua.html">Lua bindings</a></li>
+<li class="toctree-l1"><a class="reference internal" href="page_md__home_developer_Projects_web-taiwins_taiwins_docs_window_management.html">Taiwins layout engine.</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Taiwins, a morden wayland window manager</a></li>
+<li class="toctree-l1"><a class="reference internal" href="page_md__home_developer_Projects_web-taiwins_taiwins_docs_api.html">Twclient quick reference</a></li>
+<li class="toctree-l1"><a class="reference internal" href="page_md__home_developer_Projects_web-taiwins_taiwins_docs_twobjects.html">Twobjects quick reference</a></li>
+<li class="toctree-l1"><a class="reference internal" href="page_md__home_developer_Projects_web-taiwins_taiwins_docs_wayland.html">wayland</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="global.html">Global Namespace</a></li>
+</ul>
+
+</div>
+<form action="search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+  </div>
+</div>
+
+	</div>
+      
+    </div>
+    <div class="push"></div>
+  </div>
+
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+    </p>
+    <p>
+        &copy; Copyright 2020, Xichen Zhou.<br/>
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 3.2.1.<br/>
+    </p>
+  </div>
+</footer>
+  </body>
+</html>

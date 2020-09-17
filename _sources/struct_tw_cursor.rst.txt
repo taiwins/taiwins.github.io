@@ -24,8 +24,8 @@ Overview
 	
 		int32_t :target:`hotspot_x<doxid-d5/d66/structtw__cursor_1acd8b3154bfba1608ef5c2da33e852169>`;
 		int32_t :target:`hotspot_y<doxid-d5/d66/structtw__cursor_1a5a081ee57d6166813f03c0fe1fccf29a>`;
-		int32_t :target:`x<doxid-d5/d66/structtw__cursor_1a1c26e19df02f94dab516deeeac996327>`;
-		int32_t :target:`y<doxid-d5/d66/structtw__cursor_1a5dc5deb73e019a3199d2b5645bb99668>`;
+		float :target:`x<doxid-d5/d66/structtw__cursor_1a5c8a367b7d7314f9aaf2cdbea9edc592>`;
+		float :target:`y<doxid-d5/d66/structtw__cursor_1a57ad99990cc04fdda4ccb1d509a882b0>`;
 		struct :ref:`tw_surface<doxid-dd/dda/structtw__surface>`* :target:`curr_surface<doxid-d5/d66/structtw__cursor_1abc137ca45844693dd81b6660ce288c4b>`;
 		struct wl_list :target:`constrains<doxid-d5/d66/structtw__cursor_1a23fba2a5bd6554d5c8f3194d3d8469fe>`;
 		struct :ref:`tw_cursor_constrain<doxid-d5/d5b/structtw__cursor__constrain>` :target:`curr_wrap<doxid-d5/d66/structtw__cursor_1a78401840937e6097f12096485a459a49>`;

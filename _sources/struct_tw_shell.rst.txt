@@ -38,7 +38,7 @@ Overview
 		struct :ref:`tw_layer<doxid-d7/d6a/structtw__layer>` :target:`locker_layer<doxid-de/dcd/structtw__shell_1a26804876cd7179ff5d67e269f7441a18>`;
 		struct :ref:`tw_surface<doxid-dd/dda/structtw__surface>`* :target:`the_widget_surface<doxid-de/dcd/structtw__shell_1a5eb5154af708ec53beb1370ede007746>`;
 		enum taiwins_shell_panel_pos :target:`panel_pos<doxid-de/dcd/structtw__shell_1af5c79d67808b17690a70453b3be82987>`;
-		struct wl_signal :target:`output_area_signal<doxid-de/dcd/structtw__shell_1a0932265ef78e28b462390078f45acc1c>`;
+		struct wl_signal :target:`desktop_area_signal<doxid-de/dcd/structtw__shell_1a97b258abb72565c02a39202251eaeb76>`;
 		struct wl_signal :target:`widget_create_signal<doxid-de/dcd/structtw__shell_1aefb29563b63b4c68c0eeb759f4f12648>`;
 		struct wl_signal :target:`widget_close_signal<doxid-de/dcd/structtw__shell_1a9df94c184c96f4b8770c71180f24814f>`;
 		struct wl_listener :target:`display_destroy_listener<doxid-de/dcd/structtw__shell_1aced41a0931b981bf808656d55a2e05d9>`;

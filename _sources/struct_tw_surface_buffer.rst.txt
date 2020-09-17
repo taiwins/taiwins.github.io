@@ -29,7 +29,7 @@ Overview
 		enum wl_shm_format :target:`format<doxid-d5/d87/structtw__surface__buffer_1a44b27d0f7f32f3bd31078d2c34c473ed>`;
 		uint32_t :target:`id<doxid-d5/d87/structtw__surface__buffer_1a42619e75d373e9f063077d9165d2d029>`;
 		void* :target:`ptr<doxid-d5/d87/structtw__surface__buffer_1aeb6e54499c218af6194fb3c6ac10d8a5>`;
-		union tw_surface_buffer::@39 :target:`handle<doxid-d5/d87/structtw__surface__buffer_1ae1fd6b8f3a6b8bd8e7839e0277569957>`;
+		union tw_surface_buffer::@0 :target:`handle<doxid-d5/d87/structtw__surface__buffer_1a69b923bf56757c188137531e090e02af>`;
 		struct wl_listener :target:`surface_destroy_listener<doxid-d5/d87/structtw__surface__buffer_1a91a8da0364d0244a7a79a0f8f85fdab2>`;
 	};
 .. _details-d5/d87/structtw__surface__buffer:

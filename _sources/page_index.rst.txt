@@ -4,9 +4,5 @@
 Taiwins Documentation
 =====================
 
-:target:`doxid-index_1mainpage` This manual documents the API and design of the taiwins. Several notes were registered along the development. You may get started by taking a look at client side :ref:`development guide <doxid-d4/d93/md__home_developer__projects_taiwins-web-src_taiwins_docs_api>`.
-
-Also you may be also interested in :ref:`wayland <doxid-d9/d4b/md__home_developer__projects_taiwins-web-src_taiwins_docs_wayland>` for a quick reference some wayland and `weston <https://gitlab.freedesktop.org/wayland/weston>`__ internals.
-
-:ref:`lua <doxid-de/d8c/md__home_developer__projects_taiwins-web-src_taiwins_docs_lua>` notes is for quick guide into coding with lua c API, and if you are intereted in window management, :ref:`here <doxid-d5/d39/md__home_developer__projects_taiwins-web-src_taiwins_docs_window_management>` is a reference.
+:target:`doxid-index_1mainpage` This manual documents the API and design of the Taiwins. Several notes were registered along the development. Taiwins consists of serveral **sub-projects** like **twclients** and **twobjects** for distinctive parts, those libraries are embedable and can be used independently outside serves general building blocks for wayland projects.
 

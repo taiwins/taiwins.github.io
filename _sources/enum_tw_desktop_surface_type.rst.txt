@@ -1,5 +1,5 @@
 .. index:: pair: enum; tw_desktop_surface_type
-.. _doxid-d5/da2/include_2taiwins_2objects_2desktop_8h_1a7eaa5ee6afc99c7b1ad6ce35c0dbff76:
+.. _doxid-d4/d45/desktop_8h_1a7eaa5ee6afc99c7b1ad6ce35c0dbff76:
 
 enum tw_desktop_surface_type
 ============================
@@ -13,8 +13,8 @@ enum tw_desktop_surface_type
 
 	enum tw_desktop_surface_type
 	{
-	    :target:`TW_DESKTOP_TOPLEVEL_SURFACE<doxid-d5/da2/include_2taiwins_2objects_2desktop_8h_1a7eaa5ee6afc99c7b1ad6ce35c0dbff76a0e0360700ec5a954426eeffa814b3758>`  = 1,
-	    :target:`TW_DESKTOP_TRANSIENT_SURFACE<doxid-d5/da2/include_2taiwins_2objects_2desktop_8h_1a7eaa5ee6afc99c7b1ad6ce35c0dbff76a7ebdd51a77b09d32a4703224da0cde00>` = 2,
-	    :target:`TW_DESKTOP_POPUP_SURFACE<doxid-d5/da2/include_2taiwins_2objects_2desktop_8h_1a7eaa5ee6afc99c7b1ad6ce35c0dbff76a7922e0c156c8464c38379a95acaf65f6>`     = 4,
+	    :target:`TW_DESKTOP_TOPLEVEL_SURFACE<doxid-d4/d45/desktop_8h_1a7eaa5ee6afc99c7b1ad6ce35c0dbff76a0e0360700ec5a954426eeffa814b3758>`  = 1,
+	    :target:`TW_DESKTOP_TRANSIENT_SURFACE<doxid-d4/d45/desktop_8h_1a7eaa5ee6afc99c7b1ad6ce35c0dbff76a7ebdd51a77b09d32a4703224da0cde00>` = 2,
+	    :target:`TW_DESKTOP_POPUP_SURFACE<doxid-d4/d45/desktop_8h_1a7eaa5ee6afc99c7b1ad6ce35c0dbff76a7922e0c156c8464c38379a95acaf65f6>`     = 4,
 	};
 

@@ -3,6 +3,7 @@
 <html>
   <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     
     <title>struct tw_data_offer &#8212; Taiwins</title>
   
@@ -20,7 +21,7 @@
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="struct tw_data_source" href="struct_tw_data_source.html" />
-    <link rel="prev" title="struct tw_data_device_manager" href="struct_tw_data_device_manager.html" />
+    <link rel="prev" title="struct tw_data_drag" href="struct_tw_data_drag.html" />
 <meta charset='utf-8'>
 <meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
 <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
@@ -68,35 +69,53 @@
 <span id="doxid-dd-dd4-structtw-data-offer"></span><span id="index-0"></span><h1>struct tw_data_offer<a class="headerlink" href="#struct-tw-data-offer" title="Permalink to this headline">¶</a></h1>
 <div class="toctree-wrapper compound">
 </div>
-<pre class="highlight doxyrest-overview-code-block literal-block"><span></span><span class="cp">#include</span> <span class="cpf">&lt;data_device.h&gt;</span><span class="cp"></span>
+<div class="section" id="overview">
+<h2>Overview<a class="headerlink" href="#overview" title="Permalink to this headline">¶</a></h2>
+<p><a class="reference internal" href="#doxid-dd-dd4-structtw-data-offer"><span class="std std-ref">tw_data_offer</span></a> represents multiple wl_data_offers in the clients. <a class="reference internal" href="#details-dd-dd4-structtw-data-offer"><span class="std std-ref">More…</span></a></p>
+<pre class="highlight doxyrest-overview-code-block literal-block"><span></span><span class="cp">#include</span> <span class="cpf">&lt;data_internal.h&gt;</span><span class="cp"></span>
 
 <span class="k">struct</span> <span class="n">tw_data_offer</span>
 <span class="p">{</span>
     <span class="c1">// fields</span>
 
     <span class="k">struct</span> <a class="reference internal" href="struct_tw_data_source.html#doxid-dc-d55-structtw-data-source"><span class="std std-ref">tw_data_source</span></a><span></span><span class="o">*</span> <span class="doxyrest-code-target target" id="doxid-dd-dd4-structtw-data-offer-1a5bdbaaa765bafc0aaef4a845d79c4faa"><span></span><span class="n">source</span></span><span></span><span class="p">;</span>
-    <span class="k">struct</span> <span class="n">wl_resource</span><span class="o">*</span> <span class="doxyrest-code-target target" id="doxid-dd-dd4-structtw-data-offer-1ae6da62c8cf97bac71280e6c8284a4572"><span></span><span class="n">resource</span></span><span></span><span class="p">;</span>
     <span class="k">struct</span> <span class="n">wl_resource</span><span class="o">*</span> <span class="doxyrest-code-target target" id="doxid-dd-dd4-structtw-data-offer-1af6ce83061e13f7c0cc983aaf14f9382c"><span></span><span class="n">current_surface</span></span><span></span><span class="p">;</span>
     <span class="k">struct</span> <span class="n">wl_listener</span> <span class="doxyrest-code-target target" id="doxid-dd-dd4-structtw-data-offer-1afe0a740bb6df999d733433450c7b056b"><span></span><span class="n">source_destroy_listener</span></span><span></span><span class="p">;</span>
-    <span class="k">struct</span> <span class="n">wl_list</span> <span class="doxyrest-code-target target" id="doxid-dd-dd4-structtw-data-offer-1af497078f797c12e9bda1565b35b53ab2"><span></span><span class="n">link</span></span><span></span><span class="p">;</span>
+    <span class="k">struct</span> <span class="n">wl_list</span> <span class="doxyrest-code-target target" id="doxid-dd-dd4-structtw-data-offer-1a37a21171528aca9d12f9aad58118475b"><span></span><span class="n">resources</span></span><span></span><span class="p">;</span>
     <span class="kt">bool</span> <span class="doxyrest-code-target target" id="doxid-dd-dd4-structtw-data-offer-1a5f17b4e2e529b71762b7e5f46e3cb948"><span></span><span class="n">finished</span></span><span></span><span class="p">;</span>
 <span class="p">};</span></pre>
+</div>
+<div class="section" id="detailed-documentation">
+<span id="details-dd-dd4-structtw-data-offer"></span><h2>Detailed Documentation<a class="headerlink" href="#detailed-documentation" title="Permalink to this headline">¶</a></h2>
+<p><a class="reference internal" href="#doxid-dd-dd4-structtw-data-offer"><span class="std std-ref">tw_data_offer</span></a> represents multiple wl_data_offers in the clients.</p>
+<p>the offer tracks its source, will get notified when source is gone.</p>
+</div>
 </div>
 
 
 	  </div>
 	  
 <div class="col-md-3">
-  <div id="sidebar" class="bs-sidenav"><h3><a data-toggle="collapse" href="#globaltoc">Related Pages</a></h3>
+  <div id="sidebar" class="bs-sidenav">
+<h3>Content</h3>
+<div id="localtoc"><ul>
+<li><a class="reference internal" href="#">struct tw_data_offer</a><ul>
+<li><a class="reference internal" href="#overview">Overview</a></li>
+<li><a class="reference internal" href="#detailed-documentation">Detailed Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<h3><a data-toggle="collapse" href="#globaltoc">Related Pages</a></h3>
 <div id="globaltoc" class="collapse">
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="page_md__home_developer_Projects_taiwins-web-src_taiwins_docs_api.html">Client data structures</a></li>
-<li class="toctree-l1"><a class="reference internal" href="page_md__home_developer_Projects_taiwins-web-src_taiwins_CONTRIBUTING.html">Contributing to Taiwins</a></li>
-<li class="toctree-l1"><a class="reference internal" href="page_md__home_developer_Projects_taiwins-web-src_taiwins_docs_lua.html">Lua bindings</a></li>
-<li class="toctree-l1"><a class="reference internal" href="page_md__home_developer_Projects_taiwins-web-src_taiwins_docs_window_management.html">Taiwins layout engine.</a></li>
-<li class="toctree-l1"><a class="reference internal" href="page_md__home_developer_Projects_taiwins-web-src_taiwins_README.html">Taiwins, a morden wayland window manager</a></li>
-<li class="toctree-l1"><a class="reference internal" href="page_md__home_developer_Projects_taiwins-web-src_taiwins_subprojects_twclient_README.html">wayland client utility library</a></li>
-<li class="toctree-l1"><a class="reference internal" href="page_md__home_developer_Projects_taiwins-web-src_taiwins_docs_wayland.html">wayland objects</a></li>
+<li class="toctree-l1"><a class="reference internal" href="page_md__home_developer_Projects_web-taiwins_taiwins_CONTRIBUTING.html">Contributing to Taiwins</a></li>
+<li class="toctree-l1"><a class="reference internal" href="page_md__home_developer_Projects_web-taiwins_taiwins_docs_lua.html">Lua bindings</a></li>
+<li class="toctree-l1"><a class="reference internal" href="page_md__home_developer_Projects_web-taiwins_taiwins_docs_window_management.html">Taiwins layout engine.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="page_md__home_developer_Projects_web-taiwins_taiwins_README.html">Taiwins, a morden wayland window manager</a></li>
+<li class="toctree-l1"><a class="reference internal" href="page_md__home_developer_Projects_web-taiwins_taiwins_docs_api.html">Twclient quick reference</a></li>
+<li class="toctree-l1"><a class="reference internal" href="page_md__home_developer_Projects_web-taiwins_taiwins_docs_twobjects.html">Twobjects quick reference</a></li>
+<li class="toctree-l1"><a class="reference internal" href="page_md__home_developer_Projects_web-taiwins_taiwins_docs_wayland.html">wayland</a></li>
 </ul>
 <ul class="current">
 <li class="toctree-l1 current"><a class="reference internal" href="global.html">Global Namespace</a></li>
@@ -127,7 +146,7 @@
     </p>
     <p>
         &copy; Copyright 2020, Xichen Zhou.<br/>
-      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 3.0.3.<br/>
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 3.2.1.<br/>
     </p>
   </div>
 </footer>

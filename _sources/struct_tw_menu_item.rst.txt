@@ -21,7 +21,7 @@ struct tw_menu_item
 	
 		char :target:`title<doxid-da/dc1/structtw__menu__item_1a105886e8fcf2d2540f4c856ec58914c5>`[TAIWINS_MAX_MENU_ITEM_NAME+1];
 		char :target:`cmd<doxid-da/dc1/structtw__menu__item_1a287306797b6087ad5ea21b9916b838f3>`[TAIWINS_MAX_MENU_CMD_LEN+1];
-		struct tw_menu_item::@5 :target:`endnode<doxid-da/dc1/structtw__menu__item_1a41ea23aafc0f63b0070591d1fb92cf75>`;
+		struct tw_menu_item::@0 :target:`endnode<doxid-da/dc1/structtw__menu__item_1ae8ee336f143d3e26cb608d9af9fa6026>`;
 		bool :target:`has_submenu<doxid-da/dc1/structtw__menu__item_1a334b590ca97e67f4456dcc3386cfe162>`;
 		size_t :target:`len<doxid-da/dc1/structtw__menu__item_1a7b82df144c5e2446f04086f8a443407c>`;
 	};

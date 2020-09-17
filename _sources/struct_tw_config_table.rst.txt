@@ -26,7 +26,7 @@ Overview
 		uint32_t :target:`enable_globals<doxid-d8/dac/structtw__config__table_1a10213b02278f3e3e8e1e343ffe13b13f>`;
 		struct :ref:`tw_config_output<doxid-d8/d4a/structtw__config__output>` :target:`outputs<doxid-d8/dac/structtw__config__table_1a2a8926f27729936c527a400367133e3f>`[8];
 		pending_layout_t :target:`layout<doxid-d8/dac/structtw__config__table_1a7dc4039853b365cc65d52538fcf1a5a3>`;
-		struct tw_config_table::@15 :target:`workspaces<doxid-d8/dac/structtw__config__table_1a6eec0968b7f315ac6153d8a1d05b6fd9>`[MAX_WORKSPACES];
+		struct tw_config_table::@0 :target:`workspaces<doxid-d8/dac/structtw__config__table_1a963c0552b648ce58578cbb6416f49384>`[MAX_WORKSPACES];
 		pending_uintval_t :target:`desktop_igap<doxid-d8/dac/structtw__config__table_1a104c5534664be17130506d4c9abd9ce4>`;
 		pending_uintval_t :target:`desktop_ogap<doxid-d8/dac/structtw__config__table_1ad2a69dcbf8f08602c74349ac608cab65>`;
 		pending_panel_pos_t :target:`panel_pos<doxid-d8/dac/structtw__config__table_1ae978036a196e21c1b47b4fdfe8af7018>`;

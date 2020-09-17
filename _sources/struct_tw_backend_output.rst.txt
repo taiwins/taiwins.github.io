@@ -39,11 +39,15 @@ backend output :ref:`More...<details-d4/d63/structtw__backend__output>`
 		int32_t :target:`refresh<doxid-d4/d63/structtw__backend__output_1a964977238d9e4861d7a7d03a095f2532>`;
 		float :target:`scale<doxid-d4/d63/structtw__backend__output_1ac866bfa55e1225dcd0cd99a4e487af5c>`;
 		enum wl_output_transform :target:`transform<doxid-d4/d63/structtw__backend__output_1a2632a143a440d971af2d5067db8bd396>`;
-		struct :ref:`tw_cursor_constrain<doxid-d5/d5b/structtw__cursor__constrain>` :target:`constrain<doxid-d4/d63/structtw__backend__output_1ae8492d0399eeff5712265de015d5ef56>`;
+		struct :ref:`tw_cursor_constrain<doxid-d5/d5b/structtw__cursor__constrain>` :ref:`constrain<doxid-d4/d63/structtw__backend__output_1ae8492d0399eeff5712265de015d5ef56>`;
+		pixman_region32_t :target:`damages<doxid-d4/d63/structtw__backend__output_1ae8acef49d2ec2adbad901a6283b63eed>`[3];
+		pixman_region32_t* :target:`pending_damage<doxid-d4/d63/structtw__backend__output_1a533e0478b8101335ac5f0d25b7579c54>`;
+		pixman_region32_t* :target:`curr_damage<doxid-d4/d63/structtw__backend__output_1a279d3f59992184c249a5ce5ec8d243a8>`;
+		pixman_region32_t* :target:`prev_damage<doxid-d4/d63/structtw__backend__output_1a9eb0a16e752fa1f7debdad98f9de606d>`;
 		float :target:`gamma_value<doxid-d4/d63/structtw__backend__output_1a0fe96adbad36c33c50a7bd245d722ece>`;
 		struct :ref:`tw_mat3<doxid-d4/da4/structtw__mat3>` :target:`view_2d<doxid-d4/d63/structtw__backend__output_1a83745dba6276f9d4270cb17b27cf4a4a>`;
-		enum tw_backend_output::@27::@28 :ref:`repaint_state<doxid-d4/d63/structtw__backend__output_1a8f816bb2843f5e7eff1fa0d5b79f88ec>`;
-		struct tw_backend_output::@27 :target:`state<doxid-d4/d63/structtw__backend__output_1acb3b273ae31085b01e2b9ae3f1deb15e>`;
+		enum tw_backend_output::@0::@1 :ref:`repaint_state<doxid-d4/d63/structtw__backend__output_1ac72cf63b609edbc554decfec48ac57f7>`;
+		struct tw_backend_output::@0 :target:`state<doxid-d4/d63/structtw__backend__output_1abae76762d803805e0ef011294025edf7>`;
 		struct wl_listener :target:`frame_listener<doxid-d4/d63/structtw__backend__output_1a73d0b60d012517ce9031eb46d290d552>`;
 		struct wl_listener :target:`destroy_listener<doxid-d4/d63/structtw__backend__output_1a3ab6b90f6d15f32c4122c04b81674169>`;
 	};
@@ -69,8 +73,18 @@ Fields
 
 tw_surface->output_link
 
+.. index:: pair: variable; constrain
+.. _doxid-d4/d63/structtw__backend__output_1ae8492d0399eeff5712265de015d5ef56:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	struct :ref:`tw_cursor_constrain<doxid-d5/d5b/structtw__cursor__constrain>` constrain
+
+we have 3 frame_damages for triple buffering
+
 .. index:: pair: variable; repaint_state
-.. _doxid-d4/d63/structtw__backend__output_1a8f816bb2843f5e7eff1fa0d5b79f88ec:
+.. _doxid-d4/d63/structtw__backend__output_1ac72cf63b609edbc554decfec48ac57f7:
 
 .. ref-code-block:: cpp
 	:class: doxyrest-title-code-block

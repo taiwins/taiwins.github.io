@@ -1,0 +1,27 @@
+.. index:: pair: struct; tw_data_drag
+.. _doxid-d2/da0/structtw__data__drag:
+
+struct tw_data_drag
+===================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <data_internal.h>
+	
+	struct tw_data_drag
+	{
+		// fields
+	
+		struct :ref:`tw_data_source<doxid-dc/d55/structtw__data__source>`* :target:`source<doxid-d2/da0/structtw__data__drag_1ac7a1068b193c87b2594c20f89a59798a>`;
+		struct wl_resource* :target:`dest_device_resource<doxid-d2/da0/structtw__data__drag_1a13e45bc37cca9e00b78ba312d759d191>`;
+		struct :ref:`tw_seat_pointer_grab<doxid-d9/d46/structtw__seat__pointer__grab>` :target:`pointer_grab<doxid-d2/da0/structtw__data__drag_1ab4a83033a58d200d3825cffc477b6426>`;
+		struct :ref:`tw_seat_keyboard_grab<doxid-de/dfc/structtw__seat__keyboard__grab>` :target:`keyboard_grab<doxid-d2/da0/structtw__data__drag_1a0e5aad752ea62ba4ad39eb9a5f93f322>`;
+		struct wl_listener :target:`source_destroy_listener<doxid-d2/da0/structtw__data__drag_1aa58a222f93fda448672a7c4f66b738b8>`;
+	};

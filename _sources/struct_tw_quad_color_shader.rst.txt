@@ -22,5 +22,6 @@ struct tw_quad_color_shader
 		GLuint :target:`prog<doxid-d1/d63/structtw__quad__color__shader_1aece11383d94bfb432f4730e879c93a38>`;
 		GLint :target:`proj<doxid-d1/d63/structtw__quad__color__shader_1a4facaaeeaf661e74c00a2c3828f21b13>`;
 		GLint :target:`color<doxid-d1/d63/structtw__quad__color__shader_1aeecfc0e08599a4b74ce9c40bba98da62>`;
-		struct tw_quad_color_shader::@57 :target:`uniform<doxid-d1/d63/structtw__quad__color__shader_1a74739ecab530776725cc310ba76a265a>`;
+		GLint :target:`alpha<doxid-d1/d63/structtw__quad__color__shader_1a6839b2d7305c6933a758d994b104d791>`;
+		struct tw_quad_color_shader::@0 :target:`uniform<doxid-d1/d63/structtw__quad__color__shader_1a0fb3615a9e71537428e2745e2ac48201>`;
 	};

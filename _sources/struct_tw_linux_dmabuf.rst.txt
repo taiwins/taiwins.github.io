@@ -28,9 +28,9 @@ Overview
 		void(* :target:`format_request<doxid-d7/dc2/structtw__linux__dmabuf_1ae0a3483419c9af4135b940fc2a294e6e>`)(struct tw_linux_dmabuf *dmabuf, void *callback, int *formats, size_t *nformats);
 		void(* :target:`modifiers_request<doxid-d7/dc2/structtw__linux__dmabuf_1a12f3e67d3ac120ff3fefe1e598fb185d>`)(struct tw_linux_dmabuf *dmabuf, void *callback, int format, uint64_t *modifiers, size_t *nmodifiers);
 		void* :target:`callback<doxid-d7/dc2/structtw__linux__dmabuf_1a64b9be233b34c165214654d564b8f1ed>`;
-		struct tw_linux_dmabuf::@37 :ref:`format_request<doxid-d7/dc2/structtw__linux__dmabuf_1a6747ca29eb41e2344fed971d4a10d54f>`;
+		struct tw_linux_dmabuf::@0 :ref:`format_request<doxid-d7/dc2/structtw__linux__dmabuf_1a7e821a320414ff295cb659905357d3f1>`;
 		bool(* :target:`import_buffer<doxid-d7/dc2/structtw__linux__dmabuf_1a9608b5b747bbff1e8b5bf3963058350d>`)(struct tw_dmabuf_attributes *attrs, void *callback);
-		struct tw_linux_dmabuf::@38 :target:`import_buffer<doxid-d7/dc2/structtw__linux__dmabuf_1a51b4161b8f795521b8d09abad32f427e>`;
+		struct tw_linux_dmabuf::@1 :target:`import_buffer<doxid-d7/dc2/structtw__linux__dmabuf_1ac2ef58f8be94b02c986cc796c2245b3b>`;
 	};
 .. _details-d7/dc2/structtw__linux__dmabuf:
 
@@ -43,7 +43,7 @@ Fields
 ------
 
 .. index:: pair: variable; format_request
-.. _doxid-d7/dc2/structtw__linux__dmabuf_1a6747ca29eb41e2344fed971d4a10d54f:
+.. _doxid-d7/dc2/structtw__linux__dmabuf_1a7e821a320414ff295cb659905357d3f1:
 
 .. ref-code-block:: cpp
 	:class: doxyrest-title-code-block

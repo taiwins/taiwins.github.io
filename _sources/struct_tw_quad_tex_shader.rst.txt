@@ -23,5 +23,5 @@ struct tw_quad_tex_shader
 		GLint :target:`proj<doxid-d2/dac/structtw__quad__tex__shader_1a9ca8806a04aafbc064b5fb7e8d649f67>`;
 		GLint :target:`alpha<doxid-d2/dac/structtw__quad__tex__shader_1a5aee5a9ce172346bbcdf282af2784aa8>`;
 		GLint :target:`texture<doxid-d2/dac/structtw__quad__tex__shader_1a983b1c3a21a7db429a12d114be0a0c1b>`;
-		struct tw_quad_tex_shader::@58 :target:`uniform<doxid-d2/dac/structtw__quad__tex__shader_1a15769fbb705c1e11f0488ddf2c724c72>`;
+		struct tw_quad_tex_shader::@1 :target:`uniform<doxid-d2/dac/structtw__quad__tex__shader_1a5ceabf0b76caf4e2b21ab43a564e150f>`;
 	};

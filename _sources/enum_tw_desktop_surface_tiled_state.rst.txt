@@ -1,0 +1,21 @@
+.. index:: pair: enum; tw_desktop_surface_tiled_state
+.. _doxid-d4/d45/desktop_8h_1a0d3213f8e1d2c2e8360a7b4694ac7328:
+
+enum tw_desktop_surface_tiled_state
+===================================
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <desktop.h>
+
+	enum tw_desktop_surface_tiled_state
+	{
+	    :target:`TW_DESKTOP_SURFACE_TILED_LEFT<doxid-d4/d45/desktop_8h_1a0d3213f8e1d2c2e8360a7b4694ac7328ab8dfb7b604ee469cb855ea42e7ec88b9>`   = 1<<0,
+	    :target:`TW_DESKTOP_SURFACE_TILED_RIGHT<doxid-d4/d45/desktop_8h_1a0d3213f8e1d2c2e8360a7b4694ac7328a303db8825f76ee3034c49aba99fcd7ad>`  = 1<<1,
+	    :target:`TW_DESKTOP_SURFACE_TILED_TOP<doxid-d4/d45/desktop_8h_1a0d3213f8e1d2c2e8360a7b4694ac7328a5300775f9e3b5ce3ab603f68e71494d5>`    = 1<<2,
+	    :target:`TW_DESKTOP_SURFACE_TILED_BOTTOM<doxid-d4/d45/desktop_8h_1a0d3213f8e1d2c2e8360a7b4694ac7328a31c147c1e5644f6d7941a2d78fdd9df4>` = 1<<3,
+	};
+

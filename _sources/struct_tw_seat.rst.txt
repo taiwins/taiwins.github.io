@@ -29,9 +29,12 @@ struct tw_seat
 		uint32_t :target:`repeat_rate<doxid-dc/d28/structtw__seat_1a19424260096da480d5e11641302436b0>`;
 		uint32_t :target:`last_pointer_serial<doxid-dc/d28/structtw__seat_1a470047ac4b29ff046d775721b7cde914>`;
 		uint32_t :target:`last_touch_serial<doxid-dc/d28/structtw__seat_1a1f56c76d57d98574f08c6682aac9ff27>`;
+		uint32_t :target:`last_keyboard_serial<doxid-dc/d28/structtw__seat_1acf1c6820e2d52b4cc4dc8b59a78ca9b0>`;
 		struct :ref:`tw_keyboard<doxid-d6/dc5/structtw__keyboard>` :target:`keyboard<doxid-dc/d28/structtw__seat_1a474012abf8b1f2ad05c5f10544eacc2c>`;
 		struct :ref:`tw_pointer<doxid-d8/db5/structtw__pointer>` :target:`pointer<doxid-dc/d28/structtw__seat_1a2a0d4a871087bf7779eb0f20100c701c>`;
 		struct :ref:`tw_touch<doxid-d1/d77/structtw__touch>` :target:`touch<doxid-dc/d28/structtw__seat_1ad39db08f8763110289b61277652fddbe>`;
+		struct :ref:`tw_cursor<doxid-d5/d66/structtw__cursor>`* :target:`cursor<doxid-dc/d28/structtw__seat_1ac7ef2f0796d382783e26db3e610ff71d>`;
 		struct wl_signal :target:`new_cursor_signal<doxid-dc/d28/structtw__seat_1ab7d0250a0cb68c424edd4b9155beb5e8>`;
 		struct wl_signal :target:`focus_signal<doxid-dc/d28/structtw__seat_1a2ed391b32ab1c9737dc104fd880f192a>`;
+		struct wl_signal :target:`destroy_signal<doxid-dc/d28/structtw__seat_1a66939a4794c15c13641409ff0ee311d2>`;
 	};

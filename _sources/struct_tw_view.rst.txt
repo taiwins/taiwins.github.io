@@ -32,10 +32,10 @@ Overview
 		int32_t :target:`y<doxid-d1/d3c/structtw__view_1ac2ab5511f75fc0fd40cc28e1e29ba370>`;
 		int32_t :target:`w<doxid-d1/d3c/structtw__view_1a58d346fb6f390807529b01c5468b9023>`;
 		int32_t :target:`h<doxid-d1/d3c/structtw__view_1abcb012ebbddf1d419d2bf63bfdac25e7>`;
-		struct tw_view::@40 :target:`crop<doxid-d1/d3c/structtw__view_1a7246bdcb625d0a1d655b570dc885b034>`;
+		struct tw_view::@1 :target:`crop<doxid-d1/d3c/structtw__view_1a71316648d0a401f5885ac63671817d1c>`;
 		uint32_t :target:`w<doxid-d1/d3c/structtw__view_1ab6fd1ff8c702c60c1c41f9ecc73a0d29>`;
 		uint32_t :target:`h<doxid-d1/d3c/structtw__view_1a27eecf072054b57f3272fc810dc342a6>`;
-		struct tw_view::@41 :target:`surface_scale<doxid-d1/d3c/structtw__view_1aee2a279c37f6488da6ca76d0452fd2a4>`;
+		struct tw_view::@2 :target:`surface_scale<doxid-d1/d3c/structtw__view_1ae444d3ef336a44a31d3215286ecd1303>`;
 		struct :ref:`tw_mat3<doxid-d4/da4/structtw__mat3>` :target:`surface_to_buffer<doxid-d1/d3c/structtw__view_1a1ced211a1a5ccef04edd5b4b81f8fb6d>`;
 		struct :ref:`tw_plane<doxid-d8/d69/structtw__plane>`* :target:`plane<doxid-d1/d3c/structtw__view_1afbdfc1eced7812477c65ad6b2ac9a228>`;
 		struct wl_resource* :target:`buffer_resource<doxid-d1/d3c/structtw__view_1a2a4d085d70dcddd730f0ce26d958fd43>`;

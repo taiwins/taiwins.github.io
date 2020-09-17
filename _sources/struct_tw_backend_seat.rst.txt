@@ -33,17 +33,17 @@ Overview
 		struct wl_listener :target:`modifiers<doxid-de/d40/structtw__backend__seat_1aba02e424b795b7efd49c78b9056897dd>`;
 		struct wl_listener :target:`key<doxid-de/d40/structtw__backend__seat_1a3f1c006c49d82c2d15c8c318fc362fc3>`;
 		struct xkb_rule_names :ref:`rules<doxid-de/d40/structtw__backend__seat_1a1937d01baafde6a4371ab54abe5915b3>`;
-		struct tw_backend_seat::@29 :target:`keyboard<doxid-de/d40/structtw__backend__seat_1a54c3da430610d3b06cb1705b4b1a32fc>`;
+		struct tw_backend_seat::@2 :target:`keyboard<doxid-de/d40/structtw__backend__seat_1a1aab83cd47a136ceb3ac91b283b01844>`;
 		struct wl_listener :target:`button<doxid-de/d40/structtw__backend__seat_1a64450bb1d4edc2e67067aa858951c48c>`;
 		struct wl_listener :target:`motion<doxid-de/d40/structtw__backend__seat_1a2f7d842e06018cb441eab041a9532f0f>`;
 		struct wl_listener :target:`motion_abs<doxid-de/d40/structtw__backend__seat_1a9cd630f55f21720dfc034cca64ec70ce>`;
 		struct wl_listener :target:`axis<doxid-de/d40/structtw__backend__seat_1a5decce8fa7f8733908be026b064ba46d>`;
 		struct wl_listener :target:`frame<doxid-de/d40/structtw__backend__seat_1a54728c87189479a4a6bb240099022137>`;
-		struct tw_backend_seat::@30 :target:`pointer<doxid-de/d40/structtw__backend__seat_1a4e9057dc62c7a92e63d9b5b17b5d744d>`;
+		struct tw_backend_seat::@3 :target:`pointer<doxid-de/d40/structtw__backend__seat_1a51ebf597af7e89c6577485705a461f2b>`;
 		struct wl_listener :target:`down<doxid-de/d40/structtw__backend__seat_1a64f7615d521b386467a1c1b7915abefa>`;
 		struct wl_listener :target:`up<doxid-de/d40/structtw__backend__seat_1ae9c41e54d74bdbb69c75abde9b03bbba>`;
 		struct wl_listener :target:`cancel<doxid-de/d40/structtw__backend__seat_1a37af3b09bcde59033292885c1cb9364a>`;
-		struct tw_backend_seat::@31 :target:`touch<doxid-de/d40/structtw__backend__seat_1adeaf816816969ed641726f6721b53b08>`;
+		struct tw_backend_seat::@4 :target:`touch<doxid-de/d40/structtw__backend__seat_1a84aba6d84c4e835db4482a1054b320ba>`;
 	};
 .. _details-de/d40/structtw__backend__seat:
 
