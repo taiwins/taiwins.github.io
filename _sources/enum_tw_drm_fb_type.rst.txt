@@ -1,0 +1,19 @@
+.. index:: pair: enum; tw_drm_fb_type
+.. _doxid-dc/dc3/backend_2drm_2internal_8h_1af849e553cafaec1ab4a5087d7c0f5f08:
+
+enum tw_drm_fb_type
+===================
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <internal.h>
+
+	enum tw_drm_fb_type
+	{
+	    :target:`TW_DRM_FB_SURFACE<doxid-dc/dc3/backend_2drm_2internal_8h_1af849e553cafaec1ab4a5087d7c0f5f08a235f28c03341f22b24c039c6f3e06728>`,
+	    :target:`TW_DRM_FB_WL_BUFFER<doxid-dc/dc3/backend_2drm_2internal_8h_1af849e553cafaec1ab4a5087d7c0f5f08a36192fec7ece049315108d4ead7247a6>`,
+	};
+

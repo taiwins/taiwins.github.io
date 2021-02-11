@@ -1,0 +1,51 @@
+.. index:: pair: struct; tw_output_device_state
+.. _doxid-d0/d90/structtw__output__device__state:
+
+struct tw_output_device_state
+=============================
+
+.. toctree::
+	:hidden:
+
+Overview
+~~~~~~~~
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <output_device.h>
+	
+	struct tw_output_device_state
+	{
+		// fields
+	
+		bool :target:`enabled<doxid-d0/d90/structtw__output__device__state_1a81738998ebb7036969d3a9fba2d70094>`;
+		float :target:`scale<doxid-d0/d90/structtw__output__device__state_1ae9f37375b488317968d07f57ce9e12b9>`;
+		int32_t :target:`gx<doxid-d0/d90/structtw__output__device__state_1adfc38f1f8234945faa79f61ebfce0fab>`;
+		int32_t :ref:`gy<doxid-d0/d90/structtw__output__device__state_1a8c4ebc83afdf59da4e4ccb03a33ec787>`;
+		enum wl_output_transform :target:`transform<doxid-d0/d90/structtw__output__device__state_1ab6d2235a4c1b62a3e467ee99843f92e3>`;
+		struct :ref:`tw_output_device_mode<doxid-d8/d1a/structtw__output__device__mode>` :target:`current_mode<doxid-d0/d90/structtw__output__device__state_1a42717c53d67260a907dfef509ec34e51>`;
+	};
+.. _details-d0/d90/structtw__output__device__state:
+
+Detailed Documentation
+~~~~~~~~~~~~~~~~~~~~~~
+
+
+
+Fields
+------
+
+.. index:: pair: variable; gy
+.. _doxid-d0/d90/structtw__output__device__state_1a8c4ebc83afdf59da4e4ccb03a33ec787:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	int32_t gy
+
+x,y position in global space
+

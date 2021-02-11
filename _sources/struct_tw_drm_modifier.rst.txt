@@ -1,0 +1,24 @@
+.. index:: pair: struct; tw_drm_modifier
+.. _doxid-d4/ddd/structtw__drm__modifier:
+
+struct tw_drm_modifier
+======================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <drm_formats.h>
+	
+	struct tw_drm_modifier
+	{
+		// fields
+	
+		uint64_t :target:`modifier<doxid-d4/ddd/structtw__drm__modifier_1aac0c16da94f61eb4c91ac74402d31bbc>`;
+		bool :target:`external<doxid-d4/ddd/structtw__drm__modifier_1a8565cbc0f5d7affe900b90a0dc0cad6f>`;
+	};

@@ -1,0 +1,24 @@
+.. index:: pair: struct; tw_drm_mode_info
+.. _doxid-df/d84/structtw__drm__mode__info:
+
+struct tw_drm_mode_info
+=======================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <internal.h>
+	
+	struct tw_drm_mode_info
+	{
+		// fields
+	
+		drmModeModeInfo :target:`info<doxid-df/d84/structtw__drm__mode__info_1a5c6d4073b92962688fc932bc501104cc>`;
+		struct :ref:`tw_output_device_mode<doxid-d8/d1a/structtw__output__device__mode>` :target:`mode<doxid-df/d84/structtw__drm__mode__info_1af04f70cecd2fb9fe2d0829acb3afb62d>`;
+	};

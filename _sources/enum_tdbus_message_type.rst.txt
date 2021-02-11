@@ -1,5 +1,5 @@
 .. index:: pair: enum; tdbus_message_type
-.. _doxid-d2/d1b/tdbus_8h_1a75b836600d05459baf5d6100eb71e090:
+.. _doxid-dc/dc8/tdbus__message_8h_1a75b836600d05459baf5d6100eb71e090:
 
 enum tdbus_message_type
 =======================
@@ -9,14 +9,14 @@ enum tdbus_message_type
 .. ref-code-block:: cpp
 	:class: doxyrest-overview-code-block
 
-	#include <tdbus.h>
+	#include <tdbus_message.h>
 
 	enum tdbus_message_type
 	{
-	    :target:`TDBUS_MSG_SIGNAL<doxid-d2/d1b/tdbus_8h_1a75b836600d05459baf5d6100eb71e090af8cc898380bd0c770b5c3433f14f3b39>`,
-	    :target:`TDBUS_MSG_CALL<doxid-d2/d1b/tdbus_8h_1a75b836600d05459baf5d6100eb71e090ae86643f76e4ccf99c119b614ac0e9e15>`,
-	    :target:`TDBUS_MSG_REPLY<doxid-d2/d1b/tdbus_8h_1a75b836600d05459baf5d6100eb71e090a8e3029582f251e41980f52fc1156edc9>`,
-	    :target:`TDBUS_MSG_ERROR<doxid-d2/d1b/tdbus_8h_1a75b836600d05459baf5d6100eb71e090a9d335502fefb55b784a2819b6d2ddc87>`,
-	    :target:`TDBUS_MSG_MAX_ENUM<doxid-d2/d1b/tdbus_8h_1a75b836600d05459baf5d6100eb71e090a4378db11b5679f375b85305714cbab7d>`,
+	    :target:`TDBUS_MSG_SIGNAL<doxid-dc/dc8/tdbus__message_8h_1a75b836600d05459baf5d6100eb71e090af8cc898380bd0c770b5c3433f14f3b39>`,
+	    :target:`TDBUS_MSG_CALL<doxid-dc/dc8/tdbus__message_8h_1a75b836600d05459baf5d6100eb71e090ae86643f76e4ccf99c119b614ac0e9e15>`,
+	    :target:`TDBUS_MSG_REPLY<doxid-dc/dc8/tdbus__message_8h_1a75b836600d05459baf5d6100eb71e090a8e3029582f251e41980f52fc1156edc9>`,
+	    :target:`TDBUS_MSG_ERROR<doxid-dc/dc8/tdbus__message_8h_1a75b836600d05459baf5d6100eb71e090a9d335502fefb55b784a2819b6d2ddc87>`,
+	    :target:`TDBUS_MSG_MAX_ENUM<doxid-dc/dc8/tdbus__message_8h_1a75b836600d05459baf5d6100eb71e090a4378db11b5679f375b85305714cbab7d>`,
 	};
 

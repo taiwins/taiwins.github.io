@@ -1,0 +1,28 @@
+.. index:: pair: struct; tw_keyboard_input
+.. _doxid-db/d7a/structtw__keyboard__input:
+
+struct tw_keyboard_input
+========================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <input_device.h>
+	
+	struct tw_keyboard_input
+	{
+		// fields
+	
+		xkb_led_mask_t :target:`depressed<doxid-db/d7a/structtw__keyboard__input_1a571cbbffe3ee979b9f4046bf29a0b0c2>`;
+		xkb_led_mask_t :target:`latched<doxid-db/d7a/structtw__keyboard__input_1a4e4961c30543bfcd998be9cc5afabfbc>`;
+		xkb_led_mask_t :target:`locked<doxid-db/d7a/structtw__keyboard__input_1a5c39d15427448be34996458ce023b26e>`;
+		xkb_led_mask_t :target:`group<doxid-db/d7a/structtw__keyboard__input_1a388247d5cd6ef39cbb8ea14763876cd6>`;
+		struct xkb_keymap* :target:`keymap<doxid-db/d7a/structtw__keyboard__input_1a1479e502d9318f7f7802c7df5dd994da>`;
+		struct xkb_state* :target:`keystate<doxid-db/d7a/structtw__keyboard__input_1a42c5549ad7e1309e22f7d018008b5bd0>`;
+	};

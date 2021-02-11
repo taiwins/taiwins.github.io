@@ -1,0 +1,19 @@
+.. index:: pair: enum; tw_renderer_type
+.. _doxid-d0/d10/render__context_8h_1a9208b36c7eda936fefebd66f79183aed:
+
+enum tw_renderer_type
+=====================
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <render_context.h>
+
+	enum tw_renderer_type
+	{
+	    :target:`TW_RENDERER_EGL<doxid-d0/d10/render__context_8h_1a9208b36c7eda936fefebd66f79183aeda1006ffd868f0022b4cf50367a7e4a587>`,
+	    :target:`TW_RENDERER_VK<doxid-d0/d10/render__context_8h_1a9208b36c7eda936fefebd66f79183aeda40227e56c241d94a2570c3f1c0fa84e6>`,
+	};
+

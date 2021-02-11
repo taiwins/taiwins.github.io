@@ -1,0 +1,37 @@
+.. index:: pair: struct; tw_serial_engine
+.. _doxid-d2/d08/structtw__serial__engine:
+
+struct tw_serial_engine
+=======================
+
+.. toctree::
+	:hidden:
+
+Overview
+~~~~~~~~
+
+serial engine is used to generate next serial number :ref:`More...<details-d2/d08/structtw__serial__engine>`
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <serial_engine.h>
+	
+	struct tw_serial_engine
+	{
+		// fields
+	
+		uint32_t :target:`curr_serial<doxid-d2/d08/structtw__serial__engine_1aec95ef0286607d8546fc0978a95e8d59>`;
+		struct wl_list :target:`serials<doxid-d2/d08/structtw__serial__engine_1a4a82eaba5f8c08db5488855c7f7e8f15>`;
+		struct :ref:`tw_serial_slot<doxid-db/dce/structtw__serial__slot>` :target:`lasts<doxid-d2/d08/structtw__serial__engine_1a58f196608ba04f70a72a0f9f878de2d2>`[TW_SERIAL_DEPTH];
+	};
+.. _details-d2/d08/structtw__serial__engine:
+
+Detailed Documentation
+~~~~~~~~~~~~~~~~~~~~~~
+
+serial engine is used to generate next serial number
+
+The engine is essenstially a queue with a fixed depth. We can use to verify the emitted serial.
+

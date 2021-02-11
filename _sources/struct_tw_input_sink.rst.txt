@@ -1,0 +1,66 @@
+.. index:: pair: struct; tw_input_sink
+.. _doxid-da/d91/structtw__input__sink:
+
+struct tw_input_sink
+====================
+
+.. toctree::
+	:hidden:
+
+Overview
+~~~~~~~~
+
+this struct mirrors the :ref:`tw_input_source <doxid-d4/df6/structtw__input__source>` for the listener side. :ref:`More...<details-da/d91/structtw__input__sink>`
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <input_device.h>
+	
+	struct tw_input_sink
+	{
+		// fields
+	
+		struct wl_listener :target:`remove<doxid-da/d91/structtw__input__sink_1afb0d9250744eeced1e2578b14f215b4b>`;
+		struct wl_listener :target:`key<doxid-da/d91/structtw__input__sink_1add7a194bfb069646d49d712bca3a9490>`;
+		struct wl_listener :target:`modifiers<doxid-da/d91/structtw__input__sink_1aed78bcf8949a7bf258e8e4954b48c21d>`;
+		struct wl_listener :target:`keymap<doxid-da/d91/structtw__input__sink_1a04541cd6878e732ad85ef116b6eabeb2>`;
+		struct tw_input_sink::@36 :ref:`keyboard<doxid-da/d91/structtw__input__sink_1aca68a9a01962f9fdff8a0d8831a523f1>`;
+		struct wl_listener :target:`motion<doxid-da/d91/structtw__input__sink_1a5b33375b4b02dfe0aac4aa18610020f3>`;
+		struct wl_listener :target:`motion_absolute<doxid-da/d91/structtw__input__sink_1a8b8b3da5bf1a38730d75a650b54e013b>`;
+		struct wl_listener :target:`button<doxid-da/d91/structtw__input__sink_1a1569afc38a07e741b565a27836dddcd7>`;
+		struct wl_listener :target:`axis<doxid-da/d91/structtw__input__sink_1a10f33c723d9b92fafb1a27993f153d83>`;
+		struct wl_listener :target:`frame<doxid-da/d91/structtw__input__sink_1ace398636a69b86eb1b5d8484a27110ed>`;
+		struct wl_listener :target:`swipe_begin<doxid-da/d91/structtw__input__sink_1a173161a20db3b7658c0226f7b4628550>`;
+		struct wl_listener :target:`swipe_update<doxid-da/d91/structtw__input__sink_1a24e451ad088954d5d948991e715b71f6>`;
+		struct wl_listener :target:`swipe_end<doxid-da/d91/structtw__input__sink_1a22953ba8f244b4dc066fc49adab50cb2>`;
+		struct wl_listener :target:`pinch_begin<doxid-da/d91/structtw__input__sink_1a0cd0cc9c27cedc63ad4d0379b694fdf3>`;
+		struct wl_listener :target:`pinch_update<doxid-da/d91/structtw__input__sink_1af5f801abf84975aa67175fada614651d>`;
+		struct wl_listener :target:`pinch_end<doxid-da/d91/structtw__input__sink_1a1bed0519e2bd4929a5b714f9aeed8d3f>`;
+		struct tw_input_sink::@37 :target:`pointer<doxid-da/d91/structtw__input__sink_1a6949c2380e8b78406d7536af750e956e>`;
+		struct wl_listener :target:`down<doxid-da/d91/structtw__input__sink_1a4349437024ab15945830b360da6ad64f>`;
+		struct wl_listener :target:`up<doxid-da/d91/structtw__input__sink_1a6af566fe6112199fe0e43e1ecf0fd9e1>`;
+		struct wl_listener :target:`cancel<doxid-da/d91/structtw__input__sink_1a4c40d3ec8b50da7a9c305700767839f0>`;
+		struct tw_input_sink::@38 :target:`touch<doxid-da/d91/structtw__input__sink_1a94fc3ba0d9639a02d10c04b0096d9b25>`;
+	};
+.. _details-da/d91/structtw__input__sink:
+
+Detailed Documentation
+~~~~~~~~~~~~~~~~~~~~~~
+
+this struct mirrors the :ref:`tw_input_source <doxid-d4/df6/structtw__input__source>` for the listener side.
+
+Fields
+------
+
+.. index:: pair: variable; keyboard
+.. _doxid-da/d91/structtw__input__sink_1aca68a9a01962f9fdff8a0d8831a523f1:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	unnamed-struct keyboard
+
+device remove
+

@@ -1,0 +1,83 @@
+.. index:: pair: struct; tw_drm_gpu_impl
+.. _doxid-db/dbf/structtw__drm__gpu__impl:
+
+struct tw_drm_gpu_impl
+======================
+
+.. toctree::
+	:hidden:
+
+Overview
+~~~~~~~~
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <internal.h>
+	
+	struct tw_drm_gpu_impl
+	{
+		// fields
+	
+		enum :ref:`tw_drm_platform<doxid-dc/dc3/backend_2drm_2internal_8h_1a6d5d788103e4b189ee9769e0206b6979>` :target:`type<doxid-db/dbf/structtw__drm__gpu__impl_1af94947065328fa77641e88cb46473740>`;
+		bool(* :ref:`get_gpu_device<doxid-db/dbf/structtw__drm__gpu__impl_1a668b3a8695439469eea311c4a1f7cc0a>`)(struct tw_drm_gpu *, const struct tw_login_gpu *);
+		void(* :target:`free_gpu_device<doxid-db/dbf/structtw__drm__gpu__impl_1a48d0decc5ce999ecb8d07df258adcf51>`)(struct tw_drm_gpu *);
+		const struct :ref:`tw_egl_options<doxid-dc/d1b/structtw__egl__options>`*(* :ref:`gen_egl_params<doxid-db/dbf/structtw__drm__gpu__impl_1a9655bcdd50731a2a4916dc705aafbb32>`)(struct tw_drm_gpu *);
+		bool(* :ref:`allocate_fb<doxid-db/dbf/structtw__drm__gpu__impl_1ab4cfc6614ede76c39356331ab403035e>`)(struct tw_drm_display *output);
+		void(* :ref:`end_display<doxid-db/dbf/structtw__drm__gpu__impl_1a56463703c5a2a9dff3eb38e3f2426fba>`)(struct tw_drm_display *output);
+		void(* :target:`vsynced<doxid-db/dbf/structtw__drm__gpu__impl_1a75d16668fc901f4fd718c2f4f73e661c>`)(struct tw_drm_display *output, struct tw_drm_fb *fb);
+		void(* :target:`page_flip<doxid-db/dbf/structtw__drm__gpu__impl_1adda5003e0ca1c78e0cce79ebab89c202>`)(struct tw_drm_display *output, uint32_t flags);
+	};
+.. _details-db/dbf/structtw__drm__gpu__impl:
+
+Detailed Documentation
+~~~~~~~~~~~~~~~~~~~~~~
+
+
+
+Fields
+------
+
+.. index:: pair: variable; get_gpu_device
+.. _doxid-db/dbf/structtw__drm__gpu__impl_1a668b3a8695439469eea311c4a1f7cc0a:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	bool(* get_gpu_device)(struct tw_drm_gpu *, const struct tw_login_gpu *)
+
+get different device handles (gbm or egl_device)
+
+.. index:: pair: variable; gen_egl_params
+.. _doxid-db/dbf/structtw__drm__gpu__impl_1a9655bcdd50731a2a4916dc705aafbb32:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	const struct :ref:`tw_egl_options<doxid-dc/d1b/structtw__egl__options>`*(* gen_egl_params)(struct tw_drm_gpu *)
+
+platform specific egl options
+
+.. index:: pair: variable; allocate_fb
+.. _doxid-db/dbf/structtw__drm__gpu__impl_1ab4cfc6614ede76c39356331ab403035e:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	bool(* allocate_fb)(struct tw_drm_display *output)
+
+init display buffers as well as render surface
+
+.. index:: pair: variable; end_display
+.. _doxid-db/dbf/structtw__drm__gpu__impl_1a56463703c5a2a9dff3eb38e3f2426fba:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	void(* end_display)(struct tw_drm_display *output)
+
+destroy display buffers as well as render surface
+

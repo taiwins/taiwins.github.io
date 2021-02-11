@@ -1,0 +1,29 @@
+.. index:: pair: struct; tw_wl_output
+.. _doxid-d0/d8b/structtw__wl__output:
+
+struct tw_wl_output
+===================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <internal.h>
+	
+	struct tw_wl_output
+	{
+		// fields
+	
+		struct wl_output* :target:`wl_output<doxid-d0/d8b/structtw__wl__output_1a14a9d1a4af0b81f4b03c84ddc3d58d46>`;
+		struct :ref:`tw_wl_backend<doxid-d2/dad/structtw__wl__backend>`* :target:`wl<doxid-d0/d8b/structtw__wl__output_1a8e5c6ded276c29431cebcb87c573c1e2>`;
+		struct wl_list :target:`link<doxid-d0/d8b/structtw__wl__output_1a998c220dc9ee4df02eaa00e023c3e714>`;
+		uint32_t :target:`w<doxid-d0/d8b/structtw__wl__output_1af938692c0a254d33159d5ae7d09418b6>`;
+		uint32_t :target:`h<doxid-d0/d8b/structtw__wl__output_1a202ca7d46e776f9346ffa9b8c2c584dc>`;
+		uint32_t :target:`r<doxid-d0/d8b/structtw__wl__output_1a136df04525c712dc52315232e34f5646>`;
+		int32_t :target:`scale<doxid-d0/d8b/structtw__wl__output_1adcbbeaa34430c11c75ac5144c64d1228>`;
+	};

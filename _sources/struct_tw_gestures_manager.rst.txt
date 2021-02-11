@@ -1,0 +1,27 @@
+.. index:: pair: struct; tw_gestures_manager
+.. _doxid-d6/d08/structtw__gestures__manager:
+
+struct tw_gestures_manager
+==========================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <gestures.h>
+	
+	struct tw_gestures_manager
+	{
+		// fields
+	
+		struct wl_display* :target:`display<doxid-d6/d08/structtw__gestures__manager_1a3c3ea2feccf4ffd747902fb7e0d90801>`;
+		struct wl_global* :target:`global<doxid-d6/d08/structtw__gestures__manager_1a764ef3e4b7995d3ad97f908756534e3d>`;
+		struct wl_list :target:`pinchs<doxid-d6/d08/structtw__gestures__manager_1a84d7417373def40f09087a569e8041eb>`;
+		struct wl_list :target:`swipes<doxid-d6/d08/structtw__gestures__manager_1a277b3f6e9f8e3795d923a7e4d2e1888c>`;
+		struct wl_listener :target:`display_destroy<doxid-d6/d08/structtw__gestures__manager_1a01b7b9698b25b10fba3170d7a9f473ea>`;
+	};

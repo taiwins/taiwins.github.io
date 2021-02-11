@@ -22,7 +22,7 @@ represents :ref:`tw_output <doxid-db/d81/structtw__output>` :ref:`More...<detail
 	{
 		// fields
 	
-		struct :ref:`tw_backend_output<doxid-d4/d63/structtw__backend__output>`* :target:`output<doxid-da/d68/structtw__shell__output_1a0d27b5ecff125305ef1dd4d0302a1598>`;
+		struct :ref:`tw_engine_output<doxid-d4/d04/structtw__engine__output>`* :target:`output<doxid-da/d68/structtw__shell__output_1a1bfef32bac7ac10aaba309de0600f1c7>`;
 		struct :ref:`tw_shell<doxid-de/dcd/structtw__shell>`* :target:`shell<doxid-da/d68/structtw__shell__output_1a30d40e1317f00148f55fb206d65f7675>`;
 		struct wl_list :ref:`link<doxid-da/d68/structtw__shell__output_1aad038012c7eeda259b373d93ff22f929>`;
 		uint32_t :target:`id<doxid-da/d68/structtw__shell__output_1a67d5f225752b874093452aac83ffc7e9>`;

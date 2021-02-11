@@ -1,0 +1,74 @@
+.. index:: pair: enum; tw_render_output_repaint_state
+.. _doxid-da/d85/render__output_8h_1ae68645fd6a98ecbf9aab9139e115bf88:
+
+enum tw_render_output_repaint_state
+===================================
+
+Overview
+~~~~~~~~
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <render_output.h>
+
+	enum tw_render_output_repaint_state
+	{
+	    :ref:`TW_REPAINT_CLEAN<doxid-da/d85/render__output_8h_1ae68645fd6a98ecbf9aab9139e115bf88afd25a9c36e9698256ccf4306b274bb4f>`     = 0,
+	    :ref:`TW_REPAINT_DIRTY<doxid-da/d85/render__output_8h_1ae68645fd6a98ecbf9aab9139e115bf88a7561f15eab0080dc5e422cbb29b9fbb8>`     = 1,
+	    :ref:`TW_REPAINT_SCHEDULED<doxid-da/d85/render__output_8h_1ae68645fd6a98ecbf9aab9139e115bf88a683b2dd4c39730d542502d516b6cde3a>` = 2,
+	    :ref:`TW_REPAINT_COMMITTED<doxid-da/d85/render__output_8h_1ae68645fd6a98ecbf9aab9139e115bf88adb488eb3487fd4b115b7f40b3121fdb7>` = 6,
+	};
+
+.. _details-da/d85/render__output_8h_1ae68645fd6a98ecbf9aab9139e115bf88:
+
+Detailed Documentation
+~~~~~~~~~~~~~~~~~~~~~~
+
+
+
+Enum Values
+-----------
+
+.. index:: pair: enumvalue; TW_REPAINT_CLEAN
+.. _doxid-da/d85/render__output_8h_1ae68645fd6a98ecbf9aab9139e115bf88afd25a9c36e9698256ccf4306b274bb4f:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	TW_REPAINT_CLEAN
+
+repainted
+
+.. index:: pair: enumvalue; TW_REPAINT_DIRTY
+.. _doxid-da/d85/render__output_8h_1ae68645fd6a98ecbf9aab9139e115bf88a7561f15eab0080dc5e422cbb29b9fbb8:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	TW_REPAINT_DIRTY
+
+repaint required
+
+.. index:: pair: enumvalue; TW_REPAINT_SCHEDULED
+.. _doxid-da/d85/render__output_8h_1ae68645fd6a98ecbf9aab9139e115bf88a683b2dd4c39730d542502d516b6cde3a:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	TW_REPAINT_SCHEDULED
+
+repaint scheduled
+
+.. index:: pair: enumvalue; TW_REPAINT_COMMITTED
+.. _doxid-da/d85/render__output_8h_1ae68645fd6a98ecbf9aab9139e115bf88adb488eb3487fd4b115b7f40b3121fdb7:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	TW_REPAINT_COMMITTED
+
+repaint done, need swap
+

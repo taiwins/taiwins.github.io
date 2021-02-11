@@ -1,0 +1,29 @@
+.. index:: pair: struct; tw_x11_output
+.. _doxid-dd/d4e/structtw__x11__output:
+
+struct tw_x11_output
+====================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <internal.h>
+	
+	struct tw_x11_output
+	{
+		// fields
+	
+		struct :ref:`tw_render_output<doxid-dd/d31/structtw__render__output>` :target:`output<doxid-dd/d4e/structtw__x11__output_1a418da35a014cdc77935487d13e4e9165>`;
+		struct :ref:`tw_x11_backend<doxid-da/daf/structtw__x11__backend>`* :target:`x11<doxid-dd/d4e/structtw__x11__output_1a7bac5d7710df7ba600bdcce1e425f56f>`;
+		struct wl_event_source* :target:`frame_timer<doxid-dd/d4e/structtw__x11__output_1a310e87e1648326f4e20c71559887e98a>`;
+		xcb_window_t :target:`win<doxid-dd/d4e/structtw__x11__output_1af4d692553900cdc6d35b5e36300bee8b>`;
+		struct wl_listener :target:`output_commit_listener<doxid-dd/d4e/structtw__x11__output_1a7012d9ef80d5996c55c2db9dbd456087>`;
+		unsigned int :target:`frame_interval<doxid-dd/d4e/structtw__x11__output_1a15de0bd923e09041b89ff3b3bbc5ebaf>`;
+		struct :ref:`tw_input_device<doxid-d3/db0/structtw__input__device>` :target:`pointer<doxid-dd/d4e/structtw__x11__output_1a0d14da5462350de3a1741e3fdf0423c6>`;
+	};

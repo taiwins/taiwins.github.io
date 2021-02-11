@@ -1,0 +1,31 @@
+.. index:: pair: struct; tw_direct_login
+.. _doxid-dd/dc1/structtw__direct__login:
+
+struct tw_direct_login
+======================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	
+	struct tw_direct_login
+	{
+		// fields
+	
+		struct :ref:`tw_login<doxid-d0/d6a/structtw__login>` :target:`base<doxid-dd/dc1/structtw__direct__login_1a16643a7c1b539043966a8fe63aac74ac>`;
+		struct wl_display* :target:`display<doxid-dd/dc1/structtw__direct__login_1a1fdc320fd09bc0309df1b5aa99bd67ef>`;
+		struct wl_event_source* :target:`vt_source<doxid-dd/dc1/structtw__direct__login_1ac570f0a650dfea076053712f0321135e>`;
+		int :target:`tty_fd<doxid-dd/dc1/structtw__direct__login_1a54af451f0e9adfaa9b5194f93aaf4960>`;
+		int :target:`socket_fd<doxid-dd/dc1/structtw__direct__login_1ad096c779ddb187738683908db195a2e8>`;
+		int :target:`vtnr<doxid-dd/dc1/structtw__direct__login_1a4205ffa6eb9e958c2e3a9ace9d44b105>`;
+		int :target:`orig_kbmode<doxid-dd/dc1/structtw__direct__login_1af20209d8ccbfd3496f774921b3ca8792>`;
+		struct :ref:`tw_direct_gpu<doxid-db/dfe/structtw__direct__gpu>` :target:`gpus<doxid-dd/dc1/structtw__direct__login_1ab0470ee444157f2e4eadd52a6d4efcdf>`[MAX_GPUS];
+		struct wl_list :target:`used_fds<doxid-dd/dc1/structtw__direct__login_1a25a1f50987667d58027ff87796b5a368>`;
+		struct wl_list :target:`avail_fds<doxid-dd/dc1/structtw__direct__login_1a8c1106311a9abde12f2935fab49416a3>`;
+	};

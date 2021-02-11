@@ -21,7 +21,7 @@ struct tw_xdg_layout
 	
 		bool :target:`clean<doxid-d0/d65/structtw__xdg__layout_1a93d26a7f6f8f82896f9b2ad2cff11d87>`;
 		struct wl_list :target:`links<doxid-d0/d65/structtw__xdg__layout_1a67747fd9bb8087632182f726ee66adf7>`[MAX_WORKSPACES];
-		enum :ref:`tw_layout_type<doxid-df/d2b/xdg_8h_1a508c2aaa086bf5bfa0483bc01f47cdc0>` :target:`type<doxid-d0/d65/structtw__xdg__layout_1a1e19400f8f7bd97ff048571f45e5dc5d>`;
+		enum :ref:`tw_layout_type<doxid-db/d51/layout_8h_1a508c2aaa086bf5bfa0483bc01f47cdc0>` :target:`type<doxid-d0/d65/structtw__xdg__layout_1a1e19400f8f7bd97ff048571f45e5dc5d>`;
 		:ref:`tw_xdg_layout_fun_t<doxid-db/d51/layout_8h_1a573f59bc75e2b6c7231cd18399fd8a8a>` :target:`command<doxid-d0/d65/structtw__xdg__layout_1a4565a213ace54a390a906a76c96bec6e>`;
 		void* :target:`user_data<doxid-d0/d65/structtw__xdg__layout_1abeb2d3915a23e8ce1e91405e9b0354d0>`;
 	};

@@ -23,14 +23,14 @@ struct tw_xdg_layout_op
 		struct :ref:`tw_xdg_view<doxid-da/d91/structtw__xdg__view>`* :target:`focused<doxid-dd/d76/structtw__xdg__layout__op_1a6511ea4a07c4b91b4611cdb2e24fba53>`;
 		int32_t :target:`x<doxid-dd/d76/structtw__xdg__layout__op_1a243b61803712af9f74834fd99b617df2>`;
 		int32_t :target:`y<doxid-dd/d76/structtw__xdg__layout__op_1a2c0298666aa593d6c0fbee5cb3bef077>`;
-		struct tw_xdg_layout_op::@0::@2 :target:`pos<doxid-dd/d76/structtw__xdg__layout__op_1a0c1ec2e50368aa9fbd4ff693b79d4a39>`;
+		struct tw_xdg_layout_op::@20::@22 :target:`pos<doxid-dd/d76/structtw__xdg__layout__op_1a9f53de06bbddceebf1731d228570366f>`;
 		uint32_t :target:`width<doxid-dd/d76/structtw__xdg__layout__op_1a9b41cbb896a21c793cba2a47148743a9>`;
 		uint32_t :target:`height<doxid-dd/d76/structtw__xdg__layout__op_1a5ca3ea14d300a94775571c40a0680ec0>`;
-		struct tw_xdg_layout_op::@0::@3 :target:`size<doxid-dd/d76/structtw__xdg__layout__op_1a51bdd55155d47144f24abb5bb7033049>`;
+		struct tw_xdg_layout_op::@20::@23 :target:`size<doxid-dd/d76/structtw__xdg__layout__op_1ad3b9949404b3d80560ac4c843ddb2094>`;
 		float :target:`scale<doxid-dd/d76/structtw__xdg__layout__op_1a79152cf1af1d78fea7a1dbdfa3758202>`;
 		bool :target:`end<doxid-dd/d76/structtw__xdg__layout__op_1aafefb1bfdbce2220f9e499545c2671f7>`;
 		uint32_t :target:`state<doxid-dd/d76/structtw__xdg__layout__op_1a7e54162d8617b76246e993896418aea1>`;
-		struct tw_xdg_layout_op::@0 :target:`out<doxid-dd/d76/structtw__xdg__layout__op_1a5bb506b11309867783107ee003c23d12>`;
+		struct tw_xdg_layout_op::@20 :target:`out<doxid-dd/d76/structtw__xdg__layout__op_1a4db6342b7f37d65099c4c1ecefeb3e67>`;
 		float :target:`dx<doxid-dd/d76/structtw__xdg__layout__op_1a199a6685bed1765f9844ce412509dd81>`;
 		float :target:`dy<doxid-dd/d76/structtw__xdg__layout__op_1aaee9347f1bb58e833bcf755c50251eca>`;
 		enum wl_shell_surface_resize :target:`edge<doxid-dd/d76/structtw__xdg__layout__op_1a367af2951a40620045a6ac03c77cca1a>`;
@@ -38,5 +38,5 @@ struct tw_xdg_layout_op
 		wl_fixed_t :target:`sy<doxid-dd/d76/structtw__xdg__layout__op_1a7934349870619204709dd92ac37a16a8>`;
 		struct :ref:`tw_xdg_output<doxid-dd/d10/structtw__xdg__output>`* :target:`o<doxid-dd/d76/structtw__xdg__layout__op_1a6fe7353d210c036da4089b65cda69577>`;
 		pixman_rectangle32_t :target:`default_geometry<doxid-dd/d76/structtw__xdg__layout__op_1acb963eab39110314c13f3815ce64c84c>`;
-		union tw_xdg_layout_op::@1 :target:`in<doxid-dd/d76/structtw__xdg__layout__op_1ad6ee01443572b083806399a85835132d>`;
+		union tw_xdg_layout_op::@21 :target:`in<doxid-dd/d76/structtw__xdg__layout__op_1aad81c42a1e0022fc134b2f31e2bed9f0>`;
 	};

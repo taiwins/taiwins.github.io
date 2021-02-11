@@ -1,0 +1,25 @@
+.. index:: pair: struct; tw_render_presentable_impl
+.. _doxid-df/d4c/structtw__render__presentable__impl:
+
+struct tw_render_presentable_impl
+=================================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <render_context.h>
+	
+	struct tw_render_presentable_impl
+	{
+		// fields
+	
+		void(* :target:`destroy<doxid-df/d4c/structtw__render__presentable__impl_1a19bdedcc46dc0304ba502cc9ded93afd>`)(struct tw_render_presentable *surface, struct tw_render_context *ctx);
+		bool(* :target:`commit<doxid-df/d4c/structtw__render__presentable__impl_1afd76dfa268c7a3f95398d01ff22eefc4>`)(struct tw_render_presentable *surf, struct tw_render_context *ctx);
+		int(* :target:`make_current<doxid-df/d4c/structtw__render__presentable__impl_1a8ccf31874eb555151e76a3aabe207530>`)(struct tw_render_presentable *surf, struct tw_render_context *ctx);
+	};

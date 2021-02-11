@@ -1,0 +1,26 @@
+.. index:: pair: struct; tw_drm_fb
+.. _doxid-d3/dfa/structtw__drm__fb:
+
+struct tw_drm_fb
+================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <internal.h>
+	
+	struct tw_drm_fb
+	{
+		// fields
+	
+		enum :ref:`tw_drm_fb_type<doxid-dc/dc3/backend_2drm_2internal_8h_1af849e553cafaec1ab4a5087d7c0f5f08>` :target:`type<doxid-d3/dfa/structtw__drm__fb_1a26254113c1474b757796f5dffef821fa>`;
+		bool :target:`locked<doxid-d3/dfa/structtw__drm__fb_1abd834f7efeee086a83676c550da060a1>`;
+		int :target:`fb<doxid-d3/dfa/structtw__drm__fb_1a8e9e7e5f258d3b185858437c7f016074>`;
+		uintptr_t :target:`handle<doxid-d3/dfa/structtw__drm__fb_1a9a9f4969a5653853c8b49333ff822a7e>`;
+	};

@@ -1,0 +1,23 @@
+.. index:: pair: struct; tw_output_device_impl
+.. _doxid-d4/d98/structtw__output__device__impl:
+
+struct tw_output_device_impl
+============================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <output_device.h>
+	
+	struct tw_output_device_impl
+	{
+		// fields
+	
+		void(* :target:`commit_state<doxid-d4/d98/structtw__output__device__impl_1a978afeaee7ef2aa9f999f04c42c28299>`)(struct tw_output_device *device);
+	};

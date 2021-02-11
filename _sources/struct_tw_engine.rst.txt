@@ -1,0 +1,87 @@
+.. index:: pair: struct; tw_engine
+.. _doxid-df/d8e/structtw__engine:
+
+struct tw_engine
+================
+
+.. toctree::
+	:hidden:
+
+Overview
+~~~~~~~~
+
+taiwins engine :ref:`More...<details-df/d8e/structtw__engine>`
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <engine.h>
+	
+	struct tw_engine
+	{
+		// fields
+	
+		struct wl_display* :target:`display<doxid-df/d8e/structtw__engine_1a1734674cdc66dfecdc022359a7959a73>`;
+		struct :ref:`tw_backend<doxid-df/d59/structtw__backend>`* :target:`backend<doxid-df/d8e/structtw__engine_1a11141f4ff04d4c2c5cc713ef7e0cc04e>`;
+		bool :ref:`started<doxid-df/d8e/structtw__engine_1a9406c89ffba73046330d84f2a002e264>`;
+		struct wl_list :target:`heads<doxid-df/d8e/structtw__engine_1ae730027cd3e361a6b9c692221d8e682d>`;
+		uint32_t :target:`output_pool<doxid-df/d8e/structtw__engine_1a5c16fed8ac4938c67f3644c85e992b29>`;
+		struct :ref:`tw_engine_output<doxid-d4/d04/structtw__engine__output>` :target:`outputs<doxid-df/d8e/structtw__engine_1a96d47d362ce3720de43cb4f0ff46dabd>`[32];
+		struct xkb_context* :target:`xkb_context<doxid-df/d8e/structtw__engine_1ade53a668f8426444d79da6de08f2d1af>`;
+		struct wl_list :target:`inputs<doxid-df/d8e/structtw__engine_1a70ff143f62f203758d828fc0d697a6cf>`;
+		uint8_t :target:`seat_pool<doxid-df/d8e/structtw__engine_1a612d411784252c2ed64dc06884a1792e>`;
+		struct :ref:`tw_engine_seat<doxid-dd/d1f/structtw__engine__seat>` :target:`seats<doxid-df/d8e/structtw__engine_1ad41c8783ff9c42405a85b920a293bcb8>`[8];
+		struct :ref:`tw_cursor<doxid-d5/d66/structtw__cursor>` :ref:`global_cursor<doxid-df/d8e/structtw__engine_1a3698ccd168acc592b821edb0005b9957>`;
+		struct :ref:`tw_layers_manager<doxid-dd/d64/structtw__layers__manager>` :target:`layers_manager<doxid-df/d8e/structtw__engine_1adf09505e564caa741774e1413a5d63be>`;
+		struct :ref:`tw_compositor<doxid-d6/da7/structtw__compositor>` :target:`compositor_manager<doxid-df/d8e/structtw__engine_1ae4236bf290dffb0544acbe7647888f2c>`;
+		struct :ref:`tw_data_device_manager<doxid-d4/d0f/structtw__data__device__manager>` :target:`data_device_manager<doxid-df/d8e/structtw__engine_1ae9c13cc050bd39f5b576f2fc4b0d1bd5>`;
+		struct :ref:`tw_linux_dmabuf<doxid-d7/dc2/structtw__linux__dmabuf>` :target:`dma_engine<doxid-df/d8e/structtw__engine_1abd7a79af6b88d2e46270b7097135eec6>`;
+		struct :ref:`tw_presentation<doxid-d0/d4c/structtw__presentation>` :target:`presentation<doxid-df/d8e/structtw__engine_1ac1cf6c64dc5541820d964f9f50d7184d>`;
+		struct :ref:`tw_viewporter<doxid-de/da5/structtw__viewporter>` :target:`viewporter<doxid-df/d8e/structtw__engine_1a91b2cc188aeb01fee06912de84f86ad7>`;
+		struct :ref:`tw_gestures_manager<doxid-d6/d08/structtw__gestures__manager>` :target:`gestures_manager<doxid-df/d8e/structtw__engine_1a697e458ac0b8d971fb60a9cac86cc92e>`;
+		struct wl_listener :target:`display_destroy<doxid-df/d8e/structtw__engine_1ae9cd6bd5ddfa5527207d980ac44432b7>`;
+		struct wl_listener :target:`new_output<doxid-df/d8e/structtw__engine_1a5cddba08ea11998b4b305669f1d45fc0>`;
+		struct wl_listener :target:`new_input<doxid-df/d8e/structtw__engine_1aa25d6fd19a8c0e07a29ae1644c671ddb>`;
+		struct wl_listener :target:`backend_started<doxid-df/d8e/structtw__engine_1ab121184d12252fc95b9f39365b62c6b9>`;
+		struct wl_listener :target:`surface_dirty<doxid-df/d8e/structtw__engine_1abb4b134810a99718bb9aa1cb979839ec>`;
+		struct tw_engine::@31 :target:`listeners<doxid-df/d8e/structtw__engine_1a03bf40e5d029361a51d0b4be4ed1fb7f>`;
+		struct wl_signal :target:`output_created<doxid-df/d8e/structtw__engine_1a394d5377bc43fdb282e4e9a7b8ad11cf>`;
+		struct wl_signal :target:`output_resized<doxid-df/d8e/structtw__engine_1a768de819e27c8f07fa76fa7b347af48d>`;
+		struct wl_signal :target:`output_remove<doxid-df/d8e/structtw__engine_1a07f9667d4b4e337b2023ed0e85cf8dc8>`;
+		struct wl_signal :target:`seat_created<doxid-df/d8e/structtw__engine_1a254d153bd0ed0b1fc5d7e1ac0c698c3d>`;
+		struct wl_signal :target:`seat_remove<doxid-df/d8e/structtw__engine_1af1f28d1696feb87acf5ac1e49aa1e7aa>`;
+		struct tw_engine::@32 :target:`signals<doxid-df/d8e/structtw__engine_1aca5bcbbb732060169114e026e5305d68>`;
+	};
+.. _details-df/d8e/structtw__engine:
+
+Detailed Documentation
+~~~~~~~~~~~~~~~~~~~~~~
+
+taiwins engine
+
+The engine connects multiple taiwins components and run them together
+
+Fields
+------
+
+.. index:: pair: variable; started
+.. _doxid-df/d8e/structtw__engine_1a9406c89ffba73046330d84f2a002e264:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	bool started
+
+for now backend is based on wlr_backends. Future when migrate, we would used api like wayland_impl_tw_backend(struct tw_backend \*);
+
+.. index:: pair: variable; global_cursor
+.. _doxid-df/d8e/structtw__engine_1a3698ccd168acc592b821edb0005b9957:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	struct :ref:`tw_cursor<doxid-d5/d66/structtw__cursor>` global_cursor
+
+cursor is global, like most desktop experience, the one reason is that people want to fit cursor in the cursor plane.
+

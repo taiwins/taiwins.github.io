@@ -6,3 +6,60 @@ Taiwins Documentation
 
 :target:`doxid-index_1mainpage` This manual documents the API and design of the Taiwins. Several notes were registered along the development. Taiwins consists of serveral **sub-projects** like **twclients** and **twobjects** for distinctive parts, those libraries are embedable and can be used independently outside serves general building blocks for wayland projects.
 
+
+
+.. _doxid-index_1autotoc_md41:
+
+Sub-projects
+~~~~~~~~~~~~
+
+* `twclient <https://github.com/taiwins/twclient>`__ : general purpose wayland client widget system. **Twclient** implements many common ``wl_*_listeners`` and provides convinient interfaces to implement shmbuf ``wl_surface`` or EGL ``wl_surface``.
+
+* `twobjects <https://github.com/taiwins/twobjects>`__ : the server-side wayland objects implementation. It implements all the basic types a compositor has to have, such as ``wl_surface``, as well as many other popular ones like ``linux_dmabuf``. It is designed to be modular and autonomous, check out the :ref:`quick reference <doxid-dc/d3e/md__home_developer__projects_web_taiwins_taiwins_docs_twobjects>` for getting started.
+
+* `taiwins-protocols <https://github.com/taiwins/taiwins-protocols>`__ : collection of wayland protocols specific to taiwins.
+
+
+
+
+
+.. _doxid-index_1autotoc_md42:
+
+Taiwins design
+~~~~~~~~~~~~~~
+
+Taiwins is a collection of the compositor (taiwins), the wayland compositor library(libtaiwins), and useful clients like the shell (taiwins-shell) and the application launcher(taiwins-console).
+
+
+
+.. _doxid-index_1autotoc_md43:
+
+Server-side design
+------------------
+
+Take a look :ref:`here <doxid-db/d89/md__home_developer__projects_web_taiwins_taiwins_docs_libtaiwins>`
+
+
+
+
+
+.. _doxid-index_1autotoc_md44:
+
+Client-side design
+------------------
+
+Take a look :ref:`here <doxid-dc/dee/md__home_developer__projects_web_taiwins_taiwins_docs_libtwclient>`.
+
+
+
+
+
+
+
+.. _doxid-index_1autotoc_md45:
+
+Other notes
+~~~~~~~~~~~
+
+If you are new to wayland, you may be also interested in the :ref:`wayland <doxid-d1/d3f/md__home_developer__projects_web_taiwins_taiwins_docs_wayland>` note" for some important bits. @ref /home/developer/Projects/web-taiwins/taiwins/docs/lua.md "lua" notes is the compact summary on using the lua c API. Taiwins also uses dbus for configuration and various other things, a quick tutorial on dbus can be found [here][``dbus.md``].
+

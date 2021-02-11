@@ -1,0 +1,27 @@
+.. index:: pair: struct; tw_event_pointer_motion_abs
+.. _doxid-d1/dd0/structtw__event__pointer__motion__abs:
+
+struct tw_event_pointer_motion_abs
+==================================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <input_device.h>
+	
+	struct tw_event_pointer_motion_abs
+	{
+		// fields
+	
+		struct :ref:`tw_input_device<doxid-d3/db0/structtw__input__device>`* :target:`dev<doxid-d1/dd0/structtw__event__pointer__motion__abs_1a7787068ef0dfd6ee7cd4d5eba2e15ba6>`;
+		const struct :ref:`tw_output_device<doxid-db/db1/structtw__output__device>`* :target:`output<doxid-d1/dd0/structtw__event__pointer__motion__abs_1a63793525d59711886d5374d4f7968e16>`;
+		uint32_t :target:`time_msec<doxid-d1/dd0/structtw__event__pointer__motion__abs_1ac7d4eb1709ae473d48684800c6d70e1e>`;
+		double :target:`x<doxid-d1/dd0/structtw__event__pointer__motion__abs_1a202ae4c817da166819a0e973b418b292>`;
+		double :target:`y<doxid-d1/dd0/structtw__event__pointer__motion__abs_1a4817697685f4b62b3e063563c42c8d05>`;
+	};

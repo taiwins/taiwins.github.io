@@ -1,0 +1,20 @@
+.. index:: pair: enum; tw_drm_plane_type
+.. _doxid-dc/dc3/backend_2drm_2internal_8h_1a45d5506ea9aaae3f8c5a8ef959e942de:
+
+enum tw_drm_plane_type
+======================
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <internal.h>
+
+	enum tw_drm_plane_type
+	{
+	    :target:`TW_DRM_PLANE_MAJOR<doxid-dc/dc3/backend_2drm_2internal_8h_1a45d5506ea9aaae3f8c5a8ef959e942dea5fde673c3529db237ddb97f1d602cb79>`,
+	    :target:`TW_DRM_PLANE_OVERLAY<doxid-dc/dc3/backend_2drm_2internal_8h_1a45d5506ea9aaae3f8c5a8ef959e942dead87df4b125608b2fb15a7d469937a128>`,
+	    :target:`TW_DRM_PLANE_CURSOR<doxid-dc/dc3/backend_2drm_2internal_8h_1a45d5506ea9aaae3f8c5a8ef959e942deac1c1fafe04bca17d0bff1ea79fd51f7e>`,
+	};
+

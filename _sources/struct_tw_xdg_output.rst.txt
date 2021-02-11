@@ -22,8 +22,10 @@ taiwins output information :ref:`More...<details-dd/d10/structtw__xdg__output>`
 	{
 		// fields
 	
-		struct :ref:`tw_backend_output<doxid-d4/d63/structtw__backend__output>`* :target:`output<doxid-dd/d10/structtw__xdg__output_1aa049f1b9c17c115de02c553649daf568>`;
+		struct :ref:`tw_xdg<doxid-d7/d84/structtw__xdg>`* :target:`xdg<doxid-dd/d10/structtw__xdg__output_1a92227f9b23e3da991bb34879de27a216>`;
+		struct :ref:`tw_engine_output<doxid-d4/d04/structtw__engine__output>`* :target:`output<doxid-dd/d10/structtw__xdg__output_1af57a2475823ead5d2b29efaa3507b361>`;
 		pixman_rectangle32_t :target:`desktop_area<doxid-dd/d10/structtw__xdg__output_1acd3becfe00b3d15915663c6196e1c413>`;
+		struct wl_listener :target:`output_destroy<doxid-dd/d10/structtw__xdg__output_1a87f19fd82a1c53fc855b59d9c262baf7>`;
 		int32_t :target:`idx<doxid-dd/d10/structtw__xdg__output_1ad31390ff153949e7759664d0bec45c5d>`;
 		uint32_t :target:`inner_gap<doxid-dd/d10/structtw__xdg__output_1a5043ca3515af2f3573df62bcb4596c7a>`;
 		uint32_t :target:`outer_gap<doxid-dd/d10/structtw__xdg__output_1a4c9f799be26467227f2d0a80cda1767a>`;

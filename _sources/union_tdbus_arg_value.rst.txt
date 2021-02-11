@@ -33,6 +33,8 @@ union tdbus_arg_value
 		enum :ref:`tdbus_arg_type<doxid-d7/dd4/tdbus__message__iter_8h_1a42cd0f90ef480758989c4c0c4bf9ed23>` :target:`type<doxid-d7/d1f/uniontdbus__arg__value_1a3fdc364827c202087f9624fdcf1c8029>`;
 		unsigned :target:`n<doxid-d7/d1f/uniontdbus__arg__value_1af6379a2426874bef005c6396e995a78d>`;
 		void* :target:`a<doxid-d7/d1f/uniontdbus__arg__value_1a9e40475e7e1aad6f43615565238f6942>`;
-		struct tdbus_arg_value::@0 :target:`arr<doxid-d7/d1f/uniontdbus__arg__value_1af952954d32c687f1f93bd76cd72db5dd>`;
+		struct tdbus_arg_value::@57 :target:`arr<doxid-d7/d1f/uniontdbus__arg__value_1a4153a48206c37628b1957e5bb1fa7273>`;
+		struct :ref:`tdbus_arg_variant<doxid-d9/d24/structtdbus__arg__variant>` :target:`variant<doxid-d7/d1f/uniontdbus__arg__value_1ad828098682e5758e633442c2dd05d121>`;
+		struct :ref:`tdbus_arg_dict_entry<doxid-df/de9/structtdbus__arg__dict__entry>`* :target:`entry<doxid-d7/d1f/uniontdbus__arg__value_1a5cd7a8f97330cc6761911c7448a8a91a>`;
 		struct :ref:`tdbus_message_itr<doxid-d9/d48/structtdbus__message__itr>`* :target:`st<doxid-d7/d1f/uniontdbus__arg__value_1abb93da2411ae50c53fb993879cbed7d6>`;
 	};

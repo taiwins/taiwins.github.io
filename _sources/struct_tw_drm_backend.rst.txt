@@ -1,0 +1,45 @@
+.. index:: pair: struct; tw_drm_backend
+.. _doxid-d7/d87/structtw__drm__backend:
+
+struct tw_drm_backend
+=====================
+
+.. toctree::
+	:hidden:
+
+Overview
+~~~~~~~~
+
+drm backend datasheet :ref:`More...<details-d7/d87/structtw__drm__backend>`
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <internal.h>
+	
+	struct tw_drm_backend
+	{
+		// fields
+	
+		struct :ref:`tw_backend<doxid-df/d59/structtw__backend>` :target:`base<doxid-d7/d87/structtw__drm__backend_1a3d71926a970a9e6608e0911b38b87dfb>`;
+		struct wl_display* :target:`display<doxid-d7/d87/structtw__drm__backend_1a1c3cbd4771314275e49dda7cd60c6b7f>`;
+		struct :ref:`tw_login<doxid-d0/d6a/structtw__login>`* :target:`login<doxid-d7/d87/structtw__drm__backend_1a7115163f404588fa77d2b7bc67fb6ab5>`;
+		struct :ref:`tw_drm_gpu<doxid-dc/d3b/structtw__drm__gpu>`* :target:`boot_gpu<doxid-d7/d87/structtw__drm__backend_1a37eacd0dc1ae64822b491b97a1e8edac>`;
+		struct wl_list :target:`gpu_list<doxid-d7/d87/structtw__drm__backend_1abaf04b137025330cc0d8bc871779801d>`;
+		struct :ref:`tw_libinput_input<doxid-d4/d34/structtw__libinput__input>` :target:`input<doxid-d7/d87/structtw__drm__backend_1ac81e283e7c986936f67cb524dc506c14>`;
+		struct wl_listener :target:`display_destroy<doxid-d7/d87/structtw__drm__backend_1a08aa385291b0af79fbcc58822a3b2e45>`;
+		struct wl_listener :target:`login_attribute_change<doxid-d7/d87/structtw__drm__backend_1a6ac393421dfa95a9b21b5ace1cb72035>`;
+		struct wl_listener :target:`udev_device_change<doxid-d7/d87/structtw__drm__backend_1a93b0d54bca35c5d7f0126bf05be74e21>`;
+	};
+.. _details-d7/d87/structtw__drm__backend:
+
+Detailed Documentation
+~~~~~~~~~~~~~~~~~~~~~~
+
+drm backend datasheet
+
+We need the backend to support multiple allocation APIs(gbm or eglstream), multiple rendering API (egl or vulkan). commit routine (atomic or legacy)
+
+The 3 event sources: 1): drm fd for drmHandleEvents. 2): event from login for session changes. 3): event from udev for udev_device change.
+

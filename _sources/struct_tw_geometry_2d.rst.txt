@@ -1,0 +1,26 @@
+.. index:: pair: struct; tw_geometry_2d
+.. _doxid-d1/dd9/structtw__geometry__2d:
+
+struct tw_geometry_2d
+=====================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <utils.h>
+	
+	struct tw_geometry_2d
+	{
+		// fields
+	
+		int32_t :target:`x<doxid-d1/dd9/structtw__geometry__2d_1a802e379dc1b0acff241bfb77fa4f81fe>`;
+		int32_t :target:`y<doxid-d1/dd9/structtw__geometry__2d_1a6937cf781716be27f666a51082175755>`;
+		uint32_t :target:`w<doxid-d1/dd9/structtw__geometry__2d_1aaadd489852a36c66ab5bdf9bfdb6db57>`;
+		uint32_t :target:`h<doxid-d1/dd9/structtw__geometry__2d_1a57c093df97498fcf649d15fdd8d62561>`;
+	};

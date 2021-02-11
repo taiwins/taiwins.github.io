@@ -29,8 +29,11 @@ Overview
 		enum wl_shm_format :target:`format<doxid-d5/d87/structtw__surface__buffer_1a44b27d0f7f32f3bd31078d2c34c473ed>`;
 		uint32_t :target:`id<doxid-d5/d87/structtw__surface__buffer_1a42619e75d373e9f063077d9165d2d029>`;
 		void* :target:`ptr<doxid-d5/d87/structtw__surface__buffer_1aeb6e54499c218af6194fb3c6ac10d8a5>`;
-		union tw_surface_buffer::@0 :target:`handle<doxid-d5/d87/structtw__surface__buffer_1a69b923bf56757c188137531e090e02af>`;
+		union tw_surface_buffer::@82 :target:`handle<doxid-d5/d87/structtw__surface__buffer_1aa842621678fdb19855fc2ad24025a8d0>`;
 		struct wl_listener :target:`surface_destroy_listener<doxid-d5/d87/structtw__surface__buffer_1a91a8da0364d0244a7a79a0f8f85fdab2>`;
+		bool(* :target:`buffer_import<doxid-d5/d87/structtw__surface__buffer_1a7dc36e25f5b12d6a4c3ea004792c75e1>`)(struct tw_event_buffer_uploading *event, void *callback);
+		void* :target:`callback<doxid-d5/d87/structtw__surface__buffer_1a7925edd3a324c450f739388cdf2bb203>`;
+		struct tw_surface_buffer::@83 :target:`buffer_import<doxid-d5/d87/structtw__surface__buffer_1a9bac2b2eaeeae436e35f092e35d87e33>`;
 	};
 .. _details-d5/d87/structtw__surface__buffer:
 

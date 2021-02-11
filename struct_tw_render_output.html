@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <title>struct tw_render_output &#8212; Taiwins</title>
+  
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="_static/bootstrap-sphinx.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/my-style.css" />
+    <link rel="stylesheet" type="text/css" href="_static/doxyrest-pygments.css" />
+    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/target-highlight.js"></script>
+    <link rel="shortcut icon" href="_static/favicon.ico"/>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="struct tw_render_pipeline" href="struct_tw_render_pipeline.html" />
+    <link rel="prev" title="struct tw_render_context_impl" href="struct_tw_render_context_impl.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<script type="text/javascript" src="_static/js/jquery-1.11.0.min.js "></script>
+<script type="text/javascript" src="_static/js/jquery-fix.js "></script>
+<script type="text/javascript" src="_static/bootstrap-3.3.7/js/bootstrap.min.js "></script>
+<script type="text/javascript" src="_static/bootstrap-sphinx.js "></script>
+
+  </head><body>
+  <div class="page-container">
+    
+<!-- taken from bootstrap theme -->
+<div id="navbar" class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">
+        <b>Taiwins</b></a>
+      <span class="navbar-text navbar-version pull-left"><b></b></span>
+    </div>
+
+    <div class="collapse navbar-collapse nav-collapse">
+      <ul class="nav navbar-nav">
+	<li><a href="page_doc.html">Documentation</a></li>
+	<li><a href="https://github.com/taiwins/taiwins">Source Code</a></li>
+	<li><a href="https://github.com/taiwins/taiwins/wiki">Wiki</a></li>
+	<!-- add other pages -->
+      </ul>
+    </div>
+  </div>
+</div>
+
+    <div class="container">
+      
+	<div class="row">
+	  <div class="body col-md-9 content" role="main">
+	    
+  <div class="section" id="struct-tw-render-output">
+<span id="doxid-dd-d31-structtw-render-output"></span><span id="index-0"></span><h1>struct tw_render_output<a class="headerlink" href="#struct-tw-render-output" title="Permalink to this headline">¶</a></h1>
+<div class="toctree-wrapper compound">
+</div>
+<div class="section" id="overview">
+<h2>Overview<a class="headerlink" href="#overview" title="Permalink to this headline">¶</a></h2>
+<pre class="highlight doxyrest-overview-code-block literal-block"><span></span><span class="cp">#include</span> <span class="cpf">&lt;render_output.h&gt;</span><span class="cp"></span>
+
+<span class="k">struct</span> <span class="n">tw_render_output</span>
+<span class="p">{</span>
+    <span class="c1">// fields</span>
+
+    <span class="k">struct</span> <a class="reference internal" href="struct_tw_output_device.html#doxid-db-db1-structtw-output-device"><span class="std std-ref">tw_output_device</span></a><span></span> <span class="doxyrest-code-target target" id="doxid-dd-d31-structtw-render-output-1ac2ec503b8b3fd69687f81d0df8cdd144"><span></span><span class="n">device</span></span><span></span><span class="p">;</span>
+    <span class="k">struct</span> <a class="reference internal" href="struct_tw_render_presentable.html#doxid-da-dd1-structtw-render-presentable"><span class="std std-ref">tw_render_presentable</span></a><span></span> <span class="doxyrest-code-target target" id="doxid-dd-d31-structtw-render-output-1a87c6293ff18f24c18b4f38eb42009e9e"><span></span><span class="n">surface</span></span><span></span><span class="p">;</span>
+    <span class="k">struct</span> <span class="n">wl_list</span> <a class="reference internal" href="#doxid-dd-d31-structtw-render-output-1a6851b783f9384e65d6381beb8ab4d794"><span class="std std-ref">link</span></a><span></span><span class="p">;</span>
+    <span class="k">struct</span> <span class="n">wl_list</span> <span class="doxyrest-code-target target" id="doxid-dd-d31-structtw-render-output-1aa4f6a99c899b1f1287c7ea9040a4de61"><span></span><span class="n">views</span></span><span></span><span class="p">;</span>
+    <span class="k">struct</span> <a class="reference internal" href="struct_tw_render_context.html#doxid-d1-dba-structtw-render-context"><span class="std std-ref">tw_render_context</span></a><span></span><span class="o">*</span> <span class="doxyrest-code-target target" id="doxid-dd-d31-structtw-render-output-1a642f9b37e7d763f52cb126bf2e5c8a5c"><span></span><span class="n">ctx</span></span><span></span><span class="p">;</span>
+    <span class="kt">bool</span> <a class="reference internal" href="#doxid-dd-d31-structtw-render-output-1ab68d7db8fa95dcb4186672839f9c7af6"><span class="std std-ref">dirty</span></a><span></span><span class="p">;</span>
+    <span class="n">pixman_region32_t</span> <span class="doxyrest-code-target target" id="doxid-dd-d31-structtw-render-output-1aa32a383db38b73b84a74c7d56b09ac68"><span></span><span class="n">damages</span></span><span></span><span class="p">[</span><span class="mi">3</span><span class="p">];</span>
+    <span class="n">pixman_region32_t</span><span class="o">*</span> <span class="doxyrest-code-target target" id="doxid-dd-d31-structtw-render-output-1a57dccba1be220ab3043ae3fa8abb533a"><span></span><span class="n">pending_damage</span></span><span></span><span class="p">;</span>
+    <span class="n">pixman_region32_t</span><span class="o">*</span> <span class="doxyrest-code-target target" id="doxid-dd-d31-structtw-render-output-1aea9cbe26391f3437afb902dd4b516a0d"><span></span><span class="n">curr_damage</span></span><span></span><span class="p">;</span>
+    <span class="n">pixman_region32_t</span><span class="o">*</span> <span class="doxyrest-code-target target" id="doxid-dd-d31-structtw-render-output-1a91a4691b96e2a9765fc3973144cb105f"><span></span><span class="n">prev_damage</span></span><span></span><span class="p">;</span>
+    <span class="k">struct</span> <a class="reference internal" href="struct_tw_mat3.html#doxid-d4-da4-structtw-mat3"><span class="std std-ref">tw_mat3</span></a><span></span> <span class="doxyrest-code-target target" id="doxid-dd-d31-structtw-render-output-1a5f10e9d59c569d9d3d57cfe15387da16"><span></span><span class="n">view_2d</span></span><span></span><span class="p">;</span>
+    <span class="kt">uint32_t</span> <span class="doxyrest-code-target target" id="doxid-dd-d31-structtw-render-output-1a3245536129d8b1a09ac57dc3e2f85abd"><span></span><span class="n">repaint_state</span></span><span></span><span class="p">;</span>
+    <span class="kt">unsigned</span> <span class="kt">long</span> <a class="reference internal" href="#doxid-dd-d31-structtw-render-output-1a6241881ea4d6ce81a114c27f7f854a78"><span class="std std-ref">ft_sum</span></a><span></span><span class="p">;</span>
+    <span class="kt">unsigned</span> <span class="kt">long</span> <span class="doxyrest-code-target target" id="doxid-dd-d31-structtw-render-output-1a8163be57e72b5a9fc1c6677ea8af5aa6"><span></span><span class="n">ft_cnt</span></span><span></span><span class="p">;</span>
+    <span class="kt">unsigned</span> <span class="kt">int</span> <a class="reference internal" href="#doxid-dd-d31-structtw-render-output-1a41bad1aac1991ab0a8527d38a0f0dda8"><span class="std std-ref">fts</span></a><span></span><span class="p">[</span><span class="n">TW_FRAME_TIME_CNT</span><span class="p">];</span>
+    <span class="kt">unsigned</span> <span class="kt">int</span> <span class="doxyrest-code-target target" id="doxid-dd-d31-structtw-render-output-1afac6f225545b1ccdf54d48cca7c4a725"><span></span><span class="n">ft_idx</span></span><span></span><span class="p">;</span>
+    <span class="k">struct</span> <span class="n">tw_render_output</span><span class="o">::</span><span class="err">@</span><span class="mi">45</span> <span class="doxyrest-code-target target" id="doxid-dd-d31-structtw-render-output-1af95ffd3b9779d7707531df15d2d44777"><span></span><span class="n">state</span></span><span></span><span class="p">;</span>
+    <span class="k">struct</span> <span class="n">wl_listener</span> <span class="doxyrest-code-target target" id="doxid-dd-d31-structtw-render-output-1ad59f11886101b9ae4d63082460591cec"><span></span><span class="n">frame</span></span><span></span><span class="p">;</span>
+    <span class="k">struct</span> <span class="n">wl_listener</span> <span class="doxyrest-code-target target" id="doxid-dd-d31-structtw-render-output-1a3edd640206aa8528bfe6625707d0c366"><span></span><span class="n">set_mode</span></span><span></span><span class="p">;</span>
+    <span class="k">struct</span> <span class="n">wl_listener</span> <span class="doxyrest-code-target target" id="doxid-dd-d31-structtw-render-output-1a5c3126abc4c98d2b2cfd0096a8b12f71"><span></span><span class="n">destroy</span></span><span></span><span class="p">;</span>
+    <span class="k">struct</span> <span class="n">wl_listener</span> <span class="doxyrest-code-target target" id="doxid-dd-d31-structtw-render-output-1a66861788435ade777309771566d9cbfd"><span></span><span class="n">surface_dirty</span></span><span></span><span class="p">;</span>
+    <span class="k">struct</span> <span class="n">tw_render_output</span><span class="o">::</span><span class="err">@</span><span class="mi">46</span> <span class="doxyrest-code-target target" id="doxid-dd-d31-structtw-render-output-1ae9891fc46ff1d31748fe0d6f0b021e64"><span></span><span class="n">listeners</span></span><span></span><span class="p">;</span>
+    <span class="k">struct</span> <span class="n">wl_signal</span> <span class="doxyrest-code-target target" id="doxid-dd-d31-structtw-render-output-1a628e7ccbd673dae72faa90fbc0da26b3"><span></span><span class="n">surface_enter</span></span><span></span><span class="p">;</span>
+    <span class="k">struct</span> <span class="n">wl_signal</span> <span class="doxyrest-code-target target" id="doxid-dd-d31-structtw-render-output-1a0da46aba6de241a72cebd7be1301bb5d"><span></span><span class="n">surface_leave</span></span><span></span><span class="p">;</span>
+    <span class="k">struct</span> <span class="n">tw_render_output</span><span class="o">::</span><span class="err">@</span><span class="mi">47</span> <span class="doxyrest-code-target target" id="doxid-dd-d31-structtw-render-output-1a256acf095f2090e8a15a48c2c76dcba5"><span></span><span class="n">signals</span></span><span></span><span class="p">;</span>
+<span class="p">};</span></pre>
+</div>
+<div class="section" id="detailed-documentation">
+<span id="details-dd-d31-structtw-render-output"></span><h2>Detailed Documentation<a class="headerlink" href="#detailed-documentation" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="fields">
+<h3>Fields<a class="headerlink" href="#fields" title="Permalink to this headline">¶</a></h3>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-dd-d31-structtw-render-output-1a6851b783f9384e65d6381beb8ab4d794"><span id="index-1"></span><span></span><span class="k">struct</span> <span class="n">wl_list</span> <span class="n">link</span></pre>
+<p>ctx-&gt;output</p>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-dd-d31-structtw-render-output-1ab68d7db8fa95dcb4186672839f9c7af6"><span id="index-2"></span><span></span><span class="kt">bool</span> <span class="n">dirty</span></pre>
+<p>we have 3 frame_damages for triple buffering</p>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-dd-d31-structtw-render-output-1a6241881ea4d6ce81a114c27f7f854a78"><span id="index-3"></span><span></span><span class="kt">unsigned</span> <span class="kt">long</span> <span class="n">ft_sum</span></pre>
+<p>average frame time is ft_sum / ft_cnt</p>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-dd-d31-structtw-render-output-1a41bad1aac1991ab0a8527d38a0f0dda8"><span id="index-4"></span><span></span><span class="kt">unsigned</span> <span class="kt">int</span> <span class="n">fts</span><span class="p">[</span><span class="n">TW_FRAME_TIME_CNT</span><span class="p">]</span></pre>
+<p>average frame time in microseconds</p>
+</div>
+</div>
+</div>
+
+
+	  </div>
+	  
+<div class="col-md-3">
+  <div id="sidebar" class="bs-sidenav">
+<h3>Content</h3>
+<div id="localtoc"><ul>
+<li><a class="reference internal" href="#">struct tw_render_output</a><ul>
+<li><a class="reference internal" href="#overview">Overview</a></li>
+<li><a class="reference internal" href="#detailed-documentation">Detailed Documentation</a><ul>
+<li><a class="reference internal" href="#fields">Fields</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<h3><a data-toggle="collapse" href="#globaltoc">Related Pages</a></h3>
+<div id="globaltoc" class="collapse">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="page_md__home_developer_Projects_web_taiwins_taiwins_CONTRIBUTING.html">Contributing to Taiwins</a></li>
+<li class="toctree-l1"><a class="reference internal" href="page_md__home_developer_Projects_web_taiwins_taiwins_docs_dbus.html">D-Bus API Quick Reference</a></li>
+<li class="toctree-l1"><a class="reference internal" href="page_md__home_developer_Projects_web_taiwins_taiwins_docs_libtaiwins.html">For libtaiwins users</a></li>
+<li class="toctree-l1"><a class="reference internal" href="page_md__home_developer_Projects_web_taiwins_taiwins_docs_lua.html">Lua bindings</a></li>
+<li class="toctree-l1"><a class="reference internal" href="page_md__home_developer_Projects_web_taiwins_taiwins_docs_progress.html">Progress and feature track</a></li>
+<li class="toctree-l1"><a class="reference internal" href="page_md__home_developer_Projects_web_taiwins_taiwins_docs_screenshots.html">Taiwins in tiling mode</a></li>
+<li class="toctree-l1"><a class="reference internal" href="page_md__home_developer_Projects_web_taiwins_taiwins_docs_window_management.html">Taiwins layout engine.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="page_md__home_developer_Projects_web_taiwins_taiwins_README.html">Taiwins, a modern wayland window manager</a></li>
+<li class="toctree-l1"><a class="reference internal" href="page_md__home_developer_Projects_web_taiwins_taiwins_docs_libtwclient.html">Twclient quick reference</a></li>
+<li class="toctree-l1"><a class="reference internal" href="page_md__home_developer_Projects_web_taiwins_taiwins_docs_twobjects.html">Twobjects quick reference</a></li>
+<li class="toctree-l1"><a class="reference internal" href="page_md__home_developer_Projects_web_taiwins_taiwins_docs_wayland.html">wayland</a></li>
+</ul>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="global.html">Global Namespace</a></li>
+</ul>
+
+</div>
+<form action="search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+  </div>
+</div>
+
+	</div>
+      
+    </div>
+    <div class="push"></div>
+  </div>
+
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+    </p>
+    <p>
+        &copy; Copyright 2020, Xichen Zhou.<br/>
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 3.4.3.<br/>
+    </p>
+  </div>
+</footer>
+  </body>
+</html>

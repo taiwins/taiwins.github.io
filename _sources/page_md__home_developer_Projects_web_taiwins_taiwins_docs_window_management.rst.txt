@@ -1,0 +1,25 @@
+.. index:: pair: page; Taiwins layout engine.
+.. _doxid-d2/dce/md__home_developer__projects_web_taiwins_taiwins_docs_window_management:
+
+Taiwins layout engine.
+======================
+
+This is the document discussing about taiwins window managment method. Right now we have only floating and tiling method. Here we mostly dicuss the tiling method.
+
+
+
+.. _doxid-d2/dce/md__home_developer__projects_web_taiwins_taiwins_docs_window_management_1autotoc_md85:
+
+What is better than a tree-based tiling window manager?
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+What can we do even more?
+
+* When you create new view, whether insert it in the floating layer or tiling layer?
+
+* At what size and scale?
+
+* At what position?
+
+* If in the tiling window layer, how big it is? Do I need to change size of other views?
+

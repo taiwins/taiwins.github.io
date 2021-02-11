@@ -1,0 +1,24 @@
+.. index:: pair: struct; tw_drm_crtc_props
+.. _doxid-da/ddb/structtw__drm__crtc__props:
+
+struct tw_drm_crtc_props
+========================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <internal.h>
+	
+	struct tw_drm_crtc_props
+	{
+		// fields
+	
+		uint32_t :target:`active<doxid-da/ddb/structtw__drm__crtc__props_1a56bc5cef222f80ec2dbe48ceef65049c>`;
+		uint32_t :target:`mode_id<doxid-da/ddb/structtw__drm__crtc__props_1a338040cef90d215f17289f8112894f98>`;
+	};

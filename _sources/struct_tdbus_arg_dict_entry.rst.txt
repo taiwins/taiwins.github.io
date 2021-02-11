@@ -1,0 +1,23 @@
+.. index:: pair: struct; tdbus_arg_dict_entry
+.. _doxid-df/de9/structtdbus__arg__dict__entry:
+
+struct tdbus_arg_dict_entry
+===========================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <tdbus_message_iter.h>
+	
+	struct tdbus_arg_dict_entry
+	{
+		// fields
+	
+		struct :ref:`tdbus_message_arg<doxid-dd/d25/structtdbus__message__arg>` key :target:`val<doxid-df/de9/structtdbus__arg__dict__entry_1a075c7afbc35dd20202d29a665810aad9>`;
+	};

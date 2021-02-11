@@ -1,0 +1,24 @@
+.. index:: pair: struct; tw_size_2d
+.. _doxid-da/d95/structtw__size__2d:
+
+struct tw_size_2d
+=================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <utils.h>
+	
+	struct tw_size_2d
+	{
+		// fields
+	
+		uint32_t :target:`w<doxid-da/d95/structtw__size__2d_1ab35d46a099ab3cac9f411797955f91a7>`;
+		uint32_t :target:`h<doxid-da/d95/structtw__size__2d_1a446b3f50b0537d75c40a4c6396c8afa8>`;
+	};

@@ -1,5 +1,5 @@
 .. index:: pair: enum; tw_xdg_view_resize_option
-.. _doxid-df/d2b/xdg_8h_1a81a0d4c4c1c736dde05597c5e3efcbec:
+.. _doxid-db/d51/layout_8h_1a81a0d4c4c1c736dde05597c5e3efcbec:
 
 enum tw_xdg_view_resize_option
 ==============================
@@ -9,13 +9,13 @@ enum tw_xdg_view_resize_option
 .. ref-code-block:: cpp
 	:class: doxyrest-overview-code-block
 
-	#include <xdg.h>
+	#include <layout.h>
 
 	enum tw_xdg_view_resize_option
 	{
-	    :target:`RESIZE_LEFT<doxid-df/d2b/xdg_8h_1a81a0d4c4c1c736dde05597c5e3efcbeca1f7cf10fff8b62be6770b050716c6a55>`,
-	    :target:`RESIZE_RIGHT<doxid-df/d2b/xdg_8h_1a81a0d4c4c1c736dde05597c5e3efcbeca4ee11861004ae7e7bdd3c0b1495e0c37>`,
-	    :target:`RESIZE_UP<doxid-df/d2b/xdg_8h_1a81a0d4c4c1c736dde05597c5e3efcbeca9ae706db16528a0cb87239dd1e947e24>`,
-	    :target:`RESIZE_DOWN<doxid-df/d2b/xdg_8h_1a81a0d4c4c1c736dde05597c5e3efcbeca2c58ee84428abe482ad745ad9ba9bec4>`,
+	    :target:`RESIZE_LEFT<doxid-db/d51/layout_8h_1a81a0d4c4c1c736dde05597c5e3efcbeca1f7cf10fff8b62be6770b050716c6a55>`,
+	    :target:`RESIZE_RIGHT<doxid-db/d51/layout_8h_1a81a0d4c4c1c736dde05597c5e3efcbeca4ee11861004ae7e7bdd3c0b1495e0c37>`,
+	    :target:`RESIZE_UP<doxid-db/d51/layout_8h_1a81a0d4c4c1c736dde05597c5e3efcbeca9ae706db16528a0cb87239dd1e947e24>`,
+	    :target:`RESIZE_DOWN<doxid-db/d51/layout_8h_1a81a0d4c4c1c736dde05597c5e3efcbeca2c58ee84428abe482ad745ad9ba9bec4>`,
 	};
 

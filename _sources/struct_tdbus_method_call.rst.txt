@@ -13,7 +13,7 @@ struct tdbus_method_call
 .. ref-code-block:: cpp
 	:class: doxyrest-overview-code-block
 
-	#include <tdbus.h>
+	#include <tdbus_message.h>
 	
 	struct tdbus_method_call
 	{

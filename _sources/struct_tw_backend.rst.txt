@@ -7,10 +7,7 @@ struct tw_backend
 .. toctree::
 	:hidden:
 
-Overview
-~~~~~~~~
-
-
+an abstract interface all types of backend need to do implement
 
 
 .. ref-code-block:: cpp
@@ -22,93 +19,16 @@ Overview
 	{
 		// fields
 	
-		struct wl_display* :target:`display<doxid-df/d59/structtw__backend_1aa7536b274d9803d470c7aebac2862e3e>`;
-		struct wlr_backend* :ref:`auto_backend<doxid-df/d59/structtw__backend_1a8da5ec45500f1c239cf1d3c158c7dc81>`;
-		struct wlr_renderer* :target:`main_renderer<doxid-df/d59/structtw__backend_1a16a64cdeb792b7420f82f18f9b19b683>`;
-		struct :ref:`tw_backend_impl<doxid-d0/da7/structtw__backend__impl>`* :ref:`impl<doxid-df/d59/structtw__backend_1aa74dc58d6ae3a45ee786cebfb5dc0b41>`;
-		bool :ref:`started<doxid-df/d59/structtw__backend_1a6348aa21f114631ad6bbfb567427a096>`;
-		bool :target:`defer_output_creation<doxid-df/d59/structtw__backend_1a66d0ef707ff6014bbaeb15a458d747d3>`;
-		struct wl_listener :target:`display_destroy_listener<doxid-df/d59/structtw__backend_1a399f8edd50885a00efbbbf0ab3e63524>`;
-		struct wl_signal :target:`output_frame_signal<doxid-df/d59/structtw__backend_1a0d7177e7e767fca075b3f3181eff72a2>`;
-		struct wl_signal :target:`output_plug_signal<doxid-df/d59/structtw__backend_1a758b2f41dc926206504d273624b0072f>`;
-		struct wl_signal :target:`output_unplug_signal<doxid-df/d59/structtw__backend_1ab340ff623a09d97c66a469dd2dc815e7>`;
-		struct wl_signal :target:`seat_add_signal<doxid-df/d59/structtw__backend_1a4564be2c1f41ddb702f44d4b3f390578>`;
-		struct wl_signal :target:`seat_ch_signal<doxid-df/d59/structtw__backend_1a377590209b1312c52d7795a55e05e969>`;
-		struct wl_signal :target:`seat_rm_signal<doxid-df/d59/structtw__backend_1ab9682c6f100b5806790e1b0d2aa990dc>`;
-		struct wl_list :target:`heads<doxid-df/d59/structtw__backend_1ac630dc044b040dfa62f4e4e128a52291>`;
-		struct wl_list :target:`pending_heads<doxid-df/d59/structtw__backend_1aab03271459a1acae82450b597dfc7831>`;
-		uint32_t :target:`output_pool<doxid-df/d59/structtw__backend_1a4cf1649c852f5c2997210eff485583d2>`;
-		struct :ref:`tw_backend_output<doxid-d4/d63/structtw__backend__output>` :target:`outputs<doxid-df/d59/structtw__backend_1a799756e03fea073cc0a6283bd14cfc16>`[32];
-		struct xkb_context* :target:`xkb_context<doxid-df/d59/structtw__backend_1ad430a9ea37487e50df68d77d5f6f7837>`;
+		const struct :ref:`tw_backend_impl<doxid-d0/da7/structtw__backend__impl>`* :target:`impl<doxid-df/d59/structtw__backend_1a2860e8e6f7295ae715fabdfdcf74c824>`;
+		struct :ref:`tw_render_context<doxid-d1/dba/structtw__render__context>`* :target:`ctx<doxid-df/d59/structtw__backend_1a07c37994caccd436d6063cb200771282>`;
+		struct wl_signal :target:`destroy<doxid-df/d59/structtw__backend_1a701c3703ab78853453f6628bda219f0d>`;
+		struct wl_signal :target:`new_input<doxid-df/d59/structtw__backend_1af855b4b084ba299a9c7fb543e9dbe50f>`;
+		struct wl_signal :target:`new_output<doxid-df/d59/structtw__backend_1a423487a43a35e694f7aed4d49048050b>`;
+		struct wl_signal :target:`start<doxid-df/d59/structtw__backend_1a011d973024a1ebd04bd73d7559e6883f>`;
+		struct wl_signal :target:`stop<doxid-df/d59/structtw__backend_1afce563257fddfe9b891a07953a59f53f>`;
+		struct tw_backend::@29 :target:`signals<doxid-df/d59/structtw__backend_1ae437e18824aa1db945e44ab255e808e0>`;
 		struct wl_list :target:`inputs<doxid-df/d59/structtw__backend_1acce0cd4e14768a49340cfdbce29ea52e>`;
-		uint8_t :target:`seat_pool<doxid-df/d59/structtw__backend_1a4c2f8df6187779057ecf3d893c4cd13f>`;
-		struct :ref:`tw_backend_seat<doxid-de/d40/structtw__backend__seat>` :target:`seats<doxid-df/d59/structtw__backend_1aeaf64169064a890487ce6e035d124b00>`[8];
-		struct :ref:`tw_cursor<doxid-d5/d66/structtw__cursor>` :ref:`global_cursor<doxid-df/d59/structtw__backend_1aa5085aac65868ddc31fae5d67e4a6190>`;
-		struct :ref:`tw_surface_manager<doxid-d1/d12/structtw__surface__manager>` :ref:`surface_manager<doxid-df/d59/structtw__backend_1a8e53c9c8d75a10350bf311bfd137db27>`;
-		struct :ref:`tw_layers_manager<doxid-dd/d64/structtw__layers__manager>` :target:`layers_manager<doxid-df/d59/structtw__backend_1a5369ba467bb96a2353ecf23272ba4f68>`;
-		struct :ref:`tw_compositor<doxid-d6/da7/structtw__compositor>` :target:`compositor_manager<doxid-df/d59/structtw__backend_1ae3e52ec8b4a139790e16d49f3cab5c97>`;
-		struct :ref:`tw_data_device_manager<doxid-d4/d0f/structtw__data__device__manager>` :target:`data_device_manager<doxid-df/d59/structtw__backend_1ac5bb7c7eeb2c5eca2dc88671b7a3a74b>`;
-		struct :ref:`tw_linux_dmabuf<doxid-d7/dc2/structtw__linux__dmabuf>` :target:`dma_engine<doxid-df/d59/structtw__backend_1a3b2281cf6dec58e7c7b7ab4565398cfc>`;
-		struct :ref:`tw_presentation<doxid-d0/d4c/structtw__presentation>` :target:`presentation<doxid-df/d59/structtw__backend_1a9dcf7c55beeb2826de7311318d9d8957>`;
-		struct :ref:`tw_viewporter<doxid-de/da5/structtw__viewporter>` :target:`viewporter<doxid-df/d59/structtw__backend_1af15ffe13cdd3816bdb88e3e0d9d26d2b>`;
+		struct wl_list :target:`outputs<doxid-df/d59/structtw__backend_1ae7353fa34bcc6a9f23a82de69bbc35ed>`;
+		bool :target:`started<doxid-df/d59/structtw__backend_1a6348aa21f114631ad6bbfb567427a096>`;
+		struct wl_listener :target:`render_context_destroy<doxid-df/d59/structtw__backend_1a106e4b4f51972f79e4b8420fc4cd6fd7>`;
 	};
-.. _details-df/d59/structtw__backend:
-
-Detailed Documentation
-~~~~~~~~~~~~~~~~~~~~~~
-
-
-
-Fields
-------
-
-.. index:: pair: variable; auto_backend
-.. _doxid-df/d59/structtw__backend_1a8da5ec45500f1c239cf1d3c158c7dc81:
-
-.. ref-code-block:: cpp
-	:class: doxyrest-title-code-block
-
-	struct wlr_backend* auto_backend
-
-for now backend is based on wlr_backends. Future when migrate, we would used api like wayland_impl_tw_backend(struct tw_backend \*);
-
-.. index:: pair: variable; impl
-.. _doxid-df/d59/structtw__backend_1aa74dc58d6ae3a45ee786cebfb5dc0b41:
-
-.. ref-code-block:: cpp
-	:class: doxyrest-title-code-block
-
-	struct :ref:`tw_backend_impl<doxid-d0/da7/structtw__backend__impl>`* impl
-
-interface for implementation details
-
-.. index:: pair: variable; started
-.. _doxid-df/d59/structtw__backend_1a6348aa21f114631ad6bbfb567427a096:
-
-.. ref-code-block:: cpp
-	:class: doxyrest-title-code-block
-
-	bool started
-
-options
-
-.. index:: pair: variable; global_cursor
-.. _doxid-df/d59/structtw__backend_1aa5085aac65868ddc31fae5d67e4a6190:
-
-.. ref-code-block:: cpp
-	:class: doxyrest-title-code-block
-
-	struct :ref:`tw_cursor<doxid-d5/d66/structtw__cursor>` global_cursor
-
-cursor is global, like most desktop experience, the one reason is that people want to fit cursor in the cursor plane.
-
-.. index:: pair: variable; surface_manager
-.. _doxid-df/d59/structtw__backend_1a8e53c9c8d75a10350bf311bfd137db27:
-
-.. ref-code-block:: cpp
-	:class: doxyrest-title-code-block
-
-	struct :ref:`tw_surface_manager<doxid-d1/d12/structtw__surface__manager>` surface_manager
-
-the basic objects required by a compositor
-

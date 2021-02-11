@@ -1,0 +1,49 @@
+.. index:: pair: struct; tw_egl_render_texture
+.. _doxid-dc/d1d/structtw__egl__render__texture:
+
+struct tw_egl_render_texture
+============================
+
+.. toctree::
+	:hidden:
+
+Overview
+~~~~~~~~
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <render_context_egl.h>
+	
+	struct tw_egl_render_texture
+	{
+		// fields
+	
+		struct :ref:`tw_render_texture<doxid-d3/d9d/structtw__render__texture>` :target:`base<doxid-dc/d1d/structtw__egl__render__texture_1ac2b6129035a75fabba5ce1fd11c4c87d>`;
+		GLenum :ref:`target<doxid-dc/d1d/structtw__egl__render__texture_1ae08bf8a540126cf4f34690d93b0a352e>`;
+		EGLImageKHR :target:`image<doxid-dc/d1d/structtw__egl__render__texture_1ac233524a37afef11e4fe895f10793a34>`;
+		GLuint :target:`gltex<doxid-dc/d1d/structtw__egl__render__texture_1a5aae54dd4bc9dd7539f2c9175ecee48f>`;
+	};
+.. _details-dc/d1d/structtw__egl__render__texture:
+
+Detailed Documentation
+~~~~~~~~~~~~~~~~~~~~~~
+
+
+
+Fields
+------
+
+.. index:: pair: variable; target
+.. _doxid-dc/d1d/structtw__egl__render__texture_1ae08bf8a540126cf4f34690d93b0a352e:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	GLenum target
+
+GL_TEXTURE_2D or GL_TEXTURE_EXTERNAL_OES
+

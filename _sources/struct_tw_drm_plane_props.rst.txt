@@ -1,0 +1,34 @@
+.. index:: pair: struct; tw_drm_plane_props
+.. _doxid-db/d68/structtw__drm__plane__props:
+
+struct tw_drm_plane_props
+=========================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <internal.h>
+	
+	struct tw_drm_plane_props
+	{
+		// fields
+	
+		uint32_t :target:`type<doxid-db/d68/structtw__drm__plane__props_1a1ada15f0cf7bc0a4368bb81dae638c50>`;
+		uint32_t :target:`in_formats<doxid-db/d68/structtw__drm__plane__props_1a7ac9eed7dd70572ef4c0892376c7dddc>`;
+		uint32_t :target:`src_x<doxid-db/d68/structtw__drm__plane__props_1aaeb0e9a670409ac4c67bd79e721a50b1>`;
+		uint32_t :target:`src_y<doxid-db/d68/structtw__drm__plane__props_1ac0c125f3f2648801df1922540ee5dc0a>`;
+		uint32_t :target:`src_w<doxid-db/d68/structtw__drm__plane__props_1a04d9873d1368f117e93a7131f22cccbc>`;
+		uint32_t :target:`src_h<doxid-db/d68/structtw__drm__plane__props_1ab98d54d256e6224d47bdd0d3ce68e762>`;
+		uint32_t :target:`crtc_x<doxid-db/d68/structtw__drm__plane__props_1a85a753359379ddfbb30da74fca54f35b>`;
+		uint32_t :target:`crtc_y<doxid-db/d68/structtw__drm__plane__props_1a854c7d9f648ab47e6acf1d22ae539759>`;
+		uint32_t :target:`crtc_w<doxid-db/d68/structtw__drm__plane__props_1a35350134b8f34e76188872b303f0d2bb>`;
+		uint32_t :target:`crtc_h<doxid-db/d68/structtw__drm__plane__props_1a6cf1ba5a8821d039fbdf7cfad964dcef>`;
+		uint32_t :target:`crtc_id<doxid-db/d68/structtw__drm__plane__props_1a7bec4fd448a24529906be67a3c69397c>`;
+		uint32_t :target:`fb_id<doxid-db/d68/structtw__drm__plane__props_1a5053fec9a9e9cace20053225c1d1225d>`;
+	};

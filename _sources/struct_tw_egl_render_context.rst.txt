@@ -1,0 +1,34 @@
+.. index:: pair: struct; tw_egl_render_context
+.. _doxid-d7/d1c/structtw__egl__render__context:
+
+struct tw_egl_render_context
+============================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <egl_render_context.h>
+	
+	struct tw_egl_render_context
+	{
+		// fields
+	
+		struct :ref:`tw_render_context<doxid-d1/dba/structtw__render__context>` :target:`base<doxid-d7/d1c/structtw__egl__render__context_1ad99933566f576d48945541771179763b>`;
+		struct :ref:`tw_egl<doxid-d3/df2/structtw__egl>` :target:`egl<doxid-d7/d1c/structtw__egl__render__context_1a38b01959318ec1a61a4592e859adb452>`;
+		struct wl_array :target:`pixel_formats<doxid-d7/d1c/structtw__egl__render__context_1aa3d48c0382ea172c9d52aaec6227d600>`;
+		struct wl_listener :target:`dma_set<doxid-d7/d1c/structtw__egl__render__context_1a25b6c96c3c8765e2ca197af4e0725844>`;
+		struct wl_listener :target:`compositor_set<doxid-d7/d1c/structtw__egl__render__context_1a165557ffa62340d1266117a47f6e7118>`;
+		struct wl_listener :target:`surface_created<doxid-d7/d1c/structtw__egl__render__context_1aa177d5aec20befbf46f7046e2b8a4e62>`;
+		PFNGLEGLIMAGETARGETTEXTURE2DOESPROC :target:`image_get_texture2d_oes<doxid-d7/d1c/structtw__egl__render__context_1a4e85d0fdfebfa15162d6b9936045c7ac>`;
+		PFNGLDEBUGMESSAGECALLBACKKHRPROC :target:`glDebugMessageCallbackKHR<doxid-d7/d1c/structtw__egl__render__context_1af00e7ce2b50de149c28f9a07b5feac6e>`;
+		PFNGLDEBUGMESSAGECONTROLKHRPROC :target:`glDebugMessageControlKHR<doxid-d7/d1c/structtw__egl__render__context_1a7d26970fc0e749e81c1259744987a5ac>`;
+		PFNGLPOPDEBUGGROUPKHRPROC :target:`glPopDebugGroupKHR<doxid-d7/d1c/structtw__egl__render__context_1a5df25dcb00959b03965fb97c31beb0a3>`;
+		PFNGLPUSHDEBUGGROUPKHRPROC :target:`glPushDebugGroupKHR<doxid-d7/d1c/structtw__egl__render__context_1a916f5173186ad3cfe890f4bdd2d23eb6>`;
+		struct tw_egl_render_context::@55 :target:`funcs<doxid-d7/d1c/structtw__egl__render__context_1acd3d1a84ddfd9e21d8c7d47023feb15e>`;
+	};

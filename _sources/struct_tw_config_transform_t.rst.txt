@@ -13,7 +13,7 @@ struct tw_config_transform_t
 .. ref-code-block:: cpp
 	:class: doxyrest-overview-code-block
 
-	#include <config_internal.h>
+	#include <config_types.h>
 	
 	struct tw_config_transform_t
 	{

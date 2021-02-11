@@ -1,0 +1,70 @@
+.. index:: pair: struct; tw_output_device_mode
+.. _doxid-d8/d1a/structtw__output__device__mode:
+
+struct tw_output_device_mode
+============================
+
+.. toctree::
+	:hidden:
+
+Overview
+~~~~~~~~
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <output_device.h>
+	
+	struct tw_output_device_mode
+	{
+		// fields
+	
+		int32_t :target:`w<doxid-d8/d1a/structtw__output__device__mode_1aab7cec771ce3ff54032839d25f599c2b>`;
+		int32_t :ref:`h<doxid-d8/d1a/structtw__output__device__mode_1a21e6e18d266636b2f1332ad0cdf94011>`;
+		int32_t :ref:`refresh<doxid-d8/d1a/structtw__output__device__mode_1a13a4b4aebbff9009683b35f826dcc45f>`;
+		bool :target:`preferred<doxid-d8/d1a/structtw__output__device__mode_1aeec8062b7c2c433fd6578af5e78301da>`;
+		struct wl_list :ref:`link<doxid-d8/d1a/structtw__output__device__mode_1afd491ec05c5f42edf17c479cb3bf580f>`;
+	};
+.. _details-d8/d1a/structtw__output__device__mode:
+
+Detailed Documentation
+~~~~~~~~~~~~~~~~~~~~~~
+
+
+
+Fields
+------
+
+.. index:: pair: variable; h
+.. _doxid-d8/d1a/structtw__output__device__mode_1a21e6e18d266636b2f1332ad0cdf94011:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	int32_t h
+
+indicate the pixel size of the output
+
+.. index:: pair: variable; refresh
+.. _doxid-d8/d1a/structtw__output__device__mode_1a13a4b4aebbff9009683b35f826dcc45f:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	int32_t refresh
+
+in mHz, 0 means unavailable
+
+.. index:: pair: variable; link
+.. _doxid-d8/d1a/structtw__output__device__mode_1afd491ec05c5f42edf17c479cb3bf580f:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	struct wl_list link
+
+output_device:mode_list
+

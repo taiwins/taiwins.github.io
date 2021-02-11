@@ -1,0 +1,131 @@
+.. index:: pair: struct; tw_output_device
+.. _doxid-db/db1/structtw__output__device:
+
+struct tw_output_device
+=======================
+
+.. toctree::
+	:hidden:
+
+Overview
+~~~~~~~~
+
+abstraction of an output device :ref:`More...<details-db/db1/structtw__output__device>`
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <output_device.h>
+	
+	struct tw_output_device
+	{
+		// fields
+	
+		char :target:`name<doxid-db/db1/structtw__output__device_1a7246d321d5d7ef98234d63a952c362a7>`[32];
+		char :target:`make<doxid-db/db1/structtw__output__device_1a51603f6ba4d3f52c2288f39656cdf0ac>`[32];
+		char :target:`model<doxid-db/db1/structtw__output__device_1a61fbd35dece5dfd6d364045c06a9de88>`[32];
+		char :target:`serial<doxid-db/db1/structtw__output__device_1a6449da8acdf09c1f5c6e52c7d153cd7b>`[16];
+		clockid_t :ref:`clk_id<doxid-db/db1/structtw__output__device_1ae391a2683f6964f58c4f819ee95a0251>`;
+		int32_t :target:`phys_width<doxid-db/db1/structtw__output__device_1a68ae870df17993d86db71f009a8c697c>`;
+		int32_t :target:`phys_height<doxid-db/db1/structtw__output__device_1a14c42b5390ee6a71ed536a8f3a787249>`;
+		int32_t :target:`id<doxid-db/db1/structtw__output__device_1a3784fbae93578653dffb43423d53f095>`;
+		enum wl_output_subpixel :target:`subpixel<doxid-db/db1/structtw__output__device_1a4655989d69e5d857b633dea741881c05>`;
+		void* :ref:`native_window<doxid-db/db1/structtw__output__device_1a68311a4fe82f6ab1c4f2bdd801c149f7>`;
+		const struct :ref:`tw_output_device_impl<doxid-d4/d98/structtw__output__device__impl>`* :target:`impl<doxid-db/db1/structtw__output__device_1ab816be4e8bd270caf2e8556f6a8c203e>`;
+		struct wl_list :target:`link<doxid-db/db1/structtw__output__device_1a2084c2a60daa6a907393b968e5f8618b>`;
+		struct wl_list :ref:`mode_list<doxid-db/db1/structtw__output__device_1a5990a36b676ca5c9330aa3256d8be5e9>`;
+		struct :ref:`tw_output_device_state<doxid-d0/d90/structtw__output__device__state>` state :target:`pending<doxid-db/db1/structtw__output__device_1a855ff5ca0209627de939b454d26cfecc>`;
+		struct wl_signal :target:`destroy<doxid-db/db1/structtw__output__device_1a0c81b11f3aad2ba50bd55ff4c6499fd9>`;
+		struct wl_signal :ref:`new_frame<doxid-db/db1/structtw__output__device_1a735c567c820e659a3ead32ad861d7a5d>`;
+		struct wl_signal :ref:`present<doxid-db/db1/structtw__output__device_1a9b4a5e02e540e3de1d38c870e55d6e81>`;
+		struct wl_signal :ref:`info<doxid-db/db1/structtw__output__device_1a837c289c5620ce0b7d119afac43edc50>`;
+		struct wl_signal :ref:`commit_state<doxid-db/db1/structtw__output__device_1aa45dcc0f88e210d3b76274f7f29cd603>`;
+		struct tw_output_device::@42 :target:`signals<doxid-db/db1/structtw__output__device_1a3616d6365af4a34938cf187b85f056dc>`;
+	};
+.. _details-db/db1/structtw__output__device:
+
+Detailed Documentation
+~~~~~~~~~~~~~~~~~~~~~~
+
+abstraction of an output device
+
+Backends will pass a :ref:`tw_output_device <doxid-db/db1/structtw__output__device>` in the new_output signal.
+
+At the moment, tw_backend_output has quite a few methods that actually does not belong to it, currently the user is the configs. We want tw_backend_output to include this and drive direct on output devices's methods.
+
+We would probably need to include
+
+Fields
+------
+
+.. index:: pair: variable; clk_id
+.. _doxid-db/db1/structtw__output__device_1ae391a2683f6964f58c4f819ee95a0251:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	clockid_t clk_id
+
+the clock driving this output
+
+.. index:: pair: variable; native_window
+.. _doxid-db/db1/structtw__output__device_1a68311a4fe82f6ab1c4f2bdd801c149f7:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	void* native_window
+
+a native window for different backend, could be none Do I need to include render_surface here
+
+.. index:: pair: variable; mode_list
+.. _doxid-db/db1/structtw__output__device_1a5990a36b676ca5c9330aa3256d8be5e9:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	struct wl_list mode_list
+
+backend: list
+
+.. index:: pair: variable; new_frame
+.. _doxid-db/db1/structtw__output__device_1a735c567c820e659a3ead32ad861d7a5d:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	struct wl_signal new_frame
+
+new frame requested
+
+.. index:: pair: variable; present
+.. _doxid-db/db1/structtw__output__device_1a9b4a5e02e540e3de1d38c870e55d6e81:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	struct wl_signal present
+
+new frame just presented on the output
+
+.. index:: pair: variable; info
+.. _doxid-db/db1/structtw__output__device_1a837c289c5620ce0b7d119afac43edc50:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	struct wl_signal info
+
+emit when general wl_output information is available, or when output state changed
+
+.. index:: pair: variable; commit_state
+.. _doxid-db/db1/structtw__output__device_1aa45dcc0f88e210d3b76274f7f29cd603:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	struct wl_signal commit_state
+
+emit right after applying pending state, backend could listen on this for applying the states to the hardware
+

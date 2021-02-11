@@ -1,0 +1,53 @@
+.. index:: pair: struct; tw_engine_seat
+.. _doxid-dd/d1f/structtw__engine__seat:
+
+struct tw_engine_seat
+=====================
+
+.. toctree::
+	:hidden:
+
+Overview
+~~~~~~~~
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <engine.h>
+	
+	struct tw_engine_seat
+	{
+		// fields
+	
+		int :target:`idx<doxid-dd/d1f/structtw__engine__seat_1a2d032eef469186f9e47ea475e0fc3282>`;
+		struct :ref:`tw_engine<doxid-df/d8e/structtw__engine>`* :target:`engine<doxid-dd/d1f/structtw__engine__seat_1a5deb89b1e06a572590a3903b12ecfeb1>`;
+		struct :ref:`tw_seat<doxid-dc/d28/structtw__seat>`* :ref:`tw_seat<doxid-dd/d1f/structtw__engine__seat_1a5c79c1d388fde5ed535ecb64d1779f28>`;
+		struct :ref:`tw_input_source<doxid-d4/df6/structtw__input__source>` :target:`source<doxid-dd/d1f/structtw__engine__seat_1a8ccc8fd83658a8cdb6140a2288ddfc05>`;
+		struct :ref:`tw_input_sink<doxid-da/d91/structtw__input__sink>` :target:`sink<doxid-dd/d1f/structtw__engine__seat_1ab3f01169f662ff119b4e30cbc4ff7dc2>`;
+		struct wl_list :target:`link<doxid-dd/d1f/structtw__engine__seat_1a338d22417ccd49347251d2ba4b8bd1c8>`;
+		struct xkb_rule_names :target:`keyboard_rule_names<doxid-dd/d1f/structtw__engine__seat_1a0f77c8f427ff2f1873e7280d59b8e442>`;
+		struct xkb_keymap* :target:`keymap<doxid-dd/d1f/structtw__engine__seat_1a29c2464f1e80a45d58b13b70d2d3b2d7>`;
+	};
+.. _details-dd/d1f/structtw__engine__seat:
+
+Detailed Documentation
+~~~~~~~~~~~~~~~~~~~~~~
+
+
+
+Fields
+------
+
+.. index:: pair: variable; tw_seat
+.. _doxid-dd/d1f/structtw__engine__seat_1a5c79c1d388fde5ed535ecb64d1779f28:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	struct :ref:`tw_seat<doxid-dc/d28/structtw__seat>`* tw_seat
+
+:ref:`tw_seat <doxid-dc/d28/structtw__seat>` implments wl_seat protocol
+

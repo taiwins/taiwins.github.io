@@ -1,0 +1,24 @@
+.. index:: pair: struct; tw_drm_formats
+.. _doxid-d2/dbe/structtw__drm__formats:
+
+struct tw_drm_formats
+=====================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <drm_formats.h>
+	
+	struct tw_drm_formats
+	{
+		// fields
+	
+		struct wl_array :target:`formats<doxid-d2/dbe/structtw__drm__formats_1a45454105968a08ead5351728fb840e51>`;
+		struct wl_array :target:`modifiers<doxid-d2/dbe/structtw__drm__formats_1a21bfd3d77e289ebd4c7a8776dd0a098b>`;
+	};

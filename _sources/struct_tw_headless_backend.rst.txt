@@ -1,0 +1,37 @@
+.. index:: pair: struct; tw_headless_backend
+.. _doxid-d2/dcb/structtw__headless__backend:
+
+struct tw_headless_backend
+==========================
+
+.. toctree::
+	:hidden:
+
+Overview
+~~~~~~~~
+
+a headless backend holds output as in memory framebuffers. :ref:`More...<details-d2/dcb/structtw__headless__backend>`
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	
+	struct tw_headless_backend
+	{
+		// fields
+	
+		struct wl_display* :target:`display<doxid-d2/dcb/structtw__headless__backend_1ac17d5d71a5fb8259836ee11ab4cc8228>`;
+		struct :ref:`tw_backend<doxid-df/d59/structtw__backend>` :target:`base<doxid-d2/dcb/structtw__headless__backend_1aafcdb23163f646f3035bfe59e2ecac90>`;
+		unsigned int :target:`internal_format<doxid-d2/dcb/structtw__headless__backend_1ac8934a63bea2d50239b366daabb3266d>`;
+		struct wl_listener :target:`display_destroy<doxid-d2/dcb/structtw__headless__backend_1a1883038d656d9b6e198da3babce67e24>`;
+	};
+.. _details-d2/dcb/structtw__headless__backend:
+
+Detailed Documentation
+~~~~~~~~~~~~~~~~~~~~~~
+
+a headless backend holds output as in memory framebuffers.
+
+The Contents are not displayed but users can read pixels from it thus makes it good for debuging/testing purpose.
+

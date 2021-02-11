@@ -1,0 +1,26 @@
+.. index:: pair: struct; tw_event_keyboard_key
+.. _doxid-d8/d2b/structtw__event__keyboard__key:
+
+struct tw_event_keyboard_key
+============================
+
+.. toctree::
+	:hidden:
+
+keyboard event
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <input_device.h>
+	
+	struct tw_event_keyboard_key
+	{
+		// fields
+	
+		struct :ref:`tw_input_device<doxid-d3/db0/structtw__input__device>`* :target:`dev<doxid-d8/d2b/structtw__event__keyboard__key_1a5749ca79996c3244601c0a2fa1cf3cfc>`;
+		uint32_t :target:`time<doxid-d8/d2b/structtw__event__keyboard__key_1a3e242124ddeebd4be94cf8e49cedb146>`;
+		uint32_t :target:`keycode<doxid-d8/d2b/structtw__event__keyboard__key_1a14b3bbcc7ec94aac38afbf883371d58b>`;
+		enum wl_keyboard_key_state :target:`state<doxid-d8/d2b/structtw__event__keyboard__key_1a142dbeb60dc436ec5f07c978502d71dc>`;
+	};

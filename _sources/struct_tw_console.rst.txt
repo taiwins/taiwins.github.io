@@ -7,7 +7,7 @@ struct tw_console
 .. toctree::
 	:hidden:
 
-this struct handles the request and sends the event from :ref:`tw_console <doxid-dd/dc3/structtw__console>`.
+this struct handles the request and sends the event from tw_console.
 
 
 .. ref-code-block:: cpp
@@ -26,7 +26,7 @@ this struct handles the request and sends the event from :ref:`tw_console <doxid
 		gid_t :target:`gid<doxid-dd/dc3/structtw__console_1a008ae22571f85f975036f6efe19c3775>`;
 		struct :ref:`tw_shell<doxid-de/dcd/structtw__shell>`* :target:`shell<doxid-dd/dc3/structtw__console_1ae344305889849199a14bfcc2022f9a95>`;
 		struct wl_display* :target:`display<doxid-dd/dc3/structtw__console_1a9c213c9e984147d7a25e572afc998bd2>`;
-		struct :ref:`tw_backend<doxid-df/d59/structtw__backend>`* :target:`backend<doxid-dd/dc3/structtw__console_1acd120035203b7f9245f5b9075432f446>`;
+		struct :ref:`tw_engine<doxid-df/d8e/structtw__engine>`* :target:`engine<doxid-dd/dc3/structtw__console_1ab5e2cee0127eb6fa7aba922c5eef5a06>`;
 		struct wl_shm_buffer* :target:`decision_buffer<doxid-dd/dc3/structtw__console_1a017492bc6fd101cb450c70ba716e49b5>`;
 		struct :ref:`tw_surface<doxid-dd/dda/structtw__surface>`* :target:`surface<doxid-dd/dc3/structtw__console_1aaa3e5838e95286c4955686b747dfb3b1>`;
 		struct wl_listener :target:`display_destroy_listener<doxid-dd/dc3/structtw__console_1a5ca15d90328fb1e56465e37c49fe4489>`;

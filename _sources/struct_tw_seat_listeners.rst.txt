@@ -1,0 +1,34 @@
+.. index:: pair: struct; tw_seat_listeners
+.. _doxid-dc/d77/structtw__seat__listeners:
+
+struct tw_seat_listeners
+========================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <input.h>
+	
+	struct tw_seat_listeners
+	{
+		// fields
+	
+		struct :ref:`tw_seat<doxid-dc/d28/structtw__seat>`* :target:`seat<doxid-dc/d77/structtw__seat__listeners_1ae3fc49d08e19617f0dab837a504351a6>`;
+		struct :ref:`tw_engine<doxid-df/d8e/structtw__engine>`* :target:`engine<doxid-dc/d77/structtw__seat__listeners_1a224563f6686a2a569051c4f61cbbb318>`;
+		struct :ref:`tw_bindings<doxid-d2/dab/structtw__bindings>`* :target:`bindings<doxid-dc/d77/structtw__seat__listeners_1a053c9be87c59dfc61b0f90809ebe2c09>`;
+		struct xkb_state* :target:`curr_state<doxid-dc/d77/structtw__seat__listeners_1a3df052056239485c919dbe3e09e1a736>`;
+		struct wl_listener :target:`key_input<doxid-dc/d77/structtw__seat__listeners_1afe76feb5836593e341307c07f6a58ea5>`;
+		struct wl_listener :target:`btn_input<doxid-dc/d77/structtw__seat__listeners_1af2dca7d5a0fdeab936cf6ea289ba3f5b>`;
+		struct wl_listener :target:`axis_input<doxid-dc/d77/structtw__seat__listeners_1aa9afc996eb1f3e519de107426f3abd20>`;
+		struct wl_listener :target:`tch_input<doxid-dc/d77/structtw__seat__listeners_1a675ced07889cbc6f76fea1de4c3a5737>`;
+		struct :ref:`tw_seat_keyboard_grab<doxid-de/dfc/structtw__seat__keyboard__grab>` :target:`session_switch_grab<doxid-dc/d77/structtw__seat__listeners_1a01da68dcd2227d6fbc593fd62f8efc36>`;
+		struct :ref:`tw_seat_keyboard_grab<doxid-de/dfc/structtw__seat__keyboard__grab>` :target:`binding_key_grab<doxid-dc/d77/structtw__seat__listeners_1a8296eadee0fc68d427e80110ade38050>`;
+		struct :ref:`tw_seat_pointer_grab<doxid-d9/d46/structtw__seat__pointer__grab>` :target:`binding_pointer_grab<doxid-dc/d77/structtw__seat__listeners_1a77729cf2df23cd355fce42ff794348ba>`;
+		struct :ref:`tw_seat_touch_grab<doxid-da/d71/structtw__seat__touch__grab>` :target:`binding_touch_grab<doxid-dc/d77/structtw__seat__listeners_1aac0a3c1dfa5f4e114c7d147cfa6c8082>`;
+	};

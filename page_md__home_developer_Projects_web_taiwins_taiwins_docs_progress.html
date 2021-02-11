@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <title>Progress and feature track &#8212; Taiwins</title>
+  
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="_static/bootstrap-sphinx.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/my-style.css" />
+    <link rel="stylesheet" type="text/css" href="_static/doxyrest-pygments.css" />
+    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/target-highlight.js"></script>
+    <link rel="shortcut icon" href="_static/favicon.ico"/>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Taiwins in tiling mode" href="page_md__home_developer_Projects_web_taiwins_taiwins_docs_screenshots.html" />
+    <link rel="prev" title="Lua bindings" href="page_md__home_developer_Projects_web_taiwins_taiwins_docs_lua.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<script type="text/javascript" src="_static/js/jquery-1.11.0.min.js "></script>
+<script type="text/javascript" src="_static/js/jquery-fix.js "></script>
+<script type="text/javascript" src="_static/bootstrap-3.3.7/js/bootstrap.min.js "></script>
+<script type="text/javascript" src="_static/bootstrap-sphinx.js "></script>
+
+  </head><body>
+  <div class="page-container">
+    
+<!-- taken from bootstrap theme -->
+<div id="navbar" class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">
+        <b>Taiwins</b></a>
+      <span class="navbar-text navbar-version pull-left"><b></b></span>
+    </div>
+
+    <div class="collapse navbar-collapse nav-collapse">
+      <ul class="nav navbar-nav">
+	<li><a href="page_doc.html">Documentation</a></li>
+	<li><a href="https://github.com/taiwins/taiwins">Source Code</a></li>
+	<li><a href="https://github.com/taiwins/taiwins/wiki">Wiki</a></li>
+	<!-- add other pages -->
+      </ul>
+    </div>
+  </div>
+</div>
+
+    <div class="container">
+      
+	<div class="row">
+	  <div class="body col-md-9 content" role="main">
+	    
+  <div class="section" id="progress-and-feature-track">
+<span id="doxid-d6-d3c-md-home-developer-projects-web-taiwins-taiwins-docs-progress"></span><span id="index-0"></span><h1>Progress and feature track<a class="headerlink" href="#progress-and-feature-track" title="Permalink to this headline">¶</a></h1>
+<p>This is a public list of Taiwins features(finished or not), I have been using org-mode for tracking taiwins development, the feature list was never known other than myself. This should be helpful for knowing what taiwins can do.</p>
+<div class="section" id="libtaiwins-feature">
+<span id="doxid-d6-d3c-md-home-developer-projects-web-taiwins-taiwins-docs-progress-1autotoc-md47"></span><h2>libtaiwins feature<a class="headerlink" href="#libtaiwins-feature" title="Permalink to this headline">¶</a></h2>
+<p>libtaiwins is the compositor library tailored for Taiwins compositor, much like <a class="reference external" href="https://gitlab.freedesktop.org/wayland/weston/tree/master/libweston">libweston</a>.</p>
+<ul class="simple">
+<li><p>[x] Headless backend.</p></li>
+<li><p>[x] X11 backend.</p></li>
+<li><p>[x] Wayland backend.</p>
+<ul>
+<li><p>[ ] Frame re-scheduling on switching workspaces.</p></li>
+<li><p>[ ] Frame time measurement in wayland backend.</p></li>
+<li><p>[x] Fullscreen surface.</p></li>
+</ul>
+</li>
+<li><p>[ ] DRM backend.</p>
+<ul>
+<li><p>login service.</p>
+<ul>
+<li><p>[x] systemd-logind/elogind service.</p></li>
+<li><p>[x] direct login service.</p></li>
+<li><p>[x] session switch away.</p></li>
+<li><p>[ ] session switch back.</p></li>
+</ul>
+</li>
+<li><p>[x] GPU resource enumeration.</p></li>
+<li><p>[x] atomic modesetting.</p></li>
+<li><p>[x] gbm platform.</p></li>
+<li><p>[ ] EGLStream platform.</p></li>
+<li><p>[x] Multi-GPU support.</p></li>
+<li><p>[x] GPU hotplug.</p>
+<ul>
+<li><p>[ ] per-GPU render context.</p></li>
+</ul>
+</li>
+<li><p>[ ] writeback connectors.</p></li>
+</ul>
+</li>
+<li><p>[ ] XWayland.</p></li>
+<li><p>[ ] Pipewire screenrecording.</p></li>
+<li><p>rendering pipeline.</p>
+<ul>
+<li><p>[x] EGL render context.</p>
+<ul>
+<li><p>[ ] EGLStream functions.</p></li>
+</ul>
+</li>
+<li><p>[ ] Vulkan render context.</p></li>
+</ul>
+</li>
+<li><p>desktop shell.</p>
+<ul>
+<li><p>[x] taiwins-shell protocol.</p></li>
+<li><p>[x] taiwins-console protocol.</p></li>
+<li><p>[x] taiwins-theme protocol (loading different theme/fonts).</p></li>
+<li><p>[x] wlr-layer-shell protocol(NOT TESTED).</p></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section" id="compositor">
+<span id="doxid-d6-d3c-md-home-developer-projects-web-taiwins-taiwins-docs-progress-1autotoc-md48"></span><h2>Compositor<a class="headerlink" href="#compositor" title="Permalink to this headline">¶</a></h2>
+<p>Taiwins is an instance of a libtaiwins compositor.</p>
+<ul class="simple">
+<li><p>desktop logic.</p>
+<ul>
+<li><p>[x] switchable workspace.</p></li>
+<li><p>[x] xdg-shell protocol.</p></li>
+<li><p>layouts support.</p>
+<ul>
+<li><p>[x] floating layout.</p></li>
+<li><p>[x] tiling layout.</p></li>
+<li><p>[x] maximized layout.</p></li>
+<li><p>[x] fullscreend layout.</p></li>
+<li><p>[x] minimized layout.</p></li>
+<li><p>[ ] smart layout (auto-select which layout to use).</p></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>configuration.</p>
+<ul>
+<li><p>[x] configure desktop layout</p></li>
+<li><p>[x] configure desktop gab.</p></li>
+<li><p>[x] configure panel pos.</p></li>
+<li><p>[ ] configure sleep timer.</p></li>
+<li><p>[x] configure keyboard layouts.</p></li>
+<li><p>[x] configure bindings.</p></li>
+<li><p>[x] lua configure.</p></li>
+<li><p>[ ] dbus configure.</p></li>
+<li><p>[x] configure reload.</p></li>
+</ul>
+</li>
+<li><p>bindings</p>
+<ul>
+<li><p>[x] quit</p></li>
+<li><p>[x] close app.</p></li>
+<li><p>[x] reload configuration.</p></li>
+<li><p>[x] open console</p></li>
+<li><p>[ ] zoom</p></li>
+<li><p>[ ] chaning transparency.</p></li>
+<li><p>[x] switch workspace.</p></li>
+<li><p>[x] toggle workspace layout.</p></li>
+<li><p>[x] vertial split workspace.</p></li>
+<li><p>[x] horizontal split workspace.</p></li>
+<li><p>[x] task toggling.</p></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section" id="taiwins-shell">
+<span id="doxid-d6-d3c-md-home-developer-projects-web-taiwins-taiwins-docs-progress-1autotoc-md49"></span><h2>Taiwins Shell<a class="headerlink" href="#taiwins-shell" title="Permalink to this headline">¶</a></h2>
+<p>Taiwins shell provides desktop environment(cursor, wallpaper, panel).</p>
+<ul class="simple">
+<li><p>[x] lua configuration.</p></li>
+<li><p>[x] taiwins-shell protocol.</p></li>
+<li><p>[x] taiwins-theme protocol.</p></li>
+<li><p>[x] wallpaper.</p></li>
+<li><p>[x] GUI system using twclient-gui.</p></li>
+<li><p>[x] panel/task bar.</p></li>
+<li><p>[x] dropdown widget.</p>
+<ul>
+<li><p>[x] clock widget.</p></li>
+<li><p>[x] battery widget.</p></li>
+<li><p>[x] lua widget environment.</p></li>
+<li><p>[ ] other widgets like (WiFi Connection, alsa sound control).</p></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section" id="taiwins-console">
+<span id="doxid-d6-d3c-md-home-developer-projects-web-taiwins-taiwins-docs-progress-1autotoc-md50"></span><h2>Taiwins Console<a class="headerlink" href="#taiwins-console" title="Permalink to this headline">¶</a></h2>
+<p>Taiwins Console is the application launcher for taiwins, designed like ulauncher.</p>
+<ul class="simple">
+<li><p>[x] taiwins-console protocol.</p></li>
+<li><p>[x] taiwins-theme protocol.</p></li>
+<li><p>[x] Runners architecture.</p>
+<ul>
+<li><p>[x] lua runners(writing a runner using lua script).</p></li>
+<li><p>[x] xdg desktop entry runner (loading desktop application)</p></li>
+<li><p>[x] CMD runner.</p></li>
+</ul>
+</li>
+<li><p>[ ] runner feedback.</p></li>
+<li><p>[ ] limiting runner threads.</p></li>
+</ul>
+</div>
+<div class="section" id="taiwins-cache-updater">
+<span id="doxid-d6-d3c-md-home-developer-projects-web-taiwins-taiwins-docs-progress-1autotoc-md51"></span><h2>Taiwins Cache Updater.<a class="headerlink" href="#taiwins-cache-updater" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>[x] Loading icons.</p>
+<ul>
+<li><p>[x] limiting app icons.</p></li>
+</ul>
+</li>
+<li><p>[x] building atlas textures.</p></li>
+<li><p>[x] custom cache data format.</p></li>
+</ul>
+</div>
+</div>
+
+
+	  </div>
+	  
+<div class="col-md-3">
+  <div id="sidebar" class="bs-sidenav">
+<h3>Content</h3>
+<div id="localtoc"><ul>
+<li><a class="reference internal" href="#">Progress and feature track</a><ul>
+<li><a class="reference internal" href="#libtaiwins-feature">libtaiwins feature</a></li>
+<li><a class="reference internal" href="#compositor">Compositor</a></li>
+<li><a class="reference internal" href="#taiwins-shell">Taiwins Shell</a></li>
+<li><a class="reference internal" href="#taiwins-console">Taiwins Console</a></li>
+<li><a class="reference internal" href="#taiwins-cache-updater">Taiwins Cache Updater.</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<h3><a data-toggle="collapse" href="#globaltoc">Related Pages</a></h3>
+<div id="globaltoc" class="collapse">
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="page_md__home_developer_Projects_web_taiwins_taiwins_CONTRIBUTING.html">Contributing to Taiwins</a></li>
+<li class="toctree-l1"><a class="reference internal" href="page_md__home_developer_Projects_web_taiwins_taiwins_docs_dbus.html">D-Bus API Quick Reference</a></li>
+<li class="toctree-l1"><a class="reference internal" href="page_md__home_developer_Projects_web_taiwins_taiwins_docs_libtaiwins.html">For libtaiwins users</a></li>
+<li class="toctree-l1"><a class="reference internal" href="page_md__home_developer_Projects_web_taiwins_taiwins_docs_lua.html">Lua bindings</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Progress and feature track</a></li>
+<li class="toctree-l1"><a class="reference internal" href="page_md__home_developer_Projects_web_taiwins_taiwins_docs_screenshots.html">Taiwins in tiling mode</a></li>
+<li class="toctree-l1"><a class="reference internal" href="page_md__home_developer_Projects_web_taiwins_taiwins_docs_window_management.html">Taiwins layout engine.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="page_md__home_developer_Projects_web_taiwins_taiwins_README.html">Taiwins, a modern wayland window manager</a></li>
+<li class="toctree-l1"><a class="reference internal" href="page_md__home_developer_Projects_web_taiwins_taiwins_docs_libtwclient.html">Twclient quick reference</a></li>
+<li class="toctree-l1"><a class="reference internal" href="page_md__home_developer_Projects_web_taiwins_taiwins_docs_twobjects.html">Twobjects quick reference</a></li>
+<li class="toctree-l1"><a class="reference internal" href="page_md__home_developer_Projects_web_taiwins_taiwins_docs_wayland.html">wayland</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="global.html">Global Namespace</a></li>
+</ul>
+
+</div>
+<form action="search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+  </div>
+</div>
+
+	</div>
+      
+    </div>
+    <div class="push"></div>
+  </div>
+
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+    </p>
+    <p>
+        &copy; Copyright 2020, Xichen Zhou.<br/>
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 3.4.3.<br/>
+    </p>
+  </div>
+</footer>
+  </body>
+</html>

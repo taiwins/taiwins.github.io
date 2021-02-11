@@ -1,0 +1,28 @@
+.. index:: pair: struct; tw_event_pointer_axis
+.. _doxid-d0/d13/structtw__event__pointer__axis:
+
+struct tw_event_pointer_axis
+============================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <input_device.h>
+	
+	struct tw_event_pointer_axis
+	{
+		// fields
+	
+		struct :ref:`tw_input_device<doxid-d3/db0/structtw__input__device>`* :target:`dev<doxid-d0/d13/structtw__event__pointer__axis_1abb70156a7a267d4f6e81927946e7e37b>`;
+		uint32_t :target:`time<doxid-d0/d13/structtw__event__pointer__axis_1ac554dbb2cd1276d1dd400935e0794a22>`;
+		enum wl_pointer_axis_source :target:`source<doxid-d0/d13/structtw__event__pointer__axis_1aa287f4606525a0ec79b072626d7f02ba>`;
+		enum wl_pointer_axis :target:`axis<doxid-d0/d13/structtw__event__pointer__axis_1a35925ab4bb9b34ba145233087ce66b0e>`;
+		double :target:`delta<doxid-d0/d13/structtw__event__pointer__axis_1aa5efe516ebc51651d6c99c38e9568088>`;
+		int32_t :target:`delta_discrete<doxid-d0/d13/structtw__event__pointer__axis_1a374423fa6ab71285b6cbc838b084da8b>`;
+	};

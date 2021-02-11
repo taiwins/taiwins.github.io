@@ -1,0 +1,25 @@
+.. index:: pair: struct; tw_render_presentable
+.. _doxid-da/dd1/structtw__render__presentable:
+
+struct tw_render_presentable
+============================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <render_context.h>
+	
+	struct tw_render_presentable
+	{
+		// fields
+	
+		intptr_t :target:`handle<doxid-da/dd1/structtw__render__presentable_1ac07ad534e17ea4c53a93357d6a37154c>`;
+		struct wl_signal :target:`commit<doxid-da/dd1/structtw__render__presentable_1a62ba1d8466a43b5c3ffaa893997c6a1f>`;
+		const struct :ref:`tw_render_presentable_impl<doxid-df/d4c/structtw__render__presentable__impl>`* :target:`impl<doxid-da/dd1/structtw__render__presentable_1af6bb0dc6ed51a5650833b0864d60ea00>`;
+	};

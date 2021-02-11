@@ -1,0 +1,31 @@
+.. index:: pair: struct; tw_wl_surface
+.. _doxid-da/d6d/structtw__wl__surface:
+
+struct tw_wl_surface
+====================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <internal.h>
+	
+	struct tw_wl_surface
+	{
+		// fields
+	
+		struct :ref:`tw_render_output<doxid-dd/d31/structtw__render__output>` :target:`output<doxid-da/d6d/structtw__wl__surface_1a64d492d5087634aab1ae27bbc06183e4>`;
+		struct wl_listener :target:`output_commit<doxid-da/d6d/structtw__wl__surface_1a26b321d853ca56c5e1ebc678f55d8ff5>`;
+		struct wl_surface* :target:`wl_surface<doxid-da/d6d/structtw__wl__surface_1abb8bcd05f0375da12aaf06072db78b46>`;
+		struct xdg_surface* :target:`xdg_surface<doxid-da/d6d/structtw__wl__surface_1a6dcfea02013340dc94d37c815fea985a>`;
+		struct xdg_toplevel* :target:`xdg_toplevel<doxid-da/d6d/structtw__wl__surface_1accac677363a3f5dad0a8bb65dec6c186>`;
+		struct wl_egl_window* :target:`egl_window<doxid-da/d6d/structtw__wl__surface_1a17a34dd34df9d65475c1bf113b4d04ca>`;
+		struct wl_callback* :target:`frame<doxid-da/d6d/structtw__wl__surface_1af85ec7b1c00bdab414949f255c9ca258>`;
+		struct :ref:`tw_wl_backend<doxid-d2/dad/structtw__wl__backend>`* :target:`wl<doxid-da/d6d/structtw__wl__surface_1aa49fddfaf47ad98254cdb6d50c3812da>`;
+		struct :ref:`tw_wl_output<doxid-d0/d8b/structtw__wl__output>`* :target:`residing<doxid-da/d6d/structtw__wl__surface_1ac8b99ac925c64d3c7a6bbb9a440ea9bd>`;
+	};

@@ -1,0 +1,23 @@
+.. index:: pair: struct; tw_direct_gpu
+.. _doxid-db/dfe/structtw__direct__gpu:
+
+struct tw_direct_gpu
+====================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	
+	struct tw_direct_gpu
+	{
+		// fields
+	
+		struct wl_list :target:`link<doxid-db/dfe/structtw__direct__gpu_1aee524669ef8b66a9c5c0b8797f923a86>`;
+		int :target:`fd<doxid-db/dfe/structtw__direct__gpu_1a78434132d005d98cf741e7dab151e24b>`;
+	};

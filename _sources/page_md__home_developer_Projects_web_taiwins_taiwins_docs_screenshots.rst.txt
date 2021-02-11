@@ -1,0 +1,8 @@
+.. index:: pair: page; Taiwins in tiling mode
+.. _doxid-dd/d4a/md__home_developer__projects_web_taiwins_taiwins_docs_screenshots:
+
+Taiwins in tiling mode
+======================
+
+.. image:: ../../imgs/tiling-windows.png
+

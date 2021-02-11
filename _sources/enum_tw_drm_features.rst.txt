@@ -1,0 +1,21 @@
+.. index:: pair: enum; tw_drm_features
+.. _doxid-dc/dc3/backend_2drm_2internal_8h_1ab4abf333842a5d8cb47cc270cbf885f9:
+
+enum tw_drm_features
+====================
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <internal.h>
+
+	enum tw_drm_features
+	{
+	    :target:`TW_DRM_CAP_ATOMIC<doxid-dc/dc3/backend_2drm_2internal_8h_1ab4abf333842a5d8cb47cc270cbf885f9a55a91a67a3464e00665976d7fab76771>`     = 1<<0,
+	    :target:`TW_DRM_CAP_PRIME<doxid-dc/dc3/backend_2drm_2internal_8h_1ab4abf333842a5d8cb47cc270cbf885f9a34146f5ae9f572d48886c3af77c68ef1>`      = 1<<1,
+	    :target:`TW_DRM_CAP_MODIFIERS<doxid-dc/dc3/backend_2drm_2internal_8h_1ab4abf333842a5d8cb47cc270cbf885f9afc4ad62a6c3b7509cec29de9cf849ec5>`  = 1<<2,
+	    :target:`TW_DRM_CAP_DUMPBUFFER<doxid-dc/dc3/backend_2drm_2internal_8h_1ab4abf333842a5d8cb47cc270cbf885f9a7e87d63bfa8f477856cb9734f2bf8dce>` = 1<<3,
+	};
+

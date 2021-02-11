@@ -1,0 +1,24 @@
+.. index:: pair: struct; tw_event_keyboard_keymap
+.. _doxid-d6/dfa/structtw__event__keyboard__keymap:
+
+struct tw_event_keyboard_keymap
+===============================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <input_device.h>
+	
+	struct tw_event_keyboard_keymap
+	{
+		// fields
+	
+		struct :ref:`tw_input_device<doxid-d3/db0/structtw__input__device>`* :target:`dev<doxid-d6/dfa/structtw__event__keyboard__keymap_1af27a8ac02beef24c0a927aec2edfb0e4>`;
+		const struct xkb_keymap* :target:`keymap<doxid-d6/dfa/structtw__event__keyboard__keymap_1a8fb538b0012ae07b479d0fca53653bd2>`;
+	};

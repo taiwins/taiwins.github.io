@@ -1,0 +1,23 @@
+.. index:: pair: struct; tw_libinput_impl
+.. _doxid-d7/dfe/structtw__libinput__impl:
+
+struct tw_libinput_impl
+=======================
+
+.. toctree::
+	:hidden:
+
+implement by backend for complete libinput functions
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <backend_libinput.h>
+	
+	struct tw_libinput_impl
+	{
+		// fields
+	
+		struct :ref:`tw_output_device<doxid-db/db1/structtw__output__device>`*(* :target:`get_output_device<doxid-d7/dfe/structtw__libinput__impl_1ad3a896a2dcc534aafd8c2f14bb57929f>`)(struct udev_device *);
+	};

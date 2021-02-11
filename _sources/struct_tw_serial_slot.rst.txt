@@ -1,0 +1,24 @@
+.. index:: pair: struct; tw_serial_slot
+.. _doxid-db/dce/structtw__serial__slot:
+
+struct tw_serial_slot
+=====================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <serial_engine.h>
+	
+	struct tw_serial_slot
+	{
+		// fields
+	
+		uint32_t :target:`serial<doxid-db/dce/structtw__serial__slot_1a5bc943f2b1e773cbcbc23ab497d8947b>`;
+		struct wl_list :target:`link<doxid-db/dce/structtw__serial__slot_1af69566ded48172865e71a0f4895df366>`;
+	};

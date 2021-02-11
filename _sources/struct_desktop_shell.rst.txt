@@ -41,7 +41,7 @@ Overview
 		struct wl_list :target:`msgs<doxid-db/deb/structdesktop__shell_1a3573f32559233275bd38e708c879b26c>`;
 		struct :ref:`tw_signal<doxid-d7/d53/structtw__signal>` :target:`msg_recv_signal<doxid-db/deb/structdesktop__shell_1aebea48d0c925bac6ba4436dc2d87850a>`;
 		struct :ref:`tw_signal<doxid-d7/d53/structtw__signal>` :target:`msg_del_signal<doxid-db/deb/structdesktop__shell_1a035d4bc10ab3f2cdb00fb6e47b11e8bf>`;
-		struct desktop_shell::@7 :target:`notifs<doxid-db/deb/structdesktop__shell_1ab1bf3015b9c13b625346d3532c8a0db0>`;
+		struct desktop_shell::@12 :target:`notifs<doxid-db/deb/structdesktop__shell_1aaa19dd51057535ac730280730a596131>`;
 		:ref:`vector_t<doxid-d3/d8b/structvector__t>` :target:`menu<doxid-db/deb/structdesktop__shell_1a9decc4c0fc9d889d7527c5c0250ccd3d>`;
 		struct :ref:`shell_output<doxid-d2/d16/structshell__output>`* :target:`main_output<doxid-db/deb/structdesktop__shell_1ab2a1684cb514466555ba5bd2835d3e07>`;
 		struct :ref:`shell_output<doxid-d2/d16/structshell__output>` :target:`shell_outputs<doxid-db/deb/structdesktop__shell_1a1ddd2720e549a3ddb3385c6972e4d03b>`[16];

@@ -1,0 +1,35 @@
+.. index:: pair: struct; tw_render_context
+.. _doxid-d1/dba/structtw__render__context:
+
+struct tw_render_context
+========================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <render_context.h>
+	
+	struct tw_render_context
+	{
+		// fields
+	
+		enum :ref:`tw_renderer_type<doxid-d0/d10/render__context_8h_1a9208b36c7eda936fefebd66f79183aed>` :target:`type<doxid-d1/dba/structtw__render__context_1a1fb8c5cd4d7a09b4cbb41263b4fc6e8d>`;
+		const struct :ref:`tw_render_context_impl<doxid-dd/de7/structtw__render__context__impl>`* :target:`impl<doxid-d1/dba/structtw__render__context_1a765c1c76d54a8711453bf8bcdbbdb3bb>`;
+		struct wl_display* :target:`display<doxid-d1/dba/structtw__render__context_1a2043174a3ad85f93d63b2dc59e1de8ee>`;
+		struct wl_listener :target:`display_destroy<doxid-d1/dba/structtw__render__context_1ae8655ad6ae84f9eeb18929a3c9600976>`;
+		struct wl_list :target:`outputs<doxid-d1/dba/structtw__render__context_1a2afcdbefbbc2ef2e8c37ab02e417516a>`;
+		struct wl_signal :target:`destroy<doxid-d1/dba/structtw__render__context_1af6e47c1b4f71079ef03896e7c38063b4>`;
+		struct wl_signal :target:`dma_set<doxid-d1/dba/structtw__render__context_1a863c5064c6aa3f219d063afaf77f11ad>`;
+		struct wl_signal :target:`compositor_set<doxid-d1/dba/structtw__render__context_1ad06432fab80dc78ffc04f5893c503aff>`;
+		struct wl_signal :target:`output_lost<doxid-d1/dba/structtw__render__context_1a896dbc7604305cc4e63b8884bc19364f>`;
+		struct wl_signal :target:`wl_surface_dirty<doxid-d1/dba/structtw__render__context_1a031a0a3b9fcc31398b9272bb276c5565>`;
+		struct wl_signal :target:`wl_surface_destroy<doxid-d1/dba/structtw__render__context_1af21b443a2ccedd5a2623d4bc51f45830>`;
+		struct tw_render_context::@43 :target:`signals<doxid-d1/dba/structtw__render__context_1a0142a1fb37cdea97fe9c9c469b9de7bc>`;
+		struct wl_list :target:`pipelines<doxid-d1/dba/structtw__render__context_1a7fd0f65bbf9534089b133c2cb1184d37>`;
+	};

@@ -1,0 +1,43 @@
+.. index:: pair: struct; tw_input_source
+.. _doxid-d4/df6/structtw__input__source:
+
+struct tw_input_source
+======================
+
+.. toctree::
+	:hidden:
+
+input event bus provides the many-sources-to-many-dests events forwarding.
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <input_device.h>
+	
+	struct tw_input_source
+	{
+		// fields
+	
+		struct wl_signal :target:`remove<doxid-d4/df6/structtw__input__source_1a2392835e0b7d084c81d2c0b1d2fdc3df>`;
+		struct wl_signal :target:`key<doxid-d4/df6/structtw__input__source_1a8f0568685849ee5c0c3617f8370fbf85>`;
+		struct wl_signal :target:`modifiers<doxid-d4/df6/structtw__input__source_1a095e90eea44c75859110cb4e564da61d>`;
+		struct wl_signal :target:`keymap<doxid-d4/df6/structtw__input__source_1a1aa1a9bdfecff44296cd524329bfa773>`;
+		struct tw_input_source::@33 :target:`keyboard<doxid-d4/df6/structtw__input__source_1ab20654c88e737f864d9a4a77d3312f6b>`;
+		struct wl_signal :target:`motion<doxid-d4/df6/structtw__input__source_1ad97a0ef98864c290aea645fb7e8fa054>`;
+		struct wl_signal :target:`motion_absolute<doxid-d4/df6/structtw__input__source_1a714b5722bbc09e4af21b448ad08d989f>`;
+		struct wl_signal :target:`button<doxid-d4/df6/structtw__input__source_1aefe1b5b566b65e26ed60284363125408>`;
+		struct wl_signal :target:`axis<doxid-d4/df6/structtw__input__source_1aa7e64823cc7afe365d9bb064be3eaad9>`;
+		struct wl_signal :target:`frame<doxid-d4/df6/structtw__input__source_1abcf03fd02a5c578aa4d004cadf8b233a>`;
+		struct wl_signal :target:`swipe_begin<doxid-d4/df6/structtw__input__source_1a46a074e56decc08b1031f9fc6e92e353>`;
+		struct wl_signal :target:`swipe_update<doxid-d4/df6/structtw__input__source_1a274f3f2374fcdc2c36e847004002b8c4>`;
+		struct wl_signal :target:`swipe_end<doxid-d4/df6/structtw__input__source_1aff8080c1e5322d7144778f2f36b384bb>`;
+		struct wl_signal :target:`pinch_begin<doxid-d4/df6/structtw__input__source_1aa10f894fe611086aa2833d6f2c1ab547>`;
+		struct wl_signal :target:`pinch_update<doxid-d4/df6/structtw__input__source_1a6a28501adfc87b28d08b6c67e81771f0>`;
+		struct wl_signal :target:`pinch_end<doxid-d4/df6/structtw__input__source_1ab7617fa3f669805546e40e44f63eb7e2>`;
+		struct tw_input_source::@34 :target:`pointer<doxid-d4/df6/structtw__input__source_1aa7a7eecc4ba5cf4ce1dfb34465bdd13c>`;
+		struct wl_signal :target:`down<doxid-d4/df6/structtw__input__source_1ac69131b69de689d076e7b712b648d928>`;
+		struct wl_signal :target:`up<doxid-d4/df6/structtw__input__source_1a5d671ae8e757369671bfc77827a4f744>`;
+		struct wl_signal :target:`cancel<doxid-d4/df6/structtw__input__source_1ae3a980af2d2795ca35a9f9aeefe34cb4>`;
+		struct tw_input_source::@35 :target:`touch<doxid-d4/df6/structtw__input__source_1aa3c9620849f3d63749576274cc5dc93b>`;
+	};

@@ -1,0 +1,29 @@
+.. index:: pair: struct; tw_logind_login
+.. _doxid-dd/dfb/structtw__logind__login:
+
+struct tw_logind_login
+======================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	
+	struct tw_logind_login
+	{
+		// fields
+	
+		struct :ref:`tw_login<doxid-d0/d6a/structtw__login>` :target:`base<doxid-dd/dfb/structtw__logind__login_1ac015ffb5f0dd2480d662455ab8b026f8>`;
+		char* :target:`session_id<doxid-dd/dfb/structtw__logind__login_1a6784ad4e09564d9e77239fd2955ff276>`;
+		char* :target:`session_org_path<doxid-dd/dfb/structtw__logind__login_1a8bce762e15574eea010a4f23901d8b71>`;
+		char* :target:`seat_path<doxid-dd/dfb/structtw__logind__login_1aa63bc592e6e57ce8e345e095497719f5>`;
+		unsigned :target:`vtnr<doxid-dd/dfb/structtw__logind__login_1ad1ee5f2dff7dac450f4083ff4119392a>`;
+		struct wl_display* :target:`display<doxid-dd/dfb/structtw__logind__login_1a90796e77073859656f283aa015345593>`;
+		struct :ref:`tdbus<doxid-db/d60/structtdbus>`* :target:`bus<doxid-dd/dfb/structtw__logind__login_1a1ca6c817562bbb4edc6accbdefe0648d>`;
+		struct wl_event_source* :target:`event<doxid-dd/dfb/structtw__logind__login_1adc01fe23eff85678442b14506b76151f>`;
+	};

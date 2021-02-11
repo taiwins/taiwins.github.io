@@ -1,0 +1,34 @@
+.. index:: pair: struct; tw_egl
+.. _doxid-d3/df2/structtw__egl:
+
+struct tw_egl
+=============
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <egl.h>
+	
+	struct tw_egl
+	{
+		// fields
+	
+		struct wl_display* :target:`wl_display<doxid-d3/df2/structtw__egl_1afc1f08e93bb37c3c7793fb15ebe4c001>`;
+		EGLContext :target:`context<doxid-d3/df2/structtw__egl_1a7590c14cf6e5586f15528f4551fc1d4a>`;
+		EGLDisplay :target:`display<doxid-d3/df2/structtw__egl_1a6a299b109b05e55ed7fbb1a6db041620>`;
+		EGLenum :target:`platform<doxid-d3/df2/structtw__egl_1ad3c445ac1daaa7d42f4fe88b8c4ccf39>`;
+		EGLint :target:`surface_type<doxid-d3/df2/structtw__egl_1aced9ead7304914ba4dd0361652c3bdb5>`;
+		EGLConfig :target:`config<doxid-d3/df2/structtw__egl_1a65b23c0effa2f87b84a7ef591aacb558>`;
+		bool :target:`query_buffer_age<doxid-d3/df2/structtw__egl_1a561074b18ba34966eb7f4985caf015fc>`;
+		bool :target:`image_base_khr<doxid-d3/df2/structtw__egl_1ae1da3611103afa0ae891ce5688f433f8>`;
+		bool :target:`import_dmabuf<doxid-d3/df2/structtw__egl_1ab1fa9e9d17c878dfb72c85031a1eec7b>`;
+		bool :target:`import_dmabuf_modifiers<doxid-d3/df2/structtw__egl_1a0c821b706eea853beb63d8e816523094>`;
+		unsigned int :target:`internal_format<doxid-d3/df2/structtw__egl_1a2e710a935de4b212fb91d34536f634e6>`;
+		struct :ref:`tw_drm_formats<doxid-d2/dbe/structtw__drm__formats>` :target:`drm_formats<doxid-d3/df2/structtw__egl_1a77abf280f28169a3fa6b3addda8f8e86>`;
+	};

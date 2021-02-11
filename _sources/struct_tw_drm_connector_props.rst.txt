@@ -1,0 +1,25 @@
+.. index:: pair: struct; tw_drm_connector_props
+.. _doxid-dc/df9/structtw__drm__connector__props:
+
+struct tw_drm_connector_props
+=============================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <internal.h>
+	
+	struct tw_drm_connector_props
+	{
+		// fields
+	
+		uint32_t :target:`edid<doxid-dc/df9/structtw__drm__connector__props_1a26ebf8c8e7912b6936fee7107122e530>`;
+		uint32_t :target:`dpms<doxid-dc/df9/structtw__drm__connector__props_1a39e9268e26a5a3ae29685b3b4c29f2a9>`;
+		uint32_t :target:`crtc_id<doxid-dc/df9/structtw__drm__connector__props_1ab2cf54c8633795f5a4b4c3dc7edf13ad>`;
+	};

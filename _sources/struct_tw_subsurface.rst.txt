@@ -27,10 +27,12 @@ a good reference about subsurface is here : `https://ppaalanen.blogspot.com/2013
 		struct :ref:`tw_surface<doxid-dd/dda/structtw__surface>`* :target:`parent<doxid-de/d75/structtw__subsurface_1af75acb5cd2b2409d5fea8155981b81b0>`;
 		struct wl_list :ref:`parent_link<doxid-de/d75/structtw__subsurface_1ab751846fe7a552460af77ffceec3f079>`;
 		struct wl_list :target:`parent_pending_link<doxid-de/d75/structtw__subsurface_1a755b6413cc5604957633307a225a9378>`;
+		struct wl_signal :target:`destroy<doxid-de/d75/structtw__subsurface_1ab643aea60d8f10375c02c179ebf1471e>`;
 		struct wl_listener :target:`surface_destroyed<doxid-de/d75/structtw__subsurface_1a4a6cba439e38a992dd26b9eab56cd365>`;
 		int32_t :target:`sx<doxid-de/d75/structtw__subsurface_1ad92bce5587854d36cea90ff3ce6f7291>`;
 		int32_t :target:`sy<doxid-de/d75/structtw__subsurface_1a7d63b3bc803ce36cc0da5761fd4880c2>`;
 		bool :target:`sync<doxid-de/d75/structtw__subsurface_1ab62e54558d3ab2f5793907444cde1328>`;
+		const struct :ref:`tw_allocator<doxid-df/d8e/structtw__allocator>`* :target:`alloc<doxid-de/d75/structtw__subsurface_1af27840000e88de24b9bf3d3a657238e2>`;
 	};
 .. _details-de/d75/structtw__subsurface:
 

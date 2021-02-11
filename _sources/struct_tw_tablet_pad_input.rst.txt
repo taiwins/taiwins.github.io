@@ -1,0 +1,25 @@
+.. index:: pair: struct; tw_tablet_pad_input
+.. _doxid-dd/de8/structtw__tablet__pad__input:
+
+struct tw_tablet_pad_input
+==========================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <input_device.h>
+	
+	struct tw_tablet_pad_input
+	{
+		// fields
+	
+		size_t :target:`btn_count<doxid-dd/de8/structtw__tablet__pad__input_1a57ec8f878bef03d2fadc129b7a736d41>`;
+		size_t :target:`ring_count<doxid-dd/de8/structtw__tablet__pad__input_1a8c7eed9fbe31f711a7ad7ef1a644d83a>`;
+		size_t :target:`strip_count<doxid-dd/de8/structtw__tablet__pad__input_1a20d9a21aad2e1bd9e9c104d062d64e48>`;
+	};

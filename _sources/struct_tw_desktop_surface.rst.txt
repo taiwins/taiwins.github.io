@@ -28,16 +28,14 @@ Overview
 		enum :ref:`tw_desktop_surface_type<doxid-d4/d45/desktop_8h_1a7eaa5ee6afc99c7b1ad6ce35c0dbff76>` :target:`type<doxid-d4/d0f/structtw__desktop__surface_1a0a51de1ebf514162eeb873063fd949cd>`;
 		bool :target:`fullscreened<doxid-d4/d0f/structtw__desktop__surface_1a942f83c303fe9b99fba071a8ab84ae43>`;
 		bool :target:`maximized<doxid-d4/d0f/structtw__desktop__surface_1a8a77477b7eea93d6d28e5afea2492b83>`;
+		bool :target:`minimized<doxid-d4/d0f/structtw__desktop__surface_1a9ea9f2e78a771edbbbb73b4a2159776a>`;
 		bool :target:`focused<doxid-d4/d0f/structtw__desktop__surface_1aa9dbc13c22c442f411ed0217127124bb>`;
 		bool :target:`surface_added<doxid-d4/d0f/structtw__desktop__surface_1ab91568ff2f2bc206d9e9aa68db16ac72>`;
 		uint32_t :target:`tiled_state<doxid-d4/d0f/structtw__desktop__surface_1a88cf6d88c7e260d728f0b4585730b549>`;
+		struct :ref:`tw_size_2d<doxid-da/d95/structtw__size__2d>` max_size :target:`min_size<doxid-d4/d0f/structtw__desktop__surface_1a91f39bc26b75a2dcc56c74fde42c2b8d>`;
+		struct :ref:`tw_geometry_2d<doxid-d1/dd9/structtw__geometry__2d>` :ref:`window_geometry<doxid-d4/d0f/structtw__desktop__surface_1a9e6914b507dc1b18bbdc070eb655acd6>`;
 		char* :target:`title<doxid-d4/d0f/structtw__desktop__surface_1a64490976581c3a1301acb900aab824a1>`;
 		char* :target:`class<doxid-d4/d0f/structtw__desktop__surface_1aec78b5bd7c5f9a2c116a0befb5aecb14>`;
-		int :target:`x<doxid-d4/d0f/structtw__desktop__surface_1a900c9b1226cc665869bb44c3a125d0cd>`;
-		int :target:`y<doxid-d4/d0f/structtw__desktop__surface_1a392cec44398379abb7428c2feda27c64>`;
-		unsigned int :target:`w<doxid-d4/d0f/structtw__desktop__surface_1aa5acb0448cdcf4e24266bc94d2b89118>`;
-		unsigned int :target:`h<doxid-d4/d0f/structtw__desktop__surface_1a60ef4cc2b3e9fe3760ae2340f4df6db6>`;
-		struct tw_desktop_surface::@0 :ref:`window_geometry<doxid-d4/d0f/structtw__desktop__surface_1ad2bdaeeeb6ac737a1f4985b5f5b9cea6>`;
 		void(* :target:`configure<doxid-d4/d0f/structtw__desktop__surface_1af0c749bfb470731d4fee8f06f1cb5dcd>`)(struct tw_desktop_surface *surface, enum wl_shell_surface_resize edge, int32_t x, int32_t y, unsigned width, unsigned height);
 		void(* :target:`close<doxid-d4/d0f/structtw__desktop__surface_1a1195b1b663e551f809ad9f81ea00f9be>`)(struct tw_desktop_surface *surface);
 		void(* :target:`ping<doxid-d4/d0f/structtw__desktop__surface_1ab39b8820058111dd0dc24a9c658ec013>`)(struct tw_desktop_surface *surface, uint32_t serial);
@@ -64,12 +62,12 @@ Fields
 shared by implementation
 
 .. index:: pair: variable; window_geometry
-.. _doxid-d4/d0f/structtw__desktop__surface_1ad2bdaeeeb6ac737a1f4985b5f5b9cea6:
+.. _doxid-d4/d0f/structtw__desktop__surface_1a9e6914b507dc1b18bbdc070eb655acd6:
 
 .. ref-code-block:: cpp
 	:class: doxyrest-title-code-block
 
-	unnamed-struct window_geometry
+	struct :ref:`tw_geometry_2d<doxid-d1/dd9/structtw__geometry__2d>` window_geometry
 
 the window geometry for this given desktop surface, always available after every commit. The value before the initial commit is 0.
 

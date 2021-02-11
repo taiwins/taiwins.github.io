@@ -1,0 +1,63 @@
+.. index:: pair: struct; tw_x11_backend
+.. _doxid-da/daf/structtw__x11__backend:
+
+struct tw_x11_backend
+=====================
+
+.. toctree::
+	:hidden:
+
+Overview
+~~~~~~~~
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <internal.h>
+	
+	struct tw_x11_backend
+	{
+		// fields
+	
+		struct wl_display* :target:`display<doxid-da/daf/structtw__x11__backend_1a980b0976ebf455c66d4e4fa3655e1d5e>`;
+		struct wl_event_source* :ref:`event_source<doxid-da/daf/structtw__x11__backend_1abb4a1b223dba4744cadcf1a95893c314>`;
+		struct :ref:`tw_backend<doxid-df/d59/structtw__backend>` :target:`base<doxid-da/daf/structtw__x11__backend_1ac4f32c05fa5becbebc227d3d25b77e25>`;
+		struct wl_listener :target:`display_destroy<doxid-da/daf/structtw__x11__backend_1a525a2b41742ded119cfabcc9e6083c42>`;
+		Display* :target:`x11_dpy<doxid-da/daf/structtw__x11__backend_1ae58e60faafee23acc24e52d5b1067ed2>`;
+		xcb_connection_t* :target:`xcb_conn<doxid-da/daf/structtw__x11__backend_1aedfd561b804abc9f130680cf522b4ff5>`;
+		xcb_screen_t* :target:`screen<doxid-da/daf/structtw__x11__backend_1a0fd43cb110e0f1fcad1b72a666eb9332>`;
+		uint8_t :target:`xinput_opcode<doxid-da/daf/structtw__x11__backend_1aa77204c275418bf32699ca6af9ac611f>`;
+		xcb_atom_t :target:`wm_protocols<doxid-da/daf/structtw__x11__backend_1ae761d822dca380d1aa37ad89075b5728>`;
+		xcb_atom_t :target:`wm_normal_hint<doxid-da/daf/structtw__x11__backend_1adef446d99cfd9a59d1abe3278a0b6b15>`;
+		xcb_atom_t :target:`wm_size_hint<doxid-da/daf/structtw__x11__backend_1adb94f61a81759a9ea5b953619e4267e7>`;
+		xcb_atom_t :target:`wm_delete_window<doxid-da/daf/structtw__x11__backend_1aa57c6be9f4adae9fe9a368b0b7edc246>`;
+		xcb_atom_t :target:`wm_class<doxid-da/daf/structtw__x11__backend_1aa19387e289c272eb751ca6a6644b32b3>`;
+		xcb_atom_t :target:`net_wm_name<doxid-da/daf/structtw__x11__backend_1a32489a876c2125f544ee3003f9b0c651>`;
+		xcb_atom_t :target:`utf8_string<doxid-da/daf/structtw__x11__backend_1a14780d765c8fbb82aa749303fbf4c3b5>`;
+		xcb_atom_t :target:`variable_refresh<doxid-da/daf/structtw__x11__backend_1ac2627b2d607532fa9b5c4214763de889>`;
+		struct tw_x11_backend::@54 :target:`atoms<doxid-da/daf/structtw__x11__backend_1a64b8f88bb0a699a30d666db440545d4b>`;
+		struct :ref:`tw_input_device<doxid-d3/db0/structtw__input__device>` :target:`keyboard<doxid-da/daf/structtw__x11__backend_1a4c0b8c4ea8e0dc61e878937423617e04>`;
+	};
+.. _details-da/daf/structtw__x11__backend:
+
+Detailed Documentation
+~~~~~~~~~~~~~~~~~~~~~~
+
+
+
+Fields
+------
+
+.. index:: pair: variable; event_source
+.. _doxid-da/daf/structtw__x11__backend_1abb4a1b223dba4744cadcf1a95893c314:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	struct wl_event_source* event_source
+
+for x11 events
+

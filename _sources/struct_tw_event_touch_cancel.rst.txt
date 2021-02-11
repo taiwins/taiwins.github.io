@@ -1,0 +1,25 @@
+.. index:: pair: struct; tw_event_touch_cancel
+.. _doxid-d9/da8/structtw__event__touch__cancel:
+
+struct tw_event_touch_cancel
+============================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <input_device.h>
+	
+	struct tw_event_touch_cancel
+	{
+		// fields
+	
+		struct :ref:`tw_input_device<doxid-d3/db0/structtw__input__device>`* :target:`dev<doxid-d9/da8/structtw__event__touch__cancel_1af52e866503bc17ef2d13b406828d1fbb>`;
+		uint32_t :target:`time_msec<doxid-d9/da8/structtw__event__touch__cancel_1aa538fe1b699dab755ca2cdb324f954ad>`;
+		int32_t :target:`touch_id<doxid-d9/da8/structtw__event__touch__cancel_1a7fa52b82482006e138206cf286cc0876>`;
+	};

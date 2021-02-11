@@ -34,7 +34,6 @@ struct tw_seat
 		struct :ref:`tw_pointer<doxid-d8/db5/structtw__pointer>` :target:`pointer<doxid-dc/d28/structtw__seat_1a2a0d4a871087bf7779eb0f20100c701c>`;
 		struct :ref:`tw_touch<doxid-d1/d77/structtw__touch>` :target:`touch<doxid-dc/d28/structtw__seat_1ad39db08f8763110289b61277652fddbe>`;
 		struct :ref:`tw_cursor<doxid-d5/d66/structtw__cursor>`* :target:`cursor<doxid-dc/d28/structtw__seat_1ac7ef2f0796d382783e26db3e610ff71d>`;
-		struct wl_signal :target:`new_cursor_signal<doxid-dc/d28/structtw__seat_1ab7d0250a0cb68c424edd4b9155beb5e8>`;
 		struct wl_signal :target:`focus_signal<doxid-dc/d28/structtw__seat_1a2ed391b32ab1c9737dc104fd880f192a>`;
 		struct wl_signal :target:`destroy_signal<doxid-dc/d28/structtw__seat_1a66939a4794c15c13641409ff0ee311d2>`;
 	};

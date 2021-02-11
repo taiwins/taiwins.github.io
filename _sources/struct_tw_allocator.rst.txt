@@ -1,0 +1,24 @@
+.. index:: pair: struct; tw_allocator
+.. _doxid-df/d8e/structtw__allocator:
+
+struct tw_allocator
+===================
+
+.. toctree::
+	:hidden:
+
+custom allocator type that using it would need to have an alloc field for using tw_alloc_wl_resource_for_obj
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <utils.h>
+	
+	struct tw_allocator
+	{
+		// fields
+	
+		void*(* :target:`alloc<doxid-df/d8e/structtw__allocator_1a36d4f04e1403c3c5bff9b129baccbb93>`)(size_t size, const struct wl_interface *interface);
+		void(* :target:`free<doxid-df/d8e/structtw__allocator_1a9f6113a5246637688588ea1215a95f8d>`)(void *addr, const struct wl_interface *interface);
+	};

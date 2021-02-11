@@ -1,0 +1,28 @@
+.. index:: pair: struct; tw_event_touch_down
+.. _doxid-dd/d43/structtw__event__touch__down:
+
+struct tw_event_touch_down
+==========================
+
+.. toctree::
+	:hidden:
+
+touch events
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <input_device.h>
+	
+	struct tw_event_touch_down
+	{
+		// fields
+	
+		struct :ref:`tw_input_device<doxid-d3/db0/structtw__input__device>`* :target:`dev<doxid-dd/d43/structtw__event__touch__down_1a52a8a281eabafbe1d378ecb4eec0ecf6>`;
+		const struct :ref:`tw_output_device<doxid-db/db1/structtw__output__device>`* :target:`output<doxid-dd/d43/structtw__event__touch__down_1a6544341b0d957a532a459533eff31a52>`;
+		uint32_t :target:`time<doxid-dd/d43/structtw__event__touch__down_1a9d277222a04c1664f2dcf1e266e30420>`;
+		int32_t :target:`touch_id<doxid-dd/d43/structtw__event__touch__down_1a2786bc1b5dfb17694d6e20eadf830e04>`;
+		double :target:`x<doxid-dd/d43/structtw__event__touch__down_1abd8914564fa258b0256bfe05d7892c4c>`;
+		double :target:`y<doxid-dd/d43/structtw__event__touch__down_1a553d630084f7c018b59c55092ea5c2aa>`;
+	};

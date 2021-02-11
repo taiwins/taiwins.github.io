@@ -1,0 +1,26 @@
+.. index:: pair: struct; tw_login_gpu
+.. _doxid-dc/dd8/structtw__login__gpu:
+
+struct tw_login_gpu
+===================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <login.h>
+	
+	struct tw_login_gpu
+	{
+		// fields
+	
+		int :target:`fd<doxid-dc/dd8/structtw__login__gpu_1aa677a62da16bbdb756c4ce6f83b0fb07>`;
+		dev_t :target:`devnum<doxid-dc/dd8/structtw__login__gpu_1af8eef4e4ec0de74d1c138607be3f3827>`;
+		bool :target:`boot_vga<doxid-dc/dd8/structtw__login__gpu_1a30675726545021c73ded06506b0eecd7>`;
+		char :target:`path<doxid-dc/dd8/structtw__login__gpu_1aea125950223392e155c43137f25c893d>`[PATH_MAX];
+	};

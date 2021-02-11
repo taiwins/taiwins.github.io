@@ -1,0 +1,23 @@
+.. index:: pair: struct; tw_input_device_impl
+.. _doxid-d5/d20/structtw__input__device__impl:
+
+struct tw_input_device_impl
+===========================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <input_device.h>
+	
+	struct tw_input_device_impl
+	{
+		// fields
+	
+		void(* :target:`destroy<doxid-d5/d20/structtw__input__device__impl_1ac463a7ee09e79ccfbaa67f1bd68311f1>`)(struct tw_input_device *dev);
+	};

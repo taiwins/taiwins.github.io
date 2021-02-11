@@ -1,0 +1,40 @@
+.. index:: pair: struct; tw_event_pointer_gesture
+.. _doxid-d4/d5b/structtw__event__pointer__gesture:
+
+struct tw_event_pointer_gesture
+===============================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <input_device.h>
+	
+	struct tw_event_pointer_gesture
+	{
+		// enums
+	
+		enum
+		{
+		    :target:`TW_POINTER_GESTURE_BEGIN<doxid-d4/d5b/structtw__event__pointer__gesture_1a9498ae16e5b75919483427924665f7c4aa346997003a08b6b5da66e553384b69b>`  = 0,
+		    :target:`TW_POINTER_GESTURE_UPDATE<doxid-d4/d5b/structtw__event__pointer__gesture_1a9498ae16e5b75919483427924665f7c4a40f4a8ecf7f9535fb13a787d2abd94cf>`,
+		    :target:`TW_POINTER_GESTURE_END<doxid-d4/d5b/structtw__event__pointer__gesture_1a9498ae16e5b75919483427924665f7c4a509fc8acaf316fb10ce8eaed37f389bb>`,
+		};
+
+		// fields
+	
+		struct :ref:`tw_input_device<doxid-d3/db0/structtw__input__device>`* :target:`dev<doxid-d4/d5b/structtw__event__pointer__gesture_1a4aeeb5b3caad49f129e834444a44f05e>`;
+		uint32_t :target:`time<doxid-d4/d5b/structtw__event__pointer__gesture_1ab5b3d2a58ddef3fc592bbae6023240fd>`;
+		uint32_t :target:`fingers<doxid-d4/d5b/structtw__event__pointer__gesture_1a9b57d368be5742a084b59993a22998aa>`;
+		enum tw_event_pointer_gesture::@40 :target:`state<doxid-d4/d5b/structtw__event__pointer__gesture_1a6759559e8f079227cbb50637601cec7e>`;
+		double :target:`dx<doxid-d4/d5b/structtw__event__pointer__gesture_1a408929cd754ac2c4cdceb98eb20492f8>`;
+		double :target:`dy<doxid-d4/d5b/structtw__event__pointer__gesture_1af27a153820e7b26bc79ed03f8afac73e>`;
+		double :target:`rotation<doxid-d4/d5b/structtw__event__pointer__gesture_1a32d6098335484ae5949d7f8d6238fcb4>`;
+		double :target:`scale<doxid-d4/d5b/structtw__event__pointer__gesture_1a5f52129f0b948de7f11de2559ebea988>`;
+		bool :target:`cancelled<doxid-d4/d5b/structtw__event__pointer__gesture_1a24a64565bf557f2000cbd44a0d3e671b>`;
+	};

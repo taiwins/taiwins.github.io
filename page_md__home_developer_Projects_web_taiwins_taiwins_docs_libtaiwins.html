@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <title>For libtaiwins users &#8212; Taiwins</title>
+  
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="_static/bootstrap-sphinx.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/my-style.css" />
+    <link rel="stylesheet" type="text/css" href="_static/doxyrest-pygments.css" />
+    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/target-highlight.js"></script>
+    <link rel="shortcut icon" href="_static/favicon.ico"/>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Lua bindings" href="page_md__home_developer_Projects_web_taiwins_taiwins_docs_lua.html" />
+    <link rel="prev" title="D-Bus API Quick Reference" href="page_md__home_developer_Projects_web_taiwins_taiwins_docs_dbus.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<script type="text/javascript" src="_static/js/jquery-1.11.0.min.js "></script>
+<script type="text/javascript" src="_static/js/jquery-fix.js "></script>
+<script type="text/javascript" src="_static/bootstrap-3.3.7/js/bootstrap.min.js "></script>
+<script type="text/javascript" src="_static/bootstrap-sphinx.js "></script>
+
+  </head><body>
+  <div class="page-container">
+    
+<!-- taken from bootstrap theme -->
+<div id="navbar" class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">
+        <b>Taiwins</b></a>
+      <span class="navbar-text navbar-version pull-left"><b></b></span>
+    </div>
+
+    <div class="collapse navbar-collapse nav-collapse">
+      <ul class="nav navbar-nav">
+	<li><a href="page_doc.html">Documentation</a></li>
+	<li><a href="https://github.com/taiwins/taiwins">Source Code</a></li>
+	<li><a href="https://github.com/taiwins/taiwins/wiki">Wiki</a></li>
+	<!-- add other pages -->
+      </ul>
+    </div>
+  </div>
+</div>
+
+    <div class="container">
+      
+	<div class="row">
+	  <div class="body col-md-9 content" role="main">
+	    
+  <div class="section" id="for-libtaiwins-users">
+<span id="doxid-db-d89-md-home-developer-projects-web-taiwins-taiwins-docs-libtaiwins"></span><span id="index-0"></span><h1>For libtaiwins users<a class="headerlink" href="#for-libtaiwins-users" title="Permalink to this headline">¶</a></h1>
+<p>The easiest way to draft a wayland compositor using <strong>libtaiwins</strong> is by looking at the some of the backend tests, these tests generally tries to start one backend and then create a minimum compositor, such as the <a class="reference external" href="https://github.com/taiwins/taiwins/tree/master/test/x11-test.c">x11-test.c</a>. You will see that it takes as few as 100 lines of code to run a compositor (with some help of course).</p>
+<p>I would like to briefly describe the libtaiwins architecture here. As little as my drawing skills, an accurate enough graph of libtaiwins architecture presents:</p>
+<img alt="../.././imgs/libtaiwins-arch.svg" src="../.././imgs/libtaiwins-arch.svg" /><p>On the end end we have <code class="docutils literal notranslate"><span class="pre">tw_object</span></code> implements the wayland object in C, on the other end we have <code class="docutils literal notranslate"><a class="reference internal" href="struct_tw_backend.html#doxid-df-d59-structtw-backend"><span class="std std-ref"><span class="pre">tw_backend</span></span></a></code> for abstracting hardwares. The <code class="docutils literal notranslate"><a class="reference internal" href="struct_tw_engine.html#doxid-df-d8e-structtw-engine"><span class="std std-ref"><span class="pre">tw_engine</span></span></a></code> is the middle man connects them together. It takes input events from backends and forward it to the <code class="docutils literal notranslate"><span class="pre">wl_seat</span></code>, sets correct output mode you asked in the backend. You can completely ignore it of course, as it is not referenced by backends, but then you have to connect all the types yourself. The <code class="docutils literal notranslate"><a class="reference internal" href="struct_tw_render_context.html#doxid-d1-dba-structtw-render-context"><span class="std std-ref"><span class="pre">tw_render_context</span></span></a></code>, on the other hand, it is used by the backends, you need to create it them pass to the backend. It handles the GPU resources and provides drawing interfaces we called <em>pipeline</em>. Other subsystems like <code class="docutils literal notranslate"><a class="reference internal" href="struct_tw_shell.html#doxid-de-dcd-structtw-shell"><span class="std std-ref"><span class="pre">tw_shell</span></span></a></code>, <code class="docutils literal notranslate"><span class="pre">tw_console</span></code> are not shown in the graph, they are taiwins specific protocol implementation.</p>
+<div class="section" id="for-libtaiwins-developers">
+<span id="doxid-db-d89-md-home-developer-projects-web-taiwins-taiwins-docs-libtaiwins-1autotoc-md16"></span><h2>For libtaiwins developers<a class="headerlink" href="#for-libtaiwins-developers" title="Permalink to this headline">¶</a></h2>
+<p>Hi there, so you decided to take on the quest of forging libtaiwins? Good for you :P. You may already tried the libtaiwins API, there are some you don’t like very much, you may want add new features for your compositor, it is all yours to play with. I am sure at this step, you already know how you are going to do it. Well, if undecided, you can simply adding a proposal issue, you may find some other people already doing it.</p>
+<p>I could, however, here to give you a little roadmap for each of the components you may need to work with.</p>
+<div class="section" id="tw-objects">
+<span id="doxid-db-d89-md-home-developer-projects-web-taiwins-taiwins-docs-libtaiwins-1autotoc-md17"></span><h3>tw_objects<a class="headerlink" href="#tw-objects" title="Permalink to this headline">¶</a></h3>
+<p>At the end of the day, a taiwins compositor need to handle <code class="docutils literal notranslate"><span class="pre">tw_objects</span></code> for all the wayland magic to happen, though is not the most exciting component, for libtawins developers, you would need to handle them correctly at the right time. It could be your case that you implement one <code class="docutils literal notranslate"><span class="pre">tw_object</span></code> for a specific protocol you need. The process involves grabbing the wayland protocol and creating a C interface around it. Usually you create signals for handling client requests in libtaiwns and exposes the <code class="docutils literal notranslate"><span class="pre">tw_object</span></code> APIs for a response. Once you are done, the last is deciding where the object resides in libtaiwns, currently most of them lives under <code class="docutils literal notranslate"><a class="reference internal" href="struct_tw_engine.html#doxid-df-d8e-structtw-engine"><span class="std std-ref"><span class="pre">tw_engine</span></span></a></code> but this depends on your needs.</p>
+</div>
+<div class="section" id="the-render-context">
+<span id="doxid-db-d89-md-home-developer-projects-web-taiwins-taiwins-docs-libtaiwins-1autotoc-md18"></span><h3>The render context<a class="headerlink" href="#the-render-context" title="Permalink to this headline">¶</a></h3>
+<p>For developers, writing a render context requires you preparing creating a <code class="docutils literal notranslate"><span class="pre">render_output</span></code> object for the backends, usually in the form of <code class="docutils literal notranslate"><span class="pre">EGLSurface</span></code>. preparing the textures and potentially the framebuffers for a renderer is the other side of the job.</p>
+</div>
+<div class="section" id="the-backend">
+<span id="doxid-db-d89-md-home-developer-projects-web-taiwins-taiwins-docs-libtaiwins-1autotoc-md19"></span><h3>The backend<a class="headerlink" href="#the-backend" title="Permalink to this headline">¶</a></h3>
+<p>If you want to add new features for backends, you could do it through signals or you can adding new callbacks in <code class="docutils literal notranslate"><a class="reference internal" href="struct_tw_backend_impl.html#doxid-d0-da7-structtw-backend-impl"><span class="std std-ref"><span class="pre">tw_backend_impl</span></span></a></code> depends where the events driving from.</p>
+<p>You may want a new backend, such as remote desktop, then the burden of abstracting <code class="docutils literal notranslate"><span class="pre">input_device</span></code> and <code class="docutils literal notranslate"><span class="pre">output_device</span></code> is on your shoulder, a backend first prepares a so called “render context parameters” for abstracting away specific render API calls, the backend then start with a render context, at this point is where you signal new input and outputs, at last. Once started, the backend waits on a commit output for buffer swapping and signal the <code class="docutils literal notranslate"><span class="pre">output.present</span></code> event for presentation feedback users. At last, if the render context is lost somehow, you need to handle it and signal the <code class="docutils literal notranslate"><span class="pre">backend.stop</span></code>.</p>
+<div class="section" id="drm-backend">
+<span id="doxid-db-d89-md-home-developer-projects-web-taiwins-taiwins-docs-libtaiwins-1autotoc-md20"></span><h4>DRM backend<a class="headerlink" href="#drm-backend" title="Permalink to this headline">¶</a></h4>
+<p>Until now, the most complex backend(and the one missing many features) is the drm backend because of its nature. The paragraph here assumes you know the basics of libdrm, the data type involved and how to work with it. If not, I highly recommend checking out the very well documented <a class="reference external" href="https://github.com/dvdhrm/docs">drm howto</a>. The complexity is two folds here, we need to handle the display discoveries and losses and we need to setmode. In the context of drm backend, it means a page-flip, not only we need to set current framebuffer on the <code class="docutils literal notranslate"><span class="pre">drmPlane</span></code>, it is also the chance to update display mode and other properties.</p>
+<p>As for now, libtaiwins misses the feature like plane-assignments and setting gammas, and in the future to work with vulkan, we would need create a swapchain and work with <code class="docutils literal notranslate"><span class="pre">gbm_bo</span></code> directly instead of relies on <code class="docutils literal notranslate"><span class="pre">gbm_surface</span></code>.</p>
+</div>
+</div>
+</div>
+</div>
+
+
+	  </div>
+	  
+<div class="col-md-3">
+  <div id="sidebar" class="bs-sidenav">
+<h3>Content</h3>
+<div id="localtoc"><ul>
+<li><a class="reference internal" href="#">For libtaiwins users</a><ul>
+<li><a class="reference internal" href="#for-libtaiwins-developers">For libtaiwins developers</a><ul>
+<li><a class="reference internal" href="#tw-objects">tw_objects</a></li>
+<li><a class="reference internal" href="#the-render-context">The render context</a></li>
+<li><a class="reference internal" href="#the-backend">The backend</a><ul>
+<li><a class="reference internal" href="#drm-backend">DRM backend</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<h3><a data-toggle="collapse" href="#globaltoc">Related Pages</a></h3>
+<div id="globaltoc" class="collapse">
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="page_md__home_developer_Projects_web_taiwins_taiwins_CONTRIBUTING.html">Contributing to Taiwins</a></li>
+<li class="toctree-l1"><a class="reference internal" href="page_md__home_developer_Projects_web_taiwins_taiwins_docs_dbus.html">D-Bus API Quick Reference</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">For libtaiwins users</a></li>
+<li class="toctree-l1"><a class="reference internal" href="page_md__home_developer_Projects_web_taiwins_taiwins_docs_lua.html">Lua bindings</a></li>
+<li class="toctree-l1"><a class="reference internal" href="page_md__home_developer_Projects_web_taiwins_taiwins_docs_progress.html">Progress and feature track</a></li>
+<li class="toctree-l1"><a class="reference internal" href="page_md__home_developer_Projects_web_taiwins_taiwins_docs_screenshots.html">Taiwins in tiling mode</a></li>
+<li class="toctree-l1"><a class="reference internal" href="page_md__home_developer_Projects_web_taiwins_taiwins_docs_window_management.html">Taiwins layout engine.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="page_md__home_developer_Projects_web_taiwins_taiwins_README.html">Taiwins, a modern wayland window manager</a></li>
+<li class="toctree-l1"><a class="reference internal" href="page_md__home_developer_Projects_web_taiwins_taiwins_docs_libtwclient.html">Twclient quick reference</a></li>
+<li class="toctree-l1"><a class="reference internal" href="page_md__home_developer_Projects_web_taiwins_taiwins_docs_twobjects.html">Twobjects quick reference</a></li>
+<li class="toctree-l1"><a class="reference internal" href="page_md__home_developer_Projects_web_taiwins_taiwins_docs_wayland.html">wayland</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="global.html">Global Namespace</a></li>
+</ul>
+
+</div>
+<form action="search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+  </div>
+</div>
+
+	</div>
+      
+    </div>
+    <div class="push"></div>
+  </div>
+
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+    </p>
+    <p>
+        &copy; Copyright 2020, Xichen Zhou.<br/>
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 3.4.3.<br/>
+    </p>
+  </div>
+</footer>
+  </body>
+</html>

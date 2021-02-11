@@ -16,7 +16,7 @@ Overview
 .. ref-code-block:: cpp
 	:class: doxyrest-overview-code-block
 
-	#include <xdg_internal.h>
+	#include <xdg_grab.h>
 	
 	struct tw_xdg_grab_interface
 	{

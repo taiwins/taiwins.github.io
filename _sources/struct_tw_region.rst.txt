@@ -20,6 +20,7 @@ struct tw_region
 		// fields
 	
 		struct wl_resource* :target:`resource<doxid-de/df2/structtw__region_1ab8216193724a737a955794205df89b61>`;
-		struct :ref:`tw_surface_manager<doxid-d1/d12/structtw__surface__manager>`* :target:`manager<doxid-de/df2/structtw__region_1a8b90f148ae20898b72f254b5e42b862f>`;
 		pixman_region32_t :target:`region<doxid-de/df2/structtw__region_1a529d84d76fb74acc80c25eb416cf0712>`;
+		struct wl_signal :target:`destroy<doxid-de/df2/structtw__region_1ac0f3d9ba0e22538eb89d5a5c22ba7622>`;
+		const struct :ref:`tw_allocator<doxid-df/d8e/structtw__allocator>`* :target:`alloc<doxid-de/df2/structtw__region_1ae4348b7fc1a651222e346e797bc02cfa>`;
 	};

@@ -1,0 +1,19 @@
+.. index:: pair: enum; tw_drm_platform
+.. _doxid-dc/dc3/backend_2drm_2internal_8h_1a6d5d788103e4b189ee9769e0206b6979:
+
+enum tw_drm_platform
+====================
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <internal.h>
+
+	enum tw_drm_platform
+	{
+	    :target:`TW_DRM_PLATFORM_GBM<doxid-dc/dc3/backend_2drm_2internal_8h_1a6d5d788103e4b189ee9769e0206b6979a6cc4e6529476fdc6254cbb0ceacca55a>`,
+	    :target:`TW_DRM_PLATFORM_STREAM<doxid-dc/dc3/backend_2drm_2internal_8h_1a6d5d788103e4b189ee9769e0206b6979a1c44d6459defea62cd810c014c65d86f>`,
+	};
+

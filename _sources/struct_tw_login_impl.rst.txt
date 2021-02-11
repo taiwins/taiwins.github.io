@@ -1,0 +1,26 @@
+.. index:: pair: struct; tw_login_impl
+.. _doxid-d5/df6/structtw__login__impl:
+
+struct tw_login_impl
+====================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <login.h>
+	
+	struct tw_login_impl
+	{
+		// fields
+	
+		int(* :target:`open<doxid-d5/df6/structtw__login__impl_1a5fc9a8add2c222acc9a6d5f2c78b24ad>`)(struct tw_login *login, const char *path, uint32_t flags);
+		void(* :target:`close<doxid-d5/df6/structtw__login__impl_1ab794c5643d756c12d212c15f16b95a8a>`)(struct tw_login *login, int fd);
+		bool(* :target:`switch_vt<doxid-d5/df6/structtw__login__impl_1a4bef648922255866e1c5e5ac578ac2c2>`)(struct tw_login *login, unsigned int vt);
+		int(* :target:`get_vt<doxid-d5/df6/structtw__login__impl_1adea041640a6e21aa9ea05c2d2e90fb69>`)(struct tw_login *login);
+	};

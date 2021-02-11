@@ -1,0 +1,79 @@
+.. index:: pair: struct; tw_drm_gpu
+.. _doxid-dc/d3b/structtw__drm__gpu:
+
+struct tw_drm_gpu
+=================
+
+.. toctree::
+	:hidden:
+
+Overview
+~~~~~~~~
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <internal.h>
+	
+	struct tw_drm_gpu
+	{
+		// fields
+	
+		int :target:`gpu_fd<doxid-dc/d3b/structtw__drm__gpu_1a59d8a1cab89deaa4716b6b23c65d3dad>`;
+		dev_t :target:`devnum<doxid-dc/d3b/structtw__drm__gpu_1a5672edd1296623b61549ffa580d0577c>`;
+		uintptr_t :ref:`device<doxid-dc/d3b/structtw__drm__gpu_1a008275d586b2a32a63ee8787e603a1df>`;
+		bool :target:`boot_vga<doxid-dc/d3b/structtw__drm__gpu_1aee0e3db3970e89863e66abed1fe53490>`;
+		bool :ref:`activated<doxid-dc/d3b/structtw__drm__gpu_1a3498d1869a40f5ba0ce483eef13f1801>`;
+		uint32_t :target:`visual_id<doxid-dc/d3b/structtw__drm__gpu_1a863e09199b4fc5616d75c6575065fa82>`;
+		clockid_t :target:`clk_id<doxid-dc/d3b/structtw__drm__gpu_1a8e90c5987096ff49470115d3c33d6350>`;
+		struct wl_list :target:`link<doxid-dc/d3b/structtw__drm__gpu_1a6f2ee1b1c4f7a09f695dbf08c0655855>`;
+		const struct :ref:`tw_drm_gpu_impl<doxid-db/dbf/structtw__drm__gpu__impl>`* :target:`impl<doxid-dc/d3b/structtw__drm__gpu_1a0cede6adb292d34fbed7f499531ecc2b>`;
+		enum :ref:`tw_drm_features<doxid-dc/dc3/backend_2drm_2internal_8h_1ab4abf333842a5d8cb47cc270cbf885f9>` :target:`feats<doxid-dc/d3b/structtw__drm__gpu_1a4ee78008141a0b6270d686fbca1ba0ae>`;
+		struct :ref:`tw_drm_backend<doxid-d7/d87/structtw__drm__backend>`* :target:`drm<doxid-dc/d3b/structtw__drm__gpu_1a8672fe5cd8aa3ab7b3758f342cff78cb>`;
+		struct wl_event_source* :target:`event<doxid-dc/d3b/structtw__drm__gpu_1a021de63d5b8f2e48e3a0ffd3fc5db808>`;
+		int :target:`max_width<doxid-dc/d3b/structtw__drm__gpu_1a509ec9cc043ff126686f72347e6bde70>`;
+		int :target:`max_height<doxid-dc/d3b/structtw__drm__gpu_1a83534550b98e89ee08b1f0ad9d88e79a>`;
+		int :target:`min_width<doxid-dc/d3b/structtw__drm__gpu_1ad180ef6ce5557061039264ec8ce34a6f>`;
+		int :target:`min_height<doxid-dc/d3b/structtw__drm__gpu_1aa3e33ef4596fca50d176844897f7a1c4>`;
+		struct tw_drm_gpu::@52 :target:`limits<doxid-dc/d3b/structtw__drm__gpu_1adcbbe9b7322e52844704e24e7c8ca14f>`;
+		struct :ref:`tw_drm_crtc<doxid-da/da9/structtw__drm__crtc>` :target:`crtcs<doxid-dc/d3b/structtw__drm__gpu_1a88857208689f4662260c48caedecf675>`[32];
+		uint32_t :target:`crtc_mask<doxid-dc/d3b/structtw__drm__gpu_1a4539293ef542fa111412cd91a21abea2>`;
+		struct wl_list :target:`crtc_list<doxid-dc/d3b/structtw__drm__gpu_1a509e5274d7e996cd7f4afa470e9a9ef9>`;
+		uint32_t :target:`plane_mask<doxid-dc/d3b/structtw__drm__gpu_1af7122d6e7c1310c6746f5dd71b49beca>`;
+		struct :ref:`tw_drm_plane<doxid-d4/dca/structtw__drm__plane>` :target:`planes<doxid-dc/d3b/structtw__drm__gpu_1adf7f4919503a9be2e2e49e5251ed6ca1>`[32];
+		struct wl_list :target:`plane_list<doxid-dc/d3b/structtw__drm__gpu_1aeb9ea805af4a69da2a18361dc02e4a05>`;
+		struct :ref:`tw_drm_connector_props<doxid-dc/df9/structtw__drm__connector__props>` :target:`props<doxid-dc/d3b/structtw__drm__gpu_1afd13e0976304bbf2567f768974ce52b3>`;
+	};
+.. _details-dc/d3b/structtw__drm__gpu:
+
+Detailed Documentation
+~~~~~~~~~~~~~~~~~~~~~~
+
+
+
+Fields
+------
+
+.. index:: pair: variable; device
+.. _doxid-dc/d3b/structtw__drm__gpu_1a008275d586b2a32a63ee8787e603a1df:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	uintptr_t device
+
+contains platform device type
+
+.. index:: pair: variable; activated
+.. _doxid-dc/d3b/structtw__drm__gpu_1a3498d1869a40f5ba0ce483eef13f1801:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	bool activated
+
+valid gpu otherwise not used
+

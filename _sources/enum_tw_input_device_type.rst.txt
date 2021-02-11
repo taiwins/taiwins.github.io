@@ -1,0 +1,23 @@
+.. index:: pair: enum; tw_input_device_type
+.. _doxid-d9/d85/input__device_8h_1ad9c72c5e10481252c1692dd970be60b4:
+
+enum tw_input_device_type
+=========================
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <input_device.h>
+
+	enum tw_input_device_type
+	{
+	    :target:`TW_INPUT_TYPE_KEYBOARD<doxid-d9/d85/input__device_8h_1ad9c72c5e10481252c1692dd970be60b4ad375aaeab0ce0ee6690144efbd422c3f>`,
+	    :target:`TW_INPUT_TYPE_POINTER<doxid-d9/d85/input__device_8h_1ad9c72c5e10481252c1692dd970be60b4a1f46607893d2ffd7fdf7ee0a7e20b5eb>`,
+	    :target:`TW_INPUT_TYPE_TOUCH<doxid-d9/d85/input__device_8h_1ad9c72c5e10481252c1692dd970be60b4abae001b9228dde4e173457dc5affe3e1>`,
+	    :target:`TW_INPUT_TYPE_TABLET_TOOL<doxid-d9/d85/input__device_8h_1ad9c72c5e10481252c1692dd970be60b4a017bd2286ce72a96420a5da6cb145903>`,
+	    :target:`TW_INPUT_TYPE_TABLET_PAD<doxid-d9/d85/input__device_8h_1ad9c72c5e10481252c1692dd970be60b4a3d929fdadd7f5aeada4c94212a44ac7e>`,
+	    :target:`TW_INPUT_TYPE_SWITCH<doxid-d9/d85/input__device_8h_1ad9c72c5e10481252c1692dd970be60b4adae296aebae08a6eea352786347a51ac>`,
+	};
+

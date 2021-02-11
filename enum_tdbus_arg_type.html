@@ -7,15 +7,14 @@
     
     <title>enum tdbus_arg_type &#8212; Taiwins</title>
   
-    <link rel="stylesheet" href="_static/bootstrap-sphinx.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="_static/bootstrap-sphinx.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="_static/my-style.css" />
     <link rel="stylesheet" type="text/css" href="_static/doxyrest-pygments.css" />
     <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
     <script src="_static/jquery.js"></script>
     <script src="_static/underscore.js"></script>
     <script src="_static/doctools.js"></script>
-    <script src="_static/language_data.js"></script>
     <script src="_static/target-highlight.js"></script>
     <link rel="shortcut icon" href="_static/favicon.ico"/>
     <link rel="index" title="Index" href="genindex.html" />
@@ -75,6 +74,7 @@
     <span class="doxyrest-code-target target" id="doxid-d7-dd4-tdbus-message-iter-8h-1a42cd0f90ef480758989c4c0c4bf9ed23a5def5379fc5f66568d72aecc4c8970fe"><span></span><span class="n">TDBUS_ARG_BOOLEAN</span></span><span></span><span class="p">,</span>
     <span class="doxyrest-code-target target" id="doxid-d7-dd4-tdbus-message-iter-8h-1a42cd0f90ef480758989c4c0c4bf9ed23a1d9eac9e1971439613106468e77c61a9"><span></span><span class="n">TDBUS_ARG_STRING</span></span><span></span><span class="p">,</span>
     <span class="doxyrest-code-target target" id="doxid-d7-dd4-tdbus-message-iter-8h-1a42cd0f90ef480758989c4c0c4bf9ed23a29e839bc8786946a02a1a6e8ff8d5220"><span></span><span class="n">TDBUS_ARG_OBJPATH</span></span><span></span><span class="p">,</span>
+    <span class="doxyrest-code-target target" id="doxid-d7-dd4-tdbus-message-iter-8h-1a42cd0f90ef480758989c4c0c4bf9ed23a9f267575382df5098c284ca7441e31e8"><span></span><span class="n">TDBUS_ARG_SIG</span></span><span></span><span class="p">,</span>
     <span class="doxyrest-code-target target" id="doxid-d7-dd4-tdbus-message-iter-8h-1a42cd0f90ef480758989c4c0c4bf9ed23a2bca66a4c99e7369c6bf5f142c50c36c"><span></span><span class="n">TDBUS_ARG_FD</span></span><span></span><span class="p">,</span>
     <span class="doxyrest-code-target target" id="doxid-d7-dd4-tdbus-message-iter-8h-1a42cd0f90ef480758989c4c0c4bf9ed23a662d4d5125cf6abd0b4f83e7a31008f2"><span></span><span class="n">TDBUS_ARG_INT16</span></span><span></span><span class="p">,</span>
     <span class="doxyrest-code-target target" id="doxid-d7-dd4-tdbus-message-iter-8h-1a42cd0f90ef480758989c4c0c4bf9ed23a440b69fc8e109425dbcaa86b413b6f78"><span></span><span class="n">TDBUS_ARG_INT32</span></span><span></span><span class="p">,</span>
@@ -85,6 +85,8 @@
     <span class="doxyrest-code-target target" id="doxid-d7-dd4-tdbus-message-iter-8h-1a42cd0f90ef480758989c4c0c4bf9ed23a4d313294b94f8145e61b088c588afc2c"><span></span><span class="n">TDBUS_ARG_DOUBLE</span></span><span></span><span class="p">,</span>
     <span class="doxyrest-code-target target" id="doxid-d7-dd4-tdbus-message-iter-8h-1a42cd0f90ef480758989c4c0c4bf9ed23a729cd4252bfd709ab58dd3a8010f2ae8"><span></span><span class="n">TDBUS_ARG_ARRAY</span></span><span></span><span class="p">,</span>
     <span class="doxyrest-code-target target" id="doxid-d7-dd4-tdbus-message-iter-8h-1a42cd0f90ef480758989c4c0c4bf9ed23abaf65947349d6121cee4440ecd0a24fc"><span></span><span class="n">TDBUS_ARG_STRUCT</span></span><span></span><span class="p">,</span>
+    <span class="doxyrest-code-target target" id="doxid-d7-dd4-tdbus-message-iter-8h-1a42cd0f90ef480758989c4c0c4bf9ed23a7b61ba021d88a7118745af2779d00a58"><span></span><span class="n">TDBUS_ARG_VARIANT</span></span><span></span><span class="p">,</span>
+    <span class="doxyrest-code-target target" id="doxid-d7-dd4-tdbus-message-iter-8h-1a42cd0f90ef480758989c4c0c4bf9ed23a1b697359e0f210a3a410315cf3c52b6f"><span></span><span class="n">TDBUS_ARG_DICT_ENTRY</span></span><span></span><span class="p">,</span>
     <span class="doxyrest-code-target target" id="doxid-d7-dd4-tdbus-message-iter-8h-1a42cd0f90ef480758989c4c0c4bf9ed23a47aa07d604068d5e5bc28fddc2fa3a9c"><span></span><span class="n">TDBUS_ARG_UNKNOWN</span></span><span></span><span class="p">,</span>
 <span class="p">};</span></pre>
 </div>
@@ -96,13 +98,17 @@
   <div id="sidebar" class="bs-sidenav"><h3><a data-toggle="collapse" href="#globaltoc">Related Pages</a></h3>
 <div id="globaltoc" class="collapse">
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="page_md__home_developer_Projects_web-taiwins_taiwins_CONTRIBUTING.html">Contributing to Taiwins</a></li>
-<li class="toctree-l1"><a class="reference internal" href="page_md__home_developer_Projects_web-taiwins_taiwins_docs_lua.html">Lua bindings</a></li>
-<li class="toctree-l1"><a class="reference internal" href="page_md__home_developer_Projects_web-taiwins_taiwins_docs_window_management.html">Taiwins layout engine.</a></li>
-<li class="toctree-l1"><a class="reference internal" href="page_md__home_developer_Projects_web-taiwins_taiwins_README.html">Taiwins, a morden wayland window manager</a></li>
-<li class="toctree-l1"><a class="reference internal" href="page_md__home_developer_Projects_web-taiwins_taiwins_docs_api.html">Twclient quick reference</a></li>
-<li class="toctree-l1"><a class="reference internal" href="page_md__home_developer_Projects_web-taiwins_taiwins_docs_twobjects.html">Twobjects quick reference</a></li>
-<li class="toctree-l1"><a class="reference internal" href="page_md__home_developer_Projects_web-taiwins_taiwins_docs_wayland.html">wayland</a></li>
+<li class="toctree-l1"><a class="reference internal" href="page_md__home_developer_Projects_web_taiwins_taiwins_CONTRIBUTING.html">Contributing to Taiwins</a></li>
+<li class="toctree-l1"><a class="reference internal" href="page_md__home_developer_Projects_web_taiwins_taiwins_docs_dbus.html">D-Bus API Quick Reference</a></li>
+<li class="toctree-l1"><a class="reference internal" href="page_md__home_developer_Projects_web_taiwins_taiwins_docs_libtaiwins.html">For libtaiwins users</a></li>
+<li class="toctree-l1"><a class="reference internal" href="page_md__home_developer_Projects_web_taiwins_taiwins_docs_lua.html">Lua bindings</a></li>
+<li class="toctree-l1"><a class="reference internal" href="page_md__home_developer_Projects_web_taiwins_taiwins_docs_progress.html">Progress and feature track</a></li>
+<li class="toctree-l1"><a class="reference internal" href="page_md__home_developer_Projects_web_taiwins_taiwins_docs_screenshots.html">Taiwins in tiling mode</a></li>
+<li class="toctree-l1"><a class="reference internal" href="page_md__home_developer_Projects_web_taiwins_taiwins_docs_window_management.html">Taiwins layout engine.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="page_md__home_developer_Projects_web_taiwins_taiwins_README.html">Taiwins, a modern wayland window manager</a></li>
+<li class="toctree-l1"><a class="reference internal" href="page_md__home_developer_Projects_web_taiwins_taiwins_docs_libtwclient.html">Twclient quick reference</a></li>
+<li class="toctree-l1"><a class="reference internal" href="page_md__home_developer_Projects_web_taiwins_taiwins_docs_twobjects.html">Twobjects quick reference</a></li>
+<li class="toctree-l1"><a class="reference internal" href="page_md__home_developer_Projects_web_taiwins_taiwins_docs_wayland.html">wayland</a></li>
 </ul>
 <ul class="current">
 <li class="toctree-l1 current"><a class="reference internal" href="global.html">Global Namespace</a></li>
@@ -133,7 +139,7 @@
     </p>
     <p>
         &copy; Copyright 2020, Xichen Zhou.<br/>
-      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 3.2.1.<br/>
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 3.4.3.<br/>
     </p>
   </div>
 </footer>

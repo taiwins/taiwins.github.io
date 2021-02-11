@@ -1,0 +1,19 @@
+.. index:: pair: enum; tw_config_type
+.. _doxid-db/d16/config_8h_1a8947340d4f745f4829f03c65548f89ff:
+
+enum tw_config_type
+===================
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <config.h>
+
+	enum tw_config_type
+	{
+	    :target:`TW_CONFIG_TYPE_LUA<doxid-db/d16/config_8h_1a8947340d4f745f4829f03c65548f89ffa990fab93af962b4f3c5de1049943875b>`,
+	    :target:`TW_CONFIG_TYPE_DBUS<doxid-db/d16/config_8h_1a8947340d4f745f4829f03c65548f89ffa14074b97ff4a3f644876061df5dc3b43>`,
+	};
+

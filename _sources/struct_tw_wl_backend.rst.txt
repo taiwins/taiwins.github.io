@@ -1,0 +1,68 @@
+.. index:: pair: struct; tw_wl_backend
+.. _doxid-d2/dad/structtw__wl__backend:
+
+struct tw_wl_backend
+====================
+
+.. toctree::
+	:hidden:
+
+Overview
+~~~~~~~~
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <internal.h>
+	
+	struct tw_wl_backend
+	{
+		// fields
+	
+		struct wl_display* :target:`server_display<doxid-d2/dad/structtw__wl__backend_1af5948fc01e72f0a6964746e34551e245>`;
+		struct wl_display* :target:`remote_display<doxid-d2/dad/structtw__wl__backend_1aa4129bdfc5d54a15712fef951b375021>`;
+		struct wl_registry* :target:`registry<doxid-d2/dad/structtw__wl__backend_1af5e0499b6c75a4b13f63d1d1fd3ba200>`;
+		struct wl_event_source* :target:`event_src<doxid-d2/dad/structtw__wl__backend_1a79705b69fcb706f8863d8c6ae2dabac7>`;
+		struct wl_compositor* :target:`compositor<doxid-d2/dad/structtw__wl__backend_1acf379ca0c4ce2eb7c1040e9b890340e5>`;
+		struct xdg_wm_base* :target:`wm_base<doxid-d2/dad/structtw__wl__backend_1acf7c03601c44eda6dfd64eb017e76206>`;
+		struct wp_presentation* :target:`presentation<doxid-d2/dad/structtw__wl__backend_1ab5ed2b4a44de295805056f239b91f126>`;
+		struct tw_wl_backend::@53 :target:`globals<doxid-d2/dad/structtw__wl__backend_1a1a3005f2c14321f50e0761d2f160247c>`;
+		struct :ref:`tw_backend<doxid-df/d59/structtw__backend>` :target:`base<doxid-d2/dad/structtw__wl__backend_1a49a5e6753388082fa4da4a51f3160f41>`;
+		struct wl_listener :target:`display_destroy<doxid-d2/dad/structtw__wl__backend_1a4bd88b15f4b29b52b561a15c4162395f>`;
+		struct wl_list :ref:`seats<doxid-d2/dad/structtw__wl__backend_1abfa4c26d8d9d49cd3697a6e746597609>`;
+		struct wl_list :ref:`outputs<doxid-d2/dad/structtw__wl__backend_1a5849721799e2b811dc2281d0b8ac4a8d>`;
+		clockid_t :target:`clk_id<doxid-d2/dad/structtw__wl__backend_1a177272516b04cb9af1c154679ec2c2a8>`;
+	};
+.. _details-d2/dad/structtw__wl__backend:
+
+Detailed Documentation
+~~~~~~~~~~~~~~~~~~~~~~
+
+
+
+Fields
+------
+
+.. index:: pair: variable; seats
+.. _doxid-d2/dad/structtw__wl__backend_1abfa4c26d8d9d49cd3697a6e746597609:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	struct wl_list seats
+
+:ref:`tw_wl_seat <doxid-d8/d15/structtw__wl__seat>` :link
+
+.. index:: pair: variable; outputs
+.. _doxid-d2/dad/structtw__wl__backend_1a5849721799e2b811dc2281d0b8ac4a8d:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	struct wl_list outputs
+
+:ref:`tw_wl_output <doxid-d0/d8b/structtw__wl__output>` :link
+

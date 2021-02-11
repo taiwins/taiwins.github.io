@@ -1,0 +1,26 @@
+.. index:: pair: struct; tw_event_pointer_button
+.. _doxid-da/dc8/structtw__event__pointer__button:
+
+struct tw_event_pointer_button
+==============================
+
+.. toctree::
+	:hidden:
+
+pointer events
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <input_device.h>
+	
+	struct tw_event_pointer_button
+	{
+		// fields
+	
+		struct :ref:`tw_input_device<doxid-d3/db0/structtw__input__device>`* :target:`dev<doxid-da/dc8/structtw__event__pointer__button_1ac6be2d7b0e449c516b56e40d35f2589d>`;
+		enum wl_pointer_button_state :target:`state<doxid-da/dc8/structtw__event__pointer__button_1a6e1e2cc016c15037a9b1cf1e9a0b23f8>`;
+		uint32_t :target:`button<doxid-da/dc8/structtw__event__pointer__button_1a37365381021b714f74174934395dcb83>`;
+		uint32_t :target:`time<doxid-da/dc8/structtw__event__pointer__button_1a0408e2b628d21317be8cb57cfc0a392e>`;
+	};

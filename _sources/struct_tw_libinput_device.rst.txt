@@ -1,0 +1,26 @@
+.. index:: pair: struct; tw_libinput_device
+.. _doxid-d5/dd8/structtw__libinput__device:
+
+struct tw_libinput_device
+=========================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <backend_libinput.h>
+	
+	struct tw_libinput_device
+	{
+		// fields
+	
+		struct :ref:`tw_input_device<doxid-d3/db0/structtw__input__device>` :target:`base<doxid-d5/dd8/structtw__libinput__device_1af3aaf85377b88f388f9dd2ca4a490ceb>`;
+		struct :ref:`tw_libinput_input<doxid-d4/d34/structtw__libinput__input>`* :target:`input<doxid-d5/dd8/structtw__libinput__device_1acf774a8dd1b6818670e111be1128363f>`;
+		struct libinput_device* :target:`libinput<doxid-d5/dd8/structtw__libinput__device_1a9be1d4576c051eac7eb7e19c623ab04c>`;
+		struct wl_list :target:`link<doxid-d5/dd8/structtw__libinput__device_1ad13a76d01d5e4270444dcce67775f076>`;
+	};

@@ -13,6 +13,7 @@ struct _tdbus_message_itr
 .. ref-code-block:: cpp
 	:class: doxyrest-overview-code-block
 
+	#include <tdbus_msg_internal.h>
 	
 	struct _tdbus_message_itr
 	{

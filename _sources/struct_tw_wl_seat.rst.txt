@@ -1,0 +1,32 @@
+.. index:: pair: struct; tw_wl_seat
+.. _doxid-d8/d15/structtw__wl__seat:
+
+struct tw_wl_seat
+=================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <internal.h>
+	
+	struct tw_wl_seat
+	{
+		// fields
+	
+		struct wl_seat* :target:`wl_seat<doxid-d8/d15/structtw__wl__seat_1ae3548fb0b38104941423b20b1e5e2f66>`;
+		struct :ref:`tw_wl_backend<doxid-d2/dad/structtw__wl__backend>`* :target:`wl<doxid-d8/d15/structtw__wl__seat_1afefac5db5c1f92c7afb561621e63b03b>`;
+		struct wl_list :target:`link<doxid-d8/d15/structtw__wl__seat_1a413a4fb921fb142fd5959ac2b984dcb0>`;
+		uint32_t :target:`caps<doxid-d8/d15/structtw__wl__seat_1a42c29642a555ac98ebe24a5ac3b342d6>`;
+		uint32_t :target:`name<doxid-d8/d15/structtw__wl__seat_1a90b7af4e44d743eb3f99a10a6763bf7b>`;
+		uint32_t :target:`gid<doxid-d8/d15/structtw__wl__seat_1a5a50f1e6d198a02d902ca91cedbeffa9>`;
+		struct :ref:`tw_input_device<doxid-d3/db0/structtw__input__device>` keyboard_dev :target:`pointer_dev<doxid-d8/d15/structtw__wl__seat_1a206d631b1f92fcea9a9fdfbd66a2fada>`;
+		struct wl_pointer* :target:`wl_pointer<doxid-d8/d15/structtw__wl__seat_1a756b3321ccddf02d9b89b41ff353fefe>`;
+		struct wl_keyboard* :target:`wl_keyboard<doxid-d8/d15/structtw__wl__seat_1adbadc6e9feae70fbe55ed2e7bd50fe78>`;
+		struct :ref:`tw_wl_surface<doxid-da/d6d/structtw__wl__surface>`* :target:`pointer_focus<doxid-d8/d15/structtw__wl__seat_1ac59700f8f2a4bb340df6c4234c9c293b>`;
+	};

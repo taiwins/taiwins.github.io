@@ -1,0 +1,66 @@
+.. index:: pair: struct; tw_render_surface
+.. _doxid-df/d37/structtw__render__surface:
+
+struct tw_render_surface
+========================
+
+.. toctree::
+	:hidden:
+
+Overview
+~~~~~~~~
+
+render data for wl_surface, created :ref:`More...<details-df/d37/structtw__render__surface>`
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <render_surface.h>
+	
+	struct tw_render_surface
+	{
+		// fields
+	
+		struct :ref:`tw_surface<doxid-dd/dda/structtw__surface>` :target:`surface<doxid-df/d37/structtw__render__surface_1a84090bb348d2df878e92a4b25b2c62cc>`;
+		struct :ref:`tw_render_context<doxid-d1/dba/structtw__render__context>`* :target:`ctx<doxid-df/d37/structtw__render__surface_1a34b458779733e135da808a289cf46b38>`;
+		pixman_region32_t :target:`clip<doxid-df/d37/structtw__render__surface_1a50a7ce1f4493acea7d5daa2c0c12ca71>`;
+		int32_t :ref:`output<doxid-df/d37/structtw__render__surface_1ac5f7ca177f4267f2afbb351c8d556e8b>`;
+		uint32_t :ref:`output_mask<doxid-df/d37/structtw__render__surface_1ab90e3074e654060c93b22321b6680d7c>`;
+		struct wl_listener :target:`output_lost<doxid-df/d37/structtw__render__surface_1a1716fe24d5298c1903e45985ff005d4a>`;
+		struct wl_listener :target:`destroy<doxid-df/d37/structtw__render__surface_1a29a65ed2750ed0889cee799dadd8c710>`;
+		struct wl_listener :target:`commit<doxid-df/d37/structtw__render__surface_1aa5568c0557d8463f1809b104f065d5be>`;
+		struct wl_listener :target:`frame<doxid-df/d37/structtw__render__surface_1ae6de38d79c51c1dd79b7f4ce866898df>`;
+		struct wl_listener :target:`dirty<doxid-df/d37/structtw__render__surface_1a495b04bb6d78d18432a3af18a3b83b0c>`;
+		struct tw_render_surface::@50 :target:`listeners<doxid-df/d37/structtw__render__surface_1a69f72da63c80b8c19f2edc8e994dc33c>`;
+	};
+.. _details-df/d37/structtw__render__surface:
+
+Detailed Documentation
+~~~~~~~~~~~~~~~~~~~~~~
+
+render data for wl_surface, created
+
+Fields
+------
+
+.. index:: pair: variable; output
+.. _doxid-df/d37/structtw__render__surface_1ac5f7ca177f4267f2afbb351c8d556e8b:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	int32_t output
+
+the primary output for this surface
+
+.. index:: pair: variable; output_mask
+.. _doxid-df/d37/structtw__render__surface_1ab90e3074e654060c93b22321b6680d7c:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	uint32_t output_mask
+
+the output it touches
+

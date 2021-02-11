@@ -1,0 +1,60 @@
+.. index:: pair: struct; tw_drm_crtc
+.. _doxid-da/da9/structtw__drm__crtc:
+
+struct tw_drm_crtc
+==================
+
+.. toctree::
+	:hidden:
+
+Overview
+~~~~~~~~
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <internal.h>
+	
+	struct tw_drm_crtc
+	{
+		// fields
+	
+		int :target:`id<doxid-da/da9/structtw__drm__crtc_1a770a890be027cd9c4848270c4c19619d>`;
+		int :target:`idx<doxid-da/da9/structtw__drm__crtc_1aff3c9853053c74e260c441128994a50f>`;
+		struct :ref:`tw_drm_display<doxid-db/db7/structtw__drm__display>`* :ref:`display<doxid-da/da9/structtw__drm__crtc_1a8ee99f6dfaa39c8033b9a6e89ba8ba60>`;
+		struct wl_list :target:`link<doxid-da/da9/structtw__drm__crtc_1a7de20e92549ba15d8a7a06f7ef595f43>`;
+		struct :ref:`tw_drm_crtc_props<doxid-da/ddb/structtw__drm__crtc__props>` :ref:`props<doxid-da/da9/structtw__drm__crtc_1ace0bd8961c279364901130dd321d0587>`;
+	};
+.. _details-da/da9/structtw__drm__crtc:
+
+Detailed Documentation
+~~~~~~~~~~~~~~~~~~~~~~
+
+
+
+Fields
+------
+
+.. index:: pair: variable; display
+.. _doxid-da/da9/structtw__drm__crtc_1a8ee99f6dfaa39c8033b9a6e89ba8ba60:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	struct :ref:`tw_drm_display<doxid-db/db7/structtw__drm__display>`* display
+
+occupied by display
+
+.. index:: pair: variable; props
+.. _doxid-da/da9/structtw__drm__crtc_1ace0bd8961c279364901130dd321d0587:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	struct :ref:`tw_drm_crtc_props<doxid-da/ddb/structtw__drm__crtc__props>` props
+
+drm->crtc_list
+

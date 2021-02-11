@@ -1,0 +1,58 @@
+.. index:: pair: struct; tw_input_device
+.. _doxid-d3/db0/structtw__input__device:
+
+struct tw_input_device
+======================
+
+.. toctree::
+	:hidden:
+
+Overview
+~~~~~~~~
+
+a input device represents abstract input devices drives the input events :ref:`More...<details-d3/db0/structtw__input__device>`
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <input_device.h>
+	
+	struct tw_input_device
+	{
+		// fields
+	
+		enum :ref:`tw_input_device_type<doxid-d9/d85/input__device_8h_1ad9c72c5e10481252c1692dd970be60b4>` :target:`type<doxid-d3/db0/structtw__input__device_1a7eadb9022e0ac417bd6a080421cbdc0d>`;
+		uint32_t :target:`seat_id<doxid-d3/db0/structtw__input__device_1a852df1526d7ae019dd39b76b250a0a0c>`;
+		unsigned int :target:`vendor<doxid-d3/db0/structtw__input__device_1a60f91386e716ce52603bc94110786801>`;
+		unsigned int :target:`product<doxid-d3/db0/structtw__input__device_1a1712a5252228472e916a7e8f430cc74e>`;
+		char :target:`name<doxid-d3/db0/structtw__input__device_1a967d520607900bc3bf07a40b6773ce8e>`[32];
+		struct :ref:`tw_keyboard_input<doxid-db/d7a/structtw__keyboard__input>` :target:`keyboard<doxid-d3/db0/structtw__input__device_1ad77a5612d96cad6f1b8c2334514b2683>`;
+		struct :ref:`tw_tablet_pad_input<doxid-dd/de8/structtw__tablet__pad__input>` :target:`tablet<doxid-d3/db0/structtw__input__device_1acaf0e3f6105ffed4945f242e445657c9>`;
+		union tw_input_device::@39 :ref:`input<doxid-d3/db0/structtw__input__device_1a2a4a3fd5a0f8806ac94bc48e4b405ec9>`;
+		struct :ref:`tw_input_source<doxid-d4/df6/structtw__input__source>`* :target:`emitter<doxid-d3/db0/structtw__input__device_1a683d2b4b227cce440d0e8b2dd458637c>`;
+		struct wl_list :target:`link<doxid-d3/db0/structtw__input__device_1a3f9b7f0e4f15e016934896551046f8ec>`;
+		const struct :ref:`tw_input_device_impl<doxid-d5/d20/structtw__input__device__impl>`* :target:`impl<doxid-d3/db0/structtw__input__device_1a64efa51b1cb8f78efee99e54a1b063bf>`;
+	};
+.. _details-d3/db0/structtw__input__device:
+
+Detailed Documentation
+~~~~~~~~~~~~~~~~~~~~~~
+
+a input device represents abstract input devices drives the input events
+
+TODO: do I really need this destroy? Maybe I need to get rid of it.
+
+Fields
+------
+
+.. index:: pair: variable; input
+.. _doxid-d3/db0/structtw__input__device_1a2a4a3fd5a0f8806ac94bc48e4b405ec9:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	unnamed-union input
+
+available states for the specific device, some devices do not need states
+

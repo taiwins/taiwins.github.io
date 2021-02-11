@@ -13,6 +13,7 @@ struct tw_bindings
 .. ref-code-block:: cpp
 	:class: doxyrest-overview-code-block
 
+	#include <bindings.h>
 	
 	struct tw_bindings
 	{

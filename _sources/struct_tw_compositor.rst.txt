@@ -7,6 +7,9 @@ struct tw_compositor
 .. toctree::
 	:hidden:
 
+Overview
+~~~~~~~~
+
 
 
 
@@ -23,8 +26,29 @@ struct tw_compositor
 		struct wl_global* :target:`wl_subcompositor<doxid-d6/da7/structtw__compositor_1a16f9e8f9b63239ca33073ddc62518cd7>`;
 		struct wl_list :target:`clients<doxid-d6/da7/structtw__compositor_1afa668eb6f5349b47edc3213cfa0171f4>`;
 		struct wl_list :target:`subcomp_clients<doxid-d6/da7/structtw__compositor_1a308286624124d7f5f323528df376f378>`;
-		struct wl_signal :target:`surface_create<doxid-d6/da7/structtw__compositor_1ad290d87ecb070921804ed4aed8e260dc>`;
-		struct wl_signal :target:`region_create<doxid-d6/da7/structtw__compositor_1ac56242e0c9f4d6532452e359d0e5d4a7>`;
-		struct wl_signal :target:`subsurface_get<doxid-d6/da7/structtw__compositor_1a300bee39f1453ddd28e319d21d21e00f>`;
+		struct wl_signal :target:`surface_created<doxid-d6/da7/structtw__compositor_1ad57d197c1d7f0ce7690e926d204f25d8>`;
+		struct wl_signal :target:`region_created<doxid-d6/da7/structtw__compositor_1a1028b50d4a3cc812083149b72c1fd1bf>`;
+		struct wl_signal :target:`subsurface_created<doxid-d6/da7/structtw__compositor_1a477010e267db7b9b24f9bf13f9243830>`;
+		const struct :ref:`tw_allocator<doxid-df/d8e/structtw__allocator>`* :ref:`obj_alloc<doxid-d6/da7/structtw__compositor_1ae6ce7770d0a60c06a4d492e7a8bbe259>`;
 		struct wl_listener :target:`destroy_listener<doxid-d6/da7/structtw__compositor_1ada11b2b5b97aba706d2cc185df6d4631>`;
 	};
+.. _details-d6/da7/structtw__compositor:
+
+Detailed Documentation
+~~~~~~~~~~~~~~~~~~~~~~
+
+
+
+Fields
+------
+
+.. index:: pair: variable; obj_alloc
+.. _doxid-d6/da7/structtw__compositor_1ae6ce7770d0a60c06a4d492e7a8bbe259:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	const struct :ref:`tw_allocator<doxid-df/d8e/structtw__allocator>`* obj_alloc
+
+allocator for objects
+

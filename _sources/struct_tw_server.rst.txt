@@ -24,9 +24,10 @@ Overview
 		struct wl_display* :target:`display<doxid-d4/d5e/structtw__server_1ad9a168015ff3ad0cf89de232466f1caa>`;
 		struct wl_event_loop* :ref:`loop<doxid-d4/d5e/structtw__server_1a149846d450c5ea6a8650788a5371f1c4>`;
 		struct :ref:`tw_backend<doxid-df/d59/structtw__backend>`* :target:`backend<doxid-d4/d5e/structtw__server_1a9197df6faaa0771288c57fb3e091d3c7>`;
-		struct :ref:`tw_bindings<doxid-d2/dab/structtw__bindings>`* :target:`bindings<doxid-d4/d5e/structtw__server_1a58ff5cf0c3a23765156219b6208ae52b>`;
-		struct :ref:`tw_config<doxid-df/d35/structtw__config>`* :target:`config<doxid-d4/d5e/structtw__server_1ae93c20ab898802d84b70bb6237c5fa20>`;
-		struct :ref:`tw_seat_events<doxid-da/dc8/structtw__seat__events>` :target:`seat_events<doxid-d4/d5e/structtw__server_1a2863c5835002e3d854353463605e3965>`[8];
+		struct :ref:`tw_engine<doxid-df/d8e/structtw__engine>`* :target:`engine<doxid-d4/d5e/structtw__server_1adce0e83fa38c7984a96b45671d7fb0c4>`;
+		struct :ref:`tw_render_context<doxid-d1/dba/structtw__render__context>`* :target:`ctx<doxid-d4/d5e/structtw__server_1a7b0a2c818d1599a6d53e19afb0c94a7b>`;
+		struct :ref:`tw_config<doxid-df/d35/structtw__config>` :target:`config<doxid-d4/d5e/structtw__server_1ab9bfccc3d625cb6100863c2550610343>`;
+		struct :ref:`tw_seat_listeners<doxid-dc/d77/structtw__seat__listeners>` :target:`seat_listeners<doxid-d4/d5e/structtw__server_1afe55da091cca70683a9e554ec78ca00c>`[8];
 		struct wl_listener :target:`seat_add<doxid-d4/d5e/structtw__server_1a0c3e2460b2f71a6de5640d3a9c7c495c>`;
 		struct wl_listener :target:`seat_remove<doxid-d4/d5e/structtw__server_1a4e281e2cefae601535820728cd1e08e4>`;
 	};

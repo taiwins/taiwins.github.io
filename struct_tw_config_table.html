@@ -7,15 +7,14 @@
     
     <title>struct tw_config_table &#8212; Taiwins</title>
   
-    <link rel="stylesheet" href="_static/bootstrap-sphinx.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="_static/bootstrap-sphinx.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="_static/my-style.css" />
     <link rel="stylesheet" type="text/css" href="_static/doxyrest-pygments.css" />
     <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
     <script src="_static/jquery.js"></script>
     <script src="_static/underscore.js"></script>
     <script src="_static/doctools.js"></script>
-    <script src="_static/language_data.js"></script>
     <script src="_static/target-highlight.js"></script>
     <link rel="shortcut icon" href="_static/favicon.ico"/>
     <link rel="index" title="Index" href="genindex.html" />
@@ -71,7 +70,7 @@
 </div>
 <div class="section" id="overview">
 <h2>Overview<a class="headerlink" href="#overview" title="Permalink to this headline">¶</a></h2>
-<pre class="highlight doxyrest-overview-code-block literal-block"><span></span><span class="cp">#include</span> <span class="cpf">&lt;config_internal.h&gt;</span><span class="cp"></span>
+<pre class="highlight doxyrest-overview-code-block literal-block"><span></span><span class="cp">#include</span> <span class="cpf">&lt;config.h&gt;</span><span class="cp"></span>
 
 <span class="k">struct</span> <span class="n">tw_config_table</span>
 <span class="p">{</span>
@@ -81,16 +80,22 @@
     <span class="kt">uint32_t</span> <span class="doxyrest-code-target target" id="doxid-d8-dac-structtw-config-table-1a10213b02278f3e3e8e1e343ffe13b13f"><span></span><span class="n">enable_globals</span></span><span></span><span class="p">;</span>
     <span class="k">struct</span> <a class="reference internal" href="struct_tw_config_output.html#doxid-d8-d4a-structtw-config-output"><span class="std std-ref">tw_config_output</span></a><span></span> <span class="doxyrest-code-target target" id="doxid-d8-dac-structtw-config-table-1a2a8926f27729936c527a400367133e3f"><span></span><span class="n">outputs</span></span><span></span><span class="p">[</span><span class="mi">8</span><span class="p">];</span>
     <span class="n">pending_layout_t</span> <span class="doxyrest-code-target target" id="doxid-d8-dac-structtw-config-table-1a7dc4039853b365cc65d52538fcf1a5a3"><span></span><span class="n">layout</span></span><span></span><span class="p">;</span>
-    <span class="k">struct</span> <span class="n">tw_config_table</span><span class="o">::</span><span class="err">@</span><span class="mi">0</span> <span class="doxyrest-code-target target" id="doxid-d8-dac-structtw-config-table-1a963c0552b648ce58578cbb6416f49384"><span></span><span class="n">workspaces</span></span><span></span><span class="p">[</span><span class="n">MAX_WORKSPACES</span><span class="p">];</span>
+    <span class="k">struct</span> <span class="n">tw_config_table</span><span class="o">::</span><span class="err">@</span><span class="mi">19</span> <span class="doxyrest-code-target target" id="doxid-d8-dac-structtw-config-table-1aec7019eea145bc6b6c1996b2e8e144db"><span></span><span class="n">workspaces</span></span><span></span><span class="p">[</span><span class="n">MAX_WORKSPACES</span><span class="p">];</span>
     <span class="n">pending_uintval_t</span> <span class="doxyrest-code-target target" id="doxid-d8-dac-structtw-config-table-1a104c5534664be17130506d4c9abd9ce4"><span></span><span class="n">desktop_igap</span></span><span></span><span class="p">;</span>
     <span class="n">pending_uintval_t</span> <span class="doxyrest-code-target target" id="doxid-d8-dac-structtw-config-table-1ad2a69dcbf8f08602c74349ac608cab65"><span></span><span class="n">desktop_ogap</span></span><span></span><span class="p">;</span>
     <span class="n">pending_panel_pos_t</span> <span class="doxyrest-code-target target" id="doxid-d8-dac-structtw-config-table-1ae978036a196e21c1b47b4fdfe8af7018"><span></span><span class="n">panel_pos</span></span><span></span><span class="p">;</span>
     <span class="n">pending_intval_t</span> <span class="doxyrest-code-target target" id="doxid-d8-dac-structtw-config-table-1aca6ff5f807239064fb04506340a5a938"><span></span><span class="n">sleep_timer</span></span><span></span><span class="p">;</span>
     <span class="n">pending_intval_t</span> <span class="doxyrest-code-target target" id="doxid-d8-dac-structtw-config-table-1a5a59d4b348b236fb48c97e0cb054872b"><span></span><span class="n">lock_timer</span></span><span></span><span class="p">;</span>
     <span class="n">pending_theme_t</span> <span class="doxyrest-code-target target" id="doxid-d8-dac-structtw-config-table-1a423ac42e0ffe3003112277c8bf6a9c57"><span></span><span class="n">theme</span></span><span></span><span class="p">;</span>
-    <span class="k">struct</span> <span class="n">xkb_rule_names</span><span class="o">*</span> <span class="doxyrest-code-target target" id="doxid-d8-dac-structtw-config-table-1a1c87b41c274287160ffd25b8639ef05d"><span></span><span class="n">xkb_rules</span></span><span></span><span class="p">;</span>
     <span class="n">pending_intval_t</span> <a class="reference internal" href="#doxid-d8-dac-structtw-config-table-1ae3d367c1fd9fd34b083bec76fd261ba2"><span class="std std-ref">kb_repeat</span></a><span></span><span class="p">;</span>
     <span class="n">pending_intval_t</span> <a class="reference internal" href="#doxid-d8-dac-structtw-config-table-1a6e55532df9299c657b8989b9e5ab1c82"><span class="std std-ref">kb_delay</span></a><span></span><span class="p">;</span>
+    <span class="k">struct</span> <span class="n">xkb_rule_names</span> <span class="doxyrest-code-target target" id="doxid-d8-dac-structtw-config-table-1a2897f66ec68c802d8ee39d4acd359a9b"><span></span><span class="n">xkb_rules</span></span><span></span><span class="p">;</span>
+    <a class="reference internal" href="struct_vector_t.html#doxid-d3-d8b-structvector-t"><span class="std std-ref">vector_t</span></a><span></span> <span class="doxyrest-code-target target" id="doxid-d8-dac-structtw-config-table-1a55137e4516c96da97264735193f27616"><span></span><span class="n">registry</span></span><span></span><span class="p">;</span>
+    <a class="reference internal" href="struct_vector_t.html#doxid-d3-d8b-structvector-t"><span class="std std-ref">vector_t</span></a><span></span> <span class="doxyrest-code-target target" id="doxid-d8-dac-structtw-config-table-1abb164516e8ad14b344ae77080415bd93"><span></span><span class="n">config_bindings</span></span><span></span><span class="p">;</span>
+    <span class="k">struct</span> <a class="reference internal" href="struct_tw_binding.html#doxid-d8-d9d-structtw-binding"><span class="std std-ref">tw_binding</span></a><span></span> <span class="doxyrest-code-target target" id="doxid-d8-dac-structtw-config-table-1a30e35e2eb8366e96e9b6ea2223183e8c"><span></span><span class="n">builtin_bindings</span></span><span></span><span class="p">[</span><span class="n">TW_BUILTIN_BINDING_SIZE</span><span class="p">];</span>
+    <span class="k">struct</span> <a class="reference internal" href="struct_tw_bindings.html#doxid-d2-dab-structtw-bindings"><span class="std std-ref">tw_bindings</span></a><span></span> <span class="doxyrest-code-target target" id="doxid-d8-dac-structtw-config-table-1ab0f7c6f4aca42bf850cc58ac429dd4a8"><span></span><span class="n">bindings</span></span><span></span><span class="p">;</span>
+    <span class="k">struct</span> <a class="reference internal" href="struct_tw_config.html#doxid-df-d35-structtw-config"><span class="std std-ref">tw_config</span></a><span></span><span class="o">*</span> <span class="doxyrest-code-target target" id="doxid-d8-dac-structtw-config-table-1a225c36f20cd816766f1a11d405e074c8"><span></span><span class="n">config</span></span><span></span><span class="p">;</span>
+    <span class="kt">void</span><span class="o">*</span> <span class="doxyrest-code-target target" id="doxid-d8-dac-structtw-config-table-1a36d9e9aac178163b9ac8c6c2f2b1a4f1"><span></span><span class="n">user_data</span></span><span></span><span class="p">;</span>
 <span class="p">};</span></pre>
 </div>
 <div class="section" id="detailed-documentation">
@@ -125,13 +130,17 @@
 <h3><a data-toggle="collapse" href="#globaltoc">Related Pages</a></h3>
 <div id="globaltoc" class="collapse">
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="page_md__home_developer_Projects_web-taiwins_taiwins_CONTRIBUTING.html">Contributing to Taiwins</a></li>
-<li class="toctree-l1"><a class="reference internal" href="page_md__home_developer_Projects_web-taiwins_taiwins_docs_lua.html">Lua bindings</a></li>
-<li class="toctree-l1"><a class="reference internal" href="page_md__home_developer_Projects_web-taiwins_taiwins_docs_window_management.html">Taiwins layout engine.</a></li>
-<li class="toctree-l1"><a class="reference internal" href="page_md__home_developer_Projects_web-taiwins_taiwins_README.html">Taiwins, a morden wayland window manager</a></li>
-<li class="toctree-l1"><a class="reference internal" href="page_md__home_developer_Projects_web-taiwins_taiwins_docs_api.html">Twclient quick reference</a></li>
-<li class="toctree-l1"><a class="reference internal" href="page_md__home_developer_Projects_web-taiwins_taiwins_docs_twobjects.html">Twobjects quick reference</a></li>
-<li class="toctree-l1"><a class="reference internal" href="page_md__home_developer_Projects_web-taiwins_taiwins_docs_wayland.html">wayland</a></li>
+<li class="toctree-l1"><a class="reference internal" href="page_md__home_developer_Projects_web_taiwins_taiwins_CONTRIBUTING.html">Contributing to Taiwins</a></li>
+<li class="toctree-l1"><a class="reference internal" href="page_md__home_developer_Projects_web_taiwins_taiwins_docs_dbus.html">D-Bus API Quick Reference</a></li>
+<li class="toctree-l1"><a class="reference internal" href="page_md__home_developer_Projects_web_taiwins_taiwins_docs_libtaiwins.html">For libtaiwins users</a></li>
+<li class="toctree-l1"><a class="reference internal" href="page_md__home_developer_Projects_web_taiwins_taiwins_docs_lua.html">Lua bindings</a></li>
+<li class="toctree-l1"><a class="reference internal" href="page_md__home_developer_Projects_web_taiwins_taiwins_docs_progress.html">Progress and feature track</a></li>
+<li class="toctree-l1"><a class="reference internal" href="page_md__home_developer_Projects_web_taiwins_taiwins_docs_screenshots.html">Taiwins in tiling mode</a></li>
+<li class="toctree-l1"><a class="reference internal" href="page_md__home_developer_Projects_web_taiwins_taiwins_docs_window_management.html">Taiwins layout engine.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="page_md__home_developer_Projects_web_taiwins_taiwins_README.html">Taiwins, a modern wayland window manager</a></li>
+<li class="toctree-l1"><a class="reference internal" href="page_md__home_developer_Projects_web_taiwins_taiwins_docs_libtwclient.html">Twclient quick reference</a></li>
+<li class="toctree-l1"><a class="reference internal" href="page_md__home_developer_Projects_web_taiwins_taiwins_docs_twobjects.html">Twobjects quick reference</a></li>
+<li class="toctree-l1"><a class="reference internal" href="page_md__home_developer_Projects_web_taiwins_taiwins_docs_wayland.html">wayland</a></li>
 </ul>
 <ul class="current">
 <li class="toctree-l1 current"><a class="reference internal" href="global.html">Global Namespace</a></li>
@@ -162,7 +171,7 @@
     </p>
     <p>
         &copy; Copyright 2020, Xichen Zhou.<br/>
-      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 3.2.1.<br/>
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 3.4.3.<br/>
     </p>
   </div>
 </footer>

@@ -1,0 +1,31 @@
+.. index:: pair: struct; tw_login
+.. _doxid-d0/d6a/structtw__login:
+
+struct tw_login
+===============
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <login.h>
+	
+	struct tw_login
+	{
+		// fields
+	
+		char :target:`seat<doxid-d0/d6a/structtw__login_1a1c345bd978f4b22481f8e62f37b5fe31>`[32];
+		struct udev* :target:`udev<doxid-d0/d6a/structtw__login_1a1db4337d6b28745e1050505a58b4d7a6>`;
+		struct udev_monitor* :target:`mon<doxid-d0/d6a/structtw__login_1a052642e607b3ccaf62871d7bc5262593>`;
+		struct wl_event_source* :target:`udev_event<doxid-d0/d6a/structtw__login_1a29cf7ad0b9e4b35357d366b65f6b67ed>`;
+		const struct :ref:`tw_login_impl<doxid-d5/df6/structtw__login__impl>`* :target:`impl<doxid-d0/d6a/structtw__login_1acfe78546980111bfceb7bd59edd70fb7>`;
+		bool :target:`active<doxid-d0/d6a/structtw__login_1a6bcc0e9f0aadc2c5319638371a16a4a6>`;
+		struct wl_signal :target:`attributes_change<doxid-d0/d6a/structtw__login_1a6c4b47aeacfbf1d95ddcb88f5ebea31b>`;
+		struct wl_signal :target:`udev_device<doxid-d0/d6a/structtw__login_1a51143b33062a28a7a1c105489a53d234>`;
+		struct tw_login::@41 :target:`signals<doxid-d0/d6a/structtw__login_1a0550f76637263e9c7b4bb8bb8a2cc762>`;
+	};

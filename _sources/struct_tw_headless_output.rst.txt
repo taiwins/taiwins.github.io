@@ -1,0 +1,24 @@
+.. index:: pair: struct; tw_headless_output
+.. _doxid-d6/dc4/structtw__headless__output:
+
+struct tw_headless_output
+=========================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	
+	struct tw_headless_output
+	{
+		// fields
+	
+		struct :ref:`tw_render_output<doxid-dd/d31/structtw__render__output>` :target:`output<doxid-d6/dc4/structtw__headless__output_1a98871b250ca78fec821e9312ad38e1b3>`;
+		struct wl_event_source* :target:`timer<doxid-d6/dc4/structtw__headless__output_1a2f1d9281a016f1e8937d8207f9223891>`;
+		struct wl_listener :target:`present_listener<doxid-d6/dc4/structtw__headless__output_1ae4cefea8ab5bc45a070f760403107829>`;
+	};

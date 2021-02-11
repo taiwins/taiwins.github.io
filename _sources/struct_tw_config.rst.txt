@@ -16,27 +16,20 @@ the taiwins config object :ref:`More...<details-df/d35/structtw__config>`
 .. ref-code-block:: cpp
 	:class: doxyrest-overview-code-block
 
-	#include <config_internal.h>
+	#include <config.h>
 	
 	struct tw_config
 	{
 		// fields
 	
-		struct :ref:`tw_backend<doxid-df/d59/structtw__backend>`* :target:`backend<doxid-df/d35/structtw__config_1ac0503a0a4dff50fe3d08f4bf3ae8211f>`;
-		struct :ref:`tw_bindings<doxid-d2/dab/structtw__bindings>`* :target:`bindings<doxid-df/d35/structtw__config_1a8c3952cae27716815383d14af7b73db0>`;
-		struct :ref:`tw_config_table<doxid-d8/dac/structtw__config__table>` :target:`config_table<doxid-df/d35/structtw__config_1afc98cca1bbffc7137d6767367626be64>`;
-		:ref:`vector_t<doxid-d3/d8b/structvector__t>` :target:`registry<doxid-df/d35/structtw__config_1a42782f7ea193cfc75085193c6dd34fc0>`;
-		:ref:`vector_t<doxid-d3/d8b/structvector__t>` :target:`config_bindings<doxid-df/d35/structtw__config_1a6ff8f7f15aed0d525cb8f3cf83971b08>`;
-		struct :ref:`tw_binding<doxid-d8/d9d/structtw__binding>` :target:`builtin_bindings<doxid-df/d35/structtw__config_1ae1d40a64c7aa9efb724e91a46b3b161f>`[TW_BUILTIN_BINDING_SIZE];
-		struct xkb_rule_names :ref:`xkb_rules<doxid-df/d35/structtw__config_1a02b012c109a97a44917550f9eb3b25ce>`;
+		struct :ref:`tw_engine<doxid-df/d8e/structtw__engine>`* :target:`engine<doxid-df/d35/structtw__config_1a853308d7079fbf7d94bb6cb07efe871b>`;
+		enum :ref:`tw_config_type<doxid-db/d16/config_8h_1a8947340d4f745f4829f03c65548f89ff>` :target:`type<doxid-df/d35/structtw__config_1a18839a2c699d1d808daadfde743b8042>`;
+		struct :ref:`tw_config_table<doxid-d8/dac/structtw__config__table>` config_table* :ref:`current<doxid-df/d35/structtw__config_1aa0c735c2d2b83d5867253230895a6a7a>`;
 		struct wl_listener :target:`output_created_listener<doxid-df/d35/structtw__config_1af516501363eeea180bf1f942eb1de154>`;
-		struct wl_listener :target:`seat_change_listener<doxid-df/d35/structtw__config_1a8ac1cd9ed54f76bd88850cc8c5d7456b>`;
-		void(* :target:`init<doxid-df/d35/structtw__config_1a15e3352b733f3d1d9b0a7f9333e516a4>`)(struct tw_config *);
-		void(* :target:`fini<doxid-df/d35/structtw__config_1ac45ebfc37cfbc4e99a0d95c0e26b6908>`)(struct tw_config *);
-		bool(* :target:`read_config<doxid-df/d35/structtw__config_1a2afbfd0da32c9b19961d034e46d332c4>`)(struct tw_config *, const char *);
-		char*(* :target:`read_error<doxid-df/d35/structtw__config_1a130cc0e4f4ec5823d0c441fcf0f728cc>`)(struct tw_config *);
-		void* :target:`user_data<doxid-df/d35/structtw__config_1a3aad7561ef7bb072069a2dfabf37ebdb>`;
-		char* :target:`err_msg<doxid-df/d35/structtw__config_1a3c03df366fc564f2db9893706cd23a98>`;
+		struct wl_listener :target:`seat_created_listener<doxid-df/d35/structtw__config_1a3a2a0d351cbfa538f08248c1ca4bdf1e>`;
+		void(* :target:`init<doxid-df/d35/structtw__config_1a43e675253cbb2f5da21129339a52dae0>`)(struct tw_config_table *);
+		void(* :target:`fini<doxid-df/d35/structtw__config_1a2db1b308322303ab0c76e4cb7a7a7461>`)(struct tw_config_table *);
+		char*(* :target:`run<doxid-df/d35/structtw__config_1acc3bb739372be92c72edbdbb996be47e>`)(struct tw_config_table *, const char *);
 	};
 .. _details-df/d35/structtw__config:
 
@@ -50,13 +43,13 @@ For now, it is designed as runing config through a script, the config is replaca
 Fields
 ------
 
-.. index:: pair: variable; xkb_rules
-.. _doxid-df/d35/structtw__config_1a02b012c109a97a44917550f9eb3b25ce:
+.. index:: pair: variable; current
+.. _doxid-df/d35/structtw__config_1aa0c735c2d2b83d5867253230895a6a7a:
 
 .. ref-code-block:: cpp
 	:class: doxyrest-title-code-block
 
-	struct xkb_rule_names xkb_rules
+	struct :ref:`tw_config_table<doxid-d8/dac/structtw__config__table>` config_table* current
 
 lua code may use this
 

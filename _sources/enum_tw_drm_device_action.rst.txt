@@ -1,0 +1,23 @@
+.. index:: pair: enum; tw_drm_device_action
+.. _doxid-dc/dc3/backend_2drm_2internal_8h_1aff388afccff94c201b1e160f959b9ebe:
+
+enum tw_drm_device_action
+=========================
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <internal.h>
+
+	enum tw_drm_device_action
+	{
+	    :target:`TW_DRM_DEV_ADD<doxid-dc/dc3/backend_2drm_2internal_8h_1aff388afccff94c201b1e160f959b9ebea1e5ac10c8c35c59a8fa10dea2085078e>`,
+	    :target:`TW_DRM_DEV_RM<doxid-dc/dc3/backend_2drm_2internal_8h_1aff388afccff94c201b1e160f959b9ebea1855b9a670f57b780f51a8518a3f631b>`,
+	    :target:`TW_DRM_DEV_CHANGE<doxid-dc/dc3/backend_2drm_2internal_8h_1aff388afccff94c201b1e160f959b9ebea07695c8ae0d862473c956b5ed407c5ab>`,
+	    :target:`TW_DRM_DEV_ONLINE<doxid-dc/dc3/backend_2drm_2internal_8h_1aff388afccff94c201b1e160f959b9ebeac6cb3140c772311aa678e42e3e00fd88>`,
+	    :target:`TW_DRM_DEV_OFFLINE<doxid-dc/dc3/backend_2drm_2internal_8h_1aff388afccff94c201b1e160f959b9ebea8091337dc2310b858b2ad950dd1a4245>`,
+	    :target:`TW_DRM_DEV_UNKNOWN<doxid-dc/dc3/backend_2drm_2internal_8h_1aff388afccff94c201b1e160f959b9ebeaad819fcec018df3d59b5dad0b81d3841>`,
+	};
+

@@ -1,0 +1,25 @@
+.. index:: pair: struct; tw_event_touch_up
+.. _doxid-d5/d50/structtw__event__touch__up:
+
+struct tw_event_touch_up
+========================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <input_device.h>
+	
+	struct tw_event_touch_up
+	{
+		// fields
+	
+		struct :ref:`tw_input_device<doxid-d3/db0/structtw__input__device>`* :target:`dev<doxid-d5/d50/structtw__event__touch__up_1a6eb22992869be84119570c287a887864>`;
+		uint32_t :target:`time<doxid-d5/d50/structtw__event__touch__up_1a9f17ca26380a6d7950f822011c7a0744>`;
+		int32_t :target:`touch_id<doxid-d5/d50/structtw__event__touch__up_1abf5538d54122e9476cf440685ede707d>`;
+	};

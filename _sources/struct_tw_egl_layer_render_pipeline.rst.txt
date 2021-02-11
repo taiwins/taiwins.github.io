@@ -1,0 +1,27 @@
+.. index:: pair: struct; tw_egl_layer_render_pipeline
+.. _doxid-d6/db7/structtw__egl__layer__render__pipeline:
+
+struct tw_egl_layer_render_pipeline
+===================================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	
+	struct tw_egl_layer_render_pipeline
+	{
+		// fields
+	
+		struct :ref:`tw_render_pipeline<doxid-dd/d95/structtw__render__pipeline>` :target:`base<doxid-d6/db7/structtw__egl__layer__render__pipeline_1aa6cf3b9e084c68a36e32eff199e7c733>`;
+		struct :ref:`tw_plane<doxid-d8/d69/structtw__plane>` :target:`main_plane<doxid-d6/db7/structtw__egl__layer__render__pipeline_1a968cde0304c1425c5a51b0038f2b854b>`;
+		struct :ref:`tw_egl_quad_shader<doxid-d6/d08/structtw__egl__quad__shader>` :target:`quad_shader<doxid-d6/db7/structtw__egl__layer__render__pipeline_1aae6cccb334ad360e2c1475abaebfb37e>`;
+		struct :ref:`tw_egl_quad_shader<doxid-d6/d08/structtw__egl__quad__shader>` :target:`color_quad_shader<doxid-d6/db7/structtw__egl__layer__render__pipeline_1ae2871a4e97441c60e30fe7bbcd30b20e>`;
+		struct :ref:`tw_egl_quad_shader<doxid-d6/d08/structtw__egl__quad__shader>` :target:`ext_quad_shader<doxid-d6/db7/structtw__egl__layer__render__pipeline_1ae29f72d151b6d6d952fe976df2831ac7>`;
+		struct :ref:`tw_layers_manager<doxid-dd/d64/structtw__layers__manager>`* :target:`manager<doxid-d6/db7/structtw__egl__layer__render__pipeline_1a95f8ba08a8765bc0ecf3cc9ebcb3d2ba>`;
+	};

@@ -1,0 +1,24 @@
+.. index:: pair: struct; tw_postion_2d
+.. _doxid-de/dc7/structtw__postion__2d:
+
+struct tw_postion_2d
+====================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <utils.h>
+	
+	struct tw_postion_2d
+	{
+		// fields
+	
+		int32_t :target:`x<doxid-de/dc7/structtw__postion__2d_1a257f3e2be535be5c78e391774bfcfd8a>`;
+		int32_t :target:`y<doxid-de/dc7/structtw__postion__2d_1aec08c9191002d5811b8ab3e7a6830df5>`;
+	};

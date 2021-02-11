@@ -1,0 +1,27 @@
+.. index:: pair: struct; tw_event_output_device_present
+.. _doxid-d3/d87/structtw__event__output__device__present:
+
+struct tw_event_output_device_present
+=====================================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <output_device.h>
+	
+	struct tw_event_output_device_present
+	{
+		// fields
+	
+		struct :ref:`tw_output_device<doxid-db/db1/structtw__output__device>`* :target:`device<doxid-d3/d87/structtw__event__output__device__present_1a9a1718156539df6c637b10013b4745c4>`;
+		struct timespec :target:`time<doxid-d3/d87/structtw__event__output__device__present_1a6e5bc780b8548de97e4a05be35227a34>`;
+		uint32_t :target:`flags<doxid-d3/d87/structtw__event__output__device__present_1a56cc0dd1011f83ecebc31920dd0deeda>`;
+		uint64_t :target:`seq<doxid-d3/d87/structtw__event__output__device__present_1afa2b1fa4f6a5e2be8efe647f0cda0633>`;
+		int :target:`refresh<doxid-d3/d87/structtw__event__output__device__present_1a2bd517bef8719ef7bda51df321b45ce5>`;
+	};

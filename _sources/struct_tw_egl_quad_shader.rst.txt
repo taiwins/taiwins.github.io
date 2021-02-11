@@ -1,0 +1,50 @@
+.. index:: pair: struct; tw_egl_quad_shader
+.. _doxid-d6/d08/structtw__egl__quad__shader:
+
+struct tw_egl_quad_shader
+=========================
+
+.. toctree::
+	:hidden:
+
+Overview
+~~~~~~~~
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <render_context_egl.h>
+	
+	struct tw_egl_quad_shader
+	{
+		// fields
+	
+		GLuint :target:`prog<doxid-d6/d08/structtw__egl__quad__shader_1a826752b20b82b44f95aa2bd94d377504>`;
+		GLint :target:`proj<doxid-d6/d08/structtw__egl__quad__shader_1a02f31b24f7c4a50cf5ac60f6487f9179>`;
+		GLint :target:`alpha<doxid-d6/d08/structtw__egl__quad__shader_1a6f7a81870a8bcd90d0105314bc0e4caf>`;
+		GLint :ref:`target<doxid-d6/d08/structtw__egl__quad__shader_1abd04bfa224068715a233b0c746791979>`;
+		struct tw_egl_quad_shader::@44 :target:`uniform<doxid-d6/d08/structtw__egl__quad__shader_1acb3bd96b7d591f5156936e7aad63e8f1>`;
+	};
+.. _details-d6/d08/structtw__egl__quad__shader:
+
+Detailed Documentation
+~~~~~~~~~~~~~~~~~~~~~~
+
+
+
+Fields
+------
+
+.. index:: pair: variable; target
+.. _doxid-d6/d08/structtw__egl__quad__shader_1abd04bfa224068715a233b0c746791979:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	GLint target
+
+used as color/texture
+

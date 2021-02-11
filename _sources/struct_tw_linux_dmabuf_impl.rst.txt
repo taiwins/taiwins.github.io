@@ -1,0 +1,50 @@
+.. index:: pair: struct; tw_linux_dmabuf_impl
+.. _doxid-d8/d64/structtw__linux__dmabuf__impl:
+
+struct tw_linux_dmabuf_impl
+===========================
+
+.. toctree::
+	:hidden:
+
+Overview
+~~~~~~~~
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <dmabuf.h>
+	
+	struct tw_linux_dmabuf_impl
+	{
+		// fields
+	
+		void(* :ref:`format_request<doxid-d8/d64/structtw__linux__dmabuf__impl_1adb69dce0d39ca75347b364492c063b24>`)(struct tw_linux_dmabuf *dmabuf, void *callback, int *formats, size_t *nformats);
+		void(* :target:`modifiers_request<doxid-d8/d64/structtw__linux__dmabuf__impl_1aeef10b4e3a1227f1479448aede451d19>`)(struct tw_linux_dmabuf *dmabuf, void *callback, int format, uint64_t *modifiers, size_t *nmodifiers);
+		bool(* :target:`test_import<doxid-d8/d64/structtw__linux__dmabuf__impl_1a13f3248c4d5cdf2548b43f2156e187ff>`)(struct tw_dmabuf_attributes *attrs, void *callback);
+	};
+.. _details-d8/d64/structtw__linux__dmabuf__impl:
+
+Detailed Documentation
+~~~~~~~~~~~~~~~~~~~~~~
+
+
+
+Fields
+------
+
+.. index:: pair: variable; format_request
+.. _doxid-d8/d64/structtw__linux__dmabuf__impl_1adb69dce0d39ca75347b364492c063b24:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	void(* format_request)(struct tw_linux_dmabuf *dmabuf, void *callback, int *formats, size_t *nformats)
+
+the protocol interface need a backend to does the actual IO work, we have callbacks here to have this dmabuf interface indepedent from actual implementation.
+
+The callbacks shall not allocated any data, if formats is NULL, it would just return the number of formats available.
+

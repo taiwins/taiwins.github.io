@@ -1,0 +1,24 @@
+.. index:: pair: struct; tw_drm_prop_info
+.. _doxid-da/de8/structtw__drm__prop__info:
+
+struct tw_drm_prop_info
+=======================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <internal.h>
+	
+	struct tw_drm_prop_info
+	{
+		// fields
+	
+		const char* :target:`name<doxid-da/de8/structtw__drm__prop__info_1a4e00798595448cbbf77c867371bbbfd0>`;
+		uint32_t* :target:`ptr<doxid-da/de8/structtw__drm__prop__info_1a8def6b2cde28757d721a39098ffbf460>`;
+	};
