@@ -16,7 +16,7 @@ Overview
 .. ref-code-block:: cpp
 	:class: doxyrest-overview-code-block
 
-	#include <data_internal.h>
+	#include <data_device.h>
 	
 	struct tw_data_device
 	{
@@ -30,6 +30,8 @@ Overview
 		struct wl_listener :target:`source_destroy<doxid-de/dbd/structtw__data__device_1aad305cd4f8dd3c94fc7699d5dbd88f9d>`;
 		struct wl_listener :target:`create_data_offer<doxid-de/dbd/structtw__data__device_1a11568f7645da61e7a131aa5a71d9dc08>`;
 		struct wl_listener :target:`seat_destroy<doxid-de/dbd/structtw__data__device_1a978bac46128990f272b891015c391b0c>`;
+		struct wl_signal :target:`source_added<doxid-de/dbd/structtw__data__device_1a051a704ef013dea60556d291a591c7ae>`;
+		struct wl_signal :target:`source_removed<doxid-de/dbd/structtw__data__device_1aaf4f1a1f39d38153c9688a72384b811a>`;
 	};
 .. _details-de/dbd/structtw__data__device:
 

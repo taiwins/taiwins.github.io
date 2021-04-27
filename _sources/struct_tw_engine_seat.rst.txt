@@ -30,6 +30,9 @@ Overview
 		struct wl_list :target:`link<doxid-dd/d1f/structtw__engine__seat_1a338d22417ccd49347251d2ba4b8bd1c8>`;
 		struct xkb_rule_names :target:`keyboard_rule_names<doxid-dd/d1f/structtw__engine__seat_1a0f77c8f427ff2f1873e7280d59b8e442>`;
 		struct xkb_keymap* :target:`keymap<doxid-dd/d1f/structtw__engine__seat_1a29c2464f1e80a45d58b13b70d2d3b2d7>`;
+		struct wl_listener :target:`focus<doxid-dd/d1f/structtw__engine__seat_1a3703bee9d3ee3c1542b1b4d6e74e0d51>`;
+		struct wl_listener :target:`unfocus<doxid-dd/d1f/structtw__engine__seat_1a268f80ed7146c6341abe9e1bebb629a2>`;
+		struct tw_engine_seat::@37 :target:`listeners<doxid-dd/d1f/structtw__engine__seat_1a0b4778b0b20ee253fd858d636d1569cd>`;
 	};
 .. _details-dd/d1f/structtw__engine__seat:
 

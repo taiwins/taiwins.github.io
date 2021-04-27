@@ -7,6 +7,8 @@
     
     <title>struct tw_drm_display &#8212; Taiwins</title>
   
+  <!-- fix for search function -->
+  <script type="text/javascript" src="_static/language_data.js "></script>
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="_static/bootstrap-sphinx.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="_static/my-style.css" />
@@ -19,8 +21,6 @@
     <link rel="shortcut icon" href="_static/favicon.ico"/>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="struct tw_drm_fb" href="struct_tw_drm_fb.html" />
-    <link rel="prev" title="struct tw_drm_crtc_props" href="struct_tw_drm_crtc_props.html" />
 <meta charset='utf-8'>
 <meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
 <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
@@ -79,21 +79,15 @@
     <span class="k">struct</span> <a class="reference internal" href="struct_tw_render_output.html#doxid-dd-d31-structtw-render-output"><span class="std std-ref">tw_render_output</span></a><span></span> <span class="doxyrest-code-target target" id="doxid-db-db7-structtw-drm-display-1a4b5fddc3ea282e5bb0d872a041106a24"><span></span><span class="n">output</span></span><span></span><span class="p">;</span>
     <span class="k">struct</span> <a class="reference internal" href="struct_tw_drm_backend.html#doxid-d7-d87-structtw-drm-backend"><span class="std std-ref">tw_drm_backend</span></a><span></span><span class="o">*</span> <span class="doxyrest-code-target target" id="doxid-db-db7-structtw-drm-display-1ad5137ecf4750a0d99d89b0e11b1c44b5"><span></span><span class="n">drm</span></span><span></span><span class="p">;</span>
     <span class="k">struct</span> <a class="reference internal" href="struct_tw_drm_gpu.html#doxid-dc-d3b-structtw-drm-gpu"><span class="std std-ref">tw_drm_gpu</span></a><span></span><span class="o">*</span> <span class="doxyrest-code-target target" id="doxid-db-db7-structtw-drm-display-1af79efc01f89860e33caa19df2d56a1a6"><span></span><span class="n">gpu</span></span><span></span><span class="p">;</span>
-    <span class="kt">int</span> <span class="doxyrest-code-target target" id="doxid-db-db7-structtw-drm-display-1a242b7a6a91c1c29266f35470dfa1ce88"><span></span><span class="n">conn_id</span></span><span></span><span class="p">;</span>
     <span class="kt">uint32_t</span> <span class="doxyrest-code-target target" id="doxid-db-db7-structtw-drm-display-1a4e6c62396e18ebc849e07a8636e904de"><span></span><span class="n">crtc_mask</span></span><span></span><span class="p">;</span>
     <span class="kt">uint32_t</span> <span class="doxyrest-code-target target" id="doxid-db-db7-structtw-drm-display-1a178985aa6e52c555bee8869de5b16123"><span></span><span class="n">plane_mask</span></span><span></span><span class="p">;</span>
     <span class="kt">uintptr_t</span> <span class="doxyrest-code-target target" id="doxid-db-db7-structtw-drm-display-1ae3a3363d48c840206aa9a2abbb37d397"><span></span><span class="n">handle</span></span><span></span><span class="p">;</span>
     <span class="k">struct</span> <a class="reference internal" href="struct_tw_drm_plane.html#doxid-d4-dca-structtw-drm-plane"><span class="std std-ref">tw_drm_plane</span></a><span></span><span class="o">*</span> <a class="reference internal" href="#doxid-db-db7-structtw-drm-display-1ab4ad656fd954ed1e3478b8eb11559394"><span class="std std-ref">primary_plane</span></a><span></span><span class="p">;</span>
     <span class="k">struct</span> <a class="reference internal" href="struct_tw_drm_crtc.html#doxid-da-da9-structtw-drm-crtc"><span class="std std-ref">tw_drm_crtc</span></a><span></span><span class="o">*</span> <span class="doxyrest-code-target target" id="doxid-db-db7-structtw-drm-display-1a7c1898e4596438e4d33f883109ac6f75"><span></span><span class="n">crtc</span></span><span></span><span class="p">;</span>
-    <span class="kt">bool</span> <span class="doxyrest-code-target target" id="doxid-db-db7-structtw-drm-display-1add85dfce623176c2871e0d9ef97267f1"><span></span><span class="n">connected</span></span><span></span><span class="p">;</span>
-    <span class="kt">bool</span> <span class="doxyrest-code-target target" id="doxid-db-db7-structtw-drm-display-1a7950d6d76702f359ab73916ee114c2f0"><span></span><span class="n">active</span></span><span></span><span class="p">;</span>
-    <span class="kt">bool</span> <span class="doxyrest-code-target target" id="doxid-db-db7-structtw-drm-display-1a2c60df6f8b827abcc0a581739502e14c"><span></span><span class="n">annouced</span></span><span></span><span class="p">;</span>
-    <span class="kt">int</span> <a class="reference internal" href="#doxid-db-db7-structtw-drm-display-1a13353ded121f8b4b6f96dfa265934c0b"><span class="std std-ref">crtc_id</span></a><span></span><span class="p">;</span>
-    <span class="k">struct</span> <a class="reference internal" href="struct_tw_drm_crtc.html#doxid-da-da9-structtw-drm-crtc"><span class="std std-ref">tw_drm_crtc</span></a><span></span><span class="o">*</span> <span class="doxyrest-code-target target" id="doxid-db-db7-structtw-drm-display-1a10ebdc5f6a6acc80956b8ced7d7e0aba"><span></span><span class="n">unset_crtc</span></span><span></span><span class="p">;</span>
-    <span class="n">drmModeModeInfo</span> <span class="doxyrest-code-target target" id="doxid-db-db7-structtw-drm-display-1a5d0791a76840062201cfe0a2541f7ec3"><span></span><span class="n">mode</span></span><span></span><span class="p">;</span>
     <span class="k">struct</span> <span class="n">wl_array</span> <span class="doxyrest-code-target target" id="doxid-db-db7-structtw-drm-display-1abef4b6c431628159222be7e2180a9cd3"><span></span><span class="n">modes</span></span><span></span><span class="p">;</span>
-    <span class="k">enum</span> <a class="reference internal" href="enum_tw_drm_display_pending_flags.html#doxid-dc-dc3-backend-2drm-2internal-8h-1a99cd21d72ca1e265e5da23cae278f2e7"><span class="std std-ref">tw_drm_display_pending_flags</span></a><span></span> <span class="doxyrest-code-target target" id="doxid-db-db7-structtw-drm-display-1a65be8468ad21587401011299807a09de"><span></span><span class="n">pending</span></span><span></span><span class="p">;</span>
-    <span class="k">struct</span> <span class="n">tw_drm_display</span><span class="o">::</span><span class="err">@</span><span class="mi">51</span> <span class="doxyrest-code-target target" id="doxid-db-db7-structtw-drm-display-1a0b09acd44e4db095d5c186013cd10c3c"><span></span><span class="n">status</span></span><span></span><span class="p">;</span>
+    <span class="k">struct</span> <a class="reference internal" href="struct_tw_kms_state.html#doxid-de-d4e-structtw-kms-state"><span class="std std-ref">tw_kms_state</span></a><span></span> <span class="n">now</span> <span class="doxyrest-code-target target" id="doxid-db-db7-structtw-drm-display-1a7af026ab31964ec9b2499afdbeafc345"><span></span><span class="n">next</span></span><span></span><span class="p">;</span>
+    <span class="kt">uint32_t</span> <span class="doxyrest-code-target target" id="doxid-db-db7-structtw-drm-display-1abda2b7686895c48579095ec40b13f8aa"><span></span><span class="n">pending</span></span><span></span><span class="p">;</span>
+    <span class="k">struct</span> <span class="n">tw_drm_display</span><span class="o">::</span><span class="err">@</span><span class="mi">78</span> <span class="doxyrest-code-target target" id="doxid-db-db7-structtw-drm-display-1a8c1f563166ea229fe1ac17b5febca688"><span></span><span class="n">status</span></span><span></span><span class="p">;</span>
     <span class="k">struct</span> <a class="reference internal" href="struct_tw_drm_connector_props.html#doxid-dc-df9-structtw-drm-connector-props"><span class="std std-ref">tw_drm_connector_props</span></a><span></span> <span class="doxyrest-code-target target" id="doxid-db-db7-structtw-drm-display-1add2f630635c0af55de39bb08b936ba8c"><span></span><span class="n">props</span></span><span></span><span class="p">;</span>
     <span class="k">struct</span> <span class="n">wl_listener</span> <span class="doxyrest-code-target target" id="doxid-db-db7-structtw-drm-display-1a77dd265e1f2810f2a54b0e312ca52bea"><span></span><span class="n">presentable_commit</span></span><span></span><span class="p">;</span>
 <span class="p">};</span></pre>
@@ -104,8 +98,6 @@
 <h3>Fields<a class="headerlink" href="#fields" title="Permalink to this headline">¶</a></h3>
 <pre class="highlight doxyrest-title-code-block literal-block" id="doxid-db-db7-structtw-drm-display-1ab4ad656fd954ed1e3478b8eb11559394"><span id="index-1"></span><span></span><span class="k">struct</span> <a class="reference internal" href="struct_tw_drm_plane.html#doxid-d4-dca-structtw-drm-plane"><span class="std std-ref">tw_drm_plane</span></a><span></span><span class="o">*</span> <span class="n">primary_plane</span></pre>
 <p>output has at least one primary plane</p>
-<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-db-db7-structtw-drm-display-1a13353ded121f8b4b6f96dfa265934c0b"><span id="index-2"></span><span></span><span class="kt">int</span> <span class="n">crtc_id</span></pre>
-<p>crtc_id read from connector, may not work</p>
 </div>
 </div>
 </div>
@@ -129,22 +121,6 @@
 </div>
 <h3><a data-toggle="collapse" href="#globaltoc">Related Pages</a></h3>
 <div id="globaltoc" class="collapse">
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="page_md__home_developer_Projects_web_taiwins_taiwins_CONTRIBUTING.html">Contributing to Taiwins</a></li>
-<li class="toctree-l1"><a class="reference internal" href="page_md__home_developer_Projects_web_taiwins_taiwins_docs_dbus.html">D-Bus API Quick Reference</a></li>
-<li class="toctree-l1"><a class="reference internal" href="page_md__home_developer_Projects_web_taiwins_taiwins_docs_libtaiwins.html">For libtaiwins users</a></li>
-<li class="toctree-l1"><a class="reference internal" href="page_md__home_developer_Projects_web_taiwins_taiwins_docs_lua.html">Lua bindings</a></li>
-<li class="toctree-l1"><a class="reference internal" href="page_md__home_developer_Projects_web_taiwins_taiwins_docs_progress.html">Progress and feature track</a></li>
-<li class="toctree-l1"><a class="reference internal" href="page_md__home_developer_Projects_web_taiwins_taiwins_docs_screenshots.html">Taiwins in tiling mode</a></li>
-<li class="toctree-l1"><a class="reference internal" href="page_md__home_developer_Projects_web_taiwins_taiwins_docs_window_management.html">Taiwins layout engine.</a></li>
-<li class="toctree-l1"><a class="reference internal" href="page_md__home_developer_Projects_web_taiwins_taiwins_README.html">Taiwins, a modern wayland window manager</a></li>
-<li class="toctree-l1"><a class="reference internal" href="page_md__home_developer_Projects_web_taiwins_taiwins_docs_libtwclient.html">Twclient quick reference</a></li>
-<li class="toctree-l1"><a class="reference internal" href="page_md__home_developer_Projects_web_taiwins_taiwins_docs_twobjects.html">Twobjects quick reference</a></li>
-<li class="toctree-l1"><a class="reference internal" href="page_md__home_developer_Projects_web_taiwins_taiwins_docs_wayland.html">wayland</a></li>
-</ul>
-<ul class="current">
-<li class="toctree-l1 current"><a class="reference internal" href="global.html">Global Namespace</a></li>
-</ul>
 
 </div>
 <form action="search.html" method="get">

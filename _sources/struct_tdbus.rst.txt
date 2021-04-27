@@ -22,6 +22,7 @@ struct tdbus
 		struct DBusConnection* :target:`conn<doxid-db/d60/structtdbus_1aea1132c1509aa44e6e7bee728f0e4cac>`;
 		char* :target:`service_name<doxid-db/d60/structtdbus_1a0d3632587ff1c147b6bf3e9b491108fc>`;
 		bool :target:`non_block<doxid-db/d60/structtdbus_1a442ce206824a75e62b82dda81438febf>`;
+		:ref:`tdbus_logger_fn<doxid-d2/d1b/tdbus_8h_1a253e2af59a94023a8e373c33e873dec8>` :target:`logger<doxid-db/d60/structtdbus_1a870bdd23c434ce340b61ab2175d84f21>`;
 		:ref:`tdbus_add_watch_f<doxid-d4/d70/tdbus__watcher_8h_1ac91d9409730033db47ebffe368db0cb2>` :target:`add_watch_cb<doxid-db/d60/structtdbus_1aadec9f3f84173cfa73ea00b8770a71ef>`;
 		:ref:`tdbus_rm_watch_f<doxid-d4/d70/tdbus__watcher_8h_1aa1b23190d38846e81047961cbce005b0>` :target:`rm_watch_cb<doxid-db/d60/structtdbus_1a6e6ed4a6a6b53f37568350f7af9004f3>`;
 		:ref:`tdbus_ch_watch_f<doxid-d4/d70/tdbus__watcher_8h_1a384c411599eafc75079237b85430dfe0>` :target:`ch_watch_cb<doxid-db/d60/structtdbus_1a29fc0b8c5433d178cee4c10dfe8051a2>`;
@@ -34,6 +35,6 @@ struct tdbus
 		char :target:`objpath<doxid-db/d60/structtdbus_1a48c975419574bf5401ceef42d1520c2d>`[32];
 		size_t :target:`start<doxid-db/d60/structtdbus_1a31ff007de6e41c9733d8e4b977f13838>`;
 		size_t :target:`n_methods<doxid-db/d60/structtdbus_1a17726d20b6365d558c0395ee5c8e58d1>`;
-		struct tdbus::@58 :target:`registered_objs<doxid-db/d60/structtdbus_1a38605b4fdc22ce217da4cd52f464eb97>`[8];
+		struct tdbus::@92 :target:`registered_objs<doxid-db/d60/structtdbus_1a29cf1d77ede9af880966f20dd6e30c0a>`[8];
 		struct :ref:`tdbus_array<doxid-da/d6d/structtdbus__array>` :target:`added_methods<doxid-db/d60/structtdbus_1ae3347cfe10d7db2f42a2d5bfcef0a10d>`;
 	};

@@ -19,5 +19,5 @@ struct tw_output_device_impl
 	{
 		// fields
 	
-		void(* :target:`commit_state<doxid-d4/d98/structtw__output__device__impl_1a978afeaee7ef2aa9f999f04c42c28299>`)(struct tw_output_device *device);
+		bool(* :target:`commit_state<doxid-d4/d98/structtw__output__device__impl_1ae03ff8fd9e3f204b5689df031867734d>`)(struct tw_output_device *device);
 	};

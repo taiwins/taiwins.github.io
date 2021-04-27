@@ -7,6 +7,8 @@
     
     <title>struct tw_seat &#8212; Taiwins</title>
   
+  <!-- fix for search function -->
+  <script type="text/javascript" src="_static/language_data.js "></script>
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="_static/bootstrap-sphinx.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="_static/my-style.css" />
@@ -19,8 +21,6 @@
     <link rel="shortcut icon" href="_static/favicon.ico"/>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="struct tw_seat_client" href="struct_tw_seat_client.html" />
-    <link rel="prev" title="struct tw_render_texture" href="struct_tw_render_texture.html" />
 <meta charset='utf-8'>
 <meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
 <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
@@ -68,6 +68,8 @@
 <span id="doxid-dc-d28-structtw-seat"></span><span id="index-0"></span><h1>struct tw_seat<a class="headerlink" href="#struct-tw-seat" title="Permalink to this headline">¶</a></h1>
 <div class="toctree-wrapper compound">
 </div>
+<div class="section" id="overview">
+<h2>Overview<a class="headerlink" href="#overview" title="Permalink to this headline">¶</a></h2>
 <pre class="highlight doxyrest-overview-code-block literal-block"><span></span><span class="cp">#include</span> <span class="cpf">&lt;seat.h&gt;</span><span class="cp"></span>
 
 <span class="k">struct</span> <span class="n">tw_seat</span>
@@ -78,6 +80,7 @@
     <span class="k">struct</span> <span class="n">wl_global</span><span class="o">*</span> <span class="doxyrest-code-target target" id="doxid-dc-d28-structtw-seat-1adade48ddc16fa8c3eeaf6454835ecedb"><span></span><span class="n">global</span></span><span></span><span class="p">;</span>
     <span class="k">struct</span> <span class="n">wl_list</span> <span class="doxyrest-code-target target" id="doxid-dc-d28-structtw-seat-1a5654ccf8ba374cb510000be822070deb"><span></span><span class="n">clients</span></span><span></span><span class="p">;</span>
     <span class="k">struct</span> <span class="n">wl_list</span> <span class="doxyrest-code-target target" id="doxid-dc-d28-structtw-seat-1a97ed574891fd5d081da4d567ccb30bdf"><span></span><span class="n">link</span></span><span></span><span class="p">;</span>
+    <span class="k">struct</span> <span class="n">wl_list</span> <a class="reference internal" href="#doxid-dc-d28-structtw-seat-1a9da08e14b1f77c7a34e67da7928e52bd"><span class="std std-ref">resources</span></a><span></span><span class="p">;</span>
     <span class="kt">char</span> <span class="doxyrest-code-target target" id="doxid-dc-d28-structtw-seat-1af706435d0497f69bb1ad20a827e5eadb"><span></span><span class="n">name</span></span><span></span><span class="p">[</span><span class="mi">32</span><span class="p">];</span>
     <span class="kt">uint32_t</span> <span class="doxyrest-code-target target" id="doxid-dc-d28-structtw-seat-1a1b6d1773010cf4af9cfc13b3856cf283"><span></span><span class="n">capabilities</span></span><span></span><span class="p">;</span>
     <span class="kt">uint32_t</span> <span class="doxyrest-code-target target" id="doxid-dc-d28-structtw-seat-1a647e026e7f95ba79b781267ee164499b"><span></span><span class="n">repeat_delay</span></span><span></span><span class="p">;</span>
@@ -89,33 +92,45 @@
     <span class="k">struct</span> <a class="reference internal" href="struct_tw_pointer.html#doxid-d8-db5-structtw-pointer"><span class="std std-ref">tw_pointer</span></a><span></span> <span class="doxyrest-code-target target" id="doxid-dc-d28-structtw-seat-1a2a0d4a871087bf7779eb0f20100c701c"><span></span><span class="n">pointer</span></span><span></span><span class="p">;</span>
     <span class="k">struct</span> <a class="reference internal" href="struct_tw_touch.html#doxid-d1-d77-structtw-touch"><span class="std std-ref">tw_touch</span></a><span></span> <span class="doxyrest-code-target target" id="doxid-dc-d28-structtw-seat-1ad39db08f8763110289b61277652fddbe"><span></span><span class="n">touch</span></span><span></span><span class="p">;</span>
     <span class="k">struct</span> <a class="reference internal" href="struct_tw_cursor.html#doxid-d5-d66-structtw-cursor"><span class="std std-ref">tw_cursor</span></a><span></span><span class="o">*</span> <span class="doxyrest-code-target target" id="doxid-dc-d28-structtw-seat-1ac7ef2f0796d382783e26db3e610ff71d"><span></span><span class="n">cursor</span></span><span></span><span class="p">;</span>
-    <span class="k">struct</span> <span class="n">wl_signal</span> <span class="doxyrest-code-target target" id="doxid-dc-d28-structtw-seat-1a2ed391b32ab1c9737dc104fd880f192a"><span></span><span class="n">focus_signal</span></span><span></span><span class="p">;</span>
-    <span class="k">struct</span> <span class="n">wl_signal</span> <span class="doxyrest-code-target target" id="doxid-dc-d28-structtw-seat-1a66939a4794c15c13641409ff0ee311d2"><span></span><span class="n">destroy_signal</span></span><span></span><span class="p">;</span>
+    <span class="k">struct</span> <span class="n">wl_signal</span> <a class="reference internal" href="#doxid-dc-d28-structtw-seat-1a8120b830f3eedfc9225a325e496046a0"><span class="std std-ref">focus</span></a><span></span><span class="p">;</span>
+    <span class="k">struct</span> <span class="n">wl_signal</span> <a class="reference internal" href="#doxid-dc-d28-structtw-seat-1a81d238ca6565de432bde2db0632135c2"><span class="std std-ref">unfocus</span></a><span></span><span class="p">;</span>
+    <span class="k">struct</span> <span class="n">wl_signal</span> <span class="doxyrest-code-target target" id="doxid-dc-d28-structtw-seat-1a673ef66e31f8c7687d854173e3222784"><span></span><span class="n">destroy</span></span><span></span><span class="p">;</span>
+    <span class="k">struct</span> <span class="n">tw_seat</span><span class="o">::</span><span class="err">@</span><span class="mi">55</span> <span class="doxyrest-code-target target" id="doxid-dc-d28-structtw-seat-1a0bead3146431432e1a88a800fbe5cce5"><span></span><span class="n">signals</span></span><span></span><span class="p">;</span>
 <span class="p">};</span></pre>
+</div>
+<div class="section" id="detailed-documentation">
+<span id="details-dc-d28-structtw-seat"></span><h2>Detailed Documentation<a class="headerlink" href="#detailed-documentation" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="fields">
+<h3>Fields<a class="headerlink" href="#fields" title="Permalink to this headline">¶</a></h3>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-dc-d28-structtw-seat-1a9da08e14b1f77c7a34e67da7928e52bd"><span id="index-1"></span><span></span><span class="k">struct</span> <span class="n">wl_list</span> <span class="n">resources</span></pre>
+<p>exotic resources like input-method and text-input</p>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-dc-d28-structtw-seat-1a8120b830f3eedfc9225a325e496046a0"><span id="index-2"></span><span></span><span class="k">struct</span> <span class="n">wl_signal</span> <span class="n">focus</span></pre>
+<p>emitted on device set_focus</p>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-dc-d28-structtw-seat-1a81d238ca6565de432bde2db0632135c2"><span id="index-3"></span><span></span><span class="k">struct</span> <span class="n">wl_signal</span> <span class="n">unfocus</span></pre>
+<p>emitted on device clear_focus</p>
+</div>
+</div>
 </div>
 
 
 	  </div>
 	  
 <div class="col-md-3">
-  <div id="sidebar" class="bs-sidenav"><h3><a data-toggle="collapse" href="#globaltoc">Related Pages</a></h3>
+  <div id="sidebar" class="bs-sidenav">
+<h3>Content</h3>
+<div id="localtoc"><ul>
+<li><a class="reference internal" href="#">struct tw_seat</a><ul>
+<li><a class="reference internal" href="#overview">Overview</a></li>
+<li><a class="reference internal" href="#detailed-documentation">Detailed Documentation</a><ul>
+<li><a class="reference internal" href="#fields">Fields</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<h3><a data-toggle="collapse" href="#globaltoc">Related Pages</a></h3>
 <div id="globaltoc" class="collapse">
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="page_md__home_developer_Projects_web_taiwins_taiwins_CONTRIBUTING.html">Contributing to Taiwins</a></li>
-<li class="toctree-l1"><a class="reference internal" href="page_md__home_developer_Projects_web_taiwins_taiwins_docs_dbus.html">D-Bus API Quick Reference</a></li>
-<li class="toctree-l1"><a class="reference internal" href="page_md__home_developer_Projects_web_taiwins_taiwins_docs_libtaiwins.html">For libtaiwins users</a></li>
-<li class="toctree-l1"><a class="reference internal" href="page_md__home_developer_Projects_web_taiwins_taiwins_docs_lua.html">Lua bindings</a></li>
-<li class="toctree-l1"><a class="reference internal" href="page_md__home_developer_Projects_web_taiwins_taiwins_docs_progress.html">Progress and feature track</a></li>
-<li class="toctree-l1"><a class="reference internal" href="page_md__home_developer_Projects_web_taiwins_taiwins_docs_screenshots.html">Taiwins in tiling mode</a></li>
-<li class="toctree-l1"><a class="reference internal" href="page_md__home_developer_Projects_web_taiwins_taiwins_docs_window_management.html">Taiwins layout engine.</a></li>
-<li class="toctree-l1"><a class="reference internal" href="page_md__home_developer_Projects_web_taiwins_taiwins_README.html">Taiwins, a modern wayland window manager</a></li>
-<li class="toctree-l1"><a class="reference internal" href="page_md__home_developer_Projects_web_taiwins_taiwins_docs_libtwclient.html">Twclient quick reference</a></li>
-<li class="toctree-l1"><a class="reference internal" href="page_md__home_developer_Projects_web_taiwins_taiwins_docs_twobjects.html">Twobjects quick reference</a></li>
-<li class="toctree-l1"><a class="reference internal" href="page_md__home_developer_Projects_web_taiwins_taiwins_docs_wayland.html">wayland</a></li>
-</ul>
-<ul class="current">
-<li class="toctree-l1 current"><a class="reference internal" href="global.html">Global Namespace</a></li>
-</ul>
 
 </div>
 <form action="search.html" method="get">

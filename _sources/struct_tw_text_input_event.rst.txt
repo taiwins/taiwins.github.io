@@ -1,0 +1,32 @@
+.. index:: pair: struct; tw_text_input_event
+.. _doxid-d8/d4c/structtw__text__input__event:
+
+struct tw_text_input_event
+==========================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <text_input.h>
+	
+	struct tw_text_input_event
+	{
+		// fields
+	
+		const char* :target:`text<doxid-d8/d4c/structtw__text__input__event_1add33c45c50def78d0f1770a69dd7595e>`;
+		int32_t :target:`cursor_begin<doxid-d8/d4c/structtw__text__input__event_1a23a39c11b70e795988c09f17fb15761b>`;
+		int32_t :target:`cursor_end<doxid-d8/d4c/structtw__text__input__event_1a54a9d1dca9e64c5d2bbb06b8b3f48861>`;
+		struct tw_text_input_event::@63 :target:`preedit<doxid-d8/d4c/structtw__text__input__event_1a51d38df7bb846d9f94680ea865f583d0>`;
+		const char* :target:`commit_string<doxid-d8/d4c/structtw__text__input__event_1aef7566c75c226943352706186c3b9976>`;
+		uint32_t :target:`before_length<doxid-d8/d4c/structtw__text__input__event_1a74c920e700fd9495bf4600cdee6dd911>`;
+		uint32_t :target:`after_length<doxid-d8/d4c/structtw__text__input__event_1a8a4d10a3d361aac69fd8f07a25218de0>`;
+		struct tw_text_input_event::@64 :target:`surrounding_delete<doxid-d8/d4c/structtw__text__input__event_1ad3f19b613efb30f9a739c6bee4bbb69b>`;
+		uint32_t :target:`serial<doxid-d8/d4c/structtw__text__input__event_1a4a026405800b9dda61398d1b4ef912d8>`;
+		uint32_t :target:`events<doxid-d8/d4c/structtw__text__input__event_1a849cb574c50e5147e6e311e756267443>`;
+	};

@@ -1,0 +1,24 @@
+.. index:: pair: struct; nk_cairo_backend
+.. _doxid-d5/d7c/structnk__cairo__backend:
+
+struct nk_cairo_backend
+=======================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	
+	struct nk_cairo_backend
+	{
+		// fields
+	
+		struct :ref:`nk_wl_backend<doxid-d2/d1a/structnk__wl__backend>` :target:`base<doxid-d5/d7c/structnk__cairo__backend_1aa6df2b2c4fb3c30e000a3451dddec88e>`;
+		:ref:`nk_max_cmd_t<doxid-d7/dc2/nk__wl__internal_8h_1a743d6e9c11149afc9807153376369a54>` :target:`last_cmds<doxid-d5/d7c/structnk__cairo__backend_1ac205e3d09c172222be094962a7bca7ce>`[2];
+		struct nk_user_font* :target:`default_font<doxid-d5/d7c/structnk__cairo__backend_1ae188aa9eabd7eb5fe70b1c9d112d8724>`;
+	};

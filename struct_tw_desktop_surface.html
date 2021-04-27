@@ -7,6 +7,8 @@
     
     <title>struct tw_desktop_surface &#8212; Taiwins</title>
   
+  <!-- fix for search function -->
+  <script type="text/javascript" src="_static/language_data.js "></script>
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="_static/bootstrap-sphinx.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="_static/my-style.css" />
@@ -19,8 +21,6 @@
     <link rel="shortcut icon" href="_static/favicon.ico"/>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="struct tw_desktop_surface_api" href="struct_tw_desktop_surface_api.html" />
-    <link rel="prev" title="struct tw_desktop_manager" href="struct_tw_desktop_manager.html" />
 <meta charset='utf-8'>
 <meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
 <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
@@ -80,17 +80,13 @@
     <span class="k">struct</span> <a class="reference internal" href="struct_tw_surface.html#doxid-dd-dda-structtw-surface"><span class="std std-ref">tw_surface</span></a><span></span><span class="o">*</span> <span class="doxyrest-code-target target" id="doxid-d4-d0f-structtw-desktop-surface-1a28998b509c2778507f457575a59ba923"><span></span><span class="n">tw_surface</span></span><span></span><span class="p">;</span>
     <span class="k">struct</span> <a class="reference internal" href="struct_tw_desktop_manager.html#doxid-dd-d73-structtw-desktop-manager"><span class="std std-ref">tw_desktop_manager</span></a><span></span><span class="o">*</span> <span class="doxyrest-code-target target" id="doxid-d4-d0f-structtw-desktop-surface-1af5064978b63ba99281b619033b55729e"><span></span><span class="n">desktop</span></span><span></span><span class="p">;</span>
     <span class="k">enum</span> <a class="reference internal" href="enum_tw_desktop_surface_type.html#doxid-d4-d45-desktop-8h-1a7eaa5ee6afc99c7b1ad6ce35c0dbff76"><span class="std std-ref">tw_desktop_surface_type</span></a><span></span> <span class="doxyrest-code-target target" id="doxid-d4-d0f-structtw-desktop-surface-1a0a51de1ebf514162eeb873063fd949cd"><span></span><span class="n">type</span></span><span></span><span class="p">;</span>
-    <span class="kt">bool</span> <span class="doxyrest-code-target target" id="doxid-d4-d0f-structtw-desktop-surface-1a942f83c303fe9b99fba071a8ab84ae43"><span></span><span class="n">fullscreened</span></span><span></span><span class="p">;</span>
-    <span class="kt">bool</span> <span class="doxyrest-code-target target" id="doxid-d4-d0f-structtw-desktop-surface-1a8a77477b7eea93d6d28e5afea2492b83"><span></span><span class="n">maximized</span></span><span></span><span class="p">;</span>
-    <span class="kt">bool</span> <span class="doxyrest-code-target target" id="doxid-d4-d0f-structtw-desktop-surface-1a9ea9f2e78a771edbbbb73b4a2159776a"><span></span><span class="n">minimized</span></span><span></span><span class="p">;</span>
-    <span class="kt">bool</span> <span class="doxyrest-code-target target" id="doxid-d4-d0f-structtw-desktop-surface-1aa9dbc13c22c442f411ed0217127124bb"><span></span><span class="n">focused</span></span><span></span><span class="p">;</span>
     <span class="kt">bool</span> <span class="doxyrest-code-target target" id="doxid-d4-d0f-structtw-desktop-surface-1ab91568ff2f2bc206d9e9aa68db16ac72"><span></span><span class="n">surface_added</span></span><span></span><span class="p">;</span>
-    <span class="kt">uint32_t</span> <span class="doxyrest-code-target target" id="doxid-d4-d0f-structtw-desktop-surface-1a88cf6d88c7e260d728f0b4585730b549"><span></span><span class="n">tiled_state</span></span><span></span><span class="p">;</span>
+    <span class="kt">uint32_t</span> <span class="doxyrest-code-target target" id="doxid-d4-d0f-structtw-desktop-surface-1a6d18161bf78ae477dbdb4a9ccf6ee5cd"><span></span><span class="n">states</span></span><span></span><span class="p">;</span>
     <span class="k">struct</span> <a class="reference internal" href="struct_tw_size_2d.html#doxid-da-d95-structtw-size-2d"><span class="std std-ref">tw_size_2d</span></a><span></span> <span class="n">max_size</span> <span class="doxyrest-code-target target" id="doxid-d4-d0f-structtw-desktop-surface-1a91f39bc26b75a2dcc56c74fde42c2b8d"><span></span><span class="n">min_size</span></span><span></span><span class="p">;</span>
     <span class="k">struct</span> <a class="reference internal" href="struct_tw_geometry_2d.html#doxid-d1-dd9-structtw-geometry-2d"><span class="std std-ref">tw_geometry_2d</span></a><span></span> <a class="reference internal" href="#doxid-d4-d0f-structtw-desktop-surface-1a9e6914b507dc1b18bbdc070eb655acd6"><span class="std std-ref">window_geometry</span></a><span></span><span class="p">;</span>
     <span class="kt">char</span><span class="o">*</span> <span class="doxyrest-code-target target" id="doxid-d4-d0f-structtw-desktop-surface-1a64490976581c3a1301acb900aab824a1"><span></span><span class="n">title</span></span><span></span><span class="p">;</span>
     <span class="kt">char</span><span class="o">*</span> <span class="doxyrest-code-target target" id="doxid-d4-d0f-structtw-desktop-surface-1aec78b5bd7c5f9a2c116a0befb5aecb14"><span></span><span class="k">class</span></span><span></span><span class="p">;</span>
-    <span class="kt">void</span><span class="p">(</span><span class="o">*</span> <span class="doxyrest-code-target target" id="doxid-d4-d0f-structtw-desktop-surface-1af0c749bfb470731d4fee8f06f1cb5dcd"><span></span><span class="n">configure</span></span><span></span><span class="p">)(</span><span class="k">struct</span> <span class="n">tw_desktop_surface</span> <span class="o">*</span><span class="n">surface</span><span class="p">,</span> <span class="k">enum</span> <span class="n">wl_shell_surface_resize</span> <span class="n">edge</span><span class="p">,</span> <span class="kt">int32_t</span> <span class="n">x</span><span class="p">,</span> <span class="kt">int32_t</span> <span class="n">y</span><span class="p">,</span> <span class="kt">unsigned</span> <span class="n">width</span><span class="p">,</span> <span class="kt">unsigned</span> <span class="n">height</span><span class="p">);</span>
+    <span class="kt">void</span><span class="p">(</span><span class="o">*</span> <span class="doxyrest-code-target target" id="doxid-d4-d0f-structtw-desktop-surface-1a9314e95479eac6fb0197086c350012a2"><span></span><span class="n">configure</span></span><span></span><span class="p">)(</span><span class="k">struct</span> <span class="n">tw_desktop_surface</span> <span class="o">*</span><span class="n">surface</span><span class="p">,</span> <span class="k">enum</span> <span class="n">wl_shell_surface_resize</span> <span class="n">edge</span><span class="p">,</span> <span class="kt">int32_t</span> <span class="n">x</span><span class="p">,</span> <span class="kt">int32_t</span> <span class="n">y</span><span class="p">,</span> <span class="kt">unsigned</span> <span class="n">width</span><span class="p">,</span> <span class="kt">unsigned</span> <span class="n">height</span><span class="p">,</span> <span class="kt">uint32_t</span> <span class="n">flags</span><span class="p">);</span>
     <span class="kt">void</span><span class="p">(</span><span class="o">*</span> <span class="doxyrest-code-target target" id="doxid-d4-d0f-structtw-desktop-surface-1a1195b1b663e551f809ad9f81ea00f9be"><span></span><span class="n">close</span></span><span></span><span class="p">)(</span><span class="k">struct</span> <span class="n">tw_desktop_surface</span> <span class="o">*</span><span class="n">surface</span><span class="p">);</span>
     <span class="kt">void</span><span class="p">(</span><span class="o">*</span> <span class="doxyrest-code-target target" id="doxid-d4-d0f-structtw-desktop-surface-1ab39b8820058111dd0dc24a9c658ec013"><span></span><span class="n">ping</span></span><span></span><span class="p">)(</span><span class="k">struct</span> <span class="n">tw_desktop_surface</span> <span class="o">*</span><span class="n">surface</span><span class="p">,</span> <span class="kt">uint32_t</span> <span class="n">serial</span><span class="p">);</span>
     <span class="kt">void</span><span class="o">*</span> <span class="doxyrest-code-target target" id="doxid-d4-d0f-structtw-desktop-surface-1a260a1be93e1a2eb22839e07489904b84"><span></span><span class="n">user_data</span></span><span></span><span class="p">;</span>
@@ -127,22 +123,6 @@
 </div>
 <h3><a data-toggle="collapse" href="#globaltoc">Related Pages</a></h3>
 <div id="globaltoc" class="collapse">
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="page_md__home_developer_Projects_web_taiwins_taiwins_CONTRIBUTING.html">Contributing to Taiwins</a></li>
-<li class="toctree-l1"><a class="reference internal" href="page_md__home_developer_Projects_web_taiwins_taiwins_docs_dbus.html">D-Bus API Quick Reference</a></li>
-<li class="toctree-l1"><a class="reference internal" href="page_md__home_developer_Projects_web_taiwins_taiwins_docs_libtaiwins.html">For libtaiwins users</a></li>
-<li class="toctree-l1"><a class="reference internal" href="page_md__home_developer_Projects_web_taiwins_taiwins_docs_lua.html">Lua bindings</a></li>
-<li class="toctree-l1"><a class="reference internal" href="page_md__home_developer_Projects_web_taiwins_taiwins_docs_progress.html">Progress and feature track</a></li>
-<li class="toctree-l1"><a class="reference internal" href="page_md__home_developer_Projects_web_taiwins_taiwins_docs_screenshots.html">Taiwins in tiling mode</a></li>
-<li class="toctree-l1"><a class="reference internal" href="page_md__home_developer_Projects_web_taiwins_taiwins_docs_window_management.html">Taiwins layout engine.</a></li>
-<li class="toctree-l1"><a class="reference internal" href="page_md__home_developer_Projects_web_taiwins_taiwins_README.html">Taiwins, a modern wayland window manager</a></li>
-<li class="toctree-l1"><a class="reference internal" href="page_md__home_developer_Projects_web_taiwins_taiwins_docs_libtwclient.html">Twclient quick reference</a></li>
-<li class="toctree-l1"><a class="reference internal" href="page_md__home_developer_Projects_web_taiwins_taiwins_docs_twobjects.html">Twobjects quick reference</a></li>
-<li class="toctree-l1"><a class="reference internal" href="page_md__home_developer_Projects_web_taiwins_taiwins_docs_wayland.html">wayland</a></li>
-</ul>
-<ul class="current">
-<li class="toctree-l1 current"><a class="reference internal" href="global.html">Global Namespace</a></li>
-</ul>
 
 </div>
 <form action="search.html" method="get">

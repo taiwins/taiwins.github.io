@@ -22,5 +22,9 @@ struct tw_drm_fb
 		enum :ref:`tw_drm_fb_type<doxid-dc/dc3/backend_2drm_2internal_8h_1af849e553cafaec1ab4a5087d7c0f5f08>` :target:`type<doxid-d3/dfa/structtw__drm__fb_1a26254113c1474b757796f5dffef821fa>`;
 		bool :target:`locked<doxid-d3/dfa/structtw__drm__fb_1abd834f7efeee086a83676c550da060a1>`;
 		int :target:`fb<doxid-d3/dfa/structtw__drm__fb_1a8e9e7e5f258d3b185858437c7f016074>`;
+		int :target:`x<doxid-d3/dfa/structtw__drm__fb_1a431c068ba8859cb6723ce58d76e3a584>`;
+		int :target:`y<doxid-d3/dfa/structtw__drm__fb_1aec47219c0f8fa9dc62e1e4bc6f35bfd4>`;
+		int :target:`w<doxid-d3/dfa/structtw__drm__fb_1ae9c35b09931ff85718265c6530cc899c>`;
+		int :target:`h<doxid-d3/dfa/structtw__drm__fb_1a18fe6ebda0dfd928fa3a5fc2b184c489>`;
 		uintptr_t :target:`handle<doxid-d3/dfa/structtw__drm__fb_1a9a9f4969a5653853c8b49333ff822a7e>`;
 	};

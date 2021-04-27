@@ -24,11 +24,12 @@ struct tw_desktop_surface_api
 		void(* :target:`surface_added<doxid-d9/d08/structtw__desktop__surface__api_1abbdee0ff57e6b75043f530354eb4a4d7>`)(struct tw_desktop_surface *surface, void *user_data);
 		void(* :target:`surface_removed<doxid-d9/d08/structtw__desktop__surface__api_1aabcfd2d2dc2ca3df3aaa16d7a61771fc>`)(struct tw_desktop_surface *surface, void *user_data);
 		void(* :target:`committed<doxid-d9/d08/structtw__desktop__surface__api_1aa8e0432cd33db994088d781166200e3f>`)(struct tw_desktop_surface *surface, void *user_data);
-		void(* :target:`show_window_menu<doxid-d9/d08/structtw__desktop__surface__api_1ad9e645e668801f5e7d16a22c4c363b35>`)(struct tw_desktop_surface *surface, struct wl_resource *seat, int32_t x, int32_t y, void *user_data);
+		void(* :target:`show_window_menu<doxid-d9/d08/structtw__desktop__surface__api_1a2b324108c1b1fbe53b964bf0a92e12ff>`)(struct tw_desktop_surface *surface, struct tw_seat *seat, int32_t x, int32_t y, void *user_data);
 		void(* :target:`set_parent<doxid-d9/d08/structtw__desktop__surface__api_1a2a32c3319262fa7db10a6b4b8c37f028>`)(struct tw_desktop_surface *surface, struct tw_desktop_surface *parent, void *user_data);
-		void(* :target:`move<doxid-d9/d08/structtw__desktop__surface__api_1a2703017c21a7de468ca9293627184ce8>`)(struct tw_desktop_surface *surface, struct wl_resource *seat, uint32_t serial, void *user_data);
-		void(* :target:`resize<doxid-d9/d08/structtw__desktop__surface__api_1a39a40a0f884583efa92479b514df38d9>`)(struct tw_desktop_surface *surface, struct wl_resource *seat, uint32_t serial, enum wl_shell_surface_resize edges, void *user_data);
+		void(* :target:`move<doxid-d9/d08/structtw__desktop__surface__api_1ae3178dd57ab473d5e0312f6d7b907f6d>`)(struct tw_desktop_surface *surface, struct tw_seat *seat, uint32_t serial, void *user_data);
+		void(* :target:`resize<doxid-d9/d08/structtw__desktop__surface__api_1acee241b1156e4bf851260491edc1f812>`)(struct tw_desktop_surface *surface, struct tw_seat *seat, uint32_t serial, enum wl_shell_surface_resize edges, void *user_data);
 		void(* :target:`fullscreen_requested<doxid-d9/d08/structtw__desktop__surface__api_1a68e76a0ee597fd57a246b1de46d3059f>`)(struct tw_desktop_surface *surface, struct wl_resource *output, bool fullscreen, void *user_data);
 		void(* :target:`maximized_requested<doxid-d9/d08/structtw__desktop__surface__api_1a453b308fab0e8696f2eeb9098ec78c2b>`)(struct tw_desktop_surface *surface, bool maximized, void *user_data);
 		void(* :target:`minimized_requested<doxid-d9/d08/structtw__desktop__surface__api_1a6742178724417a70bbd0f18945761126>`)(struct tw_desktop_surface *surface, void *user_data);
+		void(* :target:`configure_requested<doxid-d9/d08/structtw__desktop__surface__api_1a32a3065b52728908db7f3abf8db2694b>`)(struct tw_desktop_surface *surface, int x, int y, unsigned w, unsigned h, uint32_t flags, void *user_data);
 	};

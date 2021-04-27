@@ -30,5 +30,5 @@ struct tw_egl_render_context
 		PFNGLDEBUGMESSAGECONTROLKHRPROC :target:`glDebugMessageControlKHR<doxid-d7/d1c/structtw__egl__render__context_1a7d26970fc0e749e81c1259744987a5ac>`;
 		PFNGLPOPDEBUGGROUPKHRPROC :target:`glPopDebugGroupKHR<doxid-d7/d1c/structtw__egl__render__context_1a5df25dcb00959b03965fb97c31beb0a3>`;
 		PFNGLPUSHDEBUGGROUPKHRPROC :target:`glPushDebugGroupKHR<doxid-d7/d1c/structtw__egl__render__context_1a916f5173186ad3cfe890f4bdd2d23eb6>`;
-		struct tw_egl_render_context::@55 :target:`funcs<doxid-d7/d1c/structtw__egl__render__context_1acd3d1a84ddfd9e21d8c7d47023feb15e>`;
+		struct tw_egl_render_context::@89 :target:`funcs<doxid-d7/d1c/structtw__egl__render__context_1a48d9bab467fdcc637bc22375a546cfcb>`;
 	};

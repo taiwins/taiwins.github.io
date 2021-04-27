@@ -24,7 +24,7 @@ a console module provides its set of features to the console :ref:`More...<detai
 	
 		const char :target:`name<doxid-d6/d76/structconsole__module_1a776489f9c86d23db5d2c97d2a6e791b6>`[32];
 		struct :ref:`desktop_console<doxid-df/d36/structdesktop__console>`* :target:`console<doxid-d6/d76/structconsole__module_1a77f2314e777a7a708df942e838e477e3>`;
-		struct rax* :target:`radix<doxid-d6/d76/structconsole__module_1a8e62b67941e08bbdb1f153322235cefe>`;
+		struct :ref:`radix<doxid-df/d41/structradix>`* :target:`radix<doxid-d6/d76/structconsole__module_1ad543ea742483a710df082a84843d8378>`;
 		uint32_t :target:`supported_icons<doxid-d6/d76/structconsole__module_1a04a66f43330ed5c0fdb4188ff9df0847>`;
 		const bool :target:`support_cache<doxid-d6/d76/structconsole__module_1a6335e968d741cb4cebe925debe7074d9>`;
 		bool :target:`quit<doxid-d6/d76/structconsole__module_1ad0b6c3dc92262ca542ac08004fada7b7>`;

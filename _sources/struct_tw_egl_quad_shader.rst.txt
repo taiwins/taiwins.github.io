@@ -26,7 +26,7 @@ Overview
 		GLint :target:`proj<doxid-d6/d08/structtw__egl__quad__shader_1a02f31b24f7c4a50cf5ac60f6487f9179>`;
 		GLint :target:`alpha<doxid-d6/d08/structtw__egl__quad__shader_1a6f7a81870a8bcd90d0105314bc0e4caf>`;
 		GLint :ref:`target<doxid-d6/d08/structtw__egl__quad__shader_1abd04bfa224068715a233b0c746791979>`;
-		struct tw_egl_quad_shader::@44 :target:`uniform<doxid-d6/d08/structtw__egl__quad__shader_1acb3bd96b7d591f5156936e7aad63e8f1>`;
+		struct tw_egl_quad_shader::@68 :target:`uniform<doxid-d6/d08/structtw__egl__quad__shader_1a36a6b6455f4cc3dcf1c1f3526105a764>`;
 	};
 .. _details-d6/d08/structtw__egl__quad__shader:
 

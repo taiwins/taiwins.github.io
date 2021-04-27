@@ -1,0 +1,15 @@
+Taiwins Documentation
+=====================
+
+Welcome to the taiwins documentation, here you will find API documentations as
+well as some random notes relates to Taiwins.
+
+- :doc:`D-Bus API Quick Reference<dbus>`
+- :doc:`Libtaiwins introduction<libtaiwins>`
+- :doc:`Twclient quick reference<libtwclient>`
+- :doc:`Twobject quick reference<twobjects>`
+- :doc:`Lua C API quick guide<lua>`
+- :doc:`wayland introduction<wayland>`
+- :doc:`Xwayland in taiwins<xwayland>`
+- :doc:`Taiwins window manager<window_management>`
+- :doc:`Screenshots<screenshots>`

@@ -27,7 +27,6 @@ Overview
 		uintptr_t :ref:`device<doxid-dc/d3b/structtw__drm__gpu_1a008275d586b2a32a63ee8787e603a1df>`;
 		bool :target:`boot_vga<doxid-dc/d3b/structtw__drm__gpu_1aee0e3db3970e89863e66abed1fe53490>`;
 		bool :ref:`activated<doxid-dc/d3b/structtw__drm__gpu_1a3498d1869a40f5ba0ce483eef13f1801>`;
-		uint32_t :target:`visual_id<doxid-dc/d3b/structtw__drm__gpu_1a863e09199b4fc5616d75c6575065fa82>`;
 		clockid_t :target:`clk_id<doxid-dc/d3b/structtw__drm__gpu_1a8e90c5987096ff49470115d3c33d6350>`;
 		struct wl_list :target:`link<doxid-dc/d3b/structtw__drm__gpu_1a6f2ee1b1c4f7a09f695dbf08c0655855>`;
 		const struct :ref:`tw_drm_gpu_impl<doxid-db/dbf/structtw__drm__gpu__impl>`* :target:`impl<doxid-dc/d3b/structtw__drm__gpu_1a0cede6adb292d34fbed7f499531ecc2b>`;
@@ -38,7 +37,7 @@ Overview
 		int :target:`max_height<doxid-dc/d3b/structtw__drm__gpu_1a83534550b98e89ee08b1f0ad9d88e79a>`;
 		int :target:`min_width<doxid-dc/d3b/structtw__drm__gpu_1ad180ef6ce5557061039264ec8ce34a6f>`;
 		int :target:`min_height<doxid-dc/d3b/structtw__drm__gpu_1aa3e33ef4596fca50d176844897f7a1c4>`;
-		struct tw_drm_gpu::@52 :target:`limits<doxid-dc/d3b/structtw__drm__gpu_1adcbbe9b7322e52844704e24e7c8ca14f>`;
+		struct tw_drm_gpu::@79 :target:`limits<doxid-dc/d3b/structtw__drm__gpu_1aad9787fbf116a4b3508a5d06078af6ed>`;
 		struct :ref:`tw_drm_crtc<doxid-da/da9/structtw__drm__crtc>` :target:`crtcs<doxid-dc/d3b/structtw__drm__gpu_1a88857208689f4662260c48caedecf675>`[32];
 		uint32_t :target:`crtc_mask<doxid-dc/d3b/structtw__drm__gpu_1a4539293ef542fa111412cd91a21abea2>`;
 		struct wl_list :target:`crtc_list<doxid-dc/d3b/structtw__drm__gpu_1a509e5274d7e996cd7f4afa470e9a9ef9>`;

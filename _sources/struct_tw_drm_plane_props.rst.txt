@@ -19,6 +19,7 @@ struct tw_drm_plane_props
 	{
 		// fields
 	
+		int :target:`id<doxid-db/d68/structtw__drm__plane__props_1a44fb0b0ca52fc0b1346044fdcede2995>`;
 		uint32_t :target:`type<doxid-db/d68/structtw__drm__plane__props_1a1ada15f0cf7bc0a4368bb81dae638c50>`;
 		uint32_t :target:`in_formats<doxid-db/d68/structtw__drm__plane__props_1a7ac9eed7dd70572ef4c0892376c7dddc>`;
 		uint32_t :target:`src_x<doxid-db/d68/structtw__drm__plane__props_1aaeb0e9a670409ac4c67bd79e721a50b1>`;

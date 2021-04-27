@@ -1,0 +1,24 @@
+.. index:: pair: struct; nk_egl_vertex
+.. _doxid-d9/d6c/structnk__egl__vertex:
+
+struct nk_egl_vertex
+====================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	
+	struct nk_egl_vertex
+	{
+		// fields
+	
+		float :target:`position<doxid-d9/d6c/structnk__egl__vertex_1a2407c0931a98171de1d21c5d25b07ddc>`[2];
+		float :target:`uv<doxid-d9/d6c/structnk__egl__vertex_1a3056041ea30b5b0db17802c046c0462f>`[2];
+		nk_byte :target:`col<doxid-d9/d6c/structnk__egl__vertex_1a56a5acb659c7d0bf7a46a9b302682f0a>`[4];
+	};

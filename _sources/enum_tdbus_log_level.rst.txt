@@ -1,0 +1,21 @@
+.. index:: pair: enum; tdbus_log_level
+.. _doxid-d2/d1b/tdbus_8h_1a04a386072403d95b9919c16fca69cd4e:
+
+enum tdbus_log_level
+====================
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <tdbus.h>
+
+	enum tdbus_log_level
+	{
+	    :target:`TDBUS_LOG_DBUG<doxid-d2/d1b/tdbus_8h_1a04a386072403d95b9919c16fca69cd4ea4bea605e33de50c4c78891ad72817128>`,
+	    :target:`TDBUS_LOG_INFO<doxid-d2/d1b/tdbus_8h_1a04a386072403d95b9919c16fca69cd4ea0b0c87b9feafb1bb448b3e8445240912>`,
+	    :target:`TDBUS_LOG_WARN<doxid-d2/d1b/tdbus_8h_1a04a386072403d95b9919c16fca69cd4ea3dfe7c8dc3a07bddde4290afe2737eec>`,
+	    :target:`TDBUS_LOG_ERRO<doxid-d2/d1b/tdbus_8h_1a04a386072403d95b9919c16fca69cd4eadf96a8d3e06f84613050f12413571c94>`,
+	};
+

@@ -1,0 +1,20 @@
+.. index:: pair: enum; tw_input_method_request_type
+.. _doxid-db/d29/input__method_8h_1adb76219b8fbca883e27d014f3fff5d9d:
+
+enum tw_input_method_request_type
+=================================
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <input_method.h>
+
+	enum tw_input_method_request_type
+	{
+	    :target:`TW_INPUT_METHOD_PREEDIT<doxid-db/d29/input__method_8h_1adb76219b8fbca883e27d014f3fff5d9daf4f12147e64387acd3534d38f3a3efe0>`            = 1<<0,
+	    :target:`TW_INPUT_METHOD_COMMIT_STRING<doxid-db/d29/input__method_8h_1adb76219b8fbca883e27d014f3fff5d9dae149796cce27d3f69e4b54e76021156c>`      = 1<<1,
+	    :target:`TW_INPUT_METHOD_SURROUNDING_DELETE<doxid-db/d29/input__method_8h_1adb76219b8fbca883e27d014f3fff5d9da4e177f75f9471af38d425c0a2d44cc8c>` = 1<<2,
+	};
+

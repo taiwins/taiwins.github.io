@@ -27,10 +27,10 @@ struct tw_xdg_surface
 		struct :ref:`tw_size_2d<doxid-da/d95/structtw__size__2d>` pending_min_size :target:`pending_max_size<doxid-d9/db5/structtw__xdg__surface_1ae08a7d3309ebfc1f2f2a771b42684bae>`;
 		struct wl_resource* :target:`fullscreen_output<doxid-d9/db5/structtw__xdg__surface_1a7ab70db69d85e45c6b7f1b3707cd9aee>`;
 		struct wl_resource* :target:`resource<doxid-d9/db5/structtw__xdg__surface_1a7dea2490e9955780a601c9a041d98ab0>`;
-		struct tw_xdg_surface::@89::@91 :target:`toplevel<doxid-d9/db5/structtw__xdg__surface_1a088db6230fd45f4e72d0fc54f6f8dbdd>`;
+		struct tw_xdg_surface::@82::@84 :target:`toplevel<doxid-d9/db5/structtw__xdg__surface_1ae5b7920a91b95aa6602f15e083fb2e58>`;
 		struct :ref:`tw_popup_grab<doxid-d2/d5f/structtw__popup__grab>` :target:`grab<doxid-d9/db5/structtw__xdg__surface_1a085b2b5aa3ce080b3daa18573232f888>`;
 		struct :ref:`tw_subsurface<doxid-de/d75/structtw__subsurface>` :target:`subsurface<doxid-d9/db5/structtw__xdg__surface_1ab3fb4ecb650a1fa571adfd91c01e219c>`;
 		struct tw_xdg_surface* :target:`parent<doxid-d9/db5/structtw__xdg__surface_1ae30aa5cc669f90b03772b95643d1d937>`;
 		struct wl_listener :target:`close_popup_listener<doxid-d9/db5/structtw__xdg__surface_1a498e1dc21dc7590765acd7199518db9e>`;
-		struct tw_xdg_surface::@89::@92 :target:`popup<doxid-d9/db5/structtw__xdg__surface_1a90553037d3481f3d66053c2e883af8f6>`;
+		struct tw_xdg_surface::@82::@85 :target:`popup<doxid-d9/db5/structtw__xdg__surface_1a5ad792966cc85f4cd1a4bfc3ee17363e>`;
 	};

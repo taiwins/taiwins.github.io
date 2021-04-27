@@ -32,7 +32,7 @@ render data for wl_surface, created :ref:`More...<details-df/d37/structtw__rende
 		struct wl_listener :target:`commit<doxid-df/d37/structtw__render__surface_1aa5568c0557d8463f1809b104f065d5be>`;
 		struct wl_listener :target:`frame<doxid-df/d37/structtw__render__surface_1ae6de38d79c51c1dd79b7f4ce866898df>`;
 		struct wl_listener :target:`dirty<doxid-df/d37/structtw__render__surface_1a495b04bb6d78d18432a3af18a3b83b0c>`;
-		struct tw_render_surface::@50 :target:`listeners<doxid-df/d37/structtw__render__surface_1a69f72da63c80b8c19f2edc8e994dc33c>`;
+		struct tw_render_surface::@74 :target:`listeners<doxid-df/d37/structtw__render__surface_1a95399fa4a52ad7ce511c51490afed5dc>`;
 	};
 .. _details-df/d37/structtw__render__surface:
 

@@ -1,0 +1,30 @@
+.. index:: pair: struct; tw_server_output_manager
+.. _doxid-dd/dcc/structtw__server__output__manager:
+
+struct tw_server_output_manager
+===============================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <output.h>
+	
+	struct tw_server_output_manager
+	{
+		// fields
+	
+		struct :ref:`tw_engine<doxid-df/d8e/structtw__engine>`* :target:`engine<doxid-dd/dcc/structtw__server__output__manager_1a5a09a80b8f9c837ba64f0932d9a366ab>`;
+		struct :ref:`tw_render_context<doxid-d1/dba/structtw__render__context>`* :target:`ctx<doxid-dd/dcc/structtw__server__output__manager_1ad9079dca87e3cf49f3cafa218d6d847c>`;
+		struct :ref:`tw_server_output<doxid-de/d7a/structtw__server__output>` :target:`outputs<doxid-dd/dcc/structtw__server__output__manager_1afb1e17eaf73239f04ca67aae6ce0c694>`[32];
+		struct wl_listener :target:`context_destroy<doxid-dd/dcc/structtw__server__output__manager_1afa60c5acae543c94561c5ac58ae9f335>`;
+		struct wl_listener :target:`surface_dirty<doxid-dd/dcc/structtw__server__output__manager_1af829d890216076bfd1698e8337a503a3>`;
+		struct wl_listener :target:`surface_lost<doxid-dd/dcc/structtw__server__output__manager_1a3789cd5238363a8bbc14237fa245e3e1>`;
+		struct wl_listener :target:`new_output<doxid-dd/dcc/structtw__server__output__manager_1a8ae2f1b398d8fef5ea2181affdb698f1>`;
+		struct tw_server_output_manager::@33 :target:`listeners<doxid-dd/dcc/structtw__server__output__manager_1afe1f6fba7ab26336c044777358d2332a>`;
+	};

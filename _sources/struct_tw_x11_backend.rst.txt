@@ -38,7 +38,7 @@ Overview
 		xcb_atom_t :target:`net_wm_name<doxid-da/daf/structtw__x11__backend_1a32489a876c2125f544ee3003f9b0c651>`;
 		xcb_atom_t :target:`utf8_string<doxid-da/daf/structtw__x11__backend_1a14780d765c8fbb82aa749303fbf4c3b5>`;
 		xcb_atom_t :target:`variable_refresh<doxid-da/daf/structtw__x11__backend_1ac2627b2d607532fa9b5c4214763de889>`;
-		struct tw_x11_backend::@54 :target:`atoms<doxid-da/daf/structtw__x11__backend_1a64b8f88bb0a699a30d666db440545d4b>`;
+		struct tw_x11_backend::@81 :target:`atoms<doxid-da/daf/structtw__x11__backend_1aec4adf53de8264c91a7a36c2d569b792>`;
 		struct :ref:`tw_input_device<doxid-d3/db0/structtw__input__device>` :target:`keyboard<doxid-da/daf/structtw__x11__backend_1a4c0b8c4ea8e0dc61e878937423617e04>`;
 	};
 .. _details-da/daf/structtw__x11__backend:

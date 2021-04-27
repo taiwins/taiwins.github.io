@@ -28,7 +28,7 @@ Overview
 		struct :ref:`tw_appsurf<doxid-d6/d55/structtw__appsurf>` :target:`surface<doxid-df/d36/structdesktop__console_1a2e48ad341da209d9bce0a770fe5db5c1>`;
 		struct :ref:`tw_shm_pool<doxid-d9/dab/structtw__shm__pool>` :target:`pool<doxid-df/d36/structdesktop__console_1a4c49bc966ff5cfabfaf695d2f2356ee1>`;
 		void* :ref:`config_data<doxid-df/d36/structdesktop__console_1a0f3ffccb48fea8d1c867c857df582eb2>`;
-		struct nk_wl_backend* :target:`bkend<doxid-df/d36/structdesktop__console_1a3ecc27f2fc8b5f6299415e1d2473eb60>`;
+		struct :ref:`nk_wl_backend<doxid-d2/d1a/structnk__wl__backend>`* :target:`bkend<doxid-df/d36/structdesktop__console_1a3ecc27f2fc8b5f6299415e1d2473eb60>`;
 		struct :ref:`dhash_table<doxid-d0/d89/structdhash__table>` :target:`icons_table<doxid-df/d36/structdesktop__console_1aafeab0e1f2d5c640efbcc7df5e554d06>`;
 		struct wl_array :target:`icon_keys<doxid-df/d36/structdesktop__console_1ae73facd173d5096458efe47639479af1>`;
 		uint32_t :ref:`requested_icons<doxid-df/d36/structdesktop__console_1accdf42033cb2df51ade2c05dfd16840b>`;

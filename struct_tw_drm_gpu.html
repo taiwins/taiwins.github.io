@@ -7,6 +7,8 @@
     
     <title>struct tw_drm_gpu &#8212; Taiwins</title>
   
+  <!-- fix for search function -->
+  <script type="text/javascript" src="_static/language_data.js "></script>
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="_static/bootstrap-sphinx.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="_static/my-style.css" />
@@ -19,8 +21,6 @@
     <link rel="shortcut icon" href="_static/favicon.ico"/>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="struct tw_drm_gpu_impl" href="struct_tw_drm_gpu_impl.html" />
-    <link rel="prev" title="struct tw_drm_formats" href="struct_tw_drm_formats.html" />
 <meta charset='utf-8'>
 <meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
 <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
@@ -81,7 +81,6 @@
     <span class="kt">uintptr_t</span> <a class="reference internal" href="#doxid-dc-d3b-structtw-drm-gpu-1a008275d586b2a32a63ee8787e603a1df"><span class="std std-ref">device</span></a><span></span><span class="p">;</span>
     <span class="kt">bool</span> <span class="doxyrest-code-target target" id="doxid-dc-d3b-structtw-drm-gpu-1aee0e3db3970e89863e66abed1fe53490"><span></span><span class="n">boot_vga</span></span><span></span><span class="p">;</span>
     <span class="kt">bool</span> <a class="reference internal" href="#doxid-dc-d3b-structtw-drm-gpu-1a3498d1869a40f5ba0ce483eef13f1801"><span class="std std-ref">activated</span></a><span></span><span class="p">;</span>
-    <span class="kt">uint32_t</span> <span class="doxyrest-code-target target" id="doxid-dc-d3b-structtw-drm-gpu-1a863e09199b4fc5616d75c6575065fa82"><span></span><span class="n">visual_id</span></span><span></span><span class="p">;</span>
     <span class="kt">clockid_t</span> <span class="doxyrest-code-target target" id="doxid-dc-d3b-structtw-drm-gpu-1a8e90c5987096ff49470115d3c33d6350"><span></span><span class="n">clk_id</span></span><span></span><span class="p">;</span>
     <span class="k">struct</span> <span class="n">wl_list</span> <span class="doxyrest-code-target target" id="doxid-dc-d3b-structtw-drm-gpu-1a6f2ee1b1c4f7a09f695dbf08c0655855"><span></span><span class="n">link</span></span><span></span><span class="p">;</span>
     <span class="k">const</span> <span class="k">struct</span> <a class="reference internal" href="struct_tw_drm_gpu_impl.html#doxid-db-dbf-structtw-drm-gpu-impl"><span class="std std-ref">tw_drm_gpu_impl</span></a><span></span><span class="o">*</span> <span class="doxyrest-code-target target" id="doxid-dc-d3b-structtw-drm-gpu-1a0cede6adb292d34fbed7f499531ecc2b"><span></span><span class="n">impl</span></span><span></span><span class="p">;</span>
@@ -92,7 +91,7 @@
     <span class="kt">int</span> <span class="doxyrest-code-target target" id="doxid-dc-d3b-structtw-drm-gpu-1a83534550b98e89ee08b1f0ad9d88e79a"><span></span><span class="n">max_height</span></span><span></span><span class="p">;</span>
     <span class="kt">int</span> <span class="doxyrest-code-target target" id="doxid-dc-d3b-structtw-drm-gpu-1ad180ef6ce5557061039264ec8ce34a6f"><span></span><span class="n">min_width</span></span><span></span><span class="p">;</span>
     <span class="kt">int</span> <span class="doxyrest-code-target target" id="doxid-dc-d3b-structtw-drm-gpu-1aa3e33ef4596fca50d176844897f7a1c4"><span></span><span class="n">min_height</span></span><span></span><span class="p">;</span>
-    <span class="k">struct</span> <span class="n">tw_drm_gpu</span><span class="o">::</span><span class="err">@</span><span class="mi">52</span> <span class="doxyrest-code-target target" id="doxid-dc-d3b-structtw-drm-gpu-1adcbbe9b7322e52844704e24e7c8ca14f"><span></span><span class="n">limits</span></span><span></span><span class="p">;</span>
+    <span class="k">struct</span> <span class="n">tw_drm_gpu</span><span class="o">::</span><span class="err">@</span><span class="mi">79</span> <span class="doxyrest-code-target target" id="doxid-dc-d3b-structtw-drm-gpu-1aad9787fbf116a4b3508a5d06078af6ed"><span></span><span class="n">limits</span></span><span></span><span class="p">;</span>
     <span class="k">struct</span> <a class="reference internal" href="struct_tw_drm_crtc.html#doxid-da-da9-structtw-drm-crtc"><span class="std std-ref">tw_drm_crtc</span></a><span></span> <span class="doxyrest-code-target target" id="doxid-dc-d3b-structtw-drm-gpu-1a88857208689f4662260c48caedecf675"><span></span><span class="n">crtcs</span></span><span></span><span class="p">[</span><span class="mi">32</span><span class="p">];</span>
     <span class="kt">uint32_t</span> <span class="doxyrest-code-target target" id="doxid-dc-d3b-structtw-drm-gpu-1a4539293ef542fa111412cd91a21abea2"><span></span><span class="n">crtc_mask</span></span><span></span><span class="p">;</span>
     <span class="k">struct</span> <span class="n">wl_list</span> <span class="doxyrest-code-target target" id="doxid-dc-d3b-structtw-drm-gpu-1a509e5274d7e996cd7f4afa470e9a9ef9"><span></span><span class="n">crtc_list</span></span><span></span><span class="p">;</span>
@@ -133,22 +132,6 @@
 </div>
 <h3><a data-toggle="collapse" href="#globaltoc">Related Pages</a></h3>
 <div id="globaltoc" class="collapse">
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="page_md__home_developer_Projects_web_taiwins_taiwins_CONTRIBUTING.html">Contributing to Taiwins</a></li>
-<li class="toctree-l1"><a class="reference internal" href="page_md__home_developer_Projects_web_taiwins_taiwins_docs_dbus.html">D-Bus API Quick Reference</a></li>
-<li class="toctree-l1"><a class="reference internal" href="page_md__home_developer_Projects_web_taiwins_taiwins_docs_libtaiwins.html">For libtaiwins users</a></li>
-<li class="toctree-l1"><a class="reference internal" href="page_md__home_developer_Projects_web_taiwins_taiwins_docs_lua.html">Lua bindings</a></li>
-<li class="toctree-l1"><a class="reference internal" href="page_md__home_developer_Projects_web_taiwins_taiwins_docs_progress.html">Progress and feature track</a></li>
-<li class="toctree-l1"><a class="reference internal" href="page_md__home_developer_Projects_web_taiwins_taiwins_docs_screenshots.html">Taiwins in tiling mode</a></li>
-<li class="toctree-l1"><a class="reference internal" href="page_md__home_developer_Projects_web_taiwins_taiwins_docs_window_management.html">Taiwins layout engine.</a></li>
-<li class="toctree-l1"><a class="reference internal" href="page_md__home_developer_Projects_web_taiwins_taiwins_README.html">Taiwins, a modern wayland window manager</a></li>
-<li class="toctree-l1"><a class="reference internal" href="page_md__home_developer_Projects_web_taiwins_taiwins_docs_libtwclient.html">Twclient quick reference</a></li>
-<li class="toctree-l1"><a class="reference internal" href="page_md__home_developer_Projects_web_taiwins_taiwins_docs_twobjects.html">Twobjects quick reference</a></li>
-<li class="toctree-l1"><a class="reference internal" href="page_md__home_developer_Projects_web_taiwins_taiwins_docs_wayland.html">wayland</a></li>
-</ul>
-<ul class="current">
-<li class="toctree-l1 current"><a class="reference internal" href="global.html">Global Namespace</a></li>
-</ul>
 
 </div>
 <form action="search.html" method="get">

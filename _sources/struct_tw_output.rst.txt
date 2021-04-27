@@ -31,12 +31,12 @@ struct tw_output
 		enum wl_output_transform :target:`transform<doxid-db/d81/structtw__output_1a553c040abe02bc68963e89f56c794eac>`;
 		char* :target:`make<doxid-db/d81/structtw__output_1ade78bcb76c7a94a8f388da8ced05f887>`;
 		char* :target:`model<doxid-db/d81/structtw__output_1a2694c12f327e53906100f8b2d788bc39>`;
-		struct tw_output::@80 :target:`geometry<doxid-db/d81/structtw__output_1aea573edc05f06a3e7516e130a81f3b64>`;
+		struct tw_output::@53 :target:`geometry<doxid-db/d81/structtw__output_1a1f22e723f998dd072d8ef7f5068a394b>`;
 		uint32_t :target:`flags<doxid-db/d81/structtw__output_1a455467d95fd9d3f24bda51609c378da1>`;
 		int :target:`width<doxid-db/d81/structtw__output_1a9f0951e78becb618c4c91b45cd31d6b9>`;
 		int :target:`height<doxid-db/d81/structtw__output_1aea2b5b59246b950816f831f58a721617>`;
 		int :target:`refresh<doxid-db/d81/structtw__output_1a3da6aa2e5c9e96a8159752b470413b86>`;
-		struct tw_output::@81 :target:`mode<doxid-db/d81/structtw__output_1a628f0c5aa5780803bfc1bb295fb95e56>`;
+		struct tw_output::@54 :target:`mode<doxid-db/d81/structtw__output_1a079834b4377dcec8f308308178978caa>`;
 		struct wl_listener :target:`display_destroy_listener<doxid-db/d81/structtw__output_1aa667b6771095749c806f3724df81ada2>`;
 		char :target:`name<doxid-db/d81/structtw__output_1ab6ec520cc9c0a0edb4fbb6ddb9fef4fa>`[32];
 	};

@@ -1,0 +1,87 @@
+.. index:: pair: struct; tw_xwm_atoms
+.. _doxid-d3/d23/structtw__xwm__atoms:
+
+struct tw_xwm_atoms
+===================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <atoms.h>
+	
+	struct tw_xwm_atoms
+	{
+		// fields
+	
+		xcb_atom_t :target:`wm_protocols<doxid-d3/d23/structtw__xwm__atoms_1aa412461fb0d09620745461db797307cb>`;
+		xcb_atom_t :target:`wm_normal_hints<doxid-d3/d23/structtw__xwm__atoms_1ab5786667b020488e0b3716c0eff1c363>`;
+		xcb_atom_t :target:`wm_take_focus<doxid-d3/d23/structtw__xwm__atoms_1a24d1ea0d4da3da984decabb3c0a15713>`;
+		xcb_atom_t :target:`wm_delete_window<doxid-d3/d23/structtw__xwm__atoms_1aa32bdd8bea1785c4052e215ebe98ca25>`;
+		xcb_atom_t :target:`wm_state<doxid-d3/d23/structtw__xwm__atoms_1a20a1665d1b7dd90e5f496a134af600a8>`;
+		xcb_atom_t :target:`wm_s0<doxid-d3/d23/structtw__xwm__atoms_1a1595c9c2fe372e4f812a5cff6fe149c5>`;
+		xcb_atom_t :target:`wm_client_machine<doxid-d3/d23/structtw__xwm__atoms_1a961cc64c17e6eb6e0792b84acde19c00>`;
+		xcb_atom_t :target:`net_wm_cm_s0<doxid-d3/d23/structtw__xwm__atoms_1a2b3463a3fc26b7967921049732d43ea2>`;
+		xcb_atom_t :target:`net_wm_name<doxid-d3/d23/structtw__xwm__atoms_1a0564af1c2dec526217ddcef5446dea5a>`;
+		xcb_atom_t :target:`net_wm_pid<doxid-d3/d23/structtw__xwm__atoms_1a6a1160c2aab0e483b170e7052f490a99>`;
+		xcb_atom_t :target:`net_wm_icon<doxid-d3/d23/structtw__xwm__atoms_1a87e00f33998c1bdb85a8c4189aa09749>`;
+		xcb_atom_t :target:`net_wm_state<doxid-d3/d23/structtw__xwm__atoms_1ac88bec572f90ac8aee741418c1a4d058>`;
+		xcb_atom_t :target:`net_wm_state_maximized_vert<doxid-d3/d23/structtw__xwm__atoms_1a283d04ee3280191f356df0429f17e736>`;
+		xcb_atom_t :target:`net_wm_state_maximized_horz<doxid-d3/d23/structtw__xwm__atoms_1a10a00c0b4e8c6f57385810c97d110dec>`;
+		xcb_atom_t :target:`net_wm_state_fullscreen<doxid-d3/d23/structtw__xwm__atoms_1a799aadde6d433de1c070c944151daf47>`;
+		xcb_atom_t :target:`net_wm_state_focused<doxid-d3/d23/structtw__xwm__atoms_1a87652d81437f773b3eb3a638909770ed>`;
+		xcb_atom_t :target:`net_wm_state_hidden<doxid-d3/d23/structtw__xwm__atoms_1a9ca52ad030ce9cb0a98ea2fc129f19c8>`;
+		xcb_atom_t :target:`net_wm_user_time<doxid-d3/d23/structtw__xwm__atoms_1a0e52e9c62debf4b44993c08056d8f4fb>`;
+		xcb_atom_t :target:`net_wm_icon_name<doxid-d3/d23/structtw__xwm__atoms_1a76e165642fc2604a4de50ba9cb07b67f>`;
+		xcb_atom_t :target:`net_wm_desktop<doxid-d3/d23/structtw__xwm__atoms_1adc033493bc4e57baae9c40eb8d5883af>`;
+		xcb_atom_t :target:`net_wm_window_type<doxid-d3/d23/structtw__xwm__atoms_1acca0884a45f34a888d64ee231bd4557f>`;
+		xcb_atom_t :target:`net_wm_window_type_desktop<doxid-d3/d23/structtw__xwm__atoms_1aba1e246ecd53e6e79d08167a26f043d5>`;
+		xcb_atom_t :target:`net_wm_window_type_dock<doxid-d3/d23/structtw__xwm__atoms_1a3d63bc9b7f1fcce5ec3a75ce132648f6>`;
+		xcb_atom_t :target:`net_wm_window_type_toolbar<doxid-d3/d23/structtw__xwm__atoms_1ac47446882aa5c8fbc7192773c603bf28>`;
+		xcb_atom_t :target:`net_wm_window_type_menu<doxid-d3/d23/structtw__xwm__atoms_1a8571ba6567b2865b0cd0caf25faf8c7d>`;
+		xcb_atom_t :target:`net_wm_window_type_utility<doxid-d3/d23/structtw__xwm__atoms_1a7f50e6f320e9809a4162d6867fae7fb9>`;
+		xcb_atom_t :target:`net_wm_window_type_splash<doxid-d3/d23/structtw__xwm__atoms_1add088d356e7714643e2105065035e1df>`;
+		xcb_atom_t :target:`net_wm_window_type_dialog<doxid-d3/d23/structtw__xwm__atoms_1a3f7a50e67b2d2a831569fe70a81d1b18>`;
+		xcb_atom_t :target:`net_wm_window_type_dropdown<doxid-d3/d23/structtw__xwm__atoms_1a500fc7773076cfcf0fec4d821cc18095>`;
+		xcb_atom_t :target:`net_wm_window_type_popup<doxid-d3/d23/structtw__xwm__atoms_1a181d007292c3f571f07c76cc3e220e06>`;
+		xcb_atom_t :target:`net_wm_window_type_tooltip<doxid-d3/d23/structtw__xwm__atoms_1a094f510369959dc4f0033af7592d41cb>`;
+		xcb_atom_t :target:`net_wm_window_type_notification<doxid-d3/d23/structtw__xwm__atoms_1ae8792821fbe72402646cbd6e8b4dd571>`;
+		xcb_atom_t :target:`net_wm_window_type_combo<doxid-d3/d23/structtw__xwm__atoms_1a7a08975f5d60f30fb91c10080a89798f>`;
+		xcb_atom_t :target:`net_wm_window_type_dnd<doxid-d3/d23/structtw__xwm__atoms_1a1422d116a5f6008eb98f5f5be928bd67>`;
+		xcb_atom_t :target:`net_wm_window_type_normal<doxid-d3/d23/structtw__xwm__atoms_1ad9291f2004621b27a0b1af1b08a43186>`;
+		xcb_atom_t :target:`net_wm_moveresize<doxid-d3/d23/structtw__xwm__atoms_1aef4cac28acccfed8fbf796317ac04a43>`;
+		xcb_atom_t :target:`net_supporting_wm_check<doxid-d3/d23/structtw__xwm__atoms_1a4a2e997a29bb49e976ef3dffc0538fdf>`;
+		xcb_atom_t :target:`net_supported<doxid-d3/d23/structtw__xwm__atoms_1a146d7ecb12613572eb75f05c48e598a1>`;
+		xcb_atom_t :target:`net_active_window<doxid-d3/d23/structtw__xwm__atoms_1a9532d921a0eeff9cf616bd879ba224d9>`;
+		xcb_atom_t :target:`motif_wm_hints<doxid-d3/d23/structtw__xwm__atoms_1a9b1ddcf52c35301b749e80adfb794503>`;
+		xcb_atom_t :target:`clipboard<doxid-d3/d23/structtw__xwm__atoms_1a2f2b99fb83e81d41e742c10ff5a4ecb6>`;
+		xcb_atom_t :target:`clipboard_manager<doxid-d3/d23/structtw__xwm__atoms_1abeb91b501b3bafb98d7b483e5689151d>`;
+		xcb_atom_t :target:`targets<doxid-d3/d23/structtw__xwm__atoms_1a190618f4e5a89b7aef3921b88775ce27>`;
+		xcb_atom_t :target:`utf8_string<doxid-d3/d23/structtw__xwm__atoms_1a2dca122d8b4bb206b5a60269573e5a6d>`;
+		xcb_atom_t :target:`wl_selection<doxid-d3/d23/structtw__xwm__atoms_1a81b28d8ce2d71193f428ea4d11e2bd3c>`;
+		xcb_atom_t :target:`incr<doxid-d3/d23/structtw__xwm__atoms_1ac08aedf61af3c3a94f568d8700c5d512>`;
+		xcb_atom_t :target:`timestamp<doxid-d3/d23/structtw__xwm__atoms_1aab848a7c64697f6d0c16f2d377bee98f>`;
+		xcb_atom_t :target:`multiple<doxid-d3/d23/structtw__xwm__atoms_1a8fc862db3af52c6561d8e185f5253c96>`;
+		xcb_atom_t :target:`compound_text<doxid-d3/d23/structtw__xwm__atoms_1ae905866ef15ba7a63834c0db973dd1f7>`;
+		xcb_atom_t :target:`text<doxid-d3/d23/structtw__xwm__atoms_1a47dc70c793b21f594f471792fae38e4a>`;
+		xcb_atom_t :target:`string<doxid-d3/d23/structtw__xwm__atoms_1a0e9c36f2be6723e96e70e15e33df748c>`;
+		xcb_atom_t :target:`window<doxid-d3/d23/structtw__xwm__atoms_1a5504328ef92a41b9c196837ec436766b>`;
+		xcb_atom_t :target:`text_plain_utf8<doxid-d3/d23/structtw__xwm__atoms_1a36210b57576479c9429db7c8683cc151>`;
+		xcb_atom_t :target:`text_plain<doxid-d3/d23/structtw__xwm__atoms_1a0228e8ef66f94802c9c57c0d4d4de718>`;
+		xcb_atom_t :target:`xdnd_selection<doxid-d3/d23/structtw__xwm__atoms_1ab2ef97c5b7b04eeb368103c56cd4e7b9>`;
+		xcb_atom_t :target:`xdnd_aware<doxid-d3/d23/structtw__xwm__atoms_1aa54c3057a5a3a1c6593d6bd2b2998ad7>`;
+		xcb_atom_t :target:`xdnd_enter<doxid-d3/d23/structtw__xwm__atoms_1a32af897f1dd3bde72320f572ae59596c>`;
+		xcb_atom_t :target:`xdnd_leave<doxid-d3/d23/structtw__xwm__atoms_1a338e53a3898e3b6a286cf9f3e41b6f7e>`;
+		xcb_atom_t :target:`xdnd_drop<doxid-d3/d23/structtw__xwm__atoms_1a9c82b7ff3428a929028a0c3e4cfd73d8>`;
+		xcb_atom_t :target:`xdnd_status<doxid-d3/d23/structtw__xwm__atoms_1a5d2fcf193747ec200e922d085ac2f479>`;
+		xcb_atom_t :target:`xdnd_finished<doxid-d3/d23/structtw__xwm__atoms_1a4338af8a6a6f77d481f6ed16f751ca61>`;
+		xcb_atom_t :target:`xdnd_type_list<doxid-d3/d23/structtw__xwm__atoms_1a749c757d4c5133556c5bafb47ea0c648>`;
+		xcb_atom_t :target:`xdnd_action_copy<doxid-d3/d23/structtw__xwm__atoms_1a6e15d8f1859aa141cea346c2be5fae7e>`;
+		xcb_atom_t :target:`wl_surface_id<doxid-d3/d23/structtw__xwm__atoms_1a272dbb6b176f55be2e6c63f4aadd0037>`;
+		xcb_atom_t :target:`allow_commits<doxid-d3/d23/structtw__xwm__atoms_1a70d61aea10bce5bdbb4d05ed515d4df8>`;
+	};

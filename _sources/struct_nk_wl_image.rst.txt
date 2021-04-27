@@ -1,0 +1,24 @@
+.. index:: pair: struct; nk_wl_image
+.. _doxid-dc/d12/structnk__wl__image:
+
+struct nk_wl_image
+==================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <nk_wl_image.h>
+	
+	struct nk_wl_image
+	{
+		// fields
+	
+		struct wl_list :target:`link<doxid-dc/d12/structnk__wl__image_1adcc276747bf9ce3d6cad3d864ff1b98c>`;
+		struct nk_image :target:`image<doxid-dc/d12/structnk__wl__image_1af90ed926e979382a01ee8005030fdc3e>`;
+	};

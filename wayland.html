@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <title>Wayland notes &#8212; Taiwins</title>
+  
+  <!-- fix for search function -->
+  <script type="text/javascript" src="_static/language_data.js "></script>
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="_static/bootstrap-sphinx.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/my-style.css" />
+    <link rel="stylesheet" type="text/css" href="_static/doxyrest-pygments.css" />
+    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/target-highlight.js"></script>
+    <link rel="shortcut icon" href="_static/favicon.ico"/>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<script type="text/javascript" src="_static/js/jquery-1.11.0.min.js "></script>
+<script type="text/javascript" src="_static/js/jquery-fix.js "></script>
+<script type="text/javascript" src="_static/bootstrap-3.3.7/js/bootstrap.min.js "></script>
+<script type="text/javascript" src="_static/bootstrap-sphinx.js "></script>
+
+  </head><body>
+  <div class="page-container">
+    
+<!-- taken from bootstrap theme -->
+<div id="navbar" class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">
+        <b>Taiwins</b></a>
+      <span class="navbar-text navbar-version pull-left"><b></b></span>
+    </div>
+
+    <div class="collapse navbar-collapse nav-collapse">
+      <ul class="nav navbar-nav">
+	<li><a href="page_doc.html">Documentation</a></li>
+	<li><a href="https://github.com/taiwins/taiwins">Source Code</a></li>
+	<li><a href="https://github.com/taiwins/taiwins/wiki">Wiki</a></li>
+	<!-- add other pages -->
+      </ul>
+    </div>
+  </div>
+</div>
+
+    <div class="container">
+      
+	<div class="row">
+	  <div class="body col-md-9 content" role="main">
+	    
+  <div class="section" id="wayland-notes">
+<h1>Wayland notes<a class="headerlink" href="#wayland-notes" title="Permalink to this headline">¶</a></h1>
+<p>This page contains various notes about wayland objects and weston
+implementation. Note that since taiwins is not using <strong>libweston</strong> anymore, the
+knowledge maybe outdated. The notes is written solely based on my understanding
+thus there could be various misinterpretations.</p>
+<div class="section" id="wayland-objects">
+<h2>wayland objects<a class="headerlink" href="#wayland-objects" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>The objects creation/destruction should be done with only requests.
+- creation:
+    - you can use `new_id` in the `request`, this is the usual way, returns
+      an object, like `wl_surface` creation from `wl_compositor`.
+    - having a `new_id` in `event`, passed as an argument, I am supposed to
+      store it. Said not to use it if unnecessary.
+- destruction:
+    - `wl_foobar_destroy` request. Usual way, server receives it and have a
+      signal for that.
+    - create an `event` and document it for the client to destroy the
+      proxy. Like `wl_callback`. The obvious difference is that the protocol
+      has no request at all! Said in Pekka&#39;s blog_
+In one phrase: created by clients, destroyed by clients; created by server,
+      disposed by server.
+</pre></div>
+</div>
+</div>
+<div class="section" id="wayland-server-implementations">
+<h2>wayland-server implementations<a class="headerlink" href="#wayland-server-implementations" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="event-loop">
+<h3>event-loop<a class="headerlink" href="#event-loop" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>`event_loop` is like what I have in the `client.c`, it is almost implemented
+in the same way, it has the `timer`, `idle`, `fd` (It uses `pipe2` for
+receiving data instead of `inotify`).
+- `idle`  :
+- `timer` :
+</pre></div>
+</div>
+</div>
+<div class="section" id="wl-client-create">
+<h3>wl_client_create<a class="headerlink" href="#wl-client-create" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>This is the only time you need to explicitly create a client for the given
+socket, otherwise the clients are created by wayland protocols(I think the
+socket is created when the first client created(if you look into the
+`wl_client_create` code)). Since you are forced to give a `fd`, the only way
+is providing a `socketpair`.x
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="weston-notes">
+<h1>weston notes<a class="headerlink" href="#weston-notes" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="weston-objects">
+<h2>weston objects<a class="headerlink" href="#weston-objects" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>- `weston_surface` is the `wl_resource` of `wl_surface`
+- `weston_output` is the `wl_resource` of the `wl_output`.
+</pre></div>
+</div>
+<div class="section" id="weston-layer">
+<h3>weston_layer<a class="headerlink" href="#weston-layer" title="Permalink to this headline">¶</a></h3>
+<p><code class="docutils literal notranslate"><span class="pre">weston_layer</span></code>s are stored from top to bottom in the compositor, in that case
+<code class="docutils literal notranslate"><span class="pre">compositor-&gt;layer_header-&gt;top_layer-&gt;...bottom_layer</span></code>. The same priority
+pattern applies within the layer. So the top view is the first view in the
+layer’s <code class="docutils literal notranslate"><span class="pre">view_link</span></code>. When compositor starts painting, it will build the
+view_list from all the layers(priority top to down). With the information, the
+compositor can figure out which parts of the <code class="docutils literal notranslate"><span class="pre">weston_plane</span></code> (a <code class="docutils literal notranslate"><span class="pre">pixman_region</span></code>)
+are damaged.</p>
+</div>
+<div class="section" id="weston-plane">
+<h3>weston_plane<a class="headerlink" href="#weston-plane" title="Permalink to this headline">¶</a></h3>
+<p>The <code class="docutils literal notranslate"><span class="pre">weston_plane</span></code> is a logical representation of the hardware compositing
+planes, so we only need to do the compositing on every plane, and the hardware
+composits the different planes. Currently here is a piece of code inside the
+<code class="docutils literal notranslate"><span class="pre">gl-renderer</span></code> and <code class="docutils literal notranslate"><span class="pre">pixman-renderer</span></code>.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">wl_list_for_each_reverse</span><span class="p">(</span><span class="n">view</span><span class="p">,</span> <span class="n">compositor</span><span class="o">-&gt;</span><span class="n">view_list</span><span class="p">,</span> <span class="n">link</span><span class="p">)</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">view</span><span class="o">-&gt;</span><span class="n">plane</span> <span class="o">==</span> <span class="o">&amp;</span><span class="n">compositor</span><span class="o">-&gt;</span><span class="n">primary_plane</span><span class="p">)</span>
+        <span class="n">draw_view</span><span class="p">(</span><span class="n">view</span><span class="p">);</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="weston-output-repaint-loop-and-discovered-problem">
+<h2>weston_output_repaint_loop and discovered problem.<a class="headerlink" href="#weston-output-repaint-loop-and-discovered-problem" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>The surface has to follow the `frame-&gt;attach-&gt;damage-&gt;commit-&gt;done` loop!
+If done happen after next commit, the client will having trouble waiting the
+done event for the corresponding frame, it lags the rendering.
+</pre></div>
+</div>
+<div class="section" id="if-you-want-to-unmap-the-view">
+<h3>if you want to unmap the view<a class="headerlink" href="#if-you-want-to-unmap-the-view" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">It</span> <span class="ow">is</span> <span class="n">okay</span> <span class="k">if</span> <span class="nb">all</span> <span class="n">the</span> <span class="n">operation</span> <span class="ow">is</span> <span class="n">transparent</span> <span class="n">to</span> <span class="n">client</span><span class="o">.</span> <span class="n">The</span> <span class="n">compositor</span>
+<span class="n">suddenly</span> <span class="n">unmap</span> <span class="n">the</span> <span class="n">view</span> <span class="ow">and</span> <span class="n">remap</span> <span class="n">the</span> <span class="n">view</span><span class="p">,</span> <span class="n">clients</span> <span class="n">just</span> <span class="n">get</span> <span class="n">paused</span><span class="p">,</span> <span class="n">nothing</span>
+<span class="n">wrong</span> <span class="n">happens</span><span class="o">.</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="weston-coordinate-system">
+<h2>weston coordinate system.<a class="headerlink" href="#weston-coordinate-system" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">weston</span> <span class="n">should</span> <span class="n">have</span> <span class="mi">3</span> <span class="n">different</span> <span class="n">coord</span> <span class="n">system</span><span class="p">,</span> <span class="n">since</span> <span class="n">they</span> <span class="n">are</span> <span class="nb">all</span> <span class="mi">2</span><span class="n">D</span><span class="p">,</span> <span class="n">it</span>
+<span class="n">shouldn</span><span class="s1">&#39;t be hard.</span>
+</pre></div>
+</div>
+<div class="section" id="compositor-space-global-space-it-is-global">
+<h3>compositor space (global space, it is global ).<a class="headerlink" href="#compositor-space-global-space-it-is-global" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="output-space">
+<h3>output space<a class="headerlink" href="#output-space" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="view-space-globalx-view-geometry-x">
+<h3>view space (globalx - view-&gt;geometry.x).<a class="headerlink" href="#view-space-globalx-view-geometry-x" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>related function:
+- `weston_view_to_global_{fixed,float,int}` :: map a local view coordinate
+  to global coordinate.
+- `weston_view_from_global_{fixed,float,int}` :: map a global coordinate to
+  view coordinate.
+- `weston_compositor_pick_view` :: search the view in the view list and
+  return the local coordinate of the view.
+</pre></div>
+</div>
+</div>
+<div class="section" id="weston-pointer">
+<h3>weston_pointer<a class="headerlink" href="#weston-pointer" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>It has `x,y`, `grab_x, grab_y`, `sx,sy` 3 coordinates, the last one for its
+focused view, you can use
+`weston_view_from_global_fixed(pointer-&gt;focused,
+    pointer-&gt;x, pointer-&gt;y, &amp;pointer-&gt;sy)` if neccessary.
+</pre></div>
+</div>
+</div>
+<div class="section" id="weston-desktop-api">
+<h3>Weston-desktop API<a class="headerlink" href="#weston-desktop-api" title="Permalink to this headline">¶</a></h3>
+<p>The API reassembles the <code class="docutils literal notranslate"><span class="pre">xdg_shell_protocols</span></code> protocol, but it internally glued the
+<code class="docutils literal notranslate"><span class="pre">wl_shell</span></code>,<code class="docutils literal notranslate"><span class="pre">xdg_shell_v5</span></code> and <code class="docutils literal notranslate"><span class="pre">xdg_shell_v6</span></code> under one implementation, by
+exposing a common API, a compositor can drive multiple desktop protocols.</p>
+</div>
+<div class="section" id="wl-frame">
+<h3>wl_frame<a class="headerlink" href="#wl-frame" title="Permalink to this headline">¶</a></h3>
+<p>The key function is <code class="docutils literal notranslate"><span class="pre">weston_output_repaint</span></code>. You will see the accumulation of
+<code class="docutils literal notranslate"><span class="pre">frame_callback</span></code>, <code class="docutils literal notranslate"><span class="pre">weston_compositor_build_view_list</span></code>, and call to
+<code class="docutils literal notranslate"><span class="pre">renderer-&gt;repaint</span></code>, then send done to all the <code class="docutils literal notranslate"><span class="pre">frame_callback</span></code>.</p>
+</div>
+<div class="section" id="weston-renderer-implementation">
+<h3>weston-renderer implementation<a class="headerlink" href="#weston-renderer-implementation" title="Permalink to this headline">¶</a></h3>
+<p>The one key function to look at is the <code class="docutils literal notranslate"><span class="pre">weston_output_repaint</span></code>. This is the
+frame callback, called in maybe <code class="docutils literal notranslate"><span class="pre">eventloop</span></code>. It does a few things:</p>
+<ul class="simple">
+<li><p>it need to build up the <code class="docutils literal notranslate"><span class="pre">view_list</span></code> of current frame, extract from layers,
+and sort them in order.</p></li>
+<li><p>move views to planes, if backend supports multiple planes, it does that.</p></li>
+<li><p>initialize the <code class="docutils literal notranslate"><span class="pre">frame_callback</span></code> list, this is where the <code class="docutils literal notranslate"><span class="pre">frame_done</span></code> gets sent</p></li>
+<li><p>next it accumenate the damage, when you set <code class="docutils literal notranslate"><span class="pre">weston_view_damage_</span> <span class="pre">below</span></code>,
+it gets accumulated here.</p></li>
+<li><p>Then it calls renderer to repaint.</p></li>
+<li><p>sends all the <code class="docutils literal notranslate"><span class="pre">frame_callbacks</span></code>.</p></li>
+<li><p>output has an animation list. It does that as well.</p></li>
+</ul>
+</div>
+<div class="section" id="weston-view-coordinates">
+<h3>weston-view coordinates<a class="headerlink" href="#weston-view-coordinates" title="Permalink to this headline">¶</a></h3>
+<p>see the <code class="docutils literal notranslate"><span class="pre">compositor_accumulate_damamge</span></code>, there is nothing about output
+weston_view has a geometry, this geometry is in global coordinates.</p>
+</div>
+</div>
+</div>
+
+
+	  </div>
+	  
+<div class="col-md-3">
+  <div id="sidebar" class="bs-sidenav">
+<h3>Content</h3>
+<div id="localtoc"><ul>
+<li><a class="reference internal" href="#">Wayland notes</a><ul>
+<li><a class="reference internal" href="#wayland-objects">wayland objects</a></li>
+<li><a class="reference internal" href="#wayland-server-implementations">wayland-server implementations</a><ul>
+<li><a class="reference internal" href="#event-loop">event-loop</a></li>
+<li><a class="reference internal" href="#wl-client-create">wl_client_create</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a class="reference internal" href="#weston-notes">weston notes</a><ul>
+<li><a class="reference internal" href="#weston-objects">weston objects</a><ul>
+<li><a class="reference internal" href="#weston-layer">weston_layer</a></li>
+<li><a class="reference internal" href="#weston-plane">weston_plane</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#weston-output-repaint-loop-and-discovered-problem">weston_output_repaint_loop and discovered problem.</a><ul>
+<li><a class="reference internal" href="#if-you-want-to-unmap-the-view">if you want to unmap the view</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#weston-coordinate-system">weston coordinate system.</a><ul>
+<li><a class="reference internal" href="#compositor-space-global-space-it-is-global">compositor space (global space, it is global ).</a></li>
+<li><a class="reference internal" href="#output-space">output space</a></li>
+<li><a class="reference internal" href="#view-space-globalx-view-geometry-x">view space (globalx - view-&gt;geometry.x).</a></li>
+<li><a class="reference internal" href="#weston-pointer">weston_pointer</a></li>
+<li><a class="reference internal" href="#weston-desktop-api">Weston-desktop API</a></li>
+<li><a class="reference internal" href="#wl-frame">wl_frame</a></li>
+<li><a class="reference internal" href="#weston-renderer-implementation">weston-renderer implementation</a></li>
+<li><a class="reference internal" href="#weston-view-coordinates">weston-view coordinates</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<h3><a data-toggle="collapse" href="#globaltoc">Related Pages</a></h3>
+<div id="globaltoc" class="collapse">
+
+</div>
+<form action="search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+  </div>
+</div>
+
+	</div>
+      
+    </div>
+    <div class="push"></div>
+  </div>
+
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+    </p>
+    <p>
+        &copy; Copyright 2020, Xichen Zhou.<br/>
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 3.4.3.<br/>
+    </p>
+  </div>
+</footer>
+  </body>
+</html>

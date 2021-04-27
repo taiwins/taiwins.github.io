@@ -33,12 +33,12 @@ xdg_view, represents a mapped desktop surface :ref:`More...<details-da/d91/struc
 		bool :ref:`mapped<doxid-da/d91/structtw__xdg__view_1a8bb0c76e1d83cfd42d1c06a357b59e6e>`;
 		bool :target:`added<doxid-da/d91/structtw__xdg__view_1a70e186cd7e9516a6bcabfc15023718f3>`;
 		struct wl_list :target:`link<doxid-da/d91/structtw__xdg__view_1a13aefbc2d87f2c60f6454fb27de40af7>`;
-		enum :ref:`tw_layout_type<doxid-db/d51/layout_8h_1a508c2aaa086bf5bfa0483bc01f47cdc0>` :ref:`type<doxid-d3/d61/meson__options_8txt_1a4829b49f8190081b3d6ed3f188a15a07>` :target:`prev_type<doxid-da/d91/structtw__xdg__view_1afc916842e758bce79130bf7672fb7f93>`;
+		enum :ref:`tw_layout_type<doxid-db/d51/layout_8h_1a508c2aaa086bf5bfa0483bc01f47cdc0>` :ref:`type<doxid-de/d40/subprojects_2twidgets_2meson__options_8txt_1a4829b49f8190081b3d6ed3f188a15a07>` :target:`prev_type<doxid-da/d91/structtw__xdg__view_1afc916842e758bce79130bf7672fb7f93>`;
 		struct :ref:`tw_xdg_layout<doxid-d0/d65/structtw__xdg__layout>`* :target:`layout<doxid-da/d91/structtw__xdg__view_1a0eafdc711d499176370b48b450a12353>`;
 		struct :ref:`tw_layer<doxid-d7/d6a/structtw__layer>`* :target:`layer<doxid-da/d91/structtw__xdg__view_1a8d2970da1fa9e39a5694a81a19a18c29>`;
 		struct :ref:`tw_xdg_output<doxid-dd/d10/structtw__xdg__output>`* :target:`output<doxid-da/d91/structtw__xdg__view_1a0d41a882a493d5e734ea9cc0517629d5>`;
 		bool :target:`is_xwayland<doxid-da/d91/structtw__xdg__view_1a3f9a3fbea810dcb830cd2cac88d32556>`;
-		struct tw_xdg_view::@26 :target:`xwayland<doxid-da/d91/structtw__xdg__view_1a4e168b610c3284f85423dff3a6879242>`;
+		struct tw_xdg_view::@28 :target:`xwayland<doxid-da/d91/structtw__xdg__view_1a03a329820b3fb53ce83d7ad351b2feb9>`;
 	};
 .. _details-da/d91/structtw__xdg__view:
 

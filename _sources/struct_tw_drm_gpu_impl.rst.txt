@@ -26,10 +26,10 @@ Overview
 		bool(* :ref:`get_gpu_device<doxid-db/dbf/structtw__drm__gpu__impl_1a668b3a8695439469eea311c4a1f7cc0a>`)(struct tw_drm_gpu *, const struct tw_login_gpu *);
 		void(* :target:`free_gpu_device<doxid-db/dbf/structtw__drm__gpu__impl_1a48d0decc5ce999ecb8d07df258adcf51>`)(struct tw_drm_gpu *);
 		const struct :ref:`tw_egl_options<doxid-dc/d1b/structtw__egl__options>`*(* :ref:`gen_egl_params<doxid-db/dbf/structtw__drm__gpu__impl_1a9655bcdd50731a2a4916dc705aafbb32>`)(struct tw_drm_gpu *);
-		bool(* :ref:`allocate_fb<doxid-db/dbf/structtw__drm__gpu__impl_1ab4cfc6614ede76c39356331ab403035e>`)(struct tw_drm_display *output);
-		void(* :ref:`end_display<doxid-db/dbf/structtw__drm__gpu__impl_1a56463703c5a2a9dff3eb38e3f2426fba>`)(struct tw_drm_display *output);
-		void(* :target:`vsynced<doxid-db/dbf/structtw__drm__gpu__impl_1a75d16668fc901f4fd718c2f4f73e661c>`)(struct tw_drm_display *output, struct tw_drm_fb *fb);
-		void(* :target:`page_flip<doxid-db/dbf/structtw__drm__gpu__impl_1adda5003e0ca1c78e0cce79ebab89c202>`)(struct tw_drm_display *output, uint32_t flags);
+		bool(* :ref:`allocate_fbs<doxid-db/dbf/structtw__drm__gpu__impl_1a256a976051e85d6f74e7aabcb7783eba>`)(struct tw_drm_display *output, drmModeModeInfo *mode);
+		void(* :ref:`free_fbs<doxid-db/dbf/structtw__drm__gpu__impl_1a0feb52fba268065fce9d27a8da73fcfa>`)(struct tw_drm_display *output);
+		bool(* :target:`acquire_fb<doxid-db/dbf/structtw__drm__gpu__impl_1ad9b58b10b1c775bbfe72bebb1cd84fa0>`)(struct tw_drm_display *output, struct tw_kms_state *state);
+		void(* :target:`release_fb<doxid-db/dbf/structtw__drm__gpu__impl_1acc5b3a383e038f69e4ae7df289c98989>`)(struct tw_drm_display *output, struct tw_drm_fb *fb);
 	};
 .. _details-db/dbf/structtw__drm__gpu__impl:
 
@@ -61,23 +61,23 @@ get different device handles (gbm or egl_device)
 
 platform specific egl options
 
-.. index:: pair: variable; allocate_fb
-.. _doxid-db/dbf/structtw__drm__gpu__impl_1ab4cfc6614ede76c39356331ab403035e:
+.. index:: pair: variable; allocate_fbs
+.. _doxid-db/dbf/structtw__drm__gpu__impl_1a256a976051e85d6f74e7aabcb7783eba:
 
 .. ref-code-block:: cpp
 	:class: doxyrest-title-code-block
 
-	bool(* allocate_fb)(struct tw_drm_display *output)
+	bool(* allocate_fbs)(struct tw_drm_display *output, drmModeModeInfo *mode)
 
 init display buffers as well as render surface
 
-.. index:: pair: variable; end_display
-.. _doxid-db/dbf/structtw__drm__gpu__impl_1a56463703c5a2a9dff3eb38e3f2426fba:
+.. index:: pair: variable; free_fbs
+.. _doxid-db/dbf/structtw__drm__gpu__impl_1a0feb52fba268065fce9d27a8da73fcfa:
 
 .. ref-code-block:: cpp
 	:class: doxyrest-title-code-block
 
-	void(* end_display)(struct tw_drm_display *output)
+	void(* free_fbs)(struct tw_drm_display *output)
 
 destroy display buffers as well as render surface
 

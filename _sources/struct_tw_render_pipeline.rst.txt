@@ -25,8 +25,8 @@ struct tw_render_pipeline
 		struct wl_listener :target:`ctx_destroy<doxid-dd/d95/structtw__render__pipeline_1ad8438a3265ee616c29cc43d79fec8da3>`;
 		struct wl_signal :target:`pre_output_repaint<doxid-dd/d95/structtw__render__pipeline_1a65d56d7b1704e1bdf976fb23ffdf77e2>`;
 		struct wl_signal :target:`post_output_repaint<doxid-dd/d95/structtw__render__pipeline_1adfb66fee8a584c33af4e1bbfb5e33c79>`;
-		struct tw_render_pipeline::@48 :target:`signals<doxid-dd/d95/structtw__render__pipeline_1ad6dce0b945d0331b615eea984fa07452>`;
+		struct tw_render_pipeline::@72 :target:`signals<doxid-dd/d95/structtw__render__pipeline_1a369032969835ac60f61d37b824464852>`;
 		void(* :target:`repaint_output<doxid-dd/d95/structtw__render__pipeline_1a74f90103da9aec683b9f2df5ccde9eea>`)(struct tw_render_pipeline *pipeline, struct tw_render_output *output, int buffer_age);
 		void(* :target:`destroy<doxid-dd/d95/structtw__render__pipeline_1a4e90bc867df2b5be69d304ddb1136df3>`)(struct tw_render_pipeline *pipeline);
-		struct tw_render_pipeline::@49 :target:`impl<doxid-dd/d95/structtw__render__pipeline_1a2e251e2a63053e8ed4d00c6b40ece430>`;
+		struct tw_render_pipeline::@73 :target:`impl<doxid-dd/d95/structtw__render__pipeline_1a46621a2d534540799a00415bdcc4bb58>`;
 	};

@@ -1,0 +1,22 @@
+.. index:: pair: enum; tw_text_input_request_type
+.. _doxid-d6/de7/text__input_8h_1a63b7c1ce371c28ed6e682f23ead7bf8d:
+
+enum tw_text_input_request_type
+===============================
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <text_input.h>
+
+	enum tw_text_input_request_type
+	{
+	    :target:`TW_TEXT_INPUT_TOGGLE<doxid-d6/de7/text__input_8h_1a63b7c1ce371c28ed6e682f23ead7bf8dac0bd02e5f71d8bed8419b0d178c137b2>`           = 1<<0,
+	    :target:`TW_TEXT_INPUT_SURROUNDING_TEXT<doxid-d6/de7/text__input_8h_1a63b7c1ce371c28ed6e682f23ead7bf8da5e2ea990fa120d9ba1d0ce3700a41e7c>` = 1<<1,
+	    :target:`TW_TEXT_INPUT_CHANGE_CAUSE<doxid-d6/de7/text__input_8h_1a63b7c1ce371c28ed6e682f23ead7bf8dabc028d0b802186a523197196ab6f34df>`     = 1<<2,
+	    :target:`TW_TEXT_INPUT_CONTENT_TYPE<doxid-d6/de7/text__input_8h_1a63b7c1ce371c28ed6e682f23ead7bf8da9fa0d765fa3bbb8605af800e0069ecb7>`     = 1<<3,
+	    :target:`TW_TEXT_INPUT_CURSOR_RECTANGLE<doxid-d6/de7/text__input_8h_1a63b7c1ce371c28ed6e682f23ead7bf8daef25619864f01dd32bcf7d333c5f7833>` = 1<<4,
+	};
+

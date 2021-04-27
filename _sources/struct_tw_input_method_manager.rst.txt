@@ -1,0 +1,26 @@
+.. index:: pair: struct; tw_input_method_manager
+.. _doxid-db/de8/structtw__input__method__manager:
+
+struct tw_input_method_manager
+==============================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <input_method.h>
+	
+	struct tw_input_method_manager
+	{
+		// fields
+	
+		struct wl_display* :target:`display<doxid-db/de8/structtw__input__method__manager_1af4f6b377bd667b6924733368589b16f9>`;
+		struct wl_listener :target:`display_destroy_listener<doxid-db/de8/structtw__input__method__manager_1ade9921f16fae8194a5cb5906af76e9b9>`;
+		struct wl_global* :target:`global<doxid-db/de8/structtw__input__method__manager_1a6c6b609bf8024bc6c8c2cd720a69309b>`;
+		struct wl_list :target:`ims<doxid-db/de8/structtw__input__method__manager_1aeaf8de91b9f7072c6e99a0ca074e7877>`;
+	};

@@ -32,6 +32,7 @@ taiwins engine :ref:`More...<details-df/d8e/structtw__engine>`
 		struct wl_list :target:`inputs<doxid-df/d8e/structtw__engine_1a70ff143f62f203758d828fc0d697a6cf>`;
 		uint8_t :target:`seat_pool<doxid-df/d8e/structtw__engine_1a612d411784252c2ed64dc06884a1792e>`;
 		struct :ref:`tw_engine_seat<doxid-dd/d1f/structtw__engine__seat>` :target:`seats<doxid-df/d8e/structtw__engine_1ad41c8783ff9c42405a85b920a293bcb8>`[8];
+		struct :ref:`tw_engine_seat<doxid-dd/d1f/structtw__engine__seat>`* :target:`focused_seat<doxid-df/d8e/structtw__engine_1a8e12e22a2a2cf140f9271fec590ed880>`;
 		struct :ref:`tw_cursor<doxid-d5/d66/structtw__cursor>` :ref:`global_cursor<doxid-df/d8e/structtw__engine_1a3698ccd168acc592b821edb0005b9957>`;
 		struct :ref:`tw_layers_manager<doxid-dd/d64/structtw__layers__manager>` :target:`layers_manager<doxid-df/d8e/structtw__engine_1adf09505e564caa741774e1413a5d63be>`;
 		struct :ref:`tw_compositor<doxid-d6/da7/structtw__compositor>` :target:`compositor_manager<doxid-df/d8e/structtw__engine_1ae4236bf290dffb0544acbe7647888f2c>`;
@@ -45,13 +46,14 @@ taiwins engine :ref:`More...<details-df/d8e/structtw__engine>`
 		struct wl_listener :target:`new_input<doxid-df/d8e/structtw__engine_1aa25d6fd19a8c0e07a29ae1644c671ddb>`;
 		struct wl_listener :target:`backend_started<doxid-df/d8e/structtw__engine_1ab121184d12252fc95b9f39365b62c6b9>`;
 		struct wl_listener :target:`surface_dirty<doxid-df/d8e/structtw__engine_1abb4b134810a99718bb9aa1cb979839ec>`;
-		struct tw_engine::@31 :target:`listeners<doxid-df/d8e/structtw__engine_1a03bf40e5d029361a51d0b4be4ed1fb7f>`;
+		struct tw_engine::@38 :target:`listeners<doxid-df/d8e/structtw__engine_1abad3461153f430876f773751954e2adb>`;
 		struct wl_signal :target:`output_created<doxid-df/d8e/structtw__engine_1a394d5377bc43fdb282e4e9a7b8ad11cf>`;
 		struct wl_signal :target:`output_resized<doxid-df/d8e/structtw__engine_1a768de819e27c8f07fa76fa7b347af48d>`;
 		struct wl_signal :target:`output_remove<doxid-df/d8e/structtw__engine_1a07f9667d4b4e337b2023ed0e85cf8dc8>`;
 		struct wl_signal :target:`seat_created<doxid-df/d8e/structtw__engine_1a254d153bd0ed0b1fc5d7e1ac0c698c3d>`;
+		struct wl_signal :target:`seat_focused<doxid-df/d8e/structtw__engine_1afc8afb3ccd72e4b1ec95223a53225b1e>`;
 		struct wl_signal :target:`seat_remove<doxid-df/d8e/structtw__engine_1af1f28d1696feb87acf5ac1e49aa1e7aa>`;
-		struct tw_engine::@32 :target:`signals<doxid-df/d8e/structtw__engine_1aca5bcbbb732060169114e026e5305d68>`;
+		struct tw_engine::@39 :target:`signals<doxid-df/d8e/structtw__engine_1a377031e3bddaf8e7b7edac7dd47acfc5>`;
 	};
 .. _details-df/d8e/structtw__engine:
 

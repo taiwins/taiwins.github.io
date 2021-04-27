@@ -7,9 +7,6 @@ struct tw_drm_plane
 .. toctree::
 	:hidden:
 
-Overview
-~~~~~~~~
-
 
 
 
@@ -23,30 +20,8 @@ Overview
 		// fields
 	
 		struct :ref:`tw_plane<doxid-d8/d69/structtw__plane>` :target:`base<doxid-d4/dca/structtw__drm__plane_1a35eeceb621052a16e1699cb5ef8da66e>`;
-		uint32_t :ref:`id<doxid-d4/dca/structtw__drm__plane_1a2bd4f60ce62ab8b915975feab7cab450>`;
 		uint32_t :target:`crtc_mask<doxid-d4/dca/structtw__drm__plane_1a5675a3ead485bcda16353dc35a616ea3>`;
 		enum :ref:`tw_drm_plane_type<doxid-dc/dc3/backend_2drm_2internal_8h_1a45d5506ea9aaae3f8c5a8ef959e942de>` :target:`type<doxid-d4/dca/structtw__drm__plane_1a5b71fbc976d255033da51f2a9b2469f5>`;
 		struct :ref:`tw_drm_formats<doxid-d2/dbe/structtw__drm__formats>` :target:`formats<doxid-d4/dca/structtw__drm__plane_1af20837a9bf3a4e2e8316fc49dacfa52c>`;
 		struct :ref:`tw_drm_plane_props<doxid-db/d68/structtw__drm__plane__props>` :target:`props<doxid-d4/dca/structtw__drm__plane_1a0311ffcda6d670ae4ef16fa8257054fb>`;
-		struct :ref:`tw_drm_fb<doxid-d3/dfa/structtw__drm__fb>` pending :target:`current<doxid-d4/dca/structtw__drm__plane_1ae1a1ca40a39f0d389b871ef8499d78d4>`;
 	};
-.. _details-d4/dca/structtw__drm__plane:
-
-Detailed Documentation
-~~~~~~~~~~~~~~~~~~~~~~
-
-
-
-Fields
-------
-
-.. index:: pair: variable; id
-.. _doxid-d4/dca/structtw__drm__plane_1a2bd4f60ce62ab8b915975feab7cab450:
-
-.. ref-code-block:: cpp
-	:class: doxyrest-title-code-block
-
-	uint32_t id
-
-drm plane id
-

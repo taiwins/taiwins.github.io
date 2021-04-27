@@ -1,0 +1,28 @@
+.. index:: pair: struct; tw_data_source_impl
+.. _doxid-dd/d57/structtw__data__source__impl:
+
+struct tw_data_source_impl
+==========================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <data_device.h>
+	
+	struct tw_data_source_impl
+	{
+		// fields
+	
+		void(* :target:`target<doxid-dd/d57/structtw__data__source__impl_1ac9a7e7c5da91c450463fc8c0f9ca7704>`)(struct tw_data_source *source, const char *mime);
+		void(* :target:`send<doxid-dd/d57/structtw__data__source__impl_1a8f8a9eb7d0923fa7310e53f3c81e2208>`)(struct tw_data_source *source, const char *mime, int fd);
+		void(* :target:`cancel<doxid-dd/d57/structtw__data__source__impl_1a70ed2191b2f00b292b7100c61b564e3b>`)(struct tw_data_source *source);
+		void(* :target:`dnd_drop<doxid-dd/d57/structtw__data__source__impl_1a7be50b89a5312acc9376ea4aaf70efc8>`)(struct tw_data_source *source);
+		void(* :target:`dnd_finish<doxid-dd/d57/structtw__data__source__impl_1abca5dbd48cfbf0ee86de84f27b4c8d8a>`)(struct tw_data_source *source);
+		void(* :target:`action<doxid-dd/d57/structtw__data__source__impl_1aa66e24a034b60f9aa82a309ed1b70cb8>`)(struct tw_data_source *source, uint32_t action);
+	};

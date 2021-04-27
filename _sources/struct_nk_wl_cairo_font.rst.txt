@@ -1,0 +1,27 @@
+.. index:: pair: struct; nk_wl_cairo_font
+.. _doxid-df/d2d/structnk__wl__cairo__font:
+
+struct nk_wl_cairo_font
+=======================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	
+	struct nk_wl_cairo_font
+	{
+		// fields
+	
+		struct :ref:`nk_wl_user_font<doxid-d7/d9b/structnk__wl__user__font>` :target:`wl_font<doxid-df/d2d/structnk__wl__cairo__font_1a879991697ff2375500f8d89747550eb3>`;
+		int :target:`size<doxid-df/d2d/structnk__wl__cairo__font_1adfb4aaf3b4bf8d0159cd994bb0e2290d>`;
+		float :target:`scale<doxid-df/d2d/structnk__wl__cairo__font_1abe30f433007df334551174fd4cef9be5>`;
+		FT_Face :target:`face<doxid-df/d2d/structnk__wl__cairo__font_1ade79ccba69e78339dbc5205b2222846c>`;
+		FT_Library* :target:`ft_lib<doxid-df/d2d/structnk__wl__cairo__font_1a27b732af3f8c04e910ce46d061963f9b>`;
+		cairo_font_face_t* :target:`cairo_face<doxid-df/d2d/structnk__wl__cairo__font_1a8b9ad0958063f06f3a1577b930eba282>`;
+	};

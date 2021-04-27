@@ -35,13 +35,12 @@ abstraction of an output device :ref:`More...<details-db/db1/structtw__output__d
 		const struct :ref:`tw_output_device_impl<doxid-d4/d98/structtw__output__device__impl>`* :target:`impl<doxid-db/db1/structtw__output__device_1ab816be4e8bd270caf2e8556f6a8c203e>`;
 		struct wl_list :target:`link<doxid-db/db1/structtw__output__device_1a2084c2a60daa6a907393b968e5f8618b>`;
 		struct wl_list :ref:`mode_list<doxid-db/db1/structtw__output__device_1a5990a36b676ca5c9330aa3256d8be5e9>`;
-		struct :ref:`tw_output_device_state<doxid-d0/d90/structtw__output__device__state>` state :target:`pending<doxid-db/db1/structtw__output__device_1a855ff5ca0209627de939b454d26cfecc>`;
+		struct :ref:`tw_output_device_state<doxid-d0/d90/structtw__output__device__state>` current :target:`pending<doxid-db/db1/structtw__output__device_1a8962d374118317870faca80c169d4a77>`;
 		struct wl_signal :target:`destroy<doxid-db/db1/structtw__output__device_1a0c81b11f3aad2ba50bd55ff4c6499fd9>`;
-		struct wl_signal :ref:`new_frame<doxid-db/db1/structtw__output__device_1a735c567c820e659a3ead32ad861d7a5d>`;
-		struct wl_signal :ref:`present<doxid-db/db1/structtw__output__device_1a9b4a5e02e540e3de1d38c870e55d6e81>`;
 		struct wl_signal :ref:`info<doxid-db/db1/structtw__output__device_1a837c289c5620ce0b7d119afac43edc50>`;
 		struct wl_signal :ref:`commit_state<doxid-db/db1/structtw__output__device_1aa45dcc0f88e210d3b76274f7f29cd603>`;
-		struct tw_output_device::@42 :target:`signals<doxid-db/db1/structtw__output__device_1a3616d6365af4a34938cf187b85f056dc>`;
+		struct wl_signal :ref:`clock_reset<doxid-db/db1/structtw__output__device_1add6aa6e0c27a380f862ef69f0ce24a6f>`;
+		struct tw_output_device::@66 :target:`signals<doxid-db/db1/structtw__output__device_1a7562c4b67f23a5cf5b936b19d96cb843>`;
 	};
 .. _details-db/db1/structtw__output__device:
 
@@ -77,7 +76,7 @@ the clock driving this output
 
 	void* native_window
 
-a native window for different backend, could be none Do I need to include render_surface here
+a native window for different backend, could be none
 
 .. index:: pair: variable; mode_list
 .. _doxid-db/db1/structtw__output__device_1a5990a36b676ca5c9330aa3256d8be5e9:
@@ -88,26 +87,6 @@ a native window for different backend, could be none Do I need to include render
 	struct wl_list mode_list
 
 backend: list
-
-.. index:: pair: variable; new_frame
-.. _doxid-db/db1/structtw__output__device_1a735c567c820e659a3ead32ad861d7a5d:
-
-.. ref-code-block:: cpp
-	:class: doxyrest-title-code-block
-
-	struct wl_signal new_frame
-
-new frame requested
-
-.. index:: pair: variable; present
-.. _doxid-db/db1/structtw__output__device_1a9b4a5e02e540e3de1d38c870e55d6e81:
-
-.. ref-code-block:: cpp
-	:class: doxyrest-title-code-block
-
-	struct wl_signal present
-
-new frame just presented on the output
 
 .. index:: pair: variable; info
 .. _doxid-db/db1/structtw__output__device_1a837c289c5620ce0b7d119afac43edc50:
@@ -128,4 +107,14 @@ emit when general wl_output information is available, or when output state chang
 	struct wl_signal commit_state
 
 emit right after applying pending state, backend could listen on this for applying the states to the hardware
+
+.. index:: pair: variable; clock_reset
+.. _doxid-db/db1/structtw__output__device_1add6aa6e0c27a380f862ef69f0ce24a6f:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	struct wl_signal clock_reset
+
+emit on clock need to reset for output device.
 

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <title>struct tw_input_method_event &#8212; Taiwins</title>
+  
+  <!-- fix for search function -->
+  <script type="text/javascript" src="_static/language_data.js "></script>
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="_static/bootstrap-sphinx.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/my-style.css" />
+    <link rel="stylesheet" type="text/css" href="_static/doxyrest-pygments.css" />
+    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/target-highlight.js"></script>
+    <link rel="shortcut icon" href="_static/favicon.ico"/>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<script type="text/javascript" src="_static/js/jquery-1.11.0.min.js "></script>
+<script type="text/javascript" src="_static/js/jquery-fix.js "></script>
+<script type="text/javascript" src="_static/bootstrap-3.3.7/js/bootstrap.min.js "></script>
+<script type="text/javascript" src="_static/bootstrap-sphinx.js "></script>
+
+  </head><body>
+  <div class="page-container">
+    
+<!-- taken from bootstrap theme -->
+<div id="navbar" class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">
+        <b>Taiwins</b></a>
+      <span class="navbar-text navbar-version pull-left"><b></b></span>
+    </div>
+
+    <div class="collapse navbar-collapse nav-collapse">
+      <ul class="nav navbar-nav">
+	<li><a href="page_doc.html">Documentation</a></li>
+	<li><a href="https://github.com/taiwins/taiwins">Source Code</a></li>
+	<li><a href="https://github.com/taiwins/taiwins/wiki">Wiki</a></li>
+	<!-- add other pages -->
+      </ul>
+    </div>
+  </div>
+</div>
+
+    <div class="container">
+      
+	<div class="row">
+	  <div class="body col-md-9 content" role="main">
+	    
+  <div class="section" id="struct-tw-input-method-event">
+<span id="doxid-d9-dfe-structtw-input-method-event"></span><span id="index-0"></span><h1>struct tw_input_method_event<a class="headerlink" href="#struct-tw-input-method-event" title="Permalink to this headline">¶</a></h1>
+<div class="toctree-wrapper compound">
+</div>
+<div class="section" id="overview">
+<h2>Overview<a class="headerlink" href="#overview" title="Permalink to this headline">¶</a></h2>
+<pre class="highlight doxyrest-overview-code-block literal-block"><span></span><span class="cp">#include</span> <span class="cpf">&lt;input_method.h&gt;</span><span class="cp"></span>
+
+<span class="k">struct</span> <span class="n">tw_input_method_event</span>
+<span class="p">{</span>
+    <span class="c1">// fields</span>
+
+    <span class="kt">bool</span> <span class="doxyrest-code-target target" id="doxid-d9-dfe-structtw-input-method-event-1a9f3ec3bddfe16e1f28f91dfea0c7a73a"><span></span><span class="n">enabled</span></span><span></span><span class="p">;</span>
+    <span class="k">struct</span> <span class="n">wl_resource</span><span class="o">*</span> <a class="reference internal" href="#doxid-d9-dfe-structtw-input-method-event-1ac4a07ab5bc40e0afd3d0cbcfb1e0c145"><span class="std std-ref">focused</span></a><span></span><span class="p">;</span>
+    <span class="kt">uint32_t</span> <span class="doxyrest-code-target target" id="doxid-d9-dfe-structtw-input-method-event-1a627f1465784ac87c31b1acf4c112dd0a"><span></span><span class="n">cursor</span></span><span></span><span class="p">;</span>
+    <span class="kt">uint32_t</span> <span class="doxyrest-code-target target" id="doxid-d9-dfe-structtw-input-method-event-1a44654077437fd9858b9571768caf9e05"><span></span><span class="n">anchor</span></span><span></span><span class="p">;</span>
+    <span class="k">const</span> <span class="kt">char</span><span class="o">*</span> <span class="doxyrest-code-target target" id="doxid-d9-dfe-structtw-input-method-event-1a66163593a931898ab63a6117b7ac3681"><span></span><span class="n">text</span></span><span></span><span class="p">;</span>
+    <span class="k">struct</span> <span class="n">tw_input_method_event</span><span class="o">::</span><span class="err">@</span><span class="mi">49</span> <span class="doxyrest-code-target target" id="doxid-d9-dfe-structtw-input-method-event-1a44a2d089aec46d5acec810941aacb3ba"><span></span><span class="n">surrounding</span></span><span></span><span class="p">;</span>
+    <span class="n">pixman_rectangle32_t</span> <span class="doxyrest-code-target target" id="doxid-d9-dfe-structtw-input-method-event-1ac4b2dd9555dc218e162993899cb354d4"><span></span><span class="n">cursor_rect</span></span><span></span><span class="p">;</span>
+    <span class="kt">uint32_t</span> <span class="doxyrest-code-target target" id="doxid-d9-dfe-structtw-input-method-event-1a320e6c377c97982168b9ea5f36cfda12"><span></span><span class="n">change_cause</span></span><span></span><span class="p">;</span>
+    <span class="kt">uint32_t</span> <span class="doxyrest-code-target target" id="doxid-d9-dfe-structtw-input-method-event-1af14ae0c898b08c08658daf31b6822de9"><span></span><span class="n">content_hint</span></span><span></span><span class="p">;</span>
+    <span class="kt">uint32_t</span> <span class="doxyrest-code-target target" id="doxid-d9-dfe-structtw-input-method-event-1ae9a716f3c5b388feebb594ef9f510d23"><span></span><span class="n">content_purpose</span></span><span></span><span class="p">;</span>
+    <span class="kt">uint32_t</span> <span class="doxyrest-code-target target" id="doxid-d9-dfe-structtw-input-method-event-1a2b84b6fb7fdf1bfea2164d09e7f499fc"><span></span><span class="n">events</span></span><span></span><span class="p">;</span>
+<span class="p">};</span></pre>
+</div>
+<div class="section" id="detailed-documentation">
+<span id="details-d9-dfe-structtw-input-method-event"></span><h2>Detailed Documentation<a class="headerlink" href="#detailed-documentation" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="fields">
+<h3>Fields<a class="headerlink" href="#fields" title="Permalink to this headline">¶</a></h3>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-d9-dfe-structtw-input-method-event-1ac4a07ab5bc40e0afd3d0cbcfb1e0c145"><span id="index-1"></span><span></span><span class="k">struct</span> <span class="n">wl_resource</span><span class="o">*</span> <span class="n">focused</span></pre>
+<p>activated text input on this surface, this will drive us to set im popup active as well.</p>
+</div>
+</div>
+</div>
+
+
+	  </div>
+	  
+<div class="col-md-3">
+  <div id="sidebar" class="bs-sidenav">
+<h3>Content</h3>
+<div id="localtoc"><ul>
+<li><a class="reference internal" href="#">struct tw_input_method_event</a><ul>
+<li><a class="reference internal" href="#overview">Overview</a></li>
+<li><a class="reference internal" href="#detailed-documentation">Detailed Documentation</a><ul>
+<li><a class="reference internal" href="#fields">Fields</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<h3><a data-toggle="collapse" href="#globaltoc">Related Pages</a></h3>
+<div id="globaltoc" class="collapse">
+
+</div>
+<form action="search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+  </div>
+</div>
+
+	</div>
+      
+    </div>
+    <div class="push"></div>
+  </div>
+
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+    </p>
+    <p>
+        &copy; Copyright 2020, Xichen Zhou.<br/>
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 3.4.3.<br/>
+    </p>
+  </div>
+</footer>
+  </body>
+</html>

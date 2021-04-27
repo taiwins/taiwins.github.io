@@ -28,15 +28,12 @@ engine output :ref:`More...<details-d4/d04/structtw__engine__output>`
 		int :target:`id<doxid-d4/d04/structtw__engine__output_1ab80df737d74d3a18d0c1ad4549850299>`;
 		int :target:`cloning<doxid-d4/d04/structtw__engine__output_1a7562e3d666ffe4d19fdec3643c93a434>`;
 		struct wl_list :target:`link<doxid-d4/d04/structtw__engine__output_1a1182458c20b5f46fb53616ea51452fa0>`;
-		char :target:`name<doxid-d4/d04/structtw__engine__output_1a2b482b3d60f9d71ce62fd1a5c968996f>`[24];
 		struct :ref:`tw_cursor_constrain<doxid-d5/d5b/structtw__cursor__constrain>` :target:`constrain<doxid-d4/d04/structtw__engine__output_1abfe2470992d2ecddeb373e0de2449a55>`;
 		struct wl_listener :target:`info<doxid-d4/d04/structtw__engine__output_1adf2cbacd892661095ba7173eea7bb520>`;
 		struct wl_listener :target:`set_mode<doxid-d4/d04/structtw__engine__output_1a24d365d37ad699398afc1fabfb8c2246>`;
 		struct wl_listener :target:`destroy<doxid-d4/d04/structtw__engine__output_1a407dcedb762259165c5a7961532c0ca6>`;
 		struct wl_listener :target:`present<doxid-d4/d04/structtw__engine__output_1a99284a369e7eaf444c835e01dcfbe5ef>`;
-		struct wl_listener :target:`surface_enter<doxid-d4/d04/structtw__engine__output_1ad3b86b57e3936bb806f868be264bd7ae>`;
-		struct wl_listener :target:`surface_leave<doxid-d4/d04/structtw__engine__output_1a3f9709a176331fa71fd73560124582b0>`;
-		struct tw_engine_output::@30 :target:`listeners<doxid-d4/d04/structtw__engine__output_1a73f936200d844274f5c421ecabb47e96>`;
+		struct tw_engine_output::@36 :target:`listeners<doxid-d4/d04/structtw__engine__output_1a0bcbf5cfdb612b247dd75c4e38407141>`;
 	};
 .. _details-d4/d04/structtw__engine__output:
 

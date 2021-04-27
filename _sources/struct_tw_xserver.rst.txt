@@ -1,0 +1,64 @@
+.. index:: pair: struct; tw_xserver
+.. _doxid-d1/d7b/structtw__xserver:
+
+struct tw_xserver
+=================
+
+.. toctree::
+	:hidden:
+
+Overview
+~~~~~~~~
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <xwayland.h>
+	
+	struct tw_xserver
+	{
+		// fields
+	
+		struct wl_display* :target:`wl_display<doxid-d1/d7b/structtw__xserver_1abcaf2019f92b20c04820d52f1952602d>`;
+		char :target:`name<doxid-d1/d7b/structtw__xserver_1a28b5d02e7af8a01b1aabeb6086650582>`[16];
+		int :target:`wms<doxid-d1/d7b/structtw__xserver_1a9bccdf15e41f717b655684956228d928>`[2];
+		int :target:`unix_fd<doxid-d1/d7b/structtw__xserver_1a9de73a15aeedf2128d40e043ec92730e>`;
+		int :ref:`abstract_fd<doxid-d1/d7b/structtw__xserver_1ae0fe95b0c897bf2215b0fc830db8daee>`;
+		struct wl_event_source* :target:`unix_source<doxid-d1/d7b/structtw__xserver_1a23ff89460bf67b0b0a4093c74fcde4af>`;
+		struct wl_event_source* :target:`abstract_source<doxid-d1/d7b/structtw__xserver_1a9ac5bd2f36735645b5e767631d79258a>`;
+		int :target:`display<doxid-d1/d7b/structtw__xserver_1a019800341b7463b7acb7f2dfa6de783a>`;
+		pid_t :target:`pid<doxid-d1/d7b/structtw__xserver_1a911510875cddf21562827aeda66bb623>`;
+		struct wl_client* :target:`client<doxid-d1/d7b/structtw__xserver_1a2b92ca52a750d9abdd75304c9b3e283d>`;
+		struct :ref:`tw_subprocess<doxid-d0/d68/structtw__subprocess>` :target:`process<doxid-d1/d7b/structtw__xserver_1a5a7f18b2fe8b1734bdb830849e20d48f>`;
+		struct :ref:`tw_xwm<doxid-d8/d09/structtw__xwm>`* :target:`wm<doxid-d1/d7b/structtw__xserver_1ac052acdfc9cd37541534ac14497ef7a2>`;
+		struct wl_event_source* :target:`sigusr1_source<doxid-d1/d7b/structtw__xserver_1ad30234e1ed1cb0848ac367c62761c65a>`;
+		struct wl_listener :target:`display_destroy<doxid-d1/d7b/structtw__xserver_1ab4da3ec8b335d5885d6c251ba2c54f3d>`;
+		struct wl_listener :target:`client_destroy<doxid-d1/d7b/structtw__xserver_1ab43465c94bf539c616cf1a1147d04b44>`;
+		struct tw_xserver::@75 :target:`listeners<doxid-d1/d7b/structtw__xserver_1ab9b00670fb2750da47fea32e3e2d49fd>`;
+		struct wl_signal :target:`ready<doxid-d1/d7b/structtw__xserver_1a683ac7b3898d7ed1ed7c89d5c406cc07>`;
+		struct wl_signal :target:`destroy<doxid-d1/d7b/structtw__xserver_1a5710bb9bef0158e5a01a1980dbc11858>`;
+		struct tw_xserver::@76 :target:`signals<doxid-d1/d7b/structtw__xserver_1a02077ee436a79f460673698e3773f70f>`;
+	};
+.. _details-d1/d7b/structtw__xserver:
+
+Detailed Documentation
+~~~~~~~~~~~~~~~~~~~~~~
+
+
+
+Fields
+------
+
+.. index:: pair: variable; abstract_fd
+.. _doxid-d1/d7b/structtw__xserver_1ae0fe95b0c897bf2215b0fc830db8daee:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	int abstract_fd
+
+only used by linux
+

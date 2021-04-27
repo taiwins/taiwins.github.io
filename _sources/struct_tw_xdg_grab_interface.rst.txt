@@ -7,9 +7,6 @@ struct tw_xdg_grab_interface
 .. toctree::
 	:hidden:
 
-Overview
-~~~~~~~~
-
 
 
 
@@ -28,28 +25,11 @@ Overview
 		struct wl_listener :target:`view_destroy_listener<doxid-d3/d5c/structtw__xdg__grab__interface_1a65d0603ee2a708a9b852ff88b6a86a6e>`;
 		struct :ref:`tw_xdg_view<doxid-da/d91/structtw__xdg__view>`* :target:`view<doxid-d3/d5c/structtw__xdg__grab__interface_1a7a80af7078b5e6687798a68e0e302a87>`;
 		struct :ref:`tw_xdg<doxid-d7/d84/structtw__xdg>`* :target:`xdg<doxid-d3/d5c/structtw__xdg__grab__interface_1a617868846f25dbc6b3153c2c7fcc4451>`;
-		double :target:`gx<doxid-d3/d5c/structtw__xdg__grab__interface_1a5e0efa2454cc0ccfd173d109c3002a87>`;
-		double :ref:`gy<doxid-d3/d5c/structtw__xdg__grab__interface_1a726335bc9201d5756ad6600ce537295e>`;
+		float :target:`gx<doxid-d3/d5c/structtw__xdg__grab__interface_1a63459f46cd130ee00657d84283fd02e7>`;
+		float :target:`gy<doxid-d3/d5c/structtw__xdg__grab__interface_1a29c0a0a7406b72423224e3427f22fbb3>`;
+		float :target:`dx<doxid-d3/d5c/structtw__xdg__grab__interface_1ab7c44009460939ec8546743e49de85f1>`;
+		float :target:`dy<doxid-d3/d5c/structtw__xdg__grab__interface_1acb8ccd613c60a1c4b80f0cc17feedf34>`;
 		enum wl_shell_surface_resize :target:`edge<doxid-d3/d5c/structtw__xdg__grab__interface_1a9e82e1333e98c13471aa8efa1ab4e114>`;
 		uint32_t :target:`mod_mask<doxid-d3/d5c/structtw__xdg__grab__interface_1ae0dab0059eb4d8b83c3980a894361a55>`;
+		struct wl_event_source* :target:`idle_motion_source<doxid-d3/d5c/structtw__xdg__grab__interface_1a66147dc0df4bfae651e644f2612366bb>`;
 	};
-.. _details-d3/d5c/structtw__xdg__grab__interface:
-
-Detailed Documentation
-~~~~~~~~~~~~~~~~~~~~~~
-
-
-
-Fields
-------
-
-.. index:: pair: variable; gy
-.. _doxid-d3/d5c/structtw__xdg__grab__interface_1a726335bc9201d5756ad6600ce537295e:
-
-.. ref-code-block:: cpp
-	:class: doxyrest-title-code-block
-
-	double gy
-
-surface motion coordinates by events
-

@@ -29,11 +29,11 @@ Overview
 		struct :ref:`tdbus<doxid-db/d60/structtdbus>`* :target:`system_bus<doxid-db/deb/structdesktop__shell_1a0b601cea7aa620a374bbd99e3145e6e0>`;
 		struct :ref:`tdbus<doxid-db/d60/structtdbus>`* :target:`session_bus<doxid-db/deb/structdesktop__shell_1a18dfeec06ec90552c97122fde415d1bb>`;
 		struct :ref:`shell_config<doxid-d0/d95/structshell__config>` :ref:`config<doxid-db/deb/structdesktop__shell_1a01af4064faaa1c205e510c89f2664a79>`;
-		struct nk_wl_backend* :target:`panel_backend<doxid-db/deb/structdesktop__shell_1afa1af775ad6b8222870e44caacacb30d>`;
+		struct :ref:`nk_wl_backend<doxid-d2/d1a/structnk__wl__backend>`* :target:`panel_backend<doxid-db/deb/structdesktop__shell_1afa1af775ad6b8222870e44caacacb30d>`;
 		struct nk_user_font* :target:`icon_font<doxid-db/deb/structdesktop__shell_1aa4d5707a949ad7ceff9392731b54d204>`;
 		char :target:`wallpaper_path<doxid-db/deb/structdesktop__shell_1afce5085ad3640e89fa00fa3f961ef2cb>`[128];
 		size_t :target:`panel_height<doxid-db/deb/structdesktop__shell_1a2cff9ee739c08828f3c594c58e3da6aa>`;
-		struct nk_wl_backend* :target:`widget_backend<doxid-db/deb/structdesktop__shell_1a76d562f161a169be2a0f6ef9db7ec9f6>`;
+		struct :ref:`nk_wl_backend<doxid-d2/d1a/structnk__wl__backend>`* :target:`widget_backend<doxid-db/deb/structdesktop__shell_1a76d562f161a169be2a0f6ef9db7ec9f6>`;
 		struct wl_list :target:`shell_widgets<doxid-db/deb/structdesktop__shell_1a33881a008a296ca6bad50374867c6551>`;
 		struct :ref:`widget_launch_info<doxid-d9/da7/structwidget__launch__info>` :target:`widget_launch<doxid-db/deb/structdesktop__shell_1a37fce1c357988b8af62e53b513af08ca>`;
 		struct taiwins_ui* :target:`transient_ui<doxid-db/deb/structdesktop__shell_1a319f1956efa47a035e2273ba0611e497>`;

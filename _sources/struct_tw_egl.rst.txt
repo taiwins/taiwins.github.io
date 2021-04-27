@@ -23,7 +23,6 @@ struct tw_egl
 		EGLContext :target:`context<doxid-d3/df2/structtw__egl_1a7590c14cf6e5586f15528f4551fc1d4a>`;
 		EGLDisplay :target:`display<doxid-d3/df2/structtw__egl_1a6a299b109b05e55ed7fbb1a6db041620>`;
 		EGLenum :target:`platform<doxid-d3/df2/structtw__egl_1ad3c445ac1daaa7d42f4fe88b8c4ccf39>`;
-		EGLint :target:`surface_type<doxid-d3/df2/structtw__egl_1aced9ead7304914ba4dd0361652c3bdb5>`;
 		EGLConfig :target:`config<doxid-d3/df2/structtw__egl_1a65b23c0effa2f87b84a7ef591aacb558>`;
 		bool :target:`query_buffer_age<doxid-d3/df2/structtw__egl_1a561074b18ba34966eb7f4985caf015fc>`;
 		bool :target:`image_base_khr<doxid-d3/df2/structtw__egl_1ae1da3611103afa0ae891ce5688f433f8>`;

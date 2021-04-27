@@ -1,0 +1,25 @@
+.. index:: pair: struct; tw_xwm_data_source
+.. _doxid-d3/d76/structtw__xwm__data__source:
+
+struct tw_xwm_data_source
+=========================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <selection.h>
+	
+	struct tw_xwm_data_source
+	{
+		// fields
+	
+		struct :ref:`tw_xwm_selection<doxid-d5/df1/structtw__xwm__selection>`* :target:`selection<doxid-d3/d76/structtw__xwm__data__source_1a4983598d23c8c7faa32ed8b1c3ceedd3>`;
+		struct wl_array :target:`mime_types<doxid-d3/d76/structtw__xwm__data__source_1a8adad687e7dfb2e981224b97249168ea>`;
+		struct :ref:`tw_data_source<doxid-dc/d55/structtw__data__source>` :target:`wl_source<doxid-d3/d76/structtw__xwm__data__source_1a1168e0938a2dd6561df5c93d37a0918b>`;
+	};

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <title>struct tw_xsurface &#8212; Taiwins</title>
+  
+  <!-- fix for search function -->
+  <script type="text/javascript" src="_static/language_data.js "></script>
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="_static/bootstrap-sphinx.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/my-style.css" />
+    <link rel="stylesheet" type="text/css" href="_static/doxyrest-pygments.css" />
+    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/target-highlight.js"></script>
+    <link rel="shortcut icon" href="_static/favicon.ico"/>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<script type="text/javascript" src="_static/js/jquery-1.11.0.min.js "></script>
+<script type="text/javascript" src="_static/js/jquery-fix.js "></script>
+<script type="text/javascript" src="_static/bootstrap-3.3.7/js/bootstrap.min.js "></script>
+<script type="text/javascript" src="_static/bootstrap-sphinx.js "></script>
+
+  </head><body>
+  <div class="page-container">
+    
+<!-- taken from bootstrap theme -->
+<div id="navbar" class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">
+        <b>Taiwins</b></a>
+      <span class="navbar-text navbar-version pull-left"><b></b></span>
+    </div>
+
+    <div class="collapse navbar-collapse nav-collapse">
+      <ul class="nav navbar-nav">
+	<li><a href="page_doc.html">Documentation</a></li>
+	<li><a href="https://github.com/taiwins/taiwins">Source Code</a></li>
+	<li><a href="https://github.com/taiwins/taiwins/wiki">Wiki</a></li>
+	<!-- add other pages -->
+      </ul>
+    </div>
+  </div>
+</div>
+
+    <div class="container">
+      
+	<div class="row">
+	  <div class="body col-md-9 content" role="main">
+	    
+  <div class="section" id="struct-tw-xsurface">
+<span id="doxid-d5-db0-structtw-xsurface"></span><span id="index-0"></span><h1>struct tw_xsurface<a class="headerlink" href="#struct-tw-xsurface" title="Permalink to this headline">¶</a></h1>
+<div class="toctree-wrapper compound">
+</div>
+<div class="section" id="overview">
+<h2>Overview<a class="headerlink" href="#overview" title="Permalink to this headline">¶</a></h2>
+<p><a class="reference internal" href="#doxid-d5-db0-structtw-xsurface"><span class="std std-ref">tw_xsurface</span></a> implements a <a class="reference internal" href="struct_tw_desktop_surface.html#doxid-d4-d0f-structtw-desktop-surface"><span class="std std-ref">tw_desktop_surface</span></a> for xcb_window <a class="reference internal" href="#details-d5-db0-structtw-xsurface"><span class="std std-ref">More…</span></a></p>
+<pre class="highlight doxyrest-overview-code-block literal-block"><span></span><span class="cp">#include</span> <span class="cpf">&lt;xsurface.h&gt;</span><span class="cp"></span>
+
+<span class="k">struct</span> <span class="n">tw_xsurface</span>
+<span class="p">{</span>
+    <span class="c1">// fields</span>
+
+    <span class="n">xcb_window_t</span> <span class="doxyrest-code-target target" id="doxid-d5-db0-structtw-xsurface-1ae91d08dc7121a11c500f7395fb23e85e"><span></span><span class="n">id</span></span><span></span><span class="p">;</span>
+    <span class="kt">bool</span> <span class="doxyrest-code-target target" id="doxid-d5-db0-structtw-xsurface-1ae5ddbca78e3bdafc857c479b1850a243"><span></span><span class="n">override_redirect</span></span><span></span><span class="p">;</span>
+    <span class="kt">bool</span> <span class="doxyrest-code-target target" id="doxid-d5-db0-structtw-xsurface-1a6bc955b98a5247bddf6a7fa3ca9a6008"><span></span><span class="n">pending_mapping</span></span><span></span><span class="p">;</span>
+    <span class="kt">bool</span> <span class="doxyrest-code-target target" id="doxid-d5-db0-structtw-xsurface-1ac7a9af61e611041455f98f1c985d2dcd"><span></span><span class="n">has_alpha</span></span><span></span><span class="p">;</span>
+    <span class="kt">bool</span> <span class="doxyrest-code-target target" id="doxid-d5-db0-structtw-xsurface-1a63fd4120fd9bad9e2d9d34acce49e505"><span></span><span class="n">support_delete</span></span><span></span><span class="p">;</span>
+    <span class="kt">bool</span> <span class="doxyrest-code-target target" id="doxid-d5-db0-structtw-xsurface-1a11790ae1bf255bc26312bf3752f0c4a4"><span></span><span class="n">decor_title</span></span><span></span><span class="p">;</span>
+    <span class="kt">bool</span> <span class="doxyrest-code-target target" id="doxid-d5-db0-structtw-xsurface-1a4a566855b62cf74ba539ad0ccacb30ec"><span></span><span class="n">decor_border</span></span><span></span><span class="p">;</span>
+    <span class="kt">pid_t</span> <span class="doxyrest-code-target target" id="doxid-d5-db0-structtw-xsurface-1a8f1f87d225fbb839b5c44e0bb92a58ad"><span></span><span class="n">pid</span></span><span></span><span class="p">;</span>
+    <span class="n">xcb_atom_t</span> <span class="doxyrest-code-target target" id="doxid-d5-db0-structtw-xsurface-1a28b3447e8e2ee3cf494904bb49746b8c"><span></span><span class="n">win_type</span></span><span></span><span class="p">;</span>
+    <span class="kt">int</span> <span class="doxyrest-code-target target" id="doxid-d5-db0-structtw-xsurface-1ae0d5eb52ffa76688b6d4ab795008cea2"><span></span><span class="n">x</span></span><span></span><span class="p">;</span>
+    <span class="kt">int</span> <span class="doxyrest-code-target target" id="doxid-d5-db0-structtw-xsurface-1af8f35c8c6536fee09ab918e1600488af"><span></span><span class="n">y</span></span><span></span><span class="p">;</span>
+    <span class="kt">int</span> <span class="doxyrest-code-target target" id="doxid-d5-db0-structtw-xsurface-1acb4128ee413473d11a4a91b11a807c03"><span></span><span class="n">w</span></span><span></span><span class="p">;</span>
+    <span class="kt">int</span> <span class="doxyrest-code-target target" id="doxid-d5-db0-structtw-xsurface-1a8841f1f109e5cba2dc500ebdd0ebf6e4"><span></span><span class="n">h</span></span><span></span><span class="p">;</span>
+    <span class="kt">uint32_t</span> <span class="doxyrest-code-target target" id="doxid-d5-db0-structtw-xsurface-1a1f423bd57ac9f16e0105432f946889ec"><span></span><span class="n">surface_id</span></span><span></span><span class="p">;</span>
+    <span class="k">struct</span> <a class="reference internal" href="struct_tw_surface.html#doxid-dd-dda-structtw-surface"><span class="std std-ref">tw_surface</span></a><span></span><span class="o">*</span> <span class="doxyrest-code-target target" id="doxid-d5-db0-structtw-xsurface-1a20e303b11682d6991cd4a76f0741a6a7"><span></span><span class="n">surface</span></span><span></span><span class="p">;</span>
+    <span class="k">struct</span> <span class="n">tw_xsurface</span><span class="o">*</span> <span class="doxyrest-code-target target" id="doxid-d5-db0-structtw-xsurface-1aed50975fe7f4c10eb6c35e097a294885"><span></span><span class="n">parent</span></span><span></span><span class="p">;</span>
+    <span class="k">struct</span> <a class="reference internal" href="struct_tw_xwm.html#doxid-d8-d09-structtw-xwm"><span class="std std-ref">tw_xwm</span></a><span></span><span class="o">*</span> <span class="doxyrest-code-target target" id="doxid-d5-db0-structtw-xsurface-1a53186b5dfb2e620708bb5839a68f99c2"><span></span><span class="n">xwm</span></span><span></span><span class="p">;</span>
+    <span class="k">struct</span> <span class="n">wl_list</span> <span class="doxyrest-code-target target" id="doxid-d5-db0-structtw-xsurface-1a2daa7b112713b0aa6de8bd28e888ebfb"><span></span><span class="n">link</span></span><span></span><span class="p">;</span>
+    <span class="k">struct</span> <span class="n">wl_list</span> <span class="doxyrest-code-target target" id="doxid-d5-db0-structtw-xsurface-1aabe816f1e973b37483040c9840e3b9b6"><span></span><span class="n">children</span></span><span></span><span class="p">;</span>
+    <span class="k">struct</span> <span class="n">wl_listener</span> <span class="doxyrest-code-target target" id="doxid-d5-db0-structtw-xsurface-1ae8e4a2808b405ee3b6ac025da6778053"><span></span><span class="n">surface_destroy</span></span><span></span><span class="p">;</span>
+    <span class="k">struct</span> <a class="reference internal" href="struct_tw_desktop_surface.html#doxid-d4-d0f-structtw-desktop-surface"><span class="std std-ref">tw_desktop_surface</span></a><span></span> <span class="doxyrest-code-target target" id="doxid-d5-db0-structtw-xsurface-1a2ad7ee06939d98404e5cd26482a84fd8"><span></span><span class="n">dsurf</span></span><span></span><span class="p">;</span>
+    <span class="k">struct</span> <a class="reference internal" href="struct_tw_subsurface.html#doxid-de-d75-structtw-subsurface"><span class="std std-ref">tw_subsurface</span></a><span></span> <a class="reference internal" href="#doxid-d5-db0-structtw-xsurface-1a81fba2955e0fd43f7e8ad0ec39d1f316"><span class="std std-ref">subsurface</span></a><span></span><span class="p">;</span>
+<span class="p">};</span></pre>
+</div>
+<div class="section" id="detailed-documentation">
+<span id="details-d5-db0-structtw-xsurface"></span><h2>Detailed Documentation<a class="headerlink" href="#detailed-documentation" title="Permalink to this headline">¶</a></h2>
+<p><a class="reference internal" href="#doxid-d5-db0-structtw-xsurface"><span class="std std-ref">tw_xsurface</span></a> implements a <a class="reference internal" href="struct_tw_desktop_surface.html#doxid-d4-d0f-structtw-desktop-surface"><span class="std std-ref">tw_desktop_surface</span></a> for xcb_window</p>
+<p>Xwayland creates new wl_surface for every xcb window by sending a wl_surface id. Here the job is mapping the xcb window logic to the <a class="reference internal" href="struct_tw_desktop_surface.html#doxid-d4-d0f-structtw-desktop-surface"><span class="std std-ref">tw_desktop_surface</span></a> API.</p>
+<p>xcb window would send a MapRequest event for mapping the surface on the window manager, this usually happens before we actually receive the wl_surface id.</p>
+<div class="section" id="fields">
+<h3>Fields<a class="headerlink" href="#fields" title="Permalink to this headline">¶</a></h3>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-d5-db0-structtw-xsurface-1a81fba2955e0fd43f7e8ad0ec39d1f316"><span id="index-1"></span><span></span><span class="k">struct</span> <a class="reference internal" href="struct_tw_subsurface.html#doxid-de-d75-structtw-subsurface"><span class="std std-ref">tw_subsurface</span></a><span></span> <span class="n">subsurface</span></pre>
+<p>used if is subsurface</p>
+</div>
+</div>
+</div>
+
+
+	  </div>
+	  
+<div class="col-md-3">
+  <div id="sidebar" class="bs-sidenav">
+<h3>Content</h3>
+<div id="localtoc"><ul>
+<li><a class="reference internal" href="#">struct tw_xsurface</a><ul>
+<li><a class="reference internal" href="#overview">Overview</a></li>
+<li><a class="reference internal" href="#detailed-documentation">Detailed Documentation</a><ul>
+<li><a class="reference internal" href="#fields">Fields</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<h3><a data-toggle="collapse" href="#globaltoc">Related Pages</a></h3>
+<div id="globaltoc" class="collapse">
+
+</div>
+<form action="search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+  </div>
+</div>
+
+	</div>
+      
+    </div>
+    <div class="push"></div>
+  </div>
+
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+    </p>
+    <p>
+        &copy; Copyright 2020, Xichen Zhou.<br/>
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 3.4.3.<br/>
+    </p>
+  </div>
+</footer>
+  </body>
+</html>

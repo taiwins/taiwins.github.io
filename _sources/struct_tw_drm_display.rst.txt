@@ -25,21 +25,15 @@ Overview
 		struct :ref:`tw_render_output<doxid-dd/d31/structtw__render__output>` :target:`output<doxid-db/db7/structtw__drm__display_1a4b5fddc3ea282e5bb0d872a041106a24>`;
 		struct :ref:`tw_drm_backend<doxid-d7/d87/structtw__drm__backend>`* :target:`drm<doxid-db/db7/structtw__drm__display_1ad5137ecf4750a0d99d89b0e11b1c44b5>`;
 		struct :ref:`tw_drm_gpu<doxid-dc/d3b/structtw__drm__gpu>`* :target:`gpu<doxid-db/db7/structtw__drm__display_1af79efc01f89860e33caa19df2d56a1a6>`;
-		int :target:`conn_id<doxid-db/db7/structtw__drm__display_1a242b7a6a91c1c29266f35470dfa1ce88>`;
 		uint32_t :target:`crtc_mask<doxid-db/db7/structtw__drm__display_1a4e6c62396e18ebc849e07a8636e904de>`;
 		uint32_t :target:`plane_mask<doxid-db/db7/structtw__drm__display_1a178985aa6e52c555bee8869de5b16123>`;
 		uintptr_t :target:`handle<doxid-db/db7/structtw__drm__display_1ae3a3363d48c840206aa9a2abbb37d397>`;
 		struct :ref:`tw_drm_plane<doxid-d4/dca/structtw__drm__plane>`* :ref:`primary_plane<doxid-db/db7/structtw__drm__display_1ab4ad656fd954ed1e3478b8eb11559394>`;
 		struct :ref:`tw_drm_crtc<doxid-da/da9/structtw__drm__crtc>`* :target:`crtc<doxid-db/db7/structtw__drm__display_1a7c1898e4596438e4d33f883109ac6f75>`;
-		bool :target:`connected<doxid-db/db7/structtw__drm__display_1add85dfce623176c2871e0d9ef97267f1>`;
-		bool :target:`active<doxid-db/db7/structtw__drm__display_1a7950d6d76702f359ab73916ee114c2f0>`;
-		bool :target:`annouced<doxid-db/db7/structtw__drm__display_1a2c60df6f8b827abcc0a581739502e14c>`;
-		int :ref:`crtc_id<doxid-db/db7/structtw__drm__display_1a13353ded121f8b4b6f96dfa265934c0b>`;
-		struct :ref:`tw_drm_crtc<doxid-da/da9/structtw__drm__crtc>`* :target:`unset_crtc<doxid-db/db7/structtw__drm__display_1a10ebdc5f6a6acc80956b8ced7d7e0aba>`;
-		drmModeModeInfo :target:`mode<doxid-db/db7/structtw__drm__display_1a5d0791a76840062201cfe0a2541f7ec3>`;
 		struct wl_array :target:`modes<doxid-db/db7/structtw__drm__display_1abef4b6c431628159222be7e2180a9cd3>`;
-		enum :ref:`tw_drm_display_pending_flags<doxid-dc/dc3/backend_2drm_2internal_8h_1a99cd21d72ca1e265e5da23cae278f2e7>` :target:`pending<doxid-db/db7/structtw__drm__display_1a65be8468ad21587401011299807a09de>`;
-		struct tw_drm_display::@51 :target:`status<doxid-db/db7/structtw__drm__display_1a0b09acd44e4db095d5c186013cd10c3c>`;
+		struct :ref:`tw_kms_state<doxid-de/d4e/structtw__kms__state>` now :target:`next<doxid-db/db7/structtw__drm__display_1a7af026ab31964ec9b2499afdbeafc345>`;
+		uint32_t :target:`pending<doxid-db/db7/structtw__drm__display_1abda2b7686895c48579095ec40b13f8aa>`;
+		struct tw_drm_display::@78 :target:`status<doxid-db/db7/structtw__drm__display_1a8c1f563166ea229fe1ac17b5febca688>`;
 		struct :ref:`tw_drm_connector_props<doxid-dc/df9/structtw__drm__connector__props>` :target:`props<doxid-db/db7/structtw__drm__display_1add2f630635c0af55de39bb08b936ba8c>`;
 		struct wl_listener :target:`presentable_commit<doxid-db/db7/structtw__drm__display_1a77dd265e1f2810f2a54b0e312ca52bea>`;
 	};
@@ -62,14 +56,4 @@ Fields
 	struct :ref:`tw_drm_plane<doxid-d4/dca/structtw__drm__plane>`* primary_plane
 
 output has at least one primary plane
-
-.. index:: pair: variable; crtc_id
-.. _doxid-db/db7/structtw__drm__display_1a13353ded121f8b4b6f96dfa265934c0b:
-
-.. ref-code-block:: cpp
-	:class: doxyrest-title-code-block
-
-	int crtc_id
-
-crtc_id read from connector, may not work
 

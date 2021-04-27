@@ -1,0 +1,35 @@
+.. index:: pair: struct; nk_wl_backend
+.. _doxid-d2/d1a/structnk__wl__backend:
+
+struct nk_wl_backend
+====================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <nk_wl_internal.h>
+	
+	struct nk_wl_backend
+	{
+		// fields
+	
+		struct nk_context :target:`ctx<doxid-d2/d1a/structnk__wl__backend_1a43eaabd8e2391ca49577953b9cdc1335>`;
+		struct wl_array :target:`prev_cmds<doxid-d2/d1a/structnk__wl__backend_1aad8127aec0c87aff6cc9c04585b9a35d>`;
+		struct nk_color :target:`main_color<doxid-d2/d1a/structnk__wl__backend_1a21fd5c1d4accbb3bf0f6b216cf76b4b0>`;
+		nk_hash :target:`theme_hash<doxid-d2/d1a/structnk__wl__backend_1a293a0eff93dc837bba99da248afde81f>`;
+		struct wl_list :target:`images<doxid-d2/d1a/structnk__wl__backend_1a75683200125d73edb15a661c7b76d3bb>`;
+		struct wl_list :target:`fonts<doxid-d2/d1a/structnk__wl__backend_1a4cd8021b473aa69faad051671fa4b757>`;
+		struct :ref:`tw_appsurf<doxid-d6/d55/structtw__appsurf>`* :target:`app_surface<doxid-d2/d1a/structnk__wl__backend_1a6d503e2c7a55ed5be4b17bf0c378d0d0>`;
+		:ref:`nk_wl_drawcall_t<doxid-da/df8/nk__backends_8h_1a8fda8a649a22bebf710696494240ea87>` :target:`frame<doxid-d2/d1a/structnk__wl__backend_1a246dc9e775bad3ab5d87d6e62ec5442b>`;
+		char* :target:`internal_clipboard<doxid-d2/d1a/structnk__wl__backend_1a1e8835f9656ce50b0387fde5d4aa5fc1>`;
+		xkb_keysym_t :target:`ckey<doxid-d2/d1a/structnk__wl__backend_1ad9d8d8f387d41e863e32532af2584349>`;
+		int32_t :target:`cbtn<doxid-d2/d1a/structnk__wl__backend_1a1de604eb141fae71d5d2078a88fdd63f>`;
+		uint32_t :target:`sx<doxid-d2/d1a/structnk__wl__backend_1aa6ec0fa2c8f96f10fb95b7d043d840ee>`;
+		uint32_t :target:`sy<doxid-d2/d1a/structnk__wl__backend_1ae7ca6eb1f0273a05d81634a8d22eff12>`;
+	};

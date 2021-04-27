@@ -7,7 +7,10 @@ struct tw_backend
 .. toctree::
 	:hidden:
 
-an abstract interface all types of backend need to do implement
+Overview
+~~~~~~~~
+
+an abstract interface all types of backend need to do implement :ref:`More...<details-df/d59/structtw__backend>`
 
 
 .. ref-code-block:: cpp
@@ -21,14 +24,34 @@ an abstract interface all types of backend need to do implement
 	
 		const struct :ref:`tw_backend_impl<doxid-d0/da7/structtw__backend__impl>`* :target:`impl<doxid-df/d59/structtw__backend_1a2860e8e6f7295ae715fabdfdcf74c824>`;
 		struct :ref:`tw_render_context<doxid-d1/dba/structtw__render__context>`* :target:`ctx<doxid-df/d59/structtw__backend_1a07c37994caccd436d6063cb200771282>`;
-		struct wl_signal :target:`destroy<doxid-df/d59/structtw__backend_1a701c3703ab78853453f6628bda219f0d>`;
 		struct wl_signal :target:`new_input<doxid-df/d59/structtw__backend_1af855b4b084ba299a9c7fb543e9dbe50f>`;
 		struct wl_signal :target:`new_output<doxid-df/d59/structtw__backend_1a423487a43a35e694f7aed4d49048050b>`;
 		struct wl_signal :target:`start<doxid-df/d59/structtw__backend_1a011d973024a1ebd04bd73d7559e6883f>`;
 		struct wl_signal :target:`stop<doxid-df/d59/structtw__backend_1afce563257fddfe9b891a07953a59f53f>`;
-		struct tw_backend::@29 :target:`signals<doxid-df/d59/structtw__backend_1ae437e18824aa1db945e44ab255e808e0>`;
+		struct tw_backend::@35 :target:`signals<doxid-df/d59/structtw__backend_1a6ffa602ae2d0f36a2d43a242b5c09c8f>`;
 		struct wl_list :target:`inputs<doxid-df/d59/structtw__backend_1acce0cd4e14768a49340cfdbce29ea52e>`;
 		struct wl_list :target:`outputs<doxid-df/d59/structtw__backend_1ae7353fa34bcc6a9f23a82de69bbc35ed>`;
 		bool :target:`started<doxid-df/d59/structtw__backend_1a6348aa21f114631ad6bbfb567427a096>`;
+		bool :ref:`preparing<doxid-df/d59/structtw__backend_1a106a818f33a068af8b212e5c8929a0d3>`;
 		struct wl_listener :target:`render_context_destroy<doxid-df/d59/structtw__backend_1a106e4b4f51972f79e4b8420fc4cd6fd7>`;
 	};
+.. _details-df/d59/structtw__backend:
+
+Detailed Documentation
+~~~~~~~~~~~~~~~~~~~~~~
+
+an abstract interface all types of backend need to do implement
+
+Fields
+------
+
+.. index:: pair: variable; preparing
+.. _doxid-df/d59/structtw__backend_1a106a818f33a068af8b212e5c8929a0d3:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	bool preparing
+
+preparing indicates we are in tw_backend_start
+

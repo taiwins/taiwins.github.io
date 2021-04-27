@@ -7,6 +7,8 @@
     
     <title>struct tw_output_device &#8212; Taiwins</title>
   
+  <!-- fix for search function -->
+  <script type="text/javascript" src="_static/language_data.js "></script>
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="_static/bootstrap-sphinx.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="_static/my-style.css" />
@@ -19,8 +21,6 @@
     <link rel="shortcut icon" href="_static/favicon.ico"/>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="struct tw_output_device_impl" href="struct_tw_output_device_impl.html" />
-    <link rel="prev" title="struct tw_output" href="struct_tw_output.html" />
 <meta charset='utf-8'>
 <meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
 <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
@@ -90,13 +90,12 @@
     <span class="k">const</span> <span class="k">struct</span> <a class="reference internal" href="struct_tw_output_device_impl.html#doxid-d4-d98-structtw-output-device-impl"><span class="std std-ref">tw_output_device_impl</span></a><span></span><span class="o">*</span> <span class="doxyrest-code-target target" id="doxid-db-db1-structtw-output-device-1ab816be4e8bd270caf2e8556f6a8c203e"><span></span><span class="n">impl</span></span><span></span><span class="p">;</span>
     <span class="k">struct</span> <span class="n">wl_list</span> <span class="doxyrest-code-target target" id="doxid-db-db1-structtw-output-device-1a2084c2a60daa6a907393b968e5f8618b"><span></span><span class="n">link</span></span><span></span><span class="p">;</span>
     <span class="k">struct</span> <span class="n">wl_list</span> <a class="reference internal" href="#doxid-db-db1-structtw-output-device-1a5990a36b676ca5c9330aa3256d8be5e9"><span class="std std-ref">mode_list</span></a><span></span><span class="p">;</span>
-    <span class="k">struct</span> <a class="reference internal" href="struct_tw_output_device_state.html#doxid-d0-d90-structtw-output-device-state"><span class="std std-ref">tw_output_device_state</span></a><span></span> <span class="n">state</span> <span class="doxyrest-code-target target" id="doxid-db-db1-structtw-output-device-1a855ff5ca0209627de939b454d26cfecc"><span></span><span class="n">pending</span></span><span></span><span class="p">;</span>
+    <span class="k">struct</span> <a class="reference internal" href="struct_tw_output_device_state.html#doxid-d0-d90-structtw-output-device-state"><span class="std std-ref">tw_output_device_state</span></a><span></span> <span class="n">current</span> <span class="doxyrest-code-target target" id="doxid-db-db1-structtw-output-device-1a8962d374118317870faca80c169d4a77"><span></span><span class="n">pending</span></span><span></span><span class="p">;</span>
     <span class="k">struct</span> <span class="n">wl_signal</span> <span class="doxyrest-code-target target" id="doxid-db-db1-structtw-output-device-1a0c81b11f3aad2ba50bd55ff4c6499fd9"><span></span><span class="n">destroy</span></span><span></span><span class="p">;</span>
-    <span class="k">struct</span> <span class="n">wl_signal</span> <a class="reference internal" href="#doxid-db-db1-structtw-output-device-1a735c567c820e659a3ead32ad861d7a5d"><span class="std std-ref">new_frame</span></a><span></span><span class="p">;</span>
-    <span class="k">struct</span> <span class="n">wl_signal</span> <a class="reference internal" href="#doxid-db-db1-structtw-output-device-1a9b4a5e02e540e3de1d38c870e55d6e81"><span class="std std-ref">present</span></a><span></span><span class="p">;</span>
     <span class="k">struct</span> <span class="n">wl_signal</span> <a class="reference internal" href="#doxid-db-db1-structtw-output-device-1a837c289c5620ce0b7d119afac43edc50"><span class="std std-ref">info</span></a><span></span><span class="p">;</span>
     <span class="k">struct</span> <span class="n">wl_signal</span> <a class="reference internal" href="#doxid-db-db1-structtw-output-device-1aa45dcc0f88e210d3b76274f7f29cd603"><span class="std std-ref">commit_state</span></a><span></span><span class="p">;</span>
-    <span class="k">struct</span> <span class="n">tw_output_device</span><span class="o">::</span><span class="err">@</span><span class="mi">42</span> <span class="doxyrest-code-target target" id="doxid-db-db1-structtw-output-device-1a3616d6365af4a34938cf187b85f056dc"><span></span><span class="n">signals</span></span><span></span><span class="p">;</span>
+    <span class="k">struct</span> <span class="n">wl_signal</span> <a class="reference internal" href="#doxid-db-db1-structtw-output-device-1add6aa6e0c27a380f862ef69f0ce24a6f"><span class="std std-ref">clock_reset</span></a><span></span><span class="p">;</span>
+    <span class="k">struct</span> <span class="n">tw_output_device</span><span class="o">::</span><span class="err">@</span><span class="mi">66</span> <span class="doxyrest-code-target target" id="doxid-db-db1-structtw-output-device-1a7562c4b67f23a5cf5b936b19d96cb843"><span></span><span class="n">signals</span></span><span></span><span class="p">;</span>
 <span class="p">};</span></pre>
 </div>
 <div class="section" id="detailed-documentation">
@@ -110,17 +109,15 @@
 <pre class="highlight doxyrest-title-code-block literal-block" id="doxid-db-db1-structtw-output-device-1ae391a2683f6964f58c4f819ee95a0251"><span id="index-1"></span><span></span><span class="kt">clockid_t</span> <span class="n">clk_id</span></pre>
 <p>the clock driving this output</p>
 <pre class="highlight doxyrest-title-code-block literal-block" id="doxid-db-db1-structtw-output-device-1a68311a4fe82f6ab1c4f2bdd801c149f7"><span id="index-2"></span><span></span><span class="kt">void</span><span class="o">*</span> <span class="n">native_window</span></pre>
-<p>a native window for different backend, could be none Do I need to include render_surface here</p>
+<p>a native window for different backend, could be none</p>
 <pre class="highlight doxyrest-title-code-block literal-block" id="doxid-db-db1-structtw-output-device-1a5990a36b676ca5c9330aa3256d8be5e9"><span id="index-3"></span><span></span><span class="k">struct</span> <span class="n">wl_list</span> <span class="n">mode_list</span></pre>
 <p>backend: list</p>
-<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-db-db1-structtw-output-device-1a735c567c820e659a3ead32ad861d7a5d"><span id="index-4"></span><span></span><span class="k">struct</span> <span class="n">wl_signal</span> <span class="n">new_frame</span></pre>
-<p>new frame requested</p>
-<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-db-db1-structtw-output-device-1a9b4a5e02e540e3de1d38c870e55d6e81"><span id="index-5"></span><span></span><span class="k">struct</span> <span class="n">wl_signal</span> <span class="n">present</span></pre>
-<p>new frame just presented on the output</p>
-<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-db-db1-structtw-output-device-1a837c289c5620ce0b7d119afac43edc50"><span id="index-6"></span><span></span><span class="k">struct</span> <span class="n">wl_signal</span> <span class="n">info</span></pre>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-db-db1-structtw-output-device-1a837c289c5620ce0b7d119afac43edc50"><span id="index-4"></span><span></span><span class="k">struct</span> <span class="n">wl_signal</span> <span class="n">info</span></pre>
 <p>emit when general wl_output information is available, or when output state changed</p>
-<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-db-db1-structtw-output-device-1aa45dcc0f88e210d3b76274f7f29cd603"><span id="index-7"></span><span></span><span class="k">struct</span> <span class="n">wl_signal</span> <span class="n">commit_state</span></pre>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-db-db1-structtw-output-device-1aa45dcc0f88e210d3b76274f7f29cd603"><span id="index-5"></span><span></span><span class="k">struct</span> <span class="n">wl_signal</span> <span class="n">commit_state</span></pre>
 <p>emit right after applying pending state, backend could listen on this for applying the states to the hardware</p>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-db-db1-structtw-output-device-1add6aa6e0c27a380f862ef69f0ce24a6f"><span id="index-6"></span><span></span><span class="k">struct</span> <span class="n">wl_signal</span> <span class="n">clock_reset</span></pre>
+<p>emit on clock need to reset for output device.</p>
 </div>
 </div>
 </div>
@@ -144,22 +141,6 @@
 </div>
 <h3><a data-toggle="collapse" href="#globaltoc">Related Pages</a></h3>
 <div id="globaltoc" class="collapse">
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="page_md__home_developer_Projects_web_taiwins_taiwins_CONTRIBUTING.html">Contributing to Taiwins</a></li>
-<li class="toctree-l1"><a class="reference internal" href="page_md__home_developer_Projects_web_taiwins_taiwins_docs_dbus.html">D-Bus API Quick Reference</a></li>
-<li class="toctree-l1"><a class="reference internal" href="page_md__home_developer_Projects_web_taiwins_taiwins_docs_libtaiwins.html">For libtaiwins users</a></li>
-<li class="toctree-l1"><a class="reference internal" href="page_md__home_developer_Projects_web_taiwins_taiwins_docs_lua.html">Lua bindings</a></li>
-<li class="toctree-l1"><a class="reference internal" href="page_md__home_developer_Projects_web_taiwins_taiwins_docs_progress.html">Progress and feature track</a></li>
-<li class="toctree-l1"><a class="reference internal" href="page_md__home_developer_Projects_web_taiwins_taiwins_docs_screenshots.html">Taiwins in tiling mode</a></li>
-<li class="toctree-l1"><a class="reference internal" href="page_md__home_developer_Projects_web_taiwins_taiwins_docs_window_management.html">Taiwins layout engine.</a></li>
-<li class="toctree-l1"><a class="reference internal" href="page_md__home_developer_Projects_web_taiwins_taiwins_README.html">Taiwins, a modern wayland window manager</a></li>
-<li class="toctree-l1"><a class="reference internal" href="page_md__home_developer_Projects_web_taiwins_taiwins_docs_libtwclient.html">Twclient quick reference</a></li>
-<li class="toctree-l1"><a class="reference internal" href="page_md__home_developer_Projects_web_taiwins_taiwins_docs_twobjects.html">Twobjects quick reference</a></li>
-<li class="toctree-l1"><a class="reference internal" href="page_md__home_developer_Projects_web_taiwins_taiwins_docs_wayland.html">wayland</a></li>
-</ul>
-<ul class="current">
-<li class="toctree-l1 current"><a class="reference internal" href="global.html">Global Namespace</a></li>
-</ul>
 
 </div>
 <form action="search.html" method="get">

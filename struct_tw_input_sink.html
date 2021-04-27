@@ -7,6 +7,8 @@
     
     <title>struct tw_input_sink &#8212; Taiwins</title>
   
+  <!-- fix for search function -->
+  <script type="text/javascript" src="_static/language_data.js "></script>
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="_static/bootstrap-sphinx.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="_static/my-style.css" />
@@ -19,8 +21,6 @@
     <link rel="shortcut icon" href="_static/favicon.ico"/>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="struct tw_input_source" href="struct_tw_input_source.html" />
-    <link rel="prev" title="struct tw_input_device_impl" href="struct_tw_input_device_impl.html" />
 <meta charset='utf-8'>
 <meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
 <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
@@ -81,7 +81,7 @@
     <span class="k">struct</span> <span class="n">wl_listener</span> <span class="doxyrest-code-target target" id="doxid-da-d91-structtw-input-sink-1add7a194bfb069646d49d712bca3a9490"><span></span><span class="n">key</span></span><span></span><span class="p">;</span>
     <span class="k">struct</span> <span class="n">wl_listener</span> <span class="doxyrest-code-target target" id="doxid-da-d91-structtw-input-sink-1aed78bcf8949a7bf258e8e4954b48c21d"><span></span><span class="n">modifiers</span></span><span></span><span class="p">;</span>
     <span class="k">struct</span> <span class="n">wl_listener</span> <span class="doxyrest-code-target target" id="doxid-da-d91-structtw-input-sink-1a04541cd6878e732ad85ef116b6eabeb2"><span></span><span class="n">keymap</span></span><span></span><span class="p">;</span>
-    <span class="k">struct</span> <span class="n">tw_input_sink</span><span class="o">::</span><span class="err">@</span><span class="mi">36</span> <a class="reference internal" href="#doxid-da-d91-structtw-input-sink-1aca68a9a01962f9fdff8a0d8831a523f1"><span class="std std-ref">keyboard</span></a><span></span><span class="p">;</span>
+    <span class="k">struct</span> <span class="n">tw_input_sink</span><span class="o">::</span><span class="err">@</span><span class="mi">43</span> <a class="reference internal" href="#doxid-da-d91-structtw-input-sink-1a83149af60aa4eb5ab9c21f32a5fcf0e4"><span class="std std-ref">keyboard</span></a><span></span><span class="p">;</span>
     <span class="k">struct</span> <span class="n">wl_listener</span> <span class="doxyrest-code-target target" id="doxid-da-d91-structtw-input-sink-1a5b33375b4b02dfe0aac4aa18610020f3"><span></span><span class="n">motion</span></span><span></span><span class="p">;</span>
     <span class="k">struct</span> <span class="n">wl_listener</span> <span class="doxyrest-code-target target" id="doxid-da-d91-structtw-input-sink-1a8b8b3da5bf1a38730d75a650b54e013b"><span></span><span class="n">motion_absolute</span></span><span></span><span class="p">;</span>
     <span class="k">struct</span> <span class="n">wl_listener</span> <span class="doxyrest-code-target target" id="doxid-da-d91-structtw-input-sink-1a1569afc38a07e741b565a27836dddcd7"><span></span><span class="n">button</span></span><span></span><span class="p">;</span>
@@ -93,11 +93,11 @@
     <span class="k">struct</span> <span class="n">wl_listener</span> <span class="doxyrest-code-target target" id="doxid-da-d91-structtw-input-sink-1a0cd0cc9c27cedc63ad4d0379b694fdf3"><span></span><span class="n">pinch_begin</span></span><span></span><span class="p">;</span>
     <span class="k">struct</span> <span class="n">wl_listener</span> <span class="doxyrest-code-target target" id="doxid-da-d91-structtw-input-sink-1af5f801abf84975aa67175fada614651d"><span></span><span class="n">pinch_update</span></span><span></span><span class="p">;</span>
     <span class="k">struct</span> <span class="n">wl_listener</span> <span class="doxyrest-code-target target" id="doxid-da-d91-structtw-input-sink-1a1bed0519e2bd4929a5b714f9aeed8d3f"><span></span><span class="n">pinch_end</span></span><span></span><span class="p">;</span>
-    <span class="k">struct</span> <span class="n">tw_input_sink</span><span class="o">::</span><span class="err">@</span><span class="mi">37</span> <span class="doxyrest-code-target target" id="doxid-da-d91-structtw-input-sink-1a6949c2380e8b78406d7536af750e956e"><span></span><span class="n">pointer</span></span><span></span><span class="p">;</span>
+    <span class="k">struct</span> <span class="n">tw_input_sink</span><span class="o">::</span><span class="err">@</span><span class="mi">44</span> <span class="doxyrest-code-target target" id="doxid-da-d91-structtw-input-sink-1a61543a31f263f24835c91f2c3398d374"><span></span><span class="n">pointer</span></span><span></span><span class="p">;</span>
     <span class="k">struct</span> <span class="n">wl_listener</span> <span class="doxyrest-code-target target" id="doxid-da-d91-structtw-input-sink-1a4349437024ab15945830b360da6ad64f"><span></span><span class="n">down</span></span><span></span><span class="p">;</span>
     <span class="k">struct</span> <span class="n">wl_listener</span> <span class="doxyrest-code-target target" id="doxid-da-d91-structtw-input-sink-1a6af566fe6112199fe0e43e1ecf0fd9e1"><span></span><span class="n">up</span></span><span></span><span class="p">;</span>
     <span class="k">struct</span> <span class="n">wl_listener</span> <span class="doxyrest-code-target target" id="doxid-da-d91-structtw-input-sink-1a4c40d3ec8b50da7a9c305700767839f0"><span></span><span class="n">cancel</span></span><span></span><span class="p">;</span>
-    <span class="k">struct</span> <span class="n">tw_input_sink</span><span class="o">::</span><span class="err">@</span><span class="mi">38</span> <span class="doxyrest-code-target target" id="doxid-da-d91-structtw-input-sink-1a94fc3ba0d9639a02d10c04b0096d9b25"><span></span><span class="n">touch</span></span><span></span><span class="p">;</span>
+    <span class="k">struct</span> <span class="n">tw_input_sink</span><span class="o">::</span><span class="err">@</span><span class="mi">45</span> <span class="doxyrest-code-target target" id="doxid-da-d91-structtw-input-sink-1af568423a27bf9a3326f58b063e4249f1"><span></span><span class="n">touch</span></span><span></span><span class="p">;</span>
 <span class="p">};</span></pre>
 </div>
 <div class="section" id="detailed-documentation">
@@ -105,7 +105,7 @@
 <p>this struct mirrors the <a class="reference internal" href="struct_tw_input_source.html#doxid-d4-df6-structtw-input-source"><span class="std std-ref">tw_input_source</span></a> for the listener side.</p>
 <div class="section" id="fields">
 <h3>Fields<a class="headerlink" href="#fields" title="Permalink to this headline">¶</a></h3>
-<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-da-d91-structtw-input-sink-1aca68a9a01962f9fdff8a0d8831a523f1"><span id="index-1"></span><span></span><span class="n">unnamed</span><span class="o">-</span><span class="k">struct</span> <span class="n">keyboard</span></pre>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-da-d91-structtw-input-sink-1a83149af60aa4eb5ab9c21f32a5fcf0e4"><span id="index-1"></span><span></span><span class="n">unnamed</span><span class="o">-</span><span class="k">struct</span> <span class="n">keyboard</span></pre>
 <p>device remove</p>
 </div>
 </div>
@@ -130,22 +130,6 @@
 </div>
 <h3><a data-toggle="collapse" href="#globaltoc">Related Pages</a></h3>
 <div id="globaltoc" class="collapse">
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="page_md__home_developer_Projects_web_taiwins_taiwins_CONTRIBUTING.html">Contributing to Taiwins</a></li>
-<li class="toctree-l1"><a class="reference internal" href="page_md__home_developer_Projects_web_taiwins_taiwins_docs_dbus.html">D-Bus API Quick Reference</a></li>
-<li class="toctree-l1"><a class="reference internal" href="page_md__home_developer_Projects_web_taiwins_taiwins_docs_libtaiwins.html">For libtaiwins users</a></li>
-<li class="toctree-l1"><a class="reference internal" href="page_md__home_developer_Projects_web_taiwins_taiwins_docs_lua.html">Lua bindings</a></li>
-<li class="toctree-l1"><a class="reference internal" href="page_md__home_developer_Projects_web_taiwins_taiwins_docs_progress.html">Progress and feature track</a></li>
-<li class="toctree-l1"><a class="reference internal" href="page_md__home_developer_Projects_web_taiwins_taiwins_docs_screenshots.html">Taiwins in tiling mode</a></li>
-<li class="toctree-l1"><a class="reference internal" href="page_md__home_developer_Projects_web_taiwins_taiwins_docs_window_management.html">Taiwins layout engine.</a></li>
-<li class="toctree-l1"><a class="reference internal" href="page_md__home_developer_Projects_web_taiwins_taiwins_README.html">Taiwins, a modern wayland window manager</a></li>
-<li class="toctree-l1"><a class="reference internal" href="page_md__home_developer_Projects_web_taiwins_taiwins_docs_libtwclient.html">Twclient quick reference</a></li>
-<li class="toctree-l1"><a class="reference internal" href="page_md__home_developer_Projects_web_taiwins_taiwins_docs_twobjects.html">Twobjects quick reference</a></li>
-<li class="toctree-l1"><a class="reference internal" href="page_md__home_developer_Projects_web_taiwins_taiwins_docs_wayland.html">wayland</a></li>
-</ul>
-<ul class="current">
-<li class="toctree-l1 current"><a class="reference internal" href="global.html">Global Namespace</a></li>
-</ul>
 
 </div>
 <form action="search.html" method="get">

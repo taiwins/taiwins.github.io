@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <title>struct tw_xwm_atoms &#8212; Taiwins</title>
+  
+  <!-- fix for search function -->
+  <script type="text/javascript" src="_static/language_data.js "></script>
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="_static/bootstrap-sphinx.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/my-style.css" />
+    <link rel="stylesheet" type="text/css" href="_static/doxyrest-pygments.css" />
+    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/target-highlight.js"></script>
+    <link rel="shortcut icon" href="_static/favicon.ico"/>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<script type="text/javascript" src="_static/js/jquery-1.11.0.min.js "></script>
+<script type="text/javascript" src="_static/js/jquery-fix.js "></script>
+<script type="text/javascript" src="_static/bootstrap-3.3.7/js/bootstrap.min.js "></script>
+<script type="text/javascript" src="_static/bootstrap-sphinx.js "></script>
+
+  </head><body>
+  <div class="page-container">
+    
+<!-- taken from bootstrap theme -->
+<div id="navbar" class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">
+        <b>Taiwins</b></a>
+      <span class="navbar-text navbar-version pull-left"><b></b></span>
+    </div>
+
+    <div class="collapse navbar-collapse nav-collapse">
+      <ul class="nav navbar-nav">
+	<li><a href="page_doc.html">Documentation</a></li>
+	<li><a href="https://github.com/taiwins/taiwins">Source Code</a></li>
+	<li><a href="https://github.com/taiwins/taiwins/wiki">Wiki</a></li>
+	<!-- add other pages -->
+      </ul>
+    </div>
+  </div>
+</div>
+
+    <div class="container">
+      
+	<div class="row">
+	  <div class="body col-md-9 content" role="main">
+	    
+  <div class="section" id="struct-tw-xwm-atoms">
+<span id="doxid-d3-d23-structtw-xwm-atoms"></span><span id="index-0"></span><h1>struct tw_xwm_atoms<a class="headerlink" href="#struct-tw-xwm-atoms" title="Permalink to this headline">¶</a></h1>
+<div class="toctree-wrapper compound">
+</div>
+<pre class="highlight doxyrest-overview-code-block literal-block"><span></span><span class="cp">#include</span> <span class="cpf">&lt;atoms.h&gt;</span><span class="cp"></span>
+
+<span class="k">struct</span> <span class="n">tw_xwm_atoms</span>
+<span class="p">{</span>
+    <span class="c1">// fields</span>
+
+    <span class="n">xcb_atom_t</span> <span class="doxyrest-code-target target" id="doxid-d3-d23-structtw-xwm-atoms-1aa412461fb0d09620745461db797307cb"><span></span><span class="n">wm_protocols</span></span><span></span><span class="p">;</span>
+    <span class="n">xcb_atom_t</span> <span class="doxyrest-code-target target" id="doxid-d3-d23-structtw-xwm-atoms-1ab5786667b020488e0b3716c0eff1c363"><span></span><span class="n">wm_normal_hints</span></span><span></span><span class="p">;</span>
+    <span class="n">xcb_atom_t</span> <span class="doxyrest-code-target target" id="doxid-d3-d23-structtw-xwm-atoms-1a24d1ea0d4da3da984decabb3c0a15713"><span></span><span class="n">wm_take_focus</span></span><span></span><span class="p">;</span>
+    <span class="n">xcb_atom_t</span> <span class="doxyrest-code-target target" id="doxid-d3-d23-structtw-xwm-atoms-1aa32bdd8bea1785c4052e215ebe98ca25"><span></span><span class="n">wm_delete_window</span></span><span></span><span class="p">;</span>
+    <span class="n">xcb_atom_t</span> <span class="doxyrest-code-target target" id="doxid-d3-d23-structtw-xwm-atoms-1a20a1665d1b7dd90e5f496a134af600a8"><span></span><span class="n">wm_state</span></span><span></span><span class="p">;</span>
+    <span class="n">xcb_atom_t</span> <span class="doxyrest-code-target target" id="doxid-d3-d23-structtw-xwm-atoms-1a1595c9c2fe372e4f812a5cff6fe149c5"><span></span><span class="n">wm_s0</span></span><span></span><span class="p">;</span>
+    <span class="n">xcb_atom_t</span> <span class="doxyrest-code-target target" id="doxid-d3-d23-structtw-xwm-atoms-1a961cc64c17e6eb6e0792b84acde19c00"><span></span><span class="n">wm_client_machine</span></span><span></span><span class="p">;</span>
+    <span class="n">xcb_atom_t</span> <span class="doxyrest-code-target target" id="doxid-d3-d23-structtw-xwm-atoms-1a2b3463a3fc26b7967921049732d43ea2"><span></span><span class="n">net_wm_cm_s0</span></span><span></span><span class="p">;</span>
+    <span class="n">xcb_atom_t</span> <span class="doxyrest-code-target target" id="doxid-d3-d23-structtw-xwm-atoms-1a0564af1c2dec526217ddcef5446dea5a"><span></span><span class="n">net_wm_name</span></span><span></span><span class="p">;</span>
+    <span class="n">xcb_atom_t</span> <span class="doxyrest-code-target target" id="doxid-d3-d23-structtw-xwm-atoms-1a6a1160c2aab0e483b170e7052f490a99"><span></span><span class="n">net_wm_pid</span></span><span></span><span class="p">;</span>
+    <span class="n">xcb_atom_t</span> <span class="doxyrest-code-target target" id="doxid-d3-d23-structtw-xwm-atoms-1a87e00f33998c1bdb85a8c4189aa09749"><span></span><span class="n">net_wm_icon</span></span><span></span><span class="p">;</span>
+    <span class="n">xcb_atom_t</span> <span class="doxyrest-code-target target" id="doxid-d3-d23-structtw-xwm-atoms-1ac88bec572f90ac8aee741418c1a4d058"><span></span><span class="n">net_wm_state</span></span><span></span><span class="p">;</span>
+    <span class="n">xcb_atom_t</span> <span class="doxyrest-code-target target" id="doxid-d3-d23-structtw-xwm-atoms-1a283d04ee3280191f356df0429f17e736"><span></span><span class="n">net_wm_state_maximized_vert</span></span><span></span><span class="p">;</span>
+    <span class="n">xcb_atom_t</span> <span class="doxyrest-code-target target" id="doxid-d3-d23-structtw-xwm-atoms-1a10a00c0b4e8c6f57385810c97d110dec"><span></span><span class="n">net_wm_state_maximized_horz</span></span><span></span><span class="p">;</span>
+    <span class="n">xcb_atom_t</span> <span class="doxyrest-code-target target" id="doxid-d3-d23-structtw-xwm-atoms-1a799aadde6d433de1c070c944151daf47"><span></span><span class="n">net_wm_state_fullscreen</span></span><span></span><span class="p">;</span>
+    <span class="n">xcb_atom_t</span> <span class="doxyrest-code-target target" id="doxid-d3-d23-structtw-xwm-atoms-1a87652d81437f773b3eb3a638909770ed"><span></span><span class="n">net_wm_state_focused</span></span><span></span><span class="p">;</span>
+    <span class="n">xcb_atom_t</span> <span class="doxyrest-code-target target" id="doxid-d3-d23-structtw-xwm-atoms-1a9ca52ad030ce9cb0a98ea2fc129f19c8"><span></span><span class="n">net_wm_state_hidden</span></span><span></span><span class="p">;</span>
+    <span class="n">xcb_atom_t</span> <span class="doxyrest-code-target target" id="doxid-d3-d23-structtw-xwm-atoms-1a0e52e9c62debf4b44993c08056d8f4fb"><span></span><span class="n">net_wm_user_time</span></span><span></span><span class="p">;</span>
+    <span class="n">xcb_atom_t</span> <span class="doxyrest-code-target target" id="doxid-d3-d23-structtw-xwm-atoms-1a76e165642fc2604a4de50ba9cb07b67f"><span></span><span class="n">net_wm_icon_name</span></span><span></span><span class="p">;</span>
+    <span class="n">xcb_atom_t</span> <span class="doxyrest-code-target target" id="doxid-d3-d23-structtw-xwm-atoms-1adc033493bc4e57baae9c40eb8d5883af"><span></span><span class="n">net_wm_desktop</span></span><span></span><span class="p">;</span>
+    <span class="n">xcb_atom_t</span> <span class="doxyrest-code-target target" id="doxid-d3-d23-structtw-xwm-atoms-1acca0884a45f34a888d64ee231bd4557f"><span></span><span class="n">net_wm_window_type</span></span><span></span><span class="p">;</span>
+    <span class="n">xcb_atom_t</span> <span class="doxyrest-code-target target" id="doxid-d3-d23-structtw-xwm-atoms-1aba1e246ecd53e6e79d08167a26f043d5"><span></span><span class="n">net_wm_window_type_desktop</span></span><span></span><span class="p">;</span>
+    <span class="n">xcb_atom_t</span> <span class="doxyrest-code-target target" id="doxid-d3-d23-structtw-xwm-atoms-1a3d63bc9b7f1fcce5ec3a75ce132648f6"><span></span><span class="n">net_wm_window_type_dock</span></span><span></span><span class="p">;</span>
+    <span class="n">xcb_atom_t</span> <span class="doxyrest-code-target target" id="doxid-d3-d23-structtw-xwm-atoms-1ac47446882aa5c8fbc7192773c603bf28"><span></span><span class="n">net_wm_window_type_toolbar</span></span><span></span><span class="p">;</span>
+    <span class="n">xcb_atom_t</span> <span class="doxyrest-code-target target" id="doxid-d3-d23-structtw-xwm-atoms-1a8571ba6567b2865b0cd0caf25faf8c7d"><span></span><span class="n">net_wm_window_type_menu</span></span><span></span><span class="p">;</span>
+    <span class="n">xcb_atom_t</span> <span class="doxyrest-code-target target" id="doxid-d3-d23-structtw-xwm-atoms-1a7f50e6f320e9809a4162d6867fae7fb9"><span></span><span class="n">net_wm_window_type_utility</span></span><span></span><span class="p">;</span>
+    <span class="n">xcb_atom_t</span> <span class="doxyrest-code-target target" id="doxid-d3-d23-structtw-xwm-atoms-1add088d356e7714643e2105065035e1df"><span></span><span class="n">net_wm_window_type_splash</span></span><span></span><span class="p">;</span>
+    <span class="n">xcb_atom_t</span> <span class="doxyrest-code-target target" id="doxid-d3-d23-structtw-xwm-atoms-1a3f7a50e67b2d2a831569fe70a81d1b18"><span></span><span class="n">net_wm_window_type_dialog</span></span><span></span><span class="p">;</span>
+    <span class="n">xcb_atom_t</span> <span class="doxyrest-code-target target" id="doxid-d3-d23-structtw-xwm-atoms-1a500fc7773076cfcf0fec4d821cc18095"><span></span><span class="n">net_wm_window_type_dropdown</span></span><span></span><span class="p">;</span>
+    <span class="n">xcb_atom_t</span> <span class="doxyrest-code-target target" id="doxid-d3-d23-structtw-xwm-atoms-1a181d007292c3f571f07c76cc3e220e06"><span></span><span class="n">net_wm_window_type_popup</span></span><span></span><span class="p">;</span>
+    <span class="n">xcb_atom_t</span> <span class="doxyrest-code-target target" id="doxid-d3-d23-structtw-xwm-atoms-1a094f510369959dc4f0033af7592d41cb"><span></span><span class="n">net_wm_window_type_tooltip</span></span><span></span><span class="p">;</span>
+    <span class="n">xcb_atom_t</span> <span class="doxyrest-code-target target" id="doxid-d3-d23-structtw-xwm-atoms-1ae8792821fbe72402646cbd6e8b4dd571"><span></span><span class="n">net_wm_window_type_notification</span></span><span></span><span class="p">;</span>
+    <span class="n">xcb_atom_t</span> <span class="doxyrest-code-target target" id="doxid-d3-d23-structtw-xwm-atoms-1a7a08975f5d60f30fb91c10080a89798f"><span></span><span class="n">net_wm_window_type_combo</span></span><span></span><span class="p">;</span>
+    <span class="n">xcb_atom_t</span> <span class="doxyrest-code-target target" id="doxid-d3-d23-structtw-xwm-atoms-1a1422d116a5f6008eb98f5f5be928bd67"><span></span><span class="n">net_wm_window_type_dnd</span></span><span></span><span class="p">;</span>
+    <span class="n">xcb_atom_t</span> <span class="doxyrest-code-target target" id="doxid-d3-d23-structtw-xwm-atoms-1ad9291f2004621b27a0b1af1b08a43186"><span></span><span class="n">net_wm_window_type_normal</span></span><span></span><span class="p">;</span>
+    <span class="n">xcb_atom_t</span> <span class="doxyrest-code-target target" id="doxid-d3-d23-structtw-xwm-atoms-1aef4cac28acccfed8fbf796317ac04a43"><span></span><span class="n">net_wm_moveresize</span></span><span></span><span class="p">;</span>
+    <span class="n">xcb_atom_t</span> <span class="doxyrest-code-target target" id="doxid-d3-d23-structtw-xwm-atoms-1a4a2e997a29bb49e976ef3dffc0538fdf"><span></span><span class="n">net_supporting_wm_check</span></span><span></span><span class="p">;</span>
+    <span class="n">xcb_atom_t</span> <span class="doxyrest-code-target target" id="doxid-d3-d23-structtw-xwm-atoms-1a146d7ecb12613572eb75f05c48e598a1"><span></span><span class="n">net_supported</span></span><span></span><span class="p">;</span>
+    <span class="n">xcb_atom_t</span> <span class="doxyrest-code-target target" id="doxid-d3-d23-structtw-xwm-atoms-1a9532d921a0eeff9cf616bd879ba224d9"><span></span><span class="n">net_active_window</span></span><span></span><span class="p">;</span>
+    <span class="n">xcb_atom_t</span> <span class="doxyrest-code-target target" id="doxid-d3-d23-structtw-xwm-atoms-1a9b1ddcf52c35301b749e80adfb794503"><span></span><span class="n">motif_wm_hints</span></span><span></span><span class="p">;</span>
+    <span class="n">xcb_atom_t</span> <span class="doxyrest-code-target target" id="doxid-d3-d23-structtw-xwm-atoms-1a2f2b99fb83e81d41e742c10ff5a4ecb6"><span></span><span class="n">clipboard</span></span><span></span><span class="p">;</span>
+    <span class="n">xcb_atom_t</span> <span class="doxyrest-code-target target" id="doxid-d3-d23-structtw-xwm-atoms-1abeb91b501b3bafb98d7b483e5689151d"><span></span><span class="n">clipboard_manager</span></span><span></span><span class="p">;</span>
+    <span class="n">xcb_atom_t</span> <span class="doxyrest-code-target target" id="doxid-d3-d23-structtw-xwm-atoms-1a190618f4e5a89b7aef3921b88775ce27"><span></span><span class="n">targets</span></span><span></span><span class="p">;</span>
+    <span class="n">xcb_atom_t</span> <span class="doxyrest-code-target target" id="doxid-d3-d23-structtw-xwm-atoms-1a2dca122d8b4bb206b5a60269573e5a6d"><span></span><span class="n">utf8_string</span></span><span></span><span class="p">;</span>
+    <span class="n">xcb_atom_t</span> <span class="doxyrest-code-target target" id="doxid-d3-d23-structtw-xwm-atoms-1a81b28d8ce2d71193f428ea4d11e2bd3c"><span></span><span class="n">wl_selection</span></span><span></span><span class="p">;</span>
+    <span class="n">xcb_atom_t</span> <span class="doxyrest-code-target target" id="doxid-d3-d23-structtw-xwm-atoms-1ac08aedf61af3c3a94f568d8700c5d512"><span></span><span class="n">incr</span></span><span></span><span class="p">;</span>
+    <span class="n">xcb_atom_t</span> <span class="doxyrest-code-target target" id="doxid-d3-d23-structtw-xwm-atoms-1aab848a7c64697f6d0c16f2d377bee98f"><span></span><span class="n">timestamp</span></span><span></span><span class="p">;</span>
+    <span class="n">xcb_atom_t</span> <span class="doxyrest-code-target target" id="doxid-d3-d23-structtw-xwm-atoms-1a8fc862db3af52c6561d8e185f5253c96"><span></span><span class="n">multiple</span></span><span></span><span class="p">;</span>
+    <span class="n">xcb_atom_t</span> <span class="doxyrest-code-target target" id="doxid-d3-d23-structtw-xwm-atoms-1ae905866ef15ba7a63834c0db973dd1f7"><span></span><span class="n">compound_text</span></span><span></span><span class="p">;</span>
+    <span class="n">xcb_atom_t</span> <span class="doxyrest-code-target target" id="doxid-d3-d23-structtw-xwm-atoms-1a47dc70c793b21f594f471792fae38e4a"><span></span><span class="n">text</span></span><span></span><span class="p">;</span>
+    <span class="n">xcb_atom_t</span> <span class="doxyrest-code-target target" id="doxid-d3-d23-structtw-xwm-atoms-1a0e9c36f2be6723e96e70e15e33df748c"><span></span><span class="n">string</span></span><span></span><span class="p">;</span>
+    <span class="n">xcb_atom_t</span> <span class="doxyrest-code-target target" id="doxid-d3-d23-structtw-xwm-atoms-1a5504328ef92a41b9c196837ec436766b"><span></span><span class="n">window</span></span><span></span><span class="p">;</span>
+    <span class="n">xcb_atom_t</span> <span class="doxyrest-code-target target" id="doxid-d3-d23-structtw-xwm-atoms-1a36210b57576479c9429db7c8683cc151"><span></span><span class="n">text_plain_utf8</span></span><span></span><span class="p">;</span>
+    <span class="n">xcb_atom_t</span> <span class="doxyrest-code-target target" id="doxid-d3-d23-structtw-xwm-atoms-1a0228e8ef66f94802c9c57c0d4d4de718"><span></span><span class="n">text_plain</span></span><span></span><span class="p">;</span>
+    <span class="n">xcb_atom_t</span> <span class="doxyrest-code-target target" id="doxid-d3-d23-structtw-xwm-atoms-1ab2ef97c5b7b04eeb368103c56cd4e7b9"><span></span><span class="n">xdnd_selection</span></span><span></span><span class="p">;</span>
+    <span class="n">xcb_atom_t</span> <span class="doxyrest-code-target target" id="doxid-d3-d23-structtw-xwm-atoms-1aa54c3057a5a3a1c6593d6bd2b2998ad7"><span></span><span class="n">xdnd_aware</span></span><span></span><span class="p">;</span>
+    <span class="n">xcb_atom_t</span> <span class="doxyrest-code-target target" id="doxid-d3-d23-structtw-xwm-atoms-1a32af897f1dd3bde72320f572ae59596c"><span></span><span class="n">xdnd_enter</span></span><span></span><span class="p">;</span>
+    <span class="n">xcb_atom_t</span> <span class="doxyrest-code-target target" id="doxid-d3-d23-structtw-xwm-atoms-1a338e53a3898e3b6a286cf9f3e41b6f7e"><span></span><span class="n">xdnd_leave</span></span><span></span><span class="p">;</span>
+    <span class="n">xcb_atom_t</span> <span class="doxyrest-code-target target" id="doxid-d3-d23-structtw-xwm-atoms-1a9c82b7ff3428a929028a0c3e4cfd73d8"><span></span><span class="n">xdnd_drop</span></span><span></span><span class="p">;</span>
+    <span class="n">xcb_atom_t</span> <span class="doxyrest-code-target target" id="doxid-d3-d23-structtw-xwm-atoms-1a5d2fcf193747ec200e922d085ac2f479"><span></span><span class="n">xdnd_status</span></span><span></span><span class="p">;</span>
+    <span class="n">xcb_atom_t</span> <span class="doxyrest-code-target target" id="doxid-d3-d23-structtw-xwm-atoms-1a4338af8a6a6f77d481f6ed16f751ca61"><span></span><span class="n">xdnd_finished</span></span><span></span><span class="p">;</span>
+    <span class="n">xcb_atom_t</span> <span class="doxyrest-code-target target" id="doxid-d3-d23-structtw-xwm-atoms-1a749c757d4c5133556c5bafb47ea0c648"><span></span><span class="n">xdnd_type_list</span></span><span></span><span class="p">;</span>
+    <span class="n">xcb_atom_t</span> <span class="doxyrest-code-target target" id="doxid-d3-d23-structtw-xwm-atoms-1a6e15d8f1859aa141cea346c2be5fae7e"><span></span><span class="n">xdnd_action_copy</span></span><span></span><span class="p">;</span>
+    <span class="n">xcb_atom_t</span> <span class="doxyrest-code-target target" id="doxid-d3-d23-structtw-xwm-atoms-1a272dbb6b176f55be2e6c63f4aadd0037"><span></span><span class="n">wl_surface_id</span></span><span></span><span class="p">;</span>
+    <span class="n">xcb_atom_t</span> <span class="doxyrest-code-target target" id="doxid-d3-d23-structtw-xwm-atoms-1a70d61aea10bce5bdbb4d05ed515d4df8"><span></span><span class="n">allow_commits</span></span><span></span><span class="p">;</span>
+<span class="p">};</span></pre>
+</div>
+
+
+	  </div>
+	  
+<div class="col-md-3">
+  <div id="sidebar" class="bs-sidenav"><h3><a data-toggle="collapse" href="#globaltoc">Related Pages</a></h3>
+<div id="globaltoc" class="collapse">
+
+</div>
+<form action="search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+  </div>
+</div>
+
+	</div>
+      
+    </div>
+    <div class="push"></div>
+  </div>
+
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+    </p>
+    <p>
+        &copy; Copyright 2020, Xichen Zhou.<br/>
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 3.4.3.<br/>
+    </p>
+  </div>
+</footer>
+  </body>
+</html>

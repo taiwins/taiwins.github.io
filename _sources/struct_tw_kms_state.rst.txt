@@ -1,0 +1,30 @@
+.. index:: pair: struct; tw_kms_state
+.. _doxid-de/d4e/structtw__kms__state:
+
+struct tw_kms_state
+===================
+
+.. toctree::
+	:hidden:
+
+kms_state represents a atomic state we submit to kernel
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <internal.h>
+	
+	struct tw_kms_state
+	{
+		// fields
+	
+		const struct :ref:`tw_drm_crtc_props<doxid-da/ddb/structtw__drm__crtc__props>`* :target:`props_crtc<doxid-de/d4e/structtw__kms__state_1a7cfa93b2199efb5c7d018bc70034093c>`;
+		const struct :ref:`tw_drm_plane_props<doxid-db/d68/structtw__drm__plane__props>`* :target:`props_main_plane<doxid-de/d4e/structtw__kms__state_1a06909f422543b43320daba4ee59a4c77>`;
+		const struct :ref:`tw_drm_connector_props<doxid-dc/df9/structtw__drm__connector__props>`* :target:`props_connector<doxid-de/d4e/structtw__kms__state_1a27b0d72c1475b5aed0ba2df628df7264>`;
+		uint32_t :target:`mode_id<doxid-de/d4e/structtw__kms__state_1ad993be25e2653a780a1f7d7712ffd6c3>`;
+		drmModeModeInfo :target:`mode<doxid-de/d4e/structtw__kms__state_1a89fb753e9dc0e3308f45ae26fd6da0d7>`;
+		bool :target:`active<doxid-de/d4e/structtw__kms__state_1af543cf9ee271c5e717875cce20c846db>`;
+		int :target:`crtc_id<doxid-de/d4e/structtw__kms__state_1a7bfbeee13cffd8299937bcf2afb27641>`;
+		struct :ref:`tw_drm_fb<doxid-d3/dfa/structtw__drm__fb>` :target:`fb<doxid-de/d4e/structtw__kms__state_1a82a64f96affe602219006e73518d3abd>`;
+	};

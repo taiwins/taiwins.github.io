@@ -7,6 +7,9 @@ struct tw_render_context_impl
 .. toctree::
 	:hidden:
 
+Overview
+~~~~~~~~
+
 
 
 
@@ -20,5 +23,25 @@ struct tw_render_context_impl
 		// fields
 	
 		bool(* :target:`new_offscreen_surface<doxid-dd/de7/structtw__render__context__impl_1ae1970e3ca6fa0f535825609da783e9fc>`)(struct tw_render_presentable *surf, struct tw_render_context *ctx, unsigned int width, unsigned int height);
-		bool(* :target:`new_window_surface<doxid-dd/de7/structtw__render__context__impl_1aaa1d01cd47b62283051ce09552e9a2b1>`)(struct tw_render_presentable *surf, struct tw_render_context *ctx, void *native_window);
+		bool(* :ref:`new_window_surface<doxid-dd/de7/structtw__render__context__impl_1a7562d1ba47acca29214bf806710c2277>`)(struct tw_render_presentable *surf, struct tw_render_context *ctx, void *native_window, uint32_t format);
 	};
+.. _details-dd/de7/structtw__render__context__impl:
+
+Detailed Documentation
+~~~~~~~~~~~~~~~~~~~~~~
+
+
+
+Fields
+------
+
+.. index:: pair: variable; new_window_surface
+.. _doxid-dd/de7/structtw__render__context__impl_1a7562d1ba47acca29214bf806710c2277:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	bool(* new_window_surface)(struct tw_render_presentable *surf, struct tw_render_context *ctx, void *native_window, uint32_t format)
+
+creating a render surface target for the given format, the format is platform specific
+

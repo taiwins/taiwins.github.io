@@ -1,0 +1,71 @@
+.. index:: pair: struct; tw_xsurface
+.. _doxid-d5/db0/structtw__xsurface:
+
+struct tw_xsurface
+==================
+
+.. toctree::
+	:hidden:
+
+Overview
+~~~~~~~~
+
+:ref:`tw_xsurface <doxid-d5/db0/structtw__xsurface>` implements a :ref:`tw_desktop_surface <doxid-d4/d0f/structtw__desktop__surface>` for xcb_window :ref:`More...<details-d5/db0/structtw__xsurface>`
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <xsurface.h>
+	
+	struct tw_xsurface
+	{
+		// fields
+	
+		xcb_window_t :target:`id<doxid-d5/db0/structtw__xsurface_1ae91d08dc7121a11c500f7395fb23e85e>`;
+		bool :target:`override_redirect<doxid-d5/db0/structtw__xsurface_1ae5ddbca78e3bdafc857c479b1850a243>`;
+		bool :target:`pending_mapping<doxid-d5/db0/structtw__xsurface_1a6bc955b98a5247bddf6a7fa3ca9a6008>`;
+		bool :target:`has_alpha<doxid-d5/db0/structtw__xsurface_1ac7a9af61e611041455f98f1c985d2dcd>`;
+		bool :target:`support_delete<doxid-d5/db0/structtw__xsurface_1a63fd4120fd9bad9e2d9d34acce49e505>`;
+		bool :target:`decor_title<doxid-d5/db0/structtw__xsurface_1a11790ae1bf255bc26312bf3752f0c4a4>`;
+		bool :target:`decor_border<doxid-d5/db0/structtw__xsurface_1a4a566855b62cf74ba539ad0ccacb30ec>`;
+		pid_t :target:`pid<doxid-d5/db0/structtw__xsurface_1a8f1f87d225fbb839b5c44e0bb92a58ad>`;
+		xcb_atom_t :target:`win_type<doxid-d5/db0/structtw__xsurface_1a28b3447e8e2ee3cf494904bb49746b8c>`;
+		int :target:`x<doxid-d5/db0/structtw__xsurface_1ae0d5eb52ffa76688b6d4ab795008cea2>`;
+		int :target:`y<doxid-d5/db0/structtw__xsurface_1af8f35c8c6536fee09ab918e1600488af>`;
+		int :target:`w<doxid-d5/db0/structtw__xsurface_1acb4128ee413473d11a4a91b11a807c03>`;
+		int :target:`h<doxid-d5/db0/structtw__xsurface_1a8841f1f109e5cba2dc500ebdd0ebf6e4>`;
+		uint32_t :target:`surface_id<doxid-d5/db0/structtw__xsurface_1a1f423bd57ac9f16e0105432f946889ec>`;
+		struct :ref:`tw_surface<doxid-dd/dda/structtw__surface>`* :target:`surface<doxid-d5/db0/structtw__xsurface_1a20e303b11682d6991cd4a76f0741a6a7>`;
+		struct tw_xsurface* :target:`parent<doxid-d5/db0/structtw__xsurface_1aed50975fe7f4c10eb6c35e097a294885>`;
+		struct :ref:`tw_xwm<doxid-d8/d09/structtw__xwm>`* :target:`xwm<doxid-d5/db0/structtw__xsurface_1a53186b5dfb2e620708bb5839a68f99c2>`;
+		struct wl_list :target:`link<doxid-d5/db0/structtw__xsurface_1a2daa7b112713b0aa6de8bd28e888ebfb>`;
+		struct wl_list :target:`children<doxid-d5/db0/structtw__xsurface_1aabe816f1e973b37483040c9840e3b9b6>`;
+		struct wl_listener :target:`surface_destroy<doxid-d5/db0/structtw__xsurface_1ae8e4a2808b405ee3b6ac025da6778053>`;
+		struct :ref:`tw_desktop_surface<doxid-d4/d0f/structtw__desktop__surface>` :target:`dsurf<doxid-d5/db0/structtw__xsurface_1a2ad7ee06939d98404e5cd26482a84fd8>`;
+		struct :ref:`tw_subsurface<doxid-de/d75/structtw__subsurface>` :ref:`subsurface<doxid-d5/db0/structtw__xsurface_1a81fba2955e0fd43f7e8ad0ec39d1f316>`;
+	};
+.. _details-d5/db0/structtw__xsurface:
+
+Detailed Documentation
+~~~~~~~~~~~~~~~~~~~~~~
+
+:ref:`tw_xsurface <doxid-d5/db0/structtw__xsurface>` implements a :ref:`tw_desktop_surface <doxid-d4/d0f/structtw__desktop__surface>` for xcb_window
+
+Xwayland creates new wl_surface for every xcb window by sending a wl_surface id. Here the job is mapping the xcb window logic to the :ref:`tw_desktop_surface <doxid-d4/d0f/structtw__desktop__surface>` API.
+
+xcb window would send a MapRequest event for mapping the surface on the window manager, this usually happens before we actually receive the wl_surface id.
+
+Fields
+------
+
+.. index:: pair: variable; subsurface
+.. _doxid-d5/db0/structtw__xsurface_1a81fba2955e0fd43f7e8ad0ec39d1f316:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	struct :ref:`tw_subsurface<doxid-de/d75/structtw__subsurface>` subsurface
+
+used if is subsurface
+

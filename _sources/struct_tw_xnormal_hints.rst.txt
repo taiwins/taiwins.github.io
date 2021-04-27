@@ -1,0 +1,40 @@
+.. index:: pair: struct; tw_xnormal_hints
+.. _doxid-d2/d8e/structtw__xnormal__hints:
+
+struct tw_xnormal_hints
+=======================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <xwm.h>
+	
+	struct tw_xnormal_hints
+	{
+		// fields
+	
+		uint32_t :target:`flags<doxid-d2/d8e/structtw__xnormal__hints_1aa8f787e80d44cd5fe03674dc2cd94162>`;
+		int32_t :target:`x<doxid-d2/d8e/structtw__xnormal__hints_1a3a909128c1436d2863ff36a05d05d1d1>`;
+		int32_t :target:`y<doxid-d2/d8e/structtw__xnormal__hints_1a42737788ce8f7c616118a525dfecfca6>`;
+		int32_t :target:`width<doxid-d2/d8e/structtw__xnormal__hints_1ab73a2accbe6e7c83a74ac4be63db2da8>`;
+		int32_t :target:`height<doxid-d2/d8e/structtw__xnormal__hints_1a185129eb67b27549293b69a299ae0893>`;
+		int32_t :target:`min_width<doxid-d2/d8e/structtw__xnormal__hints_1a4e182b96e927e0b19c809e26046a07b3>`;
+		int32_t :target:`min_height<doxid-d2/d8e/structtw__xnormal__hints_1a6760cf32b91317cb91be84f5d7d5ada7>`;
+		int32_t :target:`max_width<doxid-d2/d8e/structtw__xnormal__hints_1aadc91e45fa75b3d8dbb6f4db5673d50b>`;
+		int32_t :target:`max_height<doxid-d2/d8e/structtw__xnormal__hints_1a338ba1938da0703fc02534625c5dca54>`;
+		int32_t :target:`width_inc<doxid-d2/d8e/structtw__xnormal__hints_1aafe8dcf171b9180c5aa303818aa3c218>`;
+		int32_t :target:`height_inc<doxid-d2/d8e/structtw__xnormal__hints_1ab64ca1cf5a7ba67390ea23c17cd1d026>`;
+		int32_t :target:`min_aspect_num<doxid-d2/d8e/structtw__xnormal__hints_1a9241e37a7cff28d69ff42fa5f673f6bd>`;
+		int32_t :target:`min_aspect_den<doxid-d2/d8e/structtw__xnormal__hints_1a50b157e2197c1e48f8619f07bf39666b>`;
+		int32_t :target:`max_aspect_num<doxid-d2/d8e/structtw__xnormal__hints_1a9ce013d642dc02c3913343685c31eb24>`;
+		int32_t :target:`max_aspect_den<doxid-d2/d8e/structtw__xnormal__hints_1a7a98ba676b75a7714663c97b07760962>`;
+		int32_t :target:`base_width<doxid-d2/d8e/structtw__xnormal__hints_1a0571469dda5d31c6d45c196a1b35a435>`;
+		int32_t :target:`base_height<doxid-d2/d8e/structtw__xnormal__hints_1a0a4c7e1c2253b161282bf912a6dff2ba>`;
+		int32_t :target:`win_gravity<doxid-d2/d8e/structtw__xnormal__hints_1aa7a39eadc338cfb4604ae9483f783e41>`;
+	};

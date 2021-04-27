@@ -7,6 +7,8 @@
     
     <title>struct tw_data_source &#8212; Taiwins</title>
   
+  <!-- fix for search function -->
+  <script type="text/javascript" src="_static/language_data.js "></script>
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="_static/bootstrap-sphinx.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="_static/my-style.css" />
@@ -19,8 +21,6 @@
     <link rel="shortcut icon" href="_static/favicon.ico"/>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="struct tw_decision_key" href="struct_tw_decision_key.html" />
-    <link rel="prev" title="struct tw_data_offer" href="struct_tw_data_offer.html" />
 <meta charset='utf-8'>
 <meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
 <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
@@ -71,7 +71,7 @@
 <div class="section" id="overview">
 <h2>Overview<a class="headerlink" href="#overview" title="Permalink to this headline">¶</a></h2>
 <p><a class="reference internal" href="#doxid-dc-d55-structtw-data-source"><span class="std std-ref">tw_data_source</span></a> represents a wl_data_source for the client <a class="reference internal" href="#details-dc-d55-structtw-data-source"><span class="std std-ref">More…</span></a></p>
-<pre class="highlight doxyrest-overview-code-block literal-block"><span></span><span class="cp">#include</span> <span class="cpf">&lt;data_internal.h&gt;</span><span class="cp"></span>
+<pre class="highlight doxyrest-overview-code-block literal-block"><span></span><span class="cp">#include</span> <span class="cpf">&lt;data_device.h&gt;</span><span class="cp"></span>
 
 <span class="k">struct</span> <span class="n">tw_data_source</span>
 <span class="p">{</span>
@@ -82,7 +82,8 @@
     <span class="kt">uint32_t</span> <span class="doxyrest-code-target target" id="doxid-dc-d55-structtw-data-source-1a089273f30d77b9a267380aa92d966ca1"><span></span><span class="n">actions</span></span><span></span><span class="p">;</span>
     <span class="kt">uint32_t</span> <span class="doxyrest-code-target target" id="doxid-dc-d55-structtw-data-source-1a3dbb17e6c216bc4c3ebcf518f4287302"><span></span><span class="n">selected_dnd_action</span></span><span></span><span class="p">;</span>
     <span class="kt">bool</span> <span class="doxyrest-code-target target" id="doxid-dc-d55-structtw-data-source-1ad369622a55c1d64e0e01fd87ff96abee"><span></span><span class="n">selection_source</span></span><span></span><span class="p">;</span>
-    <span class="kt">bool</span> <a class="reference internal" href="#doxid-dc-d55-structtw-data-source-1aaf0867764fb5065810e4fc423165da65"><span class="std std-ref">accepted</span></a><span></span><span class="p">;</span>
+    <span class="kt">bool</span> <span class="doxyrest-code-target target" id="doxid-dc-d55-structtw-data-source-1aaf0867764fb5065810e4fc423165da65"><span></span><span class="n">accepted</span></span><span></span><span class="p">;</span>
+    <span class="k">const</span> <span class="k">struct</span> <a class="reference internal" href="struct_tw_data_source_impl.html#doxid-dd-d57-structtw-data-source-impl"><span class="std std-ref">tw_data_source_impl</span></a><span></span><span class="o">*</span> <a class="reference internal" href="#doxid-dc-d55-structtw-data-source-1a8c5a6a5097dc11fcba7742330d2fbc1f"><span class="std std-ref">impl</span></a><span></span><span class="p">;</span>
     <span class="k">struct</span> <a class="reference internal" href="struct_tw_data_offer.html#doxid-dd-dd4-structtw-data-offer"><span class="std std-ref">tw_data_offer</span></a><span></span> <span class="doxyrest-code-target target" id="doxid-dc-d55-structtw-data-source-1a225c4a3097c572005ee69090e932a6c7"><span></span><span class="n">offer</span></span><span></span><span class="p">;</span>
     <span class="k">struct</span> <span class="n">wl_listener</span> <span class="doxyrest-code-target target" id="doxid-dc-d55-structtw-data-source-1af4f5380f2d9b59b5e6ac8ea36d654234"><span></span><span class="n">device_destroy_listener</span></span><span></span><span class="p">;</span>
     <span class="k">struct</span> <span class="n">wl_signal</span> <span class="doxyrest-code-target target" id="doxid-dc-d55-structtw-data-source-1a357065d6b21496ab27da3368207b585f"><span></span><span class="n">destroy_signal</span></span><span></span><span class="p">;</span>
@@ -96,7 +97,7 @@
 <h3>Fields<a class="headerlink" href="#fields" title="Permalink to this headline">¶</a></h3>
 <pre class="highlight doxyrest-title-code-block literal-block" id="doxid-dc-d55-structtw-data-source-1a43c294f263f79d6890bf050bfe345fbc"><span id="index-1"></span><span></span><span class="k">struct</span> <span class="n">wl_array</span> <span class="n">mimes</span></pre>
 <p>set at set_selection or start_drag</p>
-<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-dc-d55-structtw-data-source-1aaf0867764fb5065810e4fc423165da65"><span id="index-2"></span><span></span><span class="kt">bool</span> <span class="n">accepted</span></pre>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-dc-d55-structtw-data-source-1a8c5a6a5097dc11fcba7742330d2fbc1f"><span id="index-2"></span><span></span><span class="k">const</span> <span class="k">struct</span> <a class="reference internal" href="struct_tw_data_source_impl.html#doxid-dd-d57-structtw-data-source-impl"><span class="std std-ref">tw_data_source_impl</span></a><span></span><span class="o">*</span> <span class="n">impl</span></pre>
 <p>data offer is embedded in the source available at source creation</p>
 </div>
 </div>
@@ -121,22 +122,6 @@
 </div>
 <h3><a data-toggle="collapse" href="#globaltoc">Related Pages</a></h3>
 <div id="globaltoc" class="collapse">
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="page_md__home_developer_Projects_web_taiwins_taiwins_CONTRIBUTING.html">Contributing to Taiwins</a></li>
-<li class="toctree-l1"><a class="reference internal" href="page_md__home_developer_Projects_web_taiwins_taiwins_docs_dbus.html">D-Bus API Quick Reference</a></li>
-<li class="toctree-l1"><a class="reference internal" href="page_md__home_developer_Projects_web_taiwins_taiwins_docs_libtaiwins.html">For libtaiwins users</a></li>
-<li class="toctree-l1"><a class="reference internal" href="page_md__home_developer_Projects_web_taiwins_taiwins_docs_lua.html">Lua bindings</a></li>
-<li class="toctree-l1"><a class="reference internal" href="page_md__home_developer_Projects_web_taiwins_taiwins_docs_progress.html">Progress and feature track</a></li>
-<li class="toctree-l1"><a class="reference internal" href="page_md__home_developer_Projects_web_taiwins_taiwins_docs_screenshots.html">Taiwins in tiling mode</a></li>
-<li class="toctree-l1"><a class="reference internal" href="page_md__home_developer_Projects_web_taiwins_taiwins_docs_window_management.html">Taiwins layout engine.</a></li>
-<li class="toctree-l1"><a class="reference internal" href="page_md__home_developer_Projects_web_taiwins_taiwins_README.html">Taiwins, a modern wayland window manager</a></li>
-<li class="toctree-l1"><a class="reference internal" href="page_md__home_developer_Projects_web_taiwins_taiwins_docs_libtwclient.html">Twclient quick reference</a></li>
-<li class="toctree-l1"><a class="reference internal" href="page_md__home_developer_Projects_web_taiwins_taiwins_docs_twobjects.html">Twobjects quick reference</a></li>
-<li class="toctree-l1"><a class="reference internal" href="page_md__home_developer_Projects_web_taiwins_taiwins_docs_wayland.html">wayland</a></li>
-</ul>
-<ul class="current">
-<li class="toctree-l1 current"><a class="reference internal" href="global.html">Global Namespace</a></li>
-</ul>
 
 </div>
 <form action="search.html" method="get">

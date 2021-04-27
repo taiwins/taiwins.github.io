@@ -7,6 +7,8 @@
     
     <title>Taiwins Documentation &#8212; Taiwins</title>
   
+  <!-- fix for search function -->
+  <script type="text/javascript" src="_static/language_data.js "></script>
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="_static/bootstrap-sphinx.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="_static/my-style.css" />
@@ -63,47 +65,33 @@
 	  <div class="body col-md-9 content" role="main">
 	    
   <div class="section" id="taiwins-documentation">
-<span id="doxid-indexpage"></span><span id="index-0"></span><h1>Taiwins Documentation<a class="headerlink" href="#taiwins-documentation" title="Permalink to this headline">¶</a></h1>
-<p><span class="target" id="doxid-index-1mainpage"></span> This manual documents the API and design of the Taiwins. Several notes were registered along the development. Taiwins consists of serveral <strong>sub-projects</strong> like <strong>twclients</strong> and <strong>twobjects</strong> for distinctive parts, those libraries are embedable and can be used independently outside serves general building blocks for wayland projects.</p>
-<div class="section" id="sub-projects">
-<span id="doxid-index-1autotoc-md41"></span><h2>Sub-projects<a class="headerlink" href="#sub-projects" title="Permalink to this headline">¶</a></h2>
+<h1>Taiwins Documentation<a class="headerlink" href="#taiwins-documentation" title="Permalink to this headline">¶</a></h1>
+<p>Welcome to the taiwins documentation, here you will find API documentations as
+well as some random notes relates to Taiwins.</p>
 <ul class="simple">
-<li><p><a class="reference external" href="https://github.com/taiwins/twclient">twclient</a> : general purpose wayland client widget system. <strong>Twclient</strong> implements many common <code class="docutils literal notranslate"><span class="pre">wl_*_listeners</span></code> and provides convinient interfaces to implement shmbuf <code class="docutils literal notranslate"><span class="pre">wl_surface</span></code> or EGL <code class="docutils literal notranslate"><span class="pre">wl_surface</span></code>.</p></li>
-<li><p><a class="reference external" href="https://github.com/taiwins/twobjects">twobjects</a> : the server-side wayland objects implementation. It implements all the basic types a compositor has to have, such as <code class="docutils literal notranslate"><span class="pre">wl_surface</span></code>, as well as many other popular ones like <code class="docutils literal notranslate"><span class="pre">linux_dmabuf</span></code>. It is designed to be modular and autonomous, check out the <a class="reference internal" href="page_md__home_developer_Projects_web_taiwins_taiwins_docs_twobjects.html#doxid-dc-d3e-md-home-developer-projects-web-taiwins-taiwins-docs-twobjects"><span class="std std-ref">quick reference</span></a> for getting started.</p></li>
-<li><p><a class="reference external" href="https://github.com/taiwins/taiwins-protocols">taiwins-protocols</a> : collection of wayland protocols specific to taiwins.</p></li>
+<li><p><a class="reference internal" href="dbus.html"><span class="doc">D-Bus API Quick Reference</span></a></p></li>
+<li><p><a class="reference internal" href="libtaiwins.html"><span class="doc">Libtaiwins introduction</span></a></p></li>
+<li><p><a class="reference internal" href="libtwclient.html"><span class="doc">Twclient quick reference</span></a></p></li>
+<li><p><a class="reference internal" href="twobjects.html"><span class="doc">Twobject quick reference</span></a></p></li>
+<li><p><a class="reference internal" href="lua.html"><span class="doc">Lua C API quick guide</span></a></p></li>
+<li><p><a class="reference internal" href="wayland.html"><span class="doc">wayland introduction</span></a></p></li>
+<li><p><a class="reference internal" href="xwayland.html"><span class="doc">Xwayland in taiwins</span></a></p></li>
+<li><p><a class="reference internal" href="window_management.html"><span class="doc">Taiwins window manager</span></a></p></li>
+<li><p><a class="reference internal" href="screenshots.html"><span class="doc">Screenshots</span></a></p></li>
 </ul>
 </div>
-<div class="section" id="taiwins-design">
-<span id="doxid-index-1autotoc-md42"></span><h2>Taiwins design<a class="headerlink" href="#taiwins-design" title="Permalink to this headline">¶</a></h2>
-<p>Taiwins is a collection of the compositor (taiwins), the wayland compositor library(libtaiwins), and useful clients like the shell (taiwins-shell) and the application launcher(taiwins-console).</p>
-<div class="section" id="server-side-design">
-<span id="doxid-index-1autotoc-md43"></span><h3>Server-side design<a class="headerlink" href="#server-side-design" title="Permalink to this headline">¶</a></h3>
-<p>Take a look <a class="reference internal" href="page_md__home_developer_Projects_web_taiwins_taiwins_docs_libtaiwins.html#doxid-db-d89-md-home-developer-projects-web-taiwins-taiwins-docs-libtaiwins"><span class="std std-ref">here</span></a></p>
-</div>
-<div class="section" id="client-side-design">
-<span id="doxid-index-1autotoc-md44"></span><h3>Client-side design<a class="headerlink" href="#client-side-design" title="Permalink to this headline">¶</a></h3>
-<p>Take a look <a class="reference internal" href="page_md__home_developer_Projects_web_taiwins_taiwins_docs_libtwclient.html#doxid-dc-dee-md-home-developer-projects-web-taiwins-taiwins-docs-libtwclient"><span class="std std-ref">here</span></a>.</p>
-</div>
-</div>
-<div class="section" id="other-notes">
-<span id="doxid-index-1autotoc-md45"></span><h2>Other notes<a class="headerlink" href="#other-notes" title="Permalink to this headline">¶</a></h2>
-<p>If you are new to wayland, you may be also interested in the <a class="reference internal" href="page_md__home_developer_Projects_web_taiwins_taiwins_docs_wayland.html#doxid-d1-d3f-md-home-developer-projects-web-taiwins-taiwins-docs-wayland"><span class="std std-ref">wayland</span></a> note” for some important bits. &#64;ref /home/developer/Projects/web-taiwins/taiwins/docs/lua.md “lua” notes is the compact summary on using the lua c API. Taiwins also uses dbus for configuration and various other things, a quick tutorial on dbus can be found [here][<code class="docutils literal notranslate"><span class="pre">dbus.md</span></code>].</p>
+<div class="section" id="taiwins-api-documentation">
+<span id="doxid-indexpage"></span><span id="index-0"></span><h1>Taiwins API Documentation<a class="headerlink" href="#taiwins-api-documentation" title="Permalink to this headline">¶</a></h1>
+<p><span class="target" id="doxid-index-1mainpage"></span> This manual documents the API and design of the Taiwins. Several notes were registered along the development. Taiwins consists of serveral <strong>sub-projects</strong> like <strong>twclients</strong> for distinctive parts, those libraries are embedable and can be used independently outside serves general building blocks for wayland projects.</p>
+<div class="section" id="sub-projects">
+<span id="doxid-index-1autotoc-md0"></span><h2>Sub-projects<a class="headerlink" href="#sub-projects" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/taiwins/twclient">twclient</a> : general purpose wayland client widget system. <strong>Twclient</strong> implements many common <code class="docutils literal notranslate"><span class="pre">wl_*_listeners</span></code> and provides convinient interfaces to implement shmbuf <code class="docutils literal notranslate"><span class="pre">wl_surface</span></code> or EGL <code class="docutils literal notranslate"><span class="pre">wl_surface</span></code>.</p></li>
+<li><p><a class="reference external" href="https://github.com/taiwins/taiwins-protocols">taiwins-protocols</a> : collection of wayland protocols specific to taiwins.</p></li>
+</ul>
 <div class="toctree-wrapper compound">
 </div>
 <p class="rubric">Related Pages:</p>
-<div class="line-block">
-<div class="line"><a class="reference internal" href="page_md__home_developer_Projects_web_taiwins_taiwins_CONTRIBUTING.html"><span class="doc">Contributing to Taiwins</span></a></div>
-<div class="line"><a class="reference internal" href="page_md__home_developer_Projects_web_taiwins_taiwins_docs_dbus.html"><span class="doc">D-Bus API Quick Reference</span></a></div>
-<div class="line"><a class="reference internal" href="page_md__home_developer_Projects_web_taiwins_taiwins_docs_libtaiwins.html"><span class="doc">For libtaiwins users</span></a></div>
-<div class="line"><a class="reference internal" href="page_md__home_developer_Projects_web_taiwins_taiwins_docs_lua.html"><span class="doc">Lua bindings</span></a></div>
-<div class="line"><a class="reference internal" href="page_md__home_developer_Projects_web_taiwins_taiwins_docs_progress.html"><span class="doc">Progress and feature track</span></a></div>
-<div class="line"><a class="reference internal" href="page_md__home_developer_Projects_web_taiwins_taiwins_docs_screenshots.html"><span class="doc">Taiwins in tiling mode</span></a></div>
-<div class="line"><a class="reference internal" href="page_md__home_developer_Projects_web_taiwins_taiwins_docs_window_management.html"><span class="doc">Taiwins layout engine.</span></a></div>
-<div class="line"><a class="reference internal" href="page_md__home_developer_Projects_web_taiwins_taiwins_README.html"><span class="doc">Taiwins, a modern wayland window manager</span></a></div>
-<div class="line"><a class="reference internal" href="page_md__home_developer_Projects_web_taiwins_taiwins_docs_libtwclient.html"><span class="doc">Twclient quick reference</span></a></div>
-<div class="line"><a class="reference internal" href="page_md__home_developer_Projects_web_taiwins_taiwins_docs_twobjects.html"><span class="doc">Twobjects quick reference</span></a></div>
-<div class="line"><a class="reference internal" href="page_md__home_developer_Projects_web_taiwins_taiwins_docs_wayland.html"><span class="doc">wayland</span></a></div>
-</div>
 <p class="rubric">Reference and Index:</p>
 <div class="toctree-wrapper compound">
 </div>
@@ -121,14 +109,9 @@
   <div id="sidebar" class="bs-sidenav">
 <h3>Content</h3>
 <div id="localtoc"><ul>
-<li><a class="reference internal" href="#">Taiwins Documentation</a><ul>
-<li><a class="reference internal" href="#sub-projects">Sub-projects</a></li>
-<li><a class="reference internal" href="#taiwins-design">Taiwins design</a><ul>
-<li><a class="reference internal" href="#server-side-design">Server-side design</a></li>
-<li><a class="reference internal" href="#client-side-design">Client-side design</a></li>
-</ul>
-</li>
-<li><a class="reference internal" href="#other-notes">Other notes</a><ul>
+<li><a class="reference internal" href="#">Taiwins Documentation</a></li>
+<li><a class="reference internal" href="#taiwins-api-documentation">Taiwins API Documentation</a><ul>
+<li><a class="reference internal" href="#sub-projects">Sub-projects</a><ul>
 </ul>
 </li>
 </ul>
@@ -137,22 +120,6 @@
 </div>
 <h3><a data-toggle="collapse" href="#globaltoc">Related Pages</a></h3>
 <div id="globaltoc" class="collapse">
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="page_md__home_developer_Projects_web_taiwins_taiwins_CONTRIBUTING.html">Contributing to Taiwins</a></li>
-<li class="toctree-l1"><a class="reference internal" href="page_md__home_developer_Projects_web_taiwins_taiwins_docs_dbus.html">D-Bus API Quick Reference</a></li>
-<li class="toctree-l1"><a class="reference internal" href="page_md__home_developer_Projects_web_taiwins_taiwins_docs_libtaiwins.html">For libtaiwins users</a></li>
-<li class="toctree-l1"><a class="reference internal" href="page_md__home_developer_Projects_web_taiwins_taiwins_docs_lua.html">Lua bindings</a></li>
-<li class="toctree-l1"><a class="reference internal" href="page_md__home_developer_Projects_web_taiwins_taiwins_docs_progress.html">Progress and feature track</a></li>
-<li class="toctree-l1"><a class="reference internal" href="page_md__home_developer_Projects_web_taiwins_taiwins_docs_screenshots.html">Taiwins in tiling mode</a></li>
-<li class="toctree-l1"><a class="reference internal" href="page_md__home_developer_Projects_web_taiwins_taiwins_docs_window_management.html">Taiwins layout engine.</a></li>
-<li class="toctree-l1"><a class="reference internal" href="page_md__home_developer_Projects_web_taiwins_taiwins_README.html">Taiwins, a modern wayland window manager</a></li>
-<li class="toctree-l1"><a class="reference internal" href="page_md__home_developer_Projects_web_taiwins_taiwins_docs_libtwclient.html">Twclient quick reference</a></li>
-<li class="toctree-l1"><a class="reference internal" href="page_md__home_developer_Projects_web_taiwins_taiwins_docs_twobjects.html">Twobjects quick reference</a></li>
-<li class="toctree-l1"><a class="reference internal" href="page_md__home_developer_Projects_web_taiwins_taiwins_docs_wayland.html">wayland</a></li>
-</ul>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="global.html">Global Namespace</a></li>
-</ul>
 
 </div>
 <form action="search.html" method="get">

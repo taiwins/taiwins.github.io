@@ -1,0 +1,67 @@
+.. index:: pair: struct; tw_xwm
+.. _doxid-d8/d09/structtw__xwm:
+
+struct tw_xwm
+=============
+
+.. toctree::
+	:hidden:
+
+Overview
+~~~~~~~~
+
+the window manager for xwayland. :ref:`More...<details-d8/d09/structtw__xwm>`
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <xwm.h>
+	
+	struct tw_xwm
+	{
+		// fields
+	
+		struct :ref:`tw_xserver<doxid-d1/d7b/structtw__xserver>`* :target:`server<doxid-d8/d09/structtw__xwm_1a3e02c7649bdb8e454f1aa7d383c8de0c>`;
+		struct wl_list :target:`surfaces<doxid-d8/d09/structtw__xwm_1adcd3e05d8a3d20981beb8bfa9b228f81>`;
+		struct wl_event_source* :target:`x11_event<doxid-d8/d09/structtw__xwm_1ab3788cf32f550e8881585d6bac9027bb>`;
+		struct :ref:`tw_desktop_manager<doxid-dd/d73/structtw__desktop__manager>`* :target:`manager<doxid-d8/d09/structtw__xwm_1af8b6e8c1e43ef0c4cbfe898124cfb308>`;
+		struct :ref:`tw_xsurface<doxid-d5/db0/structtw__xsurface>`* :target:`focus_window<doxid-d8/d09/structtw__xwm_1ac97a1d9aca07a80fa2252194be6f5356>`;
+		struct :ref:`tw_xwm_selection<doxid-d5/df1/structtw__xwm__selection>` :target:`selection<doxid-d8/d09/structtw__xwm_1affcc7be2a82c0fbaf69b35a20a4f87dd>`;
+		struct :ref:`tw_seat<doxid-dc/d28/structtw__seat>`* :target:`seat<doxid-d8/d09/structtw__xwm_1a36af8299c88445bf2f8f3e892f9abbb7>`;
+		struct wl_listener :target:`server_destroy<doxid-d8/d09/structtw__xwm_1a46a4452c054cad700e492326e150c644>`;
+		struct wl_listener :target:`wl_surface_create<doxid-d8/d09/structtw__xwm_1a5cb2ca3b0add3ab57bb0a71392bfe945>`;
+		struct wl_listener :target:`wl_surface_focus<doxid-d8/d09/structtw__xwm_1a67ceea3a647dcd05eedc53639582742d>`;
+		struct wl_listener :target:`seat_destroy<doxid-d8/d09/structtw__xwm_1ada969b850038740505530b682f0c711c>`;
+		struct tw_xwm::@77 :target:`listeners<doxid-d8/d09/structtw__xwm_1a3e87f23677ab001aec9ca35bd0be1b0d>`;
+		xcb_connection_t* :ref:`xcb_conn<doxid-d8/d09/structtw__xwm_1ad54e73b90092f3f90e7e616f53edbef0>`;
+		xcb_screen_t* :target:`screen<doxid-d8/d09/structtw__xwm_1a741fc51db9e86f18c4a5461030655726>`;
+		xcb_window_t :target:`window<doxid-d8/d09/structtw__xwm_1ab248e7348c21d9b431f4881cba653c3b>`;
+		const xcb_query_extension_reply_t* :target:`xfixes<doxid-d8/d09/structtw__xwm_1ab0ae93588106270a911ab6c90b78f5f1>`;
+		xcb_colormap_t :target:`colormap<doxid-d8/d09/structtw__xwm_1a789ea4c0132dbd68d472993a165f3810>`;
+		xcb_visualid_t :target:`visual_id<doxid-d8/d09/structtw__xwm_1ae5a878e2251518a4812eda11b42f2c96>`;
+		xcb_render_pictformat_t :target:`format_rgba<doxid-d8/d09/structtw__xwm_1a9ae0117adf2d7e7533d913f2c867dbfc>`;
+		struct :ref:`tw_xwm_atoms<doxid-d3/d23/structtw__xwm__atoms>` :target:`atoms<doxid-d8/d09/structtw__xwm_1a9679e71a4fdad2a1a94b072c0af041fd>`;
+	};
+.. _details-d8/d09/structtw__xwm:
+
+Detailed Documentation
+~~~~~~~~~~~~~~~~~~~~~~
+
+the window manager for xwayland.
+
+The xwm works like any other normal X window manager by creating a root window (as we told Xwayland to start in rootless mode) and using substructure_redirect to intercept all child window events to us to process. For example:
+
+Fields
+------
+
+.. index:: pair: variable; xcb_conn
+.. _doxid-d8/d09/structtw__xwm_1ad54e73b90092f3f90e7e616f53edbef0:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	xcb_connection_t* xcb_conn
+
+x resources
+

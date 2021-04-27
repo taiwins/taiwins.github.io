@@ -27,5 +27,5 @@ struct tw_login
 		bool :target:`active<doxid-d0/d6a/structtw__login_1a6bcc0e9f0aadc2c5319638371a16a4a6>`;
 		struct wl_signal :target:`attributes_change<doxid-d0/d6a/structtw__login_1a6c4b47aeacfbf1d95ddcb88f5ebea31b>`;
 		struct wl_signal :target:`udev_device<doxid-d0/d6a/structtw__login_1a51143b33062a28a7a1c105489a53d234>`;
-		struct tw_login::@41 :target:`signals<doxid-d0/d6a/structtw__login_1a0550f76637263e9c7b4bb8bb8a2cc762>`;
+		struct tw_login::@48 :target:`signals<doxid-d0/d6a/structtw__login_1a7ca6be9bc3b705cac1cba1d57885cfac>`;
 	};

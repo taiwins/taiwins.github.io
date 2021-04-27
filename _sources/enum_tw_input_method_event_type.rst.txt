@@ -1,0 +1,22 @@
+.. index:: pair: enum; tw_input_method_event_type
+.. _doxid-db/d29/input__method_8h_1acfa9b2f3ab7fd8bbe965c333ca78cfba:
+
+enum tw_input_method_event_type
+===============================
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <input_method.h>
+
+	enum tw_input_method_event_type
+	{
+	    :target:`TW_INPUT_METHOD_TOGGLE<doxid-db/d29/input__method_8h_1acfa9b2f3ab7fd8bbe965c333ca78cfbaaf835cd31d59947b6b029fe39b24df965>`           = 1<<0,
+	    :target:`TW_INPUT_METHOD_SURROUNDING_TEXT<doxid-db/d29/input__method_8h_1acfa9b2f3ab7fd8bbe965c333ca78cfbaaf3a292f2d7be4bd5da7b13cc8cfa1248>` = 1<<1,
+	    :target:`TW_INPUT_METHOD_CHANGE_CAUSE<doxid-db/d29/input__method_8h_1acfa9b2f3ab7fd8bbe965c333ca78cfbaa2c589bddf0961170d3ce93dd941cd060>`     = 1<<2,
+	    :target:`TW_INPUT_METHOD_CONTENT_TYPE<doxid-db/d29/input__method_8h_1acfa9b2f3ab7fd8bbe965c333ca78cfbaaf7569fb90ec93b35369c204f40819a5d>`     = 1<<3,
+	    :target:`TW_INPUT_METHOD_CURSOR_RECTANGLE<doxid-db/d29/input__method_8h_1acfa9b2f3ab7fd8bbe965c333ca78cfbaaa6660ee898ab3a37d849ed353c3195ea>` = 1<<4,
+	};
+

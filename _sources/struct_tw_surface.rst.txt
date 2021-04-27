@@ -41,16 +41,16 @@ Overview
 		pixman_region32_t :target:`dirty<doxid-dd/dda/structtw__surface_1a7618715bf9d977133f171990a7d9e4e3>`;
 		struct :ref:`tw_mat3<doxid-d4/da4/structtw__mat3>` :ref:`transform<doxid-dd/dda/structtw__surface_1a471ee658ab84783873aa274619459f3a>`;
 		struct :ref:`tw_mat3<doxid-d4/da4/structtw__mat3>` :target:`inverse_transform<doxid-dd/dda/structtw__surface_1ab1a6891cfd421aee98a3608c4ec83ca7>`;
-		struct tw_surface::@86 :ref:`geometry<doxid-dd/dda/structtw__surface_1ab20f8e671ccd2f55a368fb7c11076d7f>`;
+		struct tw_surface::@60 :ref:`geometry<doxid-dd/dda/structtw__surface_1a155d99f4fb672f84aeec337461500b4b>`;
 		const char* :target:`name<doxid-dd/dda/structtw__surface_1a01043fab20ca1d87d01b625e13e2380c>`;
 		void* :target:`commit_private<doxid-dd/dda/structtw__surface_1aa10dab8dd3a3da3b3f08d60f7b6882d3>`;
 		:ref:`tw_surface_commit_cb_t<doxid-d2/d69/surface_8h_1af48899ca9a04fc8830e5a0e2e5fba631>` :target:`commit<doxid-dd/dda/structtw__surface_1a95a70f8064b497c54cf69aa974d0845e>`;
-		struct tw_surface::@87 :target:`role<doxid-dd/dda/structtw__surface_1ade0b52e9e1711028a1154eaa01340b1d>`;
+		struct tw_surface::@61 :target:`role<doxid-dd/dda/structtw__surface_1ac23d878621f374d5061922d77ad5b23b>`;
 		struct wl_signal :target:`frame<doxid-dd/dda/structtw__surface_1a91b502ec26badcdbaef5462ac189d6a0>`;
 		struct wl_signal :target:`commit<doxid-dd/dda/structtw__surface_1a6f6a3f0f6d415a38f088dbbce362a220>`;
 		struct wl_signal :target:`destroy<doxid-dd/dda/structtw__surface_1abe125f8544f1d42f43c19e59474f8341>`;
 		struct wl_signal :target:`dirty<doxid-dd/dda/structtw__surface_1a54be9b698da2eadcb453952f2342787e>`;
-		struct tw_surface::@88 :target:`signals<doxid-dd/dda/structtw__surface_1a654d5ac879f614720f8e32710cdd94f9>`;
+		struct tw_surface::@62 :target:`signals<doxid-dd/dda/structtw__surface_1a0fddc862595653bd9d0512ddda7601a2>`;
 		void* :target:`user_data<doxid-dd/dda/structtw__surface_1a6cd1c2ca184ca7b79c4f12bd48b20bad>`;
 	};
 .. _details-dd/dda/structtw__surface:
@@ -94,7 +94,7 @@ many types may need to use one of the links, eg: backend_ouput, layer, composito
 map from (-1,-1,1,1) to global coordinates in a Y-down coordinate system
 
 .. index:: pair: variable; geometry
-.. _doxid-dd/dda/structtw__surface_1ab20f8e671ccd2f55a368fb7c11076d7f:
+.. _doxid-dd/dda/structtw__surface_1a155d99f4fb672f84aeec337461500b4b:
 
 .. ref-code-block:: cpp
 	:class: doxyrest-title-code-block

@@ -20,5 +20,6 @@ enum tw_surface_state
 	    :target:`TW_SURFACE_BUFFER_SCALED<doxid-d2/d69/surface_8h_1a7fa8d10070e058c1ed66bfa6e5bc4d1da3b1f156e7550680c8ceb04d5994beda3>`    =(1<<4),
 	    :target:`TW_SURFACE_OPAQUE_REGION<doxid-d2/d69/surface_8h_1a7fa8d10070e058c1ed66bfa6e5bc4d1da7cf15b6ecdff411af63051057bc27bbe>`    =(1<<5),
 	    :target:`TW_SURFACE_INPUT_REGION<doxid-d2/d69/surface_8h_1a7fa8d10070e058c1ed66bfa6e5bc4d1da7419ba4c454e3520642a4ee2e829db4d>`     =(1<<6),
+	    :target:`TW_SURFACE_FRAME_REQUESTED<doxid-d2/d69/surface_8h_1a7fa8d10070e058c1ed66bfa6e5bc4d1da988f254e1561cd2d3d57ae2b9d4fdf1a>`  =(1<<9),
 	};
 

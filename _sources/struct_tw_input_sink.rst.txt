@@ -26,7 +26,7 @@ this struct mirrors the :ref:`tw_input_source <doxid-d4/df6/structtw__input__sou
 		struct wl_listener :target:`key<doxid-da/d91/structtw__input__sink_1add7a194bfb069646d49d712bca3a9490>`;
 		struct wl_listener :target:`modifiers<doxid-da/d91/structtw__input__sink_1aed78bcf8949a7bf258e8e4954b48c21d>`;
 		struct wl_listener :target:`keymap<doxid-da/d91/structtw__input__sink_1a04541cd6878e732ad85ef116b6eabeb2>`;
-		struct tw_input_sink::@36 :ref:`keyboard<doxid-da/d91/structtw__input__sink_1aca68a9a01962f9fdff8a0d8831a523f1>`;
+		struct tw_input_sink::@43 :ref:`keyboard<doxid-da/d91/structtw__input__sink_1a83149af60aa4eb5ab9c21f32a5fcf0e4>`;
 		struct wl_listener :target:`motion<doxid-da/d91/structtw__input__sink_1a5b33375b4b02dfe0aac4aa18610020f3>`;
 		struct wl_listener :target:`motion_absolute<doxid-da/d91/structtw__input__sink_1a8b8b3da5bf1a38730d75a650b54e013b>`;
 		struct wl_listener :target:`button<doxid-da/d91/structtw__input__sink_1a1569afc38a07e741b565a27836dddcd7>`;
@@ -38,11 +38,11 @@ this struct mirrors the :ref:`tw_input_source <doxid-d4/df6/structtw__input__sou
 		struct wl_listener :target:`pinch_begin<doxid-da/d91/structtw__input__sink_1a0cd0cc9c27cedc63ad4d0379b694fdf3>`;
 		struct wl_listener :target:`pinch_update<doxid-da/d91/structtw__input__sink_1af5f801abf84975aa67175fada614651d>`;
 		struct wl_listener :target:`pinch_end<doxid-da/d91/structtw__input__sink_1a1bed0519e2bd4929a5b714f9aeed8d3f>`;
-		struct tw_input_sink::@37 :target:`pointer<doxid-da/d91/structtw__input__sink_1a6949c2380e8b78406d7536af750e956e>`;
+		struct tw_input_sink::@44 :target:`pointer<doxid-da/d91/structtw__input__sink_1a61543a31f263f24835c91f2c3398d374>`;
 		struct wl_listener :target:`down<doxid-da/d91/structtw__input__sink_1a4349437024ab15945830b360da6ad64f>`;
 		struct wl_listener :target:`up<doxid-da/d91/structtw__input__sink_1a6af566fe6112199fe0e43e1ecf0fd9e1>`;
 		struct wl_listener :target:`cancel<doxid-da/d91/structtw__input__sink_1a4c40d3ec8b50da7a9c305700767839f0>`;
-		struct tw_input_sink::@38 :target:`touch<doxid-da/d91/structtw__input__sink_1a94fc3ba0d9639a02d10c04b0096d9b25>`;
+		struct tw_input_sink::@45 :target:`touch<doxid-da/d91/structtw__input__sink_1af568423a27bf9a3326f58b063e4249f1>`;
 	};
 .. _details-da/d91/structtw__input__sink:
 
@@ -55,7 +55,7 @@ Fields
 ------
 
 .. index:: pair: variable; keyboard
-.. _doxid-da/d91/structtw__input__sink_1aca68a9a01962f9fdff8a0d8831a523f1:
+.. _doxid-da/d91/structtw__input__sink_1a83149af60aa4eb5ab9c21f32a5fcf0e4:
 
 .. ref-code-block:: cpp
 	:class: doxyrest-title-code-block

@@ -1,0 +1,31 @@
+.. index:: pair: struct; tw_input_method_state
+.. _doxid-d8/d6c/structtw__input__method__state:
+
+struct tw_input_method_state
+============================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <input_method.h>
+	
+	struct tw_input_method_state
+	{
+		// fields
+	
+		char* :target:`text<doxid-d8/d6c/structtw__input__method__state_1a68535881a4fea56e812a5840825c9d0d>`;
+		int32_t :target:`cursor_begin<doxid-d8/d6c/structtw__input__method__state_1a11d83451b6ac234b9c4980a2959e18f7>`;
+		int32_t :target:`cursor_end<doxid-d8/d6c/structtw__input__method__state_1ab75d45838a95ca7810298ceb9d441872>`;
+		struct tw_input_method_state::@50 :target:`preedit<doxid-d8/d6c/structtw__input__method__state_1a34a41a89acace5d5c351694a4aded796>`;
+		char* :target:`commit_string<doxid-d8/d6c/structtw__input__method__state_1ad8689b9c1a41db9cfd4caddffb04bac3>`;
+		uint32_t :target:`before_length<doxid-d8/d6c/structtw__input__method__state_1afb0d16f01a2d1abfdda3f43f5ac8115a>`;
+		uint32_t :target:`after_length<doxid-d8/d6c/structtw__input__method__state_1abd0168368d0799e13bfbd057fec3cbd2>`;
+		struct tw_input_method_state::@51 :target:`surrounding_delete<doxid-d8/d6c/structtw__input__method__state_1a1d48af6a6c854978cc9f98b0eef0b7cb>`;
+		uint32_t :target:`requests<doxid-d8/d6c/structtw__input__method__state_1a747989d7972de93cbdce7e20784d47f5>`;
+	};

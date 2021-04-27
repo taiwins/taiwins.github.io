@@ -1,0 +1,53 @@
+.. index:: pair: struct; tw_xwayland
+.. _doxid-d4/d60/structtw__xwayland:
+
+struct tw_xwayland
+==================
+
+.. toctree::
+	:hidden:
+
+Overview
+~~~~~~~~
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <xwayland.h>
+	
+	struct tw_xwayland
+	{
+		// fields
+	
+		struct :ref:`tw_xserver<doxid-d1/d7b/structtw__xserver>`* :target:`server<doxid-d4/d60/structtw__xwayland_1aab2130a234aee9f3a4b481ac221ad7f0>`;
+		struct :ref:`tw_xwm<doxid-d8/d09/structtw__xwm>`* :target:`xwm<doxid-d4/d60/structtw__xwayland_1a4a43049f105228f433b2b1ce410e40c7>`;
+		struct :ref:`tw_engine<doxid-df/d8e/structtw__engine>`* :target:`engine<doxid-d4/d60/structtw__xwayland_1a87958fa6fbbd9b9564e61b1951496767>`;
+		struct :ref:`tw_desktop_manager<doxid-dd/d73/structtw__desktop__manager>`* :target:`desktop_manager<doxid-d4/d60/structtw__xwayland_1aaf6e684c62a66faf82ddb8e13884649d>`;
+		struct wl_listener :target:`display_destroy<doxid-d4/d60/structtw__xwayland_1a9e2cd292ab0aa21b47a31decc04396d3>`;
+		struct wl_listener :target:`xserver_created<doxid-d4/d60/structtw__xwayland_1a30a5fd30a272e1f787781597ed165123>`;
+		struct wl_listener :ref:`seat_focused<doxid-d4/d60/structtw__xwayland_1a907c1f938b9289873a946553d5e66cf3>`;
+		struct tw_xwayland::@34 :target:`listeners<doxid-d4/d60/structtw__xwayland_1a8cc1c201d3ffe599b810ad53d0eabc35>`;
+	};
+.. _details-d4/d60/structtw__xwayland:
+
+Detailed Documentation
+~~~~~~~~~~~~~~~~~~~~~~
+
+
+
+Fields
+------
+
+.. index:: pair: variable; seat_focused
+.. _doxid-d4/d60/structtw__xwayland_1a907c1f938b9289873a946553d5e66cf3:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	struct wl_listener seat_focused
+
+set the data_device
+

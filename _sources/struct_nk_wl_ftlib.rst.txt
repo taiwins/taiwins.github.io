@@ -1,0 +1,23 @@
+.. index:: pair: struct; nk_wl_ftlib
+.. _doxid-d4/dce/structnk__wl__ftlib:
+
+struct nk_wl_ftlib
+==================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	
+	struct nk_wl_ftlib
+	{
+		// fields
+	
+		FT_Library :target:`ftlib<doxid-d4/dce/structnk__wl__ftlib_1a7278fd34df25f52fdd250974a5086f47>`;
+		int :target:`ref<doxid-d4/dce/structnk__wl__ftlib_1a94a3b61e00547fd81ea4f3d06f3ac885>`;
+	};

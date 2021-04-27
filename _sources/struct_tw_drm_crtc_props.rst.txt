@@ -19,6 +19,7 @@ struct tw_drm_crtc_props
 	{
 		// fields
 	
+		int :target:`id<doxid-da/ddb/structtw__drm__crtc__props_1a3a58a6f671f9dcef4d8b9fb6da2192d4>`;
 		uint32_t :target:`active<doxid-da/ddb/structtw__drm__crtc__props_1a56bc5cef222f80ec2dbe48ceef65049c>`;
 		uint32_t :target:`mode_id<doxid-da/ddb/structtw__drm__crtc__props_1a338040cef90d215f17289f8112894f98>`;
 	};

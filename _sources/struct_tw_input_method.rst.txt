@@ -1,0 +1,55 @@
+.. index:: pair: struct; tw_input_method
+.. _doxid-dc/dc9/structtw__input__method:
+
+struct tw_input_method
+======================
+
+.. toctree::
+	:hidden:
+
+Overview
+~~~~~~~~
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <input_method.h>
+	
+	struct tw_input_method
+	{
+		// fields
+	
+		struct wl_resource* :ref:`resource<doxid-dc/dc9/structtw__input__method_1a5a1f8865004f97f53dd2d35cb4c13ff0>`;
+		struct wl_list :target:`link<doxid-dc/dc9/structtw__input__method_1a0fdc28accef88495a20f7f4895b39057>`;
+		struct :ref:`tw_seat<doxid-dc/d28/structtw__seat>`* :target:`seat<doxid-dc/dc9/structtw__input__method_1a437e7fa776ad627ddc86deb30a9d6265>`;
+		struct :ref:`tw_subsurface<doxid-de/d75/structtw__subsurface>` :target:`subsurface<doxid-dc/dc9/structtw__input__method_1aec72caa70201ef099a0e2d213e477f71>`;
+		pixman_rectangle32_t :target:`rectangle<doxid-dc/dc9/structtw__input__method_1af36c7863748e4d444710c481701626c7>`;
+		struct tw_input_method::@52 :target:`im_surface<doxid-dc/dc9/structtw__input__method_1a0a5a552a509cf614bddcac82ffca6374>`;
+		struct :ref:`tw_seat_keyboard_grab<doxid-de/dfc/structtw__seat__keyboard__grab>` :target:`im_grab<doxid-dc/dc9/structtw__input__method_1a73c64a9b7b25d8a0189d9e20ec349d9f>`;
+		struct :ref:`tw_input_method_state<doxid-d8/d6c/structtw__input__method__state>` pending :target:`current<doxid-dc/dc9/structtw__input__method_1a0cf5a5144f8f2653797b076f889b71b7>`;
+		struct wl_listener :target:`seat_destroy_listener<doxid-dc/dc9/structtw__input__method_1a8f48627bac9a2ed4711192d0176df0e2>`;
+		bool :target:`active<doxid-dc/dc9/structtw__input__method_1a6a31f76cfeab03e2621f49e47b3fbfc6>`;
+	};
+.. _details-dc/dc9/structtw__input__method:
+
+Detailed Documentation
+~~~~~~~~~~~~~~~~~~~~~~
+
+
+
+Fields
+------
+
+.. index:: pair: variable; resource
+.. _doxid-dc/dc9/structtw__input__method_1a5a1f8865004f97f53dd2d35cb4c13ff0:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	struct wl_resource* resource
+
+:ref:`tw_input_method_manager <doxid-db/de8/structtw__input__method__manager>` :resources
+

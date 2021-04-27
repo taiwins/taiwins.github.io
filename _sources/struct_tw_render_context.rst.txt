@@ -30,6 +30,6 @@ struct tw_render_context
 		struct wl_signal :target:`output_lost<doxid-d1/dba/structtw__render__context_1a896dbc7604305cc4e63b8884bc19364f>`;
 		struct wl_signal :target:`wl_surface_dirty<doxid-d1/dba/structtw__render__context_1a031a0a3b9fcc31398b9272bb276c5565>`;
 		struct wl_signal :target:`wl_surface_destroy<doxid-d1/dba/structtw__render__context_1af21b443a2ccedd5a2623d4bc51f45830>`;
-		struct tw_render_context::@43 :target:`signals<doxid-d1/dba/structtw__render__context_1a0142a1fb37cdea97fe9c9c469b9de7bc>`;
+		struct tw_render_context::@67 :target:`signals<doxid-d1/dba/structtw__render__context_1a76f82d83f093338626d64e364bb146c2>`;
 		struct wl_list :target:`pipelines<doxid-d1/dba/structtw__render__context_1a7fd0f65bbf9534089b133c2cb1184d37>`;
 	};

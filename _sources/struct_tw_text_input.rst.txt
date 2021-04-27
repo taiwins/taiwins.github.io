@@ -1,0 +1,27 @@
+.. index:: pair: struct; tw_text_input
+.. _doxid-d8/d98/structtw__text__input:
+
+struct tw_text_input
+====================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <text_input.h>
+	
+	struct tw_text_input
+	{
+		// fields
+	
+		struct wl_resource* :target:`resource<doxid-d8/d98/structtw__text__input_1a0c179acff43283c864b10404de606af1>`;
+		struct :ref:`tw_seat<doxid-dc/d28/structtw__seat>`* :target:`seat<doxid-d8/d98/structtw__text__input_1a750f0820e14e53712c3716a672f1481f>`;
+		struct wl_resource* :target:`focused<doxid-d8/d98/structtw__text__input_1a18eb98cea0724615a010768b47275621>`;
+		struct :ref:`tw_text_input_state<doxid-d4/d3c/structtw__text__input__state>` pending :target:`current<doxid-d8/d98/structtw__text__input_1a63d25606f2e7837b3ef04cef05ce2126>`;
+		struct wl_listener :target:`focus_listener<doxid-d8/d98/structtw__text__input_1a3de6bf8427ee7ad9d1a33634cfd0069c>`;
+	};

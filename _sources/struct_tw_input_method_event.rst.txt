@@ -1,0 +1,56 @@
+.. index:: pair: struct; tw_input_method_event
+.. _doxid-d9/dfe/structtw__input__method__event:
+
+struct tw_input_method_event
+============================
+
+.. toctree::
+	:hidden:
+
+Overview
+~~~~~~~~
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <input_method.h>
+	
+	struct tw_input_method_event
+	{
+		// fields
+	
+		bool :target:`enabled<doxid-d9/dfe/structtw__input__method__event_1a9f3ec3bddfe16e1f28f91dfea0c7a73a>`;
+		struct wl_resource* :ref:`focused<doxid-d9/dfe/structtw__input__method__event_1ac4a07ab5bc40e0afd3d0cbcfb1e0c145>`;
+		uint32_t :target:`cursor<doxid-d9/dfe/structtw__input__method__event_1a627f1465784ac87c31b1acf4c112dd0a>`;
+		uint32_t :target:`anchor<doxid-d9/dfe/structtw__input__method__event_1a44654077437fd9858b9571768caf9e05>`;
+		const char* :target:`text<doxid-d9/dfe/structtw__input__method__event_1a66163593a931898ab63a6117b7ac3681>`;
+		struct tw_input_method_event::@49 :target:`surrounding<doxid-d9/dfe/structtw__input__method__event_1a44a2d089aec46d5acec810941aacb3ba>`;
+		pixman_rectangle32_t :target:`cursor_rect<doxid-d9/dfe/structtw__input__method__event_1ac4b2dd9555dc218e162993899cb354d4>`;
+		uint32_t :target:`change_cause<doxid-d9/dfe/structtw__input__method__event_1a320e6c377c97982168b9ea5f36cfda12>`;
+		uint32_t :target:`content_hint<doxid-d9/dfe/structtw__input__method__event_1af14ae0c898b08c08658daf31b6822de9>`;
+		uint32_t :target:`content_purpose<doxid-d9/dfe/structtw__input__method__event_1ae9a716f3c5b388feebb594ef9f510d23>`;
+		uint32_t :target:`events<doxid-d9/dfe/structtw__input__method__event_1a2b84b6fb7fdf1bfea2164d09e7f499fc>`;
+	};
+.. _details-d9/dfe/structtw__input__method__event:
+
+Detailed Documentation
+~~~~~~~~~~~~~~~~~~~~~~
+
+
+
+Fields
+------
+
+.. index:: pair: variable; focused
+.. _doxid-d9/dfe/structtw__input__method__event_1ac4a07ab5bc40e0afd3d0cbcfb1e0c145:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	struct wl_resource* focused
+
+activated text input on this surface, this will drive us to set im popup active as well.
+

@@ -1,0 +1,33 @@
+.. index:: pair: struct; tw_xwm_selection
+.. _doxid-d5/df1/structtw__xwm__selection:
+
+struct tw_xwm_selection
+=======================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <selection.h>
+	
+	struct tw_xwm_selection
+	{
+		// fields
+	
+		struct :ref:`tw_xwm<doxid-d8/d09/structtw__xwm>`* :target:`xwm<doxid-d5/df1/structtw__xwm__selection_1ae7adb748556af599b2e4146cf0e861ee>`;
+		xcb_atom_t :target:`type<doxid-d5/df1/structtw__xwm__selection_1ae839ca51b2a83794827cc144f4f58266>`;
+		xcb_window_t :target:`window<doxid-d5/df1/structtw__xwm__selection_1ab298ebd124c25521e1c4d9010d4cadff>`;
+		xcb_window_t :target:`owner<doxid-d5/df1/structtw__xwm__selection_1a6a3f3670ce2898b738e0d8c7c65d957e>`;
+		xcb_timestamp_t :target:`timestamp<doxid-d5/df1/structtw__xwm__selection_1a5988ebd2e49c307dd3ef891f5dd75614>`;
+		struct :ref:`tw_xwm_data_transfer<doxid-d5/d2d/structtw__xwm__data__transfer>` write_transfer :target:`read_transfer<doxid-d5/df1/structtw__xwm__selection_1a53f9673b401fcea595d7fd3e84cce3ba>`;
+		struct :ref:`tw_xwm_data_source<doxid-d3/d76/structtw__xwm__data__source>` :target:`xwm_source<doxid-d5/df1/structtw__xwm__selection_1a2b5e94cbb77dfee46b48b11185952f4a>`;
+		struct :ref:`tw_data_source<doxid-dc/d55/structtw__data__source>`* :target:`wl_source<doxid-d5/df1/structtw__xwm__selection_1a9b66d03513d126041beedcea9ee36244>`;
+		struct :ref:`tw_data_device<doxid-de/dbd/structtw__data__device>`* :target:`seat<doxid-d5/df1/structtw__xwm__selection_1adc9dd7c157f1297bb1784af3733a35d1>`;
+		struct wl_listener :target:`source_set<doxid-d5/df1/structtw__xwm__selection_1a2ac600c59a7f9f8b59d29ca20fd7b585>`;
+		struct wl_listener :target:`source_removed<doxid-d5/df1/structtw__xwm__selection_1a4b0ac1c651bd6fd1fbd45c58de71ab6c>`;
+	};

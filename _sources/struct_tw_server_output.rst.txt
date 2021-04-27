@@ -1,0 +1,89 @@
+.. index:: pair: struct; tw_server_output
+.. _doxid-de/d7a/structtw__server__output:
+
+struct tw_server_output
+=======================
+
+.. toctree::
+	:hidden:
+
+Overview
+~~~~~~~~
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <output.h>
+	
+	struct tw_server_output
+	{
+		// fields
+	
+		struct :ref:`tw_engine_output<doxid-d4/d04/structtw__engine__output>`* :target:`output<doxid-de/d7a/structtw__server__output_1ae1fdb840ade6d2286ec3856a02072eff>`;
+		uint32_t :ref:`fts<doxid-de/d7a/structtw__server__output_1ad0d56315878b4b3f47723878548cc860>`[TW_FRAME_TIME_CNT];
+		uint32_t :target:`ft_idx<doxid-de/d7a/structtw__server__output_1a45c0cd4332e3603aff77b63c93d04ac0>`;
+		struct timespec :target:`ts<doxid-de/d7a/structtw__server__output_1aab8d42c80c4aec09756d7a4cafc309d2>`;
+		struct timespec :ref:`last_present<doxid-de/d7a/structtw__server__output_1a37f05a71f100515d57da3ca55644c197>`;
+		struct wl_event_source* :target:`frame_timer<doxid-de/d7a/structtw__server__output_1a5e0bbd925ef6a7975098900d5d4f0974>`;
+		struct tw_server_output::@31 :target:`state<doxid-de/d7a/structtw__server__output_1a93f29c2e8c9f6524a35ab4dc08562d28>`;
+		struct wl_listener :ref:`destroy<doxid-de/d7a/structtw__server__output_1ab1b5bf286b887f7c345afdafa2467616>`;
+		struct wl_listener :target:`present<doxid-de/d7a/structtw__server__output_1a74d4e2bf1370e7b98faf06f47b89b1fc>`;
+		struct wl_listener :ref:`clock_reset<doxid-de/d7a/structtw__server__output_1a74b60b3bbeed28eaabdc454582661b7d>`;
+		struct wl_listener :target:`need_frame<doxid-de/d7a/structtw__server__output_1a18731a2095b000370728cdb153f25fab>`;
+		struct wl_listener :target:`pre_frame<doxid-de/d7a/structtw__server__output_1a321d139319889c4f757bfe46e9a991ec>`;
+		struct wl_listener :target:`post_frame<doxid-de/d7a/structtw__server__output_1ad957f06afc37b516763d6a271603b322>`;
+		struct tw_server_output::@32 :target:`listeners<doxid-de/d7a/structtw__server__output_1ac2661c57840f0dbd38f6425d8a94bcb6>`;
+	};
+.. _details-de/d7a/structtw__server__output:
+
+Detailed Documentation
+~~~~~~~~~~~~~~~~~~~~~~
+
+
+
+Fields
+------
+
+.. index:: pair: variable; fts
+.. _doxid-de/d7a/structtw__server__output_1ad0d56315878b4b3f47723878548cc860:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	uint32_t fts[TW_FRAME_TIME_CNT]
+
+average frame time in microseconds
+
+.. index:: pair: variable; last_present
+.. _doxid-de/d7a/structtw__server__output_1a37f05a71f100515d57da3ca55644c197:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	struct timespec last_present
+
+used for recording start of frame
+
+.. index:: pair: variable; destroy
+.. _doxid-de/d7a/structtw__server__output_1ab1b5bf286b887f7c345afdafa2467616:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	struct wl_listener destroy
+
+< device signals
+
+.. index:: pair: variable; clock_reset
+.. _doxid-de/d7a/structtw__server__output_1a74b60b3bbeed28eaabdc454582661b7d:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	struct wl_listener clock_reset
+
+render_output signals
+

@@ -29,7 +29,7 @@ Overview
 		struct wl_compositor* :target:`compositor<doxid-d2/dad/structtw__wl__backend_1acf379ca0c4ce2eb7c1040e9b890340e5>`;
 		struct xdg_wm_base* :target:`wm_base<doxid-d2/dad/structtw__wl__backend_1acf7c03601c44eda6dfd64eb017e76206>`;
 		struct wp_presentation* :target:`presentation<doxid-d2/dad/structtw__wl__backend_1ab5ed2b4a44de295805056f239b91f126>`;
-		struct tw_wl_backend::@53 :target:`globals<doxid-d2/dad/structtw__wl__backend_1a1a3005f2c14321f50e0761d2f160247c>`;
+		struct tw_wl_backend::@80 :target:`globals<doxid-d2/dad/structtw__wl__backend_1a0563b04fda7f9bef1f760264a01226e6>`;
 		struct :ref:`tw_backend<doxid-df/d59/structtw__backend>` :target:`base<doxid-d2/dad/structtw__wl__backend_1a49a5e6753388082fa4da4a51f3160f41>`;
 		struct wl_listener :target:`display_destroy<doxid-d2/dad/structtw__wl__backend_1a4bd88b15f4b29b52b561a15c4162395f>`;
 		struct wl_list :ref:`seats<doxid-d2/dad/structtw__wl__backend_1abfa4c26d8d9d49cd3697a6e746597609>`;

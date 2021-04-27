@@ -1,0 +1,20 @@
+.. index:: pair: enum; tw_text_input_event_type
+.. _doxid-d6/de7/text__input_8h_1a0c7d6f5302b1ac56734735f638de8133:
+
+enum tw_text_input_event_type
+=============================
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <text_input.h>
+
+	enum tw_text_input_event_type
+	{
+	    :target:`TW_TEXT_INPUT_PREEDIT<doxid-d6/de7/text__input_8h_1a0c7d6f5302b1ac56734735f638de8133ab475945043e8198282e880252ba67d15>`            = 1<<0,
+	    :target:`TW_TEXT_INPUT_COMMIT_STRING<doxid-d6/de7/text__input_8h_1a0c7d6f5302b1ac56734735f638de8133a085cd69d0895f7b1e2cb1fe768ec1e7b>`      = 1<<1,
+	    :target:`TW_TEXT_INPUT_SURROUNDING_DELETE<doxid-d6/de7/text__input_8h_1a0c7d6f5302b1ac56734735f638de8133a041fd53dd4a589304b96d4ed3ac44b9c>` = 1<<2,
+	};
+

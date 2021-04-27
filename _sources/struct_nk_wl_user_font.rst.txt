@@ -1,0 +1,24 @@
+.. index:: pair: struct; nk_wl_user_font
+.. _doxid-d7/d9b/structnk__wl__user__font:
+
+struct nk_wl_user_font
+======================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <nk_wl_font.h>
+	
+	struct nk_wl_user_font
+	{
+		// fields
+	
+		struct wl_list :target:`link<doxid-d7/d9b/structnk__wl__user__font_1a824247953e36f4eacc4e41d51fd3244f>`;
+		struct nk_user_font :target:`user_font<doxid-d7/d9b/structnk__wl__user__font_1a3862137e4256e8bffbd2a2a598cd8085>`;
+	};

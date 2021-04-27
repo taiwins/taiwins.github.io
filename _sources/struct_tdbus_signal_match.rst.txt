@@ -19,6 +19,11 @@ struct tdbus_signal_match
 		// fields
 	
 		char* :target:`match<doxid-d7/dfb/structtdbus__signal__match_1adc60ba9f4b1d1a8785f2921797a48f5e>`;
+		char* :target:`sender<doxid-d7/dfb/structtdbus__signal__match_1a88273644efe18e38069b8108a5c10d04>`;
+		char* :target:`iface<doxid-d7/dfb/structtdbus__signal__match_1adf1830e0cd85b752423b209bfd18d9c8>`;
+		char* :target:`member<doxid-d7/dfb/structtdbus__signal__match_1aea04fd75a47f442db833743706cc2bf5>`;
+		char* :target:`path<doxid-d7/dfb/structtdbus__signal__match_1aecdd15245236684cdc964022340b1e6d>`;
+		size_t :target:`len<doxid-d7/dfb/structtdbus__signal__match_1a435f41503f03be999031d2ba711a611c>`;
 		:ref:`tdbus_read_signal_f<doxid-dc/dc8/tdbus__message_8h_1aa5cd90021ee23443b9e5d45177834516>` :target:`reader<doxid-d7/dfb/structtdbus__signal__match_1a95e2e05525f05fa30c5f6705c5d0630c>`;
 		void* :target:`user_data<doxid-d7/dfb/structtdbus__signal__match_1a051c6dfc501fc74b40de70a9cd1cc21c>`;
 	};

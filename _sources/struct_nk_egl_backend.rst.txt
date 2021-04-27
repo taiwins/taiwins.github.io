@@ -1,0 +1,54 @@
+.. index:: pair: struct; nk_egl_backend
+.. _doxid-d9/d40/structnk__egl__backend:
+
+struct nk_egl_backend
+=====================
+
+.. toctree::
+	:hidden:
+
+Overview
+~~~~~~~~
+
+:ref:`nk_egl_backend <doxid-d9/d40/structnk__egl__backend>` :ref:`More...<details-d9/d40/structnk__egl__backend>`
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	
+	struct nk_egl_backend
+	{
+		// fields
+	
+		struct :ref:`nk_wl_backend<doxid-d2/d1a/structnk__wl__backend>` :target:`base<doxid-d9/d40/structnk__egl__backend_1af3467db44e7ec49e89af11eea7b5103b>`;
+		struct :ref:`tw_egl_env<doxid-dd/d3f/structtw__egl__env>` :target:`env<doxid-d9/d40/structnk__egl__backend_1a62a3f16e5632381152e671a2e94f8b12>`;
+		bool :target:`compiled<doxid-d9/d40/structnk__egl__backend_1a76236c32585451f70a4e92a70da53e63>`;
+		GLuint :target:`glprog<doxid-d9/d40/structnk__egl__backend_1a433b4ca8c5af64273e7da1893aef58d4>`;
+		GLuint :target:`vao<doxid-d9/d40/structnk__egl__backend_1a4b2f3d4006dcd66494d9c1c6eb35936f>`;
+		GLuint :target:`vbo<doxid-d9/d40/structnk__egl__backend_1a811484516b64a30c360f2cc3fe752b5b>`;
+		GLuint :target:`ebo<doxid-d9/d40/structnk__egl__backend_1aeddf52c76c1332433db686c1991ac6da>`;
+		GLuint :target:`font_tex<doxid-d9/d40/structnk__egl__backend_1a1c0e32e82e68722f700a8c3637e09ef6>`;
+		GLint :target:`attrib_pos<doxid-d9/d40/structnk__egl__backend_1abc8dc70674e6b64b88cb608b6af6784e>`;
+		GLint :target:`attrib_uv<doxid-d9/d40/structnk__egl__backend_1ab8a369bed2949e0a87b0b0c2558c231c>`;
+		GLint :target:`attrib_col<doxid-d9/d40/structnk__egl__backend_1a4b7056c138430c5d261d6a7e86cde8e0>`;
+		GLint :target:`uniform_tex<doxid-d9/d40/structnk__egl__backend_1acbd3e170faacf56f97bac8ba8eee0a27>`;
+		GLint :target:`uniform_proj<doxid-d9/d40/structnk__egl__backend_1aa79bd89fefecc648f63db9962e457874>`;
+		struct nk_buffer :target:`cmds<doxid-d9/d40/structnk__egl__backend_1a22cbcc0949d49ec7ab728aada280971a>`;
+		struct nk_draw_null_texture* :target:`null<doxid-d9/d40/structnk__egl__backend_1a9717b9a305f7fd4e00850ee0aeed11e5>`;
+	};
+.. _details-d9/d40/structnk__egl__backend:
+
+Detailed Documentation
+~~~~~~~~~~~~~~~~~~~~~~
+
+:ref:`nk_egl_backend <doxid-d9/d40/structnk__egl__backend>`
+
+nuklear EGL backend for wayland, this backend uses EGL and OpenGL 3.3 for rendering the widgets. The rendering loop is a bit different than typical window toolkit like GLFW/SDL.
+
+GFLW window toolkit traps everything in a loop. the loops blocks at the system events, then process the events(intput, time for updating normal), then uses the up-to-date information for rendering.
+
+In the our case, such loop doesn't exists(yet, we may add the loop support in the future to support FPS control, but it will not be here. GLFW can do more optimization, it can accumlate the events and do just one pass of rendering for multiple events).
+
+In our case, the events triggers a frame for the rendering(no rendering if there is no update). Then nuklear updates the context then OpenGL does the rendering.
+

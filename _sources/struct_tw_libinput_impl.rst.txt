@@ -13,7 +13,7 @@ implement by backend for complete libinput functions
 .. ref-code-block:: cpp
 	:class: doxyrest-overview-code-block
 
-	#include <backend_libinput.h>
+	#include <input_libinput.h>
 	
 	struct tw_libinput_impl
 	{

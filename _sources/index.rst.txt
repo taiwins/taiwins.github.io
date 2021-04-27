@@ -1,42 +1,22 @@
-.. include:: page_index.rst
+Taiwins is a modern and modular `wayland`_ compositor, and it is extensible
+through lua script. It has a builtin shell and GUI system called
+`twidgets`_. Writing a minimum wayland client using **twidgets** would take
+only 20 lines of code.
 
-.. toctree::
-	:hidden:
+Taiwins is the tiling as well as a floating window manager, you can allocate
+windows on your desktop *logicially* or based on your needs, drag your windows
+*freely*.
 
-	page_md__home_developer_Projects_web_taiwins_taiwins_CONTRIBUTING.rst
-	page_md__home_developer_Projects_web_taiwins_taiwins_docs_dbus.rst
-	page_md__home_developer_Projects_web_taiwins_taiwins_docs_libtaiwins.rst
-	page_md__home_developer_Projects_web_taiwins_taiwins_docs_lua.rst
-	page_md__home_developer_Projects_web_taiwins_taiwins_docs_progress.rst
-	page_md__home_developer_Projects_web_taiwins_taiwins_docs_screenshots.rst
-	page_md__home_developer_Projects_web_taiwins_taiwins_docs_window_management.rst
-	page_md__home_developer_Projects_web_taiwins_taiwins_README.rst
-	page_md__home_developer_Projects_web_taiwins_taiwins_docs_libtwclient.rst
-	page_md__home_developer_Projects_web_taiwins_taiwins_docs_twobjects.rst
-	page_md__home_developer_Projects_web_taiwins_taiwins_docs_wayland.rst
+features
+--------
+* fast and small codebase.
+* extensible and easy config through lua.
+* builtin shell.
+* wayland client system.
+* configurable theme.
+* multi key-presses bindings like emacs.
+* dbus support.
+* and more.
 
-.. rubric:: Related Pages:
-
-|	:doc:`page_md__home_developer_Projects_web_taiwins_taiwins_CONTRIBUTING`
-|	:doc:`page_md__home_developer_Projects_web_taiwins_taiwins_docs_dbus`
-|	:doc:`page_md__home_developer_Projects_web_taiwins_taiwins_docs_libtaiwins`
-|	:doc:`page_md__home_developer_Projects_web_taiwins_taiwins_docs_lua`
-|	:doc:`page_md__home_developer_Projects_web_taiwins_taiwins_docs_progress`
-|	:doc:`page_md__home_developer_Projects_web_taiwins_taiwins_docs_screenshots`
-|	:doc:`page_md__home_developer_Projects_web_taiwins_taiwins_docs_window_management`
-|	:doc:`page_md__home_developer_Projects_web_taiwins_taiwins_README`
-|	:doc:`page_md__home_developer_Projects_web_taiwins_taiwins_docs_libtwclient`
-|	:doc:`page_md__home_developer_Projects_web_taiwins_taiwins_docs_twobjects`
-|	:doc:`page_md__home_developer_Projects_web_taiwins_taiwins_docs_wayland`
-
-
-.. rubric:: Reference and Index:
-
-.. toctree::
-	:hidden:
-
-	global.rst
-
-|	:doc:`global`
-|	:ref:`genindex`
-
+.. _wayland: https://wayland.freedesktop.org/
+.. _twidgets: https://github.com/taiwins/twidgets

@@ -7,6 +7,9 @@ struct tw_seat
 .. toctree::
 	:hidden:
 
+Overview
+~~~~~~~~
+
 
 
 
@@ -23,6 +26,7 @@ struct tw_seat
 		struct wl_global* :target:`global<doxid-dc/d28/structtw__seat_1adade48ddc16fa8c3eeaf6454835ecedb>`;
 		struct wl_list :target:`clients<doxid-dc/d28/structtw__seat_1a5654ccf8ba374cb510000be822070deb>`;
 		struct wl_list :target:`link<doxid-dc/d28/structtw__seat_1a97ed574891fd5d081da4d567ccb30bdf>`;
+		struct wl_list :ref:`resources<doxid-dc/d28/structtw__seat_1a9da08e14b1f77c7a34e67da7928e52bd>`;
 		char :target:`name<doxid-dc/d28/structtw__seat_1af706435d0497f69bb1ad20a827e5eadb>`[32];
 		uint32_t :target:`capabilities<doxid-dc/d28/structtw__seat_1a1b6d1773010cf4af9cfc13b3856cf283>`;
 		uint32_t :target:`repeat_delay<doxid-dc/d28/structtw__seat_1a647e026e7f95ba79b781267ee164499b>`;
@@ -34,6 +38,48 @@ struct tw_seat
 		struct :ref:`tw_pointer<doxid-d8/db5/structtw__pointer>` :target:`pointer<doxid-dc/d28/structtw__seat_1a2a0d4a871087bf7779eb0f20100c701c>`;
 		struct :ref:`tw_touch<doxid-d1/d77/structtw__touch>` :target:`touch<doxid-dc/d28/structtw__seat_1ad39db08f8763110289b61277652fddbe>`;
 		struct :ref:`tw_cursor<doxid-d5/d66/structtw__cursor>`* :target:`cursor<doxid-dc/d28/structtw__seat_1ac7ef2f0796d382783e26db3e610ff71d>`;
-		struct wl_signal :target:`focus_signal<doxid-dc/d28/structtw__seat_1a2ed391b32ab1c9737dc104fd880f192a>`;
-		struct wl_signal :target:`destroy_signal<doxid-dc/d28/structtw__seat_1a66939a4794c15c13641409ff0ee311d2>`;
+		struct wl_signal :ref:`focus<doxid-dc/d28/structtw__seat_1a8120b830f3eedfc9225a325e496046a0>`;
+		struct wl_signal :ref:`unfocus<doxid-dc/d28/structtw__seat_1a81d238ca6565de432bde2db0632135c2>`;
+		struct wl_signal :target:`destroy<doxid-dc/d28/structtw__seat_1a673ef66e31f8c7687d854173e3222784>`;
+		struct tw_seat::@55 :target:`signals<doxid-dc/d28/structtw__seat_1a0bead3146431432e1a88a800fbe5cce5>`;
 	};
+.. _details-dc/d28/structtw__seat:
+
+Detailed Documentation
+~~~~~~~~~~~~~~~~~~~~~~
+
+
+
+Fields
+------
+
+.. index:: pair: variable; resources
+.. _doxid-dc/d28/structtw__seat_1a9da08e14b1f77c7a34e67da7928e52bd:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	struct wl_list resources
+
+exotic resources like input-method and text-input
+
+.. index:: pair: variable; focus
+.. _doxid-dc/d28/structtw__seat_1a8120b830f3eedfc9225a325e496046a0:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	struct wl_signal focus
+
+emitted on device set_focus
+
+.. index:: pair: variable; unfocus
+.. _doxid-dc/d28/structtw__seat_1a81d238ca6565de432bde2db0632135c2:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	struct wl_signal unfocus
+
+emitted on device clear_focus
+

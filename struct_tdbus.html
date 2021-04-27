@@ -7,6 +7,8 @@
     
     <title>struct tdbus &#8212; Taiwins</title>
   
+  <!-- fix for search function -->
+  <script type="text/javascript" src="_static/language_data.js "></script>
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="_static/bootstrap-sphinx.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="_static/my-style.css" />
@@ -19,8 +21,6 @@
     <link rel="shortcut icon" href="_static/favicon.ico"/>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="struct tdbus_arg_dict_entry" href="struct_tdbus_arg_dict_entry.html" />
-    <link rel="prev" title="struct size_state" href="struct_size_state.html" />
 <meta charset='utf-8'>
 <meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
 <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
@@ -77,6 +77,7 @@
     <span class="k">struct</span> <span class="n">DBusConnection</span><span class="o">*</span> <span class="doxyrest-code-target target" id="doxid-db-d60-structtdbus-1aea1132c1509aa44e6e7bee728f0e4cac"><span></span><span class="n">conn</span></span><span></span><span class="p">;</span>
     <span class="kt">char</span><span class="o">*</span> <span class="doxyrest-code-target target" id="doxid-db-d60-structtdbus-1a0d3632587ff1c147b6bf3e9b491108fc"><span></span><span class="n">service_name</span></span><span></span><span class="p">;</span>
     <span class="kt">bool</span> <span class="doxyrest-code-target target" id="doxid-db-d60-structtdbus-1a442ce206824a75e62b82dda81438febf"><span></span><span class="n">non_block</span></span><span></span><span class="p">;</span>
+    <a class="reference internal" href="global.html#doxid-d2-d1b-tdbus-8h-1a253e2af59a94023a8e373c33e873dec8"><span class="std std-ref">tdbus_logger_fn</span></a><span></span> <span class="doxyrest-code-target target" id="doxid-db-d60-structtdbus-1a870bdd23c434ce340b61ab2175d84f21"><span></span><span class="n">logger</span></span><span></span><span class="p">;</span>
     <a class="reference internal" href="global.html#doxid-d4-d70-tdbus-watcher-8h-1ac91d9409730033db47ebffe368db0cb2"><span class="std std-ref">tdbus_add_watch_f</span></a><span></span> <span class="doxyrest-code-target target" id="doxid-db-d60-structtdbus-1aadec9f3f84173cfa73ea00b8770a71ef"><span></span><span class="n">add_watch_cb</span></span><span></span><span class="p">;</span>
     <a class="reference internal" href="global.html#doxid-d4-d70-tdbus-watcher-8h-1aa1b23190d38846e81047961cbce005b0"><span class="std std-ref">tdbus_rm_watch_f</span></a><span></span> <span class="doxyrest-code-target target" id="doxid-db-d60-structtdbus-1a6e6ed4a6a6b53f37568350f7af9004f3"><span></span><span class="n">rm_watch_cb</span></span><span></span><span class="p">;</span>
     <a class="reference internal" href="global.html#doxid-d4-d70-tdbus-watcher-8h-1a384c411599eafc75079237b85430dfe0"><span class="std std-ref">tdbus_ch_watch_f</span></a><span></span> <span class="doxyrest-code-target target" id="doxid-db-d60-structtdbus-1a29fc0b8c5433d178cee4c10dfe8051a2"><span></span><span class="n">ch_watch_cb</span></span><span></span><span class="p">;</span>
@@ -89,7 +90,7 @@
     <span class="kt">char</span> <span class="doxyrest-code-target target" id="doxid-db-d60-structtdbus-1a48c975419574bf5401ceef42d1520c2d"><span></span><span class="n">objpath</span></span><span></span><span class="p">[</span><span class="mi">32</span><span class="p">];</span>
     <span class="kt">size_t</span> <span class="doxyrest-code-target target" id="doxid-db-d60-structtdbus-1a31ff007de6e41c9733d8e4b977f13838"><span></span><span class="n">start</span></span><span></span><span class="p">;</span>
     <span class="kt">size_t</span> <span class="doxyrest-code-target target" id="doxid-db-d60-structtdbus-1a17726d20b6365d558c0395ee5c8e58d1"><span></span><span class="n">n_methods</span></span><span></span><span class="p">;</span>
-    <span class="k">struct</span> <span class="n">tdbus</span><span class="o">::</span><span class="err">@</span><span class="mi">58</span> <span class="doxyrest-code-target target" id="doxid-db-d60-structtdbus-1a38605b4fdc22ce217da4cd52f464eb97"><span></span><span class="n">registered_objs</span></span><span></span><span class="p">[</span><span class="mi">8</span><span class="p">];</span>
+    <span class="k">struct</span> <span class="n">tdbus</span><span class="o">::</span><span class="err">@</span><span class="mi">92</span> <span class="doxyrest-code-target target" id="doxid-db-d60-structtdbus-1a29cf1d77ede9af880966f20dd6e30c0a"><span></span><span class="n">registered_objs</span></span><span></span><span class="p">[</span><span class="mi">8</span><span class="p">];</span>
     <span class="k">struct</span> <a class="reference internal" href="struct_tdbus_array.html#doxid-da-d6d-structtdbus-array"><span class="std std-ref">tdbus_array</span></a><span></span> <span class="doxyrest-code-target target" id="doxid-db-d60-structtdbus-1ae3347cfe10d7db2f42a2d5bfcef0a10d"><span></span><span class="n">added_methods</span></span><span></span><span class="p">;</span>
 <span class="p">};</span></pre>
 </div>
@@ -100,22 +101,6 @@
 <div class="col-md-3">
   <div id="sidebar" class="bs-sidenav"><h3><a data-toggle="collapse" href="#globaltoc">Related Pages</a></h3>
 <div id="globaltoc" class="collapse">
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="page_md__home_developer_Projects_web_taiwins_taiwins_CONTRIBUTING.html">Contributing to Taiwins</a></li>
-<li class="toctree-l1"><a class="reference internal" href="page_md__home_developer_Projects_web_taiwins_taiwins_docs_dbus.html">D-Bus API Quick Reference</a></li>
-<li class="toctree-l1"><a class="reference internal" href="page_md__home_developer_Projects_web_taiwins_taiwins_docs_libtaiwins.html">For libtaiwins users</a></li>
-<li class="toctree-l1"><a class="reference internal" href="page_md__home_developer_Projects_web_taiwins_taiwins_docs_lua.html">Lua bindings</a></li>
-<li class="toctree-l1"><a class="reference internal" href="page_md__home_developer_Projects_web_taiwins_taiwins_docs_progress.html">Progress and feature track</a></li>
-<li class="toctree-l1"><a class="reference internal" href="page_md__home_developer_Projects_web_taiwins_taiwins_docs_screenshots.html">Taiwins in tiling mode</a></li>
-<li class="toctree-l1"><a class="reference internal" href="page_md__home_developer_Projects_web_taiwins_taiwins_docs_window_management.html">Taiwins layout engine.</a></li>
-<li class="toctree-l1"><a class="reference internal" href="page_md__home_developer_Projects_web_taiwins_taiwins_README.html">Taiwins, a modern wayland window manager</a></li>
-<li class="toctree-l1"><a class="reference internal" href="page_md__home_developer_Projects_web_taiwins_taiwins_docs_libtwclient.html">Twclient quick reference</a></li>
-<li class="toctree-l1"><a class="reference internal" href="page_md__home_developer_Projects_web_taiwins_taiwins_docs_twobjects.html">Twobjects quick reference</a></li>
-<li class="toctree-l1"><a class="reference internal" href="page_md__home_developer_Projects_web_taiwins_taiwins_docs_wayland.html">wayland</a></li>
-</ul>
-<ul class="current">
-<li class="toctree-l1 current"><a class="reference internal" href="global.html">Global Namespace</a></li>
-</ul>
 
 </div>
 <form action="search.html" method="get">

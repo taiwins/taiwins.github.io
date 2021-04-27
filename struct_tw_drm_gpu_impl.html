@@ -7,6 +7,8 @@
     
     <title>struct tw_drm_gpu_impl &#8212; Taiwins</title>
   
+  <!-- fix for search function -->
+  <script type="text/javascript" src="_static/language_data.js "></script>
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="_static/bootstrap-sphinx.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="_static/my-style.css" />
@@ -19,8 +21,6 @@
     <link rel="shortcut icon" href="_static/favicon.ico"/>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="struct tw_drm_mode_info" href="struct_tw_drm_mode_info.html" />
-    <link rel="prev" title="struct tw_drm_gpu" href="struct_tw_drm_gpu.html" />
 <meta charset='utf-8'>
 <meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
 <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
@@ -80,10 +80,10 @@
     <span class="kt">bool</span><span class="p">(</span><span class="o">*</span> <a class="reference internal" href="#doxid-db-dbf-structtw-drm-gpu-impl-1a668b3a8695439469eea311c4a1f7cc0a"><span class="std std-ref">get_gpu_device</span></a><span></span><span class="p">)(</span><span class="k">struct</span> <span class="n">tw_drm_gpu</span> <span class="o">*</span><span class="p">,</span> <span class="k">const</span> <span class="k">struct</span> <span class="n">tw_login_gpu</span> <span class="o">*</span><span class="p">);</span>
     <span class="kt">void</span><span class="p">(</span><span class="o">*</span> <span class="doxyrest-code-target target" id="doxid-db-dbf-structtw-drm-gpu-impl-1a48d0decc5ce999ecb8d07df258adcf51"><span></span><span class="n">free_gpu_device</span></span><span></span><span class="p">)(</span><span class="k">struct</span> <span class="n">tw_drm_gpu</span> <span class="o">*</span><span class="p">);</span>
     <span class="k">const</span> <span class="k">struct</span> <a class="reference internal" href="struct_tw_egl_options.html#doxid-dc-d1b-structtw-egl-options"><span class="std std-ref">tw_egl_options</span></a><span></span><span class="o">*</span><span class="p">(</span><span class="o">*</span> <a class="reference internal" href="#doxid-db-dbf-structtw-drm-gpu-impl-1a9655bcdd50731a2a4916dc705aafbb32"><span class="std std-ref">gen_egl_params</span></a><span></span><span class="p">)(</span><span class="k">struct</span> <span class="n">tw_drm_gpu</span> <span class="o">*</span><span class="p">);</span>
-    <span class="kt">bool</span><span class="p">(</span><span class="o">*</span> <a class="reference internal" href="#doxid-db-dbf-structtw-drm-gpu-impl-1ab4cfc6614ede76c39356331ab403035e"><span class="std std-ref">allocate_fb</span></a><span></span><span class="p">)(</span><span class="k">struct</span> <span class="n">tw_drm_display</span> <span class="o">*</span><span class="n">output</span><span class="p">);</span>
-    <span class="kt">void</span><span class="p">(</span><span class="o">*</span> <a class="reference internal" href="#doxid-db-dbf-structtw-drm-gpu-impl-1a56463703c5a2a9dff3eb38e3f2426fba"><span class="std std-ref">end_display</span></a><span></span><span class="p">)(</span><span class="k">struct</span> <span class="n">tw_drm_display</span> <span class="o">*</span><span class="n">output</span><span class="p">);</span>
-    <span class="kt">void</span><span class="p">(</span><span class="o">*</span> <span class="doxyrest-code-target target" id="doxid-db-dbf-structtw-drm-gpu-impl-1a75d16668fc901f4fd718c2f4f73e661c"><span></span><span class="n">vsynced</span></span><span></span><span class="p">)(</span><span class="k">struct</span> <span class="n">tw_drm_display</span> <span class="o">*</span><span class="n">output</span><span class="p">,</span> <span class="k">struct</span> <span class="n">tw_drm_fb</span> <span class="o">*</span><span class="n">fb</span><span class="p">);</span>
-    <span class="kt">void</span><span class="p">(</span><span class="o">*</span> <span class="doxyrest-code-target target" id="doxid-db-dbf-structtw-drm-gpu-impl-1adda5003e0ca1c78e0cce79ebab89c202"><span></span><span class="n">page_flip</span></span><span></span><span class="p">)(</span><span class="k">struct</span> <span class="n">tw_drm_display</span> <span class="o">*</span><span class="n">output</span><span class="p">,</span> <span class="kt">uint32_t</span> <span class="n">flags</span><span class="p">);</span>
+    <span class="kt">bool</span><span class="p">(</span><span class="o">*</span> <a class="reference internal" href="#doxid-db-dbf-structtw-drm-gpu-impl-1a256a976051e85d6f74e7aabcb7783eba"><span class="std std-ref">allocate_fbs</span></a><span></span><span class="p">)(</span><span class="k">struct</span> <span class="n">tw_drm_display</span> <span class="o">*</span><span class="n">output</span><span class="p">,</span> <span class="n">drmModeModeInfo</span> <span class="o">*</span><span class="n">mode</span><span class="p">);</span>
+    <span class="kt">void</span><span class="p">(</span><span class="o">*</span> <a class="reference internal" href="#doxid-db-dbf-structtw-drm-gpu-impl-1a0feb52fba268065fce9d27a8da73fcfa"><span class="std std-ref">free_fbs</span></a><span></span><span class="p">)(</span><span class="k">struct</span> <span class="n">tw_drm_display</span> <span class="o">*</span><span class="n">output</span><span class="p">);</span>
+    <span class="kt">bool</span><span class="p">(</span><span class="o">*</span> <span class="doxyrest-code-target target" id="doxid-db-dbf-structtw-drm-gpu-impl-1ad9b58b10b1c775bbfe72bebb1cd84fa0"><span></span><span class="n">acquire_fb</span></span><span></span><span class="p">)(</span><span class="k">struct</span> <span class="n">tw_drm_display</span> <span class="o">*</span><span class="n">output</span><span class="p">,</span> <span class="k">struct</span> <span class="n">tw_kms_state</span> <span class="o">*</span><span class="n">state</span><span class="p">);</span>
+    <span class="kt">void</span><span class="p">(</span><span class="o">*</span> <span class="doxyrest-code-target target" id="doxid-db-dbf-structtw-drm-gpu-impl-1acc5b3a383e038f69e4ae7df289c98989"><span></span><span class="n">release_fb</span></span><span></span><span class="p">)(</span><span class="k">struct</span> <span class="n">tw_drm_display</span> <span class="o">*</span><span class="n">output</span><span class="p">,</span> <span class="k">struct</span> <span class="n">tw_drm_fb</span> <span class="o">*</span><span class="n">fb</span><span class="p">);</span>
 <span class="p">};</span></pre>
 </div>
 <div class="section" id="detailed-documentation">
@@ -94,9 +94,9 @@
 <p>get different device handles (gbm or egl_device)</p>
 <pre class="highlight doxyrest-title-code-block literal-block" id="doxid-db-dbf-structtw-drm-gpu-impl-1a9655bcdd50731a2a4916dc705aafbb32"><span id="index-2"></span><span></span><span class="k">const</span> <span class="k">struct</span> <a class="reference internal" href="struct_tw_egl_options.html#doxid-dc-d1b-structtw-egl-options"><span class="std std-ref">tw_egl_options</span></a><span></span><span class="o">*</span><span class="p">(</span><span class="o">*</span> <span class="n">gen_egl_params</span><span class="p">)(</span><span class="k">struct</span> <span class="n">tw_drm_gpu</span> <span class="o">*</span><span class="p">)</span></pre>
 <p>platform specific egl options</p>
-<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-db-dbf-structtw-drm-gpu-impl-1ab4cfc6614ede76c39356331ab403035e"><span id="index-3"></span><span></span><span class="kt">bool</span><span class="p">(</span><span class="o">*</span> <span class="n">allocate_fb</span><span class="p">)(</span><span class="k">struct</span> <span class="n">tw_drm_display</span> <span class="o">*</span><span class="n">output</span><span class="p">)</span></pre>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-db-dbf-structtw-drm-gpu-impl-1a256a976051e85d6f74e7aabcb7783eba"><span id="index-3"></span><span></span><span class="kt">bool</span><span class="p">(</span><span class="o">*</span> <span class="n">allocate_fbs</span><span class="p">)(</span><span class="k">struct</span> <span class="n">tw_drm_display</span> <span class="o">*</span><span class="n">output</span><span class="p">,</span> <span class="n">drmModeModeInfo</span> <span class="o">*</span><span class="n">mode</span><span class="p">)</span></pre>
 <p>init display buffers as well as render surface</p>
-<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-db-dbf-structtw-drm-gpu-impl-1a56463703c5a2a9dff3eb38e3f2426fba"><span id="index-4"></span><span></span><span class="kt">void</span><span class="p">(</span><span class="o">*</span> <span class="n">end_display</span><span class="p">)(</span><span class="k">struct</span> <span class="n">tw_drm_display</span> <span class="o">*</span><span class="n">output</span><span class="p">)</span></pre>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-db-dbf-structtw-drm-gpu-impl-1a0feb52fba268065fce9d27a8da73fcfa"><span id="index-4"></span><span></span><span class="kt">void</span><span class="p">(</span><span class="o">*</span> <span class="n">free_fbs</span><span class="p">)(</span><span class="k">struct</span> <span class="n">tw_drm_display</span> <span class="o">*</span><span class="n">output</span><span class="p">)</span></pre>
 <p>destroy display buffers as well as render surface</p>
 </div>
 </div>
@@ -121,22 +121,6 @@
 </div>
 <h3><a data-toggle="collapse" href="#globaltoc">Related Pages</a></h3>
 <div id="globaltoc" class="collapse">
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="page_md__home_developer_Projects_web_taiwins_taiwins_CONTRIBUTING.html">Contributing to Taiwins</a></li>
-<li class="toctree-l1"><a class="reference internal" href="page_md__home_developer_Projects_web_taiwins_taiwins_docs_dbus.html">D-Bus API Quick Reference</a></li>
-<li class="toctree-l1"><a class="reference internal" href="page_md__home_developer_Projects_web_taiwins_taiwins_docs_libtaiwins.html">For libtaiwins users</a></li>
-<li class="toctree-l1"><a class="reference internal" href="page_md__home_developer_Projects_web_taiwins_taiwins_docs_lua.html">Lua bindings</a></li>
-<li class="toctree-l1"><a class="reference internal" href="page_md__home_developer_Projects_web_taiwins_taiwins_docs_progress.html">Progress and feature track</a></li>
-<li class="toctree-l1"><a class="reference internal" href="page_md__home_developer_Projects_web_taiwins_taiwins_docs_screenshots.html">Taiwins in tiling mode</a></li>
-<li class="toctree-l1"><a class="reference internal" href="page_md__home_developer_Projects_web_taiwins_taiwins_docs_window_management.html">Taiwins layout engine.</a></li>
-<li class="toctree-l1"><a class="reference internal" href="page_md__home_developer_Projects_web_taiwins_taiwins_README.html">Taiwins, a modern wayland window manager</a></li>
-<li class="toctree-l1"><a class="reference internal" href="page_md__home_developer_Projects_web_taiwins_taiwins_docs_libtwclient.html">Twclient quick reference</a></li>
-<li class="toctree-l1"><a class="reference internal" href="page_md__home_developer_Projects_web_taiwins_taiwins_docs_twobjects.html">Twobjects quick reference</a></li>
-<li class="toctree-l1"><a class="reference internal" href="page_md__home_developer_Projects_web_taiwins_taiwins_docs_wayland.html">wayland</a></li>
-</ul>
-<ul class="current">
-<li class="toctree-l1 current"><a class="reference internal" href="global.html">Global Namespace</a></li>
-</ul>
 
 </div>
 <form action="search.html" method="get">

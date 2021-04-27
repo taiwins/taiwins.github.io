@@ -1,0 +1,30 @@
+.. index:: pair: enum; tw_desktop_surface_state_flag
+.. _doxid-d4/d45/desktop_8h_1ad14cc7c513bba0e950b37a79ce7f59c9:
+
+enum tw_desktop_surface_state_flag
+==================================
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <desktop.h>
+
+	enum tw_desktop_surface_state_flag
+	{
+	    :target:`TW_DESKTOP_SURFACE_TILED_LEFT<doxid-d4/d45/desktop_8h_1ad14cc7c513bba0e950b37a79ce7f59c9ab8dfb7b604ee469cb855ea42e7ec88b9>`   = 1<<0,
+	    :target:`TW_DESKTOP_SURFACE_TILED_RIGHT<doxid-d4/d45/desktop_8h_1ad14cc7c513bba0e950b37a79ce7f59c9a303db8825f76ee3034c49aba99fcd7ad>`  = 1<<1,
+	    :target:`TW_DESKTOP_SURFACE_TILED_TOP<doxid-d4/d45/desktop_8h_1ad14cc7c513bba0e950b37a79ce7f59c9a5300775f9e3b5ce3ab603f68e71494d5>`    = 1<<2,
+	    :target:`TW_DESKTOP_SURFACE_TILED_BOTTOM<doxid-d4/d45/desktop_8h_1ad14cc7c513bba0e950b37a79ce7f59c9a31c147c1e5644f6d7941a2d78fdd9df4>` = 1<<3,
+	    :target:`TW_DESKTOP_SURFACE_FOCUSED<doxid-d4/d45/desktop_8h_1ad14cc7c513bba0e950b37a79ce7f59c9aec8edc2a684b182ae71f73f44d7506bb>`      = 1<<4,
+	    :target:`TW_DESKTOP_SURFACE_MAXIMIZED<doxid-d4/d45/desktop_8h_1ad14cc7c513bba0e950b37a79ce7f59c9a6c35990032b088795e2f6c1ae7923ae3>`    = 1<<5,
+	    :target:`TW_DESKTOP_SURFACE_FULLSCREENED<doxid-d4/d45/desktop_8h_1ad14cc7c513bba0e950b37a79ce7f59c9a6cc5dfb0a99c2e29f69fc3ba56d5533f>` = 1<<6,
+	    :target:`TW_DESKTOP_SURFACE_MINIMIZED<doxid-d4/d45/desktop_8h_1ad14cc7c513bba0e950b37a79ce7f59c9a871f05c91e28723df2102e6bfac547fa>`    = 1<<7,
+	    :target:`TW_DESKTOP_SURFACE_STATES<doxid-d4/d45/desktop_8h_1ad14cc7c513bba0e950b37a79ce7f59c9a22b72a8c729b9e11590e883e38a628ab>`       =(1<<8) - 1,
+	    :target:`TW_DESKTOP_SURFACE_CONFIG_X<doxid-d4/d45/desktop_8h_1ad14cc7c513bba0e950b37a79ce7f59c9a29d3df15fdc2f3541d2097361eb0fb67>`     = 1<<9,
+	    :target:`TW_DESKTOP_SURFACE_CONFIG_Y<doxid-d4/d45/desktop_8h_1ad14cc7c513bba0e950b37a79ce7f59c9a7ff353b174e07320b54ecd6c8efae6d4>`     = 1<<10,
+	    :target:`TW_DESKTOP_SURFACE_CONFIG_W<doxid-d4/d45/desktop_8h_1ad14cc7c513bba0e950b37a79ce7f59c9a5616a72a41ff5e5cf321ba4c1915da8f>`     = 1<<11,
+	    :target:`TW_DESKTOP_SURFACE_CONFIG_H<doxid-d4/d45/desktop_8h_1ad14cc7c513bba0e950b37a79ce7f59c9a5e77994db7bc9b350c25bfaf2ee22a0d>`     = 1<<12,
+	};
+

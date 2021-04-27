@@ -1,0 +1,29 @@
+.. index:: pair: struct; nk_wl_egl_font
+.. _doxid-da/dca/structnk__wl__egl__font:
+
+struct nk_wl_egl_font
+=====================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	
+	struct nk_wl_egl_font
+	{
+		// fields
+	
+		struct :ref:`nk_wl_user_font<doxid-d7/d9b/structnk__wl__user__font>` :target:`wl_font<doxid-da/dca/structnk__wl__egl__font_1af3701bdb1e7034d1560cdf2114369fc2>`;
+		int :target:`size<doxid-da/dca/structnk__wl__egl__font_1a5d34cac1eeb7c0d38c3c079a540e4e00>`;
+		int :target:`scale<doxid-da/dca/structnk__wl__egl__font_1a10cbf29c974102064b9885bd7494eda6>`;
+		nk_rune* :target:`merged_ranges<doxid-da/dca/structnk__wl__egl__font_1a2e05d000fedc233f1964db2aabdbc4d1>`;
+		struct nk_draw_null_texture :target:`null<doxid-da/dca/structnk__wl__egl__font_1aa88d8671eb425c2239349b726358677c>`;
+		struct nk_font* :target:`font<doxid-da/dca/structnk__wl__egl__font_1aeeeea198ca4ce6dcee11d41185187d7b>`;
+		struct nk_font_atlas :target:`atlas<doxid-da/dca/structnk__wl__egl__font_1a66707431aa941d5ee553b5592c9360bb>`;
+		struct nk_image :target:`font_image<doxid-da/dca/structnk__wl__egl__font_1aa319e4e211be2336ea2f75e7a37e7a0f>`;
+	};

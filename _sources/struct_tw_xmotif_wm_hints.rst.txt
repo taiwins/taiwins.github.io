@@ -1,0 +1,27 @@
+.. index:: pair: struct; tw_xmotif_wm_hints
+.. _doxid-db/d07/structtw__xmotif__wm__hints:
+
+struct tw_xmotif_wm_hints
+=========================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <xwm.h>
+	
+	struct tw_xmotif_wm_hints
+	{
+		// fields
+	
+		uint32_t :target:`flags<doxid-db/d07/structtw__xmotif__wm__hints_1a3404b40b08960aa135eb1d7a1151999c>`;
+		uint32_t :target:`functions<doxid-db/d07/structtw__xmotif__wm__hints_1af612719f6be1c15059cbe3ac5eb215c7>`;
+		uint32_t :target:`decorations<doxid-db/d07/structtw__xmotif__wm__hints_1a3b49b75fcb43f458505758d71fd7821f>`;
+		int32_t :target:`input_mode<doxid-db/d07/structtw__xmotif__wm__hints_1ad826edd435964ac17aa4ed7110f72d54>`;
+		uint32_t :target:`status<doxid-db/d07/structtw__xmotif__wm__hints_1a4105d634afa36fa4f018f28587dc1949>`;
+	};

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <title>struct tw_xwm &#8212; Taiwins</title>
+  
+  <!-- fix for search function -->
+  <script type="text/javascript" src="_static/language_data.js "></script>
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="_static/bootstrap-sphinx.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/my-style.css" />
+    <link rel="stylesheet" type="text/css" href="_static/doxyrest-pygments.css" />
+    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/target-highlight.js"></script>
+    <link rel="shortcut icon" href="_static/favicon.ico"/>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<script type="text/javascript" src="_static/js/jquery-1.11.0.min.js "></script>
+<script type="text/javascript" src="_static/js/jquery-fix.js "></script>
+<script type="text/javascript" src="_static/bootstrap-3.3.7/js/bootstrap.min.js "></script>
+<script type="text/javascript" src="_static/bootstrap-sphinx.js "></script>
+
+  </head><body>
+  <div class="page-container">
+    
+<!-- taken from bootstrap theme -->
+<div id="navbar" class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">
+        <b>Taiwins</b></a>
+      <span class="navbar-text navbar-version pull-left"><b></b></span>
+    </div>
+
+    <div class="collapse navbar-collapse nav-collapse">
+      <ul class="nav navbar-nav">
+	<li><a href="page_doc.html">Documentation</a></li>
+	<li><a href="https://github.com/taiwins/taiwins">Source Code</a></li>
+	<li><a href="https://github.com/taiwins/taiwins/wiki">Wiki</a></li>
+	<!-- add other pages -->
+      </ul>
+    </div>
+  </div>
+</div>
+
+    <div class="container">
+      
+	<div class="row">
+	  <div class="body col-md-9 content" role="main">
+	    
+  <div class="section" id="struct-tw-xwm">
+<span id="doxid-d8-d09-structtw-xwm"></span><span id="index-0"></span><h1>struct tw_xwm<a class="headerlink" href="#struct-tw-xwm" title="Permalink to this headline">¶</a></h1>
+<div class="toctree-wrapper compound">
+</div>
+<div class="section" id="overview">
+<h2>Overview<a class="headerlink" href="#overview" title="Permalink to this headline">¶</a></h2>
+<p>the window manager for xwayland. <a class="reference internal" href="#details-d8-d09-structtw-xwm"><span class="std std-ref">More…</span></a></p>
+<pre class="highlight doxyrest-overview-code-block literal-block"><span></span><span class="cp">#include</span> <span class="cpf">&lt;xwm.h&gt;</span><span class="cp"></span>
+
+<span class="k">struct</span> <span class="n">tw_xwm</span>
+<span class="p">{</span>
+    <span class="c1">// fields</span>
+
+    <span class="k">struct</span> <a class="reference internal" href="struct_tw_xserver.html#doxid-d1-d7b-structtw-xserver"><span class="std std-ref">tw_xserver</span></a><span></span><span class="o">*</span> <span class="doxyrest-code-target target" id="doxid-d8-d09-structtw-xwm-1a3e02c7649bdb8e454f1aa7d383c8de0c"><span></span><span class="n">server</span></span><span></span><span class="p">;</span>
+    <span class="k">struct</span> <span class="n">wl_list</span> <span class="doxyrest-code-target target" id="doxid-d8-d09-structtw-xwm-1adcd3e05d8a3d20981beb8bfa9b228f81"><span></span><span class="n">surfaces</span></span><span></span><span class="p">;</span>
+    <span class="k">struct</span> <span class="n">wl_event_source</span><span class="o">*</span> <span class="doxyrest-code-target target" id="doxid-d8-d09-structtw-xwm-1ab3788cf32f550e8881585d6bac9027bb"><span></span><span class="n">x11_event</span></span><span></span><span class="p">;</span>
+    <span class="k">struct</span> <a class="reference internal" href="struct_tw_desktop_manager.html#doxid-dd-d73-structtw-desktop-manager"><span class="std std-ref">tw_desktop_manager</span></a><span></span><span class="o">*</span> <span class="doxyrest-code-target target" id="doxid-d8-d09-structtw-xwm-1af8b6e8c1e43ef0c4cbfe898124cfb308"><span></span><span class="n">manager</span></span><span></span><span class="p">;</span>
+    <span class="k">struct</span> <a class="reference internal" href="struct_tw_xsurface.html#doxid-d5-db0-structtw-xsurface"><span class="std std-ref">tw_xsurface</span></a><span></span><span class="o">*</span> <span class="doxyrest-code-target target" id="doxid-d8-d09-structtw-xwm-1ac97a1d9aca07a80fa2252194be6f5356"><span></span><span class="n">focus_window</span></span><span></span><span class="p">;</span>
+    <span class="k">struct</span> <a class="reference internal" href="struct_tw_xwm_selection.html#doxid-d5-df1-structtw-xwm-selection"><span class="std std-ref">tw_xwm_selection</span></a><span></span> <span class="doxyrest-code-target target" id="doxid-d8-d09-structtw-xwm-1affcc7be2a82c0fbaf69b35a20a4f87dd"><span></span><span class="n">selection</span></span><span></span><span class="p">;</span>
+    <span class="k">struct</span> <a class="reference internal" href="struct_tw_seat.html#doxid-dc-d28-structtw-seat"><span class="std std-ref">tw_seat</span></a><span></span><span class="o">*</span> <span class="doxyrest-code-target target" id="doxid-d8-d09-structtw-xwm-1a36af8299c88445bf2f8f3e892f9abbb7"><span></span><span class="n">seat</span></span><span></span><span class="p">;</span>
+    <span class="k">struct</span> <span class="n">wl_listener</span> <span class="doxyrest-code-target target" id="doxid-d8-d09-structtw-xwm-1a46a4452c054cad700e492326e150c644"><span></span><span class="n">server_destroy</span></span><span></span><span class="p">;</span>
+    <span class="k">struct</span> <span class="n">wl_listener</span> <span class="doxyrest-code-target target" id="doxid-d8-d09-structtw-xwm-1a5cb2ca3b0add3ab57bb0a71392bfe945"><span></span><span class="n">wl_surface_create</span></span><span></span><span class="p">;</span>
+    <span class="k">struct</span> <span class="n">wl_listener</span> <span class="doxyrest-code-target target" id="doxid-d8-d09-structtw-xwm-1a67ceea3a647dcd05eedc53639582742d"><span></span><span class="n">wl_surface_focus</span></span><span></span><span class="p">;</span>
+    <span class="k">struct</span> <span class="n">wl_listener</span> <span class="doxyrest-code-target target" id="doxid-d8-d09-structtw-xwm-1ada969b850038740505530b682f0c711c"><span></span><span class="n">seat_destroy</span></span><span></span><span class="p">;</span>
+    <span class="k">struct</span> <span class="n">tw_xwm</span><span class="o">::</span><span class="err">@</span><span class="mi">77</span> <span class="doxyrest-code-target target" id="doxid-d8-d09-structtw-xwm-1a3e87f23677ab001aec9ca35bd0be1b0d"><span></span><span class="n">listeners</span></span><span></span><span class="p">;</span>
+    <span class="n">xcb_connection_t</span><span class="o">*</span> <a class="reference internal" href="#doxid-d8-d09-structtw-xwm-1ad54e73b90092f3f90e7e616f53edbef0"><span class="std std-ref">xcb_conn</span></a><span></span><span class="p">;</span>
+    <span class="n">xcb_screen_t</span><span class="o">*</span> <span class="doxyrest-code-target target" id="doxid-d8-d09-structtw-xwm-1a741fc51db9e86f18c4a5461030655726"><span></span><span class="n">screen</span></span><span></span><span class="p">;</span>
+    <span class="n">xcb_window_t</span> <span class="doxyrest-code-target target" id="doxid-d8-d09-structtw-xwm-1ab248e7348c21d9b431f4881cba653c3b"><span></span><span class="n">window</span></span><span></span><span class="p">;</span>
+    <span class="k">const</span> <span class="n">xcb_query_extension_reply_t</span><span class="o">*</span> <span class="doxyrest-code-target target" id="doxid-d8-d09-structtw-xwm-1ab0ae93588106270a911ab6c90b78f5f1"><span></span><span class="n">xfixes</span></span><span></span><span class="p">;</span>
+    <span class="n">xcb_colormap_t</span> <span class="doxyrest-code-target target" id="doxid-d8-d09-structtw-xwm-1a789ea4c0132dbd68d472993a165f3810"><span></span><span class="n">colormap</span></span><span></span><span class="p">;</span>
+    <span class="n">xcb_visualid_t</span> <span class="doxyrest-code-target target" id="doxid-d8-d09-structtw-xwm-1ae5a878e2251518a4812eda11b42f2c96"><span></span><span class="n">visual_id</span></span><span></span><span class="p">;</span>
+    <span class="n">xcb_render_pictformat_t</span> <span class="doxyrest-code-target target" id="doxid-d8-d09-structtw-xwm-1a9ae0117adf2d7e7533d913f2c867dbfc"><span></span><span class="n">format_rgba</span></span><span></span><span class="p">;</span>
+    <span class="k">struct</span> <a class="reference internal" href="struct_tw_xwm_atoms.html#doxid-d3-d23-structtw-xwm-atoms"><span class="std std-ref">tw_xwm_atoms</span></a><span></span> <span class="doxyrest-code-target target" id="doxid-d8-d09-structtw-xwm-1a9679e71a4fdad2a1a94b072c0af041fd"><span></span><span class="n">atoms</span></span><span></span><span class="p">;</span>
+<span class="p">};</span></pre>
+</div>
+<div class="section" id="detailed-documentation">
+<span id="details-d8-d09-structtw-xwm"></span><h2>Detailed Documentation<a class="headerlink" href="#detailed-documentation" title="Permalink to this headline">¶</a></h2>
+<p>the window manager for xwayland.</p>
+<p>The xwm works like any other normal X window manager by creating a root window (as we told Xwayland to start in rootless mode) and using substructure_redirect to intercept all child window events to us to process. For example:</p>
+<div class="section" id="fields">
+<h3>Fields<a class="headerlink" href="#fields" title="Permalink to this headline">¶</a></h3>
+<pre class="highlight doxyrest-title-code-block literal-block" id="doxid-d8-d09-structtw-xwm-1ad54e73b90092f3f90e7e616f53edbef0"><span id="index-1"></span><span></span><span class="n">xcb_connection_t</span><span class="o">*</span> <span class="n">xcb_conn</span></pre>
+<p>x resources</p>
+</div>
+</div>
+</div>
+
+
+	  </div>
+	  
+<div class="col-md-3">
+  <div id="sidebar" class="bs-sidenav">
+<h3>Content</h3>
+<div id="localtoc"><ul>
+<li><a class="reference internal" href="#">struct tw_xwm</a><ul>
+<li><a class="reference internal" href="#overview">Overview</a></li>
+<li><a class="reference internal" href="#detailed-documentation">Detailed Documentation</a><ul>
+<li><a class="reference internal" href="#fields">Fields</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<h3><a data-toggle="collapse" href="#globaltoc">Related Pages</a></h3>
+<div id="globaltoc" class="collapse">
+
+</div>
+<form action="search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+  </div>
+</div>
+
+	</div>
+      
+    </div>
+    <div class="push"></div>
+  </div>
+
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+    </p>
+    <p>
+        &copy; Copyright 2020, Xichen Zhou.<br/>
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 3.4.3.<br/>
+    </p>
+  </div>
+</footer>
+  </body>
+</html>

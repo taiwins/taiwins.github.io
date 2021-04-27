@@ -37,5 +37,5 @@ struct tw_shell_ui
 		uint32_t :target:`anchor<doxid-d4/dcb/structtw__shell__ui_1acfea2dffcc277ac3eea4f3d001fee763>`;
 		uint32_t :target:`occlusion_zone<doxid-d4/dcb/structtw__shell__ui_1ae18d25beca01ff546762fdd94398e6a5>`;
 		pixman_box32_t :target:`margin<doxid-d4/dcb/structtw__shell__ui_1abf864e9e144b40c9fc309ab7193b092b>`;
-		struct tw_shell_ui::@56 :target:`pending<doxid-d4/dcb/structtw__shell__ui_1a086851c1ce38629c5525ae17869008de>`;
+		struct tw_shell_ui::@90 :target:`pending<doxid-d4/dcb/structtw__shell__ui_1a802229e8693b7e7296843c1bb93e894c>`;
 	};

@@ -1,0 +1,25 @@
+.. index:: pair: struct; tw_text_input_manager
+.. _doxid-d7/d7b/structtw__text__input__manager:
+
+struct tw_text_input_manager
+============================
+
+.. toctree::
+	:hidden:
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <text_input.h>
+	
+	struct tw_text_input_manager
+	{
+		// fields
+	
+		struct wl_display* :target:`display<doxid-d7/d7b/structtw__text__input__manager_1a71ffe91e8f2b25677e49f5caed47eb3d>`;
+		struct wl_global* :target:`global<doxid-d7/d7b/structtw__text__input__manager_1ac5501f570cedc67833a1d94e88739358>`;
+		struct wl_listener :target:`display_destroy_listener<doxid-d7/d7b/structtw__text__input__manager_1a7d73123b58d0dbbb648a1edce117f819>`;
+	};

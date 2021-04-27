@@ -1,0 +1,56 @@
+.. index:: pair: struct; tw_text_input_state
+.. _doxid-d4/d3c/structtw__text__input__state:
+
+struct tw_text_input_state
+==========================
+
+.. toctree::
+	:hidden:
+
+Overview
+~~~~~~~~
+
+
+
+
+.. ref-code-block:: cpp
+	:class: doxyrest-overview-code-block
+
+	#include <text_input.h>
+	
+	struct tw_text_input_state
+	{
+		// fields
+	
+		bool :target:`enabled<doxid-d4/d3c/structtw__text__input__state_1a6efa6103205d8845609993a53f35823e>`;
+		struct wl_resource* :ref:`focused<doxid-d4/d3c/structtw__text__input__state_1af0d9415b5453550ead8ed8e97f09701a>`;
+		char* :target:`text<doxid-d4/d3c/structtw__text__input__state_1a3f12a9f175960fc7add2b4c934b1c9b2>`;
+		uint32_t :target:`cursor<doxid-d4/d3c/structtw__text__input__state_1ae825b44a3a3cc1c1107f1d59fbee0b9c>`;
+		uint32_t :target:`anchor<doxid-d4/d3c/structtw__text__input__state_1a2046741afab2bf78aab516454b3fa636>`;
+		struct tw_text_input_state::@65 :target:`surrounding<doxid-d4/d3c/structtw__text__input__state_1ade0b21ed061c5318d61c4717fa669d83>`;
+		pixman_rectangle32_t :target:`cursor_rect<doxid-d4/d3c/structtw__text__input__state_1ad9ae81aa3fb39c9701fd811160a97233>`;
+		uint32_t :target:`change_cause<doxid-d4/d3c/structtw__text__input__state_1af00345fb77eb6a61836d6ccd246c1530>`;
+		uint32_t :target:`content_hint<doxid-d4/d3c/structtw__text__input__state_1a2965471760c9e950139277ee90e249dc>`;
+		uint32_t :target:`content_purpose<doxid-d4/d3c/structtw__text__input__state_1a52b37745937f48771056558f926bdd7b>`;
+		uint32_t :target:`requests<doxid-d4/d3c/structtw__text__input__state_1a9c0e09a758b457f8990607d237e549da>`;
+	};
+.. _details-d4/d3c/structtw__text__input__state:
+
+Detailed Documentation
+~~~~~~~~~~~~~~~~~~~~~~
+
+
+
+Fields
+------
+
+.. index:: pair: variable; focused
+.. _doxid-d4/d3c/structtw__text__input__state_1af0d9415b5453550ead8ed8e97f09701a:
+
+.. ref-code-block:: cpp
+	:class: doxyrest-title-code-block
+
+	struct wl_resource* focused
+
+text-input active on this surface
+

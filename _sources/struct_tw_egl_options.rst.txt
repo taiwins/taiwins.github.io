@@ -24,8 +24,6 @@ Overview
 	
 		EGLenum :ref:`platform<doxid-dc/d1b/structtw__egl__options_1a16fed9418793b2737e58d8a8295508dc>`;
 		void* :ref:`native_display<doxid-dc/d1b/structtw__egl__options_1a0259ef544cfa0b33460172461e33b1bf>`;
-		EGLint :ref:`visual_id<doxid-dc/d1b/structtw__egl__options_1a78c192aec068693bbafb7af95896b8ea>`;
-		const EGLint* :target:`context_attribs<doxid-dc/d1b/structtw__egl__options_1a93276235a7b094d2a2e831638e77d1d9>`;
 		const EGLint* :target:`platform_attribs<doxid-dc/d1b/structtw__egl__options_1a68167c55de34a1ee04d9700b2c11bb15>`;
 	};
 .. _details-dc/d1b/structtw__egl__options:
@@ -57,14 +55,4 @@ platform like EGL_PLATFORM_GBM_KHR
 	void* native_display
 
 native display type like a wl_display from wayland
-
-.. index:: pair: variable; visual_id
-.. _doxid-dc/d1b/structtw__egl__options_1a78c192aec068693bbafb7af95896b8ea:
-
-.. ref-code-block:: cpp
-	:class: doxyrest-title-code-block
-
-	EGLint visual_id
-
-visual id represents the format the platform supports
 
