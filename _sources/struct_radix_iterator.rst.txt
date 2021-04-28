@@ -20,13 +20,13 @@ struct radix_iterator
 		// fields
 	
 		int :target:`flags<doxid-d5/d70/structradix__iterator_1a84909a293cf5342b6d6be2324caee306>`;
-		:ref:`radix_t<doxid-d3/d13/ctypes_2include_2ctypes_2radix_8h_1aa994ec833b204062b051a7c6636cbc8e>`* :target:`rt<doxid-d5/d70/structradix__iterator_1ab67e388c50677f043c7e11fa1fad4f22>`;
-		unsigned char* :target:`key<doxid-d5/d70/structradix__iterator_1a26b865bf897898a38ec8ea2e42a761cf>`;
-		void* :target:`data<doxid-d5/d70/structradix__iterator_1a7faef6d137c1f12b4a969dcd03816be2>`;
+		:ref:`radix_t<doxid-d3/d5e/radix_8h_1aa994ec833b204062b051a7c6636cbc8e>`* :target:`rt<doxid-d5/d70/structradix__iterator_1a4ea19ba96f80812cfbdc312a0dc173c0>`;
+		unsigned char* :target:`key<doxid-d5/d70/structradix__iterator_1a39ba566b5c0348f6a82ab5120ca5e662>`;
+		void* :target:`data<doxid-d5/d70/structradix__iterator_1a0833c978b6c0da725587e729a9d7d7d6>`;
 		size_t :target:`key_len<doxid-d5/d70/structradix__iterator_1ae1a94d81314ab40552fe6d74b6e4c017>`;
 		size_t :target:`key_max<doxid-d5/d70/structradix__iterator_1a2e95bec460e0694c696ea804ef669f46>`;
-		unsigned char :target:`key_static_string<doxid-d5/d70/structradix__iterator_1a724683379c222a77cd78df5186bcc4cd>`[RADIX_ITER_STATIC_LEN];
-		:ref:`radix_node_t<doxid-d3/d13/ctypes_2include_2ctypes_2radix_8h_1a072aaee16640e9e774b7b33be8437f83>`* :target:`node<doxid-d5/d70/structradix__iterator_1a12fb70033ea101e44343c21054663bb4>`;
-		:ref:`radix_stack_t<doxid-d3/d13/ctypes_2include_2ctypes_2radix_8h_1a722715591f75534be3c4c5222de7fa63>` :target:`stack<doxid-d5/d70/structradix__iterator_1a4c5ee0f9fb7f7708cfd74b5801aec1af>`;
-		:ref:`radix_node_cb_t<doxid-de/def/twclient_2subprojects_2ctypes_2include_2ctypes_2radix_8h_1a307b1d4c76f590bc993f6253c447a0ff>` :target:`node_cb<doxid-d5/d70/structradix__iterator_1ab01141eec8076f6e54b5499a1f3528f4>`;
+		unsigned char :target:`key_static_string<doxid-d5/d70/structradix__iterator_1a44ab0289a3ad58ec46ffebd3a615dd87>`[RADIX_ITER_STATIC_LEN];
+		:ref:`radix_node_t<doxid-d3/d5e/radix_8h_1a072aaee16640e9e774b7b33be8437f83>`* :target:`node<doxid-d5/d70/structradix__iterator_1a3c151f15572b80729c0c6c2e689c5d15>`;
+		:ref:`radix_stack_t<doxid-d3/d5e/radix_8h_1a722715591f75534be3c4c5222de7fa63>` :target:`stack<doxid-d5/d70/structradix__iterator_1a4c5ee0f9fb7f7708cfd74b5801aec1af>`;
+		:ref:`radix_node_cb_t<doxid-d3/d5e/radix_8h_1a307b1d4c76f590bc993f6253c447a0ff>` :target:`node_cb<doxid-d5/d70/structradix__iterator_1ab01141eec8076f6e54b5499a1f3528f4>`;
 	};

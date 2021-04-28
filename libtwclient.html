@@ -1,259 +1,815 @@
 <!DOCTYPE html>
-
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    
-    <title>Twclient quick reference &#8212; Taiwins</title>
-  
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+   Twclient quick reference — Taiwins
+  </title>
   <!-- fix for search function -->
-  <script type="text/javascript" src="_static/language_data.js "></script>
-    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
-    <link rel="stylesheet" href="_static/bootstrap-sphinx.css" type="text/css" />
-    <link rel="stylesheet" type="text/css" href="_static/my-style.css" />
-    <link rel="stylesheet" type="text/css" href="_static/doxyrest-pygments.css" />
-    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
-    <script src="_static/jquery.js"></script>
-    <script src="_static/underscore.js"></script>
-    <script src="_static/doctools.js"></script>
-    <script src="_static/target-highlight.js"></script>
-    <link rel="shortcut icon" href="_static/favicon.ico"/>
-    <link rel="index" title="Index" href="genindex.html" />
-    <link rel="search" title="Search" href="search.html" />
-<meta charset='utf-8'>
-<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
-<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
-<meta name="apple-mobile-web-app-capable" content="yes">
-<script type="text/javascript" src="_static/js/jquery-1.11.0.min.js "></script>
-<script type="text/javascript" src="_static/js/jquery-fix.js "></script>
-<script type="text/javascript" src="_static/bootstrap-3.3.7/js/bootstrap.min.js "></script>
-<script type="text/javascript" src="_static/bootstrap-sphinx.js "></script>
-
-  </head><body>
+  <script src="_static/language_data.js " type="text/javascript">
+  </script>
+  <link href="_static/pygments.css" rel="stylesheet" type="text/css"/>
+  <link href="_static/bootstrap-sphinx.css" rel="stylesheet" type="text/css"/>
+  <link href="_static/my-style.css" rel="stylesheet" type="text/css"/>
+  <link href="_static/doxyrest-pygments.css" rel="stylesheet" type="text/css"/>
+  <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js">
+  </script>
+  <script src="_static/jquery.js">
+  </script>
+  <script src="_static/underscore.js">
+  </script>
+  <script src="_static/doctools.js">
+  </script>
+  <script src="_static/target-highlight.js">
+  </script>
+  <link href="_static/favicon.ico" rel="shortcut icon"/>
+  <link href="genindex.html" rel="index" title="Index"/>
+  <link href="search.html" rel="search" title="Search"/>
+  <meta charset="utf-8"/>
+  <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible"/>
+  <meta content="width=device-width, initial-scale=1.0, maximum-scale=1" name="viewport"/>
+  <meta content="yes" name="apple-mobile-web-app-capable"/>
+  <script src="_static/js/jquery-1.11.0.min.js " type="text/javascript">
+  </script>
+  <script src="_static/js/jquery-fix.js " type="text/javascript">
+  </script>
+  <script src="_static/bootstrap-3.3.7/js/bootstrap.min.js " type="text/javascript">
+  </script>
+  <script src="_static/bootstrap-sphinx.js " type="text/javascript">
+  </script>
+ </head>
+ <body>
   <div class="page-container">
-    
-<!-- taken from bootstrap theme -->
-<div id="navbar" class="navbar navbar-default navbar-fixed-top">
-  <div class="container">
-    <div class="navbar-header">
+   <!-- taken from bootstrap theme -->
+   <div class="navbar navbar-default navbar-fixed-top" id="navbar">
+    <div class="container">
+     <div class="navbar-header">
       <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
+      <button class="navbar-toggle" data-target=".nav-collapse" data-toggle="collapse" type="button">
+       <span class="icon-bar">
+       </span>
+       <span class="icon-bar">
+       </span>
+       <span class="icon-bar">
+       </span>
       </button>
       <a class="navbar-brand" href="index.html">
-        <b>Taiwins</b></a>
-      <span class="navbar-text navbar-version pull-left"><b></b></span>
-    </div>
-
-    <div class="collapse navbar-collapse nav-collapse">
+       <b>
+        Taiwins
+       </b>
+      </a>
+      <span class="navbar-text navbar-version pull-left">
+       <b>
+       </b>
+      </span>
+     </div>
+     <div class="collapse navbar-collapse nav-collapse">
       <ul class="nav navbar-nav">
-	<li><a href="page_doc.html">Documentation</a></li>
-	<li><a href="https://github.com/taiwins/taiwins">Source Code</a></li>
-	<li><a href="https://github.com/taiwins/taiwins/wiki">Wiki</a></li>
-	<!-- add other pages -->
+       <li>
+        <a href="page_doc.html">
+         Documentation
+        </a>
+       </li>
+       <li>
+        <a href="https://github.com/taiwins/taiwins">
+         Source Code
+        </a>
+       </li>
+       <li>
+        <a href="https://github.com/taiwins/taiwins/wiki">
+         Wiki
+        </a>
+       </li>
+       <!-- add other pages -->
       </ul>
+     </div>
     </div>
-  </div>
-</div>
-
-    <div class="container">
-      
-	<div class="row">
-	  <div class="body col-md-9 content" role="main">
-	    
-  <div class="section" id="twclient-quick-reference">
-<h1>Twclient quick reference<a class="headerlink" href="#twclient-quick-reference" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="client-data-structures">
-<h2>Client data structures<a class="headerlink" href="#client-data-structures" title="Permalink to this headline">¶</a></h2>
-<ul class="simple">
-<li><p><strong>tw_globals:</strong> the global structure that fits the need of an wayland
-client.  It contains things like <code class="docutils literal notranslate"><span class="pre">wl_shm</span></code>, <code class="docutils literal notranslate"><span class="pre">wl_shm_format</span></code>, <code class="docutils literal notranslate"><span class="pre">wl_compositor</span></code>,
-<code class="docutils literal notranslate"><span class="pre">wl_display</span></code>.</p>
-<ul>
-<li><p><strong>Inputs:</strong> We only have one input per client, this would be connect to
-one seat, input will handle</p></li>
-</ul>
-</li>
-<li><p><strong>tw_event_queue:</strong> introduced originally for <code class="docutils literal notranslate"><span class="pre">tw_shell</span></code> to handle system
+   </div>
+   <div class="container">
+    <div class="row">
+     <div class="body col-md-9 content" role="main">
+      <div class="section" id="twclient-quick-reference">
+       <h1>
+        Twclient quick reference
+        <a class="headerlink" href="#twclient-quick-reference" title="Permalink to this headline">
+         ¶
+        </a>
+       </h1>
+       <div class="section" id="client-data-structures">
+        <h2>
+         Client data structures
+         <a class="headerlink" href="#client-data-structures" title="Permalink to this headline">
+          ¶
+         </a>
+        </h2>
+        <ul class="simple">
+         <li>
+          <p>
+           <strong>
+            tw_globals:
+           </strong>
+           the global structure that fits the need of an wayland
+client.  It contains things like
+           <code class="docutils literal notranslate">
+            <span class="pre">
+             wl_shm
+            </span>
+           </code>
+           ,
+           <code class="docutils literal notranslate">
+            <span class="pre">
+             wl_shm_format
+            </span>
+           </code>
+           ,
+           <code class="docutils literal notranslate">
+            <span class="pre">
+             wl_compositor
+            </span>
+           </code>
+           ,
+           <code class="docutils literal notranslate">
+            <span class="pre">
+             wl_display
+            </span>
+           </code>
+           .
+          </p>
+          <ul>
+           <li>
+            <p>
+             <strong>
+              Inputs:
+             </strong>
+             We only have one input per client, this would be connect to
+one seat, input will handle
+            </p>
+           </li>
+          </ul>
+         </li>
+         <li>
+          <p>
+           <strong>
+            tw_event_queue:
+           </strong>
+           introduced originally for
+           <code class="docutils literal notranslate">
+            <span class="pre">
+             tw_shell
+            </span>
+           </code>
+           to handle system
 generated events like time lapse and wayland protocol events. Very much like
-<code class="docutils literal notranslate"><span class="pre">wl_event_loop</span></code>, which is not available in clients.</p>
-<ul>
-<li><p><strong>tw_event:</strong> this leads to another interface for use to create its own
-event and watch the event. It didn’t go as far as the <code class="docutils literal notranslate"><span class="pre">wl_protocols</span></code>
-where you create custom protocols and have handlers for them.</p></li>
-</ul>
-</li>
-<li><p><strong>tw_shm_pool:</strong> the allocator for shared buffers, binds to <code class="docutils literal notranslate"><span class="pre">wl_buffer</span></code>.</p></li>
-</ul>
-</div>
-<div class="section" id="uis">
-<h2>UIs<a class="headerlink" href="#uis" title="Permalink to this headline">¶</a></h2>
-<ul class="simple">
-<li><p><strong>tw_appsurf:</strong> it binds to an <code class="docutils literal notranslate"><span class="pre">wl_surface</span></code> for different
+           <code class="docutils literal notranslate">
+            <span class="pre">
+             wl_event_loop
+            </span>
+           </code>
+           , which is not available in clients.
+          </p>
+          <ul>
+           <li>
+            <p>
+             <strong>
+              tw_event:
+             </strong>
+             this leads to another interface for use to create its own
+event and watch the event. It didn’t go as far as the
+             <code class="docutils literal notranslate">
+              <span class="pre">
+               wl_protocols
+              </span>
+             </code>
+             where you create custom protocols and have handlers for them.
+            </p>
+           </li>
+          </ul>
+         </li>
+         <li>
+          <p>
+           <strong>
+            tw_shm_pool:
+           </strong>
+           the allocator for shared buffers, binds to
+           <code class="docutils literal notranslate">
+            <span class="pre">
+             wl_buffer
+            </span>
+           </code>
+           .
+          </p>
+         </li>
+        </ul>
+       </div>
+       <div class="section" id="uis">
+        <h2>
+         UIs
+         <a class="headerlink" href="#uis" title="Permalink to this headline">
+          ¶
+         </a>
+        </h2>
+        <ul class="simple">
+         <li>
+          <p>
+           <strong>
+            tw_appsurf:
+           </strong>
+           it binds to an
+           <code class="docutils literal notranslate">
+            <span class="pre">
+             wl_surface
+            </span>
+           </code>
+           for different
 roles(protocols). The surface has it implementation of buffer and input
 events, it has the data but no actual methods to interact with
-it. <code class="docutils literal notranslate"><span class="pre">tw_appsurf</span></code> was first created for distinguishing background surface and
+it.
+           <code class="docutils literal notranslate">
+            <span class="pre">
+             tw_appsurf
+            </span>
+           </code>
+           was first created for distinguishing background surface and
 panel surface. So in a sense, Right now it is used for any kind of single
-surface app. Note that:</p>
-<ul>
-<li><p>As an <code class="docutils literal notranslate"><span class="pre">tw_appsurf</span></code>, it has it’s own <code class="docutils literal notranslate"><span class="pre">&lt;x,y,w,h&gt;</span></code> values.</p></li>
-<li><p>It also has input-events, to generate the a new frame.</p></li>
-</ul>
-</li>
-<li><p><code class="docutils literal notranslate"><span class="pre">tw_appsurf</span></code> is designed to work with different proxies, <code class="docutils literal notranslate"><span class="pre">taiwins_ui</span></code>(this
-is taiwins specific, drawn in UI layer), <code class="docutils literal notranslate"><span class="pre">wl_shell_surface</span></code> or
-<code class="docutils literal notranslate"><span class="pre">xdg_shell_surface</span></code> should all work, it is an wrap around <code class="docutils literal notranslate"><span class="pre">wl_surface</span></code> and
-provides convenient methods for commiting surface and do a new frame.</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">tw_appsurf_event_filter</span></code>. But you know not everyting relates to a surface
+surface app. Note that:
+          </p>
+          <ul>
+           <li>
+            <p>
+             As an
+             <code class="docutils literal notranslate">
+              <span class="pre">
+               tw_appsurf
+              </span>
+             </code>
+             , it has it’s own
+             <code class="docutils literal notranslate">
+              <span class="pre">
+               &lt;x,y,w,h&gt;
+              </span>
+             </code>
+             values.
+            </p>
+           </li>
+           <li>
+            <p>
+             It also has input-events, to generate the a new frame.
+            </p>
+           </li>
+          </ul>
+         </li>
+         <li>
+          <p>
+           <code class="docutils literal notranslate">
+            <span class="pre">
+             tw_appsurf
+            </span>
+           </code>
+           is designed to work with different proxies,
+           <code class="docutils literal notranslate">
+            <span class="pre">
+             taiwins_ui
+            </span>
+           </code>
+           (this
+is taiwins specific, drawn in UI layer),
+           <code class="docutils literal notranslate">
+            <span class="pre">
+             wl_shell_surface
+            </span>
+           </code>
+           or
+           <code class="docutils literal notranslate">
+            <span class="pre">
+             xdg_shell_surface
+            </span>
+           </code>
+           should all work, it is an wrap around
+           <code class="docutils literal notranslate">
+            <span class="pre">
+             wl_surface
+            </span>
+           </code>
+           and
+provides convenient methods for commiting surface and do a new frame.
+          </p>
+         </li>
+         <li>
+          <p>
+           <code class="docutils literal notranslate">
+            <span class="pre">
+             tw_appsurf_event_filter
+            </span>
+           </code>
+           . But you know not everyting relates to a surface
 is about frame, would it be able to update something without drawing a new
 frame? This is why we have an event filter, you can instal the filter to a
-surface, it runs before the <code class="docutils literal notranslate"><span class="pre">tw_appsurf.frame</span></code> and it can optionally skip
-the <code class="docutils literal notranslate"><span class="pre">frame</span></code>.</p></li>
-</ul>
-<div class="section" id="example-of-ui-implementation">
-<h3>Example of UI implementation<a class="headerlink" href="#example-of-ui-implementation" title="Permalink to this headline">¶</a></h3>
-<p>You can implement a <code class="docutils literal notranslate"><span class="pre">tw_appsurf</span></code> for your needs using <code class="docutils literal notranslate"><span class="pre">*_impl_app_surf</span></code>, there
-are already predefined implementatin you can take advantage of.</p>
-<ul class="simple">
-<li><p><strong>background:</strong> background is picture reading and posting, it could be
-implemented as animation, by calling a frame.</p></li>
-<li><p><strong>nuklear_backend:</strong> this GUI library is implemented with OpenGL or cairo,
-it implements a <code class="docutils literal notranslate"><span class="pre">tw_appsurf</span></code> like a sub class, then use it users can use
-simply <code class="docutils literal notranslate"><span class="pre">tw_appsurf</span></code> to operate.</p></li>
-<li><p><strong>embeded_surface:</strong> This is one that complicates the implementation. It
+surface, it runs before the
+           <code class="docutils literal notranslate">
+            <span class="pre">
+             tw_appsurf.frame
+            </span>
+           </code>
+           and it can optionally skip
+the
+           <code class="docutils literal notranslate">
+            <span class="pre">
+             frame
+            </span>
+           </code>
+           .
+          </p>
+         </li>
+        </ul>
+        <div class="section" id="example-of-ui-implementation">
+         <h3>
+          Example of UI implementation
+          <a class="headerlink" href="#example-of-ui-implementation" title="Permalink to this headline">
+           ¶
+          </a>
+         </h3>
+         <p>
+          You can implement a
+          <code class="docutils literal notranslate">
+           <span class="pre">
+            tw_appsurf
+           </span>
+          </code>
+          for your needs using
+          <code class="docutils literal notranslate">
+           <span class="pre">
+            *_impl_app_surf
+           </span>
+          </code>
+          , there
+are already predefined implementatin you can take advantage of.
+         </p>
+         <ul class="simple">
+          <li>
+           <p>
+            <strong>
+             background:
+            </strong>
+            background is picture reading and posting, it could be
+implemented as animation, by calling a frame.
+           </p>
+          </li>
+          <li>
+           <p>
+            <strong>
+             nuklear_backend:
+            </strong>
+            this GUI library is implemented with OpenGL or cairo,
+it implements a
+            <code class="docutils literal notranslate">
+             <span class="pre">
+              tw_appsurf
+             </span>
+            </code>
+            like a sub class, then use it users can use
+simply
+            <code class="docutils literal notranslate">
+             <span class="pre">
+              tw_appsurf
+             </span>
+            </code>
+            to operate.
+           </p>
+          </li>
+          <li>
+           <p>
+            <strong>
+             embeded_surface:
+            </strong>
+            This is one that complicates the implementation. It
 does not have its own data, but also need a frame. The frame is triggered by
-events.</p></li>
-</ul>
-</div>
-<div class="section" id="frame-vs-other-event">
-<h3>frame vs other event.<a class="headerlink" href="#frame-vs-other-event" title="Permalink to this headline">¶</a></h3>
-<p>Right now <code class="docutils literal notranslate"><span class="pre">tw_appsurf</span></code> has a central <code class="docutils literal notranslate"><span class="pre">frame</span></code> callback to deal with all events,
-check out <code class="docutils literal notranslate"><span class="pre">tw_event</span></code> structure for what is available, note that those are the
-common events. You may implement your specific event through <code class="docutils literal notranslate"><span class="pre">tw_event_queue</span></code>.</p>
-<p>If you do animations, in wayland, you need to call the <code class="docutils literal notranslate"><span class="pre">commit</span></code> plus a <code class="docutils literal notranslate"><span class="pre">frame</span></code>
-in the next done event. <code class="docutils literal notranslate"><span class="pre">tw_appsurf</span></code> already has <code class="docutils literal notranslate"><span class="pre">tw_appsurf_request_frame</span></code> to
-request a draw call. Optionally, when you call <code class="docutils literal notranslate"><span class="pre">tw_appsurf_frame</span></code>, you can
-specify it is animated.</p>
-</div>
-<div class="section" id="nuklear-backend-using-wayland">
-<h3>NUKLEAR backend using Wayland<a class="headerlink" href="#nuklear-backend-using-wayland" title="Permalink to this headline">¶</a></h3>
-<p>We implement a cairo and EGL based nuklear renderer for <code class="docutils literal notranslate"><span class="pre">tw_appsurf</span></code>, user can
-invoke <code class="docutils literal notranslate"><span class="pre">nk_egl(cairo)_impl_appsurf</span></code> to setup <code class="docutils literal notranslate"><span class="pre">tw_appsurf</span></code> to work with
-<code class="docutils literal notranslate"><span class="pre">nuklear</span></code>. Then you would be able to use all the nuklear functions in the frame
-callback.</p>
-<div class="section" id="nuklear-pipeline">
-<h4>NUKLEAR pipeline<a class="headerlink" href="#nuklear-pipeline" title="Permalink to this headline">¶</a></h4>
-<p>The nuklear backend does all the heavy job of implementing all the ui forms that
+events.
+           </p>
+          </li>
+         </ul>
+        </div>
+        <div class="section" id="frame-vs-other-event">
+         <h3>
+          frame vs other event.
+          <a class="headerlink" href="#frame-vs-other-event" title="Permalink to this headline">
+           ¶
+          </a>
+         </h3>
+         <p>
+          Right now
+          <code class="docutils literal notranslate">
+           <span class="pre">
+            tw_appsurf
+           </span>
+          </code>
+          has a central
+          <code class="docutils literal notranslate">
+           <span class="pre">
+            frame
+           </span>
+          </code>
+          callback to deal with all events,
+check out
+          <code class="docutils literal notranslate">
+           <span class="pre">
+            tw_event
+           </span>
+          </code>
+          structure for what is available, note that those are the
+common events. You may implement your specific event through
+          <code class="docutils literal notranslate">
+           <span class="pre">
+            tw_event_queue
+           </span>
+          </code>
+          .
+         </p>
+         <p>
+          If you do animations, in wayland, you need to call the
+          <code class="docutils literal notranslate">
+           <span class="pre">
+            commit
+           </span>
+          </code>
+          plus a
+          <code class="docutils literal notranslate">
+           <span class="pre">
+            frame
+           </span>
+          </code>
+          in the next done event.
+          <code class="docutils literal notranslate">
+           <span class="pre">
+            tw_appsurf
+           </span>
+          </code>
+          already has
+          <code class="docutils literal notranslate">
+           <span class="pre">
+            tw_appsurf_request_frame
+           </span>
+          </code>
+          to
+request a draw call. Optionally, when you call
+          <code class="docutils literal notranslate">
+           <span class="pre">
+            tw_appsurf_frame
+           </span>
+          </code>
+          , you can
+specify it is animated.
+         </p>
+        </div>
+        <div class="section" id="nuklear-backend-using-wayland">
+         <h3>
+          NUKLEAR backend using Wayland
+          <a class="headerlink" href="#nuklear-backend-using-wayland" title="Permalink to this headline">
+           ¶
+          </a>
+         </h3>
+         <p>
+          We implement a cairo and EGL based nuklear renderer for
+          <code class="docutils literal notranslate">
+           <span class="pre">
+            tw_appsurf
+           </span>
+          </code>
+          , user can
+invoke
+          <code class="docutils literal notranslate">
+           <span class="pre">
+            nk_egl(cairo)_impl_appsurf
+           </span>
+          </code>
+          to setup
+          <code class="docutils literal notranslate">
+           <span class="pre">
+            tw_appsurf
+           </span>
+          </code>
+          to work with
+          <code class="docutils literal notranslate">
+           <span class="pre">
+            nuklear
+           </span>
+          </code>
+          . Then you would be able to use all the nuklear functions in the frame
+callback.
+         </p>
+         <div class="section" id="nuklear-pipeline">
+          <h4>
+           NUKLEAR pipeline
+           <a class="headerlink" href="#nuklear-pipeline" title="Permalink to this headline">
+            ¶
+           </a>
+          </h4>
+          <p>
+           The nuklear backend does all the heavy job of implementing all the ui forms that
 we need for GUI code and you can implement different backend for it. Backend
-implementation boils down to take draw command from <code class="docutils literal notranslate"><span class="pre">nk_command</span></code> and draw basic
-geometry, text and image.</p>
-<ul class="simple">
-<li><p>functions like <code class="docutils literal notranslate"><span class="pre">nk_label</span></code>, <code class="docutils literal notranslate"><span class="pre">nk_row</span></code> translate into <code class="docutils literal notranslate"><span class="pre">nk_command</span></code> though
-functions like <code class="docutils literal notranslate"><span class="pre">nk_draw_text</span></code>, <code class="docutils literal notranslate"><span class="pre">nk_draw_image</span></code>.</p></li>
-<li><p>if you decide to write a CPU backend, then you have to draw based on those
+implementation boils down to take draw command from
+           <code class="docutils literal notranslate">
+            <span class="pre">
+             nk_command
+            </span>
+           </code>
+           and draw basic
+geometry, text and image.
+          </p>
+          <ul class="simple">
+           <li>
+            <p>
+             functions like
+             <code class="docutils literal notranslate">
+              <span class="pre">
+               nk_label
+              </span>
+             </code>
+             ,
+             <code class="docutils literal notranslate">
+              <span class="pre">
+               nk_row
+              </span>
+             </code>
+             translate into
+             <code class="docutils literal notranslate">
+              <span class="pre">
+               nk_command
+              </span>
+             </code>
+             though
+functions like
+             <code class="docutils literal notranslate">
+              <span class="pre">
+               nk_draw_text
+              </span>
+             </code>
+             ,
+             <code class="docutils literal notranslate">
+              <span class="pre">
+               nk_draw_image
+              </span>
+             </code>
+             .
+            </p>
+           </li>
+           <li>
+            <p>
+             if you decide to write a CPU backend, then you have to draw based on those
 command, uses for example (Cairo), remember to use the double buffer(required
-for wayland).</p></li>
-<li><p>if you use GPU backend, there is an additional helper function called
-<code class="docutils literal notranslate"><span class="pre">nk_convert</span></code>, which converts the command into vertex buffer, element based on
-layout you specified.</p></li>
-</ul>
-</div>
-<div class="section" id="new-font-and-image">
-<h4>New Font and image<a class="headerlink" href="#new-font-and-image" title="Permalink to this headline">¶</a></h4>
-<blockquote>
-<div><p><code class="docutils literal notranslate"><span class="pre">nk_wl_*_backend</span></code> implements a resource management, to load font and image,
-call <code class="docutils literal notranslate"><span class="pre">nk_wl_load_image</span></code> and <code class="docutils literal notranslate"><span class="pre">nk_wl_new_font</span></code></p>
-</div></blockquote>
-</div>
-</div>
-</div>
-</div>
-<div class="section" id="name-conversion">
-<h1>name conversion<a class="headerlink" href="#name-conversion" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="create-and-destroy">
-<h2>CREATE and DESTROY<a class="headerlink" href="#create-and-destroy" title="Permalink to this headline">¶</a></h2>
-<p>when using <code class="docutils literal notranslate"><span class="pre">create</span></code> and <code class="docutils literal notranslate"><span class="pre">destroy</span></code>, for exemple, <code class="docutils literal notranslate"><span class="pre">wl_shm_pool_create</span></code> and
-<code class="docutils literal notranslate"><span class="pre">wl_shm_pool_destroy</span></code>, we are getting a pointer then free the pointer in the
-end.</p>
-<p>The <code class="docutils literal notranslate"><span class="pre">struct</span></code> is usually not visible, declared in header, defined in source
-code. Good example is <code class="docutils literal notranslate"><span class="pre">nk_egl_backend</span></code>, since there could be only one
-implementation of it.</p>
-</div>
-<div class="section" id="init-and-end">
-<h2>INIT and END<a class="headerlink" href="#init-and-end" title="Permalink to this headline">¶</a></h2>
-<p>In this case, user has the control over the memory, but the interface controls
-the heap if any, after calling <code class="docutils literal notranslate"><span class="pre">end</span></code>, the struct should returns to the init
-state.</p>
-</div>
-<div class="section" id="init-and-release">
-<h2>INIT and RELEASE<a class="headerlink" href="#init-and-release" title="Permalink to this headline">¶</a></h2>
-<p>Same as above.</p>
-</div>
-</div>
-
-
-	  </div>
-	  
-<div class="col-md-3">
-  <div id="sidebar" class="bs-sidenav">
-<h3>Content</h3>
-<div id="localtoc"><ul>
-<li><a class="reference internal" href="#">Twclient quick reference</a><ul>
-<li><a class="reference internal" href="#client-data-structures">Client data structures</a></li>
-<li><a class="reference internal" href="#uis">UIs</a><ul>
-<li><a class="reference internal" href="#example-of-ui-implementation">Example of UI implementation</a></li>
-<li><a class="reference internal" href="#frame-vs-other-event">frame vs other event.</a></li>
-<li><a class="reference internal" href="#nuklear-backend-using-wayland">NUKLEAR backend using Wayland</a><ul>
-<li><a class="reference internal" href="#nuklear-pipeline">NUKLEAR pipeline</a></li>
-<li><a class="reference internal" href="#new-font-and-image">New Font and image</a></li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-<li><a class="reference internal" href="#name-conversion">name conversion</a><ul>
-<li><a class="reference internal" href="#create-and-destroy">CREATE and DESTROY</a></li>
-<li><a class="reference internal" href="#init-and-end">INIT and END</a></li>
-<li><a class="reference internal" href="#init-and-release">INIT and RELEASE</a></li>
-</ul>
-</li>
-</ul>
-</div>
-<h3><a data-toggle="collapse" href="#globaltoc">Related Pages</a></h3>
-<div id="globaltoc" class="collapse">
-
-</div>
-<form action="search.html" method="get">
- <div class="form-group">
-  <input type="text" name="q" class="form-control" placeholder="Search" />
- </div>
-  <input type="hidden" name="check_keywords" value="yes" />
-  <input type="hidden" name="area" value="default" />
-</form>
-  </div>
-</div>
-
-	</div>
-      
+for wayland).
+            </p>
+           </li>
+           <li>
+            <p>
+             if you use GPU backend, there is an additional helper function called
+             <code class="docutils literal notranslate">
+              <span class="pre">
+               nk_convert
+              </span>
+             </code>
+             , which converts the command into vertex buffer, element based on
+layout you specified.
+            </p>
+           </li>
+          </ul>
+         </div>
+         <div class="section" id="new-font-and-image">
+          <h4>
+           New Font and image
+           <a class="headerlink" href="#new-font-and-image" title="Permalink to this headline">
+            ¶
+           </a>
+          </h4>
+          <blockquote>
+           <div>
+            <p>
+             <code class="docutils literal notranslate">
+              <span class="pre">
+               nk_wl_*_backend
+              </span>
+             </code>
+             implements a resource management, to load font and image,
+call
+             <code class="docutils literal notranslate">
+              <span class="pre">
+               nk_wl_load_image
+              </span>
+             </code>
+             and
+             <code class="docutils literal notranslate">
+              <span class="pre">
+               nk_wl_new_font
+              </span>
+             </code>
+            </p>
+           </div>
+          </blockquote>
+         </div>
+        </div>
+       </div>
+      </div>
+      <div class="section" id="name-conversion">
+       <h1>
+        name conversion
+        <a class="headerlink" href="#name-conversion" title="Permalink to this headline">
+         ¶
+        </a>
+       </h1>
+       <div class="section" id="create-and-destroy">
+        <h2>
+         CREATE and DESTROY
+         <a class="headerlink" href="#create-and-destroy" title="Permalink to this headline">
+          ¶
+         </a>
+        </h2>
+        <p>
+         when using
+         <code class="docutils literal notranslate">
+          <span class="pre">
+           create
+          </span>
+         </code>
+         and
+         <code class="docutils literal notranslate">
+          <span class="pre">
+           destroy
+          </span>
+         </code>
+         , for exemple,
+         <code class="docutils literal notranslate">
+          <span class="pre">
+           wl_shm_pool_create
+          </span>
+         </code>
+         and
+         <code class="docutils literal notranslate">
+          <span class="pre">
+           wl_shm_pool_destroy
+          </span>
+         </code>
+         , we are getting a pointer then free the pointer in the
+end.
+        </p>
+        <p>
+         The
+         <code class="docutils literal notranslate">
+          <span class="pre">
+           struct
+          </span>
+         </code>
+         is usually not visible, declared in header, defined in source
+code. Good example is
+         <code class="docutils literal notranslate">
+          <span class="pre">
+           nk_egl_backend
+          </span>
+         </code>
+         , since there could be only one
+implementation of it.
+        </p>
+       </div>
+       <div class="section" id="init-and-end">
+        <h2>
+         INIT and END
+         <a class="headerlink" href="#init-and-end" title="Permalink to this headline">
+          ¶
+         </a>
+        </h2>
+        <p>
+         In this case, user has the control over the memory, but the interface controls
+the heap if any, after calling
+         <code class="docutils literal notranslate">
+          <span class="pre">
+           end
+          </span>
+         </code>
+         , the struct should returns to the init
+state.
+        </p>
+       </div>
+       <div class="section" id="init-and-release">
+        <h2>
+         INIT and RELEASE
+         <a class="headerlink" href="#init-and-release" title="Permalink to this headline">
+          ¶
+         </a>
+        </h2>
+        <p>
+         Same as above.
+        </p>
+       </div>
+      </div>
+     </div>
+     <div class="col-md-3">
+      <div class="bs-sidenav" id="sidebar">
+       <h3>
+        Content
+       </h3>
+       <div id="localtoc">
+        <ul>
+         <li>
+          <a class="reference internal" href="#">
+           Twclient quick reference
+          </a>
+          <ul>
+           <li>
+            <a class="reference internal" href="#client-data-structures">
+             Client data structures
+            </a>
+           </li>
+           <li>
+            <a class="reference internal" href="#uis">
+             UIs
+            </a>
+            <ul>
+             <li>
+              <a class="reference internal" href="#example-of-ui-implementation">
+               Example of UI implementation
+              </a>
+             </li>
+             <li>
+              <a class="reference internal" href="#frame-vs-other-event">
+               frame vs other event.
+              </a>
+             </li>
+             <li>
+              <a class="reference internal" href="#nuklear-backend-using-wayland">
+               NUKLEAR backend using Wayland
+              </a>
+              <ul>
+               <li>
+                <a class="reference internal" href="#nuklear-pipeline">
+                 NUKLEAR pipeline
+                </a>
+               </li>
+               <li>
+                <a class="reference internal" href="#new-font-and-image">
+                 New Font and image
+                </a>
+               </li>
+              </ul>
+             </li>
+            </ul>
+           </li>
+          </ul>
+         </li>
+         <li>
+          <a class="reference internal" href="#name-conversion">
+           name conversion
+          </a>
+          <ul>
+           <li>
+            <a class="reference internal" href="#create-and-destroy">
+             CREATE and DESTROY
+            </a>
+           </li>
+           <li>
+            <a class="reference internal" href="#init-and-end">
+             INIT and END
+            </a>
+           </li>
+           <li>
+            <a class="reference internal" href="#init-and-release">
+             INIT and RELEASE
+            </a>
+           </li>
+          </ul>
+         </li>
+        </ul>
+       </div>
+       <form action="search.html" method="get">
+        <div class="form-group">
+         <input class="form-control" name="q" placeholder="Search" type="text"/>
+        </div>
+        <input name="check_keywords" type="hidden" value="yes"/>
+        <input name="area" type="hidden" value="default"/>
+       </form>
+      </div>
+     </div>
     </div>
-    <div class="push"></div>
+   </div>
+   <div class="push">
+   </div>
   </div>
-
-<footer class="footer">
-  <div class="container">
+  <footer class="footer">
+   <div class="container">
     <p class="pull-right">
-      <a href="#">Back to top</a>
-      
+     <a href="#">
+      Back to top
+     </a>
     </p>
     <p>
-        &copy; Copyright 2020, Xichen Zhou.<br/>
-      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 3.4.3.<br/>
+     © Copyright 2020, Xichen Zhou.
+     <br/>
+     Created using
+     <a href="http://sphinx-doc.org/">
+      Sphinx
+     </a>
+     3.4.3.
+     <br/>
     </p>
-  </div>
-</footer>
-  </body>
+   </div>
+  </footer>
+ </body>
 </html>

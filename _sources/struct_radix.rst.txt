@@ -19,7 +19,7 @@ struct radix
 	{
 		// fields
 	
-		:ref:`radix_node_t<doxid-d3/d13/ctypes_2include_2ctypes_2radix_8h_1a072aaee16640e9e774b7b33be8437f83>`* :target:`head<doxid-df/d41/structradix_1ad354e639044bd498e3c39793b87eee24>`;
+		:ref:`radix_node_t<doxid-d3/d5e/radix_8h_1a072aaee16640e9e774b7b33be8437f83>`* :target:`head<doxid-df/d41/structradix_1a17ccd21a760861a533ae0245579b5741>`;
 		uint64_t :target:`numele<doxid-df/d41/structradix_1a2869ecd910e7648735f43460440a21ee>`;
 		uint64_t :target:`numnodes<doxid-df/d41/structradix_1aa79820188880ddef8f9b160e85d7241e>`;
 	};

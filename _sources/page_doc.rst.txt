@@ -1,11 +1,9 @@
-.. include:: mainpage.rst
 .. include:: page_index.rst
 
 .. toctree::
 	:hidden:
 
 
-.. rubric:: Related Pages:
 
 
 

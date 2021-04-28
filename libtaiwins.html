@@ -1,245 +1,623 @@
 <!DOCTYPE html>
-
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    
-    <title>For libtaiwins users &#8212; Taiwins</title>
-  
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+   For libtaiwins users — Taiwins
+  </title>
   <!-- fix for search function -->
-  <script type="text/javascript" src="_static/language_data.js "></script>
-    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
-    <link rel="stylesheet" href="_static/bootstrap-sphinx.css" type="text/css" />
-    <link rel="stylesheet" type="text/css" href="_static/my-style.css" />
-    <link rel="stylesheet" type="text/css" href="_static/doxyrest-pygments.css" />
-    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
-    <script src="_static/jquery.js"></script>
-    <script src="_static/underscore.js"></script>
-    <script src="_static/doctools.js"></script>
-    <script src="_static/target-highlight.js"></script>
-    <link rel="shortcut icon" href="_static/favicon.ico"/>
-    <link rel="index" title="Index" href="genindex.html" />
-    <link rel="search" title="Search" href="search.html" />
-<meta charset='utf-8'>
-<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
-<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
-<meta name="apple-mobile-web-app-capable" content="yes">
-<script type="text/javascript" src="_static/js/jquery-1.11.0.min.js "></script>
-<script type="text/javascript" src="_static/js/jquery-fix.js "></script>
-<script type="text/javascript" src="_static/bootstrap-3.3.7/js/bootstrap.min.js "></script>
-<script type="text/javascript" src="_static/bootstrap-sphinx.js "></script>
-
-  </head><body>
+  <script src="_static/language_data.js " type="text/javascript">
+  </script>
+  <link href="_static/pygments.css" rel="stylesheet" type="text/css"/>
+  <link href="_static/bootstrap-sphinx.css" rel="stylesheet" type="text/css"/>
+  <link href="_static/my-style.css" rel="stylesheet" type="text/css"/>
+  <link href="_static/doxyrest-pygments.css" rel="stylesheet" type="text/css"/>
+  <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js">
+  </script>
+  <script src="_static/jquery.js">
+  </script>
+  <script src="_static/underscore.js">
+  </script>
+  <script src="_static/doctools.js">
+  </script>
+  <script src="_static/target-highlight.js">
+  </script>
+  <link href="_static/favicon.ico" rel="shortcut icon"/>
+  <link href="genindex.html" rel="index" title="Index"/>
+  <link href="search.html" rel="search" title="Search"/>
+  <meta charset="utf-8"/>
+  <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible"/>
+  <meta content="width=device-width, initial-scale=1.0, maximum-scale=1" name="viewport"/>
+  <meta content="yes" name="apple-mobile-web-app-capable"/>
+  <script src="_static/js/jquery-1.11.0.min.js " type="text/javascript">
+  </script>
+  <script src="_static/js/jquery-fix.js " type="text/javascript">
+  </script>
+  <script src="_static/bootstrap-3.3.7/js/bootstrap.min.js " type="text/javascript">
+  </script>
+  <script src="_static/bootstrap-sphinx.js " type="text/javascript">
+  </script>
+ </head>
+ <body>
   <div class="page-container">
-    
-<!-- taken from bootstrap theme -->
-<div id="navbar" class="navbar navbar-default navbar-fixed-top">
-  <div class="container">
-    <div class="navbar-header">
+   <!-- taken from bootstrap theme -->
+   <div class="navbar navbar-default navbar-fixed-top" id="navbar">
+    <div class="container">
+     <div class="navbar-header">
       <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
+      <button class="navbar-toggle" data-target=".nav-collapse" data-toggle="collapse" type="button">
+       <span class="icon-bar">
+       </span>
+       <span class="icon-bar">
+       </span>
+       <span class="icon-bar">
+       </span>
       </button>
       <a class="navbar-brand" href="index.html">
-        <b>Taiwins</b></a>
-      <span class="navbar-text navbar-version pull-left"><b></b></span>
-    </div>
-
-    <div class="collapse navbar-collapse nav-collapse">
+       <b>
+        Taiwins
+       </b>
+      </a>
+      <span class="navbar-text navbar-version pull-left">
+       <b>
+       </b>
+      </span>
+     </div>
+     <div class="collapse navbar-collapse nav-collapse">
       <ul class="nav navbar-nav">
-	<li><a href="page_doc.html">Documentation</a></li>
-	<li><a href="https://github.com/taiwins/taiwins">Source Code</a></li>
-	<li><a href="https://github.com/taiwins/taiwins/wiki">Wiki</a></li>
-	<!-- add other pages -->
+       <li>
+        <a href="page_doc.html">
+         Documentation
+        </a>
+       </li>
+       <li>
+        <a href="https://github.com/taiwins/taiwins">
+         Source Code
+        </a>
+       </li>
+       <li>
+        <a href="https://github.com/taiwins/taiwins/wiki">
+         Wiki
+        </a>
+       </li>
+       <!-- add other pages -->
       </ul>
+     </div>
     </div>
-  </div>
-</div>
-
-    <div class="container">
-      
-	<div class="row">
-	  <div class="body col-md-9 content" role="main">
-	    
-  <div class="section" id="for-libtaiwins-users">
-<h1>For libtaiwins users<a class="headerlink" href="#for-libtaiwins-users" title="Permalink to this headline">¶</a></h1>
-<p>The easiest way to draft a wayland compositor using <strong>libtaiwins</strong> is by
+   </div>
+   <div class="container">
+    <div class="row">
+     <div class="body col-md-9 content" role="main">
+      <div class="section" id="for-libtaiwins-users">
+       <h1>
+        For libtaiwins users
+        <a class="headerlink" href="#for-libtaiwins-users" title="Permalink to this headline">
+         ¶
+        </a>
+       </h1>
+       <p>
+        The easiest way to draft a wayland compositor using
+        <strong>
+         libtaiwins
+        </strong>
+        is by
 looking at the some of the backend tests, these tests generally tries to start
 one backend and then create a minimum compositor, such as the
-<a class="reference external" href="https://github.com/taiwins/taiwins/tree/master/test/x11-test.c">x11-test.c</a>.
+        <a class="reference external" href="https://github.com/taiwins/taiwins/tree/master/test/x11-test.c">
+         x11-test.c
+        </a>
+        .
 You will see that it takes as few as 100 lines of code to run a compositor
-(with some help of course).</p>
-<p>I would like to briefly describe the libtaiwins architecture here. As little as
+(with some help of course).
+       </p>
+       <p>
+        I would like to briefly describe the libtaiwins architecture here. As little as
 my drawing skills, an accurate enough graph of libtaiwins architecture
-presents:</p>
-<a class="reference external image-reference" href="./imgs/libtaiwins-arch.svg"><img alt="" src="_images/libtaiwins-arch.svg" /></a>
-<p>On the end end we have <code class="docutils literal notranslate"><span class="pre">tw_object</span></code> implements the wayland object in C, on the
-other end we have <code class="docutils literal notranslate"><span class="pre">tw_backend</span></code> for abstracting hardwares. The <code class="docutils literal notranslate"><span class="pre">tw_engine</span></code> is
+presents:
+       </p>
+       <a class="reference external image-reference" href="./imgs/libtaiwins-arch.svg">
+        <img alt="" src="_images/libtaiwins-arch.svg"/>
+       </a>
+       <p>
+        On the end end we have
+        <code class="docutils literal notranslate">
+         <span class="pre">
+          tw_object
+         </span>
+        </code>
+        implements the wayland object in C, on the
+other end we have
+        <code class="docutils literal notranslate">
+         <span class="pre">
+          tw_backend
+         </span>
+        </code>
+        for abstracting hardwares. The
+        <code class="docutils literal notranslate">
+         <span class="pre">
+          tw_engine
+         </span>
+        </code>
+        is
 the middle man connects them together. It takes input events from backends and
-forward it to the <code class="docutils literal notranslate"><span class="pre">wl_seat</span></code>, sets correct output mode you asked in the
+forward it to the
+        <code class="docutils literal notranslate">
+         <span class="pre">
+          wl_seat
+         </span>
+        </code>
+        , sets correct output mode you asked in the
 backend. You can completely ignore it of course, as it is not referenced by
 backends, but then you have to connect all the types yourself. The
-<code class="docutils literal notranslate"><span class="pre">tw_render_context</span></code>, on the other hand, it is used by the backends, you need to
+        <code class="docutils literal notranslate">
+         <span class="pre">
+          tw_render_context
+         </span>
+        </code>
+        , on the other hand, it is used by the backends, you need to
 create it them pass to the backend. It handles the GPU resources and provides
-drawing interfaces we called <em>pipeline</em>. Other subsystems like <code class="docutils literal notranslate"><span class="pre">tw_shell</span></code>,
-<code class="docutils literal notranslate"><span class="pre">tw_console</span></code> are not shown in the graph, they are taiwins specific protocol
-implementation.</p>
-<div class="section" id="tw-engine">
-<h2>tw_engine<a class="headerlink" href="#tw-engine" title="Permalink to this headline">¶</a></h2>
-<p>If you decide to take advantage of <code class="docutils literal notranslate"><span class="pre">tw_engine</span></code>, initialize it is as simple as
-<code class="docutils literal notranslate"><span class="pre">tw_engine_create_global</span></code>, which takes the backend and <code class="docutils literal notranslate"><span class="pre">wl_display</span></code>. Then you
+drawing interfaces we called
+        <em>
+         pipeline
+        </em>
+        . Other subsystems like
+        <code class="docutils literal notranslate">
+         <span class="pre">
+          tw_shell
+         </span>
+        </code>
+        ,
+        <code class="docutils literal notranslate">
+         <span class="pre">
+          tw_console
+         </span>
+        </code>
+        are not shown in the graph, they are taiwins specific protocol
+implementation.
+       </p>
+       <div class="section" id="tw-engine">
+        <h2>
+         tw_engine
+         <a class="headerlink" href="#tw-engine" title="Permalink to this headline">
+          ¶
+         </a>
+        </h2>
+        <p>
+         If you decide to take advantage of
+         <code class="docutils literal notranslate">
+          <span class="pre">
+           tw_engine
+          </span>
+         </code>
+         , initialize it is as simple as
+         <code class="docutils literal notranslate">
+          <span class="pre">
+           tw_engine_create_global
+          </span>
+         </code>
+         , which takes the backend and
+         <code class="docutils literal notranslate">
+          <span class="pre">
+           wl_display
+          </span>
+         </code>
+         . Then you
 can query the engine some of the engine state (including output and seat)
-later. <code class="docutils literal notranslate"><span class="pre">tw_engine</span></code> is event driven, you can implement the compositor logic by
-listening to the <code class="docutils literal notranslate"><span class="pre">output_(create/destroy)</span></code> and <code class="docutils literal notranslate"><span class="pre">seat_(create/destroy)</span></code>
-signals. The engine includes quite a few protocols, like <code class="docutils literal notranslate"><span class="pre">tw_layers</span></code>,
-<code class="docutils literal notranslate"><span class="pre">tw_presentations</span></code>, etc. A good example user of <code class="docutils literal notranslate"><span class="pre">tw_engine</span></code> is the “compositor
+later.
+         <code class="docutils literal notranslate">
+          <span class="pre">
+           tw_engine
+          </span>
+         </code>
+         is event driven, you can implement the compositor logic by
+listening to the
+         <code class="docutils literal notranslate">
+          <span class="pre">
+           output_(create/destroy)
+          </span>
+         </code>
+         and
+         <code class="docutils literal notranslate">
+          <span class="pre">
+           seat_(create/destroy)
+          </span>
+         </code>
+         signals. The engine includes quite a few protocols, like
+         <code class="docutils literal notranslate">
+          <span class="pre">
+           tw_layers
+          </span>
+         </code>
+         ,
+         <code class="docutils literal notranslate">
+          <span class="pre">
+           tw_presentations
+          </span>
+         </code>
+         , etc. A good example user of
+         <code class="docutils literal notranslate">
+          <span class="pre">
+           tw_engine
+          </span>
+         </code>
+         is the “compositor
 desktop logic”, the “compositor desktop” needs to implement API calls from
-<code class="docutils literal notranslate"><span class="pre">xdg_surface</span></code> and <code class="docutils literal notranslate"><span class="pre">wl_shell_surface</span></code> such as <code class="docutils literal notranslate"><span class="pre">set_fullscreen</span></code>,
-<code class="docutils literal notranslate"><span class="pre">set_minimized</span></code>. Taiwins implement those by working with layers.</p>
-</div>
-<div class="section" id="the-render-context">
-<h2>The render context<a class="headerlink" href="#the-render-context" title="Permalink to this headline">¶</a></h2>
-<p>The <code class="docutils literal notranslate"><span class="pre">render_context</span></code> in the taiwins initialize by a <code class="docutils literal notranslate"><span class="pre">render_context_create</span></code>, it
-closes work with buffers from <code class="docutils literal notranslate"><span class="pre">wl_surface</span></code>s, when a wayland client commits its
+         <code class="docutils literal notranslate">
+          <span class="pre">
+           xdg_surface
+          </span>
+         </code>
+         and
+         <code class="docutils literal notranslate">
+          <span class="pre">
+           wl_shell_surface
+          </span>
+         </code>
+         such as
+         <code class="docutils literal notranslate">
+          <span class="pre">
+           set_fullscreen
+          </span>
+         </code>
+         ,
+         <code class="docutils literal notranslate">
+          <span class="pre">
+           set_minimized
+          </span>
+         </code>
+         . Taiwins implement those by working with layers.
+        </p>
+       </div>
+       <div class="section" id="the-render-context">
+        <h2>
+         The render context
+         <a class="headerlink" href="#the-render-context" title="Permalink to this headline">
+          ¶
+         </a>
+        </h2>
+        <p>
+         The
+         <code class="docutils literal notranslate">
+          <span class="pre">
+           render_context
+          </span>
+         </code>
+         in the taiwins initialize by a
+         <code class="docutils literal notranslate">
+          <span class="pre">
+           render_context_create
+          </span>
+         </code>
+         , it
+closes work with buffers from
+         <code class="docutils literal notranslate">
+          <span class="pre">
+           wl_surface
+          </span>
+         </code>
+         s, when a wayland client commits its
 surface, the render context needs to convert the buffers into a texture so
 later it can be painted. A renderer, for example, the default taiwins renderer,
-utilises those textures and compose them together to look like a desktop.</p>
-<p>A compositor need to implement a <code class="docutils literal notranslate"><span class="pre">repaint_output</span></code> logic eventually, it is not
+utilises those textures and compose them together to look like a desktop.
+        </p>
+        <p>
+         A compositor need to implement a
+         <code class="docutils literal notranslate">
+          <span class="pre">
+           repaint_output
+          </span>
+         </code>
+         logic eventually, it is not
 done by libtaiwins. This way, you could paint your compositor very differently
-from others.</p>
-</div>
-<div class="section" id="the-desktop-logic">
-<h2>The desktop logic<a class="headerlink" href="#the-desktop-logic" title="Permalink to this headline">¶</a></h2>
-<p>We mentioned the desktop logic above, it is another part where compositor
+from others.
+        </p>
+       </div>
+       <div class="section" id="the-desktop-logic">
+        <h2>
+         The desktop logic
+         <a class="headerlink" href="#the-desktop-logic" title="Permalink to this headline">
+          ¶
+         </a>
+        </h2>
+        <p>
+         We mentioned the desktop logic above, it is another part where compositor
 writers need to handle themselves. The main purpose of this component is
-deciding the position of <code class="docutils literal notranslate"><span class="pre">wl_surface</span></code>s. A stacking compositor can use the
+deciding the position of
+         <code class="docutils literal notranslate">
+          <span class="pre">
+           wl_surface
+          </span>
+         </code>
+         s. A stacking compositor can use the
 logic as simple as the
-<a class="reference external" href="https://github.com/taiwins/taiwins/tree/master/test/test_desktop.c">test</a>
-desktop. The taiwins itself implements a more complex scenario.</p>
-</div>
-</div>
-<div class="section" id="for-libtaiwins-developers">
-<h1>For libtaiwins developers<a class="headerlink" href="#for-libtaiwins-developers" title="Permalink to this headline">¶</a></h1>
-<p>Hi there, so you decided to take on the quest of forging libtaiwins? Good for
+         <a class="reference external" href="https://github.com/taiwins/taiwins/tree/master/test/test_desktop.c">
+          test
+         </a>
+         desktop. The taiwins itself implements a more complex scenario.
+        </p>
+       </div>
+      </div>
+      <div class="section" id="for-libtaiwins-developers">
+       <h1>
+        For libtaiwins developers
+        <a class="headerlink" href="#for-libtaiwins-developers" title="Permalink to this headline">
+         ¶
+        </a>
+       </h1>
+       <p>
+        Hi there, so you decided to take on the quest of forging libtaiwins? Good for
 you :P. You may already tried the libtaiwins API, there are some you don’t like
 very much, you may want add new features for your compositor, it is all yours
 to play with. I am sure at this step, you already know how you are going to do
 it. Well, if undecided, you can simply adding a proposal issue, you may find
-some other people already doing it.</p>
-<p>I could, however, here to give you a little roadmap for each of the components
-you may need to work with.</p>
-<div class="section" id="tw-objects">
-<h2>tw_objects<a class="headerlink" href="#tw-objects" title="Permalink to this headline">¶</a></h2>
-<p>At the end of the day, a taiwins compositor need to handle <code class="docutils literal notranslate"><span class="pre">tw_objects</span></code> for all
+some other people already doing it.
+       </p>
+       <p>
+        I could, however, here to give you a little roadmap for each of the components
+you may need to work with.
+       </p>
+       <div class="section" id="tw-objects">
+        <h2>
+         tw_objects
+         <a class="headerlink" href="#tw-objects" title="Permalink to this headline">
+          ¶
+         </a>
+        </h2>
+        <p>
+         At the end of the day, a taiwins compositor need to handle
+         <code class="docutils literal notranslate">
+          <span class="pre">
+           tw_objects
+          </span>
+         </code>
+         for all
 the wayland magic to happen, though is not the most exciting component, for
 libtawins developers, you would need to handle them correctly at the right
-time. It could be your case that you implement one <code class="docutils literal notranslate"><span class="pre">tw_object</span></code> for a specific
+time. It could be your case that you implement one
+         <code class="docutils literal notranslate">
+          <span class="pre">
+           tw_object
+          </span>
+         </code>
+         for a specific
 protocol you need. The process involves grabbing the wayland protocol and
 creating a C interface around it. Usually you create signals for handling
-client requests in libtaiwns and exposes the <code class="docutils literal notranslate"><span class="pre">tw_object</span></code> APIs for a
+client requests in libtaiwns and exposes the
+         <code class="docutils literal notranslate">
+          <span class="pre">
+           tw_object
+          </span>
+         </code>
+         APIs for a
 response. Once you are done, the last is deciding where the object resides in
-libtaiwns, currently most of them lives under <code class="docutils literal notranslate"><span class="pre">tw_engine</span></code> but this depends on
-your needs.</p>
-</div>
-<div class="section" id="id1">
-<h2>The render context<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
-<p>For developers, writing a render context requires you preparing creating a
-<code class="docutils literal notranslate"><span class="pre">render_output</span></code> object for the backends, usually in the form of
-<code class="docutils literal notranslate"><span class="pre">EGLSurface</span></code>. preparing the textures and potentially the framebuffers for a
-renderer is the other side of the job.</p>
-</div>
-<div class="section" id="the-backend">
-<h2>The backend<a class="headerlink" href="#the-backend" title="Permalink to this headline">¶</a></h2>
-<p>If you want to add new features for backends, you could do it through signals
-or you can adding new callbacks in <code class="docutils literal notranslate"><span class="pre">tw_backend_impl</span></code> depends where the events
-driving from.</p>
-<p>You may want a new backend, such as remote desktop, then the burden of
-abstracting <code class="docutils literal notranslate"><span class="pre">input_device</span></code> and <code class="docutils literal notranslate"><span class="pre">output_device</span></code> is on your shoulder, a backend
+libtaiwns, currently most of them lives under
+         <code class="docutils literal notranslate">
+          <span class="pre">
+           tw_engine
+          </span>
+         </code>
+         but this depends on
+your needs.
+        </p>
+       </div>
+       <div class="section" id="id1">
+        <h2>
+         The render context
+         <a class="headerlink" href="#id1" title="Permalink to this headline">
+          ¶
+         </a>
+        </h2>
+        <p>
+         For developers, writing a render context requires you preparing creating a
+         <code class="docutils literal notranslate">
+          <span class="pre">
+           render_output
+          </span>
+         </code>
+         object for the backends, usually in the form of
+         <code class="docutils literal notranslate">
+          <span class="pre">
+           EGLSurface
+          </span>
+         </code>
+         . preparing the textures and potentially the framebuffers for a
+renderer is the other side of the job.
+        </p>
+       </div>
+       <div class="section" id="the-backend">
+        <h2>
+         The backend
+         <a class="headerlink" href="#the-backend" title="Permalink to this headline">
+          ¶
+         </a>
+        </h2>
+        <p>
+         If you want to add new features for backends, you could do it through signals
+or you can adding new callbacks in
+         <code class="docutils literal notranslate">
+          <span class="pre">
+           tw_backend_impl
+          </span>
+         </code>
+         depends where the events
+driving from.
+        </p>
+        <p>
+         You may want a new backend, such as remote desktop, then the burden of
+abstracting
+         <code class="docutils literal notranslate">
+          <span class="pre">
+           input_device
+          </span>
+         </code>
+         and
+         <code class="docutils literal notranslate">
+          <span class="pre">
+           output_device
+          </span>
+         </code>
+         is on your shoulder, a backend
 first prepares a so called “render context parameters” for abstracting away
 specific render API calls, the backend then start with a render context, at
 this point is where you signal new input and outputs, at last. Once started,
 the backend waits on a commit output for buffer swapping and signal the
-<code class="docutils literal notranslate"><span class="pre">output.present</span></code> event for presentation feedback users. At last, if the render
-context is lost somehow, you need to handle it and signal the <code class="docutils literal notranslate"><span class="pre">backend.stop</span></code>.</p>
-<div class="section" id="drm-backend">
-<h3>DRM backend<a class="headerlink" href="#drm-backend" title="Permalink to this headline">¶</a></h3>
-<p>Until now, the most complex backend(and the one missing many features) is the
+         <code class="docutils literal notranslate">
+          <span class="pre">
+           output.present
+          </span>
+         </code>
+         event for presentation feedback users. At last, if the render
+context is lost somehow, you need to handle it and signal the
+         <code class="docutils literal notranslate">
+          <span class="pre">
+           backend.stop
+          </span>
+         </code>
+         .
+        </p>
+        <div class="section" id="drm-backend">
+         <h3>
+          DRM backend
+          <a class="headerlink" href="#drm-backend" title="Permalink to this headline">
+           ¶
+          </a>
+         </h3>
+         <p>
+          Until now, the most complex backend(and the one missing many features) is the
 drm backend because of its nature. I have to assumes you know the
 basics of libdrm, the data type involved and how to work with it. If not, I
-highly recommend checking out the very well documented <a class="reference external" href="https://github.com/dvdhrm/docs">drm
-howto</a>. The complexity is two folds here, we
+highly recommend checking out the very well documented
+          <a class="reference external" href="https://github.com/dvdhrm/docs">
+           drm
+howto
+          </a>
+          . The complexity is two folds here, we
 need to handle the display discoveries and losses and we need to setmode.  In
 the context of drm backend, it means a page-flip, not only we need to set
-current framebuffer on the <code class="docutils literal notranslate"><span class="pre">drmPlane</span></code>, it is also the chance to update display
-mode and other properties.</p>
-<p>A rough description of the drm backend workflow is shown here</p>
-<a class="reference external image-reference" href="./imgs/drm-backend.svg"><img alt="" src="_images/drm-backend.svg" /></a>
-<p>Note that this diagram captures the various events and corresponding drm action
+current framebuffer on the
+          <code class="docutils literal notranslate">
+           <span class="pre">
+            drmPlane
+           </span>
+          </code>
+          , it is also the chance to update display
+mode and other properties.
+         </p>
+         <p>
+          A rough description of the drm backend workflow is shown here
+         </p>
+         <a class="reference external image-reference" href="./imgs/drm-backend.svg">
+          <img alt="" src="_images/drm-backend.svg"/>
+         </a>
+         <p>
+          Note that this diagram captures the various events and corresponding drm action
 responses(they all boils down to start/continue/stop actions), the details
 about state setting is skipped. Taiwins’ drm backend is designed in such way
-that framebuffer creation(<code class="docutils literal notranslate"><span class="pre">gbm_bo</span></code>) code is seperated from KMS code.</p>
-</div>
-</div>
-</div>
-
-
-	  </div>
-	  
-<div class="col-md-3">
-  <div id="sidebar" class="bs-sidenav">
-<h3>Content</h3>
-<div id="localtoc"><ul>
-<li><a class="reference internal" href="#">For libtaiwins users</a><ul>
-<li><a class="reference internal" href="#tw-engine">tw_engine</a></li>
-<li><a class="reference internal" href="#the-render-context">The render context</a></li>
-<li><a class="reference internal" href="#the-desktop-logic">The desktop logic</a></li>
-</ul>
-</li>
-<li><a class="reference internal" href="#for-libtaiwins-developers">For libtaiwins developers</a><ul>
-<li><a class="reference internal" href="#tw-objects">tw_objects</a></li>
-<li><a class="reference internal" href="#id1">The render context</a></li>
-<li><a class="reference internal" href="#the-backend">The backend</a><ul>
-<li><a class="reference internal" href="#drm-backend">DRM backend</a></li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</div>
-<h3><a data-toggle="collapse" href="#globaltoc">Related Pages</a></h3>
-<div id="globaltoc" class="collapse">
-
-</div>
-<form action="search.html" method="get">
- <div class="form-group">
-  <input type="text" name="q" class="form-control" placeholder="Search" />
- </div>
-  <input type="hidden" name="check_keywords" value="yes" />
-  <input type="hidden" name="area" value="default" />
-</form>
-  </div>
-</div>
-
-	</div>
-      
+that framebuffer creation(
+          <code class="docutils literal notranslate">
+           <span class="pre">
+            gbm_bo
+           </span>
+          </code>
+          ) code is seperated from KMS code.
+         </p>
+        </div>
+       </div>
+      </div>
+     </div>
+     <div class="col-md-3">
+      <div class="bs-sidenav" id="sidebar">
+       <h3>
+        Content
+       </h3>
+       <div id="localtoc">
+        <ul>
+         <li>
+          <a class="reference internal" href="#">
+           For libtaiwins users
+          </a>
+          <ul>
+           <li>
+            <a class="reference internal" href="#tw-engine">
+             tw_engine
+            </a>
+           </li>
+           <li>
+            <a class="reference internal" href="#the-render-context">
+             The render context
+            </a>
+           </li>
+           <li>
+            <a class="reference internal" href="#the-desktop-logic">
+             The desktop logic
+            </a>
+           </li>
+          </ul>
+         </li>
+         <li>
+          <a class="reference internal" href="#for-libtaiwins-developers">
+           For libtaiwins developers
+          </a>
+          <ul>
+           <li>
+            <a class="reference internal" href="#tw-objects">
+             tw_objects
+            </a>
+           </li>
+           <li>
+            <a class="reference internal" href="#id1">
+             The render context
+            </a>
+           </li>
+           <li>
+            <a class="reference internal" href="#the-backend">
+             The backend
+            </a>
+            <ul>
+             <li>
+              <a class="reference internal" href="#drm-backend">
+               DRM backend
+              </a>
+             </li>
+            </ul>
+           </li>
+          </ul>
+         </li>
+        </ul>
+       </div>
+       <form action="search.html" method="get">
+        <div class="form-group">
+         <input class="form-control" name="q" placeholder="Search" type="text"/>
+        </div>
+        <input name="check_keywords" type="hidden" value="yes"/>
+        <input name="area" type="hidden" value="default"/>
+       </form>
+      </div>
+     </div>
     </div>
-    <div class="push"></div>
+   </div>
+   <div class="push">
+   </div>
   </div>
-
-<footer class="footer">
-  <div class="container">
+  <footer class="footer">
+   <div class="container">
     <p class="pull-right">
-      <a href="#">Back to top</a>
-      
+     <a href="#">
+      Back to top
+     </a>
     </p>
     <p>
-        &copy; Copyright 2020, Xichen Zhou.<br/>
-      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 3.4.3.<br/>
+     © Copyright 2020, Xichen Zhou.
+     <br/>
+     Created using
+     <a href="http://sphinx-doc.org/">
+      Sphinx
+     </a>
+     3.4.3.
+     <br/>
     </p>
-  </div>
-</footer>
-  </body>
+   </div>
+  </footer>
+ </body>
 </html>

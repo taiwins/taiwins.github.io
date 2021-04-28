@@ -1,154 +1,349 @@
 <!DOCTYPE html>
-
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    
-    <title>Taiwins Documentation &#8212; Taiwins</title>
-  
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+   Taiwins Documentation — Taiwins
+  </title>
   <!-- fix for search function -->
-  <script type="text/javascript" src="_static/language_data.js "></script>
-    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
-    <link rel="stylesheet" href="_static/bootstrap-sphinx.css" type="text/css" />
-    <link rel="stylesheet" type="text/css" href="_static/my-style.css" />
-    <link rel="stylesheet" type="text/css" href="_static/doxyrest-pygments.css" />
-    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
-    <script src="_static/jquery.js"></script>
-    <script src="_static/underscore.js"></script>
-    <script src="_static/doctools.js"></script>
-    <script src="_static/target-highlight.js"></script>
-    <link rel="shortcut icon" href="_static/favicon.ico"/>
-    <link rel="index" title="Index" href="genindex.html" />
-    <link rel="search" title="Search" href="search.html" />
-<meta charset='utf-8'>
-<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
-<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
-<meta name="apple-mobile-web-app-capable" content="yes">
-<script type="text/javascript" src="_static/js/jquery-1.11.0.min.js "></script>
-<script type="text/javascript" src="_static/js/jquery-fix.js "></script>
-<script type="text/javascript" src="_static/bootstrap-3.3.7/js/bootstrap.min.js "></script>
-<script type="text/javascript" src="_static/bootstrap-sphinx.js "></script>
-
-  </head><body>
+  <script src="_static/language_data.js " type="text/javascript">
+  </script>
+  <link href="_static/pygments.css" rel="stylesheet" type="text/css"/>
+  <link href="_static/bootstrap-sphinx.css" rel="stylesheet" type="text/css"/>
+  <link href="_static/my-style.css" rel="stylesheet" type="text/css"/>
+  <link href="_static/doxyrest-pygments.css" rel="stylesheet" type="text/css"/>
+  <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js">
+  </script>
+  <script src="_static/jquery.js">
+  </script>
+  <script src="_static/underscore.js">
+  </script>
+  <script src="_static/doctools.js">
+  </script>
+  <script src="_static/target-highlight.js">
+  </script>
+  <link href="_static/favicon.ico" rel="shortcut icon"/>
+  <link href="genindex.html" rel="index" title="Index"/>
+  <link href="search.html" rel="search" title="Search"/>
+  <meta charset="utf-8"/>
+  <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible"/>
+  <meta content="width=device-width, initial-scale=1.0, maximum-scale=1" name="viewport"/>
+  <meta content="yes" name="apple-mobile-web-app-capable"/>
+  <script src="_static/js/jquery-1.11.0.min.js " type="text/javascript">
+  </script>
+  <script src="_static/js/jquery-fix.js " type="text/javascript">
+  </script>
+  <script src="_static/bootstrap-3.3.7/js/bootstrap.min.js " type="text/javascript">
+  </script>
+  <script src="_static/bootstrap-sphinx.js " type="text/javascript">
+  </script>
+ </head>
+ <body>
   <div class="page-container">
-    
-<!-- taken from bootstrap theme -->
-<div id="navbar" class="navbar navbar-default navbar-fixed-top">
-  <div class="container">
-    <div class="navbar-header">
+   <!-- taken from bootstrap theme -->
+   <div class="navbar navbar-default navbar-fixed-top" id="navbar">
+    <div class="container">
+     <div class="navbar-header">
       <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
+      <button class="navbar-toggle" data-target=".nav-collapse" data-toggle="collapse" type="button">
+       <span class="icon-bar">
+       </span>
+       <span class="icon-bar">
+       </span>
+       <span class="icon-bar">
+       </span>
       </button>
       <a class="navbar-brand" href="index.html">
-        <b>Taiwins</b></a>
-      <span class="navbar-text navbar-version pull-left"><b></b></span>
-    </div>
-
-    <div class="collapse navbar-collapse nav-collapse">
+       <b>
+        Taiwins
+       </b>
+      </a>
+      <span class="navbar-text navbar-version pull-left">
+       <b>
+       </b>
+      </span>
+     </div>
+     <div class="collapse navbar-collapse nav-collapse">
       <ul class="nav navbar-nav">
-	<li><a href="#">Documentation</a></li>
-	<li><a href="https://github.com/taiwins/taiwins">Source Code</a></li>
-	<li><a href="https://github.com/taiwins/taiwins/wiki">Wiki</a></li>
-	<!-- add other pages -->
+       <li>
+        <a href="#">
+         Documentation
+        </a>
+       </li>
+       <li>
+        <a href="https://github.com/taiwins/taiwins">
+         Source Code
+        </a>
+       </li>
+       <li>
+        <a href="https://github.com/taiwins/taiwins/wiki">
+         Wiki
+        </a>
+       </li>
+       <!-- add other pages -->
       </ul>
+     </div>
     </div>
-  </div>
-</div>
-
-    <div class="container">
-      
-	<div class="row">
-	  <div class="body col-md-9 content" role="main">
-	    
-  <div class="section" id="taiwins-documentation">
-<h1>Taiwins Documentation<a class="headerlink" href="#taiwins-documentation" title="Permalink to this headline">¶</a></h1>
-<p>Welcome to the taiwins documentation, here you will find API documentations as
-well as some random notes relates to Taiwins.</p>
-<ul class="simple">
-<li><p><a class="reference internal" href="dbus.html"><span class="doc">D-Bus API Quick Reference</span></a></p></li>
-<li><p><a class="reference internal" href="libtaiwins.html"><span class="doc">Libtaiwins introduction</span></a></p></li>
-<li><p><a class="reference internal" href="libtwclient.html"><span class="doc">Twclient quick reference</span></a></p></li>
-<li><p><a class="reference internal" href="twobjects.html"><span class="doc">Twobject quick reference</span></a></p></li>
-<li><p><a class="reference internal" href="lua.html"><span class="doc">Lua C API quick guide</span></a></p></li>
-<li><p><a class="reference internal" href="wayland.html"><span class="doc">wayland introduction</span></a></p></li>
-<li><p><a class="reference internal" href="xwayland.html"><span class="doc">Xwayland in taiwins</span></a></p></li>
-<li><p><a class="reference internal" href="window_management.html"><span class="doc">Taiwins window manager</span></a></p></li>
-<li><p><a class="reference internal" href="screenshots.html"><span class="doc">Screenshots</span></a></p></li>
-</ul>
-</div>
-<div class="section" id="taiwins-api-documentation">
-<span id="doxid-indexpage"></span><span id="index-0"></span><h1>Taiwins API Documentation<a class="headerlink" href="#taiwins-api-documentation" title="Permalink to this headline">¶</a></h1>
-<p><span class="target" id="doxid-index-1mainpage"></span> This manual documents the API and design of the Taiwins. Several notes were registered along the development. Taiwins consists of serveral <strong>sub-projects</strong> like <strong>twclients</strong> for distinctive parts, those libraries are embedable and can be used independently outside serves general building blocks for wayland projects.</p>
-<div class="section" id="sub-projects">
-<span id="doxid-index-1autotoc-md0"></span><h2>Sub-projects<a class="headerlink" href="#sub-projects" title="Permalink to this headline">¶</a></h2>
-<ul class="simple">
-<li><p><a class="reference external" href="https://github.com/taiwins/twclient">twclient</a> : general purpose wayland client widget system. <strong>Twclient</strong> implements many common <code class="docutils literal notranslate"><span class="pre">wl_*_listeners</span></code> and provides convinient interfaces to implement shmbuf <code class="docutils literal notranslate"><span class="pre">wl_surface</span></code> or EGL <code class="docutils literal notranslate"><span class="pre">wl_surface</span></code>.</p></li>
-<li><p><a class="reference external" href="https://github.com/taiwins/taiwins-protocols">taiwins-protocols</a> : collection of wayland protocols specific to taiwins.</p></li>
-</ul>
-<div class="toctree-wrapper compound">
-</div>
-<p class="rubric">Related Pages:</p>
-<p class="rubric">Reference and Index:</p>
-<div class="toctree-wrapper compound">
-</div>
-<div class="line-block">
-<div class="line"><a class="reference internal" href="global.html"><span class="doc">Global Namespace</span></a></div>
-<div class="line"><a class="reference internal" href="genindex.html"><span class="std std-ref">Index</span></a></div>
-</div>
-</div>
-</div>
-
-
-	  </div>
-	  
-<div class="col-md-3">
-  <div id="sidebar" class="bs-sidenav">
-<h3>Content</h3>
-<div id="localtoc"><ul>
-<li><a class="reference internal" href="#">Taiwins Documentation</a></li>
-<li><a class="reference internal" href="#taiwins-api-documentation">Taiwins API Documentation</a><ul>
-<li><a class="reference internal" href="#sub-projects">Sub-projects</a><ul>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</div>
-<h3><a data-toggle="collapse" href="#globaltoc">Related Pages</a></h3>
-<div id="globaltoc" class="collapse">
-
-</div>
-<form action="search.html" method="get">
- <div class="form-group">
-  <input type="text" name="q" class="form-control" placeholder="Search" />
- </div>
-  <input type="hidden" name="check_keywords" value="yes" />
-  <input type="hidden" name="area" value="default" />
-</form>
-  </div>
-</div>
-
-	</div>
-      
+   </div>
+   <div class="container">
+    <div class="row">
+     <div class="body col-md-9 content" role="main">
+      <div class="section" id="taiwins-documentation">
+       <span id="doxid-indexpage">
+       </span>
+       <span id="index-0">
+       </span>
+       <h1>
+        Taiwins Documentation
+        <a class="headerlink" href="#taiwins-documentation" title="Permalink to this headline">
+         ¶
+        </a>
+       </h1>
+       <p>
+        <span class="target" id="doxid-index-1mainpage">
+        </span>
+        Welcome to the tawins documentation. This document describes the Architecture and APIs of Taiwins for developers. The documents were recorded during the various stages of taiwins development.
+       </p>
+       <div class="section" id="sub-projects">
+        <span id="doxid-index-1autotoc-md0">
+        </span>
+        <h2>
+         Sub-projects
+         <a class="headerlink" href="#sub-projects" title="Permalink to this headline">
+          ¶
+         </a>
+        </h2>
+        <p>
+         Taiwins is consists of multiple subprojects besides the main libtaiwins library. They plays different roles in the taiwins ecosystem and they can also function indepedently of taiwins as well.
+        </p>
+        <ul>
+         <li>
+          <p>
+           <a class="reference external" href="https://github.com/taiwins/twclient">
+            twclient
+           </a>
+           is the general purpose wayland client library. It was created to handle the first 500 lines of wayland code before you can draw a
+           <code class="docutils literal notranslate">
+            <span class="pre">
+             wl_surface
+            </span>
+           </code>
+           . Twclient uses an event queue to process incomming events like IO, timer and idle events, it is similar to what is done in the wayland server end. Most of interfaces in wayland client protocols are implemented and it handles the interfaces to implement a shmbuf
+           <code class="docutils literal notranslate">
+            <span class="pre">
+             wl_surface
+            </span>
+           </code>
+           or EGL
+           <code class="docutils literal notranslate">
+            <span class="pre">
+             wl_surface
+            </span>
+           </code>
+           .
+          </p>
+          <p>
+           An optional
+           <strong>
+            twclient-icons
+           </strong>
+           library comes with
+           <strong>
+            twclient
+           </strong>
+           for collecting xdg desktop elements like icons, cursor and application entries.
+          </p>
+         </li>
+         <li>
+          <p>
+           <a class="reference external" href="https://github.com/taiwins/twidgets">
+            twidgets
+           </a>
+           is a widget drawing library built upon twclient. It is intented to use as a embedded library in your application.
+           <a class="reference external" href="https://github.com/Immediate-Mode-UI/Nuklear">
+            Nuklear
+           </a>
+           is the GUI system of choice. Taiwins itself use the library for creating desktop widgets.
+          </p>
+         </li>
+         <li>
+          <p>
+           <a class="reference external" href="https://github.com/taiwins/taiwins-protocols">
+            taiwins-protocols
+           </a>
+           is the collection of wayland protocols specific to taiwins.
+          </p>
+         </li>
+         <li>
+          <p>
+           <a class="reference external" href="https://github.com/xeechou/tdbus">
+            tdbus
+           </a>
+           is a tiny D-Bus communication library for much simpler interface than raw
+           <code class="docutils literal notranslate">
+            <span class="pre">
+             DBusConnection
+            </span>
+           </code>
+           .
+          </p>
+         </li>
+        </ul>
+       </div>
+       <div class="section" id="related-pages">
+        <span id="doxid-index-1autotoc-md1">
+        </span>
+        <h2>
+         Related Pages
+         <a class="headerlink" href="#related-pages" title="Permalink to this headline">
+          ¶
+         </a>
+        </h2>
+        <ul class="simple">
+         <li>
+          <p>
+           <a class="reference external" href="libtaiwins.html">
+            Libtaiwins introduction
+           </a>
+          </p>
+         </li>
+         <li>
+          <p>
+           <a class="reference external" href="wayland.html">
+            wayland introduction
+           </a>
+          </p>
+         </li>
+         <li>
+          <p>
+           <a class="reference external" href="libtwclient.html">
+            Twclient quick reference
+           </a>
+          </p>
+         </li>
+         <li>
+          <p>
+           <a class="reference external" href="twobjects.html">
+            Twobject quick reference
+           </a>
+          </p>
+         </li>
+         <li>
+          <p>
+           <a class="reference external" href="dbus.html">
+            D-Bus API Quick Reference
+           </a>
+          </p>
+         </li>
+         <li>
+          <p>
+           <a class="reference external" href="lua.html">
+            Lua C API quick guide
+           </a>
+          </p>
+         </li>
+         <li>
+          <p>
+           <a class="reference external" href="xwayland.html">
+            Xwayland in taiwins
+           </a>
+          </p>
+         </li>
+         <li>
+          <p>
+           <a class="reference external" href="window_management.html">
+            Taiwins window manager
+           </a>
+          </p>
+         </li>
+        </ul>
+        <div class="toctree-wrapper compound">
+        </div>
+        <p class="rubric">
+         Reference and Index:
+        </p>
+        <div class="toctree-wrapper compound">
+        </div>
+        <div class="line-block">
+         <div class="line">
+          <a class="reference internal" href="global.html">
+           <span class="doc">
+            Global Namespace
+           </span>
+          </a>
+         </div>
+         <div class="line">
+          <a class="reference internal" href="genindex.html">
+           <span class="std std-ref">
+            Index
+           </span>
+          </a>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+     <div class="col-md-3">
+      <div class="bs-sidenav" id="sidebar">
+       <h3>
+        Content
+       </h3>
+       <div id="localtoc">
+        <ul>
+         <li>
+          <a class="reference internal" href="#">
+           Taiwins Documentation
+          </a>
+          <ul>
+           <li>
+            <a class="reference internal" href="#sub-projects">
+             Sub-projects
+            </a>
+           </li>
+           <li>
+            <a class="reference internal" href="#related-pages">
+             Related Pages
+            </a>
+            <ul>
+            </ul>
+           </li>
+          </ul>
+         </li>
+        </ul>
+       </div>
+       <form action="search.html" method="get">
+        <div class="form-group">
+         <input class="form-control" name="q" placeholder="Search" type="text"/>
+        </div>
+        <input name="check_keywords" type="hidden" value="yes"/>
+        <input name="area" type="hidden" value="default"/>
+       </form>
+      </div>
+     </div>
     </div>
-    <div class="push"></div>
+   </div>
+   <div class="push">
+   </div>
   </div>
-
-<footer class="footer">
-  <div class="container">
+  <footer class="footer">
+   <div class="container">
     <p class="pull-right">
-      <a href="#">Back to top</a>
-      
+     <a href="#">
+      Back to top
+     </a>
     </p>
     <p>
-        &copy; Copyright 2020, Xichen Zhou.<br/>
-      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 3.4.3.<br/>
+     © Copyright 2020, Xichen Zhou.
+     <br/>
+     Created using
+     <a href="http://sphinx-doc.org/">
+      Sphinx
+     </a>
+     3.4.3.
+     <br/>
     </p>
-  </div>
-</footer>
-  </body>
+   </div>
+  </footer>
+ </body>
 </html>

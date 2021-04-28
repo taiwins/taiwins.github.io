@@ -1,10 +1,10 @@
-.. index:: pair: page; Taiwins API Documentation
+.. index:: pair: page; Taiwins Documentation
 .. _doxid-indexpage:
 
-Taiwins API Documentation
-=========================
+Taiwins Documentation
+=====================
 
-:target:`doxid-index_1mainpage` This manual documents the API and design of the Taiwins. Several notes were registered along the development. Taiwins consists of serveral **sub-projects** like **twclients** for distinctive parts, those libraries are embedable and can be used independently outside serves general building blocks for wayland projects.
+:target:`doxid-index_1mainpage` Welcome to the tawins documentation. This document describes the Architecture and APIs of Taiwins for developers. The documents were recorded during the various stages of taiwins development.
 
 
 
@@ -13,7 +13,40 @@ Taiwins API Documentation
 Sub-projects
 ~~~~~~~~~~~~
 
-* `twclient <https://github.com/taiwins/twclient>`__ : general purpose wayland client widget system. **Twclient** implements many common ``wl_*_listeners`` and provides convinient interfaces to implement shmbuf ``wl_surface`` or EGL ``wl_surface``.
+Taiwins is consists of multiple subprojects besides the main libtaiwins library. They plays different roles in the taiwins ecosystem and they can also function indepedently of taiwins as well.
 
-* `taiwins-protocols <https://github.com/taiwins/taiwins-protocols>`__ : collection of wayland protocols specific to taiwins.
+* `twclient <https://github.com/taiwins/twclient>`__ is the general purpose wayland client library. It was created to handle the first 500 lines of wayland code before you can draw a ``wl_surface``. Twclient uses an event queue to process incomming events like IO, timer and idle events, it is similar to what is done in the wayland server end. Most of interfaces in wayland client protocols are implemented and it handles the interfaces to implement a shmbuf ``wl_surface`` or EGL ``wl_surface``.
+  
+  An optional **twclient-icons** library comes with **twclient** for collecting xdg desktop elements like icons, cursor and application entries.
+
+* `twidgets <https://github.com/taiwins/twidgets>`__ is a widget drawing library built upon twclient. It is intented to use as a embedded library in your application. `Nuklear <https://github.com/Immediate-Mode-UI/Nuklear>`__ is the GUI system of choice. Taiwins itself use the library for creating desktop widgets.
+
+* `taiwins-protocols <https://github.com/taiwins/taiwins-protocols>`__ is the collection of wayland protocols specific to taiwins.
+
+* `tdbus <https://github.com/xeechou/tdbus>`__ is a tiny D-Bus communication library for much simpler interface than raw ``DBusConnection``.
+
+
+
+
+
+.. _doxid-index_1autotoc_md1:
+
+Related Pages
+~~~~~~~~~~~~~
+
+* `Libtaiwins introduction <libtaiwins.rst>`__
+
+* `wayland introduction <wayland.rst>`__
+
+* `Twclient quick reference <libtwclient.rst>`__
+
+* `Twobject quick reference <twobjects.rst>`__
+
+* `D-Bus API Quick Reference <dbus.rst>`__
+
+* `Lua C API quick guide <lua.rst>`__
+
+* `Xwayland in taiwins <xwayland.rst>`__
+
+* `Taiwins window manager <window_management.rst>`__
 

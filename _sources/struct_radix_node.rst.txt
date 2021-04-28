@@ -23,5 +23,5 @@ struct radix_node
 		uint32_t :target:`isnull<doxid-d7/daf/structradix__node_1aa1075b356249a367221e0e99c0947d53>`:1;
 		uint32_t :target:`iscompr<doxid-d7/daf/structradix__node_1a62013f5a824c536035cf6e257d7f8c1d>`:1;
 		uint32_t :target:`size<doxid-d7/daf/structradix__node_1a45c1fde0c6b24ec4fe09ce715b31e689>`:29;
-		unsigned char :target:`data<doxid-d7/daf/structradix__node_1a998b30938240d6ade289e9dc09cb3e57>`[];
+		unsigned char :target:`data<doxid-d7/daf/structradix__node_1a25334a93269d7d8da1e974a350ce8427>`[];
 	};

@@ -19,6 +19,6 @@ double-link list I guess this one you have one head extra which is just head
 	{
 		// fields
 	
-		struct list_t* :target:`prev<doxid-d7/d6c/structlist__t_1a713e1ca82c501db0cbb2eba4a20b0254>`;
-		struct list_t* :target:`next<doxid-d7/d6c/structlist__t_1ac9b30d2502517007c4daaa4eebfd40c9>`;
+		struct list_t* :target:`prev<doxid-d7/d6c/structlist__t_1a54545fe2532b8eabd4a48b11503873c1>`;
+		struct list_t* :target:`next<doxid-d7/d6c/structlist__t_1a33ebcd978a07c098034bbd2f7e99fd2d>`;
 	};

@@ -19,9 +19,9 @@ struct radix_stack
 	{
 		// fields
 	
-		void** :target:`stack<doxid-dc/da0/structradix__stack_1ab015303bd1d9a80556fe0ccc086a3938>`;
+		void** :target:`stack<doxid-dc/da0/structradix__stack_1a23fd9c7c430e5c83640bbfe0f8196572>`;
 		size_t :target:`items<doxid-dc/da0/structradix__stack_1a26d92b62f80e2a95c01bbaa0591ae986>`;
 		size_t :target:`maxitems<doxid-dc/da0/structradix__stack_1aae2be6b775d3b99cc0f8081127eec0b8>`;
-		void* :target:`static_items<doxid-dc/da0/structradix__stack_1add26cdcaf8f4161e69b4fc0272a60c14>`[RADIX_STACK_STATIC_ITEMS];
+		void* :target:`static_items<doxid-dc/da0/structradix__stack_1a2ee7c13527f68fd678068f7c108f613e>`[RADIX_STACK_STATIC_ITEMS];
 		int :target:`oom<doxid-dc/da0/structradix__stack_1a504dfbf587b9897bb761934795fdd998>`;
 	};

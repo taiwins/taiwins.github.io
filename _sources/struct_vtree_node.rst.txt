@@ -23,7 +23,7 @@ a variable length tree node implementation. :ref:`More...<details-d7/d47/structv
 		// fields
 	
 		:ref:`vector_t<doxid-d3/d8b/structvector__t>` :target:`children<doxid-d7/d47/structvtree__node_1ac7972a92bcc4e19d1e6ca0e71a99f8e4>`;
-		struct vtree_node* :target:`parent<doxid-d7/d47/structvtree__node_1adc3e7e78d188af258bf401432344347d>`;
+		struct vtree_node* :target:`parent<doxid-d7/d47/structvtree__node_1acc3d4722c6727759207a1c062227c788>`;
 		off_t :target:`offset<doxid-d7/d47/structvtree__node_1a053d002f0073941671c5253a47de1c34>`;
 	};
 .. _details-d7/d47/structvtree__node:

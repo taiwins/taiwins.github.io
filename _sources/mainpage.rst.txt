@@ -4,7 +4,7 @@ Taiwins Documentation
 Welcome to the taiwins documentation, here you will find API documentations as
 well as some random notes relates to Taiwins.
 
-- :doc:`D-Bus API Quick Reference<dbus>`
+- `D-Bus API Quick Reference <dbus.rst>`_
 - :doc:`Libtaiwins introduction<libtaiwins>`
 - :doc:`Twclient quick reference<libtwclient>`
 - :doc:`Twobject quick reference<twobjects>`

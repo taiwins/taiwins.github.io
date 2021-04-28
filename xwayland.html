@@ -1,110 +1,285 @@
 <!DOCTYPE html>
-
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    
-    <title>Implementing Xwayland WM &#8212; Taiwins</title>
-  
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+   Implementing Xwayland WM — Taiwins
+  </title>
   <!-- fix for search function -->
-  <script type="text/javascript" src="_static/language_data.js "></script>
-    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
-    <link rel="stylesheet" href="_static/bootstrap-sphinx.css" type="text/css" />
-    <link rel="stylesheet" type="text/css" href="_static/my-style.css" />
-    <link rel="stylesheet" type="text/css" href="_static/doxyrest-pygments.css" />
-    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
-    <script src="_static/jquery.js"></script>
-    <script src="_static/underscore.js"></script>
-    <script src="_static/doctools.js"></script>
-    <script src="_static/target-highlight.js"></script>
-    <link rel="shortcut icon" href="_static/favicon.ico"/>
-    <link rel="index" title="Index" href="genindex.html" />
-    <link rel="search" title="Search" href="search.html" />
-<meta charset='utf-8'>
-<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
-<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
-<meta name="apple-mobile-web-app-capable" content="yes">
-<script type="text/javascript" src="_static/js/jquery-1.11.0.min.js "></script>
-<script type="text/javascript" src="_static/js/jquery-fix.js "></script>
-<script type="text/javascript" src="_static/bootstrap-3.3.7/js/bootstrap.min.js "></script>
-<script type="text/javascript" src="_static/bootstrap-sphinx.js "></script>
-
-  </head><body>
+  <script src="_static/language_data.js " type="text/javascript">
+  </script>
+  <link href="_static/pygments.css" rel="stylesheet" type="text/css"/>
+  <link href="_static/bootstrap-sphinx.css" rel="stylesheet" type="text/css"/>
+  <link href="_static/my-style.css" rel="stylesheet" type="text/css"/>
+  <link href="_static/doxyrest-pygments.css" rel="stylesheet" type="text/css"/>
+  <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js">
+  </script>
+  <script src="_static/jquery.js">
+  </script>
+  <script src="_static/underscore.js">
+  </script>
+  <script src="_static/doctools.js">
+  </script>
+  <script src="_static/target-highlight.js">
+  </script>
+  <link href="_static/favicon.ico" rel="shortcut icon"/>
+  <link href="genindex.html" rel="index" title="Index"/>
+  <link href="search.html" rel="search" title="Search"/>
+  <meta charset="utf-8"/>
+  <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible"/>
+  <meta content="width=device-width, initial-scale=1.0, maximum-scale=1" name="viewport"/>
+  <meta content="yes" name="apple-mobile-web-app-capable"/>
+  <script src="_static/js/jquery-1.11.0.min.js " type="text/javascript">
+  </script>
+  <script src="_static/js/jquery-fix.js " type="text/javascript">
+  </script>
+  <script src="_static/bootstrap-3.3.7/js/bootstrap.min.js " type="text/javascript">
+  </script>
+  <script src="_static/bootstrap-sphinx.js " type="text/javascript">
+  </script>
+ </head>
+ <body>
   <div class="page-container">
-    
-<!-- taken from bootstrap theme -->
-<div id="navbar" class="navbar navbar-default navbar-fixed-top">
-  <div class="container">
-    <div class="navbar-header">
+   <!-- taken from bootstrap theme -->
+   <div class="navbar navbar-default navbar-fixed-top" id="navbar">
+    <div class="container">
+     <div class="navbar-header">
       <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
+      <button class="navbar-toggle" data-target=".nav-collapse" data-toggle="collapse" type="button">
+       <span class="icon-bar">
+       </span>
+       <span class="icon-bar">
+       </span>
+       <span class="icon-bar">
+       </span>
       </button>
       <a class="navbar-brand" href="index.html">
-        <b>Taiwins</b></a>
-      <span class="navbar-text navbar-version pull-left"><b></b></span>
-    </div>
-
-    <div class="collapse navbar-collapse nav-collapse">
+       <b>
+        Taiwins
+       </b>
+      </a>
+      <span class="navbar-text navbar-version pull-left">
+       <b>
+       </b>
+      </span>
+     </div>
+     <div class="collapse navbar-collapse nav-collapse">
       <ul class="nav navbar-nav">
-	<li><a href="page_doc.html">Documentation</a></li>
-	<li><a href="https://github.com/taiwins/taiwins">Source Code</a></li>
-	<li><a href="https://github.com/taiwins/taiwins/wiki">Wiki</a></li>
-	<!-- add other pages -->
+       <li>
+        <a href="page_doc.html">
+         Documentation
+        </a>
+       </li>
+       <li>
+        <a href="https://github.com/taiwins/taiwins">
+         Source Code
+        </a>
+       </li>
+       <li>
+        <a href="https://github.com/taiwins/taiwins/wiki">
+         Wiki
+        </a>
+       </li>
+       <!-- add other pages -->
       </ul>
+     </div>
     </div>
-  </div>
-</div>
-
-    <div class="container">
-      
-	<div class="row">
-	  <div class="body col-md-9 content" role="main">
-	    
-  <div class="section" id="implementing-xwayland-wm">
-<h1>Implementing Xwayland WM<a class="headerlink" href="#implementing-xwayland-wm" title="Permalink to this headline">¶</a></h1>
-<p>Xwayland wm, or xwm, is a window manager module inside wayland compositor, it
+   </div>
+   <div class="container">
+    <div class="row">
+     <div class="body col-md-9 content" role="main">
+      <div class="section" id="implementing-xwayland-wm">
+       <h1>
+        Implementing Xwayland WM
+        <a class="headerlink" href="#implementing-xwayland-wm" title="Permalink to this headline">
+         ¶
+        </a>
+       </h1>
+       <p>
+        Xwayland wm, or xwm, is a window manager module inside wayland compositor, it
 talks to the Xwayland server and mapping the logic of xwindow to a desktop
-wl_surface. Here in taiwins, we implements the <code class="docutils literal notranslate"><span class="pre">tw_desktop_surface</span></code> logic using
-xwindow and talk to the actual WM using the <code class="docutils literal notranslate"><span class="pre">tw_desktop_surface_api</span></code>.</p>
-<p>In general, it follows a few fixed step:</p>
-<ol class="arabic simple">
-<li><p>creating <code class="docutils literal notranslate"><span class="pre">/tmp/.X#-lock</span></code> and X sockets(unix and abstract).</p></li>
-<li><p>Writing the PID of the compositor to <code class="docutils literal notranslate"><span class="pre">/tmp/.X#-lock</span></code>.</p></li>
-<li><p>exec the Xwayland instance and let it listen to the X sockets.</p></li>
-<li><p>Creating <code class="docutils literal notranslate"><span class="pre">root_window</span></code> and set the <code class="docutils literal notranslate"><span class="pre">substructure_redicrect</span></code> attribute.</p></li>
-<li><p>creating a <code class="docutils literal notranslate"><span class="pre">wl_event_resource</span></code> for the socket and handle the events.</p></li>
-</ol>
-<div class="section" id="x-window-architecture">
-<h2>X window architecture.<a class="headerlink" href="#x-window-architecture" title="Permalink to this headline">¶</a></h2>
-<p>In X, windows are in the tree, we have a root window, and every one else lives
+wl_surface. Here in taiwins, we implements the
+        <code class="docutils literal notranslate">
+         <span class="pre">
+          tw_desktop_surface
+         </span>
+        </code>
+        logic using
+xwindow and talk to the actual WM using the
+        <code class="docutils literal notranslate">
+         <span class="pre">
+          tw_desktop_surface_api
+         </span>
+        </code>
+        .
+       </p>
+       <p>
+        In general, it follows a few fixed step:
+       </p>
+       <ol class="arabic simple">
+        <li>
+         <p>
+          creating
+          <code class="docutils literal notranslate">
+           <span class="pre">
+            /tmp/.X#-lock
+           </span>
+          </code>
+          and X sockets(unix and abstract).
+         </p>
+        </li>
+        <li>
+         <p>
+          Writing the PID of the compositor to
+          <code class="docutils literal notranslate">
+           <span class="pre">
+            /tmp/.X#-lock
+           </span>
+          </code>
+          .
+         </p>
+        </li>
+        <li>
+         <p>
+          exec the Xwayland instance and let it listen to the X sockets.
+         </p>
+        </li>
+        <li>
+         <p>
+          Creating
+          <code class="docutils literal notranslate">
+           <span class="pre">
+            root_window
+           </span>
+          </code>
+          and set the
+          <code class="docutils literal notranslate">
+           <span class="pre">
+            substructure_redicrect
+           </span>
+          </code>
+          attribute.
+         </p>
+        </li>
+        <li>
+         <p>
+          creating a
+          <code class="docutils literal notranslate">
+           <span class="pre">
+            wl_event_resource
+           </span>
+          </code>
+          for the socket and handle the events.
+         </p>
+        </li>
+       </ol>
+       <div class="section" id="x-window-architecture">
+        <h2>
+         X window architecture.
+         <a class="headerlink" href="#x-window-architecture" title="Permalink to this headline">
+          ¶
+         </a>
+        </h2>
+        <p>
+         In X, windows are in the tree, we have a root window, and every one else lives
 under it. Historical reason, X windows assume they can set and change its
 position by it self, and the old Xwm simply do that. Later we have the
-<code class="docutils literal notranslate"><span class="pre">substructure_redirect</span></code> attributes available, it intercepts the commands of X
-windows and let wm handles it differently. A Xwm is simply a <code class="docutils literal notranslate"><span class="pre">root_window</span></code>
-intercepting subwindow’s command. This is different than wayland, where you have
-a <code class="docutils literal notranslate"><span class="pre">wayland-client</span></code> and <code class="docutils literal notranslate"><span class="pre">wayland-server</span></code> concept. In X, both wm and clients uses
-the same library.</p>
-</div>
-<div class="section" id="xwayland-architecture">
-<h2>Xwayland architecture.<a class="headerlink" href="#xwayland-architecture" title="Permalink to this headline">¶</a></h2>
-<p>A Xwayland is a drop-in replacement of the Xserver, X clients won’t feel a bit
+         <code class="docutils literal notranslate">
+          <span class="pre">
+           substructure_redirect
+          </span>
+         </code>
+         attributes available, it intercepts the commands of X
+windows and let wm handles it differently. A Xwm is simply a
+         <code class="docutils literal notranslate">
+          <span class="pre">
+           root_window
+          </span>
+         </code>
+         intercepting subwindow’s command. This is different than wayland, where you have
+a
+         <code class="docutils literal notranslate">
+          <span class="pre">
+           wayland-client
+          </span>
+         </code>
+         and
+         <code class="docutils literal notranslate">
+          <span class="pre">
+           wayland-server
+          </span>
+         </code>
+         concept. In X, both wm and clients uses
+the same library.
+        </p>
+       </div>
+       <div class="section" id="xwayland-architecture">
+        <h2>
+         Xwayland architecture.
+         <a class="headerlink" href="#xwayland-architecture" title="Permalink to this headline">
+          ¶
+         </a>
+        </h2>
+        <p>
+         A Xwayland is a drop-in replacement of the Xserver, X clients won’t feel a bit
 of difference, at the same time, it is also a wayland client to the wayland
-compositor. It maps a <code class="docutils literal notranslate"><span class="pre">xcb_window</span></code> to a <code class="docutils literal notranslate"><span class="pre">wl_surface</span></code> so the compositor can
+compositor. It maps a
+         <code class="docutils literal notranslate">
+          <span class="pre">
+           xcb_window
+          </span>
+         </code>
+         to a
+         <code class="docutils literal notranslate">
+          <span class="pre">
+           wl_surface
+          </span>
+         </code>
+         so the compositor can
 treat the X clients no differently. Basically a few moments after the creation
-of a X window, we would hear a client message advertise the <code class="docutils literal notranslate"><span class="pre">wl_surface</span></code> id of
+of a X window, we would hear a client message advertise the
+         <code class="docutils literal notranslate">
+          <span class="pre">
+           wl_surface
+          </span>
+         </code>
+         id of
 this window from the Xwayland. The server uses this id for finding the
-<code class="docutils literal notranslate"><span class="pre">wl_resource</span></code> for the surface, note that this generally happens before
-<code class="docutils literal notranslate"><span class="pre">wl_resource</span></code> is created on the server.</p>
-</div>
-<div class="section" id="handling-the-event-loop">
-<h2>Handling the event loop<a class="headerlink" href="#handling-the-event-loop" title="Permalink to this headline">¶</a></h2>
-<p>When handling the <code class="docutils literal notranslate"><span class="pre">wl_event_resource</span></code> we mentioned above, the code ususally
-looks like this:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">while</span><span class="p">(</span><span class="n">event</span> <span class="o">=</span> <span class="n">xcb_poll_event</span><span class="p">(</span><span class="n">xcb_connection</span><span class="p">))</span> <span class="p">{</span>
+         <code class="docutils literal notranslate">
+          <span class="pre">
+           wl_resource
+          </span>
+         </code>
+         for the surface, note that this generally happens before
+         <code class="docutils literal notranslate">
+          <span class="pre">
+           wl_resource
+          </span>
+         </code>
+         is created on the server.
+        </p>
+       </div>
+       <div class="section" id="handling-the-event-loop">
+        <h2>
+         Handling the event loop
+         <a class="headerlink" href="#handling-the-event-loop" title="Permalink to this headline">
+          ¶
+         </a>
+        </h2>
+        <p>
+         When handling the
+         <code class="docutils literal notranslate">
+          <span class="pre">
+           wl_event_resource
+          </span>
+         </code>
+         we mentioned above, the code ususally
+looks like this:
+        </p>
+        <div class="highlight-default notranslate">
+         <div class="highlight">
+          <pre><span></span><span class="k">while</span><span class="p">(</span><span class="n">event</span> <span class="o">=</span> <span class="n">xcb_poll_event</span><span class="p">(</span><span class="n">xcb_connection</span><span class="p">))</span> <span class="p">{</span>
     <span class="n">switch</span> <span class="p">(</span><span class="n">event</span><span class="o">-&gt;</span><span class="n">response_type</span><span class="p">)</span> <span class="p">{</span>
     <span class="n">case</span> <span class="n">XCB_CREATE_NOTIFY</span><span class="p">:</span>
         <span class="o">...</span><span class="p">;</span>
@@ -124,57 +299,75 @@ looks like this:</p>
     <span class="o">...</span>
     <span class="p">}</span>
 <span class="p">}</span>
-</pre></div>
-</div>
-</div>
-</div>
-
-
-	  </div>
-	  
-<div class="col-md-3">
-  <div id="sidebar" class="bs-sidenav">
-<h3>Content</h3>
-<div id="localtoc"><ul>
-<li><a class="reference internal" href="#">Implementing Xwayland WM</a><ul>
-<li><a class="reference internal" href="#x-window-architecture">X window architecture.</a></li>
-<li><a class="reference internal" href="#xwayland-architecture">Xwayland architecture.</a></li>
-<li><a class="reference internal" href="#handling-the-event-loop">Handling the event loop</a></li>
-</ul>
-</li>
-</ul>
-</div>
-<h3><a data-toggle="collapse" href="#globaltoc">Related Pages</a></h3>
-<div id="globaltoc" class="collapse">
-
-</div>
-<form action="search.html" method="get">
- <div class="form-group">
-  <input type="text" name="q" class="form-control" placeholder="Search" />
- </div>
-  <input type="hidden" name="check_keywords" value="yes" />
-  <input type="hidden" name="area" value="default" />
-</form>
-  </div>
-</div>
-
-	</div>
-      
+</pre>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+     <div class="col-md-3">
+      <div class="bs-sidenav" id="sidebar">
+       <h3>
+        Content
+       </h3>
+       <div id="localtoc">
+        <ul>
+         <li>
+          <a class="reference internal" href="#">
+           Implementing Xwayland WM
+          </a>
+          <ul>
+           <li>
+            <a class="reference internal" href="#x-window-architecture">
+             X window architecture.
+            </a>
+           </li>
+           <li>
+            <a class="reference internal" href="#xwayland-architecture">
+             Xwayland architecture.
+            </a>
+           </li>
+           <li>
+            <a class="reference internal" href="#handling-the-event-loop">
+             Handling the event loop
+            </a>
+           </li>
+          </ul>
+         </li>
+        </ul>
+       </div>
+       <form action="search.html" method="get">
+        <div class="form-group">
+         <input class="form-control" name="q" placeholder="Search" type="text"/>
+        </div>
+        <input name="check_keywords" type="hidden" value="yes"/>
+        <input name="area" type="hidden" value="default"/>
+       </form>
+      </div>
+     </div>
     </div>
-    <div class="push"></div>
+   </div>
+   <div class="push">
+   </div>
   </div>
-
-<footer class="footer">
-  <div class="container">
+  <footer class="footer">
+   <div class="container">
     <p class="pull-right">
-      <a href="#">Back to top</a>
-      
+     <a href="#">
+      Back to top
+     </a>
     </p>
     <p>
-        &copy; Copyright 2020, Xichen Zhou.<br/>
-      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 3.4.3.<br/>
+     © Copyright 2020, Xichen Zhou.
+     <br/>
+     Created using
+     <a href="http://sphinx-doc.org/">
+      Sphinx
+     </a>
+     3.4.3.
+     <br/>
     </p>
-  </div>
-</footer>
-  </body>
+   </div>
+  </footer>
+ </body>
 </html>
