@@ -1,0 +1,13 @@
+.. post:: 15 Apr, 2021
+   :tags: taiwins
+   :category: Example, How To
+   :author: Xichen Zhou
+   :redirect: blog/old-page-name-for-the-post
+   :excerpt: 2
+   :image: 1
+   :nocomments:
+
+Taiwins 0.3 release
+===================
+
+What's cooking?

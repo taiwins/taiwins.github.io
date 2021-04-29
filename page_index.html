@@ -38,6 +38,31 @@
   </script>
   <script src="_static/bootstrap-sphinx.js " type="text/javascript">
   </script>
+  <link href="posts/atom.xml" rel="alternate" title="Dev Blogs" type="application/atom+xml"/>
+  <style type="text/css">
+   ul.ablog-archive {
+    list-style: none;
+    overflow: auto;
+    margin-left: 0px;
+  }
+  ul.ablog-archive li {
+    float: left;
+    margin-right: 5px;
+    font-size: 80%;
+  }
+  ul.postlist a {
+    font-style: italic;
+  }
+  ul.postlist-style-disc {
+    list-style-type: disc;
+  }
+  ul.postlist-style-none {
+    list-style-type: none;
+  }
+  ul.postlist-style-circle {
+    list-style-type: circle;
+  }
+  </style>
  </head>
  <body>
   <div class="page-container">
@@ -69,6 +94,11 @@
        <li>
         <a href="page_doc.html">
          Documentation
+        </a>
+       </li>
+       <li>
+        <a href="posts.html">
+         Dev Blogs
         </a>
        </li>
        <li>
@@ -105,188 +135,152 @@
         </span>
         Welcome to the tawins documentation. This document describes the Architecture and APIs of Taiwins for developers. The documents were recorded during the various stages of taiwins development.
        </p>
-       <div class="section" id="sub-projects">
-        <span id="doxid-index-1autotoc-md0">
-        </span>
-        <h2>
-         Sub-projects
-         <a class="headerlink" href="#sub-projects" title="Permalink to this headline">
-          ¶
-         </a>
-        </h2>
-        <p>
-         Taiwins is consists of multiple subprojects besides the main libtaiwins library. They plays different roles in the taiwins ecosystem and they can also function indepedently of taiwins as well.
-        </p>
-        <ul>
-         <li>
-          <p>
-           <a class="reference external" href="https://github.com/taiwins/twclient">
-            twclient
-           </a>
-           is the general purpose wayland client library. It was created to handle the first 500 lines of wayland code before you can draw a
-           <code class="docutils literal notranslate">
-            <span class="pre">
-             wl_surface
-            </span>
-           </code>
-           . Twclient uses an event queue to process incomming events like IO, timer and idle events, it is similar to what is done in the wayland server end. Most of interfaces in wayland client protocols are implemented and it handles the interfaces to implement a shmbuf
-           <code class="docutils literal notranslate">
-            <span class="pre">
-             wl_surface
-            </span>
-           </code>
-           or EGL
-           <code class="docutils literal notranslate">
-            <span class="pre">
-             wl_surface
-            </span>
-           </code>
-           .
-          </p>
-          <p>
-           An optional
-           <strong>
-            twclient-icons
-           </strong>
-           library comes with
-           <strong>
-            twclient
-           </strong>
-           for collecting xdg desktop elements like icons, cursor and application entries.
-          </p>
-         </li>
-         <li>
-          <p>
-           <a class="reference external" href="https://github.com/taiwins/twidgets">
-            twidgets
-           </a>
-           is a widget drawing library built upon twclient. It is intented to use as a embedded library in your application.
-           <a class="reference external" href="https://github.com/Immediate-Mode-UI/Nuklear">
-            Nuklear
-           </a>
-           is the GUI system of choice. Taiwins itself use the library for creating desktop widgets.
-          </p>
-         </li>
-         <li>
-          <p>
-           <a class="reference external" href="https://github.com/taiwins/taiwins-protocols">
-            taiwins-protocols
-           </a>
-           is the collection of wayland protocols specific to taiwins.
-          </p>
-         </li>
-         <li>
-          <p>
-           <a class="reference external" href="https://github.com/xeechou/tdbus">
-            tdbus
-           </a>
-           is a tiny D-Bus communication library for much simpler interface than raw
-           <code class="docutils literal notranslate">
-            <span class="pre">
-             DBusConnection
-            </span>
-           </code>
-           .
-          </p>
-         </li>
-        </ul>
-       </div>
-       <div class="section" id="related-pages">
-        <span id="doxid-index-1autotoc-md1">
-        </span>
-        <h2>
-         Related Pages
-         <a class="headerlink" href="#related-pages" title="Permalink to this headline">
-          ¶
-         </a>
-        </h2>
-        <ul class="simple">
-         <li>
-          <p>
-           <a class="reference external" href="libtaiwins.html">
-            Libtaiwins introduction
-           </a>
-          </p>
-         </li>
-         <li>
-          <p>
-           <a class="reference external" href="wayland.html">
-            wayland introduction
-           </a>
-          </p>
-         </li>
-         <li>
-          <p>
-           <a class="reference external" href="libtwclient.html">
-            Twclient quick reference
-           </a>
-          </p>
-         </li>
-         <li>
-          <p>
-           <a class="reference external" href="twobjects.html">
-            Twobject quick reference
-           </a>
-          </p>
-         </li>
-         <li>
-          <p>
-           <a class="reference external" href="dbus.html">
-            D-Bus API Quick Reference
-           </a>
-          </p>
-         </li>
-         <li>
-          <p>
-           <a class="reference external" href="lua.html">
-            Lua C API quick guide
-           </a>
-          </p>
-         </li>
-         <li>
-          <p>
-           <a class="reference external" href="xwayland.html">
-            Xwayland in taiwins
-           </a>
-          </p>
-         </li>
-         <li>
-          <p>
-           <a class="reference external" href="window_management.html">
-            Taiwins window manager
-           </a>
-          </p>
-         </li>
-        </ul>
-       </div>
+       <p class="rubric" id="doxid-index-1autotoc-md0">
+        Sub-projects:
+       </p>
+       <p>
+        Taiwins is consists of multiple subprojects besides the main libtaiwins library. They plays different roles in the taiwins ecosystem and they can also function indepedently of taiwins as well.
+       </p>
+       <ul>
+        <li>
+         <p>
+          <a class="reference external" href="https://github.com/taiwins/twclient">
+           twclient
+          </a>
+          is the general purpose wayland client library. It was created to handle the first 500 lines of wayland code before you can draw a
+          <code class="docutils literal notranslate">
+           <span class="pre">
+            wl_surface
+           </span>
+          </code>
+          . Twclient uses an event queue to process incomming events like IO, timer and idle events, it is similar to what is done in the wayland server end. Most of interfaces in wayland client protocols are implemented and it handles the interfaces to implement a shmbuf
+          <code class="docutils literal notranslate">
+           <span class="pre">
+            wl_surface
+           </span>
+          </code>
+          or EGL
+          <code class="docutils literal notranslate">
+           <span class="pre">
+            wl_surface
+           </span>
+          </code>
+          .
+         </p>
+         <p>
+          An optional
+          <strong>
+           twclient-icons
+          </strong>
+          library comes with
+          <strong>
+           twclient
+          </strong>
+          for collecting xdg desktop elements like icons, cursor and application entries.
+         </p>
+        </li>
+        <li>
+         <p>
+          <a class="reference external" href="https://github.com/taiwins/twidgets">
+           twidgets
+          </a>
+          is a widget drawing library built upon twclient. It is intented to use as a embedded library in your application.
+          <a class="reference external" href="https://github.com/Immediate-Mode-UI/Nuklear">
+           Nuklear
+          </a>
+          is the GUI system of choice. Taiwins itself use the library for creating desktop widgets.
+         </p>
+        </li>
+        <li>
+         <p>
+          <a class="reference external" href="https://github.com/taiwins/taiwins-protocols">
+           taiwins-protocols
+          </a>
+          is the collection of wayland protocols specific to taiwins.
+         </p>
+        </li>
+        <li>
+         <p>
+          <a class="reference external" href="https://github.com/xeechou/tdbus">
+           tdbus
+          </a>
+          is a tiny D-Bus communication library for much simpler interface than raw
+          <code class="docutils literal notranslate">
+           <span class="pre">
+            DBusConnection
+           </span>
+          </code>
+          .
+         </p>
+        </li>
+       </ul>
+       <p class="rubric" id="doxid-index-1autotoc-md1">
+        Related Pages:
+       </p>
+       <ul class="simple">
+        <li>
+         <p>
+          <a class="reference external" href="libtaiwins.html">
+           Libtaiwins introduction
+          </a>
+         </p>
+        </li>
+        <li>
+         <p>
+          <a class="reference external" href="wayland.html">
+           wayland introduction
+          </a>
+         </p>
+        </li>
+        <li>
+         <p>
+          <a class="reference external" href="libtwclient.html">
+           Twclient quick reference
+          </a>
+         </p>
+        </li>
+        <li>
+         <p>
+          <a class="reference external" href="twobjects.html">
+           Twobject quick reference
+          </a>
+         </p>
+        </li>
+        <li>
+         <p>
+          <a class="reference external" href="dbus.html">
+           D-Bus API Quick Reference
+          </a>
+         </p>
+        </li>
+        <li>
+         <p>
+          <a class="reference external" href="lua.html">
+           Lua C API quick guide
+          </a>
+         </p>
+        </li>
+        <li>
+         <p>
+          <a class="reference external" href="xwayland.html">
+           Xwayland in taiwins
+          </a>
+         </p>
+        </li>
+        <li>
+         <p>
+          <a class="reference external" href="window_management.html">
+           Taiwins window manager
+          </a>
+         </p>
+        </li>
+       </ul>
+      </div>
+      <div class="section">
       </div>
      </div>
      <div class="col-md-3">
       <div class="bs-sidenav" id="sidebar">
-       <h3>
-        Content
-       </h3>
-       <div id="localtoc">
-        <ul>
-         <li>
-          <a class="reference internal" href="#">
-           Taiwins Documentation
-          </a>
-          <ul>
-           <li>
-            <a class="reference internal" href="#sub-projects">
-             Sub-projects
-            </a>
-           </li>
-           <li>
-            <a class="reference internal" href="#related-pages">
-             Related Pages
-            </a>
-           </li>
-          </ul>
-         </li>
-        </ul>
-       </div>
        <form action="search.html" method="get">
         <div class="form-group">
          <input class="form-control" name="q" placeholder="Search" type="text"/>

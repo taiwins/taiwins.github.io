@@ -1,0 +1,92 @@
+.. post:: 29 Apr, 2021
+   :tags: taiwins
+   :author: Xichen Zhou
+   :excerpt: 1
+   :image: 1
+   :nocomments:
+
+Writing a wayland compositor using libtaiwins, Part I
+=====================================================
+
+Hi, if you are reading this, I assume you are interested in the window system
+on your computer. In the wayland world, it is called compositor. I found it is
+a bit misleading since this system does way much more than just
+compositing. But anyway, this series of tutorial will teach you how to write
+one using wayland using libtaiwins. It may sound complicated, but *bear that in
+mind*, in the beginning of 2020 when I started creating libtaiwins, I probably
+didn't know more than you how to do it either.
+
+Before we start any coding. If you don't know already, wayland is **NOTHING**
+but a really nice **protocol**, or in other words, asynchronized communication
+library between processes. There are two ends of communication, clients and the
+server, which you get from ``<wayland-client.h>`` and
+``<wayland-server.h>``. There is nothing about rendering or displaying in the
+library. There are already a few nice articles online on the topic of wayland,
+Mr.DeVault's `blog post <intro-wayland_>`_ is a really good one.
+
+Okay, now I have to assume you know how to write any C code, the first thing we
+do for a wayland server is obviously getting a wayland display.
+
+.. code-block:: c
+		
+   //include the wayland server header
+   #include <wayland-server.h>
+
+   //and somewhere in your main function
+   struct wl_display *display = wl_display_create();
+   wl_display_add_socket_auto(display);
+	
+With these two lines, you already created a ``wayland-#`` socket and a
+``wayland-#.lock`` file under ``${XDG_RUNTIME_DIR}``. At the end your main
+function. Destroy it with ``wl_display_destroy(display);``.
+
+The next thing we will getting into libtaiwins code
+
+.. code-block:: c
+
+   //include the headers here
+   #include <taiwins/backend.h>
+   #include <taiwins/render_context.h>
+   #include <taiwins/objects/logger.h>
+
+   //if you want to setup the logger 
+   tw_logger_open(path_to_your_log_file);
+
+   //now we create the backend and a render context
+   struct tw_backend = tw_backend_create_auto(display);
+   const struct tw_egl_options *options =
+		tw_backend_get_egl_params(backend);
+   struct tw_render_context *ctx = tw_render_context_create_egl(display, opts);
+
+
+A backend provides hardware abstraction, namely input(keyboard, mouse) and
+output(monitor display) devices. They may come from the real hardware or
+software abstractions. Anyway, the backend does two things: creating and
+destroying devices.
+
+A render context comes next. As you will soon find out. The "compositing" is
+really just rendering and it can be just very simple rendering. 
+
+The next thing we do is create a tw_engine.
+
+.. code-block:: c
+
+   struct tw_engine *engine =
+	tw_engine_create_global(display, backend);
+
+This engine connects the hardwares and various protocols. Like ``wl_seat``,
+``wl_output``, etc. It is actually optional, if you want to take the
+responsibility yourself, it is about 1000 lines of code you have to write.
+	
+There are a few things you still need to do before you get ``wl_display``
+running. We will cover them in the coming tutorials. But as a spoiler, in the
+end. You will simply run.
+
+.. code-block:: c
+		
+   tw_backend_start(backend, ctx); //broadcast all the existing hardwares
+   wl_display_run(display);
+
+Have fun and see you next time.
+   
+.. _intro-wayland : https://drewdevault.com/2017/06/10/Introduction-to-Wayland.html

@@ -20,3 +20,12 @@ features
 
 .. _wayland: https://wayland.freedesktop.org/
 .. _twidgets: https://github.com/taiwins/twidgets
+
+Dev Blogs
+~~~~~~~~~
+
+.. postlist:: 5
+   :list-style: disc
+   :format: {title} on {date}
+   :sort:
+   :excerpts:

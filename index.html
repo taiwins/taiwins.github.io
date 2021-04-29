@@ -38,6 +38,31 @@
   </script>
   <script src="_static/bootstrap-sphinx.js " type="text/javascript">
   </script>
+  <link href="posts/atom.xml" rel="alternate" title="Dev Blogs" type="application/atom+xml"/>
+  <style type="text/css">
+   ul.ablog-archive {
+    list-style: none;
+    overflow: auto;
+    margin-left: 0px;
+  }
+  ul.ablog-archive li {
+    float: left;
+    margin-right: 5px;
+    font-size: 80%;
+  }
+  ul.postlist a {
+    font-style: italic;
+  }
+  ul.postlist-style-disc {
+    list-style-type: disc;
+  }
+  ul.postlist-style-none {
+    list-style-type: none;
+  }
+  ul.postlist-style-circle {
+    list-style-type: circle;
+  }
+  </style>
  </head>
  <body>
   <div class="page-container">
@@ -69,6 +94,11 @@
        <li>
         <a href="page_doc.html">
          Documentation
+        </a>
+       </li>
+       <li>
+        <a href="posts.html">
+         Dev Blogs
         </a>
        </li>
        <li>
@@ -177,6 +207,52 @@ windows on your desktop
          </p>
         </li>
        </ul>
+       <div class="section" id="dev-blogs">
+        <h2>
+         Dev Blogs
+         <a class="headerlink" href="#dev-blogs" title="Permalink to this headline">
+          ¶
+         </a>
+        </h2>
+        <ul class="postlist-style-disc postlist">
+         <li>
+          <p>
+           <a class="reference internal" href="posts/release-0.3.html">
+            Taiwins 0.3 release
+           </a>
+           on 29 April
+          </p>
+          <p>
+           I am glad to announce that Taiwins 0.3 is released today. It has been a year
+since Taiwins 0.1 release, we have migrated from libweston and wlroots. today,
+Taiwins has implemented enough compositor features it has became my main
+compositor. The biggest change in the version is the libtaiwins library is
+finally ready for a daily use.
+          </p>
+         </li>
+         <li>
+          <p>
+           <a class="reference internal" href="posts/tutorial-01.html">
+            Writing a wayland compositor using libtaiwins, Part I
+           </a>
+           on 29 April
+          </p>
+          <p>
+           Hi, if you are reading this, I assume you are interested in the window system
+on your computer. In the wayland world, it is called compositor. I found it is
+a bit misleading since this system does way much more than just
+compositing. But anyway, this series of tutorial will teach you how to write
+one using wayland using libtaiwins. It may sound complicated, but
+           <em>
+            bear that in
+mind
+           </em>
+           , in the beginning of 2020 when I started creating libtaiwins, I probably
+didn’t know more than you how to do it either.
+          </p>
+         </li>
+        </ul>
+       </div>
       </div>
      </div>
      <div class="col-md-2">

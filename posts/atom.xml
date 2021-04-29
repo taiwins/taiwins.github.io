@@ -1,0 +1,57 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <id>https://taiwins.org</id>
+  <title>Dev Blogs</title>
+  <updated>2021-04-29T13:20:20.878807+00:00</updated>
+  <link href="https://taiwins.org"/>
+  <link href="https://taiwins.org/posts/atom.xml" rel="self"/>
+  <generator uri="https://ablog.readthedocs.org/" version="0.10.18">ABlog</generator>
+  <entry>
+    <id>https://taiwins.org/posts/release-0.3.html</id>
+    <title>Taiwins 0.3 release</title>
+    <updated>2021-04-29T00:00:00+08:00</updated>
+    <author>
+      <name>Xichen Zhou</name>
+    </author>
+    <content type="html">&lt;p&gt;I am glad to announce that Taiwins 0.3 is released today. It has been a year
+since Taiwins 0.1 release, we have migrated from libweston and wlroots. today,
+Taiwins has implemented enough compositor features it has became my main
+compositor. The biggest change in the version is the libtaiwins library is
+finally ready for a daily use.&lt;/p&gt;
+</content>
+    <link href="https://taiwins.org/posts/release-0.3.html" rel="alternate"/>
+    <summary>I am glad to announce that Taiwins 0.3 is released today. It has been a year
+since Taiwins 0.1 release, we have migrated from libweston and wlroots. today,
+Taiwins has implemented enough compositor features it has became my main
+compositor. The biggest change in the version is the libtaiwins library is
+finally ready for a daily use.</summary>
+    <category term="taiwins" label="taiwins"/>
+    <published>2021-04-29T00:00:00+08:00</published>
+  </entry>
+  <entry>
+    <id>https://taiwins.org/posts/tutorial-01.html</id>
+    <title>Writing a wayland compositor using libtaiwins, Part I</title>
+    <updated>2021-04-29T00:00:00+08:00</updated>
+    <author>
+      <name>Xichen Zhou</name>
+    </author>
+    <content type="html">&lt;p&gt;Hi, if you are reading this, I assume you are interested in the window system
+on your computer. In the wayland world, it is called compositor. I found it is
+a bit misleading since this system does way much more than just
+compositing. But anyway, this series of tutorial will teach you how to write
+one using wayland using libtaiwins. It may sound complicated, but &lt;em&gt;bear that in
+mind&lt;/em&gt;, in the beginning of 2020 when I started creating libtaiwins, I probably
+didn’t know more than you how to do it either.&lt;/p&gt;
+</content>
+    <link href="https://taiwins.org/posts/tutorial-01.html" rel="alternate"/>
+    <summary>Hi, if you are reading this, I assume you are interested in the window system
+on your computer. In the wayland world, it is called compositor. I found it is
+a bit misleading since this system does way much more than just
+compositing. But anyway, this series of tutorial will teach you how to write
+one using wayland using libtaiwins. It may sound complicated, but bear that in
+mind, in the beginning of 2020 when I started creating libtaiwins, I probably
+didn’t know more than you how to do it either.</summary>
+    <category term="taiwins" label="taiwins"/>
+    <published>2021-04-29T00:00:00+08:00</published>
+  </entry>
+</feed>

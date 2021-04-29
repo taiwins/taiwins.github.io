@@ -10,8 +10,7 @@ Taiwins Documentation
 
 .. _doxid-index_1autotoc_md0:
 
-Sub-projects
-~~~~~~~~~~~~
+.. rubric:: Sub-projects:
 
 Taiwins is consists of multiple subprojects besides the main libtaiwins library. They plays different roles in the taiwins ecosystem and they can also function indepedently of taiwins as well.
 
@@ -31,8 +30,7 @@ Taiwins is consists of multiple subprojects besides the main libtaiwins library.
 
 .. _doxid-index_1autotoc_md1:
 
-Related Pages
-~~~~~~~~~~~~~
+.. rubric:: Related Pages:
 
 * `Libtaiwins introduction <libtaiwins.rst>`__
 

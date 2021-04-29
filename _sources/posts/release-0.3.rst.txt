@@ -1,0 +1,87 @@
+.. post:: 29 Apr, 2021
+   :tags: taiwins
+   :author: Xichen Zhou
+   :excerpt: 1
+   :image: 1
+   :nocomments:
+
+Taiwins 0.3 release
+===================
+
+I am glad to announce that Taiwins 0.3 is released today. It has been a year
+since Taiwins 0.1 release, we have migrated from libweston and wlroots. today,
+Taiwins has implemented enough compositor features it has became my main
+compositor. The biggest change in the version is the libtaiwins library is
+finally ready for a daily use.
+
+1. Multiple backends for hardware abstraction(DRM, X11, wayland).
+2. Rendering context with exposed interface for custom rendering.
+3. Abstracting ``xdg-surface``, ``wl_shell_surface`` and ``xwayland_surface``
+   for unified desktop interface.
+4. session handling.
+5. All essential and many useful wayland protocols.
+6. Xwayland support.
+
+With those features supported, libtaiwins now becomes a real alternative
+outsides wlroots and libweston. Besides, I'd like to point out some design
+goals were kept in mind when crafting taiwins since day 1.
+
+- split GBM buffer management from DRM mode setting, make it possible to
+  implement other buffer management backends.
+- builtin support for multi-GPUs from day one.
+- udev events monitoring for runtime GPU events handling.
+- separate rendering logic from backends, make it possible to work with
+  different renderers.
+
+On this website, you could also find many useful documentations regarding
+libtaiwins architecture and API design.
+
+Taiwins compositor, on the other hand, supports its unique features, you can
+find the complete taiwins feature set `here <feature-set_>`_.
+
+The next version of taiwins will focus on the rendering side. Features
+hopefully will land includes:
+
+- xdg-decoration support
+- plane assignment in drm backend
+- video recording feature
+- taiwins shell functionalities
+- and more
+
+  
+Previous releases
+-----------------
+
+Since There were no release notes util now, I think there is need to brief the
+history of taiwins releases.
+
+Taiwins 0.2
+~~~~~~~~~~~
+
+Due to the inherited function limitation posed by libweston and it changed
+header and link path every release. Taiwins need to move from libweston
+dependent. On Sept-22, 2020, the version 0.2 was out. It was an transitional
+release based on wlroots because taiwins would need a COMPLETELY rewrite if to
+settle on wlroots. Instead, the strategy was to rely on wlroots for hardware
+abstraction only and implementing wayland protocols using libtaiwins. The
+feature included in this release:
+
+- dynamic window management (both tiling and floating).
+- extensible configuration using lua.
+- efficient renderer, updates only on damage.
+- builtin shell and application launcher.
+- theme configuration.
+- emacs like keybinding system.
+- builtin profiler.
+
+Taiwins 0.1
+~~~~~~~~~~~
+
+On May-13, 2020. The first version of taiwins compositor is released. Taiwins then
+was built upon libweston. All the backend/rendering was done by libweston,
+taiwins then was focusing on writing a custom shell using `twclient
+<twclient_>`_ and implementing custom window management.
+
+.. _twclient: https://github.com/taiwins/twclient
+.. _feature-set: https://github.com/taiwins/taiwins/blob/master/docs/progress.md
+

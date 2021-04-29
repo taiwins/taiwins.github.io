@@ -6,3 +6,6 @@ vendor
 .doctrees/*
 objects.inv
 .buildinfo
+blog
+posts/drafts.html
+progress.html
