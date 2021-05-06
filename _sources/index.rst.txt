@@ -4,7 +4,7 @@ through lua script. It has a builtin shell and GUI system called
 only 20 lines of code.
 
 Taiwins is the tiling as well as a floating window manager, you can allocate
-windows on your desktop *logicially* or based on your needs, drag your windows
+windows on your desktop *logically* or based on your needs, drag your windows
 *freely*.
 
 features

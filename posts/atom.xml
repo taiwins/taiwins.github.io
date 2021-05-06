@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://taiwins.org</id>
   <title>Dev Blogs</title>
-  <updated>2021-04-29T13:20:20.878807+00:00</updated>
+  <updated>2021-05-06T02:16:59.833270+00:00</updated>
   <link href="https://taiwins.org"/>
   <link href="https://taiwins.org/posts/atom.xml" rel="self"/>
   <generator uri="https://ablog.readthedocs.org/" version="0.10.18">ABlog</generator>
