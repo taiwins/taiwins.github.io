@@ -1,0 +1,16 @@
+.. post:: 17 May, 2021
+   :tags: taiwins
+   :author: Xichen Zhou
+   :excerpt: 1
+   :image: 1
+   :nocomments:
+
+Taiwins 0.3.1 release
+=====================
+
+The version 0.3.1 is a bugfix release:
+
+- fixing input devices loss on session switching or suspending.
+- fixing wl_data_source dropping on firefox dnd operations.
+- Better handling roles for wl_subsurface.
+- Adding xdg_desktop_surface roles.

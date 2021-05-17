@@ -1,0 +1,251 @@
+.. post:: 17 May, 2021
+   :tags: taiwins
+   :author: Xichen Zhou
+   :excerpt: 1
+   :image: 1
+   :nocomments:
+
+Writing a wayland compositor using libtaiwins, Part II
+======================================================
+
+In our previous `tutorial <tutorial-01.rst>`_, we created ``tw_backend``,
+``tw_render_context`` and ``tw_engine``. The 3 major building blocks for
+creating a wayland compositor. Now, we will start working on the window
+mangement part of the compositor.
+
+In libtaiwins, window management means implementing a
+``tw_desktop_surface_api``. This interface consists of various function
+pointers which abstracts the common behaviors of a desktop surface. For now in
+libtaiwins, there are three users, ``xdg_toplevel``, ``wl_shell_surface`` and
+``xcb_window``. They provides similar functionalities for desktop users. After
+the decades of debate, developers has come to the agreement of the capability
+of a desktop surface. At its core, you will be able to move, resizing them,
+maximize and minimize the windows. On top of that, window management can play a
+lot around it. It gets to decide the final size and positions of the windows,
+if you get creative, you can even make the windows in 3D space(combined with
+help from rendering context).
+
+Okay, lets get to the code. In this tutorial, we will implement a very simple
+desktop surface api. Namely the floating WM(window mangement). The windows will
+move freely in this WM scheme. Firstly, lets declare the the
+``tw_desktop_surface_api``.
+
+.. code-block:: c
+		
+	static const struct tw_desktop_surface_api API = {
+		.pong = handle_pong,
+		.surface_added = handle_surface_added,
+		.move = handle_move,
+		...
+	};
+
+There are many other functions there, don't mind about the all the details yet,
+just feed it with empty functions. To use it, we create a global object that
+contains it.
+
+.. code-block:: c
+		
+	struct DESKTOP = {
+		struct wl_display *display;
+		struct tw_engine *engine;
+		struct tw_desktop_manager manager;
+		struct wt_layer layer;
+	};
+
+	
+This ``DESKTOP`` struct contains a desktop manger; a layer which is a list, the
+``tw_engine`` which helps us to fetch some compositor information. We start
+with the easiest one ``surface_add``, this API requires us to show the window
+on the screen.
+
+.. code-block:: c
+		
+	static void
+	handle_surface_added(struct tw_desktop_surface *dsurf, void *user_data)
+	{
+		struct tw_test_desktop *desktop = user_data;
+		struct tw_engine_output *output =
+			tw_engine_get_focused_output(desktop->engine);
+		pixman_rectangle32_t region =
+			tw_output_device_geometry(output->device);
+		struct view_configure conf = {
+			.rect.x = rand() % (region.width / 2),
+			.rect.y = rand() % (region.height / 2),
+			.rect.width = 800,
+			.rect.height = 400,
+		};
+		struct tw_surface *prev_surf = get_curr_focused(desktop);
+		wl_list_insert(&desktop->layer.views, view_link(dsurf->tw_surface));
+		//randomly setup a size
+		send_view_configure(dsurf, desktop, &conf, 0);
+		//unset the previous view focus
+		if (prev_surf)
+			set_view_focus(prev_surf, desktop);
+	}
+
+
+This function does a very simple thing, it tries to decide the size and
+position of the desktop surface; append it to a list and sending those
+infomation to it. Next, we implement the ``send_view_configure`` used in the
+function.
+
+.. code-block:: c
+
+   static void
+   send_view_configure(struct tw_desktop_surface *dsurf,
+		const struct tw_test_desktop *desktop,
+		const struct view_configure *conf, uint32_t flags)
+   {
+   	struct tw_engine_seat *seat =
+   		tw_engine_get_focused_seat(desktop->engine);
+   	struct tw_seat *tw_seat = seat->tw_seat;
+   	struct tw_surface *surf = dsurf->tw_surface;
+   	bool focused = view_focused(dsurf->tw_surface, desktop);
+   	flags |= TW_DESKTOP_SURFACE_CONFIG_X |
+   		TW_DESKTOP_SURFACE_CONFIG_Y |
+   		TW_DESKTOP_SURFACE_CONFIG_W |
+   		TW_DESKTOP_SURFACE_CONFIG_H;
+   	flags |= focused ? TW_DESKTOP_SURFACE_FOCUSED : 0;
+   
+   	//first one on the list
+   	tw_surface_set_position(dsurf->tw_surface, conf->rect.x, conf->rect.y);
+   	tw_desktop_surface_send_configure(dsurf, 0,
+   	                                  conf->rect.x, conf->rect.y,
+   	                                  conf->rect.width, conf->rect.height,
+   	                                  flags);
+   	if (focused) {
+   		if ((tw_seat->capabilities & WL_SEAT_CAPABILITY_KEYBOARD) &&
+   		    focused)
+   			tw_keyboard_set_focus(&tw_seat->keyboard,
+   			                      surf->resource, NULL);
+   		dsurf->ping(dsurf, wl_display_next_serial(desktop->display));
+   	}
+  }
+
+A config contains some flags and its goemetry info of the window. It is rather
+straightforward here, but note that we may want to set the focused state of the
+surface. In this tutorial, it depends on if the surface is on the top of the
+list like a recent added surface.
+
+``set_view_focus`` will simply call send_view_configure(which determines if
+surface is focused).
+
+.. code-block:: c
+
+  static inline void
+  set_view_focus(struct tw_surface *surf, const struct tw_test_desktop *desktop)
+  {
+  	struct tw_surface *surf = dsurf->tw_surface;
+	struct tw_desktop_surface *dsurf = dsurf_from_view(surf);
+	struct view_configure conf = {
+		.rect = {
+		surf->geometry.x + dsurf->window_geometry.x,
+		surf->geometry.y + dsurf->window_geometry.y,
+		dsurf->window_geometry.w,
+		dsurf->window_geometry.h,
+		},
+	};
+	send_view_configure(dsurf, desktop, &conf, 0);
+  }
+
+
+On desktop surface requesting its end of life using ``surface_remove``, we
+simply remve the surface out of the list and then find a surface to send focus
+state. 
+
+.. code-block:: c
+
+   static void
+   handle_surface_removed(struct tw_desktop_surface *dsurf,
+		       void *user_data)
+   {
+	struct tw_test_desktop *desktop = user_data;
+	struct wl_event_loop *loop =
+		wl_display_get_event_loop(desktop->display);
+
+        if (!view_find(dsurf, desktop))
+	        return;
+        tw_reset_wl_list(view_link(dsurf->tw_surface));
+        //using an idle callback for waiting all the resource are removed.
+	wl_event_loop_add_idle(loop, handle_refocus, desktop);
+   }
+
+
+   static void
+   handle_refocus(void *data)
+   {
+	struct tw_test_desktop *desktop = data;
+	struct tw_surface *surf = NULL;
+
+	view_for_each(surf, &desktop->layer.views) {
+		struct tw_desktop_surface *dsurf =
+			dsurf_from_view(surf);
+		struct view_configure conf = {
+			.rect = view_get_visible(dsurf),
+		};
+		send_view_configure(dsurf, desktop, &conf, 0);
+	}
+   }
+
+Next, we try to handle the maximizing window. For maximizing a window, need to
+know the infomation about our display, this is where ``tw_engine`` comes
+in. The function sets the state and geometry info and sends to user.
+
+.. code-block:: c
+
+   static void
+   handle_maximized(struct tw_desktop_surface *dsurf, bool maximized,
+		    void *user_data)
+   {
+	struct tw_test_desktop *desktop = user_data;
+	struct tw_engine_output *engine_output =
+		tw_engine_get_focused_output(desktop->engine);
+	struct tw_surface *surf = dsurf->tw_surface;
+	struct tw_surface *prev_surf = get_curr_focused(desktop);
+	pixman_rectangle32_t region =
+		tw_output_device_geometry(engine_output->device);
+	pixman_rectangle32_t visible =
+		view_get_visible(dsurf);
+	struct view_configure conf = {
+		.rect = (maximized) ? region : visible,
+	};
+	uint32_t flags = maximized ? TW_DESKTOP_SURFACE_MAXIMIZED : 0;
+
+	tw_reset_wl_list(view_link(surf));
+	wl_list_insert(&desktop->layer.views, view_link(surf));
+	send_view_configure(dsurf, desktop, &conf, flags);
+	//maximized this one may lead defocus of others.
+	if (prev_surf != surf && prev_surf)
+		set_view_focus(prev_surf, desktop);
+   }
+
+Fullscreen the desktop surface is very similar, we can skip it here. 
+
+The next thing we implement is committing event. It is called whenever the
+surface commits a new frame. There could be a few things you may want to do
+here, this is the point where you actually know the size of a surface. You may
+direct the surface to a specifc size however the window reacts differently. We
+could ajust the position here. At same time, we could verify if surface
+actually received the keyboard focus and set it accordingly.
+
+.. code-block:: c
+
+   static void
+   handle_surface_committed(struct tw_desktop_surface *dsurf,
+                            void *user_data)
+   {
+	struct tw_surface *surf = dsurf->tw_surface;
+	struct tw_desktop_manager *manager = dsurf->desktop;
+	struct tw_test_desktop *desktop =
+		wl_container_of(manager, desktop, manager);
+	struct tw_seat *seat =
+		tw_engine_get_focused_seat(desktop->engine)->tw_seat;
+	if (view_focused(dsurf->tw_surface, desktop) &&
+	    seat->keyboard.focused_surface != surf->resource)
+		tw_keyboard_set_focus(&seat->keyboard, surf->resource, NULL);
+   }
+
+We are almost done here if we don't want to handling moving/resizing
+windows. In libtaiwins it is implemented through a "grab" which we will handle
+next time.
+

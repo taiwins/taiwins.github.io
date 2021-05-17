@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://taiwins.org</id>
   <title>Dev Blogs</title>
-  <updated>2021-05-06T02:16:59.833270+00:00</updated>
+  <updated>2021-05-17T03:05:53.607414+00:00</updated>
   <link href="https://taiwins.org"/>
   <link href="https://taiwins.org/posts/atom.xml" rel="self"/>
   <generator uri="https://ablog.readthedocs.org/" version="0.10.18">ABlog</generator>
@@ -53,5 +53,39 @@ mind, in the beginning of 2020 when I started creating libtaiwins, I probably
 didn’t know more than you how to do it either.</summary>
     <category term="taiwins" label="taiwins"/>
     <published>2021-04-29T00:00:00+08:00</published>
+  </entry>
+  <entry>
+    <id>https://taiwins.org/posts/release-0.3.1.html</id>
+    <title>Taiwins 0.3.1 release</title>
+    <updated>2021-05-17T00:00:00+08:00</updated>
+    <author>
+      <name>Xichen Zhou</name>
+    </author>
+    <content type="html">&lt;p&gt;The version 0.3.1 is a bugfix release:&lt;/p&gt;
+</content>
+    <link href="https://taiwins.org/posts/release-0.3.1.html" rel="alternate"/>
+    <summary>The version 0.3.1 is a bugfix release:</summary>
+    <category term="taiwins" label="taiwins"/>
+    <published>2021-05-17T00:00:00+08:00</published>
+  </entry>
+  <entry>
+    <id>https://taiwins.org/posts/tutorial-02.html</id>
+    <title>Writing a wayland compositor using libtaiwins, Part II</title>
+    <updated>2021-05-17T00:00:00+08:00</updated>
+    <author>
+      <name>Xichen Zhou</name>
+    </author>
+    <content type="html">&lt;p&gt;In our previous &lt;a class="reference external" href="tutorial-01.rst"&gt;tutorial&lt;/a&gt;, we created &lt;code class="docutils literal notranslate"&gt;&lt;span class="pre"&gt;tw_backend&lt;/span&gt;&lt;/code&gt;,
+&lt;code class="docutils literal notranslate"&gt;&lt;span class="pre"&gt;tw_render_context&lt;/span&gt;&lt;/code&gt; and &lt;code class="docutils literal notranslate"&gt;&lt;span class="pre"&gt;tw_engine&lt;/span&gt;&lt;/code&gt;. The 3 major building blocks for
+creating a wayland compositor. Now, we will start working on the window
+mangement part of the compositor.&lt;/p&gt;
+</content>
+    <link href="https://taiwins.org/posts/tutorial-02.html" rel="alternate"/>
+    <summary>In our previous tutorial, we created tw_backend,
+tw_render_context and tw_engine. The 3 major building blocks for
+creating a wayland compositor. Now, we will start working on the window
+mangement part of the compositor.</summary>
+    <category term="taiwins" label="taiwins"/>
+    <published>2021-05-17T00:00:00+08:00</published>
   </entry>
 </feed>

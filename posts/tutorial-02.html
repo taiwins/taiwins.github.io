@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+   Writing a wayland compositor using libtaiwins, Part II — Taiwins
+  </title>
+  <!-- fix for search function -->
+  <script src="_static/language_data.js " type="text/javascript">
+  </script>
+  <link href="../_static/pygments.css" rel="stylesheet" type="text/css"/>
+  <link href="../_static/bootstrap-sphinx.css" rel="stylesheet" type="text/css"/>
+  <link href="../_static/my-style.css" rel="stylesheet" type="text/css"/>
+  <link href="../_static/doxyrest-pygments.css" rel="stylesheet" type="text/css"/>
+  <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js">
+  </script>
+  <script src="../_static/jquery.js">
+  </script>
+  <script src="../_static/underscore.js">
+  </script>
+  <script src="../_static/doctools.js">
+  </script>
+  <script src="../_static/target-highlight.js">
+  </script>
+  <link href="../_static/favicon.ico" rel="shortcut icon"/>
+  <link href="../genindex.html" rel="index" title="Index"/>
+  <link href="../search.html" rel="search" title="Search"/>
+  <meta charset="utf-8"/>
+  <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible"/>
+  <meta content="width=device-width, initial-scale=1.0, maximum-scale=1" name="viewport"/>
+  <meta content="yes" name="apple-mobile-web-app-capable"/>
+  <script src="../_static/js/jquery-1.11.0.min.js " type="text/javascript">
+  </script>
+  <script src="../_static/js/jquery-fix.js " type="text/javascript">
+  </script>
+  <script src="../_static/bootstrap-3.3.7/js/bootstrap.min.js " type="text/javascript">
+  </script>
+  <script src="../_static/bootstrap-sphinx.js " type="text/javascript">
+  </script>
+  <link href="../posts/atom.xml" rel="alternate" title="Dev Blogs" type="application/atom+xml"/>
+  <style type="text/css">
+   ul.ablog-archive {
+    list-style: none;
+    overflow: auto;
+    margin-left: 0px;
+  }
+  ul.ablog-archive li {
+    float: left;
+    margin-right: 5px;
+    font-size: 80%;
+  }
+  ul.postlist a {
+    font-style: italic;
+  }
+  ul.postlist-style-disc {
+    list-style-type: disc;
+  }
+  ul.postlist-style-none {
+    list-style-type: none;
+  }
+  ul.postlist-style-circle {
+    list-style-type: circle;
+  }
+  </style>
+ </head>
+ <body>
+  <div class="page-container">
+   <!-- taken from bootstrap theme -->
+   <div class="navbar navbar-default navbar-fixed-top" id="navbar">
+    <div class="container">
+     <div class="navbar-header">
+      <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+      <button class="navbar-toggle" data-target=".nav-collapse" data-toggle="collapse" type="button">
+       <span class="icon-bar">
+       </span>
+       <span class="icon-bar">
+       </span>
+       <span class="icon-bar">
+       </span>
+      </button>
+      <a class="navbar-brand" href="../index.html">
+       <b>
+        Taiwins
+       </b>
+      </a>
+      <span class="navbar-text navbar-version pull-left">
+       <b>
+       </b>
+      </span>
+     </div>
+     <div class="collapse navbar-collapse nav-collapse">
+      <ul class="nav navbar-nav">
+       <li>
+        <a href="../page_doc.html">
+         Documentation
+        </a>
+       </li>
+       <li>
+        <a href="../posts.html">
+         Dev Blogs
+        </a>
+       </li>
+       <li>
+        <a href="https://github.com/taiwins/taiwins">
+         Source Code
+        </a>
+       </li>
+       <li>
+        <a href="https://github.com/taiwins/taiwins/wiki">
+         Wiki
+        </a>
+       </li>
+       <!-- add other pages -->
+      </ul>
+     </div>
+    </div>
+   </div>
+   <div class="container">
+    <div class="row">
+     <div class="col-md-2">
+     </div>
+     <div class="body col-md-9 content" role="main">
+      <div class="section" id="writing-a-wayland-compositor-using-libtaiwins-part-ii">
+       <h1>
+        Writing a wayland compositor using libtaiwins, Part II
+        <a class="headerlink" href="#writing-a-wayland-compositor-using-libtaiwins-part-ii" title="Permalink to this headline">
+         ¶
+        </a>
+       </h1>
+       <p>
+        In our previous
+        <a class="reference external" href="tutorial-01.html">
+         tutorial
+        </a>
+        , we created
+        <code class="docutils literal notranslate">
+         <span class="pre">
+          tw_backend
+         </span>
+        </code>
+        ,
+        <code class="docutils literal notranslate">
+         <span class="pre">
+          tw_render_context
+         </span>
+        </code>
+        and
+        <code class="docutils literal notranslate">
+         <span class="pre">
+          tw_engine
+         </span>
+        </code>
+        . The 3 major building blocks for
+creating a wayland compositor. Now, we will start working on the window
+mangement part of the compositor.
+       </p>
+       <p>
+        In libtaiwins, window management means implementing a
+        <code class="docutils literal notranslate">
+         <span class="pre">
+          tw_desktop_surface_api
+         </span>
+        </code>
+        . This interface consists of various function
+pointers which abstracts the common behaviors of a desktop surface. For now in
+libtaiwins, there are three users,
+        <code class="docutils literal notranslate">
+         <span class="pre">
+          xdg_toplevel
+         </span>
+        </code>
+        ,
+        <code class="docutils literal notranslate">
+         <span class="pre">
+          wl_shell_surface
+         </span>
+        </code>
+        and
+        <code class="docutils literal notranslate">
+         <span class="pre">
+          xcb_window
+         </span>
+        </code>
+        . They provides similar functionalities for desktop users. After
+the decades of debate, developers has come to the agreement of the capability
+of a desktop surface. At its core, you will be able to move, resizing them,
+maximize and minimize the windows. On top of that, window management can play a
+lot around it. It gets to decide the final size and positions of the windows,
+if you get creative, you can even make the windows in 3D space(combined with
+help from rendering context).
+       </p>
+       <p>
+        Okay, lets get to the code. In this tutorial, we will implement a very simple
+desktop surface api. Namely the floating WM(window mangement). The windows will
+move freely in this WM scheme. Firstly, lets declare the the
+        <code class="docutils literal notranslate">
+         <span class="pre">
+          tw_desktop_surface_api
+         </span>
+        </code>
+        .
+       </p>
+       <div class="highlight-c notranslate">
+        <div class="highlight">
+         <pre><span></span><span class="k">static</span> <span class="k">const</span> <span class="k">struct</span> <span class="n">tw_desktop_surface_api</span> <span class="n">API</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="p">.</span><span class="n">pong</span> <span class="o">=</span> <span class="n">handle_pong</span><span class="p">,</span>
+    <span class="p">.</span><span class="n">surface_added</span> <span class="o">=</span> <span class="n">handle_surface_added</span><span class="p">,</span>
+    <span class="p">.</span><span class="n">move</span> <span class="o">=</span> <span class="n">handle_move</span><span class="p">,</span>
+    <span class="p">...</span>
+<span class="p">};</span>
+</pre>
+        </div>
+       </div>
+       <p>
+        There are many other functions there, don’t mind about the all the details yet,
+just feed it with empty functions. To use it, we create a global object that
+contains it.
+       </p>
+       <div class="highlight-c notranslate">
+        <div class="highlight">
+         <pre><span></span><span class="k">struct</span> <span class="n">DESKTOP</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="k">struct</span> <span class="n">wl_display</span> <span class="o">*</span><span class="n">display</span><span class="p">;</span>
+    <span class="k">struct</span> <span class="n">tw_engine</span> <span class="o">*</span><span class="n">engine</span><span class="p">;</span>
+    <span class="k">struct</span> <span class="n">tw_desktop_manager</span> <span class="n">manager</span><span class="p">;</span>
+    <span class="k">struct</span> <span class="n">wt_layer</span> <span class="n">layer</span><span class="p">;</span>
+<span class="p">};</span>
+</pre>
+        </div>
+       </div>
+       <p>
+        This
+        <code class="docutils literal notranslate">
+         <span class="pre">
+          DESKTOP
+         </span>
+        </code>
+        struct contains a desktop manger; a layer which is a list, the
+        <code class="docutils literal notranslate">
+         <span class="pre">
+          tw_engine
+         </span>
+        </code>
+        which helps us to fetch some compositor information. We start
+with the easiest one
+        <code class="docutils literal notranslate">
+         <span class="pre">
+          surface_add
+         </span>
+        </code>
+        , this API requires us to show the window
+on the screen.
+       </p>
+       <div class="highlight-c notranslate">
+        <div class="highlight">
+         <pre><span></span><span class="k">static</span> <span class="kt">void</span>
+<span class="nf">handle_surface_added</span><span class="p">(</span><span class="k">struct</span> <span class="n">tw_desktop_surface</span> <span class="o">*</span><span class="n">dsurf</span><span class="p">,</span> <span class="kt">void</span> <span class="o">*</span><span class="n">user_data</span><span class="p">)</span>
+<span class="p">{</span>
+    <span class="k">struct</span> <span class="n">tw_test_desktop</span> <span class="o">*</span><span class="n">desktop</span> <span class="o">=</span> <span class="n">user_data</span><span class="p">;</span>
+    <span class="k">struct</span> <span class="n">tw_engine_output</span> <span class="o">*</span><span class="n">output</span> <span class="o">=</span>
+        <span class="n">tw_engine_get_focused_output</span><span class="p">(</span><span class="n">desktop</span><span class="o">-&gt;</span><span class="n">engine</span><span class="p">);</span>
+    <span class="n">pixman_rectangle32_t</span> <span class="n">region</span> <span class="o">=</span>
+        <span class="n">tw_output_device_geometry</span><span class="p">(</span><span class="n">output</span><span class="o">-&gt;</span><span class="n">device</span><span class="p">);</span>
+    <span class="k">struct</span> <span class="n">view_configure</span> <span class="n">conf</span> <span class="o">=</span> <span class="p">{</span>
+        <span class="p">.</span><span class="n">rect</span><span class="p">.</span><span class="n">x</span> <span class="o">=</span> <span class="n">rand</span><span class="p">()</span> <span class="o">%</span> <span class="p">(</span><span class="n">region</span><span class="p">.</span><span class="n">width</span> <span class="o">/</span> <span class="mi">2</span><span class="p">),</span>
+        <span class="p">.</span><span class="n">rect</span><span class="p">.</span><span class="n">y</span> <span class="o">=</span> <span class="n">rand</span><span class="p">()</span> <span class="o">%</span> <span class="p">(</span><span class="n">region</span><span class="p">.</span><span class="n">height</span> <span class="o">/</span> <span class="mi">2</span><span class="p">),</span>
+        <span class="p">.</span><span class="n">rect</span><span class="p">.</span><span class="n">width</span> <span class="o">=</span> <span class="mi">800</span><span class="p">,</span>
+        <span class="p">.</span><span class="n">rect</span><span class="p">.</span><span class="n">height</span> <span class="o">=</span> <span class="mi">400</span><span class="p">,</span>
+    <span class="p">};</span>
+    <span class="k">struct</span> <span class="n">tw_surface</span> <span class="o">*</span><span class="n">prev_surf</span> <span class="o">=</span> <span class="n">get_curr_focused</span><span class="p">(</span><span class="n">desktop</span><span class="p">);</span>
+    <span class="n">wl_list_insert</span><span class="p">(</span><span class="o">&amp;</span><span class="n">desktop</span><span class="o">-&gt;</span><span class="n">layer</span><span class="p">.</span><span class="n">views</span><span class="p">,</span> <span class="n">view_link</span><span class="p">(</span><span class="n">dsurf</span><span class="o">-&gt;</span><span class="n">tw_surface</span><span class="p">));</span>
+    <span class="c1">//randomly setup a size</span>
+    <span class="n">send_view_configure</span><span class="p">(</span><span class="n">dsurf</span><span class="p">,</span> <span class="n">desktop</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">conf</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>
+    <span class="c1">//unset the previous view focus</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">prev_surf</span><span class="p">)</span>
+        <span class="n">set_view_focus</span><span class="p">(</span><span class="n">prev_surf</span><span class="p">,</span> <span class="n">desktop</span><span class="p">);</span>
+<span class="p">}</span>
+</pre>
+        </div>
+       </div>
+       <p>
+        This function does a very simple thing, it tries to decide the size and
+position of the desktop surface; append it to a list and sending those
+infomation to it. Next, we implement the
+        <code class="docutils literal notranslate">
+         <span class="pre">
+          send_view_configure
+         </span>
+        </code>
+        used in the
+function.
+       </p>
+       <div class="highlight-c notranslate">
+        <div class="highlight">
+         <pre><span></span> <span class="k">static</span> <span class="kt">void</span>
+ <span class="nf">send_view_configure</span><span class="p">(</span><span class="k">struct</span> <span class="n">tw_desktop_surface</span> <span class="o">*</span><span class="n">dsurf</span><span class="p">,</span>
+      <span class="k">const</span> <span class="k">struct</span> <span class="n">tw_test_desktop</span> <span class="o">*</span><span class="n">desktop</span><span class="p">,</span>
+      <span class="k">const</span> <span class="k">struct</span> <span class="n">view_configure</span> <span class="o">*</span><span class="n">conf</span><span class="p">,</span> <span class="kt">uint32_t</span> <span class="n">flags</span><span class="p">)</span>
+ <span class="p">{</span>
+  <span class="k">struct</span> <span class="n">tw_engine_seat</span> <span class="o">*</span><span class="n">seat</span> <span class="o">=</span>
+      <span class="n">tw_engine_get_focused_seat</span><span class="p">(</span><span class="n">desktop</span><span class="o">-&gt;</span><span class="n">engine</span><span class="p">);</span>
+  <span class="k">struct</span> <span class="n">tw_seat</span> <span class="o">*</span><span class="n">tw_seat</span> <span class="o">=</span> <span class="n">seat</span><span class="o">-&gt;</span><span class="n">tw_seat</span><span class="p">;</span>
+  <span class="k">struct</span> <span class="n">tw_surface</span> <span class="o">*</span><span class="n">surf</span> <span class="o">=</span> <span class="n">dsurf</span><span class="o">-&gt;</span><span class="n">tw_surface</span><span class="p">;</span>
+  <span class="kt">bool</span> <span class="n">focused</span> <span class="o">=</span> <span class="n">view_focused</span><span class="p">(</span><span class="n">dsurf</span><span class="o">-&gt;</span><span class="n">tw_surface</span><span class="p">,</span> <span class="n">desktop</span><span class="p">);</span>
+  <span class="n">flags</span> <span class="o">|=</span> <span class="n">TW_DESKTOP_SURFACE_CONFIG_X</span> <span class="o">|</span>
+      <span class="n">TW_DESKTOP_SURFACE_CONFIG_Y</span> <span class="o">|</span>
+      <span class="n">TW_DESKTOP_SURFACE_CONFIG_W</span> <span class="o">|</span>
+      <span class="n">TW_DESKTOP_SURFACE_CONFIG_H</span><span class="p">;</span>
+  <span class="n">flags</span> <span class="o">|=</span> <span class="n">focused</span> <span class="o">?</span> <span class="nl">TW_DESKTOP_SURFACE_FOCUSED</span> <span class="p">:</span> <span class="mi">0</span><span class="p">;</span>
+
+  <span class="c1">//first one on the list</span>
+  <span class="n">tw_surface_set_position</span><span class="p">(</span><span class="n">dsurf</span><span class="o">-&gt;</span><span class="n">tw_surface</span><span class="p">,</span> <span class="n">conf</span><span class="o">-&gt;</span><span class="n">rect</span><span class="p">.</span><span class="n">x</span><span class="p">,</span> <span class="n">conf</span><span class="o">-&gt;</span><span class="n">rect</span><span class="p">.</span><span class="n">y</span><span class="p">);</span>
+  <span class="n">tw_desktop_surface_send_configure</span><span class="p">(</span><span class="n">dsurf</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span>
+                                    <span class="n">conf</span><span class="o">-&gt;</span><span class="n">rect</span><span class="p">.</span><span class="n">x</span><span class="p">,</span> <span class="n">conf</span><span class="o">-&gt;</span><span class="n">rect</span><span class="p">.</span><span class="n">y</span><span class="p">,</span>
+                                    <span class="n">conf</span><span class="o">-&gt;</span><span class="n">rect</span><span class="p">.</span><span class="n">width</span><span class="p">,</span> <span class="n">conf</span><span class="o">-&gt;</span><span class="n">rect</span><span class="p">.</span><span class="n">height</span><span class="p">,</span>
+                                    <span class="n">flags</span><span class="p">);</span>
+  <span class="k">if</span> <span class="p">(</span><span class="n">focused</span><span class="p">)</span> <span class="p">{</span>
+      <span class="k">if</span> <span class="p">((</span><span class="n">tw_seat</span><span class="o">-&gt;</span><span class="n">capabilities</span> <span class="o">&amp;</span> <span class="n">WL_SEAT_CAPABILITY_KEYBOARD</span><span class="p">)</span> <span class="o">&amp;&amp;</span>
+          <span class="n">focused</span><span class="p">)</span>
+          <span class="n">tw_keyboard_set_focus</span><span class="p">(</span><span class="o">&amp;</span><span class="n">tw_seat</span><span class="o">-&gt;</span><span class="n">keyboard</span><span class="p">,</span>
+                                <span class="n">surf</span><span class="o">-&gt;</span><span class="n">resource</span><span class="p">,</span> <span class="nb">NULL</span><span class="p">);</span>
+      <span class="n">dsurf</span><span class="o">-&gt;</span><span class="n">ping</span><span class="p">(</span><span class="n">dsurf</span><span class="p">,</span> <span class="n">wl_display_next_serial</span><span class="p">(</span><span class="n">desktop</span><span class="o">-&gt;</span><span class="n">display</span><span class="p">));</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</pre>
+        </div>
+       </div>
+       <p>
+        A config contains some flags and its goemetry info of the window. It is rather
+straightforward here, but note that we may want to set the focused state of the
+surface. In this tutorial, it depends on if the surface is on the top of the
+list like a recent added surface.
+       </p>
+       <p>
+        <code class="docutils literal notranslate">
+         <span class="pre">
+          set_view_focus
+         </span>
+        </code>
+        will simply call send_view_configure(which determines if
+surface is focused).
+       </p>
+       <div class="highlight-c notranslate">
+        <div class="highlight">
+         <pre><span></span><span class="k">static</span> <span class="kr">inline</span> <span class="kt">void</span>
+<span class="nf">set_view_focus</span><span class="p">(</span><span class="k">struct</span> <span class="n">tw_surface</span> <span class="o">*</span><span class="n">surf</span><span class="p">,</span> <span class="k">const</span> <span class="k">struct</span> <span class="n">tw_test_desktop</span> <span class="o">*</span><span class="n">desktop</span><span class="p">)</span>
+<span class="p">{</span>
+  <span class="k">struct</span> <span class="n">tw_surface</span> <span class="o">*</span><span class="n">surf</span> <span class="o">=</span> <span class="n">dsurf</span><span class="o">-&gt;</span><span class="n">tw_surface</span><span class="p">;</span>
+  <span class="k">struct</span> <span class="n">tw_desktop_surface</span> <span class="o">*</span><span class="n">dsurf</span> <span class="o">=</span> <span class="n">dsurf_from_view</span><span class="p">(</span><span class="n">surf</span><span class="p">);</span>
+  <span class="k">struct</span> <span class="n">view_configure</span> <span class="n">conf</span> <span class="o">=</span> <span class="p">{</span>
+      <span class="p">.</span><span class="n">rect</span> <span class="o">=</span> <span class="p">{</span>
+      <span class="n">surf</span><span class="o">-&gt;</span><span class="n">geometry</span><span class="p">.</span><span class="n">x</span> <span class="o">+</span> <span class="n">dsurf</span><span class="o">-&gt;</span><span class="n">window_geometry</span><span class="p">.</span><span class="n">x</span><span class="p">,</span>
+      <span class="n">surf</span><span class="o">-&gt;</span><span class="n">geometry</span><span class="p">.</span><span class="n">y</span> <span class="o">+</span> <span class="n">dsurf</span><span class="o">-&gt;</span><span class="n">window_geometry</span><span class="p">.</span><span class="n">y</span><span class="p">,</span>
+      <span class="n">dsurf</span><span class="o">-&gt;</span><span class="n">window_geometry</span><span class="p">.</span><span class="n">w</span><span class="p">,</span>
+      <span class="n">dsurf</span><span class="o">-&gt;</span><span class="n">window_geometry</span><span class="p">.</span><span class="n">h</span><span class="p">,</span>
+      <span class="p">},</span>
+  <span class="p">};</span>
+  <span class="n">send_view_configure</span><span class="p">(</span><span class="n">dsurf</span><span class="p">,</span> <span class="n">desktop</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">conf</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>
+<span class="p">}</span>
+</pre>
+        </div>
+       </div>
+       <p>
+        On desktop surface requesting its end of life using
+        <code class="docutils literal notranslate">
+         <span class="pre">
+          surface_remove
+         </span>
+        </code>
+        , we
+simply remve the surface out of the list and then find a surface to send focus
+state.
+       </p>
+       <div class="highlight-c notranslate">
+        <div class="highlight">
+         <pre><span></span><span class="k">static</span> <span class="kt">void</span>
+<span class="nf">handle_surface_removed</span><span class="p">(</span><span class="k">struct</span> <span class="n">tw_desktop_surface</span> <span class="o">*</span><span class="n">dsurf</span><span class="p">,</span>
+            <span class="kt">void</span> <span class="o">*</span><span class="n">user_data</span><span class="p">)</span>
+<span class="p">{</span>
+ <span class="k">struct</span> <span class="n">tw_test_desktop</span> <span class="o">*</span><span class="n">desktop</span> <span class="o">=</span> <span class="n">user_data</span><span class="p">;</span>
+ <span class="k">struct</span> <span class="n">wl_event_loop</span> <span class="o">*</span><span class="n">loop</span> <span class="o">=</span>
+     <span class="n">wl_display_get_event_loop</span><span class="p">(</span><span class="n">desktop</span><span class="o">-&gt;</span><span class="n">display</span><span class="p">);</span>
+
+     <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="n">view_find</span><span class="p">(</span><span class="n">dsurf</span><span class="p">,</span> <span class="n">desktop</span><span class="p">))</span>
+         <span class="k">return</span><span class="p">;</span>
+     <span class="n">tw_reset_wl_list</span><span class="p">(</span><span class="n">view_link</span><span class="p">(</span><span class="n">dsurf</span><span class="o">-&gt;</span><span class="n">tw_surface</span><span class="p">));</span>
+     <span class="c1">//using an idle callback for waiting all the resource are removed.</span>
+ <span class="n">wl_event_loop_add_idle</span><span class="p">(</span><span class="n">loop</span><span class="p">,</span> <span class="n">handle_refocus</span><span class="p">,</span> <span class="n">desktop</span><span class="p">);</span>
+<span class="p">}</span>
+
+
+<span class="k">static</span> <span class="kt">void</span>
+<span class="nf">handle_refocus</span><span class="p">(</span><span class="kt">void</span> <span class="o">*</span><span class="n">data</span><span class="p">)</span>
+<span class="p">{</span>
+ <span class="k">struct</span> <span class="n">tw_test_desktop</span> <span class="o">*</span><span class="n">desktop</span> <span class="o">=</span> <span class="n">data</span><span class="p">;</span>
+ <span class="k">struct</span> <span class="n">tw_surface</span> <span class="o">*</span><span class="n">surf</span> <span class="o">=</span> <span class="nb">NULL</span><span class="p">;</span>
+
+ <span class="n">view_for_each</span><span class="p">(</span><span class="n">surf</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">desktop</span><span class="o">-&gt;</span><span class="n">layer</span><span class="p">.</span><span class="n">views</span><span class="p">)</span> <span class="p">{</span>
+     <span class="k">struct</span> <span class="n">tw_desktop_surface</span> <span class="o">*</span><span class="n">dsurf</span> <span class="o">=</span>
+         <span class="n">dsurf_from_view</span><span class="p">(</span><span class="n">surf</span><span class="p">);</span>
+     <span class="k">struct</span> <span class="n">view_configure</span> <span class="n">conf</span> <span class="o">=</span> <span class="p">{</span>
+         <span class="p">.</span><span class="n">rect</span> <span class="o">=</span> <span class="n">view_get_visible</span><span class="p">(</span><span class="n">dsurf</span><span class="p">),</span>
+     <span class="p">};</span>
+     <span class="n">send_view_configure</span><span class="p">(</span><span class="n">dsurf</span><span class="p">,</span> <span class="n">desktop</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">conf</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>
+ <span class="p">}</span>
+<span class="p">}</span>
+</pre>
+        </div>
+       </div>
+       <p>
+        Next, we try to handle the maximizing window. For maximizing a window, need to
+know the infomation about our display, this is where
+        <code class="docutils literal notranslate">
+         <span class="pre">
+          tw_engine
+         </span>
+        </code>
+        comes
+in. The function sets the state and geometry info and sends to user.
+       </p>
+       <div class="highlight-c notranslate">
+        <div class="highlight">
+         <pre><span></span><span class="k">static</span> <span class="kt">void</span>
+<span class="nf">handle_maximized</span><span class="p">(</span><span class="k">struct</span> <span class="n">tw_desktop_surface</span> <span class="o">*</span><span class="n">dsurf</span><span class="p">,</span> <span class="kt">bool</span> <span class="n">maximized</span><span class="p">,</span>
+         <span class="kt">void</span> <span class="o">*</span><span class="n">user_data</span><span class="p">)</span>
+<span class="p">{</span>
+ <span class="k">struct</span> <span class="n">tw_test_desktop</span> <span class="o">*</span><span class="n">desktop</span> <span class="o">=</span> <span class="n">user_data</span><span class="p">;</span>
+ <span class="k">struct</span> <span class="n">tw_engine_output</span> <span class="o">*</span><span class="n">engine_output</span> <span class="o">=</span>
+     <span class="n">tw_engine_get_focused_output</span><span class="p">(</span><span class="n">desktop</span><span class="o">-&gt;</span><span class="n">engine</span><span class="p">);</span>
+ <span class="k">struct</span> <span class="n">tw_surface</span> <span class="o">*</span><span class="n">surf</span> <span class="o">=</span> <span class="n">dsurf</span><span class="o">-&gt;</span><span class="n">tw_surface</span><span class="p">;</span>
+ <span class="k">struct</span> <span class="n">tw_surface</span> <span class="o">*</span><span class="n">prev_surf</span> <span class="o">=</span> <span class="n">get_curr_focused</span><span class="p">(</span><span class="n">desktop</span><span class="p">);</span>
+ <span class="n">pixman_rectangle32_t</span> <span class="n">region</span> <span class="o">=</span>
+     <span class="n">tw_output_device_geometry</span><span class="p">(</span><span class="n">engine_output</span><span class="o">-&gt;</span><span class="n">device</span><span class="p">);</span>
+ <span class="n">pixman_rectangle32_t</span> <span class="n">visible</span> <span class="o">=</span>
+     <span class="n">view_get_visible</span><span class="p">(</span><span class="n">dsurf</span><span class="p">);</span>
+ <span class="k">struct</span> <span class="n">view_configure</span> <span class="n">conf</span> <span class="o">=</span> <span class="p">{</span>
+     <span class="p">.</span><span class="n">rect</span> <span class="o">=</span> <span class="p">(</span><span class="n">maximized</span><span class="p">)</span> <span class="o">?</span> <span class="nl">region</span> <span class="p">:</span> <span class="n">visible</span><span class="p">,</span>
+ <span class="p">};</span>
+ <span class="kt">uint32_t</span> <span class="n">flags</span> <span class="o">=</span> <span class="n">maximized</span> <span class="o">?</span> <span class="nl">TW_DESKTOP_SURFACE_MAXIMIZED</span> <span class="p">:</span> <span class="mi">0</span><span class="p">;</span>
+
+ <span class="n">tw_reset_wl_list</span><span class="p">(</span><span class="n">view_link</span><span class="p">(</span><span class="n">surf</span><span class="p">));</span>
+ <span class="n">wl_list_insert</span><span class="p">(</span><span class="o">&amp;</span><span class="n">desktop</span><span class="o">-&gt;</span><span class="n">layer</span><span class="p">.</span><span class="n">views</span><span class="p">,</span> <span class="n">view_link</span><span class="p">(</span><span class="n">surf</span><span class="p">));</span>
+ <span class="n">send_view_configure</span><span class="p">(</span><span class="n">dsurf</span><span class="p">,</span> <span class="n">desktop</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">conf</span><span class="p">,</span> <span class="n">flags</span><span class="p">);</span>
+ <span class="c1">//maximized this one may lead defocus of others.</span>
+ <span class="k">if</span> <span class="p">(</span><span class="n">prev_surf</span> <span class="o">!=</span> <span class="n">surf</span> <span class="o">&amp;&amp;</span> <span class="n">prev_surf</span><span class="p">)</span>
+     <span class="n">set_view_focus</span><span class="p">(</span><span class="n">prev_surf</span><span class="p">,</span> <span class="n">desktop</span><span class="p">);</span>
+<span class="p">}</span>
+</pre>
+        </div>
+       </div>
+       <p>
+        Fullscreen the desktop surface is very similar, we can skip it here.
+       </p>
+       <p>
+        The next thing we implement is committing event. It is called whenever the
+surface commits a new frame. There could be a few things you may want to do
+here, this is the point where you actually know the size of a surface. You may
+direct the surface to a specifc size however the window reacts differently. We
+could ajust the position here. At same time, we could verify if surface
+actually received the keyboard focus and set it accordingly.
+       </p>
+       <div class="highlight-c notranslate">
+        <div class="highlight">
+         <pre><span></span><span class="k">static</span> <span class="kt">void</span>
+<span class="nf">handle_surface_committed</span><span class="p">(</span><span class="k">struct</span> <span class="n">tw_desktop_surface</span> <span class="o">*</span><span class="n">dsurf</span><span class="p">,</span>
+                         <span class="kt">void</span> <span class="o">*</span><span class="n">user_data</span><span class="p">)</span>
+<span class="p">{</span>
+ <span class="k">struct</span> <span class="n">tw_surface</span> <span class="o">*</span><span class="n">surf</span> <span class="o">=</span> <span class="n">dsurf</span><span class="o">-&gt;</span><span class="n">tw_surface</span><span class="p">;</span>
+ <span class="k">struct</span> <span class="n">tw_desktop_manager</span> <span class="o">*</span><span class="n">manager</span> <span class="o">=</span> <span class="n">dsurf</span><span class="o">-&gt;</span><span class="n">desktop</span><span class="p">;</span>
+ <span class="k">struct</span> <span class="n">tw_test_desktop</span> <span class="o">*</span><span class="n">desktop</span> <span class="o">=</span>
+     <span class="n">wl_container_of</span><span class="p">(</span><span class="n">manager</span><span class="p">,</span> <span class="n">desktop</span><span class="p">,</span> <span class="n">manager</span><span class="p">);</span>
+ <span class="k">struct</span> <span class="n">tw_seat</span> <span class="o">*</span><span class="n">seat</span> <span class="o">=</span>
+     <span class="n">tw_engine_get_focused_seat</span><span class="p">(</span><span class="n">desktop</span><span class="o">-&gt;</span><span class="n">engine</span><span class="p">)</span><span class="o">-&gt;</span><span class="n">tw_seat</span><span class="p">;</span>
+ <span class="k">if</span> <span class="p">(</span><span class="n">view_focused</span><span class="p">(</span><span class="n">dsurf</span><span class="o">-&gt;</span><span class="n">tw_surface</span><span class="p">,</span> <span class="n">desktop</span><span class="p">)</span> <span class="o">&amp;&amp;</span>
+     <span class="n">seat</span><span class="o">-&gt;</span><span class="n">keyboard</span><span class="p">.</span><span class="n">focused_surface</span> <span class="o">!=</span> <span class="n">surf</span><span class="o">-&gt;</span><span class="n">resource</span><span class="p">)</span>
+     <span class="n">tw_keyboard_set_focus</span><span class="p">(</span><span class="o">&amp;</span><span class="n">seat</span><span class="o">-&gt;</span><span class="n">keyboard</span><span class="p">,</span> <span class="n">surf</span><span class="o">-&gt;</span><span class="n">resource</span><span class="p">,</span> <span class="nb">NULL</span><span class="p">);</span>
+<span class="p">}</span>
+</pre>
+        </div>
+       </div>
+       <p>
+        We are almost done here if we don’t want to handling moving/resizing
+windows. In libtaiwins it is implemented through a “grab” which we will handle
+next time.
+       </p>
+      </div>
+      <div class="section">
+       <div class="section">
+        <span style="float: left">
+         Previous:
+         <a href="release-0.3.1.html">
+          Taiwins 0.3.1 release
+         </a>
+        </span>
+        <span>
+        </span>
+        <span style="float: right">
+        </span>
+       </div>
+      </div>
+     </div>
+     <div class="col-md-2">
+     </div>
+    </div>
+   </div>
+   <div class="push">
+   </div>
+  </div>
+  <footer class="footer">
+   <div class="container">
+    <p class="pull-right">
+     <a href="#">
+      Back to top
+     </a>
+    </p>
+    <p>
+     © Copyright 2020, Xichen Zhou.
+     <br/>
+     Created using
+     <a href="http://sphinx-doc.org/">
+      Sphinx
+     </a>
+     3.4.3.
+     <br/>
+    </p>
+   </div>
+  </footer>
+ </body>
+</html>
