@@ -27,5 +27,4 @@ Dev Blogs
 .. postlist:: 5
    :list-style: disc
    :format: {title} on {date}
-   :sort:
    :excerpts:

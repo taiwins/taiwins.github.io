@@ -1,0 +1,204 @@
+.. post:: 8 June, 2021
+   :tags: taiwins
+   :author: Xichen Zhou
+   :excerpt: 1
+   :image: 1
+   :nocomments:
+
+Writing a wayland compositor using libtaiwins, Part III
+=======================================================
+
+Hello again, the third part of libtaiwins tutorial, following the `part II
+<tutorial-02.rst>`_. In this tutorial, we will finish our desktop surface
+creation creation, with the last part, `input grab <grab-doc_>`_. 
+
+The documentation about the input grab is already there, basically it is used
+to change the behavior of input events handling. While The default handlers
+simply forwards the events to the proper wayland clients, we can use them to
+implement many functionalities. Just a while before this post, libtaiwins had a
+rework of its input grab system for supporting grabs like `input-method
+<im-grab_>`_, our new grab system works like a priority queue via the "mutex"
+like system implemented previously. This may not make much sense to you at the
+moment, but you will get it soon enough.
+
+First lets take a look of what a grab looks like:
+
+.. code-block:: c
+
+   struct tw_pointer_grab_interface {
+	void (*enter)(struct tw_seat_pointer_grab *grab,
+	              struct wl_resource *surface, double sx, double sy);
+	void (*motion)(struct tw_seat_pointer_grab *grab, uint32_t time_msec,
+	               double sx, double sy);
+	void (*button)(struct tw_seat_pointer_grab *grab,
+	               uint32_t time_msec, uint32_t button,
+	               enum wl_pointer_button_state state);
+	void (*axis)(struct tw_seat_pointer_grab *grab, uint32_t time_msec,
+	             enum wl_pointer_axis orientation, double value,
+	             int32_t value_discrete,
+	             enum wl_pointer_axis_source source);
+	void (*frame)(struct tw_seat_pointer_grab *grab);
+	void (*cancel)(struct tw_seat_pointer_grab *grab);
+        void (*grab_action)(struct tw_seat_pointer_grab *grab,
+	                    enum tw_seat_grab_action action);
+   };
+
+What you see above is a grab interface for pointer devices, you can see there
+are a few function pointers for you to override. Similar interfaces exist for
+keyboard and touch devices, but in this post, we only need to worry about the
+pointer devices.
+
+The ``(*enter)``, ``(*motion)``, ``(*button)``, ``(*axis)`` and ``(*frame)``
+callbacks has corresponding `wayland protocol <pointer_>`_ equivalents. The
+last two is a little special here(we should probably merge them), the are for
+handling the events to grab itself. Right now, there are three events:
+
+1. cancel, emitted when the grab exists.
+2. push, emitted when new grab overrides this one.
+3. pop, emitted when we pop back to this grab.
+
+So **what I meant previously** is that you can add a grab on top of a grab and
+pop back later. But **note** that, at any point, there is only one effective
+grab for each device.
+
+Finally, there are two APIS for manipulate the grab, take pointer for example
+
+.. code-block:: c
+
+    void
+    tw_pointer_start_grab(struct tw_pointer *pointer,
+                          struct tw_seat_pointer_grab *grab, uint32_t priority);
+    void
+    tw_pointer_end_grab(struct tw_pointer *pointer,
+                        struct tw_seat_pointer_grab *grab);
+
+Okay, with that in mind, lets implement the grabs for desktop surfaces.
+
+Resizing grab and moving grab
+-----------------------------
+
+For a desktop experience, you will need to be able to resize and move your
+applications with your cursor. Clients initiate those requests through wayland
+protocol, we answer them by implementing the ``move`` and ``resize`` interface
+in the ``tw_desktop_surface_api``. In those two callbacks, you simply start the
+choosing grab. Firstly we declare the two grab implementations.
+
+.. code-block:: c
+
+    static const struct tw_pointer_grab_interface move_pointer_grab_impl = {
+    	.motion = handle_move_pointer_grab_motion,
+    	.button = handle_pointer_grab_button,
+    	.cancel = handle_pointer_grab_cancel,
+    };
+
+    static const struct tw_pointer_grab_interface resize_pointer_grab_impl = {
+    	.motion = handle_resize_pointer_grab_motion,
+    	.button = handle_pointer_grab_button, // same as move grab
+    	.cancel = handle_pointer_grab_cancel, // same as move grab
+    };
+
+The most importantly here is the motion event handling, for moving grab, we
+need to change the surface position accorrdingly.
+
+.. code-block:: c
+
+    static void
+    handle_move_pointer_grab_motion(struct tw_seat_pointer_grab *grab,
+                                    uint32_t time_msec, double sx, double sy)
+    {
+    	struct test_desktop_grab *tg =
+    		wl_container_of(grab, tg, pointer_grab);
+    	struct tw_desktop_surface *dsurf = tg->curr;
+    	struct tw_surface *surf = NULL;
+    	float gx, gy;
+    
+    	if (!dsurf)
+    		return;
+    	surf = dsurf->tw_surface;
+    	tw_surface_to_global_pos(surf, sx, sy, &gx, &gy);
+    	if (!isnan(tg->gx) && !isnan(tg->gy))
+    		tw_surface_set_position(surf, surf->geometry.x + (gx-tg->gx),
+    		                        surf->geometry.y + gy-tg->gy);
+    
+    	tg->gx = gx;
+    	tg->gy = gy;
+    }
+
+We first get global position of the cursor, computing the *delta* using the previous
+recorded position. Then we call ``tw_surface_set_position`` to change it,
+simple enough. What about resizing grab?
+
+.. code-block:: c
+
+    static void
+    handle_resize_pointer_grab_motion(struct tw_seat_pointer_grab *grab,
+                                    uint32_t time_msec, double sx, double sy)
+    {
+    	struct test_desktop_grab *tg =
+    		wl_container_of(grab, tg, pointer_grab);
+    	struct tw_surface *surf;
+    	struct tw_test_desktop *desktop = grab->data;
+    	float gx, gy;
+    	//would change position, bail
+    	if ((tg->edge & WL_SHELL_SURFACE_RESIZE_TOP_LEFT))
+    		return;
+    	if (!tg->curr)
+    		return;
+    	surf = tg->curr->tw_surface;
+    	tw_surface_to_global_pos(surf, sx, sy, &gx, &gy);
+    
+    	if (!isnan(tg->gx) && !isnan(tg->gy)) {
+    		float dw = (gx-tg->gx);
+    		float dh = (gy-tg->gy);
+    		struct view_configure conf = {
+    			.rect.x = surf->geometry.x, //keep the same pos
+    			.rect.y = surf->geometry.y, //keep the same pos
+    			.rect.width = tg->curr->window_geometry.w + dw,
+    			.rect.height = tg->curr->window_geometry.h + dh,
+    		};
+    		send_view_configure(tg->curr, desktop, &conf, 0);
+    	}
+    	tg->gx = gx;
+    	tg->gy = gy;
+    
+    }
+
+It actually follows the same logic, the difference setting the wanted size
+through ``send_view_configure``. Now it remains for us only the handling the
+starting and ending grab through button events.
+
+.. code-block:: c
+
+    static void
+    handle_pointer_grab_button(struct tw_seat_pointer_grab *grab,
+    	                   uint32_t time_msec, uint32_t button,
+    	                   enum wl_pointer_button_state state)
+    {
+    	struct tw_pointer *pointer = &grab->seat->pointer;
+    	if (state == WL_POINTER_BUTTON_STATE_RELEASED &&
+    	    pointer->btn_count == 0)
+    		tw_pointer_end_grab(pointer, grab);
+    }
+    
+    static void
+    handle_pointer_grab_cancel(struct tw_seat_pointer_grab *grab)
+    {
+    	struct test_desktop_grab *tg =
+    		wl_container_of(grab, tg, pointer_grab);
+    	tg->curr = NULL;
+    	tg->gx = nan("");
+    	tg->gy = nan("");
+    }
+
+For button events, we check if there is any remaining pressed button, if all is
+released, we end the grab, which will lead to calling ``(*cancel)`` callback.
+
+Pretty simple right? For very basic desktop experience, we coverred them in
+this and previous tutorial, which is about couple hundreds lines of code to write.
+
+In our next tutorial, you will begin to handle repainting using libtaiwins,
+which is last missing piece for a working compositor.
+			
+.. _pointer : https://wayland.freedesktop.org/docs/html/apa.html#protocol-spec-wl_pointer
+.. _im-grab : https://github.com/taiwins/taiwins/blob/master/protocols/input-method.xml#L321
+.. _grab-doc : https://github.com/taiwins/taiwins/blob/master/docs/input-grab.rst

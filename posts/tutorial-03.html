@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+   Writing a wayland compositor using libtaiwins, Part III — Taiwins
+  </title>
+  <!-- fix for search function -->
+  <script src="_static/language_data.js " type="text/javascript">
+  </script>
+  <link href="../_static/pygments.css" rel="stylesheet" type="text/css"/>
+  <link href="../_static/bootstrap-sphinx.css" rel="stylesheet" type="text/css"/>
+  <link href="../_static/my-style.css" rel="stylesheet" type="text/css"/>
+  <link href="../_static/doxyrest-pygments.css" rel="stylesheet" type="text/css"/>
+  <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js">
+  </script>
+  <script src="../_static/jquery.js">
+  </script>
+  <script src="../_static/underscore.js">
+  </script>
+  <script src="../_static/doctools.js">
+  </script>
+  <script src="../_static/target-highlight.js">
+  </script>
+  <link href="../_static/favicon.ico" rel="shortcut icon"/>
+  <link href="../genindex.html" rel="index" title="Index"/>
+  <link href="../search.html" rel="search" title="Search"/>
+  <meta charset="utf-8"/>
+  <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible"/>
+  <meta content="width=device-width, initial-scale=1.0, maximum-scale=1" name="viewport"/>
+  <meta content="yes" name="apple-mobile-web-app-capable"/>
+  <script src="../_static/js/jquery-1.11.0.min.js " type="text/javascript">
+  </script>
+  <script src="../_static/js/jquery-fix.js " type="text/javascript">
+  </script>
+  <script src="../_static/bootstrap-3.3.7/js/bootstrap.min.js " type="text/javascript">
+  </script>
+  <script src="../_static/bootstrap-sphinx.js " type="text/javascript">
+  </script>
+  <link href="../posts/atom.xml" rel="alternate" title="Dev Blogs" type="application/atom+xml"/>
+  <style type="text/css">
+   ul.ablog-archive {
+    list-style: none;
+    overflow: auto;
+    margin-left: 0px;
+  }
+  ul.ablog-archive li {
+    float: left;
+    margin-right: 5px;
+    font-size: 80%;
+  }
+  ul.postlist a {
+    font-style: italic;
+  }
+  ul.postlist-style-disc {
+    list-style-type: disc;
+  }
+  ul.postlist-style-none {
+    list-style-type: none;
+  }
+  ul.postlist-style-circle {
+    list-style-type: circle;
+  }
+  </style>
+ </head>
+ <body>
+  <div class="page-container">
+   <!-- taken from bootstrap theme -->
+   <div class="navbar navbar-default navbar-fixed-top" id="navbar">
+    <div class="container">
+     <div class="navbar-header">
+      <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+      <button class="navbar-toggle" data-target=".nav-collapse" data-toggle="collapse" type="button">
+       <span class="icon-bar">
+       </span>
+       <span class="icon-bar">
+       </span>
+       <span class="icon-bar">
+       </span>
+      </button>
+      <a class="navbar-brand" href="../index.html">
+       <b>
+        Taiwins
+       </b>
+      </a>
+      <span class="navbar-text navbar-version pull-left">
+       <b>
+       </b>
+      </span>
+     </div>
+     <div class="collapse navbar-collapse nav-collapse">
+      <ul class="nav navbar-nav">
+       <li>
+        <a href="../page_doc.html">
+         Documentation
+        </a>
+       </li>
+       <li>
+        <a href="../posts.html">
+         Dev Blogs
+        </a>
+       </li>
+       <li>
+        <a href="https://github.com/taiwins/taiwins">
+         Source Code
+        </a>
+       </li>
+       <li>
+        <a href="https://github.com/taiwins/taiwins/wiki">
+         Wiki
+        </a>
+       </li>
+       <!-- add other pages -->
+      </ul>
+     </div>
+    </div>
+   </div>
+   <div class="container">
+    <div class="row">
+     <div class="col-md-2">
+     </div>
+     <div class="body col-md-9 content" role="main">
+      <div class="section" id="writing-a-wayland-compositor-using-libtaiwins-part-iii">
+       <h1>
+        Writing a wayland compositor using libtaiwins, Part III
+        <a class="headerlink" href="#writing-a-wayland-compositor-using-libtaiwins-part-iii" title="Permalink to this headline">
+         ¶
+        </a>
+       </h1>
+       <p>
+        Hello again, the third part of libtaiwins tutorial, following the
+        <a class="reference external" href="tutorial-02.html">
+         part II
+        </a>
+        . In this tutorial, we will finish our desktop surface
+creation creation, with the last part,
+        <a class="reference external" href="https://github.com/taiwins/taiwins/blob/master/docs/input-grab.rst">
+         input grab
+        </a>
+        .
+       </p>
+       <p>
+        The documentation about the input grab is already there, basically it is used
+to change the behavior of input events handling. While The default handlers
+simply forwards the events to the proper wayland clients, we can use them to
+implement many functionalities. Just a while before this post, libtaiwins had a
+rework of its input grab system for supporting grabs like
+        <a class="reference external" href="https://github.com/taiwins/taiwins/blob/master/protocols/input-method.xml#L321">
+         input-method
+        </a>
+        , our new grab system works like a priority queue via the “mutex”
+like system implemented previously. This may not make much sense to you at the
+moment, but you will get it soon enough.
+       </p>
+       <p>
+        First lets take a look of what a grab looks like:
+       </p>
+       <div class="highlight-c notranslate">
+        <div class="highlight">
+         <pre><span></span><span class="k">struct</span> <span class="n">tw_pointer_grab_interface</span> <span class="p">{</span>
+ <span class="kt">void</span> <span class="p">(</span><span class="o">*</span><span class="n">enter</span><span class="p">)(</span><span class="k">struct</span> <span class="n">tw_seat_pointer_grab</span> <span class="o">*</span><span class="n">grab</span><span class="p">,</span>
+               <span class="k">struct</span> <span class="n">wl_resource</span> <span class="o">*</span><span class="n">surface</span><span class="p">,</span> <span class="kt">double</span> <span class="n">sx</span><span class="p">,</span> <span class="kt">double</span> <span class="n">sy</span><span class="p">);</span>
+ <span class="kt">void</span> <span class="p">(</span><span class="o">*</span><span class="n">motion</span><span class="p">)(</span><span class="k">struct</span> <span class="n">tw_seat_pointer_grab</span> <span class="o">*</span><span class="n">grab</span><span class="p">,</span> <span class="kt">uint32_t</span> <span class="n">time_msec</span><span class="p">,</span>
+                <span class="kt">double</span> <span class="n">sx</span><span class="p">,</span> <span class="kt">double</span> <span class="n">sy</span><span class="p">);</span>
+ <span class="kt">void</span> <span class="p">(</span><span class="o">*</span><span class="n">button</span><span class="p">)(</span><span class="k">struct</span> <span class="n">tw_seat_pointer_grab</span> <span class="o">*</span><span class="n">grab</span><span class="p">,</span>
+                <span class="kt">uint32_t</span> <span class="n">time_msec</span><span class="p">,</span> <span class="kt">uint32_t</span> <span class="n">button</span><span class="p">,</span>
+                <span class="k">enum</span> <span class="n">wl_pointer_button_state</span> <span class="n">state</span><span class="p">);</span>
+ <span class="kt">void</span> <span class="p">(</span><span class="o">*</span><span class="n">axis</span><span class="p">)(</span><span class="k">struct</span> <span class="n">tw_seat_pointer_grab</span> <span class="o">*</span><span class="n">grab</span><span class="p">,</span> <span class="kt">uint32_t</span> <span class="n">time_msec</span><span class="p">,</span>
+              <span class="k">enum</span> <span class="n">wl_pointer_axis</span> <span class="n">orientation</span><span class="p">,</span> <span class="kt">double</span> <span class="n">value</span><span class="p">,</span>
+              <span class="kt">int32_t</span> <span class="n">value_discrete</span><span class="p">,</span>
+              <span class="k">enum</span> <span class="n">wl_pointer_axis_source</span> <span class="n">source</span><span class="p">);</span>
+ <span class="kt">void</span> <span class="p">(</span><span class="o">*</span><span class="n">frame</span><span class="p">)(</span><span class="k">struct</span> <span class="n">tw_seat_pointer_grab</span> <span class="o">*</span><span class="n">grab</span><span class="p">);</span>
+ <span class="kt">void</span> <span class="p">(</span><span class="o">*</span><span class="n">cancel</span><span class="p">)(</span><span class="k">struct</span> <span class="n">tw_seat_pointer_grab</span> <span class="o">*</span><span class="n">grab</span><span class="p">);</span>
+     <span class="kt">void</span> <span class="p">(</span><span class="o">*</span><span class="n">grab_action</span><span class="p">)(</span><span class="k">struct</span> <span class="n">tw_seat_pointer_grab</span> <span class="o">*</span><span class="n">grab</span><span class="p">,</span>
+                     <span class="k">enum</span> <span class="n">tw_seat_grab_action</span> <span class="n">action</span><span class="p">);</span>
+<span class="p">};</span>
+</pre>
+        </div>
+       </div>
+       <p>
+        What you see above is a grab interface for pointer devices, you can see there
+are a few function pointers for you to override. Similar interfaces exist for
+keyboard and touch devices, but in this post, we only need to worry about the
+pointer devices.
+       </p>
+       <p>
+        The
+        <code class="docutils literal notranslate">
+         <span class="pre">
+          (*enter)
+         </span>
+        </code>
+        ,
+        <code class="docutils literal notranslate">
+         <span class="pre">
+          (*motion)
+         </span>
+        </code>
+        ,
+        <code class="docutils literal notranslate">
+         <span class="pre">
+          (*button)
+         </span>
+        </code>
+        ,
+        <code class="docutils literal notranslate">
+         <span class="pre">
+          (*axis)
+         </span>
+        </code>
+        and
+        <code class="docutils literal notranslate">
+         <span class="pre">
+          (*frame)
+         </span>
+        </code>
+        callbacks has corresponding
+        <a class="reference external" href="https://wayland.freedesktop.org/docs/html/apa.html#protocol-spec-wl_pointer">
+         wayland protocol
+        </a>
+        equivalents. The
+last two is a little special here(we should probably merge them), the are for
+handling the events to grab itself. Right now, there are three events:
+       </p>
+       <ol class="arabic simple">
+        <li>
+         <p>
+          cancel, emitted when the grab exists.
+         </p>
+        </li>
+        <li>
+         <p>
+          push, emitted when new grab overrides this one.
+         </p>
+        </li>
+        <li>
+         <p>
+          pop, emitted when we pop back to this grab.
+         </p>
+        </li>
+       </ol>
+       <p>
+        So
+        <strong>
+         what I meant previously
+        </strong>
+        is that you can add a grab on top of a grab and
+pop back later. But
+        <strong>
+         note
+        </strong>
+        that, at any point, there is only one effective
+grab for each device.
+       </p>
+       <p>
+        Finally, there are two APIS for manipulate the grab, take pointer for example
+       </p>
+       <div class="highlight-c notranslate">
+        <div class="highlight">
+         <pre><span></span><span class="kt">void</span>
+<span class="nf">tw_pointer_start_grab</span><span class="p">(</span><span class="k">struct</span> <span class="n">tw_pointer</span> <span class="o">*</span><span class="n">pointer</span><span class="p">,</span>
+                      <span class="k">struct</span> <span class="n">tw_seat_pointer_grab</span> <span class="o">*</span><span class="n">grab</span><span class="p">,</span> <span class="kt">uint32_t</span> <span class="n">priority</span><span class="p">);</span>
+<span class="kt">void</span>
+<span class="nf">tw_pointer_end_grab</span><span class="p">(</span><span class="k">struct</span> <span class="n">tw_pointer</span> <span class="o">*</span><span class="n">pointer</span><span class="p">,</span>
+                    <span class="k">struct</span> <span class="n">tw_seat_pointer_grab</span> <span class="o">*</span><span class="n">grab</span><span class="p">);</span>
+</pre>
+        </div>
+       </div>
+       <p>
+        Okay, with that in mind, lets implement the grabs for desktop surfaces.
+       </p>
+       <div class="section" id="resizing-grab-and-moving-grab">
+        <h2>
+         Resizing grab and moving grab
+         <a class="headerlink" href="#resizing-grab-and-moving-grab" title="Permalink to this headline">
+          ¶
+         </a>
+        </h2>
+        <p>
+         For a desktop experience, you will need to be able to resize and move your
+applications with your cursor. Clients initiate those requests through wayland
+protocol, we answer them by implementing the
+         <code class="docutils literal notranslate">
+          <span class="pre">
+           move
+          </span>
+         </code>
+         and
+         <code class="docutils literal notranslate">
+          <span class="pre">
+           resize
+          </span>
+         </code>
+         interface
+in the
+         <code class="docutils literal notranslate">
+          <span class="pre">
+           tw_desktop_surface_api
+          </span>
+         </code>
+         . In those two callbacks, you simply start the
+choosing grab. Firstly we declare the two grab implementations.
+        </p>
+        <div class="highlight-c notranslate">
+         <div class="highlight">
+          <pre><span></span><span class="k">static</span> <span class="k">const</span> <span class="k">struct</span> <span class="n">tw_pointer_grab_interface</span> <span class="n">move_pointer_grab_impl</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="p">.</span><span class="n">motion</span> <span class="o">=</span> <span class="n">handle_move_pointer_grab_motion</span><span class="p">,</span>
+    <span class="p">.</span><span class="n">button</span> <span class="o">=</span> <span class="n">handle_pointer_grab_button</span><span class="p">,</span>
+    <span class="p">.</span><span class="n">cancel</span> <span class="o">=</span> <span class="n">handle_pointer_grab_cancel</span><span class="p">,</span>
+<span class="p">};</span>
+
+<span class="k">static</span> <span class="k">const</span> <span class="k">struct</span> <span class="n">tw_pointer_grab_interface</span> <span class="n">resize_pointer_grab_impl</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="p">.</span><span class="n">motion</span> <span class="o">=</span> <span class="n">handle_resize_pointer_grab_motion</span><span class="p">,</span>
+    <span class="p">.</span><span class="n">button</span> <span class="o">=</span> <span class="n">handle_pointer_grab_button</span><span class="p">,</span> <span class="c1">// same as move grab</span>
+    <span class="p">.</span><span class="n">cancel</span> <span class="o">=</span> <span class="n">handle_pointer_grab_cancel</span><span class="p">,</span> <span class="c1">// same as move grab</span>
+<span class="p">};</span>
+</pre>
+         </div>
+        </div>
+        <p>
+         The most importantly here is the motion event handling, for moving grab, we
+need to change the surface position accorrdingly.
+        </p>
+        <div class="highlight-c notranslate">
+         <div class="highlight">
+          <pre><span></span><span class="k">static</span> <span class="kt">void</span>
+<span class="nf">handle_move_pointer_grab_motion</span><span class="p">(</span><span class="k">struct</span> <span class="n">tw_seat_pointer_grab</span> <span class="o">*</span><span class="n">grab</span><span class="p">,</span>
+                                <span class="kt">uint32_t</span> <span class="n">time_msec</span><span class="p">,</span> <span class="kt">double</span> <span class="n">sx</span><span class="p">,</span> <span class="kt">double</span> <span class="n">sy</span><span class="p">)</span>
+<span class="p">{</span>
+    <span class="k">struct</span> <span class="n">test_desktop_grab</span> <span class="o">*</span><span class="n">tg</span> <span class="o">=</span>
+        <span class="n">wl_container_of</span><span class="p">(</span><span class="n">grab</span><span class="p">,</span> <span class="n">tg</span><span class="p">,</span> <span class="n">pointer_grab</span><span class="p">);</span>
+    <span class="k">struct</span> <span class="n">tw_desktop_surface</span> <span class="o">*</span><span class="n">dsurf</span> <span class="o">=</span> <span class="n">tg</span><span class="o">-&gt;</span><span class="n">curr</span><span class="p">;</span>
+    <span class="k">struct</span> <span class="n">tw_surface</span> <span class="o">*</span><span class="n">surf</span> <span class="o">=</span> <span class="nb">NULL</span><span class="p">;</span>
+    <span class="kt">float</span> <span class="n">gx</span><span class="p">,</span> <span class="n">gy</span><span class="p">;</span>
+
+    <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="n">dsurf</span><span class="p">)</span>
+        <span class="k">return</span><span class="p">;</span>
+    <span class="n">surf</span> <span class="o">=</span> <span class="n">dsurf</span><span class="o">-&gt;</span><span class="n">tw_surface</span><span class="p">;</span>
+    <span class="n">tw_surface_to_global_pos</span><span class="p">(</span><span class="n">surf</span><span class="p">,</span> <span class="n">sx</span><span class="p">,</span> <span class="n">sy</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">gx</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">gy</span><span class="p">);</span>
+    <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="n">isnan</span><span class="p">(</span><span class="n">tg</span><span class="o">-&gt;</span><span class="n">gx</span><span class="p">)</span> <span class="o">&amp;&amp;</span> <span class="o">!</span><span class="n">isnan</span><span class="p">(</span><span class="n">tg</span><span class="o">-&gt;</span><span class="n">gy</span><span class="p">))</span>
+        <span class="n">tw_surface_set_position</span><span class="p">(</span><span class="n">surf</span><span class="p">,</span> <span class="n">surf</span><span class="o">-&gt;</span><span class="n">geometry</span><span class="p">.</span><span class="n">x</span> <span class="o">+</span> <span class="p">(</span><span class="n">gx</span><span class="o">-</span><span class="n">tg</span><span class="o">-&gt;</span><span class="n">gx</span><span class="p">),</span>
+                                <span class="n">surf</span><span class="o">-&gt;</span><span class="n">geometry</span><span class="p">.</span><span class="n">y</span> <span class="o">+</span> <span class="n">gy</span><span class="o">-</span><span class="n">tg</span><span class="o">-&gt;</span><span class="n">gy</span><span class="p">);</span>
+
+    <span class="n">tg</span><span class="o">-&gt;</span><span class="n">gx</span> <span class="o">=</span> <span class="n">gx</span><span class="p">;</span>
+    <span class="n">tg</span><span class="o">-&gt;</span><span class="n">gy</span> <span class="o">=</span> <span class="n">gy</span><span class="p">;</span>
+<span class="p">}</span>
+</pre>
+         </div>
+        </div>
+        <p>
+         We first get global position of the cursor, computing the
+         <em>
+          delta
+         </em>
+         using the previous
+recorded position. Then we call
+         <code class="docutils literal notranslate">
+          <span class="pre">
+           tw_surface_set_position
+          </span>
+         </code>
+         to change it,
+simple enough. What about resizing grab?
+        </p>
+        <div class="highlight-c notranslate">
+         <div class="highlight">
+          <pre><span></span><span class="k">static</span> <span class="kt">void</span>
+<span class="nf">handle_resize_pointer_grab_motion</span><span class="p">(</span><span class="k">struct</span> <span class="n">tw_seat_pointer_grab</span> <span class="o">*</span><span class="n">grab</span><span class="p">,</span>
+                                <span class="kt">uint32_t</span> <span class="n">time_msec</span><span class="p">,</span> <span class="kt">double</span> <span class="n">sx</span><span class="p">,</span> <span class="kt">double</span> <span class="n">sy</span><span class="p">)</span>
+<span class="p">{</span>
+    <span class="k">struct</span> <span class="n">test_desktop_grab</span> <span class="o">*</span><span class="n">tg</span> <span class="o">=</span>
+        <span class="n">wl_container_of</span><span class="p">(</span><span class="n">grab</span><span class="p">,</span> <span class="n">tg</span><span class="p">,</span> <span class="n">pointer_grab</span><span class="p">);</span>
+    <span class="k">struct</span> <span class="n">tw_surface</span> <span class="o">*</span><span class="n">surf</span><span class="p">;</span>
+    <span class="k">struct</span> <span class="n">tw_test_desktop</span> <span class="o">*</span><span class="n">desktop</span> <span class="o">=</span> <span class="n">grab</span><span class="o">-&gt;</span><span class="n">data</span><span class="p">;</span>
+    <span class="kt">float</span> <span class="n">gx</span><span class="p">,</span> <span class="n">gy</span><span class="p">;</span>
+    <span class="c1">//would change position, bail</span>
+    <span class="k">if</span> <span class="p">((</span><span class="n">tg</span><span class="o">-&gt;</span><span class="n">edge</span> <span class="o">&amp;</span> <span class="n">WL_SHELL_SURFACE_RESIZE_TOP_LEFT</span><span class="p">))</span>
+        <span class="k">return</span><span class="p">;</span>
+    <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="n">tg</span><span class="o">-&gt;</span><span class="n">curr</span><span class="p">)</span>
+        <span class="k">return</span><span class="p">;</span>
+    <span class="n">surf</span> <span class="o">=</span> <span class="n">tg</span><span class="o">-&gt;</span><span class="n">curr</span><span class="o">-&gt;</span><span class="n">tw_surface</span><span class="p">;</span>
+    <span class="n">tw_surface_to_global_pos</span><span class="p">(</span><span class="n">surf</span><span class="p">,</span> <span class="n">sx</span><span class="p">,</span> <span class="n">sy</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">gx</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">gy</span><span class="p">);</span>
+
+    <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="n">isnan</span><span class="p">(</span><span class="n">tg</span><span class="o">-&gt;</span><span class="n">gx</span><span class="p">)</span> <span class="o">&amp;&amp;</span> <span class="o">!</span><span class="n">isnan</span><span class="p">(</span><span class="n">tg</span><span class="o">-&gt;</span><span class="n">gy</span><span class="p">))</span> <span class="p">{</span>
+        <span class="kt">float</span> <span class="n">dw</span> <span class="o">=</span> <span class="p">(</span><span class="n">gx</span><span class="o">-</span><span class="n">tg</span><span class="o">-&gt;</span><span class="n">gx</span><span class="p">);</span>
+        <span class="kt">float</span> <span class="n">dh</span> <span class="o">=</span> <span class="p">(</span><span class="n">gy</span><span class="o">-</span><span class="n">tg</span><span class="o">-&gt;</span><span class="n">gy</span><span class="p">);</span>
+        <span class="k">struct</span> <span class="n">view_configure</span> <span class="n">conf</span> <span class="o">=</span> <span class="p">{</span>
+            <span class="p">.</span><span class="n">rect</span><span class="p">.</span><span class="n">x</span> <span class="o">=</span> <span class="n">surf</span><span class="o">-&gt;</span><span class="n">geometry</span><span class="p">.</span><span class="n">x</span><span class="p">,</span> <span class="c1">//keep the same pos</span>
+            <span class="p">.</span><span class="n">rect</span><span class="p">.</span><span class="n">y</span> <span class="o">=</span> <span class="n">surf</span><span class="o">-&gt;</span><span class="n">geometry</span><span class="p">.</span><span class="n">y</span><span class="p">,</span> <span class="c1">//keep the same pos</span>
+            <span class="p">.</span><span class="n">rect</span><span class="p">.</span><span class="n">width</span> <span class="o">=</span> <span class="n">tg</span><span class="o">-&gt;</span><span class="n">curr</span><span class="o">-&gt;</span><span class="n">window_geometry</span><span class="p">.</span><span class="n">w</span> <span class="o">+</span> <span class="n">dw</span><span class="p">,</span>
+            <span class="p">.</span><span class="n">rect</span><span class="p">.</span><span class="n">height</span> <span class="o">=</span> <span class="n">tg</span><span class="o">-&gt;</span><span class="n">curr</span><span class="o">-&gt;</span><span class="n">window_geometry</span><span class="p">.</span><span class="n">h</span> <span class="o">+</span> <span class="n">dh</span><span class="p">,</span>
+        <span class="p">};</span>
+        <span class="n">send_view_configure</span><span class="p">(</span><span class="n">tg</span><span class="o">-&gt;</span><span class="n">curr</span><span class="p">,</span> <span class="n">desktop</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">conf</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>
+    <span class="p">}</span>
+    <span class="n">tg</span><span class="o">-&gt;</span><span class="n">gx</span> <span class="o">=</span> <span class="n">gx</span><span class="p">;</span>
+    <span class="n">tg</span><span class="o">-&gt;</span><span class="n">gy</span> <span class="o">=</span> <span class="n">gy</span><span class="p">;</span>
+
+<span class="p">}</span>
+</pre>
+         </div>
+        </div>
+        <p>
+         It actually follows the same logic, the difference setting the wanted size
+through
+         <code class="docutils literal notranslate">
+          <span class="pre">
+           send_view_configure
+          </span>
+         </code>
+         . Now it remains for us only the handling the
+starting and ending grab through button events.
+        </p>
+        <div class="highlight-c notranslate">
+         <div class="highlight">
+          <pre><span></span><span class="k">static</span> <span class="kt">void</span>
+<span class="nf">handle_pointer_grab_button</span><span class="p">(</span><span class="k">struct</span> <span class="n">tw_seat_pointer_grab</span> <span class="o">*</span><span class="n">grab</span><span class="p">,</span>
+                       <span class="kt">uint32_t</span> <span class="n">time_msec</span><span class="p">,</span> <span class="kt">uint32_t</span> <span class="n">button</span><span class="p">,</span>
+                       <span class="k">enum</span> <span class="n">wl_pointer_button_state</span> <span class="n">state</span><span class="p">)</span>
+<span class="p">{</span>
+    <span class="k">struct</span> <span class="n">tw_pointer</span> <span class="o">*</span><span class="n">pointer</span> <span class="o">=</span> <span class="o">&amp;</span><span class="n">grab</span><span class="o">-&gt;</span><span class="n">seat</span><span class="o">-&gt;</span><span class="n">pointer</span><span class="p">;</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">state</span> <span class="o">==</span> <span class="n">WL_POINTER_BUTTON_STATE_RELEASED</span> <span class="o">&amp;&amp;</span>
+        <span class="n">pointer</span><span class="o">-&gt;</span><span class="n">btn_count</span> <span class="o">==</span> <span class="mi">0</span><span class="p">)</span>
+        <span class="n">tw_pointer_end_grab</span><span class="p">(</span><span class="n">pointer</span><span class="p">,</span> <span class="n">grab</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="k">static</span> <span class="kt">void</span>
+<span class="nf">handle_pointer_grab_cancel</span><span class="p">(</span><span class="k">struct</span> <span class="n">tw_seat_pointer_grab</span> <span class="o">*</span><span class="n">grab</span><span class="p">)</span>
+<span class="p">{</span>
+    <span class="k">struct</span> <span class="n">test_desktop_grab</span> <span class="o">*</span><span class="n">tg</span> <span class="o">=</span>
+        <span class="n">wl_container_of</span><span class="p">(</span><span class="n">grab</span><span class="p">,</span> <span class="n">tg</span><span class="p">,</span> <span class="n">pointer_grab</span><span class="p">);</span>
+    <span class="n">tg</span><span class="o">-&gt;</span><span class="n">curr</span> <span class="o">=</span> <span class="nb">NULL</span><span class="p">;</span>
+    <span class="n">tg</span><span class="o">-&gt;</span><span class="n">gx</span> <span class="o">=</span> <span class="n">nan</span><span class="p">(</span><span class="s">""</span><span class="p">);</span>
+    <span class="n">tg</span><span class="o">-&gt;</span><span class="n">gy</span> <span class="o">=</span> <span class="n">nan</span><span class="p">(</span><span class="s">""</span><span class="p">);</span>
+<span class="p">}</span>
+</pre>
+         </div>
+        </div>
+        <p>
+         For button events, we check if there is any remaining pressed button, if all is
+released, we end the grab, which will lead to calling
+         <code class="docutils literal notranslate">
+          <span class="pre">
+           (*cancel)
+          </span>
+         </code>
+         callback.
+        </p>
+        <p>
+         Pretty simple right? For very basic desktop experience, we coverred them in
+this and previous tutorial, which is about couple hundreds lines of code to write.
+        </p>
+        <p>
+         In our next tutorial, you will begin to handle repainting using libtaiwins,
+which is last missing piece for a working compositor.
+        </p>
+       </div>
+      </div>
+      <div class="section">
+       <div class="section">
+        <span style="float: left">
+         Previous:
+         <a href="tutorial-02.html">
+          Writing a wayland compositor using libtaiwins, Part II
+         </a>
+        </span>
+        <span>
+        </span>
+        <span style="float: right">
+        </span>
+       </div>
+      </div>
+     </div>
+     <div class="col-md-2">
+     </div>
+    </div>
+   </div>
+   <div class="push">
+   </div>
+  </div>
+  <footer class="footer">
+   <div class="container">
+    <p class="pull-right">
+     <a href="#">
+      Back to top
+     </a>
+    </p>
+    <p>
+     © Copyright 2020, Xichen Zhou.
+     <br/>
+     Created using
+     <a href="http://sphinx-doc.org/">
+      Sphinx
+     </a>
+     3.4.3.
+     <br/>
+    </p>
+   </div>
+  </footer>
+ </body>
+</html>
